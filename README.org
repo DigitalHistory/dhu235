@@ -1,0 +1,36 @@
+* Blank template for Matt Price's courses
+
+This repo is an effort to develop standard practices around course deployment. At present my courses don't all conform to this standard, but eventually I hope they will.  By describing my processes here, I hope I will be able to standardize all my courses, write generic (rather than bespoke) deployment scripts, and ease the process of dockerizing my courses to avoid catastrophic failures (as occasionally still occur).  
+
+** Org-mode
+
+All my course materials are written in [[https://org-mode.org][org-mode markup]], a multi-faceted markup format that is similar to [[https://en.wikipedia.org/wiki/Markdown][markdown]], but with a much richer feature set.  Unfortunately it is almost entirely restricted to Emacs users, and perhaps because of that will never gain wide acceptance. For me, though, it remains the best way to write both code and text, and I'm likely to stick with it for the foreseeable future.  
+- My course syllabus is always a stand-alone document in the top-level directory, which also contains
+- [[./Lectures.org]], a single file with all my lectures
+- [[./Assignments.org]], a single file with all my assignments
+- [[./Grades]], a directory with my grading materials (I exclude these from my git repositories to avoid any accidental disclosure of private information)
+- [[./Readings]], a directory with copies of course readings (similarly, I exclude this from my git repo for copyright reasons)
+- [[./Images]] ditto
+
+So the whole course structure comprises just a few large files, which I find a convenient way to keep track of everything. 
+
+** Export
+I use org-mode's native exporter to produce course documents that need to be distributed in other formats (usually ~.pdf~, ~.docx~, and ~.htm~ or ~.md~). Org's exporter is extremely powerful and flexible, and I use a set of configuration variables, set in the document headers, to control its behaviour. At present I still have stray bits of elisp code in my emacs configuration, but I hope to move that to a central location so its easier to reproduce my build environment.  
+
+
+** Websites
+Most of my courses have simple static websites, built by the [[https://gohugo.io][Hugo]] static site generator. Hugo actually supports org-mode files, but not the monolithic files that I prefer to use. So my website build process has a few steps:
+
+1. edit the org-mode source files in this repo
+2. export edits to hugo using ~ox-hugo~, check changes in a local browser, and commit
+3. generate the static site by running ~hugo~ in the website directory
+4. upload files to github or other static site host (like [[https://hackinghistory.ca]])
+
+This repo should eventually contain automation tools that make this as simple as possible.  
+
+the new-ish [[https://ox-hugo.scripter.co/doc/auto-export-on-saving/][auto-export functions]] should help here.  So the process could be just:
+- save the org-mode file
+- go to a pinned tab in browser (maybe start all the websites up when I log in with a ~~/bin/starthugosites~ command and check the changes
+- commit in main repo, which triggers ocmmits at the next two levels, and a push to the final level
+- done
+** 
