@@ -1,0 +1,72 @@
+#!/bin/bash
+# a script to simplify website updating on commits
+# auto-updates the website when changes are made to the right branch
+# right now, it just runs the deploy script if anything's wanted.
+# Commit message and hash are grabbed from the log
+
+# currently not quite sure that I want maintain a separate website repo --
+# even though it's a bit silly to have second copies of the materials in the
+# `website` folder, it may be easier in the long run to keep everything together.
+
+
+
+# push_branch=master
+push_branch=2018
+cur_branch=$(git rev-parse --abbrev-ref HEAD)
+cur_hash=$(git log -1 --pretty=%h)
+cur_msg=$(git log -1 --pretty=%B)
+deploy_script_path=./website/deploy.sh
+
+
+# only run if commit is to master
+
+if [ "$cur_branch" ==  "$push_branch" ]; then
+    if [ "$(git status -uno --porcelain)" ]; then
+      echo "uncommitted  changes, can't push";
+    else
+      # commented out for now, not sure I want to do this
+      # echo "pushing $push_branch to origin"
+      # git push -f origin $push_branch
+      echo "Rebuilding and Deploying Site"
+      . $deploy_script_path "update from source files commit $cur_hash: $cur_msg"
+
+      # What follows is some complex stuff from when I kept two versions of the website
+      # in two different places!
+      
+      # cd $website_path
+      # hugo -s ./
+      # cd public &&
+      # echo "changing env variables" &&
+      # GIT_WORK_TREE="../.git/worktrees/public" &&
+      # GIT_INDEX_FILE="../.git/worktrees/public/index"&&
+      # echo "adding all files\n\n"  &&
+      # git add --all
+      # echo "commitchanges to  gh-pages\n\n"
+      # git commit -a -m "push changes to gh-pages from $cur_hash :
+      # $cur_msg" 
+      #         echo "pushing gh-pages to origin"
+      #         git push -f origin gh-pages && echo "successfully pushed gh-pages"
+      # cd ..
+
+      # sed -i.gh 's/baseURL = \"https:\/\/digitalhistory.github.io\/dh-website\/\"/baseURL = \"https:\/\/digital.hackinghistory.ca\/\"/' config.toml
+      # hugo -s ~/DH/dh-website/ -d ~/DH/dh-website/shimano/
+
+      # now shimano dir, shimano-deploy branch, shimano remote
+#       cd shimano &&
+#         echo "changing env variables" &&
+#         GIT_WORK_TREE="../.git/worktrees/shimano" &&
+#         GIT_INDEX_FILE="../.git/worktrees/shimano/index"&&
+#         echo "adding all files\n\n"  &&
+#         git add --all
+#       echo "commit changes to shimano\n\n"
+#       git commit -a -m "push changes to shimano from $cur_hash
+        
+# $cur_msg" 
+#       echo "pushing shimano-deploy to shimano"
+#       git push -f shimano shimano-deploy && echo "successfully pushed shimano"
+#       cd ..
+
+#       # rsync -azvbP ~/DH/dh-website/shimano/ shimano:/var/www/digital.hackinghistory.ca/
+#       mv config.toml.gh config.toml
+    fi    
+fi

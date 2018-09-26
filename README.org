@@ -26,11 +26,33 @@ Most of my courses have simple static websites, built by the [[https://gohugo.io
 3. generate the static site by running ~hugo~ in the website directory
 4. upload files to github or other static site host (like [[https://hackinghistory.ca]])
 
-This repo should eventually contain automation tools that make this as simple as possible.  
+In the past this has required me to maintain 3 repos or at least 3 branches. My new plan is to cut out the intermediate step.  TThe static site "source" files (which are themselves genreated by org!) will just live in the ~website~ directory.  Auto-generated files will have to be added to git, maybe with some kind of a quick script, or just via magit.  
 
-the new-ish [[https://ox-hugo.scripter.co/doc/auto-export-on-saving/][auto-export functions]] should help here.  So the process could be just:
-- save the org-mode file
-- go to a pinned tab in browser (maybe start all the websites up when I log in with a ~~/bin/starthugosites~ command and check the changes
-- commit in main repo, which triggers ocmmits at the next two levels, and a push to the final level
-- done
-** 
+~website/deploy.sh~ contains a really helpful, quick deployment script. 
+
+~.githooks/post-commit~ calls the deploy script with a commit message argument derived from the current commit. 
+
+*** Auto exporting
+These files take advantage of the [[https://ox-hugo.scripter.co/doc/auto-export-on-saving/][auto-export functions]] in ox-hugo. So every time a Hugo source file is saved, the ~.md~ file gets exported to the Hugo site and it can be viewed in a pinned tab in a Hugo process which gets started by ~~/bin/starthugo.sh~, which starts up all the course websites at once.  
+
+I need to replicate ~ox-hugo-auto-export~ for ~ox-huveal~, which itself is a bit of a disaster and desperately needs rewriting. I have a do-what-i-mean function in my persistent ~**Scratch**~ buffer (copied from Kaushal!) for ox-huveal, and that works fine, but I still need to copy the rest of the infrastructure so I can add it as an ~after-save-hook~, and bundle it up as some kind of a package. 
+
+*** ACTION insert the GH address of the source files into the commit message, to make it easier to find them on the web?
+
+** Simplifying the commit process
+
+I'm hoping that the git post-commit hook included in this repo will make committing a one-stop process -- I just commit to the right branch, after which the deployment just happens automagically.  [[https://www.viget.com/articles/two-ways-to-share-git-hooks-with-your-team/][See this discussion of external git hooks]] for some manual setup that still needs to be done.  Will perhaps be tricky to do this via a dockerfile or whatever, if I eventually manage to dockerize my workflow here, which I hope to do.  
+should be as simple as ~git config core.hooksPath .githooks~ but perhaps that belongs in a makefile or an init file of some kind.  
+
+
+
+
+** What's left to do?
+
+- [ ] finish up huveal stuff to ease that process
+- [ ] include some documentation about the reveal.js requirements for Hugo themes -- they need to be able to support org-generated reveal content
+- [ ] fix citations & include ~.bibtex~ files in the template
+- [ ] collect stray elisp into a single coherent package
+- [ ] make some kind of meta-repo with all the dependencies included
+- [ ] figure out a safe way to manage Grade files, but maybe also sitll include some of the template code that I use for that sutff.
+- [ ] determine if some kind of Canvas integration is possible.  

@@ -1,0 +1,55 @@
+#!/bin/bash
+# automatically update gh-pages branch whenever master is updated
+push_branch=master
+cur_branch=$(git rev-parse --abbrev-ref HEAD)
+cur_hash=$(git log -1 --pretty=%h)
+cur_msg=$(git log -1 --pretty=%B)
+
+
+
+# only run if commit is to master
+
+if [ "$cur_branch" ==  "$push_branch" ]; then
+    if [ "$(git status -uno --porcelain)" ]; then
+      echo "uncommitted  changes, can't push";
+    else
+      echo "pushing master to origin"
+      git push -f origin master
+      echo "Rebuilding Site"
+      hugo -s ./
+      cd public &&
+        echo "changing env variables" &&
+        GIT_WORK_TREE="../.git/worktrees/public" &&
+        GIT_INDEX_FILE="../.git/worktrees/public/index"&&
+        echo "adding all files\n\n"  &&
+        git add --all
+      echo "commitchanges to  gh-pages\n\n"
+        git commit -a -m "push changes to gh-pages from $cur_hash
+        
+$cur_msg" 
+        echo "pushing gh-pages to origin"
+        git push -f origin gh-pages && echo "successfully pushed gh-pages"
+      cd ..
+
+      sed -i.gh 's/baseURL = \"https:\/\/digitalhistory.github.io\/dh-website\/\"/baseURL = \"https:\/\/digital.hackinghistory.ca\/\"/' config.toml
+      hugo -s ~/DH/dh-website/ -d ~/DH/dh-website/shimano/
+
+      # now shimano dir, shimano-deploy branch, shimano remote
+      cd shimano &&
+        echo "changing env variables" &&
+        GIT_WORK_TREE="../.git/worktrees/shimano" &&
+        GIT_INDEX_FILE="../.git/worktrees/shimano/index"&&
+        echo "adding all files\n\n"  &&
+        git add --all
+      echo "commit changes to shimano\n\n"
+      git commit -a -m "push changes to shimano from $cur_hash
+        
+$cur_msg" 
+      echo "pushing shimano-deploy to shimano"
+      git push -f shimano shimano-deploy && echo "successfully pushed shimano"
+      cd ..
+
+      # rsync -azvbP ~/DH/dh-website/shimano/ shimano:/var/www/digital.hackinghistory.ca/
+      mv config.toml.gh config.toml
+    fi    
+fi

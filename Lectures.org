@@ -1,0 +1,35 @@
+#+STARTUP: customtime
+#+HUGO_BASE_DIR: ./website/
+#+HUGO_SECTION: assignment
+#+HUGO_STATIC_IMAGES: Images
+#+HUGO_MENU: :menu main :parent Assignments
+#+HUGO_AUTO_SET_LASTMOD: t
+
+* COMMENT Hugo Instructions
+- Every exportable entry must have the ~EXPORT_FILE_NAME~ property set before export.
+
+
+** Check out this elisp code if you're having trouble
+
+#+begin_src emacs-lisp
+(use-package ox-hugo-auto-export)
+
+#+end_src
+
+#+RESULTS:
+
+* Topic 1
+:PROPERTIES:
+:EXPORT_FILE_NAME: 01-topic-1
+:END:
+
+testing out the overview
+ 
+
+
+
+* Topic 2
+* COMMENT Local Variables                          
+# Local Variables:
+# org-hugo-auto-export-on-save: t
+# End:
