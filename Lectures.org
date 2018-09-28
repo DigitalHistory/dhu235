@@ -7,6 +7,9 @@
 
 * COMMENT Hugo Instructions
 - Every exportable entry must have the ~EXPORT_FILE_NAME~ property set before export.
+- I should write some code to shunt this stuff to ox-huveal instead of ox-hugo.  This is a project for another time.
+- interestingly, I probably don't want to set ox-hugo-auto-export-on-save for this file, because my most urgent need is going to be to export local reveal files.  Exporting to hugo -- or huveal if I can figure that out -- will be difficult.
+- so, maybe I want to repurpose some of the auto-export code for use with my lectures!
 
 
 ** Check out this elisp code if you're having trouble
@@ -25,11 +28,22 @@
 
 testing out the overview
  
+#+begin_src emacs-lisp
+;; (org-huveal-export-to-html 1)
+(org-huveal-export-wim nil)
+;; (browse-url-of-file (expand-file-name (org-huveal-export-to-html )))
+#+end_src
 
+#+RESULTS:
+: 01-topic-1.html
+
+** some stuff
+
+** another stuff
 
 
 * Topic 2
 * COMMENT Local Variables                          
 # Local Variables:
-# org-hugo-auto-export-on-save: t
+# org-reveal-auto-export-on-save: t
 # End:

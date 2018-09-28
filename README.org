@@ -32,12 +32,12 @@ In the past this has required me to maintain 3 repos or at least 3 branches. My 
 
 ~.githooks/post-commit~ calls the deploy script with a commit message argument derived from the current commit. 
 
-*** Auto exporting
+*** ACTION insert the GH address of the source files into the commit message, to make it easier to find them on the web?
+
+** Auto exporting
 These files take advantage of the [[https://ox-hugo.scripter.co/doc/auto-export-on-saving/][auto-export functions]] in ox-hugo. So every time a Hugo source file is saved, the ~.md~ file gets exported to the Hugo site and it can be viewed in a pinned tab in a Hugo process which gets started by ~~/bin/starthugo.sh~, which starts up all the course websites at once.  
 
-I need to replicate ~ox-hugo-auto-export~ for ~ox-huveal~, which itself is a bit of a disaster and desperately needs rewriting. I have a do-what-i-mean function in my persistent ~**Scratch**~ buffer (copied from Kaushal!) for ox-huveal, and that works fine, but I still need to copy the rest of the infrastructure so I can add it as an ~after-save-hook~, and bundle it up as some kind of a package. 
-
-*** ACTION insert the GH address of the source files into the commit message, to make it easier to find them on the web?
++I need to replicate ~ox-hugo-auto-export~ for ~ox-huveal~,+ which itself is a bit of a disaster and desperately needs rewriting. I have a do-what-i-mean function in my persistent ~**Scratch**~ buffer (copied from Kaushal!) for ox-huveal, and that works fine, but I still need to copy the rest of the infrastructure so I can add it as an ~after-save-hook~, and bundle it up as some kind of a package. I've copied [[https://github.com/kaushalmodi/ox-hugo/blob/master/ox-hugo-auto-export.el][ox-hugo-auto-export]] as ~ox-reveal-auto-export~ and I am now satisfied that it works well.  I'll pointto a gh repo when I have it up somewhere.  See [[https://ox-hugo.scripter.co/doc/auto-export-on-saving/][Kaushal's documentation on auto-exporting]] for hints on how to work this.  
 
 ** Simplifying the commit process
 
@@ -55,4 +55,5 @@ should be as simple as ~git config core.hooksPath .githooks~ but perhaps that be
 - [ ] collect stray elisp into a single coherent package
 - [ ] make some kind of meta-repo with all the dependencies included
 - [ ] figure out a safe way to manage Grade files, but maybe also sitll include some of the template code that I use for that sutff.
-- [ ] determine if some kind of Canvas integration is possible.  
+- [ ] determine if some kind of Canvas integration is possible.
+  - [ ] for instance, it looks like it's possible to [[https://community.canvaslms.com/docs/DOC-12813][download all submissions for an assignment.]] I'd like to write a [[https://www.ssocircle.com/en/developer-tutorial-saml-testing-using-curl-and-ssocheck-api/developer-tutorial-part-i-a-saml-sso-flow-from-the-command-line-with-curl/][cURL script that authenticates against the servers]] and grabs & unzips the appropriate zip file.  Not sure if that's going to be possible to do or not.  
