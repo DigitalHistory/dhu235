@@ -9,7 +9,6 @@
 # `website` folder, it may be easier in the long run to keep everything together.
 
 
-
 # push_branch=master
 push_branch=2018
 cur_branch=$(git rev-parse --abbrev-ref HEAD)

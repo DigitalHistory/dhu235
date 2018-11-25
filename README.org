@@ -32,6 +32,11 @@ In the past this has required me to maintain 3 repos or at least 3 branches. My 
 
 ~.githooks/post-commit~ calls the deploy script with a commit message argument derived from the current commit. 
 
+*** Hugo Theme requirements
+I've been liking simple themes with a sidebar that takes care of the limited navigation requirements for the course.  Right now the only important extra feature I've been needing is support for fully-formed ~reveal.js~ slideshows.  Most Hugo themes with ~reveal~ support do the parsing themselves -- so they expect to see .md files.  That isn't great for me because the org-mode reveal exports are fairly opinionated, and I'd have to write a bunch of code to produce the md files in the form i want them to have.  And in some cases the md parsers might not produce the right markup anyway.  So, instead I use ~org-reveal~ to export, but filter the css and js values at the end of the process; this gives me a set of complete ~html~ files as output.  To work within the website, these files need to be set inside an iframe, or some other way of scoping css instructions.  SO I always need to write a couple of layout templates for just that purpose, as well as a menu generation method that opens the slideshows i n the right place.  
+
+I'd be happy to have slightly more sophisticated stuff happening here, but I'm not quite there yet.  
+
 *** ACTION insert the GH address of the source files into the commit message, to make it easier to find them on the web?
 
 ** Auto exporting
@@ -46,6 +51,25 @@ should be as simple as ~git config core.hooksPath .githooks~ but perhaps that be
 
 
 
+
+** Hugo Setup 
+#+begin_src sh :tangle setup.sh
+#!/bin/zsh
+# only do this once!
+
+#use this oneliner to get the location of this script
+CUR=$PWD
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
+
+cd $DIR/public
+rm -rf
+cd $DIR
+
+### edit this line first! make sure you get the right info!
+# also replace `master` with gh-pages if nec
+git submodule add -b master git@github.com:<ORGNAME>/<ORGNAME>.github.io.git public
+cd $CUR
+#+end_src
 
 ** What's left to do?
 
