@@ -231,19 +231,6 @@ continued
 The last class is a retrospective look at the course. After the term test, students discuss how to use DH approaches and tools on their home discipline. We also discuss how we might apply the course learning outcomes to jobs in the corporate sector: we dissect a job ad from Monster.ca to align students' newly acquired skills with every requirement of that position.
 
    
-* ACTION items 2019
-- [ ] contact Komaromi (samzdat),
-- [ ] contact Rare Book Library (Carefoote),
-- [ ] contact Map Library (marcel f)
-- [ ] Learn OpenRefine
-- [ ] Find /Lady Susan/ 
-- [ ] monster.ca job listing (final week)?
-- [ ] ALA banned book data?
-- [ ] more detailed assignments?
-- [ ] blog posts? mentioned in "due dates" but not "grading scheme"
-- [ ] twitterbots?
-
-
 * COMMENT Variables
 #+begin_src emacs-lisp
 (make-local-variable 'org-use-property-inheritance)
