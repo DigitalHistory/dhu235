@@ -147,7 +147,7 @@ In this course, you will work with texts, objects, and digital artifacts. As you
    :CUSTOM_ID: acknowledgements
    :END:
 
-This syllabus draws on Kristen Mapes' /Introduction to Digital Humanities, AL285/ ([[http://dx.doi.org/10.17613/M6H34B]]) and on Miriam Posner's /DH101: Introduction to Digital Humanities,/ Fall 2014, UCLA.
+This syllabus was originally written by [[https://alexandrabolintineanu.wordpress.com/][Alexandra Bolintineanu]], and draws on both Kristen Mapes' /[[http://dx.doi.org/10.17613/M6H34B][Introduction to Digital Humanities, AL285]]/ and on Miriam Posner's /[[http://dh101.humanities.ucla.edu/][DH101: Introduction to Digital Humanities]],/ Fall 2014, UCLA.
 
 * Course Overview (Subject to Change)
    :PROPERTIES:
