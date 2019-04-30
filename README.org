@@ -1,15 +1,24 @@
-* Course Repository for WDW235: Intro do Digital Humanities (Univ of Toronto)
+ [[https://creativecommons.org/licenses/by-nc-sa/4.0/][https://licensebuttons.net/l/by-nc-sa/4.0/80x15.png]]
+* Course Repository for WDW235: Intro to Digital Humanities (Univ of Toronto)
 
 This repository collects materials related to [[https://fas.calendar.utoronto.ca/course/wdw235h1][the introductory course in the University of Toronto's /Digital Humanities/ program]]. Materials are written and stored in /org-mode
 This repo is an effort to develop standard practices around course deployment. At present my courses don't all conform to this standard, but eventually I hope they will.  By describing my processes here, I hope I will be able to standardize all my courses, write generic (rather than bespoke) deployment scripts, and ease the process of dockerizing my courses to avoid catastrophic failures (as occasionally still occur).  
 
-Most visitors wil want to start with [[./wdw235.org][the syllabus]]. The rest of this README contains some technical notes and is derived from a more detailed document in [[https://github.com/titaniumbones/course-template][this template repository]]
+Most visitors will want to start with [[./wdw235.org][the syllabus]]. The rest of this README contains some technical notes and is derived from a more detailed document in [[https://github.com/titaniumbones/course-template][this template repository]]. 
 
-** Org-mode
 
-All of [[https://matt.hackinghistory.ca][my]] course materials are written in [[https://org-mode.org][org-mode markup]], a multi-faceted markup format that is similar to [[https://en.wikipedia.org/wiki/Markdown][markdown]], but with a much richer feature set.  Unfortunately it is almost entirely restricted to Emacs users, and perhaps because of that will never gain wide acceptance. For me, though, it remains the best way to write both code and text, and I'm likely to stick with it for the foreseeable future.  
-- My course syllabus is always a stand-alone document in the top-level directory, which also contains
-- [[./Lectures.org]], a single file with all my lectures
+
+** Text formats
+
+Course materials are written in [[https://org-mode.org][org-mode markup]], a multi-faceted markup format that is similar to [[https://en.wikipedia.org/wiki/Markdown][markdown]], but with a much richer feature set.  Unfortunately it is largely restricted to Emacs users, and perhaps because of that will never gain wide acceptance. If you prefer Markdown, the easiest method is probably to install [[https://pandoc.org/][pandoc]] and patch convert all the org files to markdown with 
+#+begin_src sh
+for i in *.org; do pandoc -s $i  ${i%.*}.md; done
+#+end_src
+There's likely to be a fair bit of manual clean-up required, though. 
+
+** Repository Stucture
+- Course syllabus is a stand-alone document in the top-level directory. Uses org-mode macros and counters to generate dates and class meeting numbers.
+- [[./Lectures.org]], a single file with all my lectures, ready for export to [[https://revealjs.com/][reveal.js]] using [[https://github.com/yjwen/org-reveal][org-reveal]]
 - [[./Assignments.org]], a single file with all my assignments
 - [[./Grades]], a directory with my grading materials (I exclude these from my git repositories to avoid any accidental disclosure of private information)
 - [[./Readings]], a directory with copies of course readings (similarly, I exclude this from my git repo for copyright reasons)
@@ -18,11 +27,16 @@ All of [[https://matt.hackinghistory.ca][my]] course materials are written in [[
 So the whole course structure comprises just a few large files, which I find a convenient way to keep track of everything. 
 
 ** Export
+
+*** Stand-alone documents
 I use org-mode's native exporter to produce course documents that need to be distributed in other formats (usually ~.pdf~, ~.docx~, and ~.htm~ or ~.md~). Org's exporter is extremely powerful and flexible, and I use a set of configuration variables, set in the document headers, to control its behaviour. At present I still have stray bits of elisp code in my emacs configuration, but I hope to move that to a central location so its easier to reproduce my build environment.  
 
-The syllabus in particular uses a couple f emacs macros, which render strangely in the otherwise-delightful Github org-mode parser. In the course outline you will see lots o headlines with text like ~{{{ts}}}{{{n}}}~ -- I apologize for this!
+The syllabus in particular uses a couple of Emacs macros, which render strangely in the otherwise-delightful Github org-mode parser. In the course outline you will see lots of headlines with text like ~{{{ts}}}{{{n}}}~ -- I apologize for this!
 
-** Websites
+*** Canvas/Quercus
+U of t uses a branded version of the open-source [[https://canvas.instructure.com/][Canvas courseware software]]. There is an excellent and well-documented [[https://canvas.instructure.com/doc/api/][API]] for which I have written a [[https://github.com/titaniumbones/Org-Marking-Mode][much less polished Emacs client]]. This can be used to post most materials directly to Quewrcus without using the web interface. 
+
+*** COMMENT Websites
 Most of my courses have simple static websites, built by the [[https://gohugo.io][Hugo]] static site generator. Hugo actually supports org-mode files, but not the monolithic files that I prefer to use. So my website build process has a few steps:
 
 1. edit the org-mode source files in this repo
@@ -36,18 +50,18 @@ In the past this has required me to maintain 3 repos or at least 3 branches. My 
 
 ~.githooks/post-commit~ calls the deploy script with a commit message argument derived from the current commit. 
 
-*** Hugo Theme requirements
+**** Hugo Theme requirements
 I've been liking simple themes with a sidebar that takes care of the limited navigation requirements for the course.  Right now the only important extra feature I've been needing is support for fully-formed ~reveal.js~ slideshows.  Most Hugo themes with ~reveal~ support do the parsing themselves -- so they expect to see .md files.  That isn't great for me because the org-mode reveal exports are fairly opinionated, and I'd have to write a bunch of code to produce the md files in the form i want them to have.  And in some cases the md parsers might not produce the right markup anyway.  So, instead I use ~org-reveal~ to export, but filter the css and js values at the end of the process; this gives me a set of complete ~html~ files as output.  To work within the website, these files need to be set inside an iframe, or some other way of scoping css instructions.  SO I always need to write a couple of layout templates for just that purpose, as well as a menu generation method that opens the slideshows i n the right place.  
 
 I'd be happy to have slightly more sophisticated stuff happening here, but I'm not quite there yet.  
 
 
-** Auto exporting
+**** Auto exporting
 These files take advantage of the [[https://ox-hugo.scripter.co/doc/auto-export-on-saving/][auto-export functions]] in ox-hugo. So every time a Hugo source file is saved, the ~.md~ file gets exported to the Hugo site and it can be viewed in a pinned tab in a Hugo process which gets started by ~~/bin/starthugo.sh~, which starts up all the course websites at once.  
 
 See [[https://ox-hugo.scripter.co/doc/auto-export-on-saving/][Kaushal's documentation on auto-exporting]] for hints on how to work this.  
 
-** Hugo Setup 
+**** Hugo Setup 
 #+begin_src sh :tangle setup.sh
 #!/bin/zsh
 # only do this once!
