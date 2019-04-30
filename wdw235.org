@@ -74,18 +74,18 @@ cf. [[http://www.studentlife.utoronto.ca/as][A&S Accessibility Website]]
    :CUSTOM_ID: grading-scheme
    :END:
 
-| *Assignment*                                                                                                                  | *%* | *Due Date*                                                                                      |
-|-------------------------------------------------------------------------------------------------------------------------------+-----+-------------------------------------------------------------------------------------------------|
-| Reflection Portfolio (3)                                                                                                      |  45 | September 20; October 11; November 22                                                           |
-|                                                                                                                               |     |                                                                                                 |
-| Reflections include in-class digital artifacts as well as discussion of course readings.                                      |     |                                                                                                 |
-|                                                                                                                               |     |                                                                                                 |
-| You will work on reflections in class as well as outside class, and you will hand them in via Quercus. 400-500 words maximum. |     |                                                                                                 |
-| Participation                                                                                                                 |  15 | All term long; if you're shy about speaking up in class, you may do longer reflections instead. |
-| Book Story: Consultation                                                                                                      |   2 | October 11-25, in office hours or by appointment                                                |
-| Book Story: Proposal & Annotated Bibliography                                                                                 |   3 | November 2                                                                                      |
-| Book Story: Digital Exhibit                                                                                                   |  35 | November 29                                                                                     |
-| Total                                                                                                                         | 100 |                                                                                                 |
+| *Assignment*                                  | *%* | *Due Date*                                       |
+|-----------------------------------------------+-----+--------------------------------------------------|
+| Participation                                 |  15 | All semester; alternatives.                      |
+| Reflection Portfolio (3)                      |  45 | September 20; October 11; November 22            |
+| Book Story: Consultation                      |   2 | October 11-25, in office hours or by appointment |
+| Book Story: Proposal & Annotated Bibliography |   3 | November 2                                       |
+| Book Story: Digital Exhibit                   |  35 | November 29                                      |
+| Total                                         | 100 |                                                  |
+#+TBLFM: @>$2=vsum(@2..@-1)
+
+- Reflections include in-class digital artifacts as well as discussion of course readings.
+- You will work on reflections in class as well as outside class, and you will hand them in via Quercus. 400-500 words maximum.
 
 * Assignments
    :PROPERTIES:
