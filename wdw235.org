@@ -30,17 +30,13 @@ This year the course focuses on endangered books: /fragile, hidden, censored, fo
 By the end of the course:
 
 - You will be able to describe the history and intellectual landscape of the digital humanities, including the central concepts, debates, projects, and digital tools current in the discipline.
-
 - You will have developed a set of best practices around datasets, project design and management, and data curation.
-
 - You will have analyzed data and digital artifacts as complex cultural objects, shaped by, and shaping, how we live, think, and know.
 
 Through hands-on workshops:
 
 - You will experiment with text encoding, quantitative text analysis, text-based videogames, and Twitter bots as tools of scholarly research
-
 - You will create and analyze data visualizations
-
 - You will research and author your own digital exhibit
 
 * Course Readings & Technologies
@@ -60,7 +56,6 @@ All technologies in this course are free and open-source. You will need access t
 Each week we have three hours of class:
 
 - Two hours of lecture and discussion (classroom time);
-
 - One hour of hands-on workshops and discussion (lab time).
 
 Much of your course work will be done in class, in facilitated environments and hands-on workshops. Given the fast pace and praxis-oriented environment, you must come to class on time, all the time: it is all too easy, otherwise, to get lost. If this poses a problem, please let me know as soon as possible.
