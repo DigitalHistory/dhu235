@@ -20,7 +20,7 @@ Email: [[mailto:alexandra.bolintineanu@utoronto.ca][alexandra.bolintineanu@utoro
 
 Digital Humanities (DH) is a discipline at the intersections of the humanities with computing.  DH studies human culture -- art, literature, history, geography, religion -- through computational tools and methodologies; and, in turn, DH studies digital artifacts through humanist lenses, as complex cultural objects shaped by wider social, political, and philosophical concerns. Digital humanists [[http://www.doe.utoronto.ca][analyze languages through digital text collections]]; [[https://samizdat.library.utoronto.ca/][build digital archives of forbidden books]]; [[http://sites.utm.utoronto.ca/gillespie/content/welcome-book-fame][construct video games to study literature]]; or [[https://decima-map.net/][resurrect historical cities through digital maps]].
 
-This year the course focuses on endangered books:  fragile, hidden, censored, forbidden. We speak to scholars who build archives of forbidden literature. We visit the Thomas Fisher Rare Book Library. We study rare books' histories through digital exhibits. By the end of the course, you will have mastered concepts and technologies you can use in future courses and workplaces:  text encoding and data visualization, data analysis and digital exhibit platforms.  And you will learn how our stories and cultural conversations work and shapeshift through digital environments.  
+This year the course focuses on endangered books: /fragile, hidden, censored, forbidden/. We speak to scholars who build archives of forbidden literature. We visit the Thomas Fisher Rare Book Library. We study rare books' histories through digital exhibits. By the end of the course, you will have mastered concepts and technologies you can use in future courses and workplaces:  text encoding and data visualization, data analysis and digital exhibit platforms. And you will learn how our stories and cultural conversations work and shapeshift through digital environments.
 
 * Learning Goals
    :PROPERTIES:
@@ -65,12 +65,14 @@ Each week we have three hours of class:
 
 Much of your course work will be done in class, in facilitated environments and hands-on workshops. Given the fast pace and praxis-oriented environment, you must come to class on time, all the time: it is all too easy, otherwise, to get lost. If this poses a problem, please let me know as soon as possible.
 
-* Accessibility (*[[http://www.studentlife.utoronto.ca][www.studentlife.utoronto.ca]]/as))*
+* Accessibility 
    :PROPERTIES:
    :CUSTOM_ID: accessibility-www.studentlife.utoronto.caas
    :END:
 
-Students with diverse learning styles and needs are more than welcome in this course. Please feel free to approach me or Accessibility Services so we can assist you in achieving academic success in this course.
+Students with diverse learning styles and needs are more than welcome in this course. Please feel free to approach me or Accessibility Services so we can assist you in achieving academic success in this course. 
+
+cf. [[http://www.studentlife.utoronto.ca/as][A&S Accessibility Website]]
 
 * Grading Scheme
    :PROPERTIES:
