@@ -1,10 +1,13 @@
-* Blank template for Matt Price's courses
+* Course Repository for WDW235: Intro do Digital Humanities (Univ of Toronto)
 
+This repository collects materials related to [[https://fas.calendar.utoronto.ca/course/wdw235h1][the introductory course in the University of Toronto's /Digital Humanities/ program]]. Materials are written and stored in /org-mode
 This repo is an effort to develop standard practices around course deployment. At present my courses don't all conform to this standard, but eventually I hope they will.  By describing my processes here, I hope I will be able to standardize all my courses, write generic (rather than bespoke) deployment scripts, and ease the process of dockerizing my courses to avoid catastrophic failures (as occasionally still occur).  
+
+Most visitors wil want to start with [[./wdw235.org][the syllabus]]. The rest of this README contains some technical notes and is derived from a more detailed document in [[https://github.com/titaniumbones/course-template][this template repository]]
 
 ** Org-mode
 
-All my course materials are written in [[https://org-mode.org][org-mode markup]], a multi-faceted markup format that is similar to [[https://en.wikipedia.org/wiki/Markdown][markdown]], but with a much richer feature set.  Unfortunately it is almost entirely restricted to Emacs users, and perhaps because of that will never gain wide acceptance. For me, though, it remains the best way to write both code and text, and I'm likely to stick with it for the foreseeable future.  
+All of [[https://matt.hackinghistory.ca][my]] course materials are written in [[https://org-mode.org][org-mode markup]], a multi-faceted markup format that is similar to [[https://en.wikipedia.org/wiki/Markdown][markdown]], but with a much richer feature set.  Unfortunately it is almost entirely restricted to Emacs users, and perhaps because of that will never gain wide acceptance. For me, though, it remains the best way to write both code and text, and I'm likely to stick with it for the foreseeable future.  
 - My course syllabus is always a stand-alone document in the top-level directory, which also contains
 - [[./Lectures.org]], a single file with all my lectures
 - [[./Assignments.org]], a single file with all my assignments
@@ -17,6 +20,7 @@ So the whole course structure comprises just a few large files, which I find a c
 ** Export
 I use org-mode's native exporter to produce course documents that need to be distributed in other formats (usually ~.pdf~, ~.docx~, and ~.htm~ or ~.md~). Org's exporter is extremely powerful and flexible, and I use a set of configuration variables, set in the document headers, to control its behaviour. At present I still have stray bits of elisp code in my emacs configuration, but I hope to move that to a central location so its easier to reproduce my build environment.  
 
+The syllabus in particular uses a couple f emacs macros, which render strangely in the otherwise-delightful Github org-mode parser. In the course outline you will see lots o headlines with text like ~{{{ts}}}{{{n}}}~ -- I apologize for this!
 
 ** Websites
 Most of my courses have simple static websites, built by the [[https://gohugo.io][Hugo]] static site generator. Hugo actually supports org-mode files, but not the monolithic files that I prefer to use. So my website build process has a few steps:
@@ -37,20 +41,11 @@ I've been liking simple themes with a sidebar that takes care of the limited nav
 
 I'd be happy to have slightly more sophisticated stuff happening here, but I'm not quite there yet.  
 
-*** ACTION insert the GH address of the source files into the commit message, to make it easier to find them on the web?
 
 ** Auto exporting
 These files take advantage of the [[https://ox-hugo.scripter.co/doc/auto-export-on-saving/][auto-export functions]] in ox-hugo. So every time a Hugo source file is saved, the ~.md~ file gets exported to the Hugo site and it can be viewed in a pinned tab in a Hugo process which gets started by ~~/bin/starthugo.sh~, which starts up all the course websites at once.  
 
-+I need to replicate ~ox-hugo-auto-export~ for ~ox-huveal~,+ which itself is a bit of a disaster and desperately needs rewriting. I have a do-what-i-mean function in my persistent ~**Scratch**~ buffer (copied from Kaushal!) for ox-huveal, and that works fine, but I still need to copy the rest of the infrastructure so I can add it as an ~after-save-hook~, and bundle it up as some kind of a package. I've copied [[https://github.com/kaushalmodi/ox-hugo/blob/master/ox-hugo-auto-export.el][ox-hugo-auto-export]] as ~ox-reveal-auto-export~ and I am now satisfied that it works well.  I'll pointto a gh repo when I have it up somewhere.  See [[https://ox-hugo.scripter.co/doc/auto-export-on-saving/][Kaushal's documentation on auto-exporting]] for hints on how to work this.  
-
-** Simplifying the commit process
-
-I'm hoping that the git post-commit hook included in this repo will make committing a one-stop process -- I just commit to the right branch, after which the deployment just happens automagically.  [[https://www.viget.com/articles/two-ways-to-share-git-hooks-with-your-team/][See this discussion of external git hooks]] for some manual setup that still needs to be done.  Will perhaps be tricky to do this via a dockerfile or whatever, if I eventually manage to dockerize my workflow here, which I hope to do.  
-should be as simple as ~git config core.hooksPath .githooks~ but perhaps that belongs in a makefile or an init file of some kind.  
-
-
-
+See [[https://ox-hugo.scripter.co/doc/auto-export-on-saving/][Kaushal's documentation on auto-exporting]] for hints on how to work this.  
 
 ** Hugo Setup 
 #+begin_src sh :tangle setup.sh
@@ -71,13 +66,3 @@ git submodule add -b master git@github.com:<ORGNAME>/<ORGNAME>.github.io.git pub
 cd $CUR
 #+end_src
 
-** What's left to do?
-
-- [ ] finish up huveal stuff to ease that process
-- [ ] include some documentation about the reveal.js requirements for Hugo themes -- they need to be able to support org-generated reveal content
-- [ ] fix citations & include ~.bibtex~ files in the template
-- [ ] collect stray elisp into a single coherent package
-- [ ] make some kind of meta-repo with all the dependencies included
-- [ ] figure out a safe way to manage Grade files, but maybe also sitll include some of the template code that I use for that sutff.
-- [ ] determine if some kind of Canvas integration is possible.
-  - [ ] for instance, it looks like it's possible to [[https://community.canvaslms.com/docs/DOC-12813][download all submissions for an assignment.]] I'd like to write a [[https://www.ssocircle.com/en/developer-tutorial-saml-testing-using-curl-and-ssocheck-api/developer-tutorial-part-i-a-saml-sso-flow-from-the-command-line-with-curl/][cURL script that authenticates against the servers]] and grabs & unzips the appropriate zip file.  Not sure if that's going to be possible to do or not.  
