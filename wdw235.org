@@ -1,4 +1,8 @@
+#+MACRO: ts (eval(mwp-get-ts+7  'org-mwp-classtimes-calibrate 2))
 #+TITLE: Introduction to Digital Humanities: WDW235H1F
+#+STARTUP: customtime
+#+ORG_LMS_COURSEID: 99251
+# #+IS_PUBLIC: t
 
 * Course Details
    :PROPERTIES:
