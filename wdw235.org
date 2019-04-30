@@ -215,29 +215,20 @@ What are data models and algorithms? We discuss how data models, algorithms, and
 
 ** {{{n}}} ({{{ts}}}) Data 2
 ** {{{n}}} ({{{ts}}}) Data Visualization
-In facilitated workshops, we turn to data visualization of humanities materials, using Jane Austen’s Lady Susan for experimentation ([[https://voyant-tools.org/][Voyant]], [[http://hdlab.stanford.edu/palladio/][Palladio]], [[https://cytoscape.org/][Cytoscape]], [[https://www.tableau.com/][Tableau]]:  text and corpus work, network graphs, mapping, annotation).  Then we analyze the American Library Association’s data on banned books and discuss how we might model, interpret, question, and visualize this data.
+In facilitated workshops, we turn to data visualization of humanities materials, using Jane Austen’s /Lady Susan/ for experimentation ([[https://voyant-tools.org/][Voyant]], [[http://hdlab.stanford.edu/palladio/][Palladio]], [[https://cytoscape.org/][Cytoscape]], [[https://www.tableau.com/][Tableau]]:  text and corpus work, network graphs, mapping, annotation).  Then we analyze the American Library Association’s data on banned books and discuss how we might model, interpret, question, and visualize this data.
 
 *** Readings & Discussion
 - Johanna Drucker, “[[http://www.digitalhumanities.org/dhq/vol/5/1/000091/000091.html][Humanities Approaches to Graphical Display]]” /Digital Humanities Quarterly/ (2011).
 - Miriam Posner, [[https://www.youtube.com/watch?v=sW0u1pNQNxc][Data Trouble: Why Humanists Have Problems with Datavis, and Why Anyone Should Care]] (2016) 
 
-*** Data & Map Visit:  Tableau November 15
+*** ACTION Data & Map Visit:  Tableau November 15
+
 ** {{{n}}} ({{{ts}}}) DV 2
-** {{{n}}} ({{{ts}}}) Retrospective                                            
+continued
+** {{{n}}} ({{{ts}}}) Retrospective
 The last class is a retrospective look at the course. After the term test, students discuss how to use DH approaches and tools on their home discipline. We also discuss how we might apply the course learning outcomes to jobs in the corporate sector: we dissect a job ad from Monster.ca to align students' newly acquired skills with every requirement of that position.
 
-** Oct 25; Nov. 1   | 7, 8      | *Data*      *OpenRefine*                                
-What are data models and algorithms? We discuss how data models, algorithms, and digital platforms inform ways of knowing, learning, and reading. Data as endangered/endangering knowledge.                                                                                  Miriam Posner,  [[http://miriamposner.com/blog/humanities-data-a-necessary-contradiction/][Humanities Data: A Necessary Contradiction]] (2015)
-Rob Kitchin, “Conceptualising Data.” /The Data Revolution: Big Data, Open Data, Data Infrastructures & Their Consequences./
- Further Reading:                                                                                   UofToronto's [[https://onesearch.library.utoronto.ca/researchdata][research data management policies]], including [[https://onesearch.library.utoronto.ca/researchdata/sensitive-data][guidelines on handling sensitive data]] (including de-identification, i.e. anonymizing your data) and on [[https://onesearch.library.utoronto.ca/researchdata/funder-requirements][Canadian funders' data publication requirements]] (two of the three federal funding bodies mandate that data created with gov't funding be made public).                                                                        
-Cathy O'Neil, /Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy/. (2016)
- Safiya Umoja Noble. /Algorithms Of Oppression: How Search Engines Reinforce Racism/. (2018)                                                                                     *Data & Map Visit: OpenRefine October 25 10-1*                                                                                      
-** Nov. 15; Nov. 22  Week 9-10   *Data Visualization*                                                                               
-*Reflection: Voyant, Tableau, and Palladio*
- In facilitated workshops, we turn to data visualization of humanities materials, using Jane Austen's /Lady Susan/ for experimentation (Voyant, Palladio, Cytoscape, Tableau: text and corpus work, network graphs, mapping, annotation). Then we analyze the American Library Association's data on banned books and discuss how we might model, interpret, question, and visualizei this data. 
- /*Readings & Discussion*/                                                                                Johanna Drucker, “[[http://www.digitalhumanities.org/dhq/vol/5/1/000091/000091.html][Humanities Approaches to Graphical Display]]”
- Miriam Posner, [[https://www.youtube.com/watch?v=sW0u1pNQNxc][Data Trouble: Why Humanists Have Problems with Datavis, and Why Anyone Should Care]] (2016)                                                                                      *Data & Map Visit: Tableau November 15*
- Nov. 29          | Week 12   | *Retrospective*                                                                             The last class is a retrospective look at the course. After the term test, students discuss how to use DH approaches and tools on their home discipline. We also discuss how we might apply the course learning outcomes to jobs in the corporate sector: we dissect a job ad from Monster.ca to align students' newly acquired skills with every requirement of that position.   
+   
 * ACTION items 2019
 - [ ] contact Komaromi (samzdat),
 - [ ] contact Rare Book Library (Carefoote),
