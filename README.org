@@ -7,7 +7,6 @@ This repo is an effort to develop standard practices around course deployment. A
 Most visitors will want to start with [[./wdw235.org][the syllabus]]. The rest of this README contains some technical notes and is derived from a more detailed document in [[https://github.com/titaniumbones/course-template][this template repository]]. 
 
 
-
 ** Text formats
 
 Course materials are written in [[https://org-mode.org][org-mode markup]], a multi-faceted markup format that is similar to [[https://en.wikipedia.org/wiki/Markdown][markdown]], but with a much richer feature set.  Unfortunately it is largely restricted to Emacs users, and perhaps because of that will never gain wide acceptance. If you prefer Markdown, the easiest method is probably to install [[https://pandoc.org/][pandoc]] and patch convert all the org files to markdown with 
@@ -16,7 +15,7 @@ for i in *.org; do pandoc -s $i  ${i%.*}.md; done
 #+end_src
 There's likely to be a fair bit of manual clean-up required, though. 
 
-** Repository Stucture
+** Repository Structure
 - Course syllabus is a stand-alone document in the top-level directory. Uses org-mode macros and counters to generate dates and class meeting numbers.
 - [[./Lectures.org]], a single file with all my lectures, ready for export to [[https://revealjs.com/][reveal.js]] using [[https://github.com/yjwen/org-reveal][org-reveal]]
 - [[./Assignments.org]], a single file with all my assignments
