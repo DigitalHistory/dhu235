@@ -9,13 +9,11 @@
    :CUSTOM_ID: course-details
    :END:
 
-Professor Alexandra Bolintineanu
+| Instructor   | Matt Price                                              |
+| Course Hours | MW 10-1                                                 |
+| Office Hours | MW 1-2, Woodsworth College Room 235 (or by appointment) |
+| Email        | [[mailto:alexandra.bolintineanu@utoronto.ca][matt.price@utoronto.ca]] (weekdays 9-5, 48h turnaround)   |
 
-Course Hours: Thursday 10-1
-
-Office Hours: Monday 11-1, Woodsworth College Room 235 (or by appointment)
-
-Email: [[mailto:alexandra.bolintineanu@utoronto.ca][alexandra.bolintineanu@utoronto.ca]] (weekdays 9-5, 48h turnaround)
 
 * Course Description
    :PROPERTIES:
