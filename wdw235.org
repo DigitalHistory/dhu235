@@ -120,7 +120,7 @@ I love hearing from you! *The best way to contact me is to talk to me in person 
    :CUSTOM_ID: due-dates-late-penalties
    :END:
 
-*Assignments*: Assignments are due at the beginning of each class. Late assignments will be penalized two percentage points per day unless you have prior permission from the instructor in writing (email). (Of course, late penalties do not apply when the lateness was caused by illness, bereavement, religious observances, or other serious circumstances outside students' control.)
+*Assignments*: Assignments are due at the beginning of each class. Late assignments will be penalized three percentage points per day unless you have prior permission from the instructor in writing (email). (Of course, late penalties do not apply when the lateness was caused by illness, bereavement, or other serious circumstances outside students' control. For religious observances, please notify instructor before the due date.)
 
 *Weekly Responses (Blog Posts)*: Blog posts about one class are due at the beginning of the following class. If you are late one week, you need to blog about the following week.
 
