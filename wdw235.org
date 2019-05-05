@@ -1,7 +1,13 @@
 #+MACRO: ts (eval(mwp-get-ts+7  'org-mwp-classtimes-calibrate 2))
-#+TITLE: Introduction to Digital Humanities: WDW235H1F
+#+TITLE: WDW235 Syllabus
 #+STARTUP: customtime
 #+ORG_LMS_COURSEID: 99251
+#+HUGO_BASE_DIR: ./website/
+#+HUGO_SECTION: syllabus
+#+EXPORT_FILE_NAME: syllabus
+#+HUGO_STATIC_IMAGES: images
+#+HUGO_MENU: :menu main :weight 10
+#+HUGO_CUSTOM_FRONT_MATTER: :banner "testbanner"
 # #+IS_PUBLIC: t
 
 * Course Details
@@ -13,7 +19,6 @@
 | Course Hours | MW 10-1                                               |
 | Office Hours | MW 1-2  (Locate TBA)                                   |
 | Email        | [[mailto:alexandra.bolintineanu@utoronto.ca][matt.price@utoronto.ca]] (weekdays 9-5, 48h turnaround) |
-
 
 * Course Description
    :PROPERTIES:
@@ -144,7 +149,6 @@ In this course, you will work with texts, objects, and digital artifacts. As you
 
 This syllabus was originally written by [[https://alexandrabolintineanu.wordpress.com/][Alexandra Bolintineanu]], and draws on both Kristen Mapes' /[[http://dx.doi.org/10.17613/M6H34B][Introduction to Digital Humanities, AL285]]/ and on Miriam Posner's /[[http://dh101.humanities.ucla.edu/][DH101: Introduction to Digital Humanities]]/ Fall 2014, UCLA.
 
-
 * Course Overview (Subject to Change)
    :PROPERTIES:
    :CUSTOM_ID: course-overview
@@ -192,7 +196,8 @@ We visit the Thomas Fisher Rare Book Library under the guidance of Tim Stinson, 
 
 *** Data & Map Workshop with Kelly Schultz
 Introduction to data cleaning with [[http://openrefine.org/][OpenRefine]], a powerful data cleaning and transformation tool. 
-** {{{n}}} ({{{ts}}}) NO CLASS TEACHER ABSENT!
+** {{{n}}} ({{{ts}}}) UNSUPERVISED WORK SESSION!
+I'll be away! You are free to use the classroom, though, to make progress on your work. We'll discuss this more as the date gets closer.  
 ** {{{n}}} ({{{ts}}}) Data 2: Data Models for the Humanities
 We back up and ask: what are data models and algorithms? We discuss how data models, algorithms, and digital platforms inform ways of knowing, learning, and reading. Data as endangered/endangering knowledge. 
 
