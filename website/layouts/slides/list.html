@@ -1,0 +1,32 @@
+{{ define "main" }}
+
+{{if .Content}}
+{{ .Content }}
+{{else }}
+{{ $paginator := .Paginator }}
+
+
+<div class="extra-pagination inner">
+  {{ partial "pagination.html" $paginator }}
+</div>
+
+{{ range $index, $page := $paginator.Pages }}
+{{ .Render "li" }}
+
+
+{{ end }}
+
+<div style="margin-bottom:2rem"></div>
+
+{{ partial "pagination.html" $paginator }}
+
+{{end}}
+<ul>
+  {{ range .Data.Pages }}
+  <li>
+    <a href="{{.Permalink}}">{{.File.BaseFileName}}</a>
+  </li>
+  {{ end }}
+</ul>
+
+{{end}}

@@ -1,0 +1,54 @@
+
+baseURL = "https://digitalhistory.github.io/wdw235/"
+# baseURL = "http://digitalhistory.github.io/"
+languageCode = "en-us"
+DefaultContentLanguage = "en"
+
+
+title = "HIS393: Digital History"
+theme = "docdock"
+# themesdir = "../.."
+
+[params]
+editURL = "https://github.com/DigitalHistory/dh-website/content/"
+showVisitedLinks = true # default is false
+themeStyle = "original" # "original" or "flex" # default "original"
+themeVariant = "blue" # choose theme variant "green", "gold" , "gray", "blue" (default)
+ordersectionsby = "weight" # ordersectionsby = "title" or "weight"
+disableHomeIcon = false # default is false
+disableSearch = false # default is false
+disableNavChevron = true # set true to hide next/prev chevron, default is false
+
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
+
+
+[[menu.shortcuts]]
+pre = "<h3>More</h3>"
+name = "<i class='fa fa-camera'></i> Digital Humanities @ U of T"
+url = "https://wdw.utoronto.ca/digital-humanities"
+weight = 11
+
+[[menu.shortcuts]]
+name = "<i class='fa fa-github'></i> Github repo"
+identifier = "ds"
+url = "https://github.com/DigitalHistory/wdw235"
+weight = 12
+
+
+# [[menu.shortcuts]]
+# name = "<i class='fa fa-camera'></i> History Department"
+# url = "http://history.utoronto.ca/"
+# weight = 14
+
+[[menu.shortcuts]]
+name = "<i class='fa fa-bookmark'></i> Hugo Documentation"
+identifier = "hugodoc"
+url = "https://gohugo.io/"
+weight = 20
+
+# [[menu.shortcuts]]
+# name = "<i class='fa fa-bullhorn'></i> Credits"
+# url = "/credits"
+# weight = 30
+
