@@ -153,10 +153,28 @@ This syllabus was originally written by [[https://alexandrabolintineanu.wordpres
 What is “Digital Humanities”? We discuss the range of projects, activities, and concerns of this growing field, and collaboratively survey representative projects from around the world. We discuss DH in relation to the theme of the course, banned books. 
 
 *** Tool Workshop: [[https://twinery.org/][Twine]]
-- How do digital media change possibilities for humanists to express themselves and craft persuasive arguments? We experiment with a popular game-design tool.
+- How do digital media change possibilities for humanists to express themselves and craft persuasive arguments? We experiment via a popular game-design tool.
+** {{{n}}} ({{{ts}}}) The Anatomy of DH Projects
+We discuss the components of digital humanities projects—data, code, tools, platforms, standards and communities of practice—as they manifest across a gallery of projects, living or dead. We investigate success, failure, and sustainability in DH projects. We collaboratively analyze two DH projects, peering “under the hood” of their technical framework and examining their research questions, digital artifacts, user experiences and intended audiences, and disciplinary implications.
+
+*** Readings and Discussion: 
+- Miriam Posner, “[[http://miriamposner.com/blog/how-did-they-make-that/][How Did They Make That?]]” (2013) 
+- Alan Galey & Stan Ruecker, “[[https://doi.org/10.1093/llc/fqq021][How a Prototype Argues]]” (2010) (in-class discussion)
+*** Reflection Handed Out: DH Project Profile
+*Due May 13*
+** {{{n}}} ({{{ts}}}) Endangered Knowledge 1: Rare Books & Digital Archives
+
+The first part of class is devoted to understanding the main course assignment, with some lecture material about *endangered knowledge*
+
+*** Tools Workshop: Omeka
+A *very* brief intro to Omeka, the framework we'll use to build your class projects.
+
+*** Class Outing: Banned and Censored Books
+We visit the Thomas Fisher Rare Book Library under the guidance of Tim Stinson, Cataloguer and Reference Librarian at the Library, and are introduced to the candidate books for your final projects.
+
+*Please Note:* due to an unfortunate scheduling difficulty, our only window for this visit is 12:00-1:30 today. I am hopeful that everyone in the class can stay for this entire period. 
 ** {{{n}}} ({{{ts}}}) Digital Texts: Reading and Writing
 *Endangered ‘book’: oral poetry, cultural memory*
-
 - Kinds of danger, types of responses
 - Using digital methods to discover and highlight new understanding of literary texts
 *** Readings & Discussion: 	 
@@ -165,40 +183,30 @@ What is “Digital Humanities”? We discuss the range of projects, activities, 
 :END:
 - Lisa Samuels and Jerome J. McGann, “[[http://bf4dv7zn3u.search.serialssolutions.com.myaccess.library.utoronto.ca/?ctx_ver=Z39.88-2004&ctx_enc=info%253Aofi%252Fenc%253AUTF-8&rfr_id=info%253Asid%252Fsummon.serialssolutions.com&rft_val_fmt=info%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal&rft.genre=article&rft.atitle=Deformance+and+Interpretation&rft.jtitle=New+Literary+History%253A+a+journal+of+theory+and+interpretation&rft.au=Samuels%252C+Lisa&rft.au=McGann%252C+Jerome&rft.date=1999&rft.issn=0028-6087&rft.eissn=1080-661X&rft.volume=30&rft.issue=1&rft.spage=25&rft.externalDocID=R03182533][Deformance and Interpretation]],” /New Literary History/ 30, No. 1 (Winter, 1999): 25-56. (in-class discussion) 	 
 - Alan Liu, “[[http://www.digitalhumanities.org/companion/view?docId=blackwell/9781405148641/9781405148641.xml&chunk.id=ss1-3-1&toc.depth=1&toc.id=ss1-3-1&brand=9781405148641_brand][Imagining the New Media Encounter]].” A Companion to Digital Literary Studies. Ed. Ray Siemens and Susan Schreibman. Malden, MA: Blackwell, 2007. 3-25
-*** Tool Workshop/reflection Assignment: [[https://tei-c.org/][TEI]]
-- How do digital humanities text analysis tools open new ways of reading literature? We experiment with text encoding
+*** Tool Workshop/Reflection Assignment: [[https://tei-c.org/][TEI]] and The Ruin
+- How do digital humanities text analysis tools open new ways of reading literature? We experiment with text encoding using 
+*Reflection 2 Due May 22*
+** {{{n}}} ({{{ts}}}) NO CLASS VICTORIA DAY
+** {{{n}}} ({{{ts}}}) Data: OpenRefine
+- A special 3-hour workshop with OpenRefine in the Map and Data Library (5th Floor Robarts)
 
-** {{{n}}} ({{{ts}}}) Endangered Knowledge: Rare Books & Digital Archives
-
-We cement our understanding by visiting the Thomas Fisher Rare Book Library under the guidance of P.J. Carefoote, Cataloguer and Reference Librarian, and by building an Omeka exhibit around a digitized rare book.
-** {{{n}}} ({{{ts}}}) Data 
-What are data models and algorithms? We discuss how data models, algorithms, and digital platforms inform ways of knowing, learning, and reading. Data as endangered/endangering knowledge. 
+*** Data & Map Workshop with Kelly Schultz
+Introduction to data cleaning with [[http://openrefine.org/][OpenRefine]], a powerful data cleaning and transformation tool. 
+** {{{n}}} ({{{ts}}}) NO CLASS TEACHER ABSENT!
+** {{{n}}} ({{{ts}}}) Data 2: Data Models for the Humanities
+We back up and ask: what are data models and algorithms? We discuss how data models, algorithms, and digital platforms inform ways of knowing, learning, and reading. Data as endangered/endangering knowledge. 
 
 *** Readings & Discussion:
 - Miriam Posner, [[http://miriamposner.com/blog/humanities-data-a-necessary-contradiction/][Humanities Data: A Necessary Contradiction]] (2015) Accessed April 30, 2019. 
 - Rob Kitchin, “Conceptualising Data.”  /[[http://methods.sagepub.com.myaccess.library.utoronto.ca/book/the-data-revolution][The Data Revolution:  Big Data, Open Data, Data Infrastructures & Their Consequences]]/ (2014) 
 *** Further Reading:
-- UofToronto's [[https://onesearch.library.utoronto.ca/researchdata][research data management policies]], including [[https://onesearch.library.utoronto.ca/researchdata/sensitive-data][guidelines on handling sensitive data]] (including de-identification, i.e. anonymizing your data) and on [[https://onesearch.library.utoronto.ca/researchdata/funder-requirements][Canadian funders' data publication requirements]] (two of the three federal funding bodies mandate that data created with gov't funding be made public).
+- U of T's [[https://onesearch.library.utoronto.ca/researchdata][research data management policies]], including [[https://onesearch.library.utoronto.ca/researchdata/sensitive-data][guidelines on handling sensitive data]] (including de-identification, i.e. anonymizing your data) and on [[https://onesearch.library.utoronto.ca/researchdata/funder-requirements][Canadian funders' data publication requirements]] (two of the three federal funding bodies mandate that data created with gov't funding be made public).
 - Cathy O’Neil, /[[https://search.library.utoronto.ca/search?Ntx=mode%2520matchallpartial&Ntk=Anywhere&N=0&Ntt=%2522weapons%2520of%2520math%2520destruction%2522&Nr=p_work_normalized:ONeil%2520Cathy%2520Weapons%2520of%2520math%2520destruction&uuid=7c23a669-7240-41dc-94d6-592f201cb609][Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy]]/. (2016)
 - Safiya Umoja Noble. /[[https://ebookcentral-proquest-com.myaccess.library.utoronto.ca/lib/utoronto/detail.action?docID=4834260][Algorithms Of Oppression: How Search Engines Reinforce Racism]]/. (2018)
+*** Reflection Assignment: Data Tool Comparison
+*Reflection Due June 03*
 
-
-*** ACTION Data & Map Visit:  OpenRefine October 25 10-1
-
-*** ACTION Tools: OpenRefine
-
-** {{{n}}} ({{{ts}}}) NO CLASS VICTORIA DAY
-** {{{n}}} ({{{ts}}}) Data 2
-** {{{n}}} ({{{ts}}}) NO CLASS TEACHER ABSENT!
-** {{{n}}} ({{{ts}}}) The Anatomy of DH Projects
-We discuss the components of digital humanities projects—data, code, tools, platforms, standards and communities of practice—as they manifest across a gallery of projects, living or dead. We investigate success, failure, and sustainability in DH projects. We collaboratively analyze two DH projects, peering “under the hood” of their technical framework and examining their research questions, digital artifacts, user experiences and intended audiences, and disciplinary implications.
-
-*** Readings and Discussion: 
-- Miriam Posner, “[[http://miriamposner.com/blog/how-did-they-make-that/][How Did They Make That?]]” (2013) 
-- Alan Galey & Stan Ruecker, “[[https://doi.org/10.1093/llc/fqq021][How a Prototype Argues]]” (2010) (in-class discussion)
-*** Reflection: DH Project Profile
-
-** {{{n}}} ({{{ts}}}) Endangered Knowledge
+** {{{n}}} ({{{ts}}}) Endangered Knowledge 2: Theory and Practice
 We examine digital archives, discussing creation, preservation, ethical concerns, relationships with communities, and security and environmental issues raised by cloud computing and machine learning.  We examine UofT’s guidelines around the ethical and technical management of human research data.
 *** Readings & Discussion
 On Resurrections, Risks, Losses
@@ -206,12 +214,12 @@ William Noel, “[[http://www.ted.com/talks/william_noel_revealing_the_lost_code
 Bethany Nowviskie, “[[http://nowviskie.org/2014/anthropocene/][Digital Humanities in the Anthropocene]]”
 Eira Tansey, “[[http://eiratansey.com/2017/05/16/fierce-urgencies-2017/][When the Unbearable Becomes Inevitable: Archives and Climate Change]]” (2017).
 
-
-Visit:  Thomas Fisher Rare Book Library:  October 4, 10-1
-Guest Lecture:  Ann Komaromi, October 18
-*** Tools: Omeka 
-** {{{n}}} ({{{ts}}}) Endangered Knowledge 3
-*** ACTION Guest lecture:  Prof. Ann Komaromi, on samizdat, “a system of uncensored textual production and circulation” in the former Soviet Union.  
+*** Tools Workshop: More Omeka 
+** {{{n}}} ({{{ts}}}) Endangered Knowledge 3: Remembering the Soviet Bloc
+*** Readings & Discussion
+- Browse *extensively* in the [[https://samizdatcollections.library.utoronto.ca/][Project for the Study of Dissidence and Samizdat]]
+*** Special Guest Lecture!
+[[https://alexandrabolintineanu.wordpress.com/][Prof. Alexandra Bolintineanu]] will share some reflections on Samizdat and censorship in late Twentieth Century Romania.  
 ** {{{n}}} ({{{ts}}}) Data Visualization
 In facilitated workshops, we turn to data visualization of humanities materials, using Jane Austen’s /Lady Susan/ for experimentation ([[https://voyant-tools.org/][Voyant]], [[http://hdlab.stanford.edu/palladio/][Palladio]], [[https://cytoscape.org/][Cytoscape]], [[https://www.tableau.com/][Tableau]]:  text and corpus work, network graphs, mapping, annotation).  Then we analyze the American Library Association’s data on banned books and discuss how we might model, interpret, question, and visualize this data.
 
@@ -219,12 +227,11 @@ In facilitated workshops, we turn to data visualization of humanities materials,
 - Johanna Drucker, “[[http://www.digitalhumanities.org/dhq/vol/5/1/000091/000091.html][Humanities Approaches to Graphical Display]]” /Digital Humanities Quarterly/ (2011).
 - Miriam Posner, [[https://www.youtube.com/watch?v=sW0u1pNQNxc][Data Trouble: Why Humanists Have Problems with Datavis, and Why Anyone Should Care]] (2016) 
 
-*** ACTION Data & Map Visit:  Tableau November 15
-
 ** {{{n}}} ({{{ts}}}) DV 2
-continued
+Continuation of previous Session
 ** {{{n}}} ({{{ts}}}) Retrospective
-The last class is a retrospective look at the course. After the term test, students discuss how to use DH approaches and tools on their home discipline. We also discuss how we might apply the course learning outcomes to jobs in the corporate sector: we dissect a job ad from Monster.ca to align students' newly acquired skills with every requirement of that position.
+The last class is a retrospective look at the course. We'll discuss how to use DH approaches and tools in your home disciplines. We also discuss how we might apply the course learning outcomes to jobs in the corporate sector: we dissect a job ad from Monster.ca to align students' newly acquired skills with every requirement of that position.
+
 
    
 * COMMENT Variables
