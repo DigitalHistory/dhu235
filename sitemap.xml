@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://digitalhistory.github.io/wdw235/syllabus/</loc>
+  </url>
+  
+  <url>
+    <loc>https://digitalhistory.github.io/wdw235/_header/</loc>
+    <lastmod>2019-05-04T18:36:24+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://digitalhistory.github.io/wdw235/assignment/participation/</loc>
+    <lastmod>2018-01-04T13:46:26-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://digitalhistory.github.io/wdw235/</loc>
+    <lastmod>2019-05-04T18:36:24+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://digitalhistory.github.io/wdw235/assignment/</loc>
+    <lastmod>2018-01-04T13:46:26-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://digitalhistory.github.io/wdw235/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://digitalhistory.github.io/wdw235/slides/</loc>
+  </url>
+  
+  <url>
+    <loc>https://digitalhistory.github.io/wdw235/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://digitalhistory.github.io/wdw235/tools/</loc>
+  </url>
+  
+  <url>
+    <loc>https://digitalhistory.github.io/wdw235/syllabus/syllabus/</loc>
+  </url>
+  
+</urlset>
