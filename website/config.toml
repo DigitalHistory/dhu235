@@ -10,7 +10,7 @@ theme = "docdock"
 # themesdir = "../.."
 
 [params]
-editURL = "https://github.com/DigitalHistory/dh-website/content/"
+editURL = "https://github.com/DigitalHistory/wdw235/website/content/"
 showVisitedLinks = true # default is false
 themeStyle = "original" # "original" or "flex" # default "original"
 themeVariant = "blue" # choose theme variant "green", "gold" , "gray", "blue" (default)
