@@ -71,52 +71,10 @@ We will *definitely* be taking time to discuss tomorrow's readings in class, so 
 - Miriam Posner's [[http://miriamposner.com/blog/how-did-they-make-that/][blog post]] discusses a number of projects -- please be sure to follow the (many) links whenever you can (some of them have aged a bit and are broken). Think about where your own interests lie.
 - Ruecker & Galey's piece interweaves a numbrer of themes.  You yourself may not be especially interested in "how DH project should count when someone comes up for tenure", which is clearly one motivation of the essay, but the other themes will be relevant to many of you. You may find it a bit complex or convoluted, but please persevere.  You may find the going easier if you think about the following:
   - The discussion of design (pp. 405-07 and throughout) in many ways hinges on Winner's arguments in "Do Artifacts Have Politics", discussed on p. 406 and 407. Do you best to understand the main points. 
-  - How should we understand the criteria for compelling arguments, which they summarize as "contestability, defensability, and substantivity" (p.412ff)?
+  - How should we understand the criteria for compelling arguments, which they summarize as "contestability, defensibility, and substantivity" (p.412ff)?
   - What do the authors mean when they suggest that digital objects can "reify an argument" (p.414)?
   - the [[http://www.textarc.org/PrintEditions.html][original TextArc]] is no longer live but [[http://vallandingham.me/textarc/][this cool partial replica]] can still be found ([[https://github.com/vlandham/textarc][code here]]) 
-* Updates!
-:PROPERTIES:
-:ORG_LMS_ANNOUNCEMENT_ID: 192186
-:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/71671/discussion_topics/192186
-:ORG_LMS_POSTED_AT: 2019-01-10T18:52:56Z
-:END:
-
-Please see MANY updates on the website, including links for 
-- [[https://digitalhistory.github.io/dh-website/slides/01-1-git-and-github/][lecture slides for today]]
-- [[https://digitalhistory.github.io/dh-website/assignment/00-git/][Asignment 0 info]]
-- [[https://digitalhistory.github.io/dh-website/tools/][several new help docs!]]
-
-Please check them out! And also: sign up for slack, you'll beneeding it soon!
-
-
-* Slack contributions
-
-** DOM Pt 1: building progressively
-
-@channel: 
-
-I've been noticing that people aren't necessarily picking up on what I intended to be the *cumulative* character of the assignment.  In particular, in part 1, it is possible to write all the functions without reference to any of the others; but it is *substantially easier* to use ~tagIt()~ inside of ~personRow~ and ~personRow()~ inside of ~peopleRows~. Doing things this way will help you think of each of these processes as fundamentally *iterative*: you are repeating a number of tasks. It is tedious in the extreme to write out HTML by hand.  One big advantage to using JS is that you no longer have to actually write much HTML.
-
-Again, you don't have to do htings my way to pass the assignment. But you may well be glad to put the extra effort in at this stage, as thinking this way will make things easier for you later on.  
-
-
-** explaingin empty json 
-
-*Long, Technical discussion*: all programming languages make their own decisions about what counts as "true" and "false". In JS, people often talk about values as "truthy" or "falsy" (with apologies to Stephen Colbert). By default, all of these are "falsy": ~false~, ~null~, ~""~, ~0~.  The script in =index.html= that generates the cards performs only a very simple test to see if a value exists, e.g' ~var spString = (s.superpower ) ? s.superpower : '';~ . 
-
-This is very hard to read, but it means "Set the variable ~spString~ in the following way: if the josn object attribute ~superpower~ is truthy, then set it to the value of  ~superpower~; otherwise set it to the empty string".  Since both the empty string and a non-existent property are "falsy", the code will not distinguish between those two scenarios. 
-
-Not sure if that will really help you here, but it might come in handy later in the course.
-
-The blank space *won't work* because this is not valid JSON: 
-#+begin_src 
-"superpower":
-"someotherattribute": "value",
-#+end_src
-
-** 
-
-* get student list (for GH roster)
+* COMMENT get student list (for GH roster)
 
 #+begin_src emacs-lisp
 (let* ((students 
@@ -134,5 +92,3 @@ The blank space *won't work* because this is not valid JSON:
   )
 #+end_src
 
-#+RESULTS:
-| Rakan Al Nemri | Chloe Bray | Saaged Diab | Ezra Fleisch | Zorah Freeman-McIntyre | Aidan Gowland | Lucy Guo | Erin Holliday | Xi Huang | Keating Johnston | Raja Khan | Eric Lee | Xinyi Luo | Marisa Martel Oh | Edwin Pau | Ahmed Shahab | Min Shin | Paola Shushkovsky | Salina Suri | Rohail Talpur | Harry Twyford | Jackson Whitehead | Ingrid Wong |
