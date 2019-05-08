@@ -50,20 +50,11 @@ You may select any project you like from the syllabus or from one of the pages b
     
     <item>
       <title></title>
-      <link>https://digitalhistory.github.io/wdw235/slides/lectures/</link>
+      <link>https://digitalhistory.github.io/wdw235/slides/02-anatomy-dh-projects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://digitalhistory.github.io/wdw235/slides/lectures/</guid>
+      <guid>https://digitalhistory.github.io/wdw235/slides/02-anatomy-dh-projects/</guid>
       <description>02: Anatomy of DH Projects .underline { text-decoration: underline; }   if( window.location.search.match( /print-pdf/gi ) ) { var link = document.createElement( &#39;link&#39; ); link.rel = &#39;stylesheet&#39;; link.type = &#39;text/css&#39;; link.href = &#39;../../vendor/reveal//css/print/pdf.css&#39;; document.getElementsByTagName( &#39;head&#39; )[0].appendChild( link ); }     Today  How do we Think about Technology? Very Basic Design Parameters Data and Data Models Assignment 1      Why &amp;ldquo;Anatomy of DH&amp;rdquo;?</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://digitalhistory.github.io/wdw235/slides/t-i-p/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://digitalhistory.github.io/wdw235/slides/t-i-p/</guid>
-      <description>Technology-in-practice (Wanda Orlikowski) .underline { text-decoration: underline; }   if( window.location.search.match( /print-pdf/gi ) ) { var link = document.createElement( &#39;link&#39; ); link.rel = &#39;stylesheet&#39;; link.type = &#39;text/css&#39;; link.href = &#39;../../vendor/reveal//css/print/pdf.css&#39;; document.getElementsByTagName( &#39;head&#39; )[0].appendChild( link ); }           // Full list of configuration options available here: // https://github.com/hakimel/reveal.js#configuration Reveal.initialize({ controls: true, progress: true, history: true, center: false, slideNumber: &#39;c / t&#39;, rollingLinks: false, keyboard: true, overview: true, width: &#34;</description>
     </item>
     
     <item>
