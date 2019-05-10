@@ -822,18 +822,126 @@ Data: accessible, usable, readable, preservable
 [[file:images/hello-world-round.png]]
 
 
+
+** Simple DOT diagram
+  :PROPERTIES:
+  :CUSTOM_ID: humanities-data
+  :END:
+
+  #+begin_src dot :file ./images/test-dog.svg :exports results
+  digraph D {
+  node [shape=box,style="filled,rounded",color="turquoise", fontname = "helvetica", fontsize=18];
+  edge [fontname = "helvetica"];
+  H [label="Humanities"]
+  C [label="Computing \n Tools and \n Methodologies"]
+  splines = curved; 
+  { rank = same; H; C; }
+  H -> C
+  C -> H
+  }
+
+  #+end_src
+
+  #+RESULTS:
+  [[file:./images/test-dog.svg]]
+
+** Simple PlantUML diagram
+
+#+begin_src plantuml :file hum-cs-interface-test.svg
+skinparam ArrowColor red
+skinparam backgroundColor #EEEBDC
+skinparam handwritten true
+skinparam defaultFontSize 30
+skinparam sequenceArrowThickness 20
+skinparam defaultArrowThickness 20
+
+
+skinparam sequence {
+ArrowColor Magenta
+ActorBorderColor DeepSkyBlue
+LifeLineBorderColor blue
+LifeLineBackgroundColor #A9DCDF
+ParticipantBorderColor DeepSkyBlue
+ParticipantBackgroundColor DodgerBlue
+ParticipantFontName Impact
+ParticipantFontSize 25
+ParticipantFontColor #A9DCDF
+ActorBackgroundColor aqua
+ActorFontColor DeepSkyBlue
+ActorFontSize 17
+ActorFontName Aapex
+}
+
+
+node "Humanities" as H #DeepSkyBlue
+node "Computing\n Tools and\n Methodologies" as N #DeepSkyBlue
+
+N =l=> H
+H =r=> N
+
+#+end_src
+
+
+#+RESULTS:
+[[file:hum-cs-interface-test.svg]]
+
+
+
+
+** Latext diagrams
+#+begin_src latex :exports results :file latex-dh.png
+\begin{tikzpicture}[node distance=4cm,minimum size=2cm]
+  \node[draw,fill=blue!20!white] (humanities) {Humanities};
+  \node[draw,fill=blue!20!white] (tools) [right of=humanities] {\parbox{3cm}{Computing \\ Tools and \\ Methodologies}}
+  edge [->,out=270,in=270,very thick,red] (humanities)
+  edge [<-,out=90,in=90,very thick,red] (humanities);
+\end{tikzpicture}
 #+end_src
 
 #+RESULTS:
-: 01-topic-1.html
-
-** some stuff
-
-** another stuff
+#+begin_export latex
+[[file:latex-dh.svg]]
+#+end_export
 
 
-* Topic 2
+[[file:latex-dh.svg]]
+
+
+#+HEADER: :headers '("\\usepackage{tikz}")
+#+BEGIN_SRC latex :fit yes :file latex.png :imagemagick yes :iminoptions -density 600 
+\begin{tikzpicture}
+\draw[red] (0,0) circle (1cm);
+\end{tikzpicture}
+#+END_SRC
+
+#+RESULTS:
+#+begin_export latex
+[[file:latex.png]]
+#+end_export
+
+
+* Technology-in-practice (Wanda Orlikowski)
+:PROPERTIES:
+:EXPORT_FILE_NAME: t-i-p
+:END:
+
+#+begin_src  dot :file ./images/tech-in-practice.svg :exports results
+digraph {
+bgcolor="#ffffff00" # RGBA (with alpha)
+node [shape=box,style="filled,rounded",color=".7 .3 1.0"];
+"Data + Software" -> "Technology in Practice"
+"Technology in Practice" -> "Institutional concerns & Constraints"
+"Technology in Practice" -> "Disciplinary scholarly community"
+}
+#+end_src
+
+#+RESULTS:
+[[file:./images/tech-in-practice.svg]]
+
 * COMMENT Local Variables                          
+:PROPERTIES:
+:CUSTOM_ID: local-variables-96d6
+:END:
 # Local Variables:
 # org-reveal-auto-export-on-save: t
 # End:
