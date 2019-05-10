@@ -87,6 +87,41 @@ This project profile is not an essay; it is a short, 1-2 page report. You do not
 This assignment is based on the [[https://dmptool.org/][DMP Tool]], the U of T DH Census Profile tool, and [[https://docs.google.com/document/d/1jp0bQ18hXKxekgACfBCw_6P6lO_xg4uzUXXMvT2jaPo/edit][Kristen Mapes]]' DH Project Critique assignment.
 
 * Reflection 02: 
+
+* Reflection 03: Data visualization Comparison
+:PROPERTIES:
+:EXPORT_FILE_NAME: reflection-3-data-visualization
+:PUBLISH:  t
+:DUE_AT: 2019-06-03
+:GRADING_TYPE: letter_grade
+:ASSIGNMENT_TYPE: canvas
+:ASSIGNMENT_WEIGHT: 0.15
+:CANVAS_SUBMISSION_TYPES: (online_upload)
+:OL_PUBLISH: t
+:BASECOMMIT: none
+:GRADING_STANDARD_ID: nil
+:CANVASID: 169214
+:CANVAS_HTML_URL: https://q.utoronto.ca/courses/99251/assignments/169214
+:CANVAS_SUBMISSION_URL: https://q.utoronto.ca/courses/99251/assignments/169214/submissions?zip=1
+:SUBMISSIONS_DOWNLOAD_URL: https://q.utoronto.ca/courses/99251/assignments/169214/submissions?zip=1
+:END:
+
+*Please download the template document, which can be found in the files section of Quercus, which will make it easier to fill in the form.  If you prefer to write in another format, (such as markdown) that is fine too.*
+
+
+Using the following table, compare and contrast two of the data visualization tools we have used in this course: Tableau, Voyant, Palladio. Think about the Drucker, Nowviskie, and Posner readings, especially with respect to the Assumptions category!
+
+| /Tool/Platform/                                 |   |   |
+|-------------------------------------------------+---+---|
+| *Brief Description*                             |   |   |
+| *Data: nature, format, & other characteristics* |   |   |
+| *Output*                                        |   |   |
+| *User Experience*                               |   |   |
+| *User Base*                                     |   |   |
+| *Use Cases*                                     |   |   |
+| *Assumptions about Knowledge (Input, Output)*   |   |   |
+
+
 * Paper Assignment 1
 * COMMENT Local Variables                          
 # Local Variables:
