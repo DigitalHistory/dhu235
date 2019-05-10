@@ -80,13 +80,13 @@ Now, I am able to access the images in the manuscript online---anytime, from my 
 #+end_notes
 
 
-** Dictionary of Old English
+*** Dictionary of Old English
   :PROPERTIES:
   :CUSTOM_ID: dictionary-of-old-english
   :style: page-break-before:always; 
   :END:
 [[./images/doe-a-to-i-20190505.png]]
-** Analysis & Interpretation
+*** Analysis & Interpretation
   :PROPERTIES:
   :CUSTOM_ID: analysis-interpretation
   :style: page-break-before:always; 
@@ -102,7 +102,7 @@ Now, I am able to access the images in the manuscript online---anytime, from my 
 
 [[./images/h-data-types-graphic.png]]
 
-** Humanities' Data
+*** Humanities' Data
 :PROPERTIES:
 :CUSTOM_ID: humanities-data-1
 :style: page-break-before:always; 
@@ -123,7 +123,7 @@ Sergiev Posad Museum of Toys, Russia, Public Domain, https://commons.wikimedia.o
 
 
 
-** Data and "Capta"
+*** Data and "Capta"
 :PROPERTIES:
 :CUSTOM_ID: data-in-medieval-studies
 :style: page-break-before:always; 
@@ -142,7 +142,7 @@ Sergiev Posad Museum of Toys, Russia, Public Domain, https://commons.wikimedia.o
 
 [[./images/dh-timeline.png]]
 
-** Father Roberto Busa, S. J. (1913-2011)
+*** Father Roberto Busa, S. J. (1913-2011)
 :PROPERTIES:
 :CUSTOM_ID: father-roberto-busa
 :END:
@@ -159,7 +159,7 @@ https://blog.gale.com/wp-content/uploads/2016/05/busa1.jpg
 @@html:</div>@@
 
 
-** Father Busa's Female Punch Card Operators
+*** Father Busa's Female Punch Card Operators
 :PROPERTIES:
 :CUSTOM_ID: punch-1
 :END:
@@ -170,7 +170,7 @@ From Father Busa's archive. CIRCSE Research Centre, Università Cattolica del Sa
 #+ATTR_HTML: :class paired
 https://melissaterras.files.wordpress.com/2013/10/728a0-0028.jpg
 
-** Father Busa and the /Index Thomisticus/
+*** Father Busa and the /Index Thomisticus/
 :PROPERTIES:
 :CUSTOM_ID: father-busa-and-the-index-thomisticus
 :END:
@@ -216,25 +216,25 @@ https://melissaterras.files.wordpress.com/2013/10/728a0-0028.jpg
 :CUSTOM_ID: digital-editions-archives-narratives
 :END:
 
-** Folger: Shakespeare Library
+*** Folger: Shakespeare Library
 :PROPERTIES:
 :CUSTOM_ID: folger-shakespeare-library
 :END:
 [[./images/folger.png]]
 
-** Shelley-Godwin Archive
+*** Shelley-Godwin Archive
 :PROPERTIES:
 :CUSTOM_ID: shelley-godwin-archive
 :END:
 [[./images/shelley-g.png]]
 
-** The Archimedes Palimpsest: Multispectral Imaging
+*** The Archimedes Palimpsest: Multispectral Imaging
 :PROPERTIES:
 :CUSTOM_ID: the-archimedes-palimpsest-multispectral-imaging
 :END:
 [[./images/a-palimpset.jpg]]
 
-** Infinite Ulysses: interactive reader's edition by Amanda Visconti
+*** Infinite Ulysses: interactive reader's edition by Amanda Visconti
 :PROPERTIES:
 :CUSTOM_ID: infinite-ulysses-interactive-readers-edition-by-amanda-visconti
 :END:
@@ -245,7 +245,7 @@ https://melissaterras.files.wordpress.com/2013/10/728a0-0028.jpg
 :CUSTOM_ID: maps-visualizations-interpretations
 :END:
 
-** Mapping Medieval Chester
+*** Mapping Medieval Chester
 :PROPERTIES:
 :CUSTOM_ID: mapping-medieval-chester
 :END:
@@ -254,7 +254,7 @@ https://melissaterras.files.wordpress.com/2013/10/728a0-0028.jpg
 - Digital advantage: interactive, layered, & transparent
 [[./images/chester.png]]
 
-** Mapping Homer's Catalogue of Ships
+*** Mapping Homer's Catalogue of Ships
 :PROPERTIES:
 :CUSTOM_ID: mapping-homers-catalogue-of-ships
 :END:
@@ -267,7 +267,7 @@ Mapping the towns in Homer's Catalogue of Ships to analyze underlying organizing
 @@html:</div>@@
 
 
-** Project DECIMA
+*** Project DECIMA
 :PROPERTIES:
 :CUSTOM_ID: project-decima
 :END:
@@ -277,12 +277,12 @@ University of Toronto, History Dept.
 Onto a 16th century map of Florence, DECIMA maps census data about Florence's inhabitants, their occupations, wealth, and daily life.
 
 [[./images/decima.png]]   
-** ToposText: Ancient Texts + Maps
+*** ToposText: Ancient Texts + Maps
 :PROPERTIES:
 :CUSTOM_ID: topostext-ancient-texts-maps
 :END:
 [[./images/ttext.png]]
-** Mapping Ararat
+*** Mapping Ararat
 :PROPERTIES:
 :CUSTOM_ID: mapping-ararat
 :END:
@@ -294,7 +294,7 @@ Onto a 16th century map of Florence, DECIMA maps census data about Florence's in
 
 Scholarly Writings, Public Engagement, Social Media, Teaching & Collaboration
 
-** Scholarly Books: The Networked Monograph
+*** Scholarly Books: The Networked Monograph
 :PROPERTIES:
 :CUSTOM_ID: scholarly-books-the-networked-monograph
 :END:
@@ -307,7 +307,7 @@ Digitally augmented scholarly monographs (e.g. Mellon-funded collaboration betwe
 [[./images/n-monograph.jpg]]
 @@html:</div>@@
 
-** VR/3D Printing for Cultural Heritage Collections: [[http://boxwood.ago.ca/][Small]] [[https://www.youtube.com/watch?v=Mc4MA8srQDM][Wonders]] (AGO)
+*** VR/3D Printing for Cultural Heritage Collections: [[http://boxwood.ago.ca/][Small]] [[https://www.youtube.com/watch?v=Mc4MA8srQDM][Wonders]] (AGO)
 :PROPERTIES:
 :CUSTOM_ID: vr3d-printing-for-cultural-heritage-collections-small-wonders-ago
 :END:
@@ -316,7 +316,7 @@ Digitally augmented scholarly monographs (e.g. Mellon-funded collaboration betwe
 - Studied and exhibited through digital imaging (micro CAT scanning), VR, and 3D printing
 [[./images/small-wonders.jpg]]
 
-** Research Materials: Medieval Manuscripts and Social Media
+*** Research Materials: Medieval Manuscripts and Social Media
 :PROPERTIES:
 :CUSTOM_ID: research-materials-medieval-manuscripts-and-social-media
 :END:
@@ -336,7 +336,7 @@ Heather Eason: five artists' representations of threshold crossings in Dante's 
 
 #+end_notes
 
-** Collaboration & Infrastructures
+*** Collaboration & Infrastructures
 :PROPERTIES:
 :CUSTOM_ID: collaboration-infrastructures
 :END:
