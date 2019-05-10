@@ -31,6 +31,7 @@
 :EXPORT_FILE_NAME: 01-intro
 :CUSTOM_ID: 01-dh--an-introduction-a964
 :END:
+
 ** Today
 :PROPERTIES:
 :CUSTOM_ID: today-6959
@@ -358,18 +359,469 @@ Heather Eason: five artists' representations of threshold crossings in Dante's 
 
 [[https://twinery.org/2/][Now Build Your Own Stories]]
 
-* Topic 1
+* 02: Anatomy of DH Projects
 :PROPERTIES:
-:EXPORT_FILE_NAME: 01-topic-1
-:CUSTOM_ID: topic-1-177b
+:EXPORT_FILE_NAME: 02-anatomy-dh-projects
 :END:
 
-testing out the overview
- 
+**  Today
+- How do we Think about Technology?
+- Very Basic Design Parameters
+- Data and Data Models
+- Assignment 1
+
+** Why "Anatomy of DH"?
+- Design & evaluation of DH projects specifically
+- Design & evaluation of projects (digital and otherwise) more generally
+- Understanding of knowledge production in digital environments
+
+***  DH pipelines
+[[./images/dh-arrow.svg]]
+
+*** Tools & Technologies
+https://imgs.xkcd.com/comics/tasks_2x.png
+
+*** Technology in DH
+- New or existing? Software ecology?
+- Open-source?
+  - GNU General Public License (GPL):  source code for an application is freely available for study & modification– “as long as further developments and applications are put under the same licence
+- Widely adopted? By your colleagues/ collaborators?
+- User base: humanities? Industry? Institutions?
+- Prerequisites:  
+  - Data formats
+  - Tech stack (other software)
+  - Server space
+  - Training
+
+*** Choosing a Tool
+[[./images/dh-tool-decisions.png]]
+
+*** Affordances
+#+begin_quote
+Affordances of a technology = properties of a technology that enable certain tasks; tasks that users can perform with a technology (e.g. query, search, analysis, visualization)
+  - [[http://www.oed.com.myaccess.library.utoronto.ca/view/Entry/263548?redirectedFrom=affordance&][OED]], Accessed <2019-05-06 Mon>
+#+end_quote
+#+begin_quote
+2002 /[[https:/newyorker.com][New Yorker]]/ 25 Mar. 93/1 Digital documents..have their own affordances. They can be easily searched, shared, stored, accessed remotely... But they lack the affordances that really matter to a group of people working together.
+
+#+end_quote
+
+** Users, Readers, Communities
+
+*** COMMENT Technology-in-practice (Wanda Orlikowski)
+#+begin_src  dot :file ./images/tech-in-practice-1.svg :exports results
+digraph {
+bgcolor="#ffffff00" # RGBA (with alpha)
+node [shape=box,style="filled,rounded",color="black",fillcolor="#356abf",fontcolor="white",fontname="Liberation Sans", fontsize=25, margin=0.5, penwidth=3];
+edge [arrowhead="none", color="#356abf", penwidth=3];
+U [label="User Community"];
+T [label="Technology in Practice"];
+O [label="Organizational\n Culture"];
+T2 [label="Technology\n\n"];
+U -> T;
+T -> O;
+T -> T2;
+}
+#+end_src
+
+#+RESULTS:
+[[file:./images/tech-in-practice.svg]]
+
+*** Technology-in-practice (Wanda Orlikowski)
+:PROPERTIES:
+:ID:       t-i-p-2
+:END:
+
+#+begin_quote
+The notion of “technology-in-practice” suggests that the technology is not just the machinery, digital or analog, but on the one hand @@html:<span style="color:red;">the organizational or institutional culture around it,@@ and on the other hand, @@html:<span style="color:red;">the needs and practices of its user community@@. Organizational culture and user community create a “behavioural and interpretive template” for the use of a technology. 
+
+Technology-in-practice:  not only the technology itself, but “the ways it is extended, adapted, used, and misused by a specific user community—whether by ignoring an entire set of functions, or by extending its functionality through plugins or customizations, or by using it for purposes never foreseen by its designers. More briefly, technology-in-practice is “@@html:<span style="color:red;">what people actually do with the technological artifact in their recurrent, situated practices@@.” 
+
+(Orlikowski, Wanda J. “[[https:/@@html:<span style="color:red;">/www.jstor.org/stable/2640412][Using Technology and Constituting Structures: A Practice Lens for Studying Technology in Organizations]].” /Organization Science/, vol. 11, no. 4, 2000, pp. 404–428.)
+#+end_quote
+
+*** Technology-in-practice (DH)
+:PROPERTIES:
+:EXPORT_FILE_NAME: t-i-p-dh
+:END:
+DH:  technology-in-practice is software and data as used by scholarly communities of practice, within institutional and disciplinary concerns and constraints, in conversation with audiences.
+
+
+*** Technology-in-practice 
+:PROPERTIES:
+:EXPORT_FILE_NAME: t-i-p-3
+:END:
+
+#+begin_src  dot :file ./images/tech-in-practice2.svg :exports results
+digraph {
+bgcolor="#ffffff00" # RGBA (with alpha)
+node [shape=box,style="filled,rounded",color="white",fillcolor="#356abf",fontcolor="white",fontname="Liberation Sans", fontsize=25, margin=0.5, penwidth=3];
+D [label="Data + Software"]
+T [label="Technology in Practice"]
+D -> T
+T -> "Institutional concerns \n& Constraints"
+T -> "Disciplinary scholarly \ncommunity"
+}
+#+end_src
+
+#+RESULTS:
+[[file:./images/tech-in-practice2.svg]]
+
+*** Users and Intended Audiences
+#+begin_quote
+[E]ven doorknobs have politics in that they may be round, requiring a human hand to turn them, or shaped as levers, such that a person with a prosthetic limb or an armload of groceries with one free elbow can still successfully use them. This is more than simply a matter of utility. Both designs are political in that they presume and construct different kinds of worlds, with the round doorknob presuming a world in which everyone’s bodies are the same, and in which hands with opposable thumbs and sufficient grip strength are always available (Galey, Alan, and Stan Ruecker. “How a Prototype Argues.” /Literary and Linguistic Computing/ 25.4 (2010): 405-24. Web. 6 Feb. 2017.
+
+#+end_quote
+*** What groups of users/readers are invited in?  What groups of users/readers are shut out?  
+Consider:  
+- [ ] expertise & interest; scholars & laypersons
+- [ ] use of e.g. assistive technologies like screen readers, speech recognition, close captioning, etc.
+- [ ] level of technical training (or lack of it)
+- [ ] limited access to (powerful) computers
+- [ ] limited internet bandwidth
+- [ ] Tradeoffs & compromises
+
+
+*** User Experience, Interfaces, & Display
+  :PROPERTIES:
+  :CUSTOM_ID: user-experience-interfaces-display
+  :style: page-break-before:always; 
+  :END:
+
+- UX (user experience) & usability testing
+- User stories: descriptions, from a user's perspective, of a tool: who they are, what they want the tool to do, in what order...
+
+** Data
+
+
+*** Humanities Data
+:PROPERTIES:
+:CUSTOM_ID: humanities-data-0
+:END:
+
+[[./images/h-data-types-graphic.png]]
+
+*** Humanities Data
+  :PROPERTIES:
+  :CUSTOM_ID: humanities-data-1
+  :END:
+
+| Unstructured   | A corpus of literary texts       |
+| Semistructured | TEI-encoded text                 |
+| Structured     | Spreadsheet of catalogue entries |
+|                | GIS data of locations on a map   |
+
+*** Humanities Data: Unstructured
+  :PROPERTIES:
+  :CUSTOM_ID: humanities-data-unstructured
+  :END:
+[[./images/mandeville-cover-page.png]]
+*** Humanities Data: Semi-structured
+  :PROPERTIES:
+  :CUSTOM_ID: humanities-data-semi-structured
+  :style: page-break-before:always; 
+  :END:
+
+  #+begin_src xml
+  <msDesc>
+    <msIdentifier>
+      <settlement>Oxford
+      </settlement>
+      <repository>Bodleian Library
+      </repository>
+      <idno>MS. Add. A. 61
+      </idno>
+    </msIdentifier>
+    <msContents>
+      <p>
+        <quote>Hic incipit Bruitus Anglie,
+        </quote> the
+        <title>De origine et gestis  Regum Angliae
+        </title> of Geoffrey of Monmouth (Galfridus Monumetensis): beg.
+        <quote>Cum mecum multa &amp; de multis.
+        </quote> In Latin.
+      </p>
+    </msContents>
+    <physDesc>
+      <p>
+        <material>Parchment
+        </material>: written in more than one hand: 7¼ x 5⅜ in., I + 55 leaves, in double columns: with a few coloured capitals.
+      </p>
+    </physDesc>
+  </msDesc>
+  
+  #+end_src
+
+*** Humanities Data: Structured
+  :PROPERTIES:
+  :CUSTOM_ID: humanities-data-structured
+  :END:
+[[./images/dc-ss-list.png]]
+*** Humanities Data
+  :PROPERTIES:
+  :CUSTOM_ID: humanities-data-3
+  :END:
+
+- “Big? Smart? Clean? Messy?” (Christof Schöch)
+- “Computationally tractable” (Miriam Posner)
+
+*** 
+  :PROPERTIES:
+  :CUSTOM_ID: section-3
+  :END:
+[[./images/data-oed.png]]
+*** Humanities Data:
+  :PROPERTIES:
+  :CUSTOM_ID: humanities-data-4
+  :END:
+
+- What “counts” cannot necessarily be counted
+- Data representation = interpretation:
+  - The process of modelling and collecting our data is an interpretive process that is shaped by our choices re. what aspects of the data we model; by our research question, argument, perspective, discipline, social context, institutional context, tools available etc.
+
+*** Humanities Data: Drucker
+  :PROPERTIES:
+  :CUSTOM_ID: humanities-data-drucker
+  :END:
+
+- *Sciences* vs. *humanities*: “assumptions of *knowledge as observer-independent and certain*, rather than *observer co-dependent and interpretative*. [...] To begin, the concept of *data as a given* has to be rethought through a humanistic lens and characterized as *capta, taken and constructed*.” (Johanna Drucker, “Humanities Approaches to Graphical Display.”)
+
+*** Humanities Data: Posner
+  :PROPERTIES:
+  :CUSTOM_ID: humanities-data-posner
+  :END:
+It would be possible to enumerate all of the filmic conventions that recall the conventions of melodrama. Is there a villain? Is there a heroine? Are good and evil depicted in stark, black-and-white terms? You could even build a dataset like this and use it to show how film changed over time.
+| Title                 | Year | Virtuous Heroine | Cruel Villain | Terrible evil | Heroine in peril | Broad gestures |
+| The Lonedale Operator | 1911 | x                | x             | x             | x                | x              |
+| Birth of a Nation     | 1915 | x                | x             | x             | x                | x              |
+| Get Rick Quick        | 1912 | x                |               |               |                  | x              |
+But, seriously, who cares? There’s just such a drastic difference between the richness of the actual film and the data we’re able to capture about it.
+*** Humanities Data: Posner
+  :PROPERTIES:
+  :CUSTOM_ID: humanities-data-posner-1
+  :END:
+
+- “When you call something data, you imply that it exists in discrete, fungible units; that it is computationally tractable; that its meaningful qualities can be enumerated in a finite list; that someone else performing the same operations on the same data will come up with the same results. This is not how humanists think of the material they work with.” ([[http://miriamposner.com/blog/humanities-data-a-necessary-contradiction/][http://miriamposner.com/blog/humanities-data-a-necessary-contradiction/]])
+
+
+*** Humanities' Data
+:PROPERTIES:
+:CUSTOM_ID: humanities-data-10
+:style: page-break-before:always; 
+:END:
+
+#+begin_quote
+Humanities data has depth in small universes. Our material has the capacity to unfold inwards, as it were, to disclose layer upon layer of insights and connections, within a comparatively tiny amount of data--almost an inverse matryoshka, as it were, where each inner doll is bigger and more complex than the one encasing it.
+#+end_quote
+
+@@html:<div class="paired fragment appear">@@
+https://upload.wikimedia.org/wikipedia/commons/4/41/Floral_matryoshka_set_2_smallest_doll_nested.JPG
+
+BrokenSphere, https://commons.wikimedia.org/w/index.php?curid=3773186
+
+@@html:</div><div class="paired fragment appear">@@
+https://upload.wikimedia.org/wikipedia/commons/3/3d/First_matryoshka_museum_doll_open.jpg
+
+Sergiev Posad Museum of Toys, Russia, Public Domain, https://commons.wikimedia.org/w/index.php?curid=5051554
+@@html:</div>@@
+
+
+
+** Data Models
+  :PROPERTIES:
+  :CUSTOM_ID: data-models
+  :END:
+
+- Data model: abstract representation of things or processes
+- Data model: choice of virtual entities, relationships, properties/aspects \rarr “toy universe”
+- Data model: top row of your spreadsheet
+
+*** Metadata
+  :PROPERTIES:
+  :CUSTOM_ID: metadata
+  :END:
+@@html:<div class="paired fragment appear">@@
+- Metadata is structured data describing data. Think Author, Title, Date, Subject in your online library catalogue
+- Standard metadata schemas include Dublin Core, MARC, and MODS (each of these schemas has a different set of information it collects).
+@@html:</div><div class="paired fragment appear">@@
+
+[[./images/hokusai-peonies-dc.png]]
+[[https://www.europeana.eu/portal/en/record/08533/artifact_aspx_id_1059.html?q=hokusai#dcId=1557175241529&p=1][Europeana Art Nouveau Exhibition.]] Individual record: Hokusai, /Peonies and Butterfly./
+
+Individual item metadata includes title, creator, description, source, rights, etc: the elements of the Dublin Core metadata schema.
+@@html</div>@@
+#+begin_notes
+Each record of an archive is described by metadata: structured data about data. For example, think about your library's online catalogue: it contains the records of books, with fields like Author, Title, Publisher, Editor, Date. If you use standard metadata schemas, like Dublin Core, MARC, or MODS, your data will be discoverable and interoperable with aggregators and library catalogues.
+#+end_notes
+*** Oops! Custom Metadata
+  :PROPERTIES:
+  :CUSTOM_ID: section-4
+  :END:
+[[./images/dh-custom-md.png]]
+Custom metadata schema: /Digital Atlas of Roman and Medieval Civilizations/ (Anglo-Saxon Rural Settlements: Eynsham)
+
+*** Metadata Standards
+  :PROPERTIES:
+  :CUSTOM_ID: metadata-standards
+  :END:
+https://imgs.xkcd.com/comics/standards.png
+*** Vocabulary and Ontology
+- *Controlled vocabulary*: set of permitted literal values to describea given entity (e.g. chairs: desk chairs, rolling chairs, step stools, kitchen table chairs); may include categorization
+- *Ontology*: making explicit the relationships between values in controlled vocabularies
+
+*** Vocabulary and Ontology
+  :PROPERTIES:
+  :CUSTOM_ID: section-5
+  :END:
+
+#+begin_src  dot :file ./images/chairs.svg :exports results
+digraph {
+bgcolor="#ffffff00" # RGBA (with alpha)
+node [shape=box,style="filled,rounded",color=".7 .3 1.0"];
+node [shape=box,style="filled,rounded",color="white",fillcolor="#356abf",fontcolor="white",fontname="Liberation Sans", fontsize=18, margin=0.2, penwidth=3];
+edge [arrowhead="none", color="#356abf", penwidth=3];
+"Chairs" -> "No Legs"
+"Chairs" -> "One Leg"
+"Chairs" -> "More Legs"
+"No Legs" -> "Rock"
+"One Leg" -> "Bar Stool"
+"More Legs" -> "Three-legged Stool"
+"More Legs" -> "Desk Chair"
+"More Legs" -> "Rolling Chair"
+}
+#+end_src
+
+#+RESULTS:
+[[file:./images/chairs.svg]]
+
+*** Controlled Vocabulary
+:PROPERTIES:
+:CUSTOM_ID: controlled-vocabulary
+:END:
+
+#+begin_quote
+“A controlled vocabulary is an organized arrangement of words and phrases used to catalog content and/or to retrieve content through browsing or searching. It typically includes preferred and variant terms and has a defined scope or describes a specific domain. [...] While capturing the richness of variant terms, controlled vocabularies also promote consistency in preferred terms and the assignment of the same terms to similar content.”
+ https://www.getty.edu/research/publications/electronic_publications/intro_controlled_vocab/what.pdf  
+#+end_quote
+[[./images/black-death.png]]
+*** Authority Control
+  :PROPERTIES:
+  :CUSTOM_ID: authority-control
+  :END:
+
+- The practice of systematizing controlled vocabularies so descriptors of entities are unique, non-overlapping, and consistently used--e.g. having an accepted set of “correct” subject headings
+
+*** James Joyce
+  :PROPERTIES:
+  :CUSTOM_ID: james-joyce
+  :END:
+[[./images/joyce-vocab.png]]
+*** 
+  :PROPERTIES:
+  :CUSTOM_ID: section-6
+  :END:
+
+*James Joyce: unique resource identifier*
+[[./images/joyce-vocab.png]]
+*** ACTION 
+  :PROPERTIES:
+  :CUSTOM_ID: section-7
+  :END:
+
+*** Gazetteers: 
+  :PROPERTIES:
+  :CUSTOM_ID: gazetteers-place-name-dictionaries-maps-atlases-uris
+  :style: page-break-before:always; 
+  :END:
+
+- place name dictionaries + maps + atlases + URIs (https://pleiades.stoa.org/places/570491)
+- for time: (https://perio.do/en/)
+
+*** Research Data: Life Cycle
+  :PROPERTIES:
+  :CUSTOM_ID: research-data-life-cycle
+  :style: page-break-before:always; 
+  :END:
+
+@@html:<div class="paired">@@
+[[./images/dh-lifecycle.jpg]]
+@@html:</div><div class="paired">@@
+ Research Data Life Cycle: https://blogs.ntu.edu.sg/lib-datamanagement/data-lifecycle/
+   
+@@html:</div><@@
+*** ACTION Research Data: Life Cycle
+  :PROPERTIES:
+  :CUSTOM_ID: research-data-life-cycle-1
+  :style: page-break-before:always; 
+  :END:
+@@html:<div class="paired">@@
+[[./images/dh-lc2.png]]
+@@html:</div><div class="paired fragment appear">@@
+Go back and pick up what you missed
+
+Revise data model
+@@html:</div>@@
+*** “Data is always a partial representation of the object of study” (Schoch)
+  :PROPERTIES:
+  :CUSTOM_ID: data-is-always-a-partial-representation-of-the-object-of-study-schoch
+  :style: page-break-before:always; 
+  :END:
+
+- “Data is always a partial representation of the object of study” (Schoch)
+- Failure-, incompleteness-, and pessimism-based approaches to data collection, modelling, analysis, and preservation
+
+*** Preservation-Ready Data
+  :PROPERTIES:
+  :CUSTOM_ID: preservation-ready-data
+  :style: page-break-before:always; 
+  :END:
+Data: accessible, usable, readable, preservable
+- Human-readable and human-editable
+- Separable from technical platforms
+- Described via metadata standards used in your discipline
+- Contextualized in clear documentation
+- Housed in non-proprietary, open source standards and technologies
+- Saved in, or reducible to, simple formats: .txt, TEI P5, .csv, JSON, .pdf, .jpg, tiff
+- Embedded in your disciplinary community
+
+**  DH pipelines
+[[./images/dh-arrow.svg]]
+
+** Reflection 1: DH Project Profile
+[[https://q.utoronto.ca/courses/99251/assignments/168376][Quercus Link]]
+
+* Diagrams
+:PROPERTIES:
+:CUSTOM_ID: diagrams-b264
+:END:
+
 #+begin_src emacs-lisp
-;; (org-huveal-export-to-html 1)
-(org-huveal-export-wim nil)
-;; (browse-url-of-file (expand-file-name (org-huveal-export-to-html )))
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+  '((ditaa . t)
+   (latex . t)
+   (plantuml . t))) 
+(setq org-ditaa-jar-path "/home/matt/src/org-mode/contrib/scripts/ditaa.jar" )
+(setq org-plantuml-jar-path "/usr/share/java/plantuml/plantuml.jar")
+#+end_src
+
+#+RESULTS:
+: /usr/share/java/plantuml/plantuml.jar
+
+#+BEGIN_SRC ditaa :file images/hello-world-round.png :cmdline -r
++--------------+  +----------+
+| cBLUE        |  |          |
+| Humanities   | -|          |
+|              |  |          |
++--------------+  +----------+
+                             
+                  
+#+END_SRC
+
+#+RESULTS:
+[[file:images/hello-world-round.png]]
+
+
 #+end_src
 
 #+RESULTS:
