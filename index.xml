@@ -6,7 +6,7 @@
     <description>Recent content on HIS393: Digital History</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 13 May 2019 08:36:52 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 13 May 2019 09:43:44 -0400</lastBuildDate>
     
 	<atom:link href="https://digitalhistory.github.io/wdw235/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,10 +14,11 @@
     <item>
       <title>Final Project: Book Exhibit</title>
       <link>https://digitalhistory.github.io/wdw235/assignment/book-project-assignment/</link>
-      <pubDate>Mon, 13 May 2019 08:36:52 -0400</pubDate>
+      <pubDate>Mon, 13 May 2019 09:43:44 -0400</pubDate>
       
       <guid>https://digitalhistory.github.io/wdw235/assignment/book-project-assignment/</guid>
-      <description>## Overview {#overview} In this assignment, you get to tell the story of a banned book you have seen in person, either from the Thomas Fisher Rare Book Library or from our list. You will create a website that features a digital collection and exhibit about that book, using the free, open-source content management platform Omeka. Like a good museum curator, you will bring together a gallery of exciting pictures, and you will guide your visitors through that gallery through a well-researched, interesting narrative about your book.</description>
+      <description>Overview In this assignment, you get to tell the story of a banned book you have seen in person, either from the Thomas Fisher Rare Book Library or from our list.
+You will create a website that features a digital collection and exhibit about that book, using the free, open-source content management platform Omeka. Like a good museum curator, you will bring together a gallery of exciting pictures, and you will guide your visitors through that gallery through a well-researched, interesting narrative about your book.</description>
     </item>
     
     <item>
@@ -65,6 +66,15 @@ You may select any project you like from the syllabus or from one of the pages b
       
       <guid>https://digitalhistory.github.io/wdw235/slides/02-anatomy-dh-projects/</guid>
       <description>02: Anatomy of DH Projects .underline { text-decoration: underline; }   if( window.location.search.match( /print-pdf/gi ) ) { var link = document.createElement( &#39;link&#39; ); link.rel = &#39;stylesheet&#39;; link.type = &#39;text/css&#39;; link.href = &#39;../../vendor/reveal//css/print/pdf.css&#39;; document.getElementsByTagName( &#39;head&#39; )[0].appendChild( link ); }     Today  How do we Think about Technology? Very Basic Design Parameters Data and Data Models Assignment 1      Why &amp;ldquo;Anatomy of DH&amp;rdquo;?</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://digitalhistory.github.io/wdw235/slides/03-omeka-and-assignment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digitalhistory.github.io/wdw235/slides/03-omeka-and-assignment/</guid>
+      <description>03: Omeka and The Final Assignment .underline { text-decoration: underline; }   if( window.location.search.match( /print-pdf/gi ) ) { var link = document.createElement( &#39;link&#39; ); link.rel = &#39;stylesheet&#39;; link.type = &#39;text/css&#39;; link.href = &#39;../../vendor/reveal//css/print/pdf.css&#39;; document.getElementsByTagName( &#39;head&#39; )[0].appendChild( link ); }    03: Omeka and The Final Assignment Matt Price  (view this presentation in another theme: Black (default) - White - League - Sky - Beige - Simple Serif - Blood - Night - Moon - Solarized )	--   Today  Assignment Discussion Omeka Introduction Rare Books Visit     Assignment  online or on Quercus    Getting Started with omeka.</description>
     </item>
     
     <item>
