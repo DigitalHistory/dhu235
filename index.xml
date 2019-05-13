@@ -6,10 +6,19 @@
     <description>Recent content on HIS393: Digital History</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 08 May 2019 12:14:04 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 13 May 2019 08:36:52 -0400</lastBuildDate>
     
 	<atom:link href="https://digitalhistory.github.io/wdw235/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Final Project: Book Exhibit</title>
+      <link>https://digitalhistory.github.io/wdw235/assignment/book-project-assignment/</link>
+      <pubDate>Mon, 13 May 2019 08:36:52 -0400</pubDate>
+      
+      <guid>https://digitalhistory.github.io/wdw235/assignment/book-project-assignment/</guid>
+      <description>## Overview {#overview} In this assignment, you get to tell the story of a banned book you have seen in person, either from the Thomas Fisher Rare Book Library or from our list. You will create a website that features a digital collection and exhibit about that book, using the free, open-source content management platform Omeka. Like a good museum curator, you will bring together a gallery of exciting pictures, and you will guide your visitors through that gallery through a well-researched, interesting narrative about your book.</description>
+    </item>
     
     <item>
       <title>Reflection 01: DH Project Profile</title>
@@ -45,7 +54,8 @@ You may select any project you like from the syllabus or from one of the pages b
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://digitalhistory.github.io/wdw235/slides/01-intro/</guid>
-      <description>01: DH &amp;#x2013; An Introduction .underline { text-decoration: underline; }   if( window.location.search.match( /print-pdf/gi ) ) { var link = document.createElement( &#39;link&#39; ); link.rel = &#39;stylesheet&#39;; link.type = &#39;text/css&#39;; link.href = &#39;../../vendor/reveal//css/print/pdf.css&#39;; document.getElementsByTagName( &#39;head&#39; )[0].appendChild( link ); }     Today  Intro A partial history Course syllabus What is DH? Project examples A Little Game      Introductions      Me Historian of Science, Emphasis on &amp;ldquo;Engaged Teaching&amp;rdquo;   You Let&amp;rsquo;s discuss        DH: at the fluctuating intersections of the humanities with computing    note the influences go in two directions!</description>
+      <description>01: DH &amp;#x2013; An Introduction .underline { text-decoration: underline; }   if( window.location.search.match( /print-pdf/gi ) ) { var link = document.createElement( &#39;link&#39; ); link.rel = &#39;stylesheet&#39;; link.type = &#39;text/css&#39;; link.href = &#39;../../vendor/reveal//css/print/pdf.css&#39;; document.getElementsByTagName( &#39;head&#39; )[0].appendChild( link ); }    01: DH &amp;#x2013; An IntroductionMatt PriceCreated: 2019-05-10 Fri 12:55
+  Today  Intro A partial history Course syllabus What is DH? Project examples A Little Game   Introductions      Me Historian of Science, Emphasis on &amp;ldquo;Engaged Teaching&amp;rdquo;   You Let&amp;rsquo;s discuss     DH: at the fluctuating intersections of the humanities with computing    note the influences go in two directions!</description>
     </item>
     
     <item>
