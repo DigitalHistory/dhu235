@@ -95,7 +95,7 @@ This assignment is based on the [[https://dmptool.org/][DMP Tool]], the U of T D
 :DUE_AT: 2019-06-03
 :GRADING_TYPE: letter_grade
 :ASSIGNMENT_TYPE: canvas
-:ASSIGNMENT_WEIGHT: 0.15
+:ASSIGNMENT_WEIGHT: 0.10
 :CANVAS_SUBMISSION_TYPES: (online_upload)
 :OL_PUBLISH: t
 :BASECOMMIT: none
