@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2019-05-18T11:38:01 EDT">
+<meta name="revised" content="2019-05-18T12:31:43 EDT">
 <title>Reflection 02: Handout and Preliminary Exercises :: HIS393: Digital History</title>
 <link rel="shortcut icon" href="/wdw235/images/favicon.png" type="image/x-icon" />
 <link href="/wdw235/css/nucleus.css" rel="stylesheet">
@@ -89,17 +89,17 @@
             <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/wdw235/assignment/reflection-2-the-ruin/" class="dd-item">
-        <div>
-          <a href="/wdw235/assignment/reflection-2-the-ruin/">
-            Reflection 02: The Ruin
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
       <li data-nav-id="/wdw235/assignment/reflection-2-handout/" class="dd-item active">
         <div>
           <a href="/wdw235/assignment/reflection-2-handout/">
             Reflection 02: Handout and Preliminary Exercises
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/wdw235/assignment/reflection-2-the-ruin/" class="dd-item">
+        <div>
+          <a href="/wdw235/assignment/reflection-2-the-ruin/">
+            Reflection 02: The Ruin
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
@@ -230,6 +230,7 @@
 <li><a href="#deformance">Deformance</a></li>
 <li><a href="#introduction-to-tei">Introduction to XML,XSLT, TEI, and HTML (!)</a>
 <ul>
+<li><a href="#viewing">Viewing</a></li>
 <li><a href="#xml-essentials-tags-and-structures">XML Essentials: Tags &amp; Structures</a>
 <ul>
 <li><a href="#xml-dec">The XML declaration</a></li>
@@ -246,7 +247,6 @@
 </ul></li>
 <li><a href="#reading">Reading</a></li>
 <li><a href="#encoding">Encoding</a></li>
-<li><a href="#viewing">Viewing</a></li>
 <li><a href="#encoding-discussion">Encoding Discussion</a></li>
 <li><a href="#appendix-more-complex-example">Appendix: More Complex Example</a></li>
 </ul></li>
@@ -356,6 +356,37 @@
 
 <p>So, in order to complete this assignment, you must learn at least a tiny bit about <strong>XML</strong>, <strong>XSLT</strong>, and <strong>HTML</strong>.  That&rsquo;s a lot! I won&rsquo;t give you a systematic introduction to any of these systems; instead, this handout presents a very small amount of information on each, and gives some examples of how you might use them in the assignment.</p>
 
+<h3 id="viewing">Viewing</h3>
+
+<p>To view/work with XML files, please navigate to either of these xml/xslt live editors:</p>
+
+<ul>
+<li><a href="https://www.w3schools.com/xml/tryxslt.asp?xmlfile=cdcatalog&amp;xsltfile=cdcatalog">W3 Schools</a></li>
+<li><a href="http://fiddle.frameless.io/">XML fiddle</a> (this one at least has syntax highlighting, which makes the code a bit easier to read).</li>
+</ul>
+
+<p><strong>Paste your XML poem into the left window of the editor.</strong> Start with this code:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#080">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;</span>
+<span style="color:#008000;font-weight:bold">&lt;poem&gt;</span>
+  <span style="color:#008000;font-weight:bold">&lt;l</span> <span style="color:#b44">n=</span><span style="color:#b44">&#34;1&#34;</span><span style="color:#008000;font-weight:bold">&gt;</span>This <span style="color:#008000;font-weight:bold">&lt;concrete-noun&gt;</span>wall-stone<span style="color:#008000;font-weight:bold">&lt;/concrete-noun&gt;</span> is wondrous; fates broke it<span style="color:#008000;font-weight:bold">&lt;/l&gt;</span>
+  <span style="color:#008000;font-weight:bold">&lt;l</span> <span style="color:#b44">n=</span><span style="color:#b44">&#34;2&#34;</span><span style="color:#008000;font-weight:bold">&gt;&lt;concrete-noun&gt;</span>courtyard pavements<span style="color:#008000;font-weight:bold">&lt;/concrete-noun&gt;</span> were smashed; the work of giants is decaying.<span style="color:#008000;font-weight:bold">&lt;/l&gt;</span>
+  <span style="color:#008000;font-weight:bold">&lt;l</span> <span style="color:#b44">n=</span><span style="color:#b44">&#34;3&#34;</span><span style="color:#008000;font-weight:bold">&gt;&lt;concrete-noun&gt;</span>Roofs<span style="color:#008000;font-weight:bold">&lt;/concrete-noun&gt;</span> are fallen, ruinous <span style="color:#008000;font-weight:bold">&lt;concrete-noun&gt;</span>towers<span style="color:#008000;font-weight:bold">&lt;/concrete-noun&gt;</span>,<span style="color:#008000;font-weight:bold">&lt;/l&gt;</span>
+  <span style="color:#008000;font-weight:bold">&lt;l</span> <span style="color:#b44">n=</span><span style="color:#b44">&#34;4&#34;</span><span style="color:#008000;font-weight:bold">&gt;</span> the frosty gate with frost on cement is ravaged, <span style="color:#008000;font-weight:bold">&lt;/l&gt;</span>
+<span style="color:#008000;font-weight:bold">&lt;/poem&gt;</span></code></pre></div>
+<p><strong>Paste your XSLT (your script for turning XML into HTML) into the right window of the browser.</strong></p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#080">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;</span>
+<span style="color:#008000;font-weight:bold">&lt;xsl:stylesheet</span> <span style="color:#b44">version=</span><span style="color:#b44">&#34;1.0&#34;</span> <span style="color:#b44">xmlns:xsl=</span><span style="color:#b44">&#34;http://www.w3.org/1999/XSL/Transform&#34;</span><span style="color:#008000;font-weight:bold">&gt;</span>
+  <span style="color:#008000;font-weight:bold">&lt;xsl:template</span> <span style="color:#b44">match=</span><span style="color:#b44">&#34;/&#34;</span><span style="color:#008000;font-weight:bold">&gt;</span>
+    <span style="color:#008000;font-weight:bold">&lt;html&gt;</span>
+      <span style="color:#008000;font-weight:bold">&lt;body&gt;</span>
+        <span style="color:#008000;font-weight:bold">&lt;h1&gt;</span>The Ruin<span style="color:#008000;font-weight:bold">&lt;/h1&gt;</span>
+        <span style="color:#008000;font-weight:bold">&lt;xsl:for-each</span> <span style="color:#b44">select=</span><span style="color:#b44">&#34;poem/l/concrete-noun&#34;</span><span style="color:#008000;font-weight:bold">&gt;</span>
+          <span style="color:#008000;font-weight:bold">&lt;p&gt;</span> <span style="color:#008000;font-weight:bold">&lt;xsl:value-of</span> <span style="color:#b44">select=</span><span style="color:#b44">&#34;current()&#34;</span><span style="color:#008000;font-weight:bold">/&gt;</span> <span style="color:#008000;font-weight:bold">&lt;/p&gt;</span>
+        <span style="color:#008000;font-weight:bold">&lt;/xsl:for-each&gt;</span>
+      <span style="color:#008000;font-weight:bold">&lt;/body&gt;</span>
+    <span style="color:#008000;font-weight:bold">&lt;/html&gt;</span>
+  <span style="color:#008000;font-weight:bold">&lt;/xsl:template&gt;</span>
+<span style="color:#008000;font-weight:bold">&lt;/xsl:stylesheet&gt;</span></code></pre></div>
 <h3 id="xml-essentials-tags-and-structures">XML Essentials: Tags &amp; Structures</h3>
 
 <p>XML &ldquo;marks up&rdquo; elements of a text by surrounding bits of text with <a href="https://www.w3schools.com/xml/xml%5Fsyntax.asp">tags</a>. The totality of <code>&lt;starting-tag&gt;Content&lt;/end-tag&gt;</code> is called an <a href="https://www.w3schools.com/xml/xml%5Felements.asp">XML element</a>.</p>
@@ -594,37 +625,6 @@ End Stylesheet</code></pre></div>
 <span style="color:#008000;font-weight:bold">&lt;adjective&gt;</span> wondrous <span style="color:#008000;font-weight:bold">&lt;/adjective&gt;</span>
 <span style="color:#008000;font-weight:bold">&lt;colour&gt;</span>golden<span style="color:#008000;font-weight:bold">&lt;/colour&gt;</span>
 <span style="color:#008000;font-weight:bold">&lt;poetic-formula&gt;</span>the work of giants<span style="">&lt;</span>/thew</code></pre></div>
-<h2 id="viewing">Viewing</h2>
-
-<p>To view/work with your XML file, please navigate to either of these xml/xslt live editors:</p>
-
-<ul>
-<li><a href="https://www.w3schools.com/xml/tryxslt.asp?xmlfile=cdcatalog&amp;xsltfile=cdcatalog">W3 Schools</a></li>
-<li><a href="http://fiddle.frameless.io/">XML fiddle</a></li>
-</ul>
-
-<p><strong>Paste your XML poem into the left window of the editor.</strong></p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#080">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;</span>
-<span style="color:#008000;font-weight:bold">&lt;poem&gt;</span>
-  <span style="color:#008000;font-weight:bold">&lt;l</span> <span style="color:#b44">n=</span><span style="color:#b44">&#34;1&#34;</span><span style="color:#008000;font-weight:bold">&gt;</span>This <span style="color:#008000;font-weight:bold">&lt;concrete-noun&gt;</span>wall-stone<span style="color:#008000;font-weight:bold">&lt;/concrete-noun&gt;</span> is wondrous; fates broke it<span style="color:#008000;font-weight:bold">&lt;/l&gt;</span>
-  <span style="color:#008000;font-weight:bold">&lt;l</span> <span style="color:#b44">n=</span><span style="color:#b44">&#34;2&#34;</span><span style="color:#008000;font-weight:bold">&gt;&lt;concrete-noun&gt;</span>courtyard pavements<span style="color:#008000;font-weight:bold">&lt;/concrete-noun&gt;</span> were smashed; the work of giants is decaying.<span style="color:#008000;font-weight:bold">&lt;/l&gt;</span>
-  <span style="color:#008000;font-weight:bold">&lt;l</span> <span style="color:#b44">n=</span><span style="color:#b44">&#34;3&#34;</span><span style="color:#008000;font-weight:bold">&gt;&lt;concrete-noun&gt;</span>Roofs<span style="color:#008000;font-weight:bold">&lt;/concrete-noun&gt;</span> are fallen, ruinous <span style="color:#008000;font-weight:bold">&lt;concrete-noun&gt;</span>towers<span style="color:#008000;font-weight:bold">&lt;/concrete-noun&gt;</span>,<span style="color:#008000;font-weight:bold">&lt;/l&gt;</span>
-  <span style="color:#008000;font-weight:bold">&lt;l</span> <span style="color:#b44">n=</span><span style="color:#b44">&#34;4&#34;</span><span style="color:#008000;font-weight:bold">&gt;</span> the frosty gate with frost on cement is ravaged, <span style="color:#008000;font-weight:bold">&lt;/l&gt;</span>
-<span style="color:#008000;font-weight:bold">&lt;/poem&gt;</span></code></pre></div>
-<p><strong>Paste your XSLT (your script for turning XML into HTML) into the right window of the browser.</strong></p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#080">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;</span>
-<span style="color:#008000;font-weight:bold">&lt;xsl:stylesheet</span> <span style="color:#b44">version=</span><span style="color:#b44">&#34;1.0&#34;</span> <span style="color:#b44">xmlns:xsl=</span><span style="color:#b44">&#34;http://www.w3.org/1999/XSL/Transform&#34;</span><span style="color:#008000;font-weight:bold">&gt;</span>
-  <span style="color:#008000;font-weight:bold">&lt;xsl:template</span> <span style="color:#b44">match=</span><span style="color:#b44">&#34;/&#34;</span><span style="color:#008000;font-weight:bold">&gt;</span>
-    <span style="color:#008000;font-weight:bold">&lt;html&gt;</span>
-      <span style="color:#008000;font-weight:bold">&lt;body&gt;</span>
-        <span style="color:#008000;font-weight:bold">&lt;h1&gt;</span>The Ruin<span style="color:#008000;font-weight:bold">&lt;/h1&gt;</span>
-        <span style="color:#008000;font-weight:bold">&lt;xsl:for-each</span> <span style="color:#b44">select=</span><span style="color:#b44">&#34;poem/l/concrete-noun&#34;</span><span style="color:#008000;font-weight:bold">&gt;</span>
-          <span style="color:#008000;font-weight:bold">&lt;p&gt;</span> <span style="color:#008000;font-weight:bold">&lt;xsl:value-of</span> <span style="color:#b44">select=</span><span style="color:#b44">&#34;current()&#34;</span><span style="color:#008000;font-weight:bold">/&gt;</span> <span style="color:#008000;font-weight:bold">&lt;/p&gt;</span>
-        <span style="color:#008000;font-weight:bold">&lt;/xsl:for-each&gt;</span>
-      <span style="color:#008000;font-weight:bold">&lt;/body&gt;</span>
-    <span style="color:#008000;font-weight:bold">&lt;/html&gt;</span>
-  <span style="color:#008000;font-weight:bold">&lt;/xsl:template&gt;</span>
-<span style="color:#008000;font-weight:bold">&lt;/xsl:stylesheet&gt;</span></code></pre></div>
 <h2 id="encoding-discussion">Encoding Discussion</h2>
 
 <p>What is your made-up tag(s)? How is this tag supposed to work, within this poem and more generally? Why is it useful?</p>
