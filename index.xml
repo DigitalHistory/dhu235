@@ -99,6 +99,15 @@ You may select any project you like from the syllabus or from one of the pages b
     </item>
     
     <item>
+      <title></title>
+      <link>https://digitalhistory.github.io/wdw235/slides/08-data-vis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digitalhistory.github.io/wdw235/slides/08-data-vis/</guid>
+      <description>08: Data Visualization .underline { text-decoration: underline; }   if( window.location.search.match( /print-pdf/gi ) ) { var link = document.createElement( &#39;link&#39; ); link.rel = &#39;stylesheet&#39;; link.type = &#39;text/css&#39;; link.href = &#39;../../vendor/reveal//css/print/pdf.css&#39;; document.getElementsByTagName( &#39;head&#39; )[0].appendChild( link ); }    08: Data Visualization Matt Price  (view this presentation in another theme: Black (default) - White - League - Sky - Beige - Simple Serif - Blood - Night - Moon - Solarized )	--   Today  Reflections on Tableau Workshop Cautionary Tales re: Visualization Peculiarities of Humanities Data Some Viz Examples Play Time     Tableau recap  what was most interesting?</description>
+    </item>
+    
+    <item>
       <title>WDW235 Syllabus</title>
       <link>https://digitalhistory.github.io/wdw235/syllabus/syllabus/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
