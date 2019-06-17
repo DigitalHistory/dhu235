@@ -108,6 +108,15 @@ You may select any project you like from the syllabus or from one of the pages b
     </item>
     
     <item>
+      <title></title>
+      <link>https://digitalhistory.github.io/wdw235/slides/11-finale/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digitalhistory.github.io/wdw235/slides/11-finale/</guid>
+      <description>11: Finale .underline { text-decoration: underline; }   if( window.location.search.match( /print-pdf/gi ) ) { var link = document.createElement( &#39;link&#39; ); link.rel = &#39;stylesheet&#39;; link.type = &#39;text/css&#39;; link.href = &#39;../../vendor/reveal//css/print/pdf.css&#39;; document.getElementsByTagName( &#39;head&#39; )[0].appendChild( link ); }    11: Finale Matt Price  (view this presentation in another theme: Black (default) - White - League - Sky - Beige - Simple Serif - Blood - Night - Moon - Solarized )	--   Introduction to Digital Humanities    Course Topics  Digital Humanities: A History Anatomy of DH Projects Archives: Endangered, Lost, Banned, Censored Books (visit to Thomas Fischer Rare Book Library) How to Read with DH Data: Zoom In, Zoom Out, Tell Stories, Play Games Interfaces, Users, and Usability Communities, Libraries, and Possible Futures     Learning Goals  Digital Humanities (DH) is a discipline at the intersections of the humanities with computing.</description>
+    </item>
+    
+    <item>
       <title>WDW235 Syllabus</title>
       <link>https://digitalhistory.github.io/wdw235/syllabus/syllabus/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
