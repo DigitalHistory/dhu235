@@ -3,7 +3,9 @@ baseURL = "https://digitalhistory.github.io/wdw235/"
 # baseURL = "http://digitalhistory.github.io/"
 languageCode = "en-us"
 DefaultContentLanguage = "en"
-
+pygmentsCodeFences = true
+# pygmentsUseClasses = true
+pygmentsStyle = "emacs"
 
 title = "HIS393: Digital History"
 theme = "docdock"

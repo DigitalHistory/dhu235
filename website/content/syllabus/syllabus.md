@@ -215,7 +215,9 @@ We visit the Thomas Fisher Rare Book Library under the guidance of Tim Stinson, 
 Introduction to data cleaning with [OpenRefine](http://openrefine.org/), a powerful data cleaning and transformation tool.
 
 
-### 7 (<span class="timestamp-wrapper"><span class="timestamp">May. 27</span></span>) NO CLASS TEACHER ABSENT! {#7--no-class-teacher-absent}
+### 7 (<span class="timestamp-wrapper"><span class="timestamp">May. 27</span></span>) UNSUPERVISED WORK SESSION! {#7--unsupervised-work-session}
+
+I'll be away! You are free to use the classroom, though, to make progress on your work. We'll discuss this more as the date gets closer.
 
 
 ### 8 (<span class="timestamp-wrapper"><span class="timestamp">May. 29</span></span>) Data 2: Data Models for the Humanities {#8--data-2-data-models-for-the-humanities}
@@ -241,7 +243,23 @@ We back up and ask: what are data models and algorithms? We discuss how data mod
 **Reflection Due June 03**
 
 
-### 9 (<span class="timestamp-wrapper"><span class="timestamp">Jun. 03</span></span>) Endangered Knowledge 2: Theory and Practice {#9--endangered-knowledge-2-theory-and-practice}
+### 9 (<span class="timestamp-wrapper"><span class="timestamp">Jun. 03</span></span>) Data Visualization {#9--data-visualization}
+
+In a facilitated workshop, we turn to data visualization of humanities materials, using Jane Austen’s _Lady Susan_ for experimentation ([Voyant](https://voyant-tools.org/), [Palladio](http://hdlab.stanford.edu/palladio/), [Cytoscape](https://cytoscape.org/), [Tableau](https://www.tableau.com/):  text and corpus work, network graphs, mapping, annotation).  Then we analyze the American Library Association’s data on banned books and discuss how we might model, interpret, question, and visualize this data.
+
+
+#### Readings & Discussion {#readings-and-discussion}
+
+-   Johanna Drucker, “[Humanities Approaches to Graphical Display](http://www.digitalhumanities.org/dhq/vol/5/1/000091/000091.html)” _Digital Humanities Quarterly_ (2011).
+-   Miriam Posner, [Data Trouble: Why Humanists Have Problems with Datavis, and Why Anyone Should Care](https://www.youtube.com/watch?v=sW0u1pNQNxc) (2016)
+
+
+### 10 (<span class="timestamp-wrapper"><span class="timestamp">Jun. 05</span></span>) DV 2 {#10--dv-2}
+
+Continuation of previous Session
+
+
+### 11 (<span class="timestamp-wrapper"><span class="timestamp">Jun. 10</span></span>) Endangered Knowledge 2: Theory and Practice {#11--endangered-knowledge-2-theory-and-practice}
 
 We examine digital archives, discussing creation, preservation, ethical concerns, relationships with communities, and security and environmental issues raised by cloud computing and machine learning.  We examine UofT’s guidelines around the ethical and technical management of human research data.
 
@@ -257,7 +275,7 @@ Eira Tansey, “[When the Unbearable Becomes Inevitable: Archives and Climate Ch
 #### Tools Workshop: More Omeka {#tools-workshop-more-omeka}
 
 
-### 10 (<span class="timestamp-wrapper"><span class="timestamp">Jun. 05</span></span>) Endangered Knowledge 3: Remembering the Soviet Bloc {#10--endangered-knowledge-3-remembering-the-soviet-bloc}
+### 12 (<span class="timestamp-wrapper"><span class="timestamp">Jun. 12</span></span>) Endangered Knowledge 3: Remembering the Soviet Bloc {#12--endangered-knowledge-3-remembering-the-soviet-bloc}
 
 
 #### Readings & Discussion {#readings-and-discussion}
@@ -268,22 +286,6 @@ Eira Tansey, “[When the Unbearable Becomes Inevitable: Archives and Climate Ch
 #### Special Guest Lecture! {#special-guest-lecture}
 
 [Prof. Alexandra Bolintineanu](https://alexandrabolintineanu.wordpress.com/) will share some reflections on Samizdat and censorship in late Twentieth Century Romania.
-
-
-### 11 (<span class="timestamp-wrapper"><span class="timestamp">Jun. 10</span></span>) Data Visualization {#11--data-visualization}
-
-In facilitated workshops, we turn to data visualization of humanities materials, using Jane Austen’s _Lady Susan_ for experimentation ([Voyant](https://voyant-tools.org/), [Palladio](http://hdlab.stanford.edu/palladio/), [Cytoscape](https://cytoscape.org/), [Tableau](https://www.tableau.com/):  text and corpus work, network graphs, mapping, annotation).  Then we analyze the American Library Association’s data on banned books and discuss how we might model, interpret, question, and visualize this data.
-
-
-#### Readings & Discussion {#readings-and-discussion}
-
--   Johanna Drucker, “[Humanities Approaches to Graphical Display](http://www.digitalhumanities.org/dhq/vol/5/1/000091/000091.html)” _Digital Humanities Quarterly_ (2011).
--   Miriam Posner, [Data Trouble: Why Humanists Have Problems with Datavis, and Why Anyone Should Care](https://www.youtube.com/watch?v=sW0u1pNQNxc) (2016)
-
-
-### 12 (<span class="timestamp-wrapper"><span class="timestamp">Jun. 12</span></span>) DV 2 {#12--dv-2}
-
-Continuation of previous Session
 
 
 ### 13 (<span class="timestamp-wrapper"><span class="timestamp">Jun. 17</span></span>) Retrospective {#13--retrospective}
