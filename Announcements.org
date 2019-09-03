@@ -63,6 +63,7 @@ Meanwhile, I'm not able to get my full lecture notes up before class, but you'll
 :END:
 ** Lecture Notes Fixed
  [[https://digitalhistory.github.io/wdw235/slides/01-intro][Slides from yesterday's lecture]] should now display more-or-less as expected; had some trouble w/ local images which has now been debugged :-) 
+
 ** Reflection Assignment 1
 The Reflection assignment, which we will discuss more on Wednesday, is now up on both Quercus and [[https://digitalhistory.github.io/wdw235/assignment/][the course website]]. 
 
@@ -74,6 +75,380 @@ We will *definitely* be taking time to discuss tomorrow's readings in class, so 
   - How should we understand the criteria for compelling arguments, which they summarize as "contestability, defensibility, and substantivity" (p.412ff)?
   - What do the authors mean when they suggest that digital objects can "reify an argument" (p.414)?
   - the [[http://www.textarc.org/PrintEditions.html][original TextArc]] is no longer live but [[http://vallandingham.me/textarc/][this cool partial replica]] can still be found ([[https://github.com/vlandham/textarc][code here]]) 
+
+* Today's Class
+:PROPERTIES:
+:ORG_LMS_ANNOUNCEMENT_ID: 304956
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/99251/discussion_topics/304956
+:ORG_LMS_POSTED_AT: 2019-05-15T14:06:26Z
+:END:
+
+Today's class will be *much* less lecture-y, instead comprising a mix of discussion and workshopping.  Here's the approximate outline:
+
+- discussion of our trip to the library on Monday
+- discussion of today's readings, with an emphasis on [[http://muse.jhu.edu.myaccess.library.utoronto.ca/article/24448][deformance]]. Please spend the next few minutes thinking about the questions you might want to ask.
+- workshopping with xml/xslt and TEI.  You will want to [[https://q.utoronto.ca/files/3647726/download?download_frd=1][read the handout]] and [[https://q.utoronto.ca/courses/99251/assignments/171001][the assignment]]
+  - You'll need to [[https://www.w3schools.com/xml/tryxslt.asp?xmlfile=cdcatalog&xsltfile=cdcatalog][navigate to the online xslt editor]] and paste i n the code from the assignment.  
+
+I think this will be fun today!   
+
+* link to code
+:PROPERTIES:
+:ORG_LMS_ANNOUNCEMENT_ID: 305014
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/99251/discussion_topics/305014
+:ORG_LMS_POSTED_AT: 2019-05-15T16:09:25Z
+:END:
+[[https://hackmd.io/s/Bk0KFnYnE][here's the code for today]]
+
+* Introduction to XML,XSLT, TEI, an HTML (!)
+   :PROPERTIES:
+   :CUSTOM_ID: introduction-to-tei
+   :ORG_LMS_ANNOUNCEMENT_ID: 305535
+   :ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/99251/discussion_topics/305535
+   :ORG_LMS_POSTED_AT: 2019-05-16T15:44:19Z
+   :END:
+[[https://cdrh.unl.edu/articles/basicguide/TEI][TEI]] is a [[https://en.wikipedia.org/wiki/Markup_language][markup language]] -- a system for annotating documents that can be read an processed by other compute programs.  It is a format, or defined feature set, of the [[https://www.w3schools.com/xml/xml_whatis.asp][XML]] "metalanguage", a very widely-used system for structuring and processing many kinds of data.  Digital humanists use TEI to turn literary texts into structured data that can be manipulated and queried in many ways, but especially on the web.  
+
+The process of turning a TEI document into a visual representation on a screen is complex:
+- first, the text must be *marked up* -- textual elements must be identified and annotated (we'll discuss how this works in more detail very soon).  This work can be both painstaking and tedious
+- next, a *translation scheme must be written* that /processes/ the xml text into [[https://en.wikipedia.org/wiki/HTML][HTML]], the main language of the web. This translation is almost always written in a language called [[https://en.wikipedia.org/wiki/XSLT][XLST]] (which is itself a dialect of XML)
+- finally, the translated document must be *displayed by a browser* that understands HTML, like Firefox or Chrome.   
+
+So, in order to complete this assignment, you must learn at least a tiny bit about *XML*, *XSLT*, and *HTML*.  That's a lot! I won't give you a systematic introduction to any of these systems; instead, this handout presents a very small amount of information on each, and gives some examples of how you might use them in the assignment. 
+
+** XML Essentials: Tags & Structures
+
+XML "marks up" elements of a text by surrounding bits of text with [[https://www.w3schools.com/xml/xml_syntax.asp][tags]]. The totality of ~<starting-tag>Content</end-tag>~ is called an [[https://www.w3schools.com/xml/xml_elements.asp][XML element]]. 
+
+Take this example (stolen from [[https://www.w3schools.com/xml/xml_elements.asp][W3Schools]]): 
+#+begin_src xml
+  <book category="children">
+    <title>Harry Potter</title>
+    <author>J K. Rowling</author>
+    <year>2005</year>
+    <price>29.99</price>
+  </book>
+#+end_src
+
+Here we have a *root element* called ~<book>~ which encloses several [[https://www.w3schools.com/xml/xml_tree.asp#midcontentadcontainer][child elements]] (~<title>~, ~<author>~, etc). Everything between ~<book category="children">~ and ~</book>~ is part of the ~<book>~ element.  In general, an element has the structure:
+
+- opening tag: ~<tag>~
+- content: text and child elements, which must be fully nexted within the parent (if an opening tag is inside the element, the closing tag must *also* be inside it
+- closing tag: ~</tag>~ . Note the forward slash */* within the ~<>~ greater-than less-than signss.
+
+Here's a trivial example that you might find in a TEI document:
+
+#+begin_src  xml
+<l>And then my lord <person>Yvain</person> arrived in <place>Camelot</place>.</l>
+#+end_src
+
+The tags here are "l", "person", and "place".
+
+*** The XML declaration
+:PROPERTIES:
+:CUSTOM_ID: xml-dec
+:END:
+
+Every real XML document must also begin with an "XML Declaration" which identifies it as an XML document.  It will look like this: 
+
+#+begin_src xml
+<?xml version="1.0" encoding="UTF-8"?>
+#+end_src
+
+And a very simple full document will look like this:
+#+NAME: simple-xml
+#+begin_src xml
+<?xml version="1.0" encoding="UTF-8"?>
+<poem>
+  <l n="1">This wall-stone is wondrous; fates broke it</l>
+  <l n="2">courtyard pavements were smashed; the work of giants is decaying.</l>
+  <l n="3">Roofs are fallen, ruinous towers,</l>
+  <l n="4"> the frosty gate with frost on cement is ravaged, </l>
+</poem>
+#+end_src
+
+** Displaying XML with XSLT
+A document that has been marked up with XML now has a structure that a computer can understand, which is great! But a web browser will not know how to display that document unless we give it instructions for *transforming* the XML structure into a language that the browser understands. We use XSLT for this purpose -- a special language that exists to manipulate XML documents.  
+
+XSLT is complicated, and we will use just a tiny part of it.  We need to understand just a few concepts: 
+- *stylesheet declaration* surrounds the rest of the XSLT document, identifying it as an XSLT instruction set
+- *[[https://www.w3schools.com/xml/xsl_templates.asp][templates]]* give instructions for transforming particular XML elements
+- *[[https://www.w3schools.com/xml/xpath_syntax.asp][Xpath Expressions]]* are used to tell the templates which elements to transform
+- *value statements* insert the contents of an element into the final HTML product
+
+*** Stylesheet Declaration
+An XSLT Stylesheet always starts with an XML declaration and then an ~<xsl:stylesheet>~ tag; the document ends with the closing ~</xsl:stylesheet>~ tag:
+
+#+begin_src xml
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+<!-- Content of Stylesheet Goes Here!! -->
+
+</xsl:stylesheet>
+#+end_src
+
+*** XSLT Templates
+
+Inside the ~xsl:stylesheet~ we put all the ~xsl:template~ tags we need.  Each template is an instruction for dealing with a particular tag or set of tags.  So, if we use [[simple-xml][our simple XML file from above]] as the XML source, we might start by building an XSLT document like this:
+
+#+begin_src xml
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+    <xsl:template match="/">
+      <xsl:apply-templates/>
+  </xsl:template>
+
+
+  <xsl:template match="l">
+    <p> <xsl:value-of select="."/> </p>
+  </xsl:template>
+</xsl:stylesheet>
+#+end_src
+
+What's happening here?  We have two templates. The first one "matches" the "root element", while the second one matches all the "l" elements. So if we read this document top to bottom, we might translate it this way: 
+#+begin_verse
+I am an XML Document
+
+Begin Stylesheet
+
+   Begin Template for the root element
+        Apply all Templates!
+   End Template for the root elements
+
+   Begin Template for each l element
+        Return a line of code that reads:
+        "<p> + content of the "l" element + </p>"
+        (this creates one HTML paragraph for each "l" element in the original)
+   End Template for the L Elements
+
+End Stylesheet
+#+end_verse
+
+Our original XML document is very simple, so we don't need much mor than this. But as we'll see later, it can get much more complicated.  And in fact we can make it a little more sophisticated already by adding a bit more complexity: 
+
+#+begin_src xml
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+  <xsl:template match="/">
+    <body>
+      <h1>Grand title</h1>
+      <p>Let us begin our discussion of poetry here.</p>
+          <xsl:apply-templates/>
+    </body>
+  </xsl:template>
+
+  <xsl:template match="poem">
+    <h2>The Ruin</h2>
+          <xsl:apply-templates/>    
+  </xsl:template>
+
+  
+  <xsl:template match="l">
+    <p> <xsl:value-of select="."/> </p>
+  </xsl:template>
+
+</xsl:stylesheet>
+#+end_src
+
+Try to read the text and understand what's going on!
+
+Now let's learn a little bit more about how the ~match~ and ~select~ attributes in the above code really work. 
+
+*** Xpath Expressions
+When we make templates with a ~match~ attribute, or use the ~value-of~ and ~apply-templates~ instructions (see below), we have to tell XSLT which XML elements we are talking about. The selection of elements is done using what are called "[[https://www.w3schools.com/xml/xpath_syntax.asp][Xpath Expressions]]". These are a way to describe the position of elements (sometimes called "nodes") in the XML document. The syntax is extemely complex, so we will just say a few things about it here: 
+
+- "/" refers to the root element -- the element that contains all the other elements in the document
+- ="/poem"= refers to a ~<poem>~ element *at the document root*, while "poem" refers to *any poem element in the document*.  So for instance, "l" will match all of our ~<l>~ elements, but ="/l"= *won't match anything,* because the existing ~<l>~ elements are all /inside the poem element/.
+- "current()" and "." both refer to the *element that is being discussed at the present moment*. So, inside of ~<xsl:template match="poem">...</xsl:template>~, ~"."~ refers to the ~<poem>~ element.
+- "@n" refers to the "attribute" *n*. I'll explain more about this in a second...
+
+*** Value Statements (~value-of~ and ~apply-templates~)
+We almost always want to get the value of the XML elements -- otherwise why would we do all this work? There are two ways to get that value...
+
+**** [[https://www.w3schools.com/xml/ref_xsl_el_value-of.asp][xsl:value-of]]: the simple way
+~<xsl:value-of select="."/>~ just grabs the content of the element and inserts it in the final output.  We don't use it much (see below for reasons, but it can be particularly helpful when we care about *attributes*.  So for instance, consider this line of XML: 
+
+#+begin_src xml
+<l n="2">courtyard pavements were smashed; the work of giants is decaying.</l>
+#+end_src
+
+Maybe we really care that this is line 2! Maybe we want to display those line numbers so readers understand what we're talking about! We can use the "@n" syntax we saw just above: 
+
+#+begin_src xml
+<xsl:value-of select="@n"/>
+#+end_src
+
+When this instruction is applied to the line above, it wil lreturn the number "2"!
+
+**** [[https://www.w3schools.com/xml/xsl_apply_templates.asp][xsl:apply-templates]]: the better way (usually)
+Most of the time, we use ~<xsl:apply-templates/>~ instead of ~<xsl:value-of select="."/>~.  This is because *we usually can't be sure that the element doesn't contain other elements.* And if we just use "value-of", then the elements inside our current element won't be properly translated.  "apply-templates" will check to see if any templates need to be applied internally, and then after those templates have been applied, it will return the whole resultant text.  
+
+All of this is really helpful -- butsince we're generating HTML, you need to know a little bit of HTML to make the text look the way you want it to!
+*** HTML Tags and attributes
+
+I won't go into HTML in much depth -- there are many many resources available online.  Here we'll just describe a few very basic features. 
+
+Like XML documents, HTML documents contain *elements* delimited by *tags*. Also like in XML, those tags can have *attributes* that give extra information.  Here are some tags you may want to use in your work:
+
+#+begin_src html
+<html>
+  <body>
+    Every HTML document should start with a "html" tag and include a "body" tag inside it.
+
+    <h1>first-level header</h1>
+    <h2>second=level header</h2>
+    (etc up to "h6")
+    <p>
+      paragraph containing <strong>bold</strong> and <em>italic</em> text.
+      Paragraphs can also contain
+      <span>
+        tags, which don't do anything by default...
+        but wait!
+      </span>
+    </p>
+    <p style="color;white;background-color:red;border:2px solid black; padding: 10px;">
+      This paragraph will have white text, a red background, a black border,
+      and lots of space around it. Meanwhile, this
+      <span style="color:red;background-color:green">
+        will be entirely invisible to red-green colorblind readers.
+      </span>  
+    </p>
+
+    <table>
+      <tr>
+        <td>this is a </td>
+        <td>table with</td>
+        <td>1 row and 3 columns</td>
+      </tr>
+    </table>
+
+    
+  </body>
+</html>
+#+end_src
+- *p* tags are paragraphs
+- *h1, h2... h6* tags are headers
+- *span* tags delineate text within a paragraph
+- *strong* and *em* do bold and italics
+- You can build tables using the somewhat complicated syntax above
+- you can set style attributes using the "style=" commands as you see them above; I've shown a few possibilities but there are literally hundreds more.  
+
+Hopefully this should be enough for you te get started!
+** Learn more
+
+The [[https://developer.mozilla.org][Mozilla Developer Network]] is the best starting point for almost all technical topics related to the web.  The [[https://developer.mozilla.org/en-US/docs/Web/XML/XML_introduction][XML Introduction]], [[https://developer.mozilla.org/en-US/docs/Web/XSLT][XSLT Intro]], and [[https://developer.mozilla.org/en-US/docs/Web/HTML][much more extensive HTML information]] are all very helpful, and contian links to further information. 
+
+The [[https://tei-c.org/][TEI website]] has extensive information about the TEI standard, but is extremely technical. [[http://teibyexample.org/modules/TBED04v00.htm][TEI By Example]] can be quite helpful, but again, is very detailed.  The full text of /[[https://books.openedition.org/oep/426][What is the Text Encoding Initiative]]/ is available online and may also be helpful. The University of Nebraska's  [[https://cdrh.unl.edu/articles/basicguide][Basic Guide to Text Encoding]] is a lightweight introduction that may be easier to follow than any of the above!
+
+* That last announcement
+:PROPERTIES:
+:ORG_LMS_ANNOUNCEMENT_ID: 305537
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/99251/discussion_topics/305537
+:ORG_LMS_POSTED_AT: 2019-05-16T15:45:23Z
+:END:
+
+it wasn't really an announcement, but a more detailed introduction to XML, XSLT, and HTML than we got in class. I'll distribute a bit more info soon -- maybe at the end of the day -- but I wanted to get this off ASAP so you could make use of it for you assignment!
+
+* One more announcement about assignment 2, and I promise to stop
+:PROPERTIES:
+:ORG_LMS_ANNOUNCEMENT_ID: 306174
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/99251/discussion_topics/306174
+:ORG_LMS_POSTED_AT: 2019-05-18T16:35:26Z
+:END:
+I've posted an amended version of the handout for assignment 2; it incorporates the XML/XSLT/HTML guide I sent out as an announcement on Thursday. [[https://digitalhistory.github.io/wdw235/assignment/reflection-2-handout/][The new one is written in HTML]] to make the code examples a little clearer.  
+
+I've also suggested that you use [[http://fiddle.frameless.io/][XML fiddle]] instead of the w3Schools editor.  It's not great either but at least has syntax highlighting.   
+
+Enjoy your holiday weekend!
+
+* Class *in Robarts* On June 3 -- PLEASE READ!!
+Hello class,
+
+I'm sorry this message did not go out last week as I intended -- I made  a technical error and have only just caught it.  
+
+I realized rather belatedly that in order to do the planned activity tomorrow, we would need computers with the [[https://www.tableau.com/][tableau]] visualization software installed. It's not on the computers in our classroom, but it *is* on the Map & Data Library computers, so we will be shifting to *the same classroom we used 2 weeks ago on the 5th floor of Robarts*. We'll be there for the whole class, from 10-1. 
+
+We'll be using a lightly-modified version of [[http://maps.library.utoronto.ca/workshops/IntroDataViz/index.php][the intro to datavisualization workshop materials]] provided by the MDL.  You may want to take a look at them. 
+
+Please also see the [[https://digitalhistory.github.io/wdw235/syllabus/syllabus/][updated class schedule]], which will allow you to finish the 
+I apologize for not sending this announcement out earlier
+
+* Tomorrow's class -- PLEASE READ (also: Ref 1 assignment)
+:PROPERTIES:
+:ORG_LMS_ANNOUNCEMENT_ID: 307088
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/99251/discussion_topics/307088
+:ORG_LMS_POSTED_AT: 2019-05-22T00:03:58Z
+:END:
+I hope you all enjoyed your holiday weekend!
+
+Tomorrow's class is *special* -- instead of meeting in our usual place we have the [[https://digitalhistory.github.io/wdw235/syllabus/syllabus/#6--data-openrefine][OpenRefine workshop]] in the [[https://mdl.library.utoronto.ca/][Map and Data Library]] on the 5th Floor of Robarts. Please make an effort to be on time; I'll be there before 10 to help you find the classroom.  
+
+Please take a look at the [[https://q.utoronto.ca/courses/99251/files/folder/Handouts?preview=3670640][Workshop Handout]] before class tomorrow! You shouln't need to actually do the downloads unless you plan to work on your own computer, but it might be fun to do a bit of work in advance. 
+
+I've also returned your reflection 1 -- I hope! -- please let me know if there are any issues.  
+
+* Lost Charger?
+:PROPERTIES:
+:ORG_LMS_ANNOUNCEMENT_ID: 317646
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/99251/discussion_topics/317646
+:ORG_LMS_POSTED_AT: 2019-06-12T13:28:11Z
+:END:
+
+Hello everyone, I got this note Monday evening from a student i nanother class. I'm hoping this turns out to belong to one of you!
+
+----------------
+
+Hello Prof. Price,
+
+I hope this email finds you well. 
+
+Today (June 10th) I was working in the computer lab SS561, and found a charger cord. I saw on the front door that you teach the class that takes place in this lab earlier today (WDW235H1), so I thought it is possible that one of your students left this item behind. I hope you can reach out to your students and inquire if anyone left a charger behind - if someone thinks it is theirs, maybe have them email me with details about the charger (colour, type of device it is for, etc) so I can confirm ownership and get this item back to its rightful owner.
+
+Best wishes,
+
+Hila 
+
+
+* Notes for Today's class
+:PROPERTIES:
+:ORG_LMS_ANNOUNCEMENT_ID: 312501
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/99251/discussion_topics/312501
+:ORG_LMS_POSTED_AT: 2019-06-05T13:19:21Z
+:END:
+
+Oops, had hoped to write a more fulsome note but looks like I'm out of time. I've uploaded [[https://q.utoronto.ca/courses/99251/files/folder/Data%20visualization%20Files][a number of files to quercus for today's class]]. Exactly what they're for wil lbecome more evident later, I hope. 
+
+Meanwhile, I have uploaded our texts to voyant tools to save you the trouble -- you can access them here: 
+- [[https://voyant-tools.org/?corpus=f1e498d87d80d31a08eddee6087498a9][Les Mis as Corpus]]
+- [[https://voyant-tools.org/?corpus=3850b9072e252c0284a555d978538a07][Frankenstein as Corpus]]
+- [[https://voyant-tools.org/?corpus=263abefb0bb190230f8003e5ac16f5b8][Lady Susan as Corpus]]
+* Raptors Jubilee
+:PROPERTIES:
+:ORG_LMS_ANNOUNCEMENT_ID: 319546
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/99251/discussion_topics/319546
+:ORG_LMS_POSTED_AT: 2019-06-17T11:31:43Z
+:END:
+
+In the Middle Ages, it was common for royal anniversaries and other great celebrations to be accompanied by an amnesty for prisoners held in royal captivity. 
+
+In accordance with this tradition, and in light of the Raptors victory in game 6, I can grant a *general extension* on the final assignment till Wednesday night, and I plan to cut class short today so that you can get to Nathan Philips Square in time to enjoy the end of the parade if you want.  
+
+See you shortly!
+* Handing in the final Assignment
+:PROPERTIES:
+:ORG_LMS_ANNOUNCEMENT_ID: 320854
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/99251/discussion_topics/320854
+:ORG_LMS_POSTED_AT: 2019-06-20T12:09:38Z
+:END:
+There have been several questions about handing in the final assignment, so I must not have been clear. Please hand in a word doc (or similar) at  [[https://q.utoronto.ca/courses/99251/assignments/170176][the assignment hand-in page]] containing:
+- a link to your Omeka site (make sure the site has been made public, so I can see it!)
+- your annotated bibliography
+
+If you've already done this, don't worry about it! Congratulations on finishing and have a great summer!
+
+
 * COMMENT get student list (for GH roster)
 
 #+begin_src emacs-lisp
@@ -91,4 +466,3 @@ We will *definitely* be taking time to discuss tomorrow's readings in class, so 
    students
   )
 #+end_src
-
