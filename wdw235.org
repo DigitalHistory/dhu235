@@ -17,8 +17,8 @@
    :END:
 
 | Instructor   | Matt Price                                            |
-| Course Hours | MW 10-1                                               |
-| Office Hours | MW 1-2  (Locate TBA)                                   |
+| Course Hours | Th 5-8                                            |
+| Office Hours | Th 1-2  (SS 3077)                         |
 | Email        | [[mailto:alexandra.bolintineanu@utoronto.ca][matt.price@utoronto.ca]] (weekdays 9-5, 48h turnaround) |
 
 * Course Description
@@ -28,7 +28,7 @@
 
 Digital Humanities (DH) is a discipline at the intersections of the humanities with computing.  DH studies human culture -- art, literature, history, geography, religion -- through computational tools and methodologies; and, in turn, DH studies digital artifacts through humanist lenses, as complex cultural objects shaped by wider social, political, and philosophical concerns. Digital humanists [[http://www.doe.utoronto.ca][analyze languages through digital text collections]]; [[https://samizdat.library.utoronto.ca/][build digital archives of forbidden books]]; [[http://sites.utm.utoronto.ca/gillespie/content/welcome-book-fame][construct video games to study literature]]; or [[https://decima-map.net/][resurrect historical cities through digital maps]].
 
-This summer, as in Fall 2018, the course focuses on endangered books: /fragile, hidden, censored, forbidden/. We speak to scholars who build archives of forbidden literature. We visit the Thomas Fisher Rare Book Library. We study rare books' histories through digital exhibits. By the end of the course, you will have mastered concepts and technologies you can use in future courses and workplaces:  text encoding and data visualization, data analysis and digital exhibit platforms. And you will learn how our stories and cultural conversations work and shapeshift through digital environments.
+This year, the course once again focuses on endangered books: /fragile, hidden, censored, forbidden/. We speak to scholars who build archives of forbidden literature. We visit the Thomas Fisher Rare Book Library. We study rare books' histories through digital exhibits. By the end of the course, you will have mastered concepts and technologies you can use in future courses and workplaces:  text encoding and data visualization, data analysis and digital exhibit platforms. And you will learn how our stories and cultural conversations work and shapeshift through digital environments.
 
 * Learning Goals
    :PROPERTIES:
@@ -61,12 +61,7 @@ All technologies used in this course are open-source or, in rare cases, licensed
    :CUSTOM_ID: how-this-course-works
    :END:
 
-Each week we have three hours of class, usually divided approximately as below: 
-
-- Two hours of lecture and discussion (classroom time);
-- One hour of hands-on workshops and discussion (lab time).
-
-Much of your course work will be done in class, in facilitated environments and hands-on workshops. Given the fast pace and praxis-oriented environment, you must come to class on time, all the time: it is all too easy, otherwise, to get lost. If this poses a problem, please let me know as soon as possible.
+Each week we have three hours of class, which include lecture, discussion, and hands-on work in the computer lab. Much of your course work will be done in class, in facilitated environments and hands-on workshops. Given the fast pace and praxis-oriented environment, you must come to class on time, all the time: it is all too easy, otherwise, to get lost. If this poses a problem, please let me know as soon as possible.
 
 * Accessibility 
    :PROPERTIES:
@@ -82,35 +77,32 @@ See [[http://www.studentlife.utoronto.ca/as][A&S Accessibility Website]] for mor
    :CUSTOM_ID: grading-scheme
    :END:
 
-| *Assignment*                                    | *%* | *Due Date*                                        |
-|-------------------------------------------------+-----+---------------------------------------------------|
-| Participation                                   |  15 | All semester; alternatives.                       |
-| Reflection Portfolio (3)                        |  45 | May 13, May 22, June 03                           |
-| Book Project: Consultation                      |   2 | May 22-June 03, in office hours or by appointment |
-| Book Project: Proposal & Annotated Bibliography |   3 | June 05                                           |
-| Book Project: Digital Exhibit                   |  35 | June 17                                           |
-| Total                                           | 100 |                                                   |
+| *Assignment*                                    | *%* | *Due Date*                                    |
+|-------------------------------------------------+-----+-----------------------------------------------|
+| Short Assignments (3)                           |  45 | <2019-09-19 Thu>, <2019-10-10 Thu>, <2019-11-21 Thu>               |
+| Participation                                   |  10 | All semester; alternatives.                   |
+| Book Project: Consultation                      |   1 | Oct. 11-25, in office hours or by appointment |
+| Book Project: Proposal & Annotated Bibliography |   9 | <2019-11-01 Fri>                                     |
+| Book Project: Digital Exhibit                   |  35 | <2019-11-29 Fri>                                     |
+| Total                                           | 100 |                                               |
 #+TBLFM: @>$2=vsum(@2..@-1)
 
 - Reflections include in-class digital artifacts as well as discussion of course readings.
 - You will work on reflections in class as well as outside class, and you will hand them in via Quercus. 400-500 words maximum.
 
-* Assignments
+* Graded Work
    :PROPERTIES:
    :CUSTOM_ID: assignments
    :END:
-
-** Reflection Portfolio
+** Participation
+Every week, you are also responsible for coming to the lab and undertaking the project or field trip of the week in a facilitated environment.  This is where you can explore, experiment, fail creatively:  all I require is *engaged participation—that is, you come to class, do the hands-on computer work, ask questions, and engage in class discussion*. If you miss class or are more than ten minutes late for class, you will miss the grades, unless your absence is excused. 
+** ACTION Reflection Portfolio
 
 You are responsible for writing three reflections in this course. Reflections include in-class digital artifacts as well as discussion of course readings. You will work on reflections in class as well as outside class, and you will hand them in via Quercus. They need not be perfect, just done. 400-500 words maximum.
 
 ** DH Project Profile
 
 Your first assignment is to profile a Digital Humanities project, analyzing its research aims, its form and content, its interface, technologies, and intended audience. 500-700 words. You will select the project from a sign-up list available via our course site.
-
-** Workshops
-
-Every week, you are also responsible for coming to the lab and undertaking the project or field trip of the week in a facilitated environment. This is where you can explore, experiment, fail creatively: all I require is *engaged participation---that is, you come to class, do the hands-on computer work, ask questions, and engage in class discussion*.
 
 ** Book Project
 
