@@ -1,5 +1,6 @@
-#+MACRO: ts (eval(mwp-get-ts+7  'org-mwp-classtimes-calibrate 2))
+#+MACRO: ts (eval(mwp-get-ts+7  'org-mwp-classtimes-calibrate 1))
 #+TITLE: WDW235 Syllabus
+#+ODT_STYLES_FILE: "/home/matt/.emacs.d/Templates/syl-temp-2019.odt"
 #+STARTUP: customtime
 #+ORG_LMS_COURSEID: 99251
 #+HUGO_BASE_DIR: ./website/
