@@ -31,23 +31,23 @@ $cur_msg"
         git push -f origin gh-pages && echo "successfully pushed gh-pages"
       cd ..
 
-      sed -i.gh 's/baseURL = \"https:\/\/digitalhistory.github.io\/dh-website\/\"/baseURL = \"https:\/\/digital.hackinghistory.ca\/\"/' config.toml
-      hugo -s ~/DH/dh-website/ -d ~/DH/dh-website/shimano/
+      # sed -i.gh 's/baseURL = \"https:\/\/digitalhistory.github.io\/dh-website\/\"/baseURL = \"https:\/\/digital.hackinghistory.ca\/\"/' config.toml
+      # hugo -s ~/DH/dh-website/ -d ~/DH/dh-website/shimano/
 
       # now shimano dir, shimano-deploy branch, shimano remote
-      cd shimano &&
-        echo "changing env variables" &&
-        GIT_WORK_TREE="../.git/worktrees/shimano" &&
-        GIT_INDEX_FILE="../.git/worktrees/shimano/index"&&
-        echo "adding all files\n\n"  &&
-        git add --all
-      echo "commit changes to shimano\n\n"
-      git commit -a -m "push changes to shimano from $cur_hash
+      # cd shimano &&
+#         echo "changing env variables" &&
+#         GIT_WORK_TREE="../.git/worktrees/shimano" &&
+#         GIT_INDEX_FILE="../.git/worktrees/shimano/index"&&
+#         echo "adding all files\n\n"  &&
+#         git add --all
+#       echo "commit changes to shimano\n\n"
+#       git commit -a -m "push changes to shimano from $cur_hash
         
-$cur_msg" 
-      echo "pushing shimano-deploy to shimano"
-      git push -f shimano shimano-deploy && echo "successfully pushed shimano"
-      cd ..
+# $cur_msg" 
+#       echo "pushing shimano-deploy to shimano"
+#       git push -f shimano shimano-deploy && echo "successfully pushed shimano"
+#       cd ..
 
       # rsync -azvbP ~/DH/dh-website/shimano/ shimano:/var/www/digital.hackinghistory.ca/
       mv config.toml.gh config.toml
