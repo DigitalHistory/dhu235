@@ -1,0 +1,366 @@
+* 08: Data Visualization 
+:PROPERTIES:
+:EXPORT_FILE_NAME: 08-data-vis
+:END:
+
+** Data Visualization
+  :PROPERTIES:
+  :CUSTOM_ID: data-visualization
+  :END:
+
+** What is data visualization?
+  :PROPERTIES:
+  :CUSTOM_ID: what-is-data-visualization
+  :style: page-break-before:always; 
+  :END:
+
+*** = the presentation of data, information, knowledge, or insight in a pictorial or graphical format
+   :PROPERTIES:
+   :CUSTOM_ID: the-presentation-of-data-information-knowledge-or-insight-in-a-pictorial-or-graphical-format
+   :END:
+
+*** XKCD, “F^&% Grapefruit,” x-y chart
+  :PROPERTIES:
+  :CUSTOM_ID: xkcd-f-grapefruit-x-y-chart
+  :style: page-break-before:always; 
+  :END:
+[[https://imgs.xkcd.com/comics/fuck_grapefruit.png]]
+*** Jessica Hagy, ThisIsIndexed.com
+  :PROPERTIES:
+  :CUSTOM_ID: jessica-hagy-thisisindexed.com
+  :style: page-break-before:always; 
+  :END:
+http://thisisindexed.com/wp-content/uploads/2018/11/card6019.jpg
+*** Jessica Hagy, ThisIsIndexed.com
+  :PROPERTIES:
+  :CUSTOM_ID: jessica-hagy-thisisindexed.com-1
+  :style: page-break-before:always; 
+  :END:
+http://thisisindexed.com/wp-content/uploads/2017/11/card5371.jpg
+** Lying with Dataviz
+  :PROPERTIES:
+  :CUSTOM_ID: lying-with-dataviz
+  :style: page-break-before:always; 
+  :END:
+*** Ignoring conventions
+  :PROPERTIES:
+  :CUSTOM_ID: how-to-lie-with-data-visualization
+  :style: page-break-before:always; 
+  :END:
+#+CAPTION: [[https://i.kinja-img.com/gawker-media/image/upload/s--SKWrO6sh--/c_fit,f_auto,fl_progressive,q_80,w_636/uqs2i9txqkdyc5jkpfut.jpg][Parik, "How to Lie with Data"]]
+https://i.kinja-img.com/gawker-media/image/upload/s--SKWrO6sh--/c_fit,f_auto,fl_progressive,q_80,w_636/uqs2i9txqkdyc5jkpfut.jpg
+
+*** Cumulative Graphs
+   :PROPERTIES:
+   :CUSTOM_ID: how-to-lie-with-data-visualization-1
+   :END:
+#+CAPTION: [[https://i.kinja-img.com/gawker-media/image/upload/s--SKWrO6sh--/c_fit,f_auto,fl_progressive,q_80,w_636/uqs2i9txqkdyc5jkpfut.jpg][Parik, "How to Lie with Data"]]
+#+begin_paired 
+https://i.kinja-img.com/gawker-media/image/upload/s--dmLtGbNu--/c_fit,f_auto,fl_progressive,q_80,w_636/cpgpbbrmsc8s49ofewnc.png
+#+end_paired
+
+#+ATTR_REVEAL: frag
+#+ATTR_HTML: class fake
+#+begin_paired 
+https://i.kinja-img.com/gawker-media/image/upload/s--4XR_eHJJ--/c_fit,f_auto,fl_progressive,q_80,w_636/gzzbt9k9isykezhw63xx.png
+#+end_paired
+
+Cumulative revenue: running total of revenue earned to date (i.e. 2006 = 2006 + 2005 + 2004)
+
+Annual revenue: total revenue earned in current year (i.e. 2006 = 2006)
+
+*** Non-Zero baseline
+  :PROPERTIES:
+  :CUSTOM_ID: how-to-lie-with-data-visualization-2
+  :style: page-break-before:always; 
+  :END:
+#+CAPTION: [[https://i.kinja-img.com/gawker-media/image/upload/s--SKWrO6sh--/c_fit,f_auto,fl_progressive,q_80,w_636/uqs2i9txqkdyc5jkpfut.jpg][Parik, "How to Lie with Data"]]
+https://i.kinja-img.com/gawker-media/image/upload/ksd0huhaczb6xsxhrszp.png
+*** [[http://gizmodo.com/how-to-lie-with-data-visualization-1563576606][How to Lie with Data Visualization]]
+   :PROPERTIES:
+   :CUSTOM_ID: how-to-lie-with-data-visualization-3
+   :END:
+
+** DH-ing with Dataviz
+  :PROPERTIES:
+  :CUSTOM_ID: dh-ing-with-dataviz
+  :style: page-break-before:always; 
+  :END:
+- Unstructured Data
+  - A corpus of literary texts
+- Semi-structured Data
+  - TEI-encoded text
+- Structured Data
+  - Spreadsheet of catalogue entries
+  - collection of geocoded points in a GIS system
+*** Humanities Data: Unstructured
+  :PROPERTIES:
+  :CUSTOM_ID: humanities-data-unstructured
+  :END:
+[[./images/mandeville-cover-page.png]]
+*** Humanities Data: Semi-structured
+  :PROPERTIES:
+  :CUSTOM_ID: humanities-data-semi-structured
+  :style: page-break-before:always; 
+  :END:
+
+  #+begin_src xml
+  <msDesc>
+    <msIdentifier>
+      <settlement>Oxford
+      </settlement>
+      <repository>Bodleian Library
+      </repository>
+      <idno>MS. Add. A. 61
+      </idno>
+    </msIdentifier>
+    <msContents>
+      <p>
+        <quote>Hic incipit Bruitus Anglie,
+        </quote> the
+        <title>De origine et gestis  Regum Angliae
+        </title> of Geoffrey of Monmouth (Galfridus Monumetensis): beg.
+        <quote>Cum mecum multa &amp; de multis.
+        </quote> In Latin.
+      </p>
+    </msContents>
+    <physDesc>
+      <p>
+        <material>Parchment
+        </material>: written in more than one hand: 7¼ x 5⅜ in., I + 55 leaves, in double columns: with a few coloured capitals.
+      </p>
+    </physDesc>
+  </msDesc>
+  
+  #+end_src
+
+*** Humanities Data: Structured
+  :PROPERTIES:
+  :CUSTOM_ID: humanities-data-structured
+  :END:
+[[./images/dc-ss-list.png]]
+
+
+** Humanities Data:
+  :PROPERTIES:
+  :CUSTOM_ID: humanities-data-1
+  :style: page-break-before:always; 
+  :END:
+
+- What “counts” cannot necessarily be counted
+- Data representation = interpretation:
+- The process of modelling and collecting our data is an interpretive process that is shaped by our choices re. what aspects of the data we model; by our research question, argument, perspective, discipline, social context, institutional context, tools available etc.
+
+** Humanities' Data
+  :PROPERTIES:
+  :CUSTOM_ID: humanities-data-2
+  :style: page-break-before:always; 
+  :END:
+#+begin_quote
+“When you call something data, you imply that it exists in *discrete, fungible units*; that it is *computationally tractable*; that *its meaningful qualities can be enumerated in a finite list*; that *someone else performing the same operations on the same data will come up with the same results*. *This is not how humanists think of the material they work with*.” (Miriam Posner, http://miriamposner.com/blog/humanities-data-a-necessary-contradiction/)  
+#+end_quote
+
+** Humanities' Data
+  :PROPERTIES:
+  :CUSTOM_ID: humanities-data-3
+  :style: page-break-before:always; 
+  :END:
+
+  #+begin_quote
+  “[DH visualization tools borrowed from the sciences] carry with them assumptions of *knowledge as observer-independent and certain*, rather than *observer co-dependent and interpretative*. [...] To begin, the concept of *data as a given* has to be rethought through a humanistic lens and characterized as *capta, taken and constructed*.” Johanna Drucker, “Humanities Approaches to Graphical Display.”
+  #+end_quote
+
+** Display as Argument: Visual Knowledge Creation
+  :PROPERTIES:
+  :CUSTOM_ID: display-as-argument-visual-knowledge-creation
+  :style: page-break-before:always; 
+  :END:
+
+- Data vs. Capta
+- Display as argument:
+
+#+begin_quote
+"Graphic artifacts present knowledge through the combination of symbolic codes and structured relations of these elements in a flat field. […T]he forms that are generally used for the presentation of information can be understood and read as *culturally coded expressions of knowledge with their own epistemological assumptions and historical lineage*" (Drucker, “[[https://journals.tdl.org/paj/index.php/paj/article/view/4][Graphesis: Visual Knowledge Production and Representation]],” 2011).
+#+end_quote
+
+
+** ACTION
+:PROPERTIES:
+  :CUSTOM_ID: displays-and-visualizations
+  :style: page-break-before:always; 
+  :END:
+
+ as
+“culturally coded expressions of knowledge with their own epistemological assumptions and historical lineage”*
+
+** From Johanna Drucker's “Humanities Approaches to Graphical Display”
+  :PROPERTIES:
+  :CUSTOM_ID: from-johanna-druckers-humanities-approaches-to-graphical-display
+  :style: page-break-before:always; 
+  :END:
+#+begin_paired
+#+CAPTION: Dr. John Snow's visualization of cholera deaths in London, 1854.
+http://www.digitalhumanities.org/dhq/vol/5/1/000091/...000091/resources/images/figure16.jpg
+#+end_paired
+
+#+begin_paired
+#+CAPTION: Snow's chart altered. Graphic credit Xárene Eskandar
+http://www.digitalhumanities.org/dhq/vol/5/1/000091/...000091/resources/images/figure17.jpg
+#+end_paired
+#+begin_quote
+"Who are those dots? Each individual had a profile, age, size, health, economic potential, family and social roles. [...] But what if we take the rate of deaths, their frequency, and chart that on a temporal axis inflected by increasing panic. Then give a graphical expression to the shape of the terrain, that urban streetscape, as it is redrawn to express the emotional landscape. Then imagine drawing this same streetscape from the point of view of a mother of six young children, a recent widow, a small child, or an elderly man whose son has just died" (Drucker, “Humanities Approaches”).
+
+#+end_quote
+
+** Graphesis
+  :PROPERTIES:
+  :CUSTOM_ID: graphesis
+  :style: page-break-before:always; 
+  :END:
+
+- Johanna Drucker: graphesis = “the field of knowledge production embodied in visual expressions ... a visual epistemology” (Drucker, “Graphesis” 2011)
+- Visual forms carry the assumptions and values of their fields of origin, and impose these assumptions and values on the data they present, whether these assumptions and values are appropriate to that data or not.
+- As humanists, we ask ourselves: What arguments, values, and perspectives do visualizations encode and embody? What kind of knowledge do they produce? What field's assumptions do they draw from?
+
+** Data vs. Capta
+  :PROPERTIES:
+  :CUSTOM_ID: data-vs.-capta
+  :style: page-break-before:always; 
+  :END:
+
+*** *Data*: “given”, objective, observed
+   :PROPERTIES:
+   :CUSTOM_ID: data-given-objective-observed
+   :END:
+
+- Quantitative approaches: from concordances to corpora, from measuring word frequencies and stylometric patterns to thematic discovery through topic modelling
+- Visual representations of quantities, trajectories, measurable relationships
+- Wordle, Gephi, Cytoscape; pie charts, bar charts, and bubble graphs
+- Qualitative approaches: visual and performative, enacting poetics, making subjectivity and interpretation visible
+- Maps and timelines of literary narratives; digital collections; interpretive visualizations
+- Neatline, Neatline Time, Omeka
+
+** 
+  :PROPERTIES:
+  :CUSTOM_ID: section-1
+  :style: page-break-before:always; 
+  :END:
+
+Data vs. Capta: Two Maps
+
+[[https://carto.com/gallery/bbva-geo-risk/][*GEOPOLITICAL TENSIONS IN MENA (Middle East & Northern Africa)*]]
+
+**
+
+** 
+  :PROPERTIES:
+  :CUSTOM_ID: section-2
+  :style: page-break-before:always; 
+  :END:
+
+Data vs. Capta: Two Maps
+
+*BRITISH LIBRARY, The PARIS PSALTER map (c. 1300, England)*
+
+** DH Dataviz: Examples
+  :PROPERTIES:
+  :CUSTOM_ID: dh-dataviz-examples
+  :style: page-break-before:always; 
+  :END:
+
+** Word Cloud
+  :PROPERTIES:
+  :CUSTOM_ID: word-cloud
+  :style: page-break-before:always; 
+  :END:
+
+- Visualizes word frequencies in a text
+- The larger the word, the more often it appears
+
+** Network Graph
+  :PROPERTIES:
+  :CUSTOM_ID: network-graph
+  :style: page-break-before:always; 
+  :END:
+
+*** /*Network Graph:*/
+   :PROPERTIES:
+   :CUSTOM_ID: network-graph-1
+   :END:
+
+*** Things: nodes (vertices)
+   :PROPERTIES:
+   :CUSTOM_ID: things-nodes-vertices
+   :END:
+
+*** Relationships: edges
+   :PROPERTIES:
+   :CUSTOM_ID: relationships-edges
+   :END:
+
+*** Network
+   :PROPERTIES:
+   :CUSTOM_ID: network
+   :END:
+
+** Les Miserables: Network Graph of Character Interactions
+  :PROPERTIES:
+  :CUSTOM_ID: les-miserables-network-graph-of-character-interactions
+  :style: page-break-before:always; 
+  :END:
+
+*** Network graph from Gephi ([[http://gephi.github.io/images/screenshots/datatable.png][http://gephi.github.io/images/screenshots/datatable.png]]). See also Gephi Datasets ([[https://wiki.gephi.org/index.php/Datasets][https://wiki.gephi.org/index.php/Datasets]]): “Coappearance weighted network of characters in the novel Les Miserables.” D. E. Knuth, The Stanford GraphBase: A Platform for Combinatorial Computing, Addison-Wesley, Reading, MA (1993).
+   :PROPERTIES:
+   :CUSTOM_ID: network-graph-from-gephi-httpgephi.github.ioimagesscreenshotsdatatable.png.-see-also-gephi-datasets-httpswiki.gephi.orgindex.phpdatasets-coappearance-weighted-network-of-characters-in-the-novel-les-miserables.-d.-e.-knuth-the-stanford-graphbase-a-platform-for-combinatorial-computing-addison-wesley-reading-ma-1993.
+   :END:
+
+** Lauren F. Klein, “[[http://lklein.com/2012/01/a-report-has-come-here-social-network-analysis-in-the-papers-of-thomas-jefferson/][A Report Has Come Here]]”
+  :PROPERTIES:
+  :CUSTOM_ID: lauren-f.-klein-a-report-has-come-here
+  :style: page-break-before:always; 
+  :END:
+
+*** “This figure is James Hemings, Thomas Jefferson's enslaved personal chef (and Sally Hemings's older brother). When Jefferson was appointed Ambassador to France, he took Hemings with him to Paris, and there apprenticed him to the chef of a prince. Through the few archival records that relate to Hemings, we also know, for instance, that while in Paris, Hemings hired his own tutor and learned to speak fluent French. And here's another thing Hemings learned in Paris: what it might mean to be free. [...]
+   :PROPERTIES:
+   :CUSTOM_ID: this-figure-is-james-hemings-thomas-jeffersons-enslaved-personal-chef-and-sally-hemingss-older-brother.-when-jefferson-was-appointed-ambassador-to-france-he-took-hemings-with-him-to-paris-and-there-apprenticed-him-to-the-chef-of-a-prince.-through-the-few-archival-records-that-relate-to-hemings-we-also-know-for-instance-that-while-in-paris-hemings-hired-his-own-tutor-and-learned-to-speak-fluent-french.-and-heres-another-thing-hemings-learned-in-paris-what-it-might-mean-to-be-free.
+   :END:
+
+*** It is then a striking instantiation of archival silence that when you perform a “Name” search for a person named James Hemings in the /The Papers of Thomas Jefferson, Digital Edition/, you get no results---because Hemings, in spite of his ability to read and write in two languages--because of his status as a slave--was not a person to whom Jefferson ever wrote, or from whom Jefferson received letters.”
+   :PROPERTIES:
+   :CUSTOM_ID: it-is-then-a-striking-instantiation-of-archival-silence-that-when-you-perform-a-name-search-for-a-person-named-james-hemings-in-the-the-papers-of-thomas-jefferson-digital-edition-you-get-no-resultsbecause-hemings-in-spite-of-his-ability-to-read-and-write-in-two-languagesbecause-of-his-status-as-a-slavewas-not-a-person-to-whom-jefferson-ever-wrote-or-from-whom-jefferson-received-letters.
+   :END:
+
+** Project Paradise: A. Bolintineanu Conversation: Hereford Map & Book of John Mandeville
+  :PROPERTIES:
+  :CUSTOM_ID: project-paradise-a.-bolintineanu-conversation-hereford-map-book-of-john-mandeville
+  :style: page-break-before:always; 
+  :END:
+
+** The Knotted Line
+  :PROPERTIES:
+  :CUSTOM_ID: the-knotted-line
+  :style: page-break-before:always; 
+  :END:
+
+*** “an interactive, tactile laboratory for exploring the historical relationship between freedom and confinement in the geographic area of the United States” ([[http://knottedline.com/][http://knottedline.com]]/)
+   :PROPERTIES:
+   :CUSTOM_ID: an-interactive-tactile-laboratory-for-exploring-the-historical-relationship-between-freedom-and-confinement-in-the-geographic-area-of-the-united-states-httpknottedline.com
+   :END:
+
+** Data Visualization: Practicum
+  :PROPERTIES:
+  :CUSTOM_ID: data-visualization-practicum
+  :style: page-break-before:always; 
+  :END:
+
+** 1: Text Visualization with Voyant Tools
+  :PROPERTIES:
+  :CUSTOM_ID: text-visualization-with-voyant-tools
+  :style: page-break-before:always; 
+  :END:
+
+** 2: Maps & Networks with Palladio
+  :PROPERTIES:
+  :CUSTOM_ID: maps-networks-with-palladio
+  :style: page-break-before:always; 
+  :END:

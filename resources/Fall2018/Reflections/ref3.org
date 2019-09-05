@@ -1,0 +1,13 @@
+*Reflection III*
+
+*Using the following table, compare and contrast two of the data visualization tools we have used in this course: Tableau, Voyant, Palladio. Think about the Drucker, Nowviskie, and Posner readings, especially with respect to the Assumptions category!*
+
+| /Tool/Platform/                                   |    |    |
+|---------------------------------------------------+----+----|
+| *Brief Description*                               |    |    |
+| *Data: nature, format, & other characteristics*   |    |    |
+| *Output*                                          |    |    |
+| *User Experience*                                 |    |    |
+| *User Base*                                       |    |    |
+| *Use Cases*                                       |    |    |
+| *Assumptions about Knowledge (Input, Output)*     |    |    |

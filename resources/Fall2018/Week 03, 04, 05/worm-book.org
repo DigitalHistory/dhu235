@@ -1,0 +1,1225 @@
+
+** Medieval Manuscripts
+  :PROPERTIES:
+  :CUSTOM_ID: medieval-manuscripts
+  :END:
+
+** The Exeter Book Riddles
+  :PROPERTIES:
+  :CUSTOM_ID: the-exeter-book-riddles
+  :style: page-break-before:always; 
+  :END:
+
+*** Old English poetry (10th c. manuscript): Cathedral Library, Exeter MS. 3501.
+   :PROPERTIES:
+   :CUSTOM_ID: old-english-poetry-10th-c.-manuscript-cathedral-library-exeter-ms.-3501.
+   :END:
+
+** Making Parchment
+  :PROPERTIES:
+  :CUSTOM_ID: making-parchment
+  :style: page-break-before:always; 
+  :END:
+
+*** Parchment = stretched and processed animal skin (goat, sheep, calf, cow)
+   :PROPERTIES:
+   :CUSTOM_ID: parchment-stretched-and-processed-animal-skin-goat-sheep-calf-cow
+   :END:
+
+*** (but see also: anthropodermic bibliopegy)
+   :PROPERTIES:
+   :CUSTOM_ID: but-see-also-anthropodermic-bibliopegy
+   :END:
+
+*** Domestic sheep. Public Domain, https://commons.wikimedia.org/w/index.php?curid=16818.
+   :PROPERTIES:
+   :CUSTOM_ID: domestic-sheep.-public-domain-httpscommons.wikimedia.orgwindex.phpcurid16818.
+   :END:
+
+** Making Parchment
+  :PROPERTIES:
+  :CUSTOM_ID: making-parchment-1
+  :style: page-break-before:always; 
+  :END:
+
+- Skin is soaked in lime solution to loosen animal hair
+- Animal hair removed with curved knife
+- Skin wetted and stretched on special rack
+
+** Writing
+  :PROPERTIES:
+  :CUSTOM_ID: writing
+  :style: page-break-before:always; 
+  :END:
+
+- Rule the parchment (lead point or coloured ink)
+- Write with quill (goose or swan feather cut to form a nib) dipped into ink
+- Erase mistakes by scraping ink off with knife
+
+** Illumination
+  :PROPERTIES:
+  :CUSTOM_ID: illumination
+  :style: page-break-before:always; 
+  :END:
+
+- Apply gold leaf
+
+** Writing
+  :PROPERTIES:
+  :CUSTOM_ID: writing-1
+  :style: page-break-before:always; 
+  :END:
+
+*** British Library, MS. Arundel 43, f. 80v . Donatus writing his Grammar.
+   :PROPERTIES:
+   :CUSTOM_ID: british-library-ms.-arundel-43-f.-80v-.-donatus-writing-his-grammar.
+   :END:
+
+- Rule the parchment (lead point or coloured ink)
+- Write with quill (goose or swan feather cut to form a nib) dipped into ink
+- Erase mistakes by scraping ink off with knife
+
+** 
+  :PROPERTIES:
+  :CUSTOM_ID: section
+  :style: page-break-before:always; 
+  :END:
+
+** 
+  :PROPERTIES:
+  :CUSTOM_ID: section-1
+  :style: page-break-before:always; 
+  :END:
+
+** 
+  :PROPERTIES:
+  :CUSTOM_ID: section-2
+  :style: page-break-before:always; 
+  :END:
+
+** Early Printed Books
+  :PROPERTIES:
+  :CUSTOM_ID: early-printed-books
+  :style: page-break-before:always; 
+  :END:
+
+** 
+  :PROPERTIES:
+  :CUSTOM_ID: section-3
+  :style: page-break-before:always; 
+  :END:
+
+** 
+  :PROPERTIES:
+  :CUSTOM_ID: section-4
+  :style: page-break-before:always; 
+  :END:
+
+“Wicked” Bible. Thomas Fisher Rare Books Library.
+
+(AB)
+
+** 
+  :PROPERTIES:
+  :CUSTOM_ID: section-5
+  :style: page-break-before:always; 
+  :END:
+
+https://youtu.be/EMjhNhQsqsg
+
+[[https://youtu.be/EMjhNhQsqsg][https://youtu.be/EMjhNhQsqsg]]
+
+** Making & Sustaining Digital Archives
+  :PROPERTIES:
+  :CUSTOM_ID: making-sustaining-digital-archives
+  :style: page-break-before:always; 
+  :END:
+
+** Overview
+  :PROPERTIES:
+  :CUSTOM_ID: overview
+  :style: page-break-before:always; 
+  :END:
+
+- Old English Riddles (Exeter Book 47)
+- Making Digital Archives
+- Using & Sustaining Digital Archives
+
+**** Moððe word fræt.      Me þæt þuhte wrætlicu wyrd,     þa ic þæt wundor gefrægn, þæt se wyrm forswealg     wera gied sumes, þeof in þystro,     þrymfæstne cwide ond þæs strangan staþol.    Stælgiest ne wæs wihte þy gleawra,    þe he þam wordum swealg.
+  :PROPERTIES:
+  :CUSTOM_ID: moððe-word-fræt.-me-þæt-þuhte-wrætlicu-wyrd-þa-ic-þæt-wundor-gefrægn-þæt-se-wyrm-forswealg-wera-gied-sumes-þeof-in-þystro-þrymfæstne-cwide-ond-þæs-strangan-staþol.-stælgiest-ne-wæs-wihte-þy-gleawra-þe-he-þam-wordum-swealg.
+  :style: page-break-before:always; 
+  :END:
+
+***** Moððe word fræt.      Me þæt þuhte wrætlicu wyrd,     þa ic þæt wundor gefrægn, þæt se wyrm forswealg     wera gied sumes, þeof in þystro,     þrymfæstne cwide ond þæs strangan staþol.    Stælgiest ne wæs wihte þy gleawra,    þe he þam wordum swealg.
+   :PROPERTIES:
+   :CUSTOM_ID: moððe-word-fræt.-me-þæt-þuhte-wrætlicu-wyrd-þa-ic-þæt-wundor-gefrægn-þæt-se-wyrm-forswealg-wera-gied-sumes-þeof-in-þystro-þrymfæstne-cwide-ond-þæs-strangan-staþol.-stælgiest-ne-wæs-wihte-þy-gleawra-þe-he-þam-wordum-swealg.-1
+   :END:
+
+*****  
+   :PROPERTIES:
+   :CUSTOM_ID: section-6
+   :END:
+
+***** A moth ate words. That seemed to me a marvellous happening, when I heard about that wonder, that the worm swallowed up a certain man's song, the thief in darkness, a glory-fast speech and its strong foundation. The stealing guest was not at all the wiser, for those words he swallowed.
+   :PROPERTIES:
+   :CUSTOM_ID: a-moth-ate-words.-that-seemed-to-me-a-marvellous-happening-when-i-heard-about-that-wonder-that-the-worm-swallowed-up-a-certain-mans-song-the-thief-in-darkness-a-glory-fast-speech-and-its-strong-foundation.-the-stealing-guest-was-not-at-all-the-wiser-for-those-words-he-swallowed.
+   :END:
+
+\\
+
+****** Notes:
+    :PROPERTIES:
+    :CUSTOM_ID: notes
+    :END:
+
+I want to begin with a riddle. It's from the Old English Exeter Book, a tenth-century manuscript that contains Old English poetry and prose---and includes a collection of riddle poems, like this one. The most frequent solution is Moth or Bookworm: a creature that devours books and so swallows up human knowledge and its “strong foundation” without understanding.
+
+** Bookworm Damage
+  :PROPERTIES:
+  :CUSTOM_ID: bookworm-damage
+  :style: page-break-before:always; 
+  :END:
+
+*** Eric Kwakkel, “[[http://erikkwakkel.tumblr.com/post/52826845564/killer-bookworm-holes-like-these-are-frequently][Killer bookworm holes]]”; Image: 15th-century manuscript in Dubrovnik archives, photographed by Emir O Filipovic (@EmirOFilipovic).
+   :PROPERTIES:
+   :CUSTOM_ID: eric-kwakkel-killer-bookworm-holes-image-15th-century-manuscript-in-dubrovnik-archives-photographed-by-emir-o-filipovic-emirofilipovic.
+   :END:
+
+\\
+
+**** Notes:
+    :PROPERTIES:
+    :CUSTOM_ID: notes-1
+    :END:
+
+Here's an example of bookworm damage in a manuscript. Eric Kwakkel writes: “The most peculiar thing about the holes [bookworms] left behind is that they usually stop halfway the book. It is as if the worm, finished with his meal, turned around and traced his steps back to the restaurant's exit. Like a satisfied customer.”
+
+** 
+  :PROPERTIES:
+  :CUSTOM_ID: section-7
+  :style: page-break-before:always; 
+  :END:
+
+\\
+
+**** Notes:
+    :PROPERTIES:
+    :CUSTOM_ID: notes-2
+    :END:
+
+Bookworms: Insect images
+
+** Making Parchment
+  :PROPERTIES:
+  :CUSTOM_ID: making-parchment-2
+  :style: page-break-before:always; 
+  :END:
+
+*** Parchment = stretched and processed animal skin (goat, sheep, calf, cow)
+   :PROPERTIES:
+   :CUSTOM_ID: parchment-stretched-and-processed-animal-skin-goat-sheep-calf-cow-1
+   :END:
+
+*** (but see also: anthropodermic bibliopegy)
+   :PROPERTIES:
+   :CUSTOM_ID: but-see-also-anthropodermic-bibliopegy-1
+   :END:
+
+*** Domestic sheep. Public Domain, https://commons.wikimedia.org/w/index.php?curid=16818.
+   :PROPERTIES:
+   :CUSTOM_ID: domestic-sheep.-public-domain-httpscommons.wikimedia.orgwindex.phpcurid16818.-1
+   :END:
+
+** Making Parchment
+  :PROPERTIES:
+  :CUSTOM_ID: making-parchment-3
+  :style: page-break-before:always; 
+  :END:
+
+- Skin is soaked in lime solution to loosen animal hair
+- Animal hair removed with curved knife
+- Skin wetted and stretched on special rack
+
+** Writing
+  :PROPERTIES:
+  :CUSTOM_ID: writing-2
+  :style: page-break-before:always; 
+  :END:
+
+*** British Library, MS. Arundel 43, f. 80v . Donatus writing his Grammar.
+   :PROPERTIES:
+   :CUSTOM_ID: british-library-ms.-arundel-43-f.-80v-.-donatus-writing-his-grammar.-1
+   :END:
+
+- Rule the parchment (lead point or coloured ink)
+- Write with quill (goose or swan feather cut to form a nib) dipped into ink
+- Erase mistakes by scraping ink off with knife
+
+** 
+  :PROPERTIES:
+  :CUSTOM_ID: section-8
+  :style: page-break-before:always; 
+  :END:
+
+** 
+  :PROPERTIES:
+  :CUSTOM_ID: section-9
+  :style: page-break-before:always; 
+  :END:
+
+**** Moððe word fræt.      Me þæt þuhte wrætlicu wyrd,     þa ic þæt wundor gefrægn, þæt se wyrm forswealg     wera gied sumes, þeof in þystro,     þrymfæstne cwide ond þæs strangan staþol.    Stælgiest ne wæs wihte þy gleawra,    þe he þam wordum swealg.
+  :PROPERTIES:
+  :CUSTOM_ID: moððe-word-fræt.-me-þæt-þuhte-wrætlicu-wyrd-þa-ic-þæt-wundor-gefrægn-þæt-se-wyrm-forswealg-wera-gied-sumes-þeof-in-þystro-þrymfæstne-cwide-ond-þæs-strangan-staþol.-stælgiest-ne-wæs-wihte-þy-gleawra-þe-he-þam-wordum-swealg.-2
+  :style: page-break-before:always; 
+  :END:
+
+***** Moððe word fræt.      Me þæt þuhte wrætlicu wyrd,     þa ic þæt wundor gefrægn, þæt se wyrm forswealg     wera gied sumes, þeof in þystro,     þrymfæstne cwide ond þæs strangan staþol.    Stælgiest ne wæs wihte þy gleawra,    þe he þam wordum swealg.
+   :PROPERTIES:
+   :CUSTOM_ID: moððe-word-fræt.-me-þæt-þuhte-wrætlicu-wyrd-þa-ic-þæt-wundor-gefrægn-þæt-se-wyrm-forswealg-wera-gied-sumes-þeof-in-þystro-þrymfæstne-cwide-ond-þæs-strangan-staþol.-stælgiest-ne-wæs-wihte-þy-gleawra-þe-he-þam-wordum-swealg.-3
+   :END:
+
+*****  
+   :PROPERTIES:
+   :CUSTOM_ID: section-10
+   :END:
+
+***** A moth ate *words*. That seemed to me a marvellous happening, when I heard about that wonder, that the worm swallowed up a certain man's *song*, the thief in darkness, a glory-fast *speech* *and its strong foundation*. The stealing guest was not at all the wiser, for those *words* he swallowed.
+   :PROPERTIES:
+   :CUSTOM_ID: a-moth-ate-words.-that-seemed-to-me-a-marvellous-happening-when-i-heard-about-that-wonder-that-the-worm-swallowed-up-a-certain-mans-song-the-thief-in-darkness-a-glory-fast-speech-and-its-strong-foundation.-the-stealing-guest-was-not-at-all-the-wiser-for-those-words-he-swallowed.-1
+   :END:
+
+\\
+
+****** Notes:
+    :PROPERTIES:
+    :CUSTOM_ID: notes-3
+    :END:
+
+I want to begin with a riddle. It's from the Old English Exeter Book, a tenth-century manuscript that contains Old English poetry and prose---and includes a collection of riddle poems, like this one. The most frequent solution is Moth or Bookworm: a creature that devours books and so swallows up human knowledge and its “strong foundation” without understanding.
+
+** Traditional Associations
+  :PROPERTIES:
+  :CUSTOM_ID: traditional-associations
+  :style: page-break-before:always; 
+  :END:
+
+*** “wyrd” (fate) -- splendid buildings in ruins; the death of kings, warriors, civilization; the destructiveness of time
+   :PROPERTIES:
+   :CUSTOM_ID: wyrd-fate----splendid-buildings-in-ruins-the-death-of-kings-warriors-civilization-the-destructiveness-of-time
+   :END:
+
+*** “wyrm” (worm) -- dragon
+   :PROPERTIES:
+   :CUSTOM_ID: wyrm-worm----dragon
+   :END:
+
+** 
+  :PROPERTIES:
+  :CUSTOM_ID: section-11
+  :style: page-break-before:always; 
+  :END:
+
+\\
+
+**** Notes:
+    :PROPERTIES:
+    :CUSTOM_ID: notes-4
+    :END:
+
+An archive is a collection of historical documents or records providing information about a place, an institution, or a group of people.
+
+** Toronto Public Library Digital Archive: Print Media, Digitized
+  :PROPERTIES:
+  :CUSTOM_ID: toronto-public-library-digital-archive-print-media-digitized
+  :style: page-break-before:always; 
+  :END:
+
+*** Toronto Public Library Digital Archive: Print Media, Digitized
+   :PROPERTIES:
+   :CUSTOM_ID: toronto-public-library-digital-archive-print-media-digitized-1
+   :END:
+
+\\
+
+**** Notes:
+    :PROPERTIES:
+    :CUSTOM_ID: notes-5
+    :END:
+
+Digital archives can originate with print media, like the Toronto Public Library Digital Archive.
+
+** Digital Archives: Egyptian Revolution (Born Digital)
+  :PROPERTIES:
+  :CUSTOM_ID: digital-archives-egyptian-revolution-born-digital
+  :style: page-break-before:always; 
+  :END:
+
+[[http://guides.library.cornell.edu/c.php?g=31688&p=200748][https://archive-it.org/collections/2358]]
+
+[[http://guides.library.cornell.edu/c.php?g=31688&p=200748][http://guides.library.cornell.edu/c.php?g=31688&p=200748]]
+
+[[https://storify.com/acarvin/new-story-2][https://storify.com/acarvin/new-story-2]]
+
+\\
+
+**** Notes:
+    :PROPERTIES:
+    :CUSTOM_ID: notes-6
+    :END:
+
+Other archives are born digital. Here is an archive of social media activity during the *Egyptian revolution of 2011*: tweets, blogs, Facebook posts, and so on. This is maintained by the American University in Cairo in partnership with the Internet Archive.
+
+** 
+  :PROPERTIES:
+  :CUSTOM_ID: section-12
+  :style: page-break-before:always; 
+  :END:
+
+Digitized Manuscripts (British Library)
+
+Sounds
+
+(British Library)
+
+Social Media
+
+Legal Documents (The National Archives, Public Record Office, Kew, UK)
+
+Video Footage (Getty Images)
+
+Oral Histories (National Archives of Singapore)
+
+Books (British Library)
+
+Newspapers (Google Digitization)
+
+\\
+
+**** Notes:
+    :PROPERTIES:
+    :CUSTOM_ID: notes-7
+    :END:
+
+Archives consist of records: digitized manuscripts, books, newspapers, legal documents, video footage, oral histories, sounds, tweets.
+
+** Born-Digital Projects
+  :PROPERTIES:
+  :CUSTOM_ID: born-digital-projects
+  :style: page-break-before:always; 
+  :END:
+
+** Digitizing Parchment & Paper
+  :PROPERTIES:
+  :CUSTOM_ID: digitizing-parchment-paper
+  :style: page-break-before:always; 
+  :END:
+
+** 
+  :PROPERTIES:
+  :CUSTOM_ID: section-13
+  :style: page-break-before:always; 
+  :END:
+
+\\
+
+**** Notes:
+    :PROPERTIES:
+    :CUSTOM_ID: notes-8
+    :END:
+
+How are digital archives created? For my first example---the digitization of physical collections--I want to draw on work at the Internet Archive---work I had the privilege of witnessing thanks to Andrea Mills, at the Internet Archive scanning centre here in Robarts Library. The Internet Archive, a [[https://en.wikipedia.org/wiki/San_Francisco][San Francisco]]--based nonprofit [[https://en.wikipedia.org/wiki/Digital_library][digital library]] whose stated mission is "universal access to all knowledge". The Internet Archive provides free public access to collections of digitized materials, including books, movies, software, music, and websites. On the 7th floor of Robarts, the Internet Archive digitizes books---from Fisher Rare Books Library; from other UofT libraries; and from all over Canada. In the slides that follow, I want to trace the journey of these materials from physical artifact to digital surrogate.
+
+** 
+  :PROPERTIES:
+  :CUSTOM_ID: section-14
+  :style: page-break-before:always; 
+  :END:
+
+Internet Archive: Materials for digitization. Photo: A. Bolintineanu, 2016.
+
+\\
+
+**** Notes:
+    :PROPERTIES:
+    :CUSTOM_ID: notes-9
+    :END:
+
+Digitization requires very specialized equipment and expertise. Before digitization can begin, materials travel to the scanning centre. Some books travel in humble cardboard boxes, like this stack of yearbooks from Vancouver College.
+
+** Internet Archive: Materials for digitization. Photo: A. Bolintineanu, 2016.
+  :PROPERTIES:
+  :CUSTOM_ID: internet-archive-materials-for-digitization.-photo-a.-bolintineanu-2016.
+  :style: page-break-before:always; 
+  :END:
+
+*** Internet Archive: Materials for digitization. Photo: A. Bolintineanu, 2016.
+   :PROPERTIES:
+   :CUSTOM_ID: internet-archive-materials-for-digitization.-photo-a.-bolintineanu-2016.-1
+   :END:
+
+\\
+
+**** Notes:
+    :PROPERTIES:
+    :CUSTOM_ID: notes-10
+    :END:
+
+Other materials travel in style---in this case, in enclosed archival boxes that themselves travel in padded wooden crates very much like vampire coffins (because, like vampires, these books are fragile and long-lived, travellers from an earlier time).
+
+** Internet Archive: Materials for digitization. Photo: A. Bolintineanu, 2016.
+  :PROPERTIES:
+  :CUSTOM_ID: internet-archive-materials-for-digitization.-photo-a.-bolintineanu-2016.-2
+  :style: page-break-before:always; 
+  :END:
+
+*** Internet Archive: Materials for digitization. Photo: A. Bolintineanu, 2016.
+   :PROPERTIES:
+   :CUSTOM_ID: internet-archive-materials-for-digitization.-photo-a.-bolintineanu-2016.-3
+   :END:
+
+\\
+
+**** Notes:
+    :PROPERTIES:
+    :CUSTOM_ID: notes-11
+    :END:
+
+Here's the vampire coffin.
+
+** Internet Archive: Materials for digitization. Photo: A. Bolintineanu, 2016.
+  :PROPERTIES:
+  :CUSTOM_ID: internet-archive-materials-for-digitization.-photo-a.-bolintineanu-2016.-4
+  :style: page-break-before:always; 
+  :END:
+
+*** Internet Archive: Materials for digitization. Photo: A. Bolintineanu, 2016.
+   :PROPERTIES:
+   :CUSTOM_ID: internet-archive-materials-for-digitization.-photo-a.-bolintineanu-2016.-5
+   :END:
+
+\\
+
+**** Notes:
+    :PROPERTIES:
+    :CUSTOM_ID: notes-12
+    :END:
+
+Here is a human being, for scale. My disembodied hand indicates the thickness of the padding of the box in which the boxes of archival materials were stored.
+
+** Digitizing Manuscripts
+  :PROPERTIES:
+  :CUSTOM_ID: digitizing-manuscripts
+  :style: page-break-before:always; 
+  :END:
+
+*** Digitisation of a Dunhuang manuscript (Pictured: De Vere 480 camera. Wikipedia: International Dunhuang Project, 2006.)
+   :PROPERTIES:
+   :CUSTOM_ID: digitisation-of-a-dunhuang-manuscript-pictured-de-vere-480-camera.-wikipedia-international-dunhuang-project-2006.
+   :END:
+
+\\
+
+**** Notes:
+    :PROPERTIES:
+    :CUSTOM_ID: notes-13
+    :END:
+
+Once you have assembled your material, digitization work can begin. You'll need a specialized camera that can capture the colours of your manuscript, the tiny details (some not visible to the naked eye), erasures, scribal doodles, the marginal notes written by scribes and readers over the years, even bookworm damage. You'll need a cradle to support the manuscript. You'll need a conservation-friendly room, where you can control all the light sources, to make sure you take the clearest, most accurate photograph.
+
+** Digitizing Printed Books
+  :PROPERTIES:
+  :CUSTOM_ID: digitizing-printed-books
+  :style: page-break-before:always; 
+  :END:
+
+*** Digitizing Books at the Fisher Library (Photo: Paul Armstrong, 2016)
+   :PROPERTIES:
+   :CUSTOM_ID: digitizing-books-at-the-fisher-library-photo-paul-armstrong-2016
+   :END:
+
+\\
+
+**** Notes:
+    :PROPERTIES:
+    :CUSTOM_ID: notes-14
+    :END:
+
+Here is a specialized scanner as used by the Fisher Library. Notice the black book cradle under the book, and colour calibration strip on the right-hand side of the book. These help ensure archival-quality images.
+
+** Digitizing Printed Books
+  :PROPERTIES:
+  :CUSTOM_ID: digitizing-printed-books-1
+  :style: page-break-before:always; 
+  :END:
+
+*** Digitizing Books at the Internet Archive, University of Toronto (Photo: Alexandra Bolintineanu, 2016)
+   :PROPERTIES:
+   :CUSTOM_ID: digitizing-books-at-the-internet-archive-university-of-toronto-photo-alexandra-bolintineanu-2016
+   :END:
+
+\\
+
+**** Notes:
+    :PROPERTIES:
+    :CUSTOM_ID: notes-15
+    :END:
+
+Here is a specialized scanning station from the Internet Archive's outpost on the seventh floor of Robarts. Notice the curtains around the station, ensuring a minimum of light interference; the bright light on the scanner itself; the computer screen, to check the quality of the scan; and the book cradle, holding the book half-open so as not to injure its spine. On the seventh floor of Robarts, in the Internet Archive's quarters, there are seven or eight such digitization stations, each in its own cocoon of drapery and with its own overhead light.
+
+** Digitizing Printed Books
+  :PROPERTIES:
+  :CUSTOM_ID: digitizing-printed-books-2
+  :style: page-break-before:always; 
+  :END:
+
+*** Digitizing Books at the Internet Archive, University of Toronto (Photo: Alexandra Bolintineanu, 2016)
+   :PROPERTIES:
+   :CUSTOM_ID: digitizing-books-at-the-internet-archive-university-of-toronto-photo-alexandra-bolintineanu-2016-1
+   :END:
+
+\\
+
+**** Notes:
+    :PROPERTIES:
+    :CUSTOM_ID: notes-16
+    :END:
+
+The scanning bed is angled, forming a book cradle that allows a book to sit partially open. This supports fragile spines and bindings.
+
+** Digitizing Printed Books
+  :PROPERTIES:
+  :CUSTOM_ID: digitizing-printed-books-3
+  :style: page-break-before:always; 
+  :END:
+
+*** Digitizing Books at the Internet Archive, University of Toronto (Photo: Alexandra Bolintineanu, 2016)
+   :PROPERTIES:
+   :CUSTOM_ID: digitizing-books-at-the-internet-archive-university-of-toronto-photo-alexandra-bolintineanu-2016-2
+   :END:
+
+\\
+
+**** Notes:
+    :PROPERTIES:
+    :CUSTOM_ID: notes-17
+    :END:
+
+Colour reference sheets help calibrate the scanner, ensuring the colours it records in its images are as accurate as possible.
+
+** Digitizing Printed Books
+  :PROPERTIES:
+  :CUSTOM_ID: digitizing-printed-books-4
+  :style: page-break-before:always; 
+  :END:
+
+*** Digitizing Books at the Internet Archive, University of Toronto (Photo: Alexandra Bolintineanu, 2018)
+   :PROPERTIES:
+   :CUSTOM_ID: digitizing-books-at-the-internet-archive-university-of-toronto-photo-alexandra-bolintineanu-2018
+   :END:
+
+\\
+
+**** Notes:
+    :PROPERTIES:
+    :CUSTOM_ID: notes-18
+    :END:
+
+Colour reference sheets help calibrate the scanner, ensuring the colours it records in its images are as accurate as possible.
+
+** Digitization Errors
+  :PROPERTIES:
+  :CUSTOM_ID: digitization-errors
+  :style: page-break-before:always; 
+  :END:
+
+*** Image: “Special Collection” (2009), by Benjamin Shaykin. Photo by the Library of the Printed Web. Cited by Kenneth Goldsmith, “The Artful Accidents of Google Books,” /The New Yorker/ (December 4, 2013).
+   :PROPERTIES:
+   :CUSTOM_ID: image-special-collection-2009-by-benjamin-shaykin.-photo-by-the-library-of-the-printed-web.-cited-by-kenneth-goldsmith-the-artful-accidents-of-google-books-the-new-yorker-december-4-2013.
+   :END:
+
+\\
+
+**** Notes:
+    :PROPERTIES:
+    :CUSTOM_ID: notes-19
+    :END:
+
+Not from the Internet Archive, but from Google Books, here is an example of digitization error: the hand of a scanner operator appear in digitized Google Books.
+
+** Google Data Centre: Server Farm
+  :PROPERTIES:
+  :CUSTOM_ID: google-data-centre-server-farm
+  :style: page-break-before:always; 
+  :END:
+
+*** Image: Google, Data Centre Gallery (https://www.google.com/about/datacenters/gallery)
+   :PROPERTIES:
+   :CUSTOM_ID: image-google-data-centre-gallery-httpswww.google.comaboutdatacentersgallery
+   :END:
+
+** “The Mirror of the World & Its Memory”
+  :PROPERTIES:
+  :CUSTOM_ID: the-mirror-of-the-world-its-memory
+  :style: page-break-before:always; 
+  :END:
+
+** British Library, Endangered Archives Programme
+  :PROPERTIES:
+  :CUSTOM_ID: british-library-endangered-archives-programme
+  :style: page-break-before:always; 
+  :END:
+
+*** British Library, Endangered Archives Programme
+   :PROPERTIES:
+   :CUSTOM_ID: british-library-endangered-archives-programme-1
+   :END:
+
+*** http://eap.bl.uk/database/map.a4d
+   :PROPERTIES:
+   :CUSTOM_ID: httpeap.bl.ukdatabasemap.a4d
+   :END:
+
+**** “Documentary heritage reflects the diversity of languages, peoples and cultures. It is the mirror of the world and its memory. But this memory is fragile. Every day, irreplaceable parts of this memory disappear for ever.”
+  :PROPERTIES:
+  :CUSTOM_ID: documentary-heritage-reflects-the-diversity-of-languages-peoples-and-cultures.-it-is-the-mirror-of-the-world-and-its-memory.-but-this-memory-is-fragile.-every-day-irreplaceable-parts-of-this-memory-disappear-for-ever.
+  :style: page-break-before:always; 
+  :END:
+
+***** “Documentary heritage reflects the diversity of languages, peoples and cultures. It is the mirror of the world and its memory. But this memory is fragile. Every day, irreplaceable parts of this memory disappear for ever.”
+   :PROPERTIES:
+   :CUSTOM_ID: documentary-heritage-reflects-the-diversity-of-languages-peoples-and-cultures.-it-is-the-mirror-of-the-world-and-its-memory.-but-this-memory-is-fragile.-every-day-irreplaceable-parts-of-this-memory-disappear-for-ever.-1
+   :END:
+
+***** UNESCO Memory of the World Programme,
+   :PROPERTIES:
+   :CUSTOM_ID: unesco-memory-of-the-world-programme
+   :END:
+
+***** quoted by the British Library, Endangered Archives Programme
+   :PROPERTIES:
+   :CUSTOM_ID: quoted-by-the-british-library-endangered-archives-programme
+   :END:
+
+** 
+  :PROPERTIES:
+  :CUSTOM_ID: section-15
+  :style: page-break-before:always; 
+  :END:
+
+** Digital Imaging of Endangered Books
+  :PROPERTIES:
+  :CUSTOM_ID: digital-imaging-of-endangered-books
+  :style: page-break-before:always; 
+  :END:
+
+** 
+  :PROPERTIES:
+  :CUSTOM_ID: section-16
+  :style: page-break-before:always; 
+  :END:
+
+** Hyperspectral or Multispectral Imaging
+  :PROPERTIES:
+  :CUSTOM_ID: hyperspectral-or-multispectral-imaging
+  :style: page-break-before:always; 
+  :END:
+
+** Hyperspectral or Multispectral Imaging
+  :PROPERTIES:
+  :CUSTOM_ID: hyperspectral-or-multispectral-imaging-1
+  :style: page-break-before:always; 
+  :END:
+
+*** “a powerful, noncontact technique with a range of capabilities. The critical component of the advanced spectral imaging is the capability for chemical characterization of materials, providing both access and enhanced non-visible and visible information in registered high-resolution digital images. This noncontact tool can identify and characterize colorants, inks, and substrates through their specific spectral response, monitor deterioration or changes due to exhibit and other environmental conditions, assess and potentially identify previous treatments that modify chemical and spectral responses of cultural heritage materials...” (Fenella G. France et al)
+   :PROPERTIES:
+   :CUSTOM_ID: a-powerful-noncontact-technique-with-a-range-of-capabilities.-the-critical-component-of-the-advanced-spectral-imaging-is-the-capability-for-chemical-characterization-of-materials-providing-both-access-and-enhanced-non-visible-and-visible-information-in-registered-high-resolution-digital-images.-this-noncontact-tool-can-identify-and-characterize-colorants-inks-and-substrates-through-their-specific-spectral-response-monitor-deterioration-or-changes-due-to-exhibit-and-other-environmental-conditions-assess-and-potentially-identify-previous-treatments-that-modify-chemical-and-spectral-responses-of-cultural-heritage-materials-fenella-g.-france-et-al
+   :END:
+
+** Archimedes Codex
+  :PROPERTIES:
+  :CUSTOM_ID: archimedes-codex
+  :style: page-break-before:always; 
+  :END:
+
+*** [[https://www.ted.com/talks/william_noel_revealing_the_lost_codex_of_archimedes][https://www.ted.com/talks/william_noel_revealing_the_lost_codex_of_archimedes]]
+   :PROPERTIES:
+   :CUSTOM_ID: httpswww.ted.comtalkswilliam_noel_revealing_the_lost_codex_of_archimedes
+   :END:
+
+*** [[http://archimedespalimpsest.net/Data/][http://archimedespalimpsest.net/Data/]]
+   :PROPERTIES:
+   :CUSTOM_ID: httparchimedespalimpsest.netdata
+   :END:
+
+** Herculaneum Scrolls
+  :PROPERTIES:
+  :CUSTOM_ID: herculaneum-scrolls
+  :style: page-break-before:always; 
+  :END:
+
+*** “A papyrus scrolls from Herculaneum, which was carbonized in the eruption of Mt. Vesuvius, undergoes part of the CT scan process to help decipher the writing contained within the scrolls, in an image from the University of Kentucky's Center for Visualization and Virtual Environments taken in 2009.” ([[https://www.newsweek.com/2016/01/29/x-rays-reveal-secrets-egyptian-scrolls-papyrus-416719.html][https://www.newsweek.com/2016/01/29/x-rays-reveal-secrets-egyptian-scrolls-papyrus-416719.html]])
+   :PROPERTIES:
+   :CUSTOM_ID: a-papyrus-scrolls-from-herculaneum-which-was-carbonized-in-the-eruption-of-mt.-vesuvius-undergoes-part-of-the-ct-scan-process-to-help-decipher-the-writing-contained-within-the-scrolls-in-an-image-from-the-university-of-kentuckys-center-for-visualization-and-virtual-environments-taken-in-2009.-httpswww.newsweek.com20160129x-rays-reveal-secrets-egyptian-scrolls-papyrus-416719.html
+   :END:
+
+** The Declaration of Independence (draft)
+  :PROPERTIES:
+  :CUSTOM_ID: the-declaration-of-independence-draft
+  :style: page-break-before:always; 
+  :END:
+
+*** Patriots? Residents?
+   :PROPERTIES:
+   :CUSTOM_ID: patriots-residents
+   :END:
+
+- Fenella G. France and Michael B. Toth. 2011. [[https://getit.library.utoronto.ca/index.php/oneclick?ctx_ver=Z39.88-2004&ctx_enc=info:ofi/enc:UTF-8&rfr_id=info:sid/summon.serialssolutions.com&rft_val_fmt=info:ofi/fmt:kev:mtx:journal&rft.genre=proceeding&rft.title=2011+19th+European+Signal+Processing+Conference&rft.atitle=Spectral+imaging+for+revealing+and+preserving+world+cultural+heritage&rft.au=France,+Fenella+G&rft.au=Toth,+Michael+B&rft.date=2011-08-01&rft.pub=IEEE&rft.issn=2076-1465&rft.spage=1450&rft.epage=1454&rft.externalDocID=7069644][“Spectral imaging for revealing and preserving world cultural heritage]].” The Institute of Electrical and Electronics Engineers, Inc. (IEEE) Conference Proceedings, 08/2011, pp. 1450 -- 1454.
+
+** The Declaration of Independence (draft)
+  :PROPERTIES:
+  :CUSTOM_ID: the-declaration-of-independence-draft-1
+  :style: page-break-before:always; 
+  :END:
+
+** 
+  :PROPERTIES:
+  :CUSTOM_ID: section-17
+  :style: page-break-before:always; 
+  :END:
+
+** 
+  :PROPERTIES:
+  :CUSTOM_ID: section-18
+  :style: page-break-before:always; 
+  :END:
+
+** Risks to Digital Archives
+  :PROPERTIES:
+  :CUSTOM_ID: risks-to-digital-archives
+  :style: page-break-before:always; 
+  :END:
+
+** 
+  :PROPERTIES:
+  :CUSTOM_ID: section-19
+  :style: page-break-before:always; 
+  :END:
+
+LOST
+
+DATA
+
+** Risks to Digital Archives
+  :PROPERTIES:
+  :CUSTOM_ID: risks-to-digital-archives-1
+  :style: page-break-before:always; 
+  :END:
+
+Image: Windows Blue Screen of Death (Wikipedia, original uploader: Akhristov at English Wikipedia. Public Domain.)
+
+Image: 15th-century manuscript in Dubrovnik archives, photographed by Emir O Filipovic (@EmirOFilipovic).
+
+\\
+
+**** Notes:
+    :PROPERTIES:
+    :CUSTOM_ID: notes-20
+    :END:
+
+Digital archives are not vulnerable to bookworms. But they are fragile -- more fragile -- in different ways. To illustrate this fragility, let's consider the story of the two Doomsday Books.
+
+** Doomsday Book
+  :PROPERTIES:
+  :CUSTOM_ID: doomsday-book
+  :style: page-break-before:always; 
+  :END:
+
+*** *1086*
+   :PROPERTIES:
+   :CUSTOM_ID: section-20
+   :END:
+
+*** *1986*
+   :PROPERTIES:
+   :CUSTOM_ID: section-21
+   :END:
+
+\\
+
+**** Notes:
+    :PROPERTIES:
+    :CUSTOM_ID: notes-21
+    :END:
+
+Let me tell you the story of the two Doomsday Books. The firsts is a Latin manuscript of the eleventh century: for taxation purposes, William the Conqueror ordered a record made of landholders and their property in much of England and parts of Wales. The book was finished in 1086 and it resides at The National Archives at Kew, London.
+
+The second Doomsday Book was a BBC initiative, 900 years later: an attempt to build a “digital snapshot of the country,” a documentation of everyday life in communities around the United Kingdom. Over a million people contributed. 
+
+**** The BBC Domesday Project was stored on adapted laser discs. Reading these discs required a state-of-the-art microcomputer, the Acorn BBC Master, customized with a specially produced laserdisc player.
+  :PROPERTIES:
+  :CUSTOM_ID: the-bbc-domesday-project-was-stored-on-adapted-laser-discs.-reading-these-discs-required-a-state-of-the-art-microcomputer-the-acorn-bbc-master-customized-with-a-specially-produced-laserdisc-player.
+  :style: page-break-before:always; 
+  :END:
+
+***** The BBC Domesday Project was stored on adapted laser discs. Reading these discs required a state-of-the-art microcomputer, the Acorn BBC Master, customized with a specially produced laserdisc player.
+   :PROPERTIES:
+   :CUSTOM_ID: the-bbc-domesday-project-was-stored-on-adapted-laser-discs.-reading-these-discs-required-a-state-of-the-art-microcomputer-the-acorn-bbc-master-customized-with-a-specially-produced-laserdisc-player.-1
+   :END:
+
+** 
+  :PROPERTIES:
+  :CUSTOM_ID: section-22
+  :style: page-break-before:always; 
+  :END:
+
+(Photo: A Domesday system at the Vintage Computer Festival 2010, Bletchley, UK. Photo by Regregex, Wikipedia.)
+
+\\
+
+**** Notes:
+    :PROPERTIES:
+    :CUSTOM_ID: notes-22
+    :END:
+
+Unfortunately, as the machines became obsolete, the laser discs and the data on them became unreadable. Until, roughly, 2011. After efforts by academics and technologists around the world, the BBC's own technologists, George Auckland and his Innovations Team, completed the extraction of the laser disc. The BBC Domesday Book is now available to the world at large online.
+
+** 
+  :PROPERTIES:
+  :CUSTOM_ID: section-23
+  :style: page-break-before:always; 
+  :END:
+
+** 
+  :PROPERTIES:
+  :CUSTOM_ID: section-24
+  :style: page-break-before:always; 
+  :END:
+
+Data Loss and Digital Archives: Storage, Loss, Preservation
+
+** Dictionary of Old English Corpus: 1980s
+  :PROPERTIES:
+  :CUSTOM_ID: dictionary-of-old-english-corpus-1980s
+  :style: page-break-before:always; 
+  :END:
+
+*** /Beowulf/ on Scantron (photo by A. Bolintineanu).
+   :PROPERTIES:
+   :CUSTOM_ID: beowulf-on-scantron-photo-by-a.-bolintineanu.
+   :END:
+
+\\
+
+**** Notes:
+    :PROPERTIES:
+    :CUSTOM_ID: notes-23
+    :END:
+
+What can born-digital projects do to prevent losing data to obsolescence? Let's take a look at another project: U of T's very own Dictionary of Old English. It lives on the fourteenth floor of Robarts. The DOE studies the earliest form of the English language, from 600 to 1150. Founded in 1970 at the [[http://www.utoronto.ca/][University of Toronto]], the [[http://tapor.library.utoronto.ca/doe][Dictionary]] and its Old English corpus predate the Internet by more than a decade.
+
+In the early seventies, the Dictionary of Old English Project created an electronic corpus (a body of texts) that included at least one version of every known Old English text---typed on a typewriter onto Scantron sheets, because time on the mainframe computer was very expensive (Ashley Crandell Amos, "Computers and Lexicography: The Dictionary of Old English," Editing, Publishing, and Computer Technology, AMS Press, Inc., 1988). These Scantron sheets were scanned, and so the text was digitized. The piece you see above is from the Old English poem Beowulf:
+
+HWÆT, WE GAR-DEna in geardagum,  þeodcyninga þrym gefrunon,  hu ða æþelingas ellen fremedon! 
+
+(Listen, we have heard of the Spear-danes in days of old, the kings of the people and their glory, how the princes performed deeds of courage.)
+
+** Dictionary of Old English Corpus: 2016
+  :PROPERTIES:
+  :CUSTOM_ID: dictionary-of-old-english-corpus-2016
+  :style: page-break-before:always; 
+  :END:
+
+\\
+
+**** Notes:
+    :PROPERTIES:
+    :CUSTOM_ID: notes-24
+    :END:
+
+And here is the DOE Corpus in 2016, accessible online.
+
+** Data Storage
+  :PROPERTIES:
+  :CUSTOM_ID: data-storage
+  :style: page-break-before:always; 
+  :END:
+
+*** *Risky*
+   :PROPERTIES:
+   :CUSTOM_ID: risky
+   :END:
+
+- Own machine: YIKES
+- Dropbox or Google Drive: better, but not perfect
+
+*** *Safer*
+   :PROPERTIES:
+   :CUSTOM_ID: safer
+   :END:
+
+- Multiple backups off-site
+- GitHub (version control)
+- Institutional repository (i.e. the library) with technical safeguards against data degradation
+- LOCKSS: distributed network of institutional repositories
+- Dark archives: secret, inaccessible archives (disaster recovery)
+
+\\
+
+**** Notes:
+    :PROPERTIES:
+    :CUSTOM_ID: notes-25
+    :END:
+
+Storing the data on your own machine is very risky. If you put it in Dropbox or Google Drive, that's better, but not perfect: what if you or a team member deletes the data by accident? Even better if you have multiple off-site backups: so if e.g. Dropbox has a security failure and your own computer is compromised, you can still get your data from the hard-drive at your parents'. Even better: GitHub (which is a platform that tracks versions of your data, where you have the history of your data and can go back to earlier versions).
+
+If you're a research institution, you have some other, even safer options.
+
+Your institutional repository is maintained by the library: it's a place to park your data that has sophisticated technical safeguards against data degradation.
+
+If one institutional repository is nice, more are even better. LOCKSS is an open-source preservation system that sustains a distributed network of institutional repositories. It's like storing your backup hard-drive at your parents' and having them store their hard-drive at your house. In other words, everyone protects everyone else's data. LOCKSS stands for “lots of copies keep stuff safe.” And for additional protection, there are dark archives, for disaster recovery. These keep data secret and inaccessible until a trigger event such as a natural disaster or another kind of catastrophic data loss.
+
+** Hardware and Software Platforms
+  :PROPERTIES:
+  :CUSTOM_ID: hardware-and-software-platforms
+  :style: page-break-before:always; 
+  :END:
+
+*** *Risky*
+   :PROPERTIES:
+   :CUSTOM_ID: risky-1
+   :END:
+
+- Dedicated, unique software platforms made by commercial providers to fit your data beautifully.
+
+*** *Safer*
+   :PROPERTIES:
+   :CUSTOM_ID: safer-1
+   :END:
+
+- Open-source, community-supported software
+
+\\
+
+**** Notes:
+    :PROPERTIES:
+    :CUSTOM_ID: notes-26
+    :END:
+
+How long do hardware and software platforms live? What's their life expectancy?
+
+** Preservation Approaches
+  :PROPERTIES:
+  :CUSTOM_ID: preservation-approaches
+  :style: page-break-before:always; 
+  :END:
+
+*** *Migration*
+   :PROPERTIES:
+   :CUSTOM_ID: migration
+   :END:
+
+- Moving your data from an obsolete, less stable platform and format into a newer, more stable platform and format.
+- Great for simpler digital objects (text, images)
+- Example: DOE data.
+
+*** *Emulation*
+   :PROPERTIES:
+   :CUSTOM_ID: emulation
+   :END:
+
+- In a new, stable software platform, recreating the---now obsolete---original environment of a digital object
+- Good for complicated digital objects (software)
+- Example: old arcade video games.
+
+\\
+
+**** Notes:
+    :PROPERTIES:
+    :CUSTOM_ID: notes-27
+    :END:
+
+Suppose your data is in an obsolete, unstable platform. What can you do?
+
+** The Internet Archive
+  :PROPERTIES:
+  :CUSTOM_ID: the-internet-archive
+  :style: page-break-before:always; 
+  :END:
+
+** The Internet Archive: Public Engagement
+  :PROPERTIES:
+  :CUSTOM_ID: the-internet-archive-public-engagement
+  :style: page-break-before:always; 
+  :END:
+
+** Risk Mitigation
+  :PROPERTIES:
+  :CUSTOM_ID: risk-mitigation
+  :style: page-break-before:always; 
+  :END:
+
+- LOCKSS
+- Community-building
+
+** Disasters
+  :PROPERTIES:
+  :CUSTOM_ID: disasters
+  :style: page-break-before:always; 
+  :END:
+
+*** Library of Celsus, Ephesus, Anatolia, now part of Selçuk, Turkey -- destroyed by earthquake and/or fire and/or Goth invasion in 3rd century AD.
+   :PROPERTIES:
+   :CUSTOM_ID: library-of-celsus-ephesus-anatolia-now-part-of-selçuk-turkey-destroyed-by-earthquake-andor-fire-andor-goth-invasion-in-3rd-century-ad.
+   :END:
+
+*** Photo: Benh LIEU SONG - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=15578063
+   :PROPERTIES:
+   :CUSTOM_ID: photo-benh-lieu-song---own-work-cc-by-sa-3.0-httpscommons.wikimedia.orgwindex.phpcurid15578063
+   :END:
+
+** 
+  :PROPERTIES:
+  :CUSTOM_ID: section-25
+  :style: page-break-before:always; 
+  :END:
+
+Canadian Ice Core Archive:
+
+Freezer fails,  temperature rises to about 100 degrees F, ice core samples from Canadian Arctic “which contained 22,000 years' worth of atmospheric information, were entirely or partially destroyed” (Martin Sharp, cited by Tatiana Schlossberg, “An Ice Scientist's Worst Nightmare,” New York Times, 11 April 2017)
+
+** Risk Mitigation
+  :PROPERTIES:
+  :CUSTOM_ID: risk-mitigation-1
+  :style: page-break-before:always; 
+  :END:
+
+- “collection evacuation risks, prompted by wildfires, floods, and hurricanes
+- “long-term relocation decisions due to sea-level rise and coastal erosion, or if a weather event is so devastating, rebuilding is inadvisable or impossible
+- “increasing infrastructure and preservation costs when current HVAC systems can't keep up with future increases in temperature and humidity” (Eira Tansey, “When the Unbearable Becomes Inevitable: Archives and Climate Change,” 2017, [[http://eiratansey.com/2017/05/16/fierce-urgencies-2017/][http://eiratansey.com/2017/05/16/fierce-urgencies-2017/]])
+- LOCKSS, dark archives, community building
+
+** Marginalized Communities: Archival Absence & Misrepresentation
+  :PROPERTIES:
+  :CUSTOM_ID: marginalized-communities-archival-absence-misrepresentation
+  :style: page-break-before:always; 
+  :END:
+
+** Marginalized Communities: Archival Absence & Misrepresentation
+  :PROPERTIES:
+  :CUSTOM_ID: marginalized-communities-archival-absence-misrepresentation-1
+  :style: page-break-before:always; 
+  :END:
+
+** 
+  :PROPERTIES:
+  :CUSTOM_ID: section-26
+  :style: page-break-before:always; 
+  :END:
+
+\\
+
+**** Notes:
+    :PROPERTIES:
+    :CUSTOM_ID: notes-28
+    :END:
+
+Think about the residential school system in Canada, under which about 150,000 First Nation, Inuit and Métis children were removed from their communities, forced to attend residential schools, not allowed to speak their first language, not allowed to practice native traditions. Many were starved, beaten, sexually abused. Two days ago, Ontario Premier Kathleen Wynne officially apologized to First Nations, Metis, and Inuit communities for the abuses of the residential school system. Part of the Truth and Reconciliation Commission's work has been to uncover this history. It is not recovery. It is not undoing of cultural genocide. But, and I quote the National Centre for Truth and Reconciliation, “A shared vision held by those affected by Indian residential schools was to create a place of learning and dialogue where the truths of their experiences were honoured and kept safe for future generations. They wanted their families, communities and all of Canada to learn from these hard lessons so they would not be repeated.” The Governing Circle of the archive must “ensure Indigenous control over the materials, ensure Indigenous control over the materials; provide guidance on policies, activities, ceremonies and protocols; and provide guidance on methods and sources for expanding the Centre's holdings and resources.” The archive does not turn back time. But it safeguards the past and, in so doing, opens up possible futures.
+
+** MUKURTU
+  :PROPERTIES:
+  :CUSTOM_ID: mukurtu
+  :style: page-break-before:always; 
+  :END:
+
+*** “Mukurtu (MOOK-oo-too) is a grassroots project aiming to empower communities to manage, share, narrate, and exchange their digital heritage in culturally relevant and ethically-minded ways.”
+   :PROPERTIES:
+   :CUSTOM_ID: mukurtu-mook-oo-too-is-a-grassroots-project-aiming-to-empower-communities-to-manage-share-narrate-and-exchange-their-digital-heritage-in-culturally-relevant-and-ethically-minded-ways.
+   :END:
+
+***  
+   :PROPERTIES:
+   :CUSTOM_ID: section-27
+   :END:
+
+** MUKURTU
+  :PROPERTIES:
+  :CUSTOM_ID: mukurtu-1
+  :style: page-break-before:always; 
+  :END:
+
+*** “In 2007, Warumungu community members collaborated with Kim Christen and Craig Dietrich to produce the Mukurtu Wumpurrarni-kari Archive.
+   :PROPERTIES:
+   :CUSTOM_ID: in-2007-warumungu-community-members-collaborated-with-kim-christen-and-craig-dietrich-to-produce-the-mukurtu-wumpurrarni-kari-archive.
+   :END:
+
+*** Mukurtu is a Warumungu word meaning ‘dilly bag' or a safe keeping place for sacred materials. Warumungu elder, Michael Jampin Jones chose Mukurtu as the name for the community archive to remind users that the archive, too, is a safe keeping place where Warumungu people can share stories, knowledge, and cultural materials properly using their own protocols.
+   :PROPERTIES:
+   :CUSTOM_ID: mukurtu-is-a-warumungu-word-meaning-dilly-bag-or-a-safe-keeping-place-for-sacred-materials.-warumungu-elder-michael-jampin-jones-chose-mukurtu-as-the-name-for-the-community-archive-to-remind-users-that-the-archive-too-is-a-safe-keeping-place-where-warumungu-people-can-share-stories-knowledge-and-cultural-materials-properly-using-their-own-protocols.
+   :END:
+
+*** Growing from this community need, Mukurtu CMS is now an open source platform flexible enough to meet the needs of diverse communities who want to manage and share their digital cultural heritage in their own way, on their own terms.”
+   :PROPERTIES:
+   :CUSTOM_ID: growing-from-this-community-need-mukurtu-cms-is-now-an-open-source-platform-flexible-enough-to-meet-the-needs-of-diverse-communities-who-want-to-manage-and-share-their-digital-cultural-heritage-in-their-own-way-on-their-own-terms.
+   :END:
+
+** 
+  :PROPERTIES:
+  :CUSTOM_ID: section-28
+  :style: page-break-before:always; 
+  :END:
+
+** Death in the Archives: Bits against Ruins
+  :PROPERTIES:
+  :CUSTOM_ID: death-in-the-archives-bits-against-ruins
+  :style: page-break-before:always; 
+  :END:
+
+*** Communities of practice, ethics of care
+   :PROPERTIES:
+   :CUSTOM_ID: communities-of-practice-ethics-of-care
+   :END:
+
+**** Moððe word fræt.      Me þæt þuhte wrætlicu wyrd,     þa ic þæt wundor gefrægn, þæt se wyrm forswealg     wera gied sumes, þeof in þystro,     þrymfæstne cwide ond þæs strangan staþol.    Stælgiest ne wæs wihte þy gleawra,    þe he þam wordum swealg.
+  :PROPERTIES:
+  :CUSTOM_ID: moððe-word-fræt.-me-þæt-þuhte-wrætlicu-wyrd-þa-ic-þæt-wundor-gefrægn-þæt-se-wyrm-forswealg-wera-gied-sumes-þeof-in-þystro-þrymfæstne-cwide-ond-þæs-strangan-staþol.-stælgiest-ne-wæs-wihte-þy-gleawra-þe-he-þam-wordum-swealg.-4
+  :style: page-break-before:always; 
+  :END:
+
+***** Moððe word fræt.      Me þæt þuhte wrætlicu wyrd,     þa ic þæt wundor gefrægn, þæt se wyrm forswealg     wera gied sumes, þeof in þystro,     þrymfæstne cwide ond þæs strangan staþol.    Stælgiest ne wæs wihte þy gleawra,    þe he þam wordum swealg.
+   :PROPERTIES:
+   :CUSTOM_ID: moððe-word-fræt.-me-þæt-þuhte-wrætlicu-wyrd-þa-ic-þæt-wundor-gefrægn-þæt-se-wyrm-forswealg-wera-gied-sumes-þeof-in-þystro-þrymfæstne-cwide-ond-þæs-strangan-staþol.-stælgiest-ne-wæs-wihte-þy-gleawra-þe-he-þam-wordum-swealg.-5
+   :END:
+
+*****  
+   :PROPERTIES:
+   :CUSTOM_ID: section-29
+   :END:
+
+***** A moth ate words. That seemed to me a marvellous fate, when I heard about that wonder, that the worm swallowed up a certain man's song, the thief in darkness, a glory-fast speech and its strong foundation. The stealing guest was not at all the wiser, for those words he swallowed.
+   :PROPERTIES:
+   :CUSTOM_ID: a-moth-ate-words.-that-seemed-to-me-a-marvellous-fate-when-i-heard-about-that-wonder-that-the-worm-swallowed-up-a-certain-mans-song-the-thief-in-darkness-a-glory-fast-speech-and-its-strong-foundation.-the-stealing-guest-was-not-at-all-the-wiser-for-those-words-he-swallowed.
+   :END:
+
+\\
+
+****** Notes:
+    :PROPERTIES:
+    :CUSTOM_ID: notes-29
+    :END:
+
+I want to begin with a riddle. It's from the Old English Exeter Book, a tenth-century manuscript that contains Old English poetry and prose---and includes a collection of riddle poems, like this one. The most frequent solution is Moth or Bookworm: a creature that devours books and so swallows up human knowledge and its “strong foundation” without understanding.
+
+** *Archive*: a collection of records
+  :PROPERTIES:
+  :CUSTOM_ID: archive-a-collection-of-records
+  :style: page-break-before:always; 
+  :END:
+
+- *Archive*: a collection of records
+- *Metadata*: structured data describing data. Think Author, Title, Date in your online library catalogue.
+- *Open-source:* Source code of a program is publicly available, and developers may study, modify, and redistribute the code.
+- *Migration*: taking data from an obsolete platform or standard into a new, more stable platform and standard
+- *Emulation*: accessing data on a new, more stable platform by building around it an environment like that in which it was originally created
+- *LOCKSS*: Lots of Copies Keep Stuff Safe
+- *Dark archives*: secret, inaccessible archives (disaster recovery)

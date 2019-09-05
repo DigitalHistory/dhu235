@@ -1,0 +1,491 @@
+#+TITLE: DH: Introduction
+* DH: An Introduction
+** Today
+ - Intro       
+ - A partial history 
+ - Course syllabus 
+ - What is DH? 
+ - Project examples
+ - A Little Game
+
+
+
+** Digital Humanities (DH)
+
+** Overview
+  :PROPERTIES:
+  :CUSTOM_ID: overview
+  :style: page-break-before:always; 
+  :END:
+
+** Digital Humanities (DH)
+  :PROPERTIES:
+  :CUSTOM_ID: digital-humanities-dh-1
+  :END:
+
+*** DH: at the fluctuating intersections of the humanities with computing
+   :PROPERTIES:
+   :CUSTOM_ID: dh-at-the-fluctuating-intersections-of-the-humanities-with-computing
+   :END:
+
+
+[[./images/hum-cs-interface.svg]]
++begin_src ditaa :file diag.png
+
+/---------\    +-----------------+    /--------\
+|  cBLU   |    |                 |    |  {s}   |
+|   GUI   |<-->| REST API Server |<-->| RDBMS  |
+|         |    |                 |    |        |
+\---------/    +-----------------+    \--------/
+                        ^
+                        :
+                        |
+                        v
+                    /-------\
+                    | {d}   |
+                    | Files |
+                    \-------/
+#+end_src
+Humanities
+
+Computing Tools & Methodologies
+
+\\
+
+**** Notes:
+    :PROPERTIES:
+    :CUSTOM_ID: notes
+    :END:
+
+** British Library, MS. Harley 3954. The Book of John Mandeville.
+  :PROPERTIES:
+  :CUSTOM_ID: british-library-ms.-harley-3954.-the-book-of-john-mandeville.
+  :style: page-break-before:always; 
+  :END:
+
+*** British Library, MS. Harley 3954. The Book of John Mandeville.
+   :PROPERTIES:
+   :CUSTOM_ID: british-library-ms.-harley-3954.-the-book-of-john-mandeville.-1
+   :END:
+
+*** (my sketch, c. 2007)
+   :PROPERTIES:
+   :CUSTOM_ID: my-sketch-c.-2007
+   :END:
+
+\\
+
+**** Notes:
+    :PROPERTIES:
+    :CUSTOM_ID: notes-1
+    :END:
+
+Digital archives provide access to material that may be housed far from a scholar's physical location. Ten years ago, I had to travel to the British Library to work with their medieval manuscripts. (Incidentally, I still have the sketches I made of their illumination. In pencil, because you can't take pens into the reading room.) I got to handle a fourteenth-century manuscript, its parchment pages as supple, its illuminations as vivid as the day the book was scribed. I sat in the special collections library for seven hours. I looked at the illuminations; I handled the parchment, noting the differences between hair side and flesh side (parchment is made of animal skin, so you can see which side faced the outside and which faced the inside of the animal). For days, my hands smelled like goat.
+
+** British Library, MS. Harley 3954. The Book of John Mandeville.
+  :PROPERTIES:
+  :CUSTOM_ID: british-library-ms.-harley-3954.-the-book-of-john-mandeville.-2
+  :style: page-break-before:always; 
+  :END:
+
+*** British Library, MS. Harley 3954. The Book of John Mandeville.
+   :PROPERTIES:
+   :CUSTOM_ID: british-library-ms.-harley-3954.-the-book-of-john-mandeville.-3
+   :END:
+
+*** (now.)
+   :PROPERTIES:
+   :CUSTOM_ID: now.
+   :END:
+
+\\
+
+**** Notes:
+    :PROPERTIES:
+    :CUSTOM_ID: notes-2
+    :END:
+
+Now, I am able to access the images in the manuscript online---anytime, from my office at UofT. I can compare the images to other manuscripts of the Book of John Mandeville. I can study them, annotate them, put them in Powerpoints, and reference them robustly in scholarly arguments.
+
+** Dictionary of Old English
+  :PROPERTIES:
+  :CUSTOM_ID: dictionary-of-old-english
+  :style: page-break-before:always; 
+  :END:
+
+** Middle English Dictionary
+  :PROPERTIES:
+  :CUSTOM_ID: middle-english-dictionary
+  :style: page-break-before:always; 
+  :END:
+
+** Analysis & Interpretation
+  :PROPERTIES:
+  :CUSTOM_ID: analysis-interpretation
+  :style: page-break-before:always; 
+  :END:
+
+Annotation, Comparison, Close Reading
+
+Computational Analysis
+
+Visualization
+
+** 
+  :PROPERTIES:
+  :CUSTOM_ID: section
+  :style: page-break-before:always; 
+  :END:
+
+/Andreas/: 27
+
+/Elene/: 28
+
+** Research Materials: Medieval Manuscripts and Social Media
+  :PROPERTIES:
+  :CUSTOM_ID: research-materials-medieval-manuscripts-and-social-media
+  :style: page-break-before:always; 
+  :END:
+
+*** Cat paws in a fifteenth-century manuscript (photo taken at the Dubrovnik archives by @EmirOFilipovic, disseminated by Eric Kwakkel)
+   :PROPERTIES:
+   :CUSTOM_ID: cat-paws-in-a-fifteenth-century-manuscript-photo-taken-at-the-dubrovnik-archives-by-emirofilipovic-disseminated-by-eric-kwakkel
+   :END:
+
+** Humanities' Data
+  :PROPERTIES:
+  :CUSTOM_ID: humanities-data
+  :style: page-break-before:always; 
+  :END:
+
+Text
+
+Images & Maps
+
+Sounds & Music
+
+Films
+
+Live or Digital Performances
+
+Words, Languages, Grammars
+
+Social Media Archives
+
+** Humanities' Data
+  :PROPERTIES:
+  :CUSTOM_ID: humanities-data-1
+  :style: page-break-before:always; 
+  :END:
+
+*** Humanities' data has depth in small universes. Our material has the capacity to unfold inwards, as it were, to disclose layer upon layer of insights and connections, within a comparatively tiny amount of data--almost an inverse matryoshka, as it were, where each inner doll is bigger and more complex than the one encasing it.
+   :PROPERTIES:
+   :CUSTOM_ID: humanities-data-has-depth-in-small-universes.-our-material-has-the-capacity-to-unfold-inwards-as-it-were-to-disclose-layer-upon-layer-of-insights-and-connections-within-a-comparatively-tiny-amount-of-data--almost-an-inverse-matryoshka-as-it-were-where-each-inner-doll-is-bigger-and-more-complex-than-the-one-encasing-it.
+   :END:
+
+Photo: BrokenSphere - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=3773186
+
+Doll carved by Zvezdochkin, painted by Malyutin - Sergiev Posad Museum of Toys, Russia, Public Domain, https://commons.wikimedia.org/w/index.php?curid=5051554
+
+** Data in Medieval Studies
+  :PROPERTIES:
+  :CUSTOM_ID: data-in-medieval-studies
+  :style: page-break-before:always; 
+  :END:
+
+Johanna Drucker:
+
+Data = given
+
+Capta = acquired/captured/constructed through interpretation
+
+** History
+  :PROPERTIES:
+  :CUSTOM_ID: history
+  :style: page-break-before:always; 
+  :END:
+
+** Father Roberto Busa, S. J. (1913-2011)
+  :PROPERTIES:
+  :CUSTOM_ID: father-roberto-busa-s.-j.-1913-2011
+  :style: page-break-before:always; 
+  :END:
+
+*** /Index Thomisticus (1950s -- 1980s; 2005 online)/
+   :PROPERTIES:
+   :CUSTOM_ID: index-thomisticus-1950s-1980s-2005-online
+   :END:
+
+- 11 million words of medieval Latin
+- 30+ years of editing and analysis
+- 8000+ hours of computer processing stacks of punch cards
+- 1500 + km of magnetic tape
+
+Father Roberto Busa with an IBM machine. (Stephen Ramsay, “*Fr. Roberto Busa, S.J. (1913--2011),” s*tephenramsay.us/2011/08/11/father-roberto-busa/.
+
+** 
+  :PROPERTIES:
+  :CUSTOM_ID: section-1
+  :style: page-break-before:always; 
+  :END:
+
+Father Busa's Female Punch Card Operators. From Father Busa's archive. CIRCSE Research Centre, Università Cattolica del Sacro Cuore, Milan, Italy. Featured by Melissa Terras, «For Ada Lovelace's Day: Father Busa's Female Punch Card Operators» (blog, 15 October 2013). Top left: Livia Canestraro.
+
+** 
+  :PROPERTIES:
+  :CUSTOM_ID: section-2
+  :style: page-break-before:always; 
+  :END:
+
+Father Busa's Female Punch Card Operators. From Father Busa's archive. CIRCSE Research Centre, Università Cattolica del Sacro Cuore, Milan, Italy. Featured by Melissa Terras, «For Ada Lovelace's Day: Father Busa's Female Punch Card Operators» (blog, 15 October 2013). Livia Canestraro.
+
+** Father Busa and the /Index Thomisticus/
+  :PROPERTIES:
+  :CUSTOM_ID: father-busa-and-the-index-thomisticus
+  :style: page-break-before:always; 
+  :END:
+
+** 
+  :PROPERTIES:
+  :CUSTOM_ID: section-3
+  :style: page-break-before:always; 
+  :END:
+
+UofT DHN (Digital Humanities Network): 215+ members,
+
+142 research
+
+faculty
+
+** 
+  :PROPERTIES:
+  :CUSTOM_ID: section-4
+  :style: page-break-before:always; 
+  :END:
+
+DH
+
+Text Corpora & Dictionaries
+
+Digital Editions, Archives, and Narratives
+
+Data Visualizations
+
+Digital Maps
+
+3D Imaging, Modelling, & Printing
+
+Augmented & Virtual Reality
+
+Games, Storytelling, Digital Performance
+
+** 
+  :PROPERTIES:
+  :CUSTOM_ID: section-5
+  :style: page-break-before:always; 
+  :END:
+
+DH
+
+Text Corpora & Dictionaries
+
+Digital Editions, Archives, & Narratives
+
+Digital Maps
+
+3D Imaging, Modelling, & Printing
+
+Augmented & Virtual Reality
+
+Games, Storytelling, Performance
+
+** DH: Projects
+  :PROPERTIES:
+  :CUSTOM_ID: dh-projects
+  :style: page-break-before:always; 
+  :END:
+
+- Digital editing & narratives: making texts and narratives available digitally, allowing readers multimodal ways of accessing a text or a narrative (e.g. viewing transcribed text alongside manuscript of that text; or viewing a project that integrates curated artifacts, digital maps, and recorded interviews)
+- Data visualization: giving visual forms to data in order to explore and discern patterns, gain or illustrate insights
+- Digital archives: digital (or digitized) collections of primary documents about a place or a community; more broadly, collections of primary documents, e.g. manuscripts, books, letters, photographs, etc.
+- Digital mapping: plotting historical or literary data (urban economy, pilgrim routes, artifacts found at different archaeological sites, a character's journey in a book) onto a modern, historical, or imaginary map
+- Augmented/virtual reality: using computing to overlay virtual elements onto real landscapes (AR), or using computing tech to simulate an immersive, interactive, three-dimensional virtual environment
+- 3D printing: turning a digital model into a real object through additive manufacturing (delicate layering of plastic via 3D printer machine)
+- Storytelling & performance: video games, coding as art practice
+
+** Digital Editions, Archives, Narratives
+  :PROPERTIES:
+  :CUSTOM_ID: digital-editions-archives-narratives
+  :style: page-break-before:always; 
+  :END:
+
+** Folger: Shakespeare Library
+  :PROPERTIES:
+  :CUSTOM_ID: folger-shakespeare-library
+  :style: page-break-before:always; 
+  :END:
+
+** Shelley-Godwin Archive
+  :PROPERTIES:
+  :CUSTOM_ID: shelley-godwin-archive
+  :style: page-break-before:always; 
+  :END:
+
+** The Archimedes Palimpsest: Multispectral Imaging
+  :PROPERTIES:
+  :CUSTOM_ID: the-archimedes-palimpsest-multispectral-imaging
+  :style: page-break-before:always; 
+  :END:
+
+** Infinite Ulysses: interactive reader's edition by Amanda Visconti
+  :PROPERTIES:
+  :CUSTOM_ID: infinite-ulysses-interactive-readers-edition-by-amanda-visconti
+  :style: page-break-before:always; 
+  :END:
+
+** Maps, Visualizations, Interpretations
+  :PROPERTIES:
+  :CUSTOM_ID: maps-visualizations-interpretations
+  :style: page-break-before:always; 
+  :END:
+
+** Mapping Medieval Chester
+  :PROPERTIES:
+  :CUSTOM_ID: mapping-medieval-chester
+  :style: page-break-before:always; 
+  :END:
+
+- Goal: making a digital map of medieval Chester by combining post-medieval maps with archaeological and historical evidence
+- Digital advantage: interactive, layered, & transparent
+
+** Mapping Homer's Catalogue of Ships
+  :PROPERTIES:
+  :CUSTOM_ID: mapping-homers-catalogue-of-ships
+  :style: page-break-before:always; 
+  :END:
+
+*** Courtney Evans and Ben Jasnow, with Jenny Strauss Clay and the UVA Scholars' Lab (2013)
+   :PROPERTIES:
+   :CUSTOM_ID: courtney-evans-and-ben-jasnow-with-jenny-strauss-clay-and-the-uva-scholars-lab-2013
+   :END:
+
+*** Mapping the towns in Homer's Catalogue of Ships to analyze underlying organizing principles for the narration
+   :PROPERTIES:
+   :CUSTOM_ID: mapping-the-towns-in-homers-catalogue-of-ships-to-analyze-underlying-organizing-principles-for-the-narration
+   :END:
+
+** Project DECIMA
+  :PROPERTIES:
+  :CUSTOM_ID: project-decima
+  :style: page-break-before:always; 
+  :END:
+
+*** University of Toronto, History Dept.
+   :PROPERTIES:
+   :CUSTOM_ID: university-of-toronto-history-dept.
+   :END:
+
+*** Onto a 16th century map of Florence, DECIMA maps census data about Florence's inhabitants, their occupations, wealth, and daily life.
+   :PROPERTIES:
+   :CUSTOM_ID: onto-a-16th-century-map-of-florence-decima-maps-census-data-about-florences-inhabitants-their-occupations-wealth-and-daily-life.
+   :END:
+
+** ToposText: Ancient Texts + Maps
+  :PROPERTIES:
+  :CUSTOM_ID: topostext-ancient-texts-maps
+  :style: page-break-before:always; 
+  :END:
+
+** Mapping Ararat
+  :PROPERTIES:
+  :CUSTOM_ID: mapping-ararat
+  :style: page-break-before:always; 
+  :END:
+
+** Communication
+  :PROPERTIES:
+  :CUSTOM_ID: communication
+  :style: page-break-before:always; 
+  :END:
+
+*** Scholarly Writings, Public Engagement, Social Media, Teaching & Collaboration
+   :PROPERTIES:
+   :CUSTOM_ID: scholarly-writings-public-engagement-social-media-teaching-collaboration
+   :END:
+
+** Scholarly Books: The Networked Monograph
+  :PROPERTIES:
+  :CUSTOM_ID: scholarly-books-the-networked-monograph
+  :style: page-break-before:always; 
+  :END:
+
+*** In addition to printed books, can scholarly monographs expand their forms to “take advantage [...] of the interactive, annotative, and computational affordances of the web”? Donald J. Waters, “Monograph Publishing in the Digital Age” (2016)
+   :PROPERTIES:
+   :CUSTOM_ID: in-addition-to-printed-books-can-scholarly-monographs-expand-their-forms-to-take-advantage-of-the-interactive-annotative-and-computational-affordances-of-the-web-donald-j.-waters-monograph-publishing-in-the-digital-age-2016
+   :END:
+
+*** Digitally augmented scholarly monographs (e.g. Mellon-funded collaboration between NYU Library and NYU Press)
+   :PROPERTIES:
+   :CUSTOM_ID: digitally-augmented-scholarly-monographs-e.g.-mellon-funded-collaboration-between-nyu-library-and-nyu-press
+   :END:
+
+*** 
+   :PROPERTIES:
+   :CUSTOM_ID: section-6
+   :END:
+
+** VR/3D Printing for Cultural Heritage Collections: [[http://boxwood.ago.ca/][Small]] [[https://www.youtube.com/watch?v=Mc4MA8srQDM][Wonders]] (AGO)
+  :PROPERTIES:
+  :CUSTOM_ID: vr3d-printing-for-cultural-heritage-collections-small-wonders-ago
+  :style: page-break-before:always; 
+  :END:
+
+- Miniature boxwood carvings from the early 1500s
+- Studied and exhibited through digital imaging (micro CAT scanning), VR, and 3D printing
+
+** Research Materials: Medieval Manuscripts and Social Media
+  :PROPERTIES:
+  :CUSTOM_ID: research-materials-medieval-manuscripts-and-social-media-1
+  :style: page-break-before:always; 
+  :END:
+
+*** Cat paws in a fifteenth-century manuscript (photo taken at the Dubrovnik archives by @EmirOFilipovic, disseminated by Eric Kwakkel)
+   :PROPERTIES:
+   :CUSTOM_ID: cat-paws-in-a-fifteenth-century-manuscript-photo-taken-at-the-dubrovnik-archives-by-emirofilipovic-disseminated-by-eric-kwakkel-1
+   :END:
+
+** 
+  :PROPERTIES:
+  :CUSTOM_ID: section-7
+  :style: page-break-before:always; 
+  :END:
+
+Heather Eason: five artists' representations of threshold crossings in Dante's /Inferno/. Omeka/Neatline undergraduate student project.
+
+Teaching
+
+\\
+
+**** Notes:
+    :PROPERTIES:
+    :CUSTOM_ID: notes-3
+    :END:
+
+Heather Eason: five artists' representations of threshold crossings in Dante's /Inferno/--the unknown illustrator of the fourteenth-century MS Holkham misc. 48; Priamo della Quercia of the fifteenth-century Yates Thompson MS 36; Gustave Doré; Salvador Dalí; and Dante himself.
+
+** Collaboration & Infrastructures
+  :PROPERTIES:
+  :CUSTOM_ID: collaboration-infrastructures
+  :style: page-break-before:always; 
+  :END:
+
+*** Pigeons at Bathurst subway station. Photo: AB.
+   :PROPERTIES:
+   :CUSTOM_ID: pigeons-at-bathurst-subway-station.-photo-ab.
+   :END:
+
+** Course Syllabus
+  :PROPERTIES:
+  :CUSTOM_ID: course-syllabus
+  :style: page-break-before:always; 
+  :END:

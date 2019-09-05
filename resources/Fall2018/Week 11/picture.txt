@@ -1,0 +1,9 @@
+1;./img0.png
+2;./img1.png
+3;./img2.png
+4;./img3.png
+5;./img4.png
+6;./img5.png
+7;./img6.png
+8;./img7.png
+9;./img8.png

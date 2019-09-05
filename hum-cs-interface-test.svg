@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="154px" preserveAspectRatio="none" style="width:530px;height:154px;background:#EEEBDC;" version="1.1" viewBox="0 0 530 154" width="530px" zoomAndPan="magnify"><defs><filter height="300%" id="f1kggl184hviz6" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--entity H--><polygon fill="#00BFFF" filter="url(#f1kggl184hviz6)" points="6,53,6.0495,53.0495,7.9023,50.9023,10.0456,49.0456,12.0942,47.0942,13.8319,44.8319,16,43,16,42.9223,26,42.5735,36,42.6165,46,42.9318,56,42.3086,66,43.5536,76,42.3697,86,42.8022,96,43.4319,106,42.9142,116,43.0682,126,42.9681,136,43.1785,146,43.2391,156,43.5857,166,43.6711,176,43.6793,186,43.2546,196,43.4636,206,43.7022,216,43,215.2788,43,216.6785,53.9844,215.7035,64.9688,216.5338,75.9531,215.505,86.9375,216,97.9219,215.9839,97.9057,214.1748,100.0967,211.9885,101.9104,210.0248,103.9467,208.0798,106.0017,206,107.9219,206,108.3381,196,107.918,186,108.2091,176,107.3495,166,108.2063,156,108.4701,146,108.3664,136,108.5349,126,107.4388,116,107.2697,106,107.3005,96,107.863,86,107.7253,76,108.6033,66,107.7472,56,107.5788,46,108.1501,36,107.255,26,107.4027,16,108.5708,6,107.9219,6.4357,107.9219,6.7345,96.9375,5.6782,85.9531,6.3192,74.9688,6.5904,63.9844,6,53" style="stroke: #000000; stroke-width: 1.5;"/><path d="M206,53 L206.0661,53.0661 L207.6698,51.0698 L209.6607,49.4607 L211.5256,47.7256 L212.9758,45.5758 L215,44 " fill="#00BFFF" style="stroke: #000000; stroke-width: 1.5;"/><path d="M6,53 L6,53.2802 L16,52.4476 L26,53.2577 L36,53.5329 L46,52.0488 L56,52.8964 L66,52.4313 L76,52.4887 L86,52.9091 L96,52.0782 L106,53.7382 L116,52.1596 L126,52.7363 L136,53.5759 L146,52.8856 L156,53.091 L166,52.9574 L176,53.238 L186,53.3188 L196,53.7809 L206,53 " fill="#00BFFF" style="stroke: #000000; stroke-width: 1.5;"/><path d="M206,53 L206.2802,53 L205.4476,63.9844 L206.2577,74.9688 L206.5329,85.9531 L205.0488,96.9375 L206,107.9219 " fill="#00BFFF" style="stroke: #000000; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="30" lengthAdjust="spacingAndGlyphs" textLength="170" x="21" y="90.8467">Humanities</text><!--entity N--><polygon fill="#00BFFF" filter="url(#f1kggl184hviz6)" points="251.5,18,251.5495,18.0495,253.4023,15.9023,255.5456,14.0456,257.5942,12.0942,259.3319,9.8319,261.5,8,261.5,7.9223,271.38,7.5735,281.26,7.6165,291.14,7.9318,301.02,7.3086,310.9,8.5536,320.78,7.3697,330.66,7.8022,340.54,8.4319,350.42,7.9142,360.3,8.0682,370.18,7.9681,380.06,8.1785,389.94,8.2391,399.82,8.5857,409.7,8.6711,419.58,8.6793,429.46,8.2546,439.34,8.4636,449.22,8.7022,459.1,7.2788,468.98,8.6785,478.86,7.7035,488.74,8.5338,498.62,7.505,508.5,8,508.4315,8,509.2416,18.3971,508.4513,28.7943,508.6053,39.1914,508.8386,49.5885,508.9162,59.9857,508.4961,70.3828,508.7872,80.7799,507.9276,91.1771,508.7844,101.5742,509.0482,111.9714,508.9445,122.3685,508.5,132.7656,508.6445,132.9101,506.3861,134.6518,504.3463,136.6119,502.3535,138.6192,500.4861,140.7517,498.5,142.7656,498.5,142.5691,488.62,143.447,478.74,142.5909,468.86,142.4226,458.98,142.9939,449.1,142.0988,439.22,142.2465,429.34,143.4146,419.46,143.2013,409.58,143.5001,399.7,142.4438,389.82,143.0848,379.94,143.356,370.06,142.2932,360.18,142.6698,350.3,142.8916,340.42,143.4174,330.54,142.7614,320.66,143.2282,310.78,142.2118,300.9,142.0884,291.02,143.2692,281.14,142.0487,271.26,143.2746,261.38,142.9723,251.5,142.7656,251.2321,142.7656,251.1462,132.3685,251.9588,121.9714,251.2007,111.5742,252.0919,101.1771,250.9473,90.7799,252.1174,80.3828,251.9843,69.9857,251.745,59.5885,251.5472,49.1914,252.2266,38.7943,252.1136,28.3971,251.5,18" style="stroke: #000000; stroke-width: 1.5;"/><path d="M498.5,18 L498.5661,18.0661 L500.1698,16.0698 L502.1607,14.4607 L504.0256,12.7256 L505.4758,10.5758 L507.5,9 " fill="#00BFFF" style="stroke: #000000; stroke-width: 1.5;"/><path d="M251.5,18 L251.5,18.2802 L261.38,17.4476 L271.26,18.2577 L281.14,18.5329 L291.02,17.0488 L300.9,17.8964 L310.78,17.4313 L320.66,17.4887 L330.54,17.9091 L340.42,17.0782 L350.3,18.7382 L360.18,17.1596 L370.06,17.7363 L379.94,18.5759 L389.82,17.8856 L399.7,18.091 L409.58,17.9574 L419.46,18.238 L429.34,18.3188 L439.22,18.7809 L449.1,18.8947 L458.98,18.9057 L468.86,18.3395 L478.74,18.6181 L488.62,18.9363 L498.5,18 " fill="#00BFFF" style="stroke: #000000; stroke-width: 1.5;"/><path d="M498.5,18 L498.7802,18 L497.9476,28.3971 L498.7577,38.7943 L499.0329,49.1914 L497.5488,59.5885 L498.3964,69.9857 L497.9313,80.3828 L497.9887,90.7799 L498.4091,101.1771 L497.5782,111.5742 L499.2382,121.9714 L497.6596,132.3685 L498.5,142.7656 " fill="#00BFFF" style="stroke: #000000; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="30" lengthAdjust="spacingAndGlyphs" textLength="164" x="266.5" y="55.8467">Computing</text><text fill="#000000" font-family="sans-serif" font-size="30" lengthAdjust="spacingAndGlyphs" textLength="144" x="266.5" y="90.7686">Tools and</text><text fill="#000000" font-family="sans-serif" font-size="30" lengthAdjust="spacingAndGlyphs" textLength="217" x="266.5" y="125.6904">Methodologies</text><!--
+@startuml
+skinparam ArrowColor red
+skinparam backgroundColor #EEEBDC
+skinparam handwritten true
+skinparam defaultFontSize 30
+skinparam sequenceArrowThickness 20
+skinparam defaultArrowThickness 20
+
+
+skinparam sequence {
+ArrowColor Magenta
+ActorBorderColor DeepSkyBlue
+LifeLineBorderColor blue
+LifeLineBackgroundColor #A9DCDF
+ParticipantBorderColor DeepSkyBlue
+ParticipantBackgroundColor DodgerBlue
+ParticipantFontName Impact
+ParticipantFontSize 25
+ParticipantFontColor #A9DCDF
+ActorBackgroundColor aqua
+ActorFontColor DeepSkyBlue
+ActorFontSize 17
+ActorFontName Aapex
+}
+
+
+node "Humanities" as H #DeepSkyBlue
+node "Computing\n Tools and\n Methodologies" as N #DeepSkyBlue
+
+
+@enduml
+
+PlantUML version 1.2019.05(Sat Apr 20 12:45:36 EDT 2019)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Java Version: 11.0.1+13-LTS
+Operating System: Linux
+OS Version: 5.0.7-arch1-1-ARCH
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

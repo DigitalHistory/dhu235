@@ -1,0 +1,149 @@
+* Finale
+
+** Introduction to Digital Humanities
+  :PROPERTIES:
+  :CUSTOM_ID: introduction-to-digital-humanities
+  :END:
+
+** Course Topics
+  :PROPERTIES:
+  :CUSTOM_ID: course-topics
+  :style: page-break-before:always; 
+  :END:
+
+- Digital Humanities: A History
+- Anatomy of DH Projects
+- Archives: Endangered, Lost, Banned, Censored Books (visit to Thomas Fischer Rare Book Library)
+- How to Read with DH Data: Zoom In, Zoom Out, Tell Stories, Play Games
+- Interfaces, Users, and Usability
+- Communities, Libraries, and Possible Futures
+
+** Learning Goals
+  :PROPERTIES:
+  :CUSTOM_ID: learning-goals
+  :style: page-break-before:always; 
+  :END:
+
+- Digital Humanities (DH) is a discipline at the intersections of the humanities with computing.
+- Digital humanists analyze languages through digital text collections; build digital archives of forbidden books; resurrect historical cities through digital maps; or construct video games to study literature.
+- This year the course focuses on endangered books: fragile, hidden, censored, forbidden. We speak to scholars who build archives of forbidden literature. We visit the Thomas Fisher Rare Book Library. We study rare books' histories through digital exhibits.
+- By the end of the course, you will have mastered concepts and technologies you can use in future courses and workplaces: data visualization, data analysis, and digital exhibit platforms. And you will learn how our stories and cultural conversations work and shapeshift through digital environments.
+
+** By the end of the course:
+  :PROPERTIES:
+  :CUSTOM_ID: by-the-end-of-the-course
+  :style: page-break-before:always; 
+  :END:
+
+- You will be able to describe the history and intellectual landscape of the digital humanities, including central concepts, debates, digital tools and platforms current in the discipline.
+- You will be able to analyze digital humanities research projects across a variety of humanities disciplines
+- You will have developed critical thinking and a set of best practices around data modeling, datasets, project design and management, and research data management
+- You will have analyzed and built visualizations and digital maps
+- You will have researched and authored your own digital exhibit
+
+** WDW235 Student (September-December 2018)
+  :PROPERTIES:
+  :CUSTOM_ID: wdw235-student-september-december-2018
+  :style: page-break-before:always; 
+  :END:
+
+- Designed, researched, and built a searchable digital collection of multimedia documents and a public-facing digital exhibit about censored books
+- Through research, field visits, and role-playing scenarios, acquired working knowledge of data management challenges and data curation best practices
+- Through hands-on workshops, gained familiarity with content management systems such as Omeka and data visualization platforms such as Tableau, Palladio, and Voyant.
+
+** Job Listing
+  :PROPERTIES:
+  :CUSTOM_ID: section
+  :style: page-break-before:always; 
+  :END:
+[[./images/deloite-job.png]]
+** Job Requirements
+  :PROPERTIES:
+  :CUSTOM_ID: job-requirements
+  :END:
+
+#+begin_paired
+*Job Requirements*
+
+- Brainstorming solutions to complex business problems through working sessions, wireframing and developing mockups
+- Developing static infographics and/or interactive data visualizations, that adhere to Information Design best practices, and effectively communicate business insights back to clients
+- Working through iterative cycles, incorporating feedback and completing user testing and QA
+- Collaborating extensively with clients and other Deloitte teams
+- Liaising with data science and data architecture team members to optimize client data for visualization purposes
+- Managing project timelines and client deliverables
+
+#+end_paired
+#+begin_paired
+*WDW235 Achievements*
+
+- Completed a major digital exhibit project, from research with banned books from rare book collection, to public-facing digital exhibit about censorship and knowledge transmission
+- Developed static infographics and an interactive digital exhibit using open-source, high-uptake technologies, adhering to data management best practices, and effectively communicating original artifact analyses to public audiences
+- Worked through iterative cycles, from proposal pitch to mock-up development, incorporating feedback at each stage
+- Managed project timelines and multiple deliverables
+
+#+end_paired
+
+
+
+** *Qualifications*
+  :PROPERTIES:
+  :CUSTOM_ID: qualifications
+  :style: page-break-before:always; 
+  :END:
+
+*** *Qualifications*
+   :PROPERTIES:
+   :CUSTOM_ID: qualifications-1
+   :END:
+
+*** •  Candidates with experience creating static or interactive visualizations for Financial Services Industry (FSI), Public Sector, or Customer/Marketing sectors are preferred
+   :PROPERTIES:
+   :CUSTOM_ID: candidates-with-experience-creating-static-or-interactive-visualizations-for-financial-services-industry-fsi-public-sector-or-customermarketing-sectors-are-preferred
+   :END:
+
+*** • University / college degree, preferably within the disciplines of graphic design, statistics, mathematics, or computer science
+   :PROPERTIES:
+   :CUSTOM_ID: university-college-degree-preferably-within-the-disciplines-of-graphic-design-statistics-mathematics-or-computer-science
+   :END:
+
+*** • Experience in the application of Information Design best practices to create static or interactive visualizations for client deliverables
+   :PROPERTIES:
+   :CUSTOM_ID: experience-in-the-application-of-information-design-best-practices-to-create-static-or-interactive-visualizations-for-client-deliverables
+   :END:
+
+*** • Experience with iterative development and agile competencies
+   :PROPERTIES:
+   :CUSTOM_ID: experience-with-iterative-development-and-agile-competencies
+   :END:
+
+*** • Ability to work conceptually and solve problems through white-boarding and creating mockups
+   :PROPERTIES:
+   :CUSTOM_ID: ability-to-work-conceptually-and-solve-problems-through-white-boarding-and-creating-mockups
+   :END:
+
+*** • Strong presentation and communication skills to convey ideas and solutions to various target groups in both business and technology sectors
+   :PROPERTIES:
+   :CUSTOM_ID: strong-presentation-and-communication-skills-to-convey-ideas-and-solutions-to-various-target-groups-in-both-business-and-technology-sectors
+   :END:
+
+*** •Good working knowledge of data visualization software: Tableau/QlikView/PowerBI
+   :PROPERTIES:
+   :CUSTOM_ID: good-working-knowledge-of-data-visualization-software-tableauqlikviewpowerbi
+   :END:
+
+*** *WDW235H1F*
+   :PROPERTIES:
+   :CUSTOM_ID: wdw235h1f-1
+   :END:
+
+- Completed course work in Digital Humanities (computing + communication + humanities analytics)
+- Built and analyzed data visualizations based on open-source data from library and cultural heritage sector
+- Built major research project through iterative development
+- Workshopped analyses of digital research projects and data management challenges through white-boarding, mock-ups, and role-play
+- Good working knowledge of data visualization software: Tableau (multi-faceted data visualization for complex quantitative data); Palladio (web-based dataviz platform, including e.g. maps and network graphs); Cytoscape (bioinformatics platform for exploring relational data); Voyant (text corpus exploration)
+
+** One New Thing
+  :PROPERTIES:
+  :CUSTOM_ID: one-new-thing
+  :style: page-break-before:always; 
+  :END:

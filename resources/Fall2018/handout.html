@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2019-05-18 Sat 10:22 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>&lrm;</title>
+<meta name="generator" content="Org mode">
+<meta name="author" content="Matt Price">
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<article id="content">
+<section id="outline-container-org981b444" class="outline-2">
+<h2 id="the-ruin-digital-literary-studies">The Ruin: Digital Literary Studies</h2>
+<div class="outline-text-2" id="text-the-ruin-digital-literary-studies">
+<p>
+In this assignment, you will <b>encode</b> parts of a thousand-year-old poem using a markup language, <b>display</b> the marked-up text in a web browser using a computational translator, and <b>discuss</b> this exercise using the idea of <b>deformance</b> as a guide.  This handout <b>should</b> contain everything you need to complete the assignment, but please use the discussion forum to ask any technical (or other!) questions.
+</p>
+</div>
+<div id="outline-container-org84ed504" class="outline-3">
+<h3 id="the-poem-the-ruin-from-the-tenth-century-exeter-book-translated-by-sian-echard-silently-emended">The Poem: “The Ruin” (from the tenth century Exeter Book), translated by Sian Echard, silently emended</h3>
+<div class="outline-text-3" id="text-the-poem-the-ruin-from-the-tenth-century-exeter-book-translated-by-sian-echard-silently-emended">
+<p>
+&ldquo;<a href="http://faculty.arts.ubc.ca/sechard/oeruin.htm">The Ruin</a>&rdquo; was likely written in the 8th or 9th century, and recorded in the <a href="https://en.wikipedia.org/wiki/Exeter_Book">Exeter Book</a> in the 10th century. The only surviving copy has a large burn down the centre of the page that renders parts of the poem illegible. (See <a href="https://sites.nd.edu/manuscript-studies/2017/11/20/ivory-in-the-rust-reading-the-old-english-ruin-in-south-bend">this blog post</a> for a substantive discussion of the poem.)
+</p>
+
+
+<p>
+<i>Exeter Cathedral Library MS 3501, f. 124r, all rights reserved Dean &amp; Chapter Exeter Cathedral</i>
+</p>
+
+<p>
+<i>(via <a href="https://sites.nd.edu/manuscript-studies/tag/old-english-poetry/">https://sites.nd.edu/manuscript-studies/tag/old-english-poetry/</a>)</i>
+</p>
+</div>
+<div id="outline-container-org93b3f97" class="outline-4">
+<h4 id="org93b3f97">Transcription</h4>
+<div class="outline-text-4" id="text-org93b3f97">
+<ol class="org-ol">
+<li>Wondrous is this wall-stead, wasted by fate.</li>
+<li>Battlements broken, giant&rsquo;s work shattered.</li>
+<li>Roofs are in ruin, towers destroyed,</li>
+<li>Broken the barred gate, rime on the plaster,</li>
+<li>walls gape, torn up, destroyed,</li>
+<li>consumed by age. Earth-grip holds</li>
+<li>the proud builders, departed, long lost,</li>
+<li>and the hard grasp of the grave, until a hundred generations</li>
+<li>of people have passed. Often this wall outlasted,</li>
+<li>hoary with lichen, red-stained, withstanding the storm,</li>
+<li>one reign after another; the high arch has now fallen.</li>
+<li>The wall-stone still stands, hacked by weapons,</li>
+<li>by grim-ground files.</li>
+<li>&#x2026;</li>
+<li>&#x2026;</li>
+<li>&#x2026;</li>
+<li>&#x2026;</li>
+<li>Mind quickened &#x2026; and the artificer,</li>
+<li>skilled in round-building, bound the wall-base,</li>
+<li>wondrously with iron.</li>
+<li>Bright were the halls, many the baths,</li>
+<li>High the gables, great the joyful noise,</li>
+<li>many the mead-hall full of pleasures.</li>
+<li>Until fate the mighty overturned it all.</li>
+<li>Slaughter spread wide, pestilence arose,</li>
+<li>and death took all those brave men away.</li>
+<li>Their bulwarks were broken, their halls laid waste,</li>
+<li>the cities crumbled, those who would repair it</li>
+<li>laid in the earth. And so these halls are empty,</li>
+<li>and the curved arch sheds its tiles,</li>
+<li>torn from the roof. Decay has brought it down,</li>
+<li>broken it to rubble. Where once many a warrior,</li>
+<li>high of heart, gold-bright, gleaming in splendour,</li>
+<li>proud and wine-flushed, shone in armour,</li>
+<li>looked on a treasure of silver, on precious gems,</li>
+<li>on riches of pearl&#x2026;</li>
+<li>in that bright city of broad rule.</li>
+<li>Stone courts once stood there, and hot streams gushed forth,</li>
+<li>wide floods of water, surrounded by a wall,</li>
+<li>in its bright bosom, there where the baths were,</li>
+<li>hot in the middle.</li>
+<li>Hot streams ran over hoary stone</li>
+<li>into the ringed water where baths were</li>
+<li>&#x2026;</li>
+<li>&#x2026;</li>
+<li>That was a noble thing, the house and the city.</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="outline-container-org77e7533" class="outline-3">
+<h3 id="deformance">Deformance</h3>
+<div class="outline-text-3" id="text-deformance">
+<p>
+We discussed in class this portmanteau term coined by Lisa Samuels and Jerome McGann, a combination of “deform” and “performance.” Be sure you have some grasp of what this means!
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-orgab74c43" class="outline-3">
+<h3 id="introduction-to-tei">Introduction to XML,XSLT, TEI, an HTML (!)</h3>
+<div class="outline-text-3" id="text-introduction-to-tei">
+<p>
+<a href="https://cdrh.unl.edu/articles/basicguide/TEI">TEI</a> is a <a href="https://en.wikipedia.org/wiki/Markup_language">markup language</a> &#x2013; a system for annotating documents that can be read an processed by other compute programs.  It is a format, or defined feature set, of the <a href="https://www.w3schools.com/xml/xml_whatis.asp">XML</a> &ldquo;metalanguage&rdquo;, a very widely-used system for structuring and processing many kinds of data.  Digital humanists use TEI to turn literary texts into structured data that can be manipulated and queried in many ways, but especially on the web.  
+</p>
+
+<p>
+The process of turning a TEI document into a visual representation on a screen is complex:
+</p>
+<ul class="org-ul">
+<li>first, the text must be <b>marked up</b> &#x2013; textual elements must be identified and annotated (we&rsquo;ll discuss how this works in more detail very soon).  This work can be both painstaking and tedious</li>
+<li>next, a <b>translation scheme must be written</b> that <i>processes</i> the xml text into <a href="https://en.wikipedia.org/wiki/HTML">HTML</a>, the main language of the web. This translation is almost always written in a language called <a href="https://en.wikipedia.org/wiki/XSLT">XLST</a> (which is itself a dialect of XML)</li>
+<li>finally, the translated document must be <b>displayed by a browser</b> that understands HTML, like Firefox or Chrome.</li>
+</ul>
+
+<p>
+So, in order to complete this assignment, you must learn at least a tiny bit about <b>XML</b>, <b>XSLT</b>, and <b>HTML</b>.  That&rsquo;s a lot! I won&rsquo;t give you a systematic introduction to any of these systems; instead, this handout presents a very small amount of information on each, and gives some examples of how you might use them in the assignment. 
+</p>
+</div>
+
+<div id="outline-container-orgacd0f2b" class="outline-4">
+<h4 id="orgacd0f2b">XML Essentials: Tags &amp; Structures</h4>
+<div class="outline-text-4" id="text-orgacd0f2b">
+<p>
+XML &ldquo;marks up&rdquo; elements of a text by surrounding bits of text with <a href="https://www.w3schools.com/xml/xml_syntax.asp">tags</a>. The totality of <code>&lt;starting-tag&gt;Content&lt;/end-tag&gt;</code> is called an <a href="https://www.w3schools.com/xml/xml_elements.asp">XML element</a>. 
+</p>
+
+<p>
+Take this example (stolen from <a href="https://www.w3schools.com/xml/xml_elements.asp">W3Schools</a>): 
+</p>
+<div class="org-src-container">
+<pre class="src src-xml">&lt;<span style="color: #b57614;">book</span> <span style="color: #076678;">category</span>=<span style="color: #79740e;">"children"</span>&gt;
+  &lt;<span style="color: #b57614;">title</span>&gt;Harry Potter&lt;/<span style="color: #b57614;">title</span>&gt;
+  &lt;<span style="color: #b57614;">author</span>&gt;J K. Rowling&lt;/<span style="color: #b57614;">author</span>&gt;
+  &lt;<span style="color: #b57614;">year</span>&gt;2005&lt;/<span style="color: #b57614;">year</span>&gt;
+  &lt;<span style="color: #b57614;">price</span>&gt;29.99&lt;/<span style="color: #b57614;">price</span>&gt;
+&lt;/<span style="color: #b57614;">book</span>&gt;
+</pre>
+</div>
+
+<p>
+Here we have a <b>root element</b> called <code>&lt;book&gt;</code> which encloses several <a href="https://www.w3schools.com/xml/xml_tree.asp#midcontentadcontainer">child elements</a> (<code>&lt;title&gt;</code>, <code>&lt;author&gt;</code>, etc). Everything between <code>&lt;book category="children"&gt;</code> and <code>&lt;/book&gt;</code> is part of the <code>&lt;book&gt;</code> element.  In general, an element has the structure:
+</p>
+
+<ul class="org-ul">
+<li>opening tag: <code>&lt;tag&gt;</code></li>
+<li>content: text and child elements, which must be fully nexted within the parent (if an opening tag is inside the element, the closing tag must <b>also</b> be inside it</li>
+<li>closing tag: <code>&lt;/tag&gt;</code> . Note the forward slash <b>/</b> within the <code>&lt;&gt;</code> greater-than less-than signss.</li>
+</ul>
+
+<p>
+Here&rsquo;s a trivial example that you might find in a TEI document:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-xml">&lt;<span style="color: #b57614;">l</span>&gt;And then my lord &lt;<span style="color: #b57614;">person</span>&gt;Yvain&lt;/<span style="color: #b57614;">person</span>&gt; arrived in &lt;<span style="color: #b57614;">place</span>&gt;Camelot&lt;/<span style="color: #b57614;">place</span>&gt;.&lt;/<span style="color: #b57614;">l</span>&gt;
+</pre>
+</div>
+
+<p>
+The tags here are &ldquo;l&rdquo;, &ldquo;person&rdquo;, and &ldquo;place&rdquo;.
+</p>
+</div>
+
+<ul class="org-ul">
+<li><a id="xml-dec"></a>The XML declaration<br>
+<div class="outline-text-5" id="text-xml-dec">
+<p>
+Every real XML document must also begin with an &ldquo;XML Declaration&rdquo; which identifies it as an XML document.  It will look like this: 
+</p>
+
+<div class="org-src-container">
+<pre class="src src-xml"><span style="color: #79740e;">&lt;?</span><span style="color: #9d0006;">xml</span><span style="color: #79740e;"> </span><span style="color: #79740e;">version="1.0" encoding="UTF-8"</span><span style="color: #79740e;">?&gt;</span>
+</pre>
+</div>
+
+<p>
+And a very simple full document will look like this:
+</p>
+<div class="org-src-container">
+<pre class="src src-xml" id="org9c09d17"><span style="color: #79740e;">&lt;?</span><span style="color: #9d0006;">xml</span><span style="color: #79740e;"> </span><span style="color: #79740e;">version="1.0" encoding="UTF-8"</span><span style="color: #79740e;">?&gt;</span>
+&lt;<span style="color: #b57614;">poem</span>&gt;
+  &lt;<span style="color: #b57614;">l</span> <span style="color: #076678;">n</span>=<span style="color: #79740e;">"1"</span>&gt;This wall-stone is wondrous; fates broke it&lt;/<span style="color: #b57614;">l</span>&gt;
+  &lt;<span style="color: #b57614;">l</span> <span style="color: #076678;">n</span>=<span style="color: #79740e;">"2"</span>&gt;courtyard pavements were smashed; the work of giants is decaying.&lt;/<span style="color: #b57614;">l</span>&gt;
+  &lt;<span style="color: #b57614;">l</span> <span style="color: #076678;">n</span>=<span style="color: #79740e;">"3"</span>&gt;Roofs are fallen, ruinous towers,&lt;/<span style="color: #b57614;">l</span>&gt;
+  &lt;<span style="color: #b57614;">l</span> <span style="color: #076678;">n</span>=<span style="color: #79740e;">"4"</span>&gt; the frosty gate with frost on cement is ravaged, &lt;/<span style="color: #b57614;">l</span>&gt;
+&lt;/<span style="color: #b57614;">poem</span>&gt;
+</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+
+<div id="outline-container-org5efb3bd" class="outline-4">
+<h4 id="org5efb3bd">Displaying XML with XSLT</h4>
+<div class="outline-text-4" id="text-org5efb3bd">
+<p>
+A document that has been marked up with XML now has a structure that a computer can understand, which is great! But a web browser will not know how to display that document unless we give it instructions for <b>transforming</b> the XML structure into a language that the browser understands. We use XSLT for this purpose &#x2013; a special language that exists to manipulate XML documents.  
+</p>
+
+<p>
+XSLT is complicated, and we will use just a tiny part of it.  We need to understand just a few concepts: 
+</p>
+<ul class="org-ul">
+<li><b>stylesheet declaration</b> surrounds the rest of the XSLT document, identifying it as an XSLT instruction set</li>
+<li><b><a href="https://www.w3schools.com/xml/xsl_templates.asp">templates</a></b> give instructions for transforming particular XML elements</li>
+<li><b><a href="https://www.w3schools.com/xml/xpath_syntax.asp">Xpath Expressions</a></b> are used to tell the templates which elements to transform</li>
+<li><b>value statements</b> insert the contents of an element into the final HTML product</li>
+</ul>
+</div>
+
+<ul class="org-ul">
+<li><a id="org7c61029"></a>Stylesheet Declaration<br>
+<div class="outline-text-5" id="text-org7c61029">
+<p>
+An XSLT Stylesheet always starts with an XML declaration and then an <code>&lt;xsl:stylesheet&gt;</code> tag; the document ends with the closing <code>&lt;/xsl:stylesheet&gt;</code> tag:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-xml"><span style="color: #79740e;">&lt;?</span><span style="color: #9d0006;">xml</span><span style="color: #79740e;"> </span><span style="color: #79740e;">version="1.0" encoding="UTF-8"</span><span style="color: #79740e;">?&gt;</span>
+&lt;<span style="color: #af3a03;">xsl</span>:<span style="color: #b57614;">stylesheet</span> <span style="color: #076678;">version</span>=<span style="color: #79740e;">"1.0"</span> <span style="color: #af3a03;">xmlns</span>:<span style="color: #076678;">xsl</span>=<span style="color: #79740e;">"http://www.w3.org/1999/XSL/Transform"</span>&gt;
+
+<span style="color: #a89984;">&lt;!-- </span><span style="color: #a89984;">Content of Stylesheet Goes Here!! </span><span style="color: #a89984;">--&gt;</span>
+
+&lt;/<span style="color: #af3a03;">xsl</span>:<span style="color: #b57614;">stylesheet</span>&gt;
+</pre>
+</div>
+</div>
+</li>
+
+<li><a id="org247b18b"></a>XSLT Templates<br>
+<div class="outline-text-5" id="text-org247b18b">
+<p>
+Inside the <code>xsl:stylesheet</code> we put all the <code>xsl:template</code> tags we need.  Each template is an instruction for dealing with a particular tag or set of tags.  So, if we use <a href="#org9c09d17">our simple XML file from above</a> as the XML source, we might start by building an XSLT document like this:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-xml"><span style="color: #79740e;">&lt;?</span><span style="color: #9d0006;">xml</span><span style="color: #79740e;"> </span><span style="color: #79740e;">version="1.0" encoding="UTF-8"</span><span style="color: #79740e;">?&gt;</span>
+&lt;<span style="color: #af3a03;">xsl</span>:<span style="color: #b57614;">stylesheet</span> <span style="color: #076678;">version</span>=<span style="color: #79740e;">"1.0"</span> <span style="color: #af3a03;">xmlns</span>:<span style="color: #076678;">xsl</span>=<span style="color: #79740e;">"http://www.w3.org/1999/XSL/Transform"</span>&gt;
+    &lt;<span style="color: #af3a03;">xsl</span>:<span style="color: #b57614;">template</span> <span style="color: #076678;">match</span>=<span style="color: #79740e;">"/"</span>&gt;
+      &lt;<span style="color: #af3a03;">xsl</span>:<span style="color: #b57614;">apply-templates</span>/&gt;
+  &lt;/<span style="color: #af3a03;">xsl</span>:<span style="color: #b57614;">template</span>&gt;
+
+
+  &lt;<span style="color: #af3a03;">xsl</span>:<span style="color: #b57614;">template</span> <span style="color: #076678;">match</span>=<span style="color: #79740e;">"l"</span>&gt;
+    &lt;<span style="color: #b57614;">p</span>&gt; &lt;<span style="color: #af3a03;">xsl</span>:<span style="color: #b57614;">value-of</span> <span style="color: #076678;">select</span>=<span style="color: #79740e;">"."</span>/&gt; &lt;/<span style="color: #b57614;">p</span>&gt;
+  &lt;/<span style="color: #af3a03;">xsl</span>:<span style="color: #b57614;">template</span>&gt;
+&lt;/<span style="color: #af3a03;">xsl</span>:<span style="color: #b57614;">stylesheet</span>&gt;
+</pre>
+</div>
+
+<p>
+What&rsquo;s happening here?  We have two templates. The first one &ldquo;matches&rdquo; the &ldquo;root element&rdquo;, while the second one matches all the &ldquo;l&rdquo; elements. So if we read this document top to bottom, we might translate it this way: 
+</p>
+<p class="verse">
+I am an XML Document<br>
+<br>
+Begin Stylesheet<br>
+<br>
+&#xa0;&#xa0;&#xa0;Begin Template for the root element<br>
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;Apply all Templates!<br>
+&#xa0;&#xa0;&#xa0;End Template for the root elements<br>
+<br>
+&#xa0;&#xa0;&#xa0;Begin Template for each l element<br>
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;Return a line of code that reads:<br>
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&ldquo;&lt;p&gt; + content of the &rdquo;l&ldquo; element + &lt;/p&gt;&rdquo;<br>
+&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;(this creates one HTML paragraph for each &ldquo;l&rdquo; element in the original)<br>
+&#xa0;&#xa0;&#xa0;End Template for the L Elements<br>
+<br>
+End Stylesheet<br>
+</p>
+
+<p>
+Our original XML document is very simple, so we don&rsquo;t need much mor than this. But as we&rsquo;ll see later, it can get much more complicated.  And in fact we can make it a little more sophisticated already by adding a bit more complexity: 
+</p>
+
+<div class="org-src-container">
+<pre class="src src-xml"><span style="color: #79740e;">&lt;?</span><span style="color: #9d0006;">xml</span><span style="color: #79740e;"> </span><span style="color: #79740e;">version="1.0" encoding="UTF-8"</span><span style="color: #79740e;">?&gt;</span>
+&lt;<span style="color: #af3a03;">xsl</span>:<span style="color: #b57614;">stylesheet</span> <span style="color: #076678;">version</span>=<span style="color: #79740e;">"1.0"</span> <span style="color: #af3a03;">xmlns</span>:<span style="color: #076678;">xsl</span>=<span style="color: #79740e;">"http://www.w3.org/1999/XSL/Transform"</span>&gt;
+
+  &lt;<span style="color: #af3a03;">xsl</span>:<span style="color: #b57614;">template</span> <span style="color: #076678;">match</span>=<span style="color: #79740e;">"/"</span>&gt;
+    &lt;<span style="color: #b57614;">body</span>&gt;
+      &lt;<span style="color: #b57614;">h1</span>&gt;Grand title&lt;/<span style="color: #b57614;">h1</span>&gt;
+      &lt;<span style="color: #b57614;">p</span>&gt;Let us begin our discussion of poetry here.&lt;/<span style="color: #b57614;">p</span>&gt;
+          &lt;<span style="color: #af3a03;">xsl</span>:<span style="color: #b57614;">apply-templates</span>/&gt;
+    &lt;/<span style="color: #b57614;">body</span>&gt;
+  &lt;/<span style="color: #af3a03;">xsl</span>:<span style="color: #b57614;">template</span>&gt;
+
+  &lt;<span style="color: #af3a03;">xsl</span>:<span style="color: #b57614;">template</span> <span style="color: #076678;">match</span>=<span style="color: #79740e;">"poem"</span>&gt;
+    &lt;<span style="color: #b57614;">h2</span>&gt;The Ruin&lt;/<span style="color: #b57614;">h2</span>&gt;
+          &lt;<span style="color: #af3a03;">xsl</span>:<span style="color: #b57614;">apply-templates</span>/&gt;    
+  &lt;/<span style="color: #af3a03;">xsl</span>:<span style="color: #b57614;">template</span>&gt;
+
+
+  &lt;<span style="color: #af3a03;">xsl</span>:<span style="color: #b57614;">template</span> <span style="color: #076678;">match</span>=<span style="color: #79740e;">"l"</span>&gt;
+    &lt;<span style="color: #b57614;">p</span>&gt; &lt;<span style="color: #af3a03;">xsl</span>:<span style="color: #b57614;">value-of</span> <span style="color: #076678;">select</span>=<span style="color: #79740e;">"."</span>/&gt; &lt;/<span style="color: #b57614;">p</span>&gt;
+  &lt;/<span style="color: #af3a03;">xsl</span>:<span style="color: #b57614;">template</span>&gt;
+
+&lt;/<span style="color: #af3a03;">xsl</span>:<span style="color: #b57614;">stylesheet</span>&gt;
+</pre>
+</div>
+
+<p>
+Try to read the text and understand what&rsquo;s going on!
+</p>
+
+<p>
+Now let&rsquo;s learn a little bit more about how the <code>match</code> and <code>select</code> attributes in the above code really work. 
+</p>
+</div>
+</li>
+
+<li><a id="orgb01fcfc"></a>Xpath Expressions<br>
+<div class="outline-text-5" id="text-orgb01fcfc">
+<p>
+When we make templates with a <code>match</code> attribute, or use the <code>value-of</code> and <code>apply-templates</code> instructions (see below), we have to tell XSLT which XML elements we are talking about. The selection of elements is done using what are called &ldquo;<a href="https://www.w3schools.com/xml/xpath_syntax.asp">Xpath Expressions</a>&rdquo;. These are a way to describe the position of elements (sometimes called &ldquo;nodes&rdquo;) in the XML document. The syntax is extemely complex, so we will just say a few things about it here: 
+</p>
+
+<ul class="org-ul">
+<li>&ldquo;/&rdquo; refers to the root element &#x2013; the element that contains all the other elements in the document</li>
+<li><code>"/poem"</code> refers to a <code>&lt;poem&gt;</code> element <b>at the document root</b>, while &ldquo;poem&rdquo; refers to <b>any poem element in the document</b>.  So for instance, &ldquo;l&rdquo; will match all of our <code>&lt;l&gt;</code> elements, but <code>"/l"</code> <b>won&rsquo;t match anything,</b> because the existing <code>&lt;l&gt;</code> elements are all <i>inside the poem element</i>.</li>
+<li>&ldquo;current()&rdquo; and &ldquo;.&rdquo; both refer to the <b>element that is being discussed at the present moment</b>. So, inside of <code>&lt;xsl:template match="poem"&gt;...&lt;/xsl:template&gt;</code>, <code>"."</code> refers to the <code>&lt;poem&gt;</code> element.</li>
+<li>&ldquo;@n&rdquo; refers to the &ldquo;attribute&rdquo; <b>n</b>. I&rsquo;ll explain more about this in a second&#x2026;</li>
+</ul>
+</div>
+</li>
+
+<li><a id="org27bc907"></a>Value Statements (<code>value-of</code> and <code>apply-templates</code>)<br>
+<div class="outline-text-5" id="text-org27bc907">
+<p>
+We almost always want to get the value of the XML elements &#x2013; otherwise why would we do all this work? There are two ways to get that value&#x2026;
+</p>
+</div>
+
+<ul class="org-ul">
+<li><a id="orgff258f4"></a><a href="https://www.w3schools.com/xml/ref_xsl_el_value-of.asp">xsl:value-of</a>: the simple way<br>
+<div class="outline-text-6" id="text-orgff258f4">
+<p>
+<code>&lt;xsl:value-of select="."/&gt;</code> just grabs the content of the element and inserts it in the final output.  We don&rsquo;t use it much (see below for reasons, but it can be particularly helpful when we care about <b>attributes</b>.  So for instance, consider this line of XML: 
+</p>
+
+<div class="org-src-container">
+<pre class="src src-xml">&lt;<span style="color: #b57614;">l</span> <span style="color: #076678;">n</span>=<span style="color: #79740e;">"2"</span>&gt;courtyard pavements were smashed; the work of giants is decaying.&lt;/<span style="color: #b57614;">l</span>&gt;
+</pre>
+</div>
+
+<p>
+Maybe we really care that this is line 2! Maybe we want to display those line numbers so readers understand what we&rsquo;re talking about! We can use the &ldquo;@n&rdquo; syntax we saw just above: 
+</p>
+
+<div class="org-src-container">
+<pre class="src src-xml">&lt;<span style="color: #af3a03;">xsl</span>:<span style="color: #b57614;">value-of</span> <span style="color: #076678;">select</span>=<span style="color: #79740e;">"@n"</span>/&gt;
+</pre>
+</div>
+
+<p>
+When this instruction is applied to the line above, it wil lreturn the number &ldquo;2&rdquo;!
+</p>
+</div>
+</li>
+
+<li><a id="org238b545"></a><a href="https://www.w3schools.com/xml/xsl_apply_templates.asp">xsl:apply-templates</a>: the better way (usually)<br>
+<div class="outline-text-6" id="text-org238b545">
+<p>
+Most of the time, we use <code>&lt;xsl:apply-templates/&gt;</code> instead of <code>&lt;xsl:value-of select="."/&gt;</code>.  This is because <b>we usually can&rsquo;t be sure that the element doesn&rsquo;t contain other elements.</b> And if we just use &ldquo;value-of&rdquo;, then the elements inside our current element won&rsquo;t be properly translated.  &ldquo;apply-templates&rdquo; will check to see if any templates need to be applied internally, and then after those templates have been applied, it will return the whole resultant text.  
+</p>
+
+<p>
+All of this is really helpful &#x2013; butsince we&rsquo;re generating HTML, you need to know a little bit of HTML to make the text look the way you want it to!
+</p>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org76d8759"></a>HTML Tags and attributes<br>
+<div class="outline-text-5" id="text-org76d8759">
+<p>
+I won&rsquo;t go into HTML in much depth &#x2013; there are many many resources available online.  Here we&rsquo;ll just describe a few very basic features. 
+</p>
+
+<p>
+Like XML documents, HTML documents contain <b>elements</b> delimited by <b>tags</b>. Also like in XML, those tags can have <b>attributes</b> that give extra information.  Here are some tags you may want to use in your work:
+</p>
+
+<div class="org-src-container">
+<pre><code class="src src-html" data-editor-type="html">&lt;<span style="color: #b57614;">html</span>&gt;
+  &lt;<span style="color: #b57614;">body</span>&gt;
+    Every HTML document should start with a <span style="color: #79740e;">"html"</span> tag and include a <span style="color: #79740e;">"body"</span> tag inside it.
+
+    &lt;<span style="color: #b57614;">h1</span>&gt;<span style="font-weight: bold; text-decoration: underline;">first-level header</span>&lt;/<span style="color: #b57614;">h1</span>&gt;
+    &lt;<span style="color: #b57614;">h2</span>&gt;<span style="font-weight: bold; font-style: italic; text-decoration: underline;">second=level header</span>&lt;/<span style="color: #b57614;">h2</span>&gt;
+    (etc up to <span style="color: #79740e;">"h6"</span>)
+    &lt;<span style="color: #b57614;">p</span>&gt;
+      paragraph containing &lt;<span style="color: #b57614;">strong</span>&gt;<span style="font-weight: bold;">bold</span>&lt;/<span style="color: #b57614;">strong</span>&gt; and &lt;<span style="color: #b57614;">em</span>&gt;<span style="font-style: italic;">italic</span>&lt;/<span style="color: #b57614;">em</span>&gt; text.
+      Paragraphs can also contain
+      &lt;<span style="color: #b57614;">span</span>&gt;
+        tags, which don't do anything by default...
+        but wait!
+      &lt;/<span style="color: #b57614;">span</span>&gt;
+    &lt;/<span style="color: #b57614;">p</span>&gt;
+    &lt;<span style="color: #b57614;">p</span> <span style="color: #076678;">style</span>=<span style="color: #79740e;">"color;white;background-color:red;border:2px solid black; padding: 10px;"</span>&gt;
+      This paragraph will have white text, a red background, a black border,
+      and lots of space around it. Meanwhile, this
+      &lt;<span style="color: #b57614;">span</span> <span style="color: #076678;">style</span>=<span style="color: #79740e;">"color:red;background-color:green"</span>&gt;
+        will be entirely invisible to red-green colorblind readers.
+      &lt;/<span style="color: #b57614;">span</span>&gt;  
+    &lt;/<span style="color: #b57614;">p</span>&gt;
+
+    &lt;<span style="color: #b57614;">table</span>&gt;
+      &lt;<span style="color: #b57614;">tr</span>&gt;
+        &lt;<span style="color: #b57614;">td</span>&gt;this is a &lt;/<span style="color: #b57614;">td</span>&gt;
+        &lt;<span style="color: #b57614;">td</span>&gt;table with&lt;/<span style="color: #b57614;">td</span>&gt;
+        &lt;<span style="color: #b57614;">td</span>&gt;1 row and 3 columns&lt;/<span style="color: #b57614;">td</span>&gt;
+      &lt;/<span style="color: #b57614;">tr</span>&gt;
+    &lt;/<span style="color: #b57614;">table</span>&gt;
+
+
+  &lt;/<span style="color: #b57614;">body</span>&gt;
+&lt;/<span style="color: #b57614;">html</span>&gt;
+</code></pre>
+</div>
+<ul class="org-ul">
+<li><b>p</b> tags are paragraphs</li>
+<li><b>h1, h2&#x2026; h6</b> tags are headers</li>
+<li><b>span</b> tags delineate text within a paragraph</li>
+<li><b>strong</b> and <b>em</b> do bold and italics</li>
+<li>You can build tables using the somewhat complicated syntax above</li>
+<li>you can set style attributes using the &ldquo;style=&rdquo; commands as you see them above; I&rsquo;ve shown a few possibilities but there are literally hundreds more.</li>
+</ul>
+
+<p>
+Hopefully this should be enough for you te get started!
+</p>
+</div>
+</li>
+</ul>
+</div>
+<div id="outline-container-org6e24a1c" class="outline-4">
+<h4 id="org6e24a1c">Learn more</h4>
+<div class="outline-text-4" id="text-org6e24a1c">
+<p>
+The <a href="https://developer.mozilla.org">Mozilla Developer Network</a> is the best starting point for almost all technical topics related to the web.  The <a href="https://developer.mozilla.org/en-US/docs/Web/XML/XML_introduction">XML Introduction</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/XSLT">XSLT Intro</a>, and <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">much more extensive HTML information</a> are all very helpful, and contian links to further information. 
+</p>
+
+<p>
+The <a href="https://tei-c.org/">TEI website</a> has extensive information about the TEI standard, but is extremely technical. <a href="http://teibyexample.org/modules/TBED04v00.htm">TEI By Example</a> can be quite helpful, but again, is very detailed.  The full text of <i><a href="https://books.openedition.org/oep/426">What is the Text Encoding Initiative</a></i> is available online and may also be helpful. The University of Nebraska&rsquo;s  <a href="https://cdrh.unl.edu/articles/basicguide">Basic Guide to Text Encoding</a> is a lightweight introduction that may be easier to follow than any of the above!
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org1494629" class="outline-3">
+<h3 id="reading">Reading</h3>
+<div class="outline-text-3" id="text-reading">
+<ol class="org-ol">
+<li>Content: Read your passage. Flag any parts that are unclear or mysterious or confusing. Summarize its content in one sentence.</li>
+
+<li>Style: Look for:
+
+<ol class="org-ol">
+<li>verbal patterns (e.g. sentences with the same shape) : what are they? What is their effect?</li>
+
+<li>sensory imagery (e.g. references to what you can see, hear, touch, feel): any patterns? What do they do for the poem?</li>
+</ol></li>
+
+<li>Theme: if you had to summarize the theme of your passage in one word, what would that word be? How does style support or embody theme?</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org1612708" class="outline-3">
+<h3 id="encoding">Encoding</h3>
+<div class="outline-text-3" id="text-encoding">
+<p>
+<b>Choose one of the following passages:</b> 1-15; 16-31a; 31b-46.
+</p>
+
+<p>
+Encode your passage using the following TEI tags:
+</p>
+
+<ul class="org-ul">
+<li><b>Lines and line numbers</b></li>
+</ul>
+
+<div class="org-src-container">
+<pre class="src src-xml"> &lt;<span style="color: #b57614;">poem</span>&gt;
+   &lt;<span style="color: #b57614;">l</span> <span style="color: #076678;">n</span>=&#8243;1&#8243;&gt;This masonry is wondrous; fates broke it&lt;/<span style="color: #b57614;">l</span>&gt;
+&lt;/<span style="color: #b57614;">poem</span>&gt;
+</pre>
+</div>
+
+<ul class="org-ul">
+<li><b>At least one made-up tag of your own, specific to the poem</b></li>
+</ul>
+
+<div class="org-src-container">
+<pre class="src src-xml">&lt;<span style="color: #b57614;">concrete_noun</span>&gt; wall-stone &lt;/<span style="color: #b57614;">concrete_noun</span>&gt;
+&lt;<span style="color: #b57614;">adjective</span>&gt; wondrous &lt;/<span style="color: #b57614;">adjective</span>&gt;
+&lt;<span style="color: #b57614;">colour</span>&gt;golden&lt;/<span style="color: #b57614;">colour</span>&gt;
+&lt;<span style="color: #b57614;">poetic-formula</span>&gt;the work of giants&lt;/<span style="color: #b57614;">thew</span>
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org94931fb" class="outline-3">
+<h3 id="viewing">Viewing</h3>
+<div class="outline-text-3" id="text-viewing">
+<p>
+To view/work with your XML file, please navigate to either of these xml/xslt live editors:
+</p>
+<ul class="org-ul">
+<li><a href="https://www.w3schools.com/xml/tryxslt.asp?xmlfile=cdcatalog&amp;xsltfile=cdcatalog">W3 Schools</a></li>
+<li><a href="http://fiddle.frameless.io/">XML fiddle</a></li>
+</ul>
+
+<p>
+<b>Paste your XML poem into the left window of the editor.</b>
+</p>
+<div class="org-src-container">
+<pre class="src src-xml"><span style="color: #79740e;">&lt;?</span><span style="color: #9d0006;">xml</span><span style="color: #79740e;"> </span><span style="color: #79740e;">version="1.0" encoding="UTF-8"</span><span style="color: #79740e;">?&gt;</span>
+&lt;<span style="color: #b57614;">poem</span>&gt;
+  &lt;<span style="color: #b57614;">l</span> <span style="color: #076678;">n</span>=<span style="color: #79740e;">"1"</span>&gt;This &lt;<span style="color: #b57614;">concrete-noun</span>&gt;wall-stone&lt;/<span style="color: #b57614;">concrete-noun</span>&gt; is wondrous; fates broke it&lt;/<span style="color: #b57614;">l</span>&gt;
+  &lt;<span style="color: #b57614;">l</span> <span style="color: #076678;">n</span>=<span style="color: #79740e;">"2"</span>&gt;&lt;<span style="color: #b57614;">concrete-noun</span>&gt;courtyard pavements&lt;/<span style="color: #b57614;">concrete-noun</span>&gt; were smashed; the work of giants is decaying.&lt;/<span style="color: #b57614;">l</span>&gt;
+  &lt;<span style="color: #b57614;">l</span> <span style="color: #076678;">n</span>=<span style="color: #79740e;">"3"</span>&gt;&lt;<span style="color: #b57614;">concrete-noun</span>&gt;Roofs&lt;/<span style="color: #b57614;">concrete-noun</span>&gt; are fallen, ruinous &lt;<span style="color: #b57614;">concrete-noun</span>&gt;towers&lt;/<span style="color: #b57614;">concrete-noun</span>&gt;,&lt;/<span style="color: #b57614;">l</span>&gt;
+  &lt;<span style="color: #b57614;">l</span> <span style="color: #076678;">n</span>=<span style="color: #79740e;">"4"</span>&gt; the frosty gate with frost on cement is ravaged, &lt;/<span style="color: #b57614;">l</span>&gt;
+&lt;/<span style="color: #b57614;">poem</span>&gt;
+</pre>
+</div>
+
+<p>
+<b>Paste your XSLT (your script for turning XML into HTML) into the right window of the browser.</b>
+</p>
+<div class="org-src-container">
+<pre class="src src-xml"><span style="color: #79740e;">&lt;?</span><span style="color: #9d0006;">xml</span><span style="color: #79740e;"> </span><span style="color: #79740e;">version="1.0" encoding="UTF-8"</span><span style="color: #79740e;">?&gt;</span>
+&lt;<span style="color: #af3a03;">xsl</span>:<span style="color: #b57614;">stylesheet</span> <span style="color: #076678;">version</span>=<span style="color: #79740e;">"1.0"</span> <span style="color: #af3a03;">xmlns</span>:<span style="color: #076678;">xsl</span>=<span style="color: #79740e;">"http://www.w3.org/1999/XSL/Transform"</span>&gt;
+  &lt;<span style="color: #af3a03;">xsl</span>:<span style="color: #b57614;">template</span> <span style="color: #076678;">match</span>=<span style="color: #79740e;">"/"</span>&gt;
+    &lt;<span style="color: #b57614;">html</span>&gt;
+      &lt;<span style="color: #b57614;">body</span>&gt;
+        &lt;<span style="color: #b57614;">h1</span>&gt;The Ruin&lt;/<span style="color: #b57614;">h1</span>&gt;
+        &lt;<span style="color: #af3a03;">xsl</span>:<span style="color: #b57614;">for-each</span> <span style="color: #076678;">select</span>=<span style="color: #79740e;">"poem/l/concrete-noun"</span>&gt;
+          &lt;<span style="color: #b57614;">p</span>&gt; &lt;<span style="color: #af3a03;">xsl</span>:<span style="color: #b57614;">value-of</span> <span style="color: #076678;">select</span>=<span style="color: #79740e;">"current()"</span>/&gt; &lt;/<span style="color: #b57614;">p</span>&gt;
+        &lt;/<span style="color: #af3a03;">xsl</span>:<span style="color: #b57614;">for-each</span>&gt;
+      &lt;/<span style="color: #b57614;">body</span>&gt;
+    &lt;/<span style="color: #b57614;">html</span>&gt;
+  &lt;/<span style="color: #af3a03;">xsl</span>:<span style="color: #b57614;">template</span>&gt;
+&lt;/<span style="color: #af3a03;">xsl</span>:<span style="color: #b57614;">stylesheet</span>&gt;
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org8b5cf05" class="outline-3">
+<h3 id="encoding-discussion">Encoding Discussion</h3>
+<div class="outline-text-3" id="text-encoding-discussion">
+<p>
+What is your made-up tag(s)? How is this tag supposed to work, within this poem and more generally? Why is it useful?
+</p>
+
+<p>
+After encoding, what additional characteristics of the poem, if any, did you notice in terms of verbal patterns, sensory imagery, or the development of the poem&rsquo;s themes?
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge039396" class="outline-3">
+<h3 id="appendix-more-complex-example">Appendix: More Complex Example</h3>
+<div class="outline-text-3" id="text-appendix-more-complex-example">
+<p>
+Here is a slightly more complex example, less-completely annotated, which showcases a few more features.
+</p>
+
+<p>
+&lt;?xml version=&ldquo;1.0&rdquo; encoding=&ldquo;UTF-8&rdquo;?&gt;
+</p>
+
+<p>
+&lt;poem&gt;
+</p>
+
+<p>
+&lt;l n=&ldquo;1&rdquo;&gt;This &lt;concrete-noun&gt;wall-stone&lt;/concrete-noun&gt; is &lt;adjective&gt;wondrous&lt;/adjective&gt;; &lt;hyperbole&gt;fates broke it&lt;/hyperbole&gt;&lt;/l&gt;
+</p>
+
+<p>
+&lt;l n=&ldquo;2&rdquo;&gt;&lt;concrete-noun&gt;courtyard pavements&lt;/concrete-noun&gt; were smashed; the work of giants is decaying.&lt;/l&gt;
+</p>
+
+<p>
+&lt;l n=&ldquo;3&rdquo;&gt;&lt;concrete-noun&gt;Roofs&lt;/concrete-noun&gt; are fallen, ruinous &lt;concrete-noun&gt;towers&lt;/concrete-noun&gt;,&lt;/l&gt;
+</p>
+
+<p>
+&lt;l n=&ldquo;4&rdquo;&gt; the frosty gate with frost on cement is ravaged, &lt;/l&gt;
+</p>
+
+<p>
+&lt;/poem&gt;
+</p>
+
+<p>
+&lt;?xml version=&ldquo;1.0&rdquo; encoding=&ldquo;UTF-8&rdquo;?&gt;
+</p>
+
+<p>
+&lt;xsl:stylesheet version=&ldquo;1.0&rdquo; xmlns:xsl=&ldquo;<a href="http://www.w3.org/1999/XSL/Transform">http://www.w3.org/1999/XSL/Transform</a>&rdquo;&gt;
+</p>
+
+<p>
+&lt;xsl:template match=&ldquo;/&rdquo;&gt;
+</p>
+
+<p>
+&lt;html&gt;
+</p>
+
+<p>
+&lt;body&gt;
+</p>
+
+<p>
+&lt;h1&gt;The Ruin&lt;/h1&gt;
+</p>
+
+<p>
+&lt;table&gt;
+</p>
+
+<p>
+&lt;xsl:apply-templates select=&ldquo;node()&rdquo;/&gt;
+</p>
+
+<p>
+&lt;/table&gt;
+</p>
+
+<p>
+&lt;/body&gt;
+</p>
+
+<p>
+&lt;/html&gt;
+</p>
+
+<p>
+&lt;/xsl:template&gt;
+</p>
+
+<p>
+&lt;xsl:template match=&ldquo;poem&rdquo;&gt;
+</p>
+
+<p>
+&lt;table&gt;
+</p>
+
+<p>
+&lt;xsl:apply-templates select=&ldquo;node()&rdquo;/&gt;
+</p>
+
+<p>
+&lt;/table&gt;
+</p>
+
+<p>
+&lt;/xsl:template&gt;
+</p>
+
+<p>
+&lt;xsl:template match=&ldquo;l&rdquo;&gt;
+</p>
+
+<p>
+&lt;tr&gt;
+</p>
+
+<p>
+&lt;td style=&ldquo;padding-right:10px; color:gray&rdquo;&gt;
+</p>
+
+<p>
+&lt;xsl:value-of select=&ldquo;@n&rdquo;/&gt;
+</p>
+
+<p>
+&lt;/td&gt;
+</p>
+
+<p>
+&lt;td style=&ldquo;color:white;&rdquo;&gt;
+</p>
+
+<p>
+&lt;xsl:apply-templates select=&ldquo;node()&rdquo;/&gt;
+</p>
+
+<p>
+&lt;/td&gt;
+</p>
+
+<p>
+&lt;/tr&gt;
+</p>
+
+<p>
+&lt;/xsl:template&gt;
+</p>
+
+<p>
+&lt;xsl:template match=&ldquo;concrete-noun&rdquo;&gt;
+</p>
+
+<p>
+&lt;strong&gt;
+</p>
+
+<p>
+&lt;xsl:apply-templates select=&ldquo;node()&rdquo;/&gt;
+</p>
+
+<p>
+&lt;/strong&gt;
+</p>
+
+<p>
+&lt;/xsl:template&gt;
+</p>
+
+<p>
+&lt;xsl:template match=&ldquo;adjective&rdquo;&gt;
+</p>
+
+<p>
+&lt;span style=&ldquo;color:green&rdquo;&gt;
+</p>
+
+<p>
+&lt;xsl:apply-templates select=&ldquo;node()&rdquo;/&gt;
+</p>
+
+<p>
+&lt;/span&gt;
+</p>
+
+<p>
+&lt;/xsl:template&gt;
+</p>
+
+<p>
+&lt;xsl:template match=&ldquo;hyperbole&rdquo;&gt;
+</p>
+
+<p>
+&lt;span style=&ldquo;background-color: rgba(250,20,20,0.3)&rdquo;&gt;
+</p>
+
+<p>
+&lt;xsl:apply-templates select=&ldquo;node()&rdquo;/&gt;
+</p>
+
+<p>
+&lt;/span&gt;
+</p>
+
+<p>
+&lt;/xsl:template&gt;
+</p>
+
+<p>
+&lt;xsl:template match=&ldquo;hard-word&rdquo;&gt;
+</p>
+
+<p>
+&lt;a href=&ldquo;{concat(&lsquo;https://www-oed-com.myaccess.library.utoronto.ca/search?q=&rsquo;, node())}&rdquo;&gt;
+</p>
+
+<p>
+&lt;xsl:apply-templates select=&ldquo;node()&rdquo;/&gt;
+</p>
+
+<p>
+&lt;/a&gt;
+</p>
+
+<p>
+&lt;/xsl:template&gt;
+</p>
+
+<p>
+&lt;/xsl:stylesheet&gt;
+</p>
+</div>
+</div>
+</section>
+</article>
+<section id="postamble" class="status">
+<p class="author">Author: Matt Price</p>
+<p class="date">Created: 2019-05-18 Sat 10:22</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</section>
+<script>window.klipse_settings = {selector_eval_html: '.src-html',
+                             selector_eval_js: '.src-js',
+                             selector_eval_python_client: '.src-python',
+                             selector_eval_scheme: '.src-scheme',
+                             selector: '.src-clojure',
+                             selector_eval_ruby: '.src-ruby'};</script><script src="https://storage.googleapis.com/app.klipse.tech/plugin_prod/js/klipse_plugin.min.js"></script><link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/app.klipse.tech/css/codemirror.css"/></body>
+</html>

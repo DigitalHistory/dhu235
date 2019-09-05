@@ -1,0 +1,22 @@
+#+MACRO: ts (eval(mwp-get-ts+7  'org-mwp-classtimes-calibrate 2))
+#+STARTUP: customtime
+#+ORG_LMS_COURSEID: 127426
+
+
+* Lectures
+:PROPERTIES:
+:CANVASID: 287998
+:CANVAS_PAGE_URL: lectures
+:PUBLISH:  nil
+:CANVAS_HTML_URL: https://q.utoronto.ca/courses/127426/pages/lectures
+:CANVAS_EDITING_ROLES: teachers
+:END:
+
+
+Because my slides are written directly in HTML, it's difficult for me to upload them to Quercus. For that reason I host them elsewhere ([[https://digitalhistory.github.io/wdw235/slides][you can look at them in their native environment too, if you wish]]). It's a bit cumbersome to navigate among the slides here -- sorry about that!. One hint is to just press ~f~ to get a full-screen view when viewing the lecture. Another is to ~Ctrl-click~ on the links to open them in their own tabs. 
+
+Enjoy! 
+
+#+begin_export html
+<iframe frameborder="0" src="https://digitalhistory.github.io/wdw235/slides/" style="width:100%; min-height: 80vh;"></iframe>
+#+end_export
