@@ -13,16 +13,17 @@ menu:
 
 | Instructor   | Matt Price                                                                                         |
 |--------------|----------------------------------------------------------------------------------------------------|
-| Course Hours | MW 10-1                                                                                            |
-| Office Hours | MW 1-2  (Locate TBA)                                                                               |
+| Course Hours | Th 5-8                                                                                             |
+| Office Hours | Th 12-1  (SS 3077)                                                                                 |
 | Email        | [matt.price@utoronto.ca](mailto:alexandra.bolintineanu@utoronto.ca) (weekdays 9-5, 48h turnaround) |
+| TA           | TBD                                                                                                |
 
 
 ## Course Description {#course-description}
 
 Digital Humanities (DH) is a discipline at the intersections of the humanities with computing.  DH studies human culture -- art, literature, history, geography, religion -- through computational tools and methodologies; and, in turn, DH studies digital artifacts through humanist lenses, as complex cultural objects shaped by wider social, political, and philosophical concerns. Digital humanists [analyze languages through digital text collections](http://www.doe.utoronto.ca); [build digital archives of forbidden books](https://samizdat.library.utoronto.ca/); [construct video games to study literature](http://sites.utm.utoronto.ca/gillespie/content/welcome-book-fame); or [resurrect historical cities through digital maps](https://decima-map.net/).
 
-This summer, as in Fall 2018, the course focuses on endangered books: _fragile, hidden, censored, forbidden_. We speak to scholars who build archives of forbidden literature. We visit the Thomas Fisher Rare Book Library. We study rare books' histories through digital exhibits. By the end of the course, you will have mastered concepts and technologies you can use in future courses and workplaces:  text encoding and data visualization, data analysis and digital exhibit platforms. And you will learn how our stories and cultural conversations work and shapeshift through digital environments.
+This year, the course once again focuses on endangered books: _fragile, hidden, censored, forbidden_. We speak to scholars who build archives of forbidden literature. We visit the Thomas Fisher Rare Book Library. We study rare books' histories through digital exhibits. By the end of the course, you will have mastered concepts and technologies you can use in future courses and workplaces:  text encoding and data visualization, data analysis and digital exhibit platforms. And you will learn how our stories and cultural conversations work and shapeshift through digital environments.
 
 
 ## Learning Goals {#learning-goals}
@@ -49,12 +50,7 @@ All technologies used in this course are open-source or, in rare cases, licensed
 
 ## How This Course Works {#how-this-course-works}
 
-Each week we have three hours of class, usually divided approximately as below:
-
--   Two hours of lecture and discussion (classroom time);
--   One hour of hands-on workshops and discussion (lab time).
-
-Much of your course work will be done in class, in facilitated environments and hands-on workshops. Given the fast pace and praxis-oriented environment, you must come to class on time, all the time: it is all too easy, otherwise, to get lost. If this poses a problem, please let me know as soon as possible.
+Each week we have three hours of class, which include lecture, discussion, and hands-on work in the computer lab. Much of your course work will be done in class, in facilitated environments and hands-on workshops. Given the fast pace and praxis-oriented environment, you must come to class on time, all the time: it is all too easy, otherwise, to get lost. If this poses a problem, please let me know as soon as possible.
 
 
 ## Accessibility {#accessibility-www.studentlife.utoronto.caas}
@@ -66,35 +62,35 @@ See [A&S Accessibility Website](http://www.studentlife.utoronto.ca/as) for more 
 
 ## Grading Scheme {#grading-scheme}
 
-| **Assignment**                                  | **%** | **Due Date**                                      |
-|-------------------------------------------------|-------|---------------------------------------------------|
-| Participation                                   | 15    | All semester; alternatives.                       |
-| Reflection Portfolio (3)                        | 45    | May 13, May 22, June 03                           |
-| Book Project: Consultation                      | 2     | May 22-June 03, in office hours or by appointment |
-| Book Project: Proposal & Annotated Bibliography | 3     | June 05                                           |
-| Book Project: Digital Exhibit                   | 35    | June 17                                           |
-| Total                                           | 100   |                                                   |
+| **Assignment**                                  | **%** | **Due Date**                                                                                                                                                                                                                                |
+|-------------------------------------------------|-------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Short Assignments (3)                           | 45    | <span class="timestamp-wrapper"><span class="timestamp">Sep. 19</span></span>, <span class="timestamp-wrapper"><span class="timestamp">Oct. 10</span></span>, <span class="timestamp-wrapper"><span class="timestamp">Nov. 21</span></span> |
+| Participation                                   | 10    | All semester; alternatives.                                                                                                                                                                                                                 |
+| Book Project: Consultation                      | 1     | Oct. 11-25, in office hours or by appointment                                                                                                                                                                                               |
+| Book Project: Proposal & Annotated Bibliography | 9     | <span class="timestamp-wrapper"><span class="timestamp">Nov. 01</span></span>                                                                                                                                                               |
+| Book Project: Digital Exhibit                   | 35    | <span class="timestamp-wrapper"><span class="timestamp">Nov. 29</span></span>                                                                                                                                                               |
+| Total                                           | 100   |                                                                                                                                                                                                                                             |
 
 -   Reflections include in-class digital artifacts as well as discussion of course readings.
 -   You will work on reflections in class as well as outside class, and you will hand them in via Quercus. 400-500 words maximum.
 
 
-## Assignments {#assignments}
+## Graded Work {#assignments}
 
 
-### Reflection Portfolio {#reflection-portfolio}
+### Participation {#participation}
 
-You are responsible for writing three reflections in this course. Reflections include in-class digital artifacts as well as discussion of course readings. You will work on reflections in class as well as outside class, and you will hand them in via Quercus. They need not be perfect, just done. 400-500 words maximum.
+Every week, you are also responsible for coming to the lab and undertaking the project or field trip of the week in a facilitated environment.  This is where you can explore, experiment, fail creatively:  all I require is **engaged participation—that is, you come to class, do the hands-on computer work, ask questions, and engage in class discussion**. If you miss class or are more than ten minutes late for class, you will miss the grades, unless your absence is excused.
+
+
+### Short Assignments {#short-assignments}
+
+You are responsible for writing three short assignments in this course. These include discussions of in-class digital artifacts as well as course readings. You will work on these assignments in class as well as outside class, and you will hand them in via Quercus. They need not be perfect, just done.700 words approximately.
 
 
 ### DH Project Profile {#dh-project-profile}
 
 Your first assignment is to profile a Digital Humanities project, analyzing its research aims, its form and content, its interface, technologies, and intended audience. 500-700 words. You will select the project from a sign-up list available via our course site.
-
-
-### Workshops {#workshops}
-
-Every week, you are also responsible for coming to the lab and undertaking the project or field trip of the week in a facilitated environment. This is where you can explore, experiment, fail creatively: all I require is **engaged participation---that is, you come to class, do the hands-on computer work, ask questions, and engage in class discussion**.
 
 
 ### Book Project {#book-project}
@@ -138,7 +134,7 @@ This syllabus was originally written by [Alexandra Bolintineanu](https://alexand
 ## Course Overview (Subject to Change) {#course-overview}
 
 
-### 1 (<span class="timestamp-wrapper"><span class="timestamp">May. 06</span></span>) Introduction to Digital Humanities {#1--introduction-to-digital-humanities}
+### 1 (<span class="timestamp-wrapper"><span class="timestamp">Sep. 05</span></span>) Introduction to Digital Humanities {#1--introduction-to-digital-humanities}
 
 What is “Digital Humanities”? We discuss the range of projects, activities, and concerns of this growing field, and collaboratively survey representative projects from around the world. We discuss DH in relation to the theme of the course, banned books.
 
@@ -148,7 +144,7 @@ What is “Digital Humanities”? We discuss the range of projects, activities, 
 -   How do digital media change possibilities for humanists to express themselves and craft persuasive arguments? We experiment via a popular game-design tool.
 
 
-### 2 (<span class="timestamp-wrapper"><span class="timestamp">May. 08</span></span>) The Anatomy of DH Projects {#2--the-anatomy-of-dh-projects}
+### 2 (<span class="timestamp-wrapper"><span class="timestamp">Sep. 12</span></span>) The Anatomy of DH Projects {#2--the-anatomy-of-dh-projects}
 
 We discuss the components of digital humanities projects—data, code, tools, platforms, standards and communities of practice—as they manifest across a gallery of projects, living or dead. We investigate success, failure, and sustainability in DH projects. We collaboratively analyze two DH projects, peering “under the hood” of their technical framework and examining their research questions, digital artifacts, user experiences and intended audiences, and disciplinary implications.
 
@@ -161,29 +157,10 @@ We discuss the components of digital humanities projects—data, code, tools, pl
 
 #### Reflection Handed Out: DH Project Profile {#reflection-handed-out-dh-project-profile}
 
-**Due May 13**
+**Due <span class="timestamp-wrapper"><span class="timestamp">Sep. 19</span></span>**
 
 
-### 3 (<span class="timestamp-wrapper"><span class="timestamp">May. 13</span></span>) Endangered Knowledge 1: Rare Books & Digital Archives {#3--endangered-knowledge-1-rare-books-and-digital-archives}
-
-The first part of class is devoted to understanding the main course assignment, with some lecture material about **endangered knowledge**
-
-
-#### Tools Workshop: Omeka {#tools-workshop-omeka}
-
-A **very** brief intro to Omeka, the framework we'll use to build your class projects.
-
-
-#### Class Outing: Banned and Censored Books {#class-outing-banned-and-censored-books}
-
-We visit the Thomas Fisher Rare Book Library under the guidance of Tim Stinson, Cataloguer and Reference Librarian at the Library, and are introduced to the candidate books for your final projects.
-
-**Please Note:** due to an unfortunate scheduling difficulty, our only window for this visit is 12:00-1:30 today. I am hopeful that everyone in the class can stay for this entire period.
-
-
-### 4 (<span class="timestamp-wrapper"><span class="timestamp">May. 15</span></span>) Digital Texts: Reading and Writing {#4--digital-texts-reading-and-writing}
-
-**Endangered ‘book’: oral poetry, cultural memory**
+### 3 (<span class="timestamp-wrapper"><span class="timestamp">Sep. 19</span></span>) Digital Texts: Reading and Writing {#3--digital-texts-reading-and-writing}
 
 -   Kinds of danger, types of responses
 -   Using digital methods to discover and highlight new understanding of literary texts
@@ -197,85 +174,44 @@ We visit the Thomas Fisher Rare Book Library under the guidance of Tim Stinson, 
 
 #### Tool Workshop/Reflection Assignment: [TEI](https://tei-c.org/) and The Ruin {#tool-workshop-reflection-assignment-tei-and-the-ruin}
 
--   How do digital humanities text analysis tools open new ways of reading literature? We experiment with text encoding using
-
-**Reflection 2 Due May 22**
+-   How do digital humanities text analysis tools open new ways of reading literature? We experiment with text encoding using the TEI system, and the text of a medieval poem.
 
 
-### 5 (<span class="timestamp-wrapper"><span class="timestamp">May. 20</span></span>) NO CLASS VICTORIA DAY {#5--no-class-victoria-day}
+### 4 (<span class="timestamp-wrapper"><span class="timestamp">Sep. 26</span></span>) Digital Texts: oral poetry, cultural memory {#4--digital-texts-oral-poetry-cultural-memory}
+
+Continuation of the discussion from last time, with more about both TEI and Twine.
 
 
-### 6 (<span class="timestamp-wrapper"><span class="timestamp">May. 22</span></span>) Data: OpenRefine {#6--data-openrefine}
+### 5 (<span class="timestamp-wrapper"><span class="timestamp">Oct. 03</span></span>) Endangered Knowledge: Rare Books & Digital Archives {#5--endangered-knowledge-rare-books-and-digital-archives}
 
--   A special 3-hour workshop with OpenRefine in the Map and Data Library (5th Floor Robarts)
-
-
-#### Data & Map Workshop with Kelly Schultz {#data-and-map-workshop-with-kelly-schultz}
-
-Introduction to data cleaning with [OpenRefine](http://openrefine.org/), a powerful data cleaning and transformation tool.
+The first part of class is devoted to understanding the main course assignment, with some lecture material about **endangered knowledge**
 
 
-### 7 (<span class="timestamp-wrapper"><span class="timestamp">May. 27</span></span>) UNSUPERVISED WORK SESSION! {#7--unsupervised-work-session}
-
-I'll be away! You are free to use the classroom, though, to make progress on your work. We'll discuss this more as the date gets closer.
-
-
-### 8 (<span class="timestamp-wrapper"><span class="timestamp">May. 29</span></span>) Data 2: Data Models for the Humanities {#8--data-2-data-models-for-the-humanities}
-
-We back up and ask: what are data models and algorithms? We discuss how data models, algorithms, and digital platforms inform ways of knowing, learning, and reading. Data as endangered/endangering knowledge.
-
-
-#### Readings & Discussion: {#readings-and-discussion}
-
--   Miriam Posner, [Humanities Data: A Necessary Contradiction](http://miriamposner.com/blog/humanities-data-a-necessary-contradiction/) (2015) Accessed April 30, 2019.
--   Rob Kitchin, “Conceptualising Data.”  _[The Data Revolution:  Big Data, Open Data, Data Infrastructures & Their Consequences](http://methods.sagepub.com.myaccess.library.utoronto.ca/book/the-data-revolution)_ (2014)
-
-
-#### Further Reading: {#further-reading}
-
--   U of T's [research data management policies](https://onesearch.library.utoronto.ca/researchdata), including [guidelines on handling sensitive data](https://onesearch.library.utoronto.ca/researchdata/sensitive-data) (including de-identification, i.e. anonymizing your data) and on [Canadian funders' data publication requirements](https://onesearch.library.utoronto.ca/researchdata/funder-requirements) (two of the three federal funding bodies mandate that data created with gov't funding be made public).
--   Cathy O’Neil, _[Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](https://search.library.utoronto.ca/search?Ntx=mode%2520matchallpartial&Ntk=Anywhere&N=0&Ntt=%2522weapons%2520of%2520math%2520destruction%2522&Nr=p%5Fwork%5Fnormalized:ONeil%2520Cathy%2520Weapons%2520of%2520math%2520destruction&uuid=7c23a669-7240-41dc-94d6-592f201cb609)_. (2016)
--   Safiya Umoja Noble. _[Algorithms Of Oppression: How Search Engines Reinforce Racism](https://ebookcentral-proquest-com.myaccess.library.utoronto.ca/lib/utoronto/detail.action?docID=4834260)_. (2018)
-
-
-#### Reflection Assignment: Data Tool Comparison {#reflection-assignment-data-tool-comparison}
-
-**Reflection Due June 03**
-
-
-### 9 (<span class="timestamp-wrapper"><span class="timestamp">Jun. 03</span></span>) Data Visualization {#9--data-visualization}
-
-In a facilitated workshop, we turn to data visualization of humanities materials, using Jane Austen’s _Lady Susan_ for experimentation ([Voyant](https://voyant-tools.org/), [Palladio](http://hdlab.stanford.edu/palladio/), [Cytoscape](https://cytoscape.org/), [Tableau](https://www.tableau.com/):  text and corpus work, network graphs, mapping, annotation).  Then we analyze the American Library Association’s data on banned books and discuss how we might model, interpret, question, and visualize this data.
-
-
-#### Readings & Discussion {#readings-and-discussion}
-
--   Johanna Drucker, “[Humanities Approaches to Graphical Display](http://www.digitalhumanities.org/dhq/vol/5/1/000091/000091.html)” _Digital Humanities Quarterly_ (2011).
--   Miriam Posner, [Data Trouble: Why Humanists Have Problems with Datavis, and Why Anyone Should Care](https://www.youtube.com/watch?v=sW0u1pNQNxc) (2016)
-
-
-### 10 (<span class="timestamp-wrapper"><span class="timestamp">Jun. 05</span></span>) DV 2 {#10--dv-2}
-
-Continuation of previous Session
-
-
-### 11 (<span class="timestamp-wrapper"><span class="timestamp">Jun. 10</span></span>) Endangered Knowledge 2: Theory and Practice {#11--endangered-knowledge-2-theory-and-practice}
-
-We examine digital archives, discussing creation, preservation, ethical concerns, relationships with communities, and security and environmental issues raised by cloud computing and machine learning.  We examine UofT’s guidelines around the ethical and technical management of human research data.
-
-
-#### Readings & Discussion {#readings-and-discussion}
+#### Readings and Discussion {#readings-and-discussion}
 
 On Resurrections, Risks, Losses
-William Noel, “[Revealing the Lost Codex of Archimedes](http://www.ted.com/talks/william%5Fnoel%5Frevealing%5Fthe%5Flost%5Fcodex%5Fof%5Farchimedes)” (2012). [TED TALK]
-Bethany Nowviskie, “[Digital Humanities in the Anthropocene](http://nowviskie.org/2014/anthropocene/)”
-Eira Tansey, “[When the Unbearable Becomes Inevitable: Archives and Climate Change](http://eiratansey.com/2017/05/16/fierce-urgencies-2017/)” (2017).
+
+-   William Noel, “[Revealing the Lost Codex of Archimedes](http://www.ted.com/talks/william%5Fnoel%5Frevealing%5Fthe%5Flost%5Fcodex%5Fof%5Farchimedes)” (2012). [TED TALK]
+-   Bethany Nowviskie, “[Digital Humanities in the Anthropocene](http://nowviskie.org/2014/anthropocene/)”
+-   Eira Tansey, “[When the Unbearable Becomes Inevitable: Archives and Climate Change](http://eiratansey.com/2017/05/16/fierce-urgencies-2017/)” (2017).
 
 
-#### Tools Workshop: More Omeka {#tools-workshop-more-omeka}
+#### Tools Workshop: Omeka {#tools-workshop-omeka}
+
+A **very** brief intro to Omeka, the framework we'll use to build your class projects.
 
 
-### 12 (<span class="timestamp-wrapper"><span class="timestamp">Jun. 12</span></span>) Endangered Knowledge 3: Remembering the Soviet Bloc {#12--endangered-knowledge-3-remembering-the-soviet-bloc}
+### 6 (<span class="timestamp-wrapper"><span class="timestamp">Oct. 10</span></span>) Endangered Knowledge : Library Visit (tentative) {#6--endangered-knowledge-library-visit--tentative}
+
+
+#### Class Outing: Banned and Censored Books {#class-outing-banned-and-censored-books}
+
+We visit the Thomas Fisher Rare Book Library under the guidance of Tim Perry, Cataloguer and Reference Librarian at the Library, and are introduced to the candidate books for your final projects.
+
+**Please Note:** This may be rescheduled to Oct. 24! Thanks for your patience
+
+
+### 7 (<span class="timestamp-wrapper"><span class="timestamp">Oct. 17</span></span>) Endangered Knowledge: Remembering the Soviet Bloc {#7--endangered-knowledge-remembering-the-soviet-bloc}
 
 
 #### Readings & Discussion {#readings-and-discussion}
@@ -288,6 +224,64 @@ Eira Tansey, “[When the Unbearable Becomes Inevitable: Archives and Climate Ch
 [Prof. Alexandra Bolintineanu](https://alexandrabolintineanu.wordpress.com/) will share some reflections on Samizdat and censorship in late Twentieth Century Romania.
 
 
-### 13 (<span class="timestamp-wrapper"><span class="timestamp">Jun. 17</span></span>) Retrospective {#13--retrospective}
+### 8 (<span class="timestamp-wrapper"><span class="timestamp">Oct. 24</span></span>) Endangered Knowledge: Theory and Practice {#8--endangered-knowledge-theory-and-practice}
+
+We examine digital archives, discussing creation, preservation, ethical concerns, relationships with communities, and security and environmental issues raised by cloud computing and machine learning.  We examine UofT’s guidelines around the ethical and technical management of human research data.
+
+
+#### Tools Workshop: More Omeka {#tools-workshop-more-omeka}
+
+
+### 9 (<span class="timestamp-wrapper"><span class="timestamp">Oct. 31</span></span>) Data 1: Data Models for the Humanities {#9--data-1-data-models-for-the-humanities}
+
+We back up and ask: what are data models and algorithms? We discuss how data models, algorithms, and digital platforms inform ways of knowing, learning, and reading. Data as endangered/endangering kn;owledge.
+
+
+#### Readings & Discussion: {#readings-and-discussion}
+
+-   Johanna Drucker, “[Humanities Approaches to Graphical Display](http://www.digitalhumanities.org/dhq/vol/5/1/000091/000091.html)” (2011).
+-   Miriam Posner, [Data Trouble: Why Humanists Have Problems with Datavis, and Why Anyone Should](https://www.youtube.com/watch?v=sW0u1pNQNxc)
+-   Miriam Posner, [Humanities Data: A Necessary Contradiction](http://miriamposner.com/blog/humanities-data-a-necessary-contradiction/) (2015) Accessed April 30, 2019.
+
+
+#### Further Reading: {#further-reading}
+
+-   U of T's [research data management policies](https://onesearch.library.utoronto.ca/researchdata), including [guidelines on handling sensitive data](https://onesearch.library.utoronto.ca/researchdata/sensitive-data) (including de-identification, i.e. anonymizing your data) and on [Canadian funders' data publication requirements](https://onesearch.library.utoronto.ca/researchdata/funder-requirements) (two of the three federal funding bodies mandate that data created with gov't funding be made public).
+-   Cathy O’Neil, _[Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy](https://search.library.utoronto.ca/search?Ntx=mode%2520matchallpartial&Ntk=Anywhere&N=0&Ntt=%2522weapons%2520of%2520math%2520destruction%2522&Nr=p%5Fwork%5Fnormalized:ONeil%2520Cathy%2520Weapons%2520of%2520math%2520destruction&uuid=7c23a669-7240-41dc-94d6-592f201cb609)_. (2016)
+-   Safiya Umoja Noble. _[Algorithms Of Oppression: How Search Engines Reinforce Racism](https://ebookcentral-proquest-com.myaccess.library.utoronto.ca/lib/utoronto/detail.action?docID=4834260)_. (2018)
+
+
+#### Reflection Assignment: Data Tool Comparison {#reflection-assignment-data-tool-comparison}
+
+
+### 10 (<span class="timestamp-wrapper"><span class="timestamp">Nov. 07</span></span>) Data 2: OpenRefine {#10--data-2-openrefine}
+
+-   A special 3-hour workshop with OpenRefine in the Map and Data Library (5th Floor Robarts)
+
+
+#### Data & Map Workshop {#data-and-map-workshop}
+
+Introduction to data cleaning with [OpenRefine](http://openrefine.org/), a powerful data cleaning and transformation tool.
+
+
+### 11 (<span class="timestamp-wrapper"><span class="timestamp">Nov. 14</span></span>) Data Visualization Workshop {#11--data-visualization-workshop}
+
+
+#### Data & Map Workshop 2 {#data-and-map-workshop-2}
+
+Two weeks in a row!
+
+In a facilitated workshop, we turn to data visualization of humanities materials, using Jane Austen’s _Lady Susan_ for experimentation ([Voyant](https://voyant-tools.org/), [Palladio](http://hdlab.stanford.edu/palladio/), [Cytoscape](https://cytoscape.org/), [Tableau](https://www.tableau.com/):  text and corpus work, network graphs, mapping, annotation).  Then we analyze the American Library Association’s data on banned books and discuss how we might model, interpret, question, and visualize this data.
+
+
+#### Readings & Discussion {#readings-and-discussion}
+
+-   Workshop Materials Link to be distributed
+
+
+### 12 (<span class="timestamp-wrapper"><span class="timestamp">Nov. 21</span></span>) NO CLASS READING WEEK {#12--no-class-reading-week}
+
+
+### 13 (<span class="timestamp-wrapper"><span class="timestamp">Nov. 28</span></span>) Retrospective {#13--retrospective}
 
 The last class is a retrospective look at the course. We'll discuss how to use DH approaches and tools in your home disciplines. We also discuss how we might apply the course learning outcomes to jobs in the corporate sector: we dissect a job ad from Monster.ca to align students' newly acquired skills with every requirement of that position.
