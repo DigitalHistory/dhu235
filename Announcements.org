@@ -1,6 +1,7 @@
 #+MACRO: ts (eval(mwp-get-ts+7  'org-mwp-classtimes-calibrate 2))
 #+STARTUP: customtime
-#+ORG_LMS_COURSEID: 99251
+#+ORG_LMS_COURSEID: 127426
+
 
 * Welcome! And Website...
 :PROPERTIES:
@@ -9,22 +10,31 @@
 :ORG_LMS_POSTED_AT: 2019-05-05T17:56:42Z
 :END:
 
-Welcome, everyone, to WDW235! I'm looking forward to meeting you all tomorrow.
+Welcome, everyone, to WDW235! I'm looking forward to meeting you all very soon. 
 
-I'm very much looking forward to this class, which I'll be teaching for the first time. I normally use lower-level tools than we'll be using in this course (that is, I tend to program in a text-based environment, rather than using these graphic user interfaces), so I'm looking forward to exploring some of these amazing DH projects with you. 
+I'm very much looking forward to this class, which I'll be teaching for the second time. I normally use lower-level tools than we'll be using in this course (that is, I tend to program in a text-based environment, rather than using these graphic user interfaces), so I'm looking forward to exploring some of these amazing DH projects with you. 
 
-Quercus has been an immense improvement over Blackboard but for this class there are still a few missing pieces.  As a result, I am (for now at least) maintaining a *separate website* for HIS393. It can be found [[https://digitalhistory.github.io/wdw235/][on Github]], which incidentally is also a piece of infrastructure we will discuss in the course
+Quercus has been an immense improvement over Blackboard but for this class there are still a few missing pieces.  As a result, I am (for now at least) maintaining a *separate website* for HIS393. It can be found [[https://digitalhistory.github.io/wdw235/][on Github]], which incidentally is also a piece of infrastructure we will discuss in the course. 
 
 There will be *many* more details forthcoming, both in class and on the website.  
 
 See you in class!
  
-* Room Number, and a note on Announcements
+* See you Tonight!
+Hello everyone, I'm looking forward to meeting you all tonight.  
+
+* Room Number Let's change this
 :PROPERTIES:
-:ORG_LMS_ANNOUNCEMENT_ID: 300075
-:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/99251/discussion_topics/300075
-:ORG_LMS_POSTED_AT: 2019-05-06T01:25:17Z
+:CANVASID: 287884
+:CANVAS_PAGE_URL: room-number-lets-change-this
+:PUBLISH:  nil
+:CANVAS_HTML_URL: https://q.utoronto.ca/courses/99251/pages/room-number-lets-change-this
+:CANVAS_EDITING_ROLES: teachers
 :END:
+
+bla bla bla
+Mak a change!
+
 Hello again everyone.
 
 I've had a question or two about the room number.  I *believe* that we will be meeting in Sidney Smith 561, but I have not been able to confirm that belief, as the [[https://timetable.iit.artsci.utoronto.ca/][online timetable]] seems to be giving results only for last year's courses (!). I'll know more on Monday morning before class and will do my very best to update you as soon as I can.  

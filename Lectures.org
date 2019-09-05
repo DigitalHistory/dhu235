@@ -5,6 +5,9 @@
 #+HUGO_MENU: :menu main :parent Assignments
 #+HUGO_AUTO_SET_LASTMOD: t
 #+REVEAL_SINGLE_FILE: t
+#+REVEAL_ROOT: file:///home/matt/src/reveal.js
+#+ORG_LMS_COURSEID: 127426
+#+CSL_STYLE: /home/matt/Zotero/styles/chicago-manual-of-style-16th-edition-inline-notes-for-syllabi.csl
 #+HUVEAL_BASEURL_PREFIX
 * COMMENT Hugo Instructions
 :PROPERTIES:
@@ -26,12 +29,11 @@
 #+RESULTS:
 
 
-* 01: DH --  An Introduction
+* 01: Digital Humanities --  An Introduction
 :PROPERTIES:
 :EXPORT_FILE_NAME: 01-intro
 :CUSTOM_ID: 01-dh--an-introduction-a964
 :END:
-
 ** Today
 :PROPERTIES:
 :CUSTOM_ID: today-6959
@@ -63,15 +65,19 @@
 ** EX: The Book of John Mandeville.
 :PROPERTIES:
 :CUSTOM_ID: british-library-ms.-harley-3954.-the-book-of-john-mandeville.
+:reveal_extra_attr: class="twoc"
 :END:
-@@html:<div class="paired fragment appear">@@
-2007 Hand-drawn Sketch -- A. Bolintineanu
-[[./images/a-bolintineanu-sketch.jpg]]
 
-@@html:</div><div class="paired fragment appear">@@
-2019 full-colour online image from British Library
+#+begin_slideblock
+2007 Hand-drawn Sketch 
+[[./images/a-bolintineanu-sketch.jpg]]
+#+end_slideblock
+#+ATTR_REVEAL: :frag (appear) 
+#+begin_slideblock
+2019 full-colour online image
 https://www.bl.uk/britishlibrary/~/media/bl/global/dl%20shakespeare/shakespeare%20collection%20items/manuscript-of-mandevilles-travels-harley_3954_f42r.jpg
-@@html:</div>@@
+#+end_slideblock
+
 
 
 #+begin_notes
@@ -81,13 +87,13 @@ Now, I am able to access the images in the manuscript online---anytime, from my 
 #+end_notes
 
 
-*** Dictionary of Old English
+*** COMMENT Dictionary of Old English
   :PROPERTIES:
   :CUSTOM_ID: dictionary-of-old-english
   :style: page-break-before:always; 
   :END:
 [[./images/doe-a-to-i-20190505.png]]
-*** Analysis & Interpretation
+*** COMMENT Analysis & Interpretation
   :PROPERTIES:
   :CUSTOM_ID: analysis-interpretation
   :style: page-break-before:always; 
@@ -95,7 +101,7 @@ Now, I am able to access the images in the manuscript online---anytime, from my 
 
 [[./images/annot-vis.png]]
 
-** Humanities' Data
+** COMMENT Humanities' Data
 :PROPERTIES:
 :CUSTOM_ID: humanities-data
 :style: page-break-before:always; 
@@ -106,22 +112,27 @@ Now, I am able to access the images in the manuscript online---anytime, from my 
 *** Humanities' Data
 :PROPERTIES:
 :CUSTOM_ID: humanities-data-1
-:style: page-break-before:always; 
+:reveal_extra_attr: class="threec"
 :END:
 
+
+#+begin_slideblock
 #+begin_quote
 Humanities data has depth in small universes. Our material has the capacity to unfold inwards, as it were, to disclose layer upon layer of insights and connections, within a comparatively tiny amount of data--almost an inverse matryoshka, as it were, where each inner doll is bigger and more complex than the one encasing it.
 #+end_quote
+#+end_slideblock
 
-@@html:<div class="paired fragment appear">@@
+#+ATTR_REVEAL: :frag (appear) 
+#+begin_slideblock
 https://upload.wikimedia.org/wikipedia/commons/4/41/Floral_matryoshka_set_2_smallest_doll_nested.JPG
 BrokenSphere, https://commons.wikimedia.org/w/index.php?curid=3773186
+#+end_slideblock
 
-@@html:</div><div class="paired fragment appear">@@
+#+ATTR_REVEAL: :frag (appear) 
+#+begin_slideblock
 https://upload.wikimedia.org/wikipedia/commons/3/3d/First_matryoshka_museum_doll_open.jpg
 Sergiev Posad Museum of Toys, Russia, Public Domain, https://commons.wikimedia.org/w/index.php?curid=5051554
-@@html:</div>@@
-
+#+end_slideblock
 
 
 *** Data and "Capta"
@@ -156,7 +167,7 @@ Sergiev Posad Museum of Toys, Russia, Public Domain, https://commons.wikimedia.o
 - 8000+ hours of computer processing stacks of punch cards
 - 1500 + km of magnetic tape
 @@html:</div><div class="paired fragment appear">@@
-https://blog.gale.com/wp-content/uploads/2016/05/busa1.jpg
+https://web.archive.org/web/20160910202350if_/http://blog.gale.com/wp-content/uploads/2016/05/busa1.jpg
 @@html:</div>@@
 
 
@@ -166,7 +177,7 @@ https://blog.gale.com/wp-content/uploads/2016/05/busa1.jpg
 :END:
 
 #+ATTR_HTML: :class paired
-From Father Busa's archive. CIRCSE Research Centre, Università Cattolica del Sacro Cuore, Milan, Italy.in M. Terras, "[[https://melissaterras.org/2013/10/15/for-ada-lovelace-day-father-busas-female-punch-card-operatives/][For Ada Lovelace's Day: Father Busa's Female Punch Card Operators]]" (blog, 15 October 2013). Top left: Livia Canestraro.
+From Father Busa's archive. CIRCSE Research Centre, Università Cattolica del Sacro Cuore, Milan, Italy.in cite:TerrasAdaLovelaceDay2013 Top left: Livia Canestraro.
 
 #+ATTR_HTML: :class paired
 https://melissaterras.files.wordpress.com/2013/10/728a0-0028.jpg
@@ -217,25 +228,25 @@ https://melissaterras.files.wordpress.com/2013/10/728a0-0028.jpg
 :CUSTOM_ID: digital-editions-archives-narratives
 :END:
 
-*** Folger: Shakespeare Library
+*** [[https://www.folger.edu/folger-digital-texts][Folger: Shakespeare Library]]
 :PROPERTIES:
 :CUSTOM_ID: folger-shakespeare-library
 :END:
 [[./images/folger.png]]
 
-*** Shelley-Godwin Archive
+*** [[http://shelleygodwinarchive.org/][Shelley-Godwin Archive]]
 :PROPERTIES:
 :CUSTOM_ID: shelley-godwin-archive
 :END:
 [[./images/shelley-g.png]]
 
-*** The Archimedes Palimpsest: Multispectral Imaging
+*** [[http://www.archimedespalimpsest.org/][The Archimedes Palimpsest]]: Multispectral Imaging
 :PROPERTIES:
 :CUSTOM_ID: the-archimedes-palimpsest-multispectral-imaging
 :END:
 [[./images/a-palimpset.jpg]]
 
-*** Infinite Ulysses: interactive reader's edition by Amanda Visconti
+*** [[http://infiniteulysses.com/][Infinite Ulysses]]: interactive reader's edition by Amanda Visconti
 :PROPERTIES:
 :CUSTOM_ID: infinite-ulysses-interactive-readers-edition-by-amanda-visconti
 :END:
@@ -246,7 +257,7 @@ https://melissaterras.files.wordpress.com/2013/10/728a0-0028.jpg
 :CUSTOM_ID: maps-visualizations-interpretations
 :END:
 
-*** Mapping Medieval Chester
+*** [[http://www.medievalchester.ac.uk/][Mapping Medieval Chester]]
 :PROPERTIES:
 :CUSTOM_ID: mapping-medieval-chester
 :END:
@@ -255,20 +266,16 @@ https://melissaterras.files.wordpress.com/2013/10/728a0-0028.jpg
 - Digital advantage: interactive, layered, & transparent
 [[./images/chester.png]]
 
-*** Mapping Homer's Catalogue of Ships
+*** [[https://ships.lib.virginia.edu/][Mapping Homer's Catalogue of Ships]]
 :PROPERTIES:
 :CUSTOM_ID: mapping-homers-catalogue-of-ships
 :END:
-@@html:<div class="paired">@@
 Courtney Evans and Ben Jasnow, with Jenny Strauss Clay and the UVA Scholars' Lab (2013)
 
 Mapping the towns in Homer's Catalogue of Ships to analyze underlying organizing principles for the narration
-@@html:</div><div class="paired">@@
 [[./images/ships.png]]
-@@html:</div>@@
 
-
-*** Project DECIMA
+*** [[https://decima-map.net/][Project DECIMA]]
 :PROPERTIES:
 :CUSTOM_ID: project-decima
 :END:
@@ -278,22 +285,39 @@ University of Toronto, History Dept.
 Onto a 16th century map of Florence, DECIMA maps census data about Florence's inhabitants, their occupations, wealth, and daily life.
 
 [[./images/decima.png]]   
-*** ToposText: Ancient Texts + Maps
+*** [[https://topostext.org/][ToposText]]: Ancient Texts + Maps
 :PROPERTIES:
 :CUSTOM_ID: topostext-ancient-texts-maps
 :END:
 [[./images/ttext.png]]
-*** Mapping Ararat
+*** [[http://www.mappingararat.com/][Mapping Ararat]]
 :PROPERTIES:
 :CUSTOM_ID: mapping-ararat
 :END:
 [[./images/ararat.png]]
+*** About that Land Acknowledgment 
+- History of Life on this shore
+- Dish with One Spoon
+- Continuity and Disjuncture
+#+begin_paired
+[[/home/matt/wdw235/images/dish-spoon-territory.png]]
+#+end_paired
+#+begin_paired
+https://www.indiantime.net/home/cms_data/dfault/photos/stories/id/1/0/7510/.TEMP/s_topTEMP425x425-8032.jpeg
+#+end_paired
+
+#+begin_notes
+We would like to acknowledge this sacred land on which the University of Toronto operates. It has been a site of human activity for 15,000 years. This land is the territory of the Huron-Wendat and Petun First Nations, the Seneca, and most recently, the Mississaugas of the Credit River. The territory was the subject of the Dish with One Spoon Wampum Belt Covenant, an agreement between the Iroquois Confederacy and Confederacy of the Ojibwe and allied nations to peaceably share and care for the resources around the Great Lakes. Today, the meeting place of Toronto is still the home to many Indigenous people from across Turtle Island and we are grateful to have the opportunity to work in the community, on this territory.
+#+end_notes
 ** Communication
 :PROPERTIES:
 :CUSTOM_ID: communication
 :END:
 
-Scholarly Writings, Public Engagement, Social Media, Teaching & Collaboration
+- Scholarly Writings
+- Public Engagement
+- Social Media
+- Teaching & Collaboration
 
 *** Scholarly Books: The Networked Monograph
 :PROPERTIES:
@@ -328,8 +352,8 @@ https://pbs.twimg.com/media/A3zuNR6CIAAeHsk.jpg
 :PROPERTIES:
 :CUSTOM_ID: section-7
 :END:
-
-Heather Eason: five artists' representations of threshold crossings in Dante's /Inferno/. Omeka/Neatline undergraduate student project.
+*** This Class
+[[https://chauceranditaly.library.utoronto.ca/neatline/show/liminal-representation-inferno][Heather Eason: five artists' representations of threshold crossings]] in Dante's /Inferno/. Omeka/Neatline undergraduate student project.
 
 [[./images/inferno.png]]
 #+begin_notes
@@ -337,16 +361,82 @@ Heather Eason: five artists' representations of threshold crossings in Dante's 
 
 #+end_notes
 
-*** Collaboration & Infrastructures
+*** Others 
+Website for [[https://kcc.hackinghistory.ca/][Khangchendzonga Conservation Committee]], written and developed by students from HIS455, /Hacking History/, 2018.
+
+[[/home/matt/wdw235/images/kcc.jpg]]
+
+*** [[https://chauceranditaly.library.utoronto.ca/neatline/show/liminal-representation-inferno][Collaboration & Infrastructures]]
 :PROPERTIES:
 :CUSTOM_ID: collaboration-infrastructures
 :END:
 [[./images/edgi-wm.png]]
-
 ** Course Syllabus
 :PROPERTIES:
 :CUSTOM_ID: course-syllabus
 :END:
+
+*** 4 main blocks!
+:PROPERTIES:
+:reveal_extra_attr: class="twobytwo"
+:CUSTOM_ID: syl-blocks
+:END:
+#+ATTR_REVEAL: :frag (appear) 
+#+begin_slideblock
+*Intro* (~2 weeks)
+- Aims: 
+  - understand /scope and nature/ of Digital humanities
+  - Begin experimenting with DH tools and methos
+#+end_slideblock
+#+ATTR_REVEAL: :frag (appear) 
+#+begin_slideblock
+*Digital Texts* (2 weeks)
+- Aims:
+  - understand /what happens to text when it goes digital/
+  - experiment with treating texts as data
+#+end_slideblock
+#+ATTR_REVEAL: :frag (appear) 
+#+begin_slideblock
+*Endangered Knowledge* (4 weeks, the heart of the course)
+- Aims:
+  - explore DH in the context of banned, censored, and threatened texts
+  - major project using a scholarly Content Management System
+#+end_slideblock
+#+ATTR_REVEAL: :frag (appear) 
+#+begin_slideblock
+*Data in the Humanities* (~3 weeks)
+- Aims:
+  - arrive at a humanities-centric conception of data
+  - become familiar with standard data cleaning and data visualization tools
+#+end_slideblock
+
+*** Assignments!
+:PROPERTIES:
+:reveal_extra_attr: class="twobytwo"
+:END:
+#+begin_slideblock
+*3 Short Assignments*
+- ~700 words
+- engagement with texts and tools we've learned about.
+- first 2 handed out togethr, next week
+#+end_slideblock
+
+#+ATTR_REVEAL: :frag (appear) 
+#+begin_slideblock
+*Banned Book Project*
+- major scaffolded assignment
+- consultation, proposal, and exhibit all marked
+- Assignment handed out by Oct. 1
+#+end_slideblock
+
+#+begin_slideblock
+*And don't forget participation*
+- come to all the clases!
+- Pay attention
+- Do the work!
+- Be respectful - to everyone!
+#+end_slideblock
+
 
 ** Let's Play a Game!
 :PROPERTIES:
@@ -358,6 +448,84 @@ Heather Eason: five artists' representations of threshold crossings in Dante's 
 [[https://twinery.org/2/#!/stories/dbeebaff-c046-41b3-96eb-7a4ca799eef7][Let's Look at the code]]
 
 [[https://twinery.org/2/][Now Build Your Own Stories]]
+
+** COMMENT Who's here? 
+#+begin_src emacs-lisp :results raw
+
+(org-lms-get-all-users )
+(let ((students (org-lms-get-all-users)))
+  (mapconcat 
+   (lambda (i)
+     (format "- [ ] %s\n" i))
+   (cl-sort 
+    (cl-loop for s in-ref students
+             ;; concat
+             ;; (format "- [ ] %s\n" (plist-get s :name)
+             collect
+             (plist-get s :name))
+    'string-lessp
+    :key
+    'downcase
+    )
+   "")
+             ;; (plist-get s :)
+    
+    ;; (message "student %s" (plist-get s :id))
+    ;; (if (equal 10444 (plist-get s :id))
+    ;;          (progn 
+    ;;          (message "in 10444")
+    ;;          (setq s (plist-put s :github  "muppet"))))
+    )
+             )
+#+end_src
+
+#+RESULTS:
+- [ ] Alexia Monize
+- [ ] Angela Wang
+- [ ] Art Xia
+- [ ] Catherine Lu
+- [ ] Cheryl Lee
+- [ ] Chun Yan Zhu
+- [ ] Cindy Shyintum
+- [ ] Coleen Salvador
+- [ ] Dorsa Nematollahi
+- [ ] Duc Vu
+- [ ] Elsa Xiaosha Huang
+- [ ] Emily Sylvester
+- [ ] Faizan Khan
+- [ ] Gabriel Anover
+- [ ] Hannah Durante
+- [ ] Hyun Oh
+- [ ] Jia Shao
+- [ ] Jia Yuan Liu
+- [ ] Jin Choi
+- [ ] Jingyuan Gao
+- [ ] Joram Mathew Inchoco
+- [ ] Kathleen Domanski
+- [ ] Lara Shoukry
+- [ ] Madeline Prosser
+- [ ] Marco Carulli
+- [ ] Matthew Lo
+- [ ] Matthew O'Connor
+- [ ] Matthew Price
+- [ ] Michael Mannone
+- [ ] Nanako Maruyama
+- [ ] Nicole Matthews
+- [ ] Nikhil Bhambra
+- [ ] Philip Danso
+- [ ] Ruijie Zhang
+- [ ] Ruiwen Zhang
+- [ ] Ruoxi Wang
+- [ ] Sharuka Sivanandam
+- [ ] Sihaam Hashi
+- [ ] Sky Li
+- [ ] Taewon Kim
+- [ ] Thomas Chan
+- [ ] Willow Cabral
+- [ ] Yanwen Zhong
+- [ ] Yasmeen Kamal
+- [ ] Yuan Huang
+- [ ] Yulan He
 
 * 02: Anatomy of DH Projects
 :PROPERTIES:

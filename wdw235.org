@@ -2,24 +2,27 @@
 #+TITLE: WDW235 Syllabus
 #+ODT_STYLES_FILE: "/home/matt/.emacs.d/Templates/syl-temp-2019.odt"
 #+STARTUP: customtime
-#+ORG_LMS_COURSEID: 99251
+#+ORG_LMS_COURSEID: 127426
 #+HUGO_BASE_DIR: ./website/
 #+HUGO_SECTION: syllabus
 #+EXPORT_FILE_NAME: syllabus
 #+HUGO_STATIC_IMAGES: images
 #+HUGO_MENU: :menu main :weight 10
 #+HUGO_CUSTOM_FRONT_MATTER: :banner "testbanner"
-# #+IS_PUBLIC: t
+#+IS_PUBLIC: t
+# # don't export todo states! 
+#+OPTIONS: tasks:nil
 
 * Course Details
    :PROPERTIES:
    :CUSTOM_ID: course-details
    :END:
-
+   
 | Instructor   | Matt Price                                            |
-| Course Hours | Th 5-8                                            |
-| Office Hours | Th 1-2  (SS 3077)                         |
+| Course Hours | Th 5-8                                                |
+| Office Hours | Th 12-1  (SS 3077)                                    |
 | Email        | [[mailto:alexandra.bolintineanu@utoronto.ca][matt.price@utoronto.ca]] (weekdays 9-5, 48h turnaround) |
+| TA           | TBD                                                   |
 
 * Course Description
    :PROPERTIES:
@@ -79,11 +82,11 @@ See [[http://www.studentlife.utoronto.ca/as][A&S Accessibility Website]] for mor
 
 | *Assignment*                                    | *%* | *Due Date*                                    |
 |-------------------------------------------------+-----+-----------------------------------------------|
-| Short Assignments (3)                           |  45 | <2019-09-19 Thu>, <2019-10-10 Thu>, <2019-11-21 Thu>               |
+| Short Assignments (3)                           |  45 | <2019-09-19 Thu>, <2019-10-10 Thu>, <2019-11-21 Thu>                     |
 | Participation                                   |  10 | All semester; alternatives.                   |
 | Book Project: Consultation                      |   1 | Oct. 11-25, in office hours or by appointment |
-| Book Project: Proposal & Annotated Bibliography |   9 | <2019-11-01 Fri>                                     |
-| Book Project: Digital Exhibit                   |  35 | <2019-11-29 Fri>                                     |
+| Book Project: Proposal & Annotated Bibliography |   9 | <2019-11-01 Fri>                                       |
+| Book Project: Digital Exhibit                   |  35 | <2019-11-29 Fri>                                       |
 | Total                                           | 100 |                                               |
 #+TBLFM: @>$2=vsum(@2..@-1)
 
@@ -96,9 +99,9 @@ See [[http://www.studentlife.utoronto.ca/as][A&S Accessibility Website]] for mor
    :END:
 ** Participation
 Every week, you are also responsible for coming to the lab and undertaking the project or field trip of the week in a facilitated environment.  This is where you can explore, experiment, fail creatively:  all I require is *engaged participation—that is, you come to class, do the hands-on computer work, ask questions, and engage in class discussion*. If you miss class or are more than ten minutes late for class, you will miss the grades, unless your absence is excused. 
-** ACTION Reflection Portfolio
+** Short Assignments
 
-You are responsible for writing three reflections in this course. Reflections include in-class digital artifacts as well as discussion of course readings. You will work on reflections in class as well as outside class, and you will hand them in via Quercus. They need not be perfect, just done. 400-500 words maximum.
+You are responsible for writing three short assignments in this course. These include discussions of in-class digital artifacts as well as course readings. You will work on these assignments in class as well as outside class, and you will hand them in via Quercus. They need not be perfect, just done.700 words approximately.
 
 ** DH Project Profile
 
@@ -158,9 +161,9 @@ We discuss the components of digital humanities projects—data, code, tools, pl
 - Miriam Posner, “[[http://miriamposner.com/blog/how-did-they-make-that/][How Did They Make That?]]” (2013) 
 - Alan Galey & Stan Ruecker, “[[https://doi.org/10.1093/llc/fqq021][How a Prototype Argues]]” (2010) (in-class discussion)
 *** Reflection Handed Out: DH Project Profile
-*Due May 13*
+*Due <2019-09-19 Thu>*
 ** {{{n}}} ({{{ts}}}) Digital Texts: Reading and Writing
-*Endangered ‘book’: oral poetry, cultural memory*
+
 - Kinds of danger, types of responses
 - Using digital methods to discover and highlight new understanding of literary texts
 *** Readings & Discussion: 	 
@@ -168,63 +171,64 @@ We discuss the components of digital humanities projects—data, code, tools, pl
 :ID:       9e3b927f-9757-4dc2-83bd-3d312f10cd10
 :END:
 - Lisa Samuels and Jerome J. McGann, “[[http://bf4dv7zn3u.search.serialssolutions.com.myaccess.library.utoronto.ca/?ctx_ver=Z39.88-2004&ctx_enc=info%253Aofi%252Fenc%253AUTF-8&rfr_id=info%253Asid%252Fsummon.serialssolutions.com&rft_val_fmt=info%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal&rft.genre=article&rft.atitle=Deformance+and+Interpretation&rft.jtitle=New+Literary+History%253A+a+journal+of+theory+and+interpretation&rft.au=Samuels%252C+Lisa&rft.au=McGann%252C+Jerome&rft.date=1999&rft.issn=0028-6087&rft.eissn=1080-661X&rft.volume=30&rft.issue=1&rft.spage=25&rft.externalDocID=R03182533][Deformance and Interpretation]],” /New Literary History/ 30, No. 1 (Winter, 1999): 25-56. (in-class discussion) 	 
-- Alan Liu, “[[http://www.digitalhumanities.org/companion/view?docId=blackwell/9781405148641/9781405148641.xml&chunk.id=ss1-3-1&toc.depth=1&toc.id=ss1-3-1&brand=9781405148641_brand][Imagining the New Media Encounter]].” A Companion to Digital Literary Studies. Ed. Ray Siemens and Susan Schreibman. Malden, MA: Blackwell, 2007. 3-25
+-  Alan Liu, “[[http://www.digitalhumanities.org/companion/view?docId=blackwell/9781405148641/9781405148641.xml&chunk.id=ss1-3-1&toc.depth=1&toc.id=ss1-3-1&brand=9781405148641_brand][Imagining the New Media Encounter]].” A Companion to Digital Literary Studies. Ed. Ray Siemens and Susan Schreibman. Malden, MA: Blackwell, 2007. 3-25
 *** Tool Workshop/Reflection Assignment: [[https://tei-c.org/][TEI]] and The Ruin
-- How do digital humanities text analysis tools open new ways of reading literature? We experiment with text encoding using 
-*Reflection 2 Due May 22*
-** {{{n}}} ({{{ts}}}) Endangered Knowledge 1: Rare Books & Digital Archives
+- How do digital humanities text analysis tools open new ways of reading literature? We experiment with text encoding using the TEI system, and the text of a medieval poem. 
+** {{{n}}} ({{{ts}}}) Digital Texts: oral poetry, cultural memory
+Continuation of the discussion from last time, with more about both TEI and Twine. 
+** {{{n}}} ({{{ts}}}) Endangered Knowledge: Rare Books & Digital Archives
 
 The first part of class is devoted to understanding the main course assignment, with some lecture material about *endangered knowledge*
+*** Readings and Discussion
+On Resurrections, Risks, Losses
+- William Noel, “[[http://www.ted.com/talks/william_noel_revealing_the_lost_codex_of_archimedes][Revealing the Lost Codex of Archimedes]]” (2012). [TED TALK]
+- Bethany Nowviskie, “[[http://nowviskie.org/2014/anthropocene/][Digital Humanities in the Anthropocene]]”
+- Eira Tansey, “[[http://eiratansey.com/2017/05/16/fierce-urgencies-2017/][When the Unbearable Becomes Inevitable: Archives and Climate Change]]” (2017).
 
 *** Tools Workshop: Omeka
 A *very* brief intro to Omeka, the framework we'll use to build your class projects.
 
-** {{{n}}} ({{{ts}}}) Endangered Knowledge 2: Theory and Practice
-We examine digital archives, discussing creation, preservation, ethical concerns, relationships with communities, and security and environmental issues raised by cloud computing and machine learning.  We examine UofT’s guidelines around the ethical and technical management of human research data.
-*** Readings & Discussion
-On Resurrections, Risks, Losses
-William Noel, “[[http://www.ted.com/talks/william_noel_revealing_the_lost_codex_of_archimedes][Revealing the Lost Codex of Archimedes]]” (2012). [TED TALK]
-Bethany Nowviskie, “[[http://nowviskie.org/2014/anthropocene/][Digital Humanities in the Anthropocene]]”
-Eira Tansey, “[[http://eiratansey.com/2017/05/16/fierce-urgencies-2017/][When the Unbearable Becomes Inevitable: Archives and Climate Change]]” (2017).
-
-*** Tools Workshop: More Omeka 
-** {{{n}}} ({{{ts}}}) Endangered Knowledge 3: Library Visit
-
+** {{{n}}} ({{{ts}}}) Endangered Knowledge : Library Visit (tentative)
 *** Class Outing: Banned and Censored Books
-We visit the Thomas Fisher Rare Book Library under the guidance of Tim Stinson, Cataloguer and Reference Librarian at the Library, and are introduced to the candidate books for your final projects.
+We visit the Thomas Fisher Rare Book Library under the guidance of Tim Perry, Cataloguer and Reference Librarian at the Library, and are introduced to the candidate books for your final projects.
 
-*Please Note:* due to an unfortunate scheduling difficulty, our only window for this visit is 12:00-1:30 today. I am hopeful that everyone in the class can stay for this entire period. 
-** {{{n}}} ({{{ts}}}) Endangered Knowledge 4: Remembering the Soviet Bloc
+*Please Note:* This may be rescheduled to Oct. 24! Thanks for your patience 
+** {{{n}}} ({{{ts}}}) Endangered Knowledge: Remembering the Soviet Bloc
 *** Readings & Discussion
 - Browse *extensively* in the [[https://samizdatcollections.library.utoronto.ca/][Project for the Study of Dissidence and Samizdat]]
 *** Special Guest Lecture!
 [[https://alexandrabolintineanu.wordpress.com/][Prof. Alexandra Bolintineanu]] will share some reflections on Samizdat and censorship in late Twentieth Century Romania.  
-** {{{n}}} ({{{ts}}}) Data: OpenRefine
-- A special 3-hour workshop with OpenRefine in the Map and Data Library (5th Floor Robarts)
-
-*** Data & Map Workshop with Kelly Schultz
-Introduction to data cleaning with [[http://openrefine.org/][OpenRefine]], a powerful data cleaning and transformation tool. 
-** {{{n}}} ({{{ts}}}) Data 2: Data Models for the Humanities
+** {{{n}}} ({{{ts}}}) Endangered Knowledge: Theory and Practice
+We examine digital archives, discussing creation, preservation, ethical concerns, relationships with communities, and security and environmental issues raised by cloud computing and machine learning.  We examine UofT’s guidelines around the ethical and technical management of human research data.
+*** ACTION Readings & Discussion
+- TBA
+*** Tools Workshop: More Omeka 
+** {{{n}}} ({{{ts}}}) Data 1: Data Models for the Humanities
 We back up and ask: what are data models and algorithms? We discuss how data models, algorithms, and digital platforms inform ways of knowing, learning, and reading. Data as endangered/endangering kn;owledge. 
 
 *** Readings & Discussion:
-- Miriam Posner, [[http://miriamposner.com/blog/humanities-data-a-necessary-contradiction/][Humanities Data: A Necessary Contradiction]] (2015) Accessed April 30, 2019. 
-- Rob Kitchin, “Conceptualising Data.”  /[[http://methods.sagepub.com.myaccess.library.utoronto.ca/book/the-data-revolution][The Data Revolution:  Big Data, Open Data, Data Infrastructures & Their Consequences]]/ (2014) 
+- Johanna Drucker, “[[http://www.digitalhumanities.org/dhq/vol/5/1/000091/000091.html][Humanities Approaches to Graphical Display]]” (2011).
+- Miriam Posner, [[https://www.youtube.com/watch?v=sW0u1pNQNxc][Data Trouble: Why Humanists Have Problems with Datavis, and Why Anyone Should]]
+- Miriam Posner, [[http://miriamposner.com/blog/humanities-data-a-necessary-contradiction/][Humanities Data: A Necessary Contradiction]] (2015) Accessed April 30, 2019.  
 *** Further Reading:
 - U of T's [[https://onesearch.library.utoronto.ca/researchdata][research data management policies]], including [[https://onesearch.library.utoronto.ca/researchdata/sensitive-data][guidelines on handling sensitive data]] (including de-identification, i.e. anonymizing your data) and on [[https://onesearch.library.utoronto.ca/researchdata/funder-requirements][Canadian funders' data publication requirements]] (two of the three federal funding bodies mandate that data created with gov't funding be made public).
 - Cathy O’Neil, /[[https://search.library.utoronto.ca/search?Ntx=mode%2520matchallpartial&Ntk=Anywhere&N=0&Ntt=%2522weapons%2520of%2520math%2520destruction%2522&Nr=p_work_normalized:ONeil%2520Cathy%2520Weapons%2520of%2520math%2520destruction&uuid=7c23a669-7240-41dc-94d6-592f201cb609][Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy]]/. (2016)
 - Safiya Umoja Noble. /[[https://ebookcentral-proquest-com.myaccess.library.utoronto.ca/lib/utoronto/detail.action?docID=4834260][Algorithms Of Oppression: How Search Engines Reinforce Racism]]/. (2018)
 *** Reflection Assignment: Data Tool Comparison
-*Reflection Due June 03*
-** {{{n}}} ({{{ts}}}) Data Visualization
+
+** {{{n}}} ({{{ts}}}) Data 2: OpenRefine
+- A special 3-hour workshop with OpenRefine in the Map and Data Library (5th Floor Robarts)
+
+*** Data & Map Workshop
+Introduction to data cleaning with [[http://openrefine.org/][OpenRefine]], a powerful data cleaning and transformation tool. 
+** {{{n}}} ({{{ts}}}) Data Visualization Workshop
+*** Data & Map Workshop 2
+Two weeks in a row! 
+
 In a facilitated workshop, we turn to data visualization of humanities materials, using Jane Austen’s /Lady Susan/ for experimentation ([[https://voyant-tools.org/][Voyant]], [[http://hdlab.stanford.edu/palladio/][Palladio]], [[https://cytoscape.org/][Cytoscape]], [[https://www.tableau.com/][Tableau]]:  text and corpus work, network graphs, mapping, annotation).  Then we analyze the American Library Association’s data on banned books and discuss how we might model, interpret, question, and visualize this data.
 
 *** Readings & Discussion
-- Johanna Drucker, “[[http://www.digitalhumanities.org/dhq/vol/5/1/000091/000091.html][Humanities Approaches to Graphical Display]]” /Digital Humanities Quarterly/ (2011).
-- Miriam Posner, [[https://www.youtube.com/watch?v=sW0u1pNQNxc][Data Trouble: Why Humanists Have Problems with Datavis, and Why Anyone Should Care]] (2016) 
-
-** {{{n}}} ({{{ts}}}) DV 2
-Continuation of previous Session
+- Workshop Materials Link to be distributed
 ** {{{n}}} ({{{ts}}}) NO CLASS READING WEEK
 ** {{{n}}} ({{{ts}}}) Retrospective
 The last class is a retrospective look at the course. We'll discuss how to use DH approaches and tools in your home disciplines. We also discuss how we might apply the course learning outcomes to jobs in the corporate sector: we dissect a job ad from Monster.ca to align students' newly acquired skills with every requirement of that position.
