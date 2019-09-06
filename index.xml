@@ -6,10 +6,20 @@
     <description>Recent content on HIS393: Digital History</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 18 May 2019 12:31:28 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 03 Sep 2019 20:50:42 -0400</lastBuildDate>
     
 	<atom:link href="https://digitalhistory.github.io/wdw235/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Reflection 02: The Ruin</title>
+      <link>https://digitalhistory.github.io/wdw235/assignment/reflection-2-the-ruin/</link>
+      <pubDate>Tue, 03 Sep 2019 20:50:42 -0400</pubDate>
+      
+      <guid>https://digitalhistory.github.io/wdw235/assignment/reflection-2-the-ruin/</guid>
+      <description>Before completing this assignment, read the recently revised, HTML version of te handout “The Ruin: Digital Literary Studies” and carry out the exercises it asks you to do.
+ What is The Ruin? Briefly describe the poem and its themes. State what passage you are focusing on and analyze its poetic characteristics, as discussed in class. Be specific; cite poem by line numbers. Cite Echard&amp;rsquo;s online translation correctly using the citation format of your choice.</description>
+    </item>
     
     <item>
       <title>Reflection 02: Handout and Preliminary Exercises</title>
@@ -19,17 +29,6 @@
       <guid>https://digitalhistory.github.io/wdw235/assignment/reflection-2-handout/</guid>
       <description>In this assignment, you will encode parts of a thousand-year-old poem using a markup language, display the marked-up text in a web browser using a computational translator, and discuss this exercise using the idea of deformance as a guide. This handout should contain everything you need to complete the assignment, but please use the discussion forum to ask any technical (or other!) questions.
 The Poem: “The Ruin” (from the tenth century Exeter Book), translated by Sian Echard, silently emended &amp;ldquo;The Ruin&amp;rdquo; was likely written in the 8th or 9th century, and recorded in the Exeter Book in the 10th century.</description>
-    </item>
-    
-    <item>
-      <title>Reflection 02: The Ruin</title>
-      <link>https://digitalhistory.github.io/wdw235/assignment/reflection-2-the-ruin/</link>
-      <pubDate>Sat, 18 May 2019 11:36:33 -0400</pubDate>
-      
-      <guid>https://digitalhistory.github.io/wdw235/assignment/reflection-2-the-ruin/</guid>
-      <description>Before completing this assignment, read the handout “The Ruin: Digital Literary Studies” and carry out the exercises it asks you to do.
- What is The Ruin? Briefly describe the poem and its themes. State what passage you are focusing on and analyze its poetic characteristics, as discussed in class. Be specific; cite poem by line numbers. Cite Echard&amp;rsquo;s online translation correctly using the citation format of your choice.
- What is “deformance,” as defined by McGann and Davidson, and how did you practice deformance on The Ruin?</description>
     </item>
     
     <item>
@@ -76,8 +75,7 @@ You may select any project you like from the syllabus or from one of the pages b
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://digitalhistory.github.io/wdw235/slides/01-intro/</guid>
-      <description>01: DH &amp;#x2013; An Introduction .underline { text-decoration: underline; }   if( window.location.search.match( /print-pdf/gi ) ) { var link = document.createElement( &#39;link&#39; ); link.rel = &#39;stylesheet&#39;; link.type = &#39;text/css&#39;; link.href = &#39;../../vendor/reveal//css/print/pdf.css&#39;; document.getElementsByTagName( &#39;head&#39; )[0].appendChild( link ); }    01: DH &amp;#x2013; An IntroductionMatt PriceCreated: 2019-05-10 Fri 12:55
-  Today  Intro A partial history Course syllabus What is DH? Project examples A Little Game   Introductions      Me Historian of Science, Emphasis on &amp;ldquo;Engaged Teaching&amp;rdquo;   You Let&amp;rsquo;s discuss     DH: at the fluctuating intersections of the humanities with computing    note the influences go in two directions!</description>
+      <description>01: Digital Humanities &amp;#x2013; An Introduction .underline { text-decoration: underline; }   if( window.location.search.match( /print-pdf/gi ) ) { var link = document.createElement( &#39;link&#39; ); link.rel = &#39;stylesheet&#39;; link.type = &#39;text/css&#39;; link.href = &#39;../../vendor/reveal//css/print/pdf.css&#39;; document.getElementsByTagName( &#39;head&#39; )[0].appendChild( link ); }    01: Digital Humanities &amp;#x2013; An Introduction Matt Price  (view this presentation in another theme: Black (default) - White - League - Sky - Beige - Simple Serif - Blood - Night - Moon - Solarized )	--   Today  Intro A partial history Course syllabus What is DH?</description>
     </item>
     
     <item>
@@ -122,7 +120,7 @@ You may select any project you like from the syllabus or from one of the pages b
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://digitalhistory.github.io/wdw235/syllabus/syllabus/</guid>
-      <description>Course Details    Instructor Matt Price     Course Hours MW 10-1   Office Hours MW 1-2 (Locate TBA)   Email matt.price@utoronto.ca (weekdays 9-5, 48h turnaround)    Course Description Digital Humanities (DH) is a discipline at the intersections of the humanities with computing. DH studies human culture &amp;ndash; art, literature, history, geography, religion &amp;ndash; through computational tools and methodologies; and, in turn, DH studies digital artifacts through humanist lenses, as complex cultural objects shaped by wider social, political, and philosophical concerns.</description>
+      <description>Course Details    Instructor Matt Price     Course Hours Th 5-8   Office Hours Th 12-1 (SS 3077)   Email matt.price@utoronto.ca (weekdays 9-5, 48h turnaround)   TA TBD    Course Description Digital Humanities (DH) is a discipline at the intersections of the humanities with computing. DH studies human culture &amp;ndash; art, literature, history, geography, religion &amp;ndash; through computational tools and methodologies; and, in turn, DH studies digital artifacts through humanist lenses, as complex cultural objects shaped by wider social, political, and philosophical concerns.</description>
     </item>
     
   </channel>
