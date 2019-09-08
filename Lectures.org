@@ -1,14 +1,10 @@
-#+STARTUP: customtime
-#+HUGO_BASE_DIR: ./website/
+#+SETUPFILE: ./setup.org
 #+HUGO_SECTION: slides
-#+HUGO_STATIC_IMAGES: Images
 #+HUGO_MENU: :menu main :parent Assignments
-#+HUGO_AUTO_SET_LASTMOD: t
 #+REVEAL_SINGLE_FILE: t
 #+REVEAL_ROOT: file:///home/matt/src/reveal.js
-#+ORG_LMS_COURSEID: 127426
-#+CSL_STYLE: /home/matt/Zotero/styles/chicago-manual-of-style-16th-edition-inline-notes-for-syllabi.csl
 #+HUVEAL_BASEURL_PREFIX
+
 * COMMENT Hugo Instructions
 :PROPERTIES:
 :CUSTOM_ID: hugo-instructions-16ed

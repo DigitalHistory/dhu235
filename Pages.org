@@ -1,7 +1,4 @@
-#+MACRO: ts (eval(mwp-get-ts+7  'org-mwp-classtimes-calibrate 2))
-#+STARTUP: customtime
-#+ORG_LMS_COURSEID: 127426
-
+#+SETUPFILE: ./setup.org
 
 * Lectures
 :PROPERTIES:

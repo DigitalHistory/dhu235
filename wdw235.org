@@ -1,17 +1,8 @@
-#+MACRO: ts (eval(mwp-get-ts+7  'org-mwp-classtimes-calibrate 1))
-#+TITLE: WDW235 Syllabus
+#+SETUPFILE: ./setup.org
 #+ODT_STYLES_FILE: "/home/matt/.emacs.d/Templates/syl-temp-2019.odt"
-#+STARTUP: customtime
-#+ORG_LMS_COURSEID: 127426
-#+HUGO_BASE_DIR: ./website/
 #+HUGO_SECTION: syllabus
 #+EXPORT_FILE_NAME: syllabus
-#+HUGO_STATIC_IMAGES: images
 #+HUGO_MENU: :menu main :weight 10
-#+HUGO_CUSTOM_FRONT_MATTER: :banner "testbanner"
-#+IS_PUBLIC: t
-# # don't export todo states! 
-#+OPTIONS: tasks:nil
 
 * Course Details
    :PROPERTIES:

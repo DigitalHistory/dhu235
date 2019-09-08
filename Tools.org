@@ -1,15 +1,9 @@
-#+STARTUP: customtime
-#+HUGO_BASE_DIR: ./website/
+#+SETUPFILE: ./setup.org
 #+HUGO_SECTION: tools
-#+HUGO_STATIC_IMAGES: Images
 #+HUGO_MENU: :menu main :parent Tools
-#+HUGO_AUTO_SET_LASTMOD: t
 #+REVEAL_SINGLE_FILE: t
 #+HUVEAL_BASEURL_PREFIX
 #+LATEX_HEADER: \usepackage{xyz}
-#+MACRO: ts (eval(mwp-get-ts+7  'org-mwp-classtimes-calibrate 2))
-#+STARTUP: customtime
-#+ORG_LMS_COURSEID: 99251
 
 
 * Twine
