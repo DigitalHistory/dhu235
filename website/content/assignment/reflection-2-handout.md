@@ -1,8 +1,10 @@
 ---
 title: "Reflection 02: Handout and Preliminary Exercises"
 author: ["Matt Price"]
-lastmod: 2019-05-18T12:31:28-04:00
+lastmod: 2019-09-12T09:55:43-04:00
+tags: ["assignment"]
 draft: false
+banner: "testbanner"
 menu:
   main:
     weight: 1004
@@ -72,7 +74,7 @@ In this assignment, you will **encode** parts of a thousand-year-old poem using 
 
 ## Deformance {#deformance}
 
-We discussed in class this [portmanteau](https://en.wikipedia.org/wiki/Portmanteau) term coined by Lisa Samuels and Jerome McGann, a combination of “deform” and “performance.” Be sure you have some grasp of what this means!
+We will discuss in class this [portmanteau](https://en.wikipedia.org/wiki/Portmanteau) term coined by Lisa Samuels and Jerome McGann, a combination of “deform” and “performance.” Be sure you have some grasp of what this means!
 
 
 ## Introduction to XML,XSLT, TEI, and HTML (!) {#introduction-to-tei}
@@ -94,8 +96,8 @@ So, in order to complete this assignment, you must learn at least a tiny bit abo
 
 To view/work with XML files, please navigate to either of these xml/xslt live editors:
 
--   [W3 Schools](https://www.w3schools.com/xml/tryxslt.asp?xmlfile=cdcatalog&xsltfile=cdcatalog)
 -   [XML fiddle](http://fiddle.frameless.io/) (this one at least has syntax highlighting, which makes the code a bit easier to read).
+-   [W3 Schools](https://www.w3schools.com/xml/tryxslt.asp?xmlfile=cdcatalog&xsltfile=cdcatalog) (I don't like this one as much)
 
 **Paste your XML poem into the left window of the editor.** Start with this code:
 
@@ -109,7 +111,7 @@ To view/work with XML files, please navigate to either of these xml/xslt live ed
 </poem>
 ```
 
-**Paste your XSLT (your script for turning XML into HTML) into the right window of the browser.**
+**Paste your XSLT (your script for turning XML into HTML) into the right window of the browser.** Again, here is some starter code:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -315,7 +317,7 @@ We almost always want to get the value of the XML elements -- otherwise why woul
 
 #### HTML Tags and attributes {#html-tags-and-attributes}
 
-I won't go into HTML in much depth -- there are many many resources available online.  Here we'll just describe a few very basic features.
+I won't go into HTML in much depth -- there are many many _many_ resources available online.  Here we'll just describe a few very basic features.
 
 Like XML documents, HTML documents contain **elements** delimited by **tags**. Also like in XML, those tags can have **attributes** that give extra information.  Here are some tags you may want to use in your work:
 
@@ -363,7 +365,7 @@ Like XML documents, HTML documents contain **elements** delimited by **tags**. A
 -   You can build tables using the somewhat complicated syntax above
 -   you can set style attributes using the "style=" commands as you see them above; I've shown a few possibilities but there are literally hundreds more.
 
-Hopefully this should be enough for you te get started!
+Hopefully this should be enough for you to get started!
 
 
 ### Learn more {#learn-more}
@@ -373,16 +375,13 @@ The [Mozilla Developer Network](https://developer.mozilla.org) is the best start
 The [TEI website](https://tei-c.org/) has extensive information about the TEI standard, but is extremely technical. [TEI By Example](http://teibyexample.org/modules/TBED04v00.htm) can be quite helpful, but again, is very detailed.  The full text of _[What is the Text Encoding Initiative](https://books.openedition.org/oep/426)_ is available online and may also be helpful. The University of Nebraska's  [Basic Guide to Text Encoding](https://cdrh.unl.edu/articles/basicguide) is a lightweight introduction that may be easier to follow than any of the above!
 
 
-## Reading {#reading}
+## Reading Hints {#reading}
 
-1.  Content: Read your passage. Flag any parts that are unclear or mysterious or confusing. Summarize its content in one sentence.
-
-2.  Style: Look for:
-    1.  verbal patterns (e.g. sentences with the same shape) : what are they? What is their effect?
-
-    2.  sensory imagery (e.g. references to what you can see, hear, touch, feel): any patterns? What do they do for the poem?
-
-3.  Theme: if you had to summarize the theme of your passage in one word, what would that word be? How does style support or embody theme?
+-   Content: Read your passage. Flag any parts that are unclear or mysterious or confusing. Summarize its content in one sentence.
+-   Style: Look for:
+    -   verbal patterns (e.g. sentences with the same shape) : what are they? What is their effect?
+    -   sensory imagery (e.g. references to what you can see, hear, touch, feel): any patterns? What do they do for the poem?
+-   Theme: if you had to summarize the theme of your passage in one word, what would that word be? How does style support or embody theme?
 
 
 ## Encoding {#encoding}
@@ -393,6 +392,8 @@ Encode your passage using the following TEI tags:
 
 -   **Lines and line numbers**
 
+<!--listend-->
+
 ```xml
  <poem>
    <l n=″1″>This masonry is wondrous; fates broke it</l>
@@ -400,6 +401,8 @@ Encode your passage using the following TEI tags:
 ```
 
 -   **At least one made-up tag of your own, specific to the poem**
+
+<!--listend-->
 
 ```xml
 <concrete_noun> wall-stone </concrete_noun>
@@ -424,6 +427,8 @@ It may help you to see a few more tags. Here is a slightly more complex example,
 -   [the "a" or hyperlink tag](https://www.w3schools.com/tags/tag%5Fa.asp)
 -   [curly braces as a shortcut for xpaths](https://stackoverflow.com/questions/10395488/how-to-concat-a-string-to-xslvalue-of-select)
 -   [the somewhat confusing xpath test "node"](https://stackoverflow.com/questions/11744465/xpath-difference-between-node-and-text), which sometimes makes sense to use when "current()" doesn't produce the effect you want.
+
+<!--listend-->
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -491,5 +496,4 @@ It may help you to see a few more tags. Here is a slightly more complex example,
   </xsl:template>
 
 </xsl:stylesheet>
-
 ```

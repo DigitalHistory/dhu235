@@ -17,3 +17,249 @@ Enjoy!
 #+begin_export html
 <iframe frameborder="0" src="https://digitalhistory.github.io/wdw235/slides/" style="width:100%; min-height: 80vh;"></iframe>
 #+end_export
+
+
+* Introduction to XML,XSLT, TEI, and HTML (long!)
+:PROPERTIES:
+:PUBLISH:  nil
+:CUSTOM_ID: introduction-to-tei
+:CANVASID: 299518
+:CANVAS_PAGE_URL: introduction-to-xml-xslt-tei-and-html-long
+:CANVAS_HTML_URL: https://q.utoronto.ca/courses/127426/pages/introduction-to-xml-xslt-tei-and-html-long
+:CANVAS_EDITING_ROLES: teachers
+:END:
+[[https://cdrh.unl.edu/articles/basicguide/TEI][TEI]] is a [[https://en.wikipedia.org/wiki/Markup_language][markup language]] -- a system for annotating documents that can be read an processed by other compute programs.  It is a format, or defined feature set, of the [[https://www.w3schools.com/xml/xml_whatis.asp][XML]] "metalanguage", a very widely-used system for structuring and processing many kinds of data.  Digital humanists use TEI to turn literary texts into structured data that can be manipulated and queried in many ways, but especially on the web.  
+
+The process of turning a TEI document into a visual representation on a screen is complex:
+- first, the text must be *marked up* -- textual elements must be identified and annotated (we'll discuss how this works in more detail very soon).  This work can be both painstaking and tedious
+- next, a *translation scheme must be written* that /processes/ the xml text into [[https://en.wikipedia.org/wiki/HTML][HTML]], the main language of the web. This translation is almost always written in a language called [[https://en.wikipedia.org/wiki/XSLT][XLST]] (which is itself a dialect of XML)
+- finally, the translated document must be *displayed by a browser* that understands HTML, like Firefox or Chrome.   
+
+So, in order to complete this assignment, you must learn at least a tiny bit about *XML*, *XSLT*, and *HTML*.  That's a lot! I won't give you a systematic introduction to any of these systems; instead, this handout presents a very small amount of information on each, and gives some examples of how you might use them in the assignment. 
+
+** XML Essentials: Tags & Structures
+
+XML "marks up" elements of a text by surrounding bits of text with [[https://www.w3schools.com/xml/xml_syntax.asp][tags]]. The totality of ~<starting-tag>Content</end-tag>~ is called an [[https://www.w3schools.com/xml/xml_elements.asp][XML element]]. 
+
+Take this example (stolen from [[https://www.w3schools.com/xml/xml_elements.asp][W3Schools]]): 
+#+begin_src xml
+  <book category="children">
+    <title>Harry Potter</title>
+    <author>J K. Rowling</author>
+    <year>2005</year>
+    <price>29.99</price>
+  </book>
+#+end_src
+
+Here we have a *root element* called ~<book>~ which encloses several [[https://www.w3schools.com/xml/xml_tree.asp#midcontentadcontainer][child elements]] (~<title>~, ~<author>~, etc). Everything between ~<book category="children">~ and ~</book>~ is part of the ~<book>~ element.  In general, an element has the structure:
+
+- opening tag: ~<tag>~
+- content: text and child elements, which must be fully nexted within the parent (if an opening tag is inside the element, the closing tag must *also* be inside it
+- closing tag: ~</tag>~ . Note the forward slash */* within the ~<>~ greater-than less-than signs.
+
+Here's a trivial example that you might find in a TEI document:
+
+#+begin_src  xml
+<l>And then my lord <person>Yvain</person> arrived in <place>Camelot</place>.</l>
+#+end_src
+
+The tags here are "l", "person", and "place".
+
+*** The XML declaration
+:PROPERTIES:
+:CUSTOM_ID: xml-dec
+:END:
+
+Every real XML document must also begin with an "XML Declaration" which identifies it as an XML document.  It will look like this: 
+
+#+begin_src xml
+<?xml version="1.0" encoding="UTF-8"?>
+#+end_src
+
+And a very simple full document will look like this:
+#+NAME: simple-xml
+#+begin_src xml
+<?xml version="1.0" encoding="UTF-8"?>
+<poem>
+  <l n="1">This wall-stone is wondrous; fates broke it</l>
+  <l n="2">courtyard pavements were smashed; the work of giants is decaying.</l>
+  <l n="3">Roofs are fallen, ruinous towers,</l>
+  <l n="4"> the frosty gate with frost on cement is ravaged, </l>
+</poem>
+#+end_src
+
+** Displaying XML with XSLT
+A document that has been marked up with XML now has a structure that a computer can understand, which is great! But a web browser will not know how to display that document unless we give it instructions for *transforming* the XML structure into a language that the browser understands. We use XSLT for this purpose -- a special language that exists to manipulate XML documents.  
+
+XSLT is complicated, and we will use just a tiny part of it.  We need to understand just a few concepts: 
+- *stylesheet declaration* surrounds the rest of the XSLT document, identifying it as an XSLT instruction set
+- *[[https://www.w3schools.com/xml/xsl_templates.asp][templates]]* give instructions for transforming particular XML elements
+- *[[https://www.w3schools.com/xml/xpath_syntax.asp][Xpath Expressions]]* are used to tell the templates which elements to transform
+- *value statements* insert the contents of an element into the final HTML product
+
+*** Stylesheet Declaration
+An XSLT Stylesheet always starts with an XML declaration and then an ~<xsl:stylesheet>~ tag; the document ends with the closing ~</xsl:stylesheet>~ tag:
+
+#+begin_src xml
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+<!-- Content of Stylesheet Goes Here!! -->
+
+</xsl:stylesheet>
+#+end_src
+
+*** XSLT Templates
+
+Inside the ~xsl:stylesheet~ we put all the ~xsl:template~ tags we need.  Each template is an instruction for dealing with a particular tag or set of tags.  So, if we use [[simple-xml][our simple XML file from above]] as the XML source, we might start by building an XSLT document like this:
+
+#+begin_src xml
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+    <xsl:template match="/">
+      <xsl:apply-templates/>
+  </xsl:template>
+
+
+  <xsl:template match="l">
+    <p> <xsl:value-of select="."/> </p>
+  </xsl:template>
+</xsl:stylesheet>
+#+end_src
+
+What's happening here?  We have two templates. The first one "matches" the "root element", while the second one matches all the "l" elements. So if we read this document top to bottom, we might translate it this way: 
+#+begin_verse
+I am an XML Document
+
+Begin Stylesheet
+
+   Begin Template for the root element
+        Apply all Templates!
+   End Template for the root elements
+
+   Begin Template for each l element
+        Return a line of code that reads:
+        "<p> + content of the "l" element + </p>"
+        (this creates one HTML paragraph for each "l" element in the original)
+   End Template for the L Elements
+
+End Stylesheet
+#+end_verse
+
+Our original XML document is very simple, so we don't need much more than this. But as we'll see later, it can get much more complicated.  And in fact we can make it a little more sophisticated already by adding a bit more complexity: 
+
+#+begin_src xml
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+  <xsl:template match="/">
+    <body>
+      <h1>Grand title</h1>
+      <p>Let us begin our discussion of poetry here.</p>
+          <xsl:apply-templates/>
+    </body>
+  </xsl:template>
+
+  <xsl:template match="poem">
+    <h2>The Ruin</h2>
+          <xsl:apply-templates/>    
+  </xsl:template>
+
+  
+  <xsl:template match="l">
+    <p> <xsl:value-of select="."/> </p>
+  </xsl:template>
+
+</xsl:stylesheet>
+#+end_src
+
+Try to read the text and understand what's going on!
+
+Now let's learn a little bit more about how the ~match~ and ~select~ attributes in the above code really work. 
+
+*** Xpath Expressions
+When we make templates with a ~match~ attribute, or use the ~value-of~ and ~apply-templates~ instructions (see below), we have to tell XSLT which XML elements we are talking about. The selection of elements is done using what are called "[[https://www.w3schools.com/xml/xpath_syntax.asp][Xpath Expressions]]". These are a way to describe the position of elements (sometimes called "nodes") in the XML document. The syntax is extemely complex, so we will just say a few things about it here: 
+
+- "/" refers to the root element -- the element that contains all the other elements in the document
+- ="/poem"= refers to a ~<poem>~ element *at the document root*, while "poem" refers to *any poem element in the document*.  So for instance, "l" will match all of our ~<l>~ elements, but ="/l"= *won't match anything,* because the existing ~<l>~ elements are all /inside the poem element/.
+- "current()" and "." both refer to the *element that is being discussed at the present moment*. So, inside of ~<xsl:template match="poem">...</xsl:template>~, ~"."~ refers to the ~<poem>~ element.
+- "@n" refers to the "attribute" *n*. I'll explain more about this in a second...
+
+*** Value Statements (~value-of~ and ~apply-templates~)
+We almost always want to get the value of the XML elements -- otherwise why would we do all this work? There are two ways to get that value...
+
+**** [[https://www.w3schools.com/xml/ref_xsl_el_value-of.asp][xsl:value-of]]: the simple way
+~<xsl:value-of select="."/>~ just grabs the content of the element and inserts it in the final output.  We don't use it much (see below for reasons), but it can be particularly helpful when we care about *attributes*.  So for instance, consider this line of XML: 
+
+#+begin_src xml
+<l n="2">courtyard pavements were smashed; the work of giants is decaying.</l>
+#+end_src
+
+Maybe we really care that this is line 2! Maybe we want to display those line numbers so readers understand what we're talking about! We can use the "@n" syntax we saw just above: 
+
+#+begin_src xml
+<xsl:value-of select="@n"/>
+#+end_src
+
+When this instruction is applied to the line above, it wil lreturn the number "2"!
+
+**** [[https://www.w3schools.com/xml/xsl_apply_templates.asp][xsl:apply-templates]]: the better way (usually)
+Most of the time, we use ~<xsl:apply-templates/>~ instead of ~<xsl:value-of select="."/>~.  This is because *we usually can't be sure that the element doesn't contain other elements.* And if we just use "value-of", then the elements inside our current element won't be properly translated.  "apply-templates" will check to see if any templates need to be applied internally, and then after those templates have been applied, it will return the whole resultant text.  
+
+All of this is really helpful -- butsince we're generating HTML, you need to know a little bit of HTML to make the text look the way you want it to!
+*** HTML Tags and attributes
+
+I won't go into HTML in much depth -- there are many many /many/ resources available online.  Here we'll just describe a few very basic features. 
+
+Like XML documents, HTML documents contain *elements* delimited by *tags*. Also like in XML, those tags can have *attributes* that give extra information.  Here are some tags you may want to use in your work:
+
+#+begin_src html
+<html>
+  <body>
+    Every HTML document should start with a "html" tag and include a "body" tag inside it.
+
+    <h1>first-level header</h1>
+    <h2>second=level header</h2>
+    (etc up to "h6")
+    <p>
+      paragraph containing <strong>bold</strong> and <em>italic</em> text.
+      Paragraphs can also contain
+      <span>
+        span tags, which don't do anything by default...
+        but wait!
+      </span>
+    </p>
+    <p style="color;white;background-color:red;border:2px solid black; padding: 10px;">
+      This paragraph will have white text, a red background, a black border,
+      and lots of space around it. Meanwhile, this
+      <span style="color:red;background-color:green">
+        will be entirely invisible to red-green colorblind readers.
+      </span>  
+    </p>
+
+    <table>
+      <tr>
+        <td>this is a </td>
+        <td>table with</td>
+        <td>1 row and 3 columns</td>
+      </tr>
+    </table>
+
+    
+  </body>
+</html>
+#+end_src
+- *p* tags are paragraphs
+- *h1, h2... h6* tags are headers
+- *span* tags delineate text within a paragraph
+- *strong* and *em* do bold and italics
+- You can build tables using the somewhat complicated syntax above
+- you can set style attributes using the "style=" commands as you see them above; I've shown a few possibilities but there are literally hundreds more.  
+
+Hopefully this should be enough for you te get started!
+** Learn more
+
+The [[https://developer.mozilla.org][Mozilla Developer Network]] is the best starting point for almost all technical topics related to the web.  The [[https://developer.mozilla.org/en-US/docs/Web/XML/XML_introduction][XML Introduction]], [[https://developer.mozilla.org/en-US/docs/Web/XSLT][XSLT Intro]], and [[https://developer.mozilla.org/en-US/docs/Web/HTML][much more extensive HTML information]] are all very helpful, and contain links to further information. 
+
+The [[https://tei-c.org/][TEI website]] has extensive information about the TEI standard, but is extremely technical. [[http://teibyexample.org/modules/TBED04v00.htm][TEI By Example]] can be quite helpful, but again, is very detailed.  The full text of /[[https://books.openedition.org/oep/426][What is the Text Encoding Initiative]]/ is available online and may also be helpful. The University of Nebraska's  [[https://cdrh.unl.edu/articles/basicguide][Basic Guide to Text Encoding]] is a lightweight introduction that may be easier to follow than any of the above!
+
