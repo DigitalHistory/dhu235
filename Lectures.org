@@ -5,26 +5,6 @@
 #+REVEAL_ROOT: file:///home/matt/src/reveal.js
 #+HUVEAL_BASEURL_PREFIX
 
-* COMMENT Hugo Instructions
-:PROPERTIES:
-:CUSTOM_ID: hugo-instructions-16ed
-:END:
-- Every exportable entry must have the ~EXPORT_FILE_NAME~ property set before export.
-- I should write some code to shunt this stuff to ox-huveal instead of ox-hugo.  This is a project for another time.
-- interestingly, I probably don't want to set ox-hugo-auto-export-on-save for this file, because my most urgent need is going to be to export local reveal files.  Exporting to hugo -- or huveal if I can figure that out -- will be difficult.
-- so, maybe I want to repurpose some of the auto-export code for use with my lectures!
-
-
-** Check out this elisp code if you're having trouble
-
-#+begin_src emacs-lisp
-(use-package ox-hugo-auto-export)
-
-#+end_src
-
-#+RESULTS:
-
-
 * 01: Digital Humanities --  An Introduction
 :PROPERTIES:
 :EXPORT_FILE_NAME: 01-intro
@@ -83,21 +63,7 @@ Now, I am able to access the images in the manuscript online---anytime, from my 
 #+end_notes
 
 
-*** COMMENT Dictionary of Old English
-  :PROPERTIES:
-  :CUSTOM_ID: dictionary-of-old-english
-  :style: page-break-before:always; 
-  :END:
-[[./images/doe-a-to-i-20190505.png]]
-*** COMMENT Analysis & Interpretation
-  :PROPERTIES:
-  :CUSTOM_ID: analysis-interpretation
-  :style: page-break-before:always; 
-  :END:
-
-[[./images/annot-vis.png]]
-
-** COMMENT Humanities' Data
+** Humanities' Data
 :PROPERTIES:
 :CUSTOM_ID: humanities-data
 :style: page-break-before:always; 
@@ -108,7 +74,7 @@ Now, I am able to access the images in the manuscript online---anytime, from my 
 *** Humanities' Data
 :PROPERTIES:
 :CUSTOM_ID: humanities-data-1
-:reveal_extra_attr: class="threec"
+:reveal_extra_attr: class="splitc"
 :END:
 
 
@@ -118,16 +84,16 @@ Humanities data has depth in small universes. Our material has the capacity to u
 #+end_quote
 #+end_slideblock
 
-#+ATTR_REVEAL: :frag (appear) 
+# #+ATTR_REVEAL: :frag (appear) 
 #+begin_slideblock
+#+CAPTION: cite:BrokenSpheresmallestdollset2007
 https://upload.wikimedia.org/wikipedia/commons/4/41/Floral_matryoshka_set_2_smallest_doll_nested.JPG
-BrokenSphere, https://commons.wikimedia.org/w/index.php?curid=3773186
 #+end_slideblock
 
 #+ATTR_REVEAL: :frag (appear) 
 #+begin_slideblock
+#+CAPTION: cite:Malyutinfirstoriginalmatryoshka2000
 https://upload.wikimedia.org/wikipedia/commons/3/3d/First_matryoshka_museum_doll_open.jpg
-Sergiev Posad Museum of Toys, Russia, Public Domain, https://commons.wikimedia.org/w/index.php?curid=5051554
 #+end_slideblock
 
 
@@ -424,7 +390,7 @@ Website for [[https://kcc.hackinghistory.ca/][Khangchendzonga Conservation Commi
 - consultation, proposal, and exhibit all marked
 - Assignment handed out by Oct. 1
 #+end_slideblock
-
+#+ATTR_REVEAL: :frag (appear) 
 #+begin_slideblock
 *And don't forget participation*
 - come to all the clases!
@@ -445,90 +411,24 @@ Website for [[https://kcc.hackinghistory.ca/][Khangchendzonga Conservation Commi
 
 [[https://twinery.org/2/][Now Build Your Own Stories]]
 
-** COMMENT Who's here? 
-#+begin_src emacs-lisp :results raw
-
-(org-lms-get-all-users )
-(let ((students (org-lms-get-all-users)))
-  (mapconcat 
-   (lambda (i)
-     (format "- [ ] %s\n" i))
-   (cl-sort 
-    (cl-loop for s in-ref students
-             ;; concat
-             ;; (format "- [ ] %s\n" (plist-get s :name)
-             collect
-             (plist-get s :name))
-    'string-lessp
-    :key
-    'downcase
-    )
-   "")
-             ;; (plist-get s :)
-    
-    ;; (message "student %s" (plist-get s :id))
-    ;; (if (equal 10444 (plist-get s :id))
-    ;;          (progn 
-    ;;          (message "in 10444")
-    ;;          (setq s (plist-put s :github  "muppet"))))
-    )
-             )
-#+end_src
-
-#+RESULTS:
-- [ ] Alexia Monize
-- [ ] Angela Wang
-- [ ] Art Xia
-- [ ] Catherine Lu
-- [ ] Cheryl Lee
-- [ ] Chun Yan Zhu
-- [ ] Cindy Shyintum
-- [ ] Coleen Salvador
-- [ ] Dorsa Nematollahi
-- [ ] Duc Vu
-- [ ] Elsa Xiaosha Huang
-- [ ] Emily Sylvester
-- [ ] Faizan Khan
-- [ ] Gabriel Anover
-- [ ] Hannah Durante
-- [ ] Hyun Oh
-- [ ] Jia Shao
-- [ ] Jia Yuan Liu
-- [ ] Jin Choi
-- [ ] Jingyuan Gao
-- [ ] Joram Mathew Inchoco
-- [ ] Kathleen Domanski
-- [ ] Lara Shoukry
-- [ ] Madeline Prosser
-- [ ] Marco Carulli
-- [ ] Matthew Lo
-- [ ] Matthew O'Connor
-- [ ] Matthew Price
-- [ ] Michael Mannone
-- [ ] Nanako Maruyama
-- [ ] Nicole Matthews
-- [ ] Nikhil Bhambra
-- [ ] Philip Danso
-- [ ] Ruijie Zhang
-- [ ] Ruiwen Zhang
-- [ ] Ruoxi Wang
-- [ ] Sharuka Sivanandam
-- [ ] Sihaam Hashi
-- [ ] Sky Li
-- [ ] Taewon Kim
-- [ ] Thomas Chan
-- [ ] Willow Cabral
-- [ ] Yanwen Zhong
-- [ ] Yasmeen Kamal
-- [ ] Yuan Huang
-- [ ] Yulan He
-
 * 02: Anatomy of DH Projects
 :PROPERTIES:
 :EXPORT_FILE_NAME: 02-anatomy-dh-projects
 :END:
 
-**  Today
+** ACTION COMMENT Post-lecture improvements
+- what is the point of this lecture?
+  - intro to some ideas about technology
+  - designing DH
+  - introducing some ideas about data
+
+*** Reaction
+I found this very scattered. Partly this could be a prep problem, but partly it doeesn't really proceed systematically through the material. There needs to be a more distinct thread, so e.g.:
+- strengthen the phil of tech section so that it actually makees a coherent argument. Don't just rely on quotes; give propositions and examples
+- 
+*** 
+
+** Today
 - How do we Think about Technology?
 - Very Basic Design Parameters
 - Data and Data Models
@@ -540,18 +440,37 @@ Website for [[https://kcc.hackinghistory.ca/][Khangchendzonga Conservation Commi
 - Understanding of knowledge production in digital environments
 
 ***  DH pipelines
+
 [[./images/dh-arrow.svg]]
 
+#+begin_notes
+
+#+end_notes
 *** Tools & Technologies
+:PROPERTIES:
+:reveal_extra_attr: class="twoc"
+:END:
+#+CAPTION: 
+
+#+begin_slideblock
 https://imgs.xkcd.com/comics/tasks_2x.png
+#+end_slideblock
+
+#+begin_slideblock
+
+#+end_slideblock
+
+
 
 *** Technology in DH
+#+ATTR_REVEAL: :frag (appear) 
 - New or existing? Software ecology?
 - Open-source?
   - GNU General Public License (GPL):  source code for an application is freely available for study & modification– “as long as further developments and applications are put under the same licence
 - Widely adopted? By your colleagues/ collaborators?
 - User base: humanities? Industry? Institutions?
 - Prerequisites:  
+  #+ATTR_REVEAL: :frag (appear) 
   - Data formats
   - Tech stack (other software)
   - Server space
@@ -561,47 +480,34 @@ https://imgs.xkcd.com/comics/tasks_2x.png
 [[./images/dh-tool-decisions.png]]
 
 *** Affordances
+:PROPERTIES:
+:reveal_extra_attr: class="twoc"
+:END:
+#+begin_slideblock
 #+begin_quote
 Affordances of a technology = properties of a technology that enable certain tasks; tasks that users can perform with a technology (e.g. query, search, analysis, visualization)
   - [[http://www.oed.com.myaccess.library.utoronto.ca/view/Entry/263548?redirectedFrom=affordance&][OED]], Accessed <2019-05-06 Mon>
 #+end_quote
+#+end_slideblock
+#+begin_slideblock
 #+begin_quote
-2002 /[[https:/newyorker.com][New Yorker]]/ 25 Mar. 93/1 Digital documents..have their own affordances. They can be easily searched, shared, stored, accessed remotely... But they lack the affordances that really matter to a group of people working together.
-
+Digital documents..have their own affordances. They can be easily searched, shared, stored, accessed remotely... But they lack the affordances that really matter to a group of people working together.
+- cite:Gladwellsociallifepaper2002  2019-09-12 
 #+end_quote
+#+end_slideblock
 
 ** Users, Readers, Communities
-
-*** COMMENT Technology-in-practice (Wanda Orlikowski)
-#+begin_src  dot :file ./images/tech-in-practice-1.svg :exports results
-digraph {
-bgcolor="#ffffff00" # RGBA (with alpha)
-node [shape=box,style="filled,rounded",color="black",fillcolor="#356abf",fontcolor="white",fontname="Liberation Sans", fontsize=25, margin=0.5, penwidth=3];
-edge [arrowhead="none", color="#356abf", penwidth=3];
-U [label="User Community"];
-T [label="Technology in Practice"];
-O [label="Organizational\n Culture"];
-T2 [label="Technology\n\n"];
-U -> T;
-T -> O;
-T -> T2;
-}
-#+end_src
-
-#+RESULTS:
-[[file:./images/tech-in-practice.svg]]
-
 *** Technology-in-practice (Wanda Orlikowski)
 :PROPERTIES:
 :ID:       t-i-p-2
 :END:
-
 #+begin_quote
 The notion of “technology-in-practice" suggests that the technology is not just the machinery, digital or analog, but on the one hand @@html:<span style="color:red;">the organizational or institutional culture around it,@@ and on the other hand, @@html:<span style="color:red;">the needs and practices of its user community@@. Organizational culture and user community create a “behavioural and interpretive template" for the use of a technology. 
 
 Technology-in-practice:  not only the technology itself, but “the ways it is extended, adapted, used, and misused by a specific user community—whether by ignoring an entire set of functions, or by extending its functionality through plugins or customizations, or by using it for purposes never foreseen by its designers. More briefly, technology-in-practice is “@@html:<span style="color:red;">what people actually do with the technological artifact in their recurrent, situated practices@@." 
 
-(Orlikowski, Wanda J. “[[https:/@@html:<span style="color:red;">/www.jstor.org/stable/2640412][Using Technology and Constituting Structures: A Practice Lens for Studying Technology in Organizations]]." /Organization Science/, vol. 11, no. 4, 2000, pp. 404–428.)
+cite:OrlikowskiUsingTechnologyConstituting2000
+
 #+end_quote
 
 *** Technology-in-practice (DH)
@@ -610,31 +516,19 @@ Technology-in-practice:  not only the technology itself, but “the ways it is e
 :END:
 DH:  technology-in-practice is software and data as used by scholarly communities of practice, within institutional and disciplinary concerns and constraints, in conversation with audiences.
 
-
 *** Technology-in-practice 
 :PROPERTIES:
 :EXPORT_FILE_NAME: t-i-p-3
 :END:
-
-#+begin_src  dot :file ./images/tech-in-practice2.svg :exports results
-digraph {
-bgcolor="#ffffff00" # RGBA (with alpha)
-node [shape=box,style="filled,rounded",color="white",fillcolor="#356abf",fontcolor="white",fontname="Liberation Sans", fontsize=25, margin=0.5, penwidth=3];
-D [label="Data + Software"]
-T [label="Technology in Practice"]
-D -> T
-T -> "Institutional concerns \n& Constraints"
-T -> "Disciplinary scholarly \ncommunity"
-}
-#+end_src
 
 #+RESULTS:
 [[file:./images/tech-in-practice2.svg]]
 
 *** Users and Intended Audiences
 #+begin_quote
-[E]ven doorknobs have politics in that they may be round, requiring a human hand to turn them, or shaped as levers, such that a person with a prosthetic limb or an armload of groceries with one free elbow can still successfully use them. This is more than simply a matter of utility. Both designs are political in that they presume and construct different kinds of worlds, with the round doorknob presuming a world in which everyone’s bodies are the same, and in which hands with opposable thumbs and sufficient grip strength are always available (Galey, Alan, and Stan Ruecker. “How a Prototype Argues." /Literary and Linguistic Computing/ 25.4 (2010): 405-24. Web. 6 Feb. 2017.
+[E]ven doorknobs have politics in that they may be round, requiring a human hand to turn them, or shaped as levers, such that a person with a prosthetic limb or an armload of groceries with one free elbow can still successfully use them. This is more than simply a matter of utility. Both designs are political in that they presume and construct different kinds of worlds, with the round doorknob presuming a world in which everyone’s bodies are the same, and in which hands with opposable thumbs and sufficient grip strength are always available
 
+cite:GaleyHowprototypeargues2010a
 #+end_quote
 *** What groups of users/readers are invited in?  What groups of users/readers are shut out?  
 Consider:  
@@ -644,49 +538,42 @@ Consider:
 - [ ] limited access to (powerful) computers
 - [ ] limited internet bandwidth
 - [ ] Tradeoffs & compromises
-
-
 *** User Experience, Interfaces, & Display
   :PROPERTIES:
   :CUSTOM_ID: user-experience-interfaces-display
   :style: page-break-before:always; 
   :END:
-
 - UX (user experience) & usability testing
 - User stories: descriptions, from a user's perspective, of a tool: who they are, what they want the tool to do, in what order...
 
 ** Data
 
-
-*** Humanities Data
+*** Uses of Humanities Data
 :PROPERTIES:
 :CUSTOM_ID: humanities-data-0
 :END:
-
 [[./images/h-data-types-graphic.png]]
-
-*** Humanities Data
-  :PROPERTIES:
-  :CUSTOM_ID: humanities-data-1
-  :END:
-
+*** Classifying Hum Data
+:PROPERTIES:
+:CUSTOM_ID: humanities-data-0
+:reveal_extra_attr: class="twobytwo"
+:END:
+#+begin_slideblock
 | Unstructured   | A corpus of literary texts       |
 | Semistructured | TEI-encoded text                 |
 | Structured     | Spreadsheet of catalogue entries |
 |                | GIS data of locations on a map   |
 
-*** Humanities Data: Unstructured
-  :PROPERTIES:
-  :CUSTOM_ID: humanities-data-unstructured
-  :END:
-[[./images/mandeville-cover-page.png]]
-*** Humanities Data: Semi-structured
-  :PROPERTIES:
-  :CUSTOM_ID: humanities-data-semi-structured
-  :style: page-break-before:always; 
-  :END:
+- “Big? Smart? Clean? Messy?" (cite:SchochBigSmartClean2013)
 
-  #+begin_src xml
+#+end_slideblock
+#+ATTR_REVEAL: :frag (appear) 
+#+begin_slideblock
+[[./images/mandeville-cover-page.png]]
+#+end_slideblock
+#+ATTR_REVEAL: :frag (appear) 
+#+begin_slideblock
+  #+BEGIN_SRC xml
   <msDesc>
     <msIdentifier>
       <settlement>Oxford
@@ -713,42 +600,49 @@ Consider:
       </p>
     </physDesc>
   </msDesc>
-  
-  #+end_src
 
-*** Humanities Data: Structured
-  :PROPERTIES:
-  :CUSTOM_ID: humanities-data-structured
-  :END:
+  #+END_SRC
+
+
+#+end_slideblock
+#+ATTR_REVEAL: :frag (appear) 
+#+begin_slideblock
 [[./images/dc-ss-list.png]]
-*** Humanities Data
+#+end_slideblock
+
+
+*** 
   :PROPERTIES:
   :CUSTOM_ID: humanities-data-3
   :END:
 
-- “Big? Smart? Clean? Messy?" (Christof Schöch)
-- “Computationally tractable" (Miriam Posner)
-
-*** 
-  :PROPERTIES:
-  :CUSTOM_ID: section-3
-  :END:
-[[./images/data-oed.png]]
-*** Humanities Data:
+*** But then, Thinking *Hard* about Data
   :PROPERTIES:
   :CUSTOM_ID: humanities-data-4
   :END:
 
+#+begin_slideblock
 - What “counts" cannot necessarily be counted
 - Data representation = interpretation:
   - The process of modelling and collecting our data is an interpretive process that is shaped by our choices re. what aspects of the data we model; by our research question, argument, perspective, discipline, social context, institutional context, tools available etc.
 
-*** Humanities Data: Drucker
-  :PROPERTIES:
-  :CUSTOM_ID: humanities-data-drucker
-  :END:
+#+end_slideblock
+#+ATTR_REVEAL: :frag (appear) 
+#+begin_slideblock
+#+begin_quote
+“When you call something data, you imply that it exists in discrete, fungible units; that it is computationally tractable; that its meaningful qualities can be enumerated in a finite list; that someone else performing the same operations on the same data will come up with the same results. This is not how humanists think of the material they work with." 
 
-- *Sciences* vs. *humanities*: “assumptions of *knowledge as observer-independent and certain*, rather than *observer co-dependent and interpretative*. [...] To begin, the concept of *data as a given* has to be rethought through a humanistic lens and characterized as *capta, taken and constructed*." (Johanna Drucker, “Humanities Approaches to Graphical Display.")
+cite:MiriamPosnerHumanitiesDataNecessary
+#+end_quote
+#+end_slideblock
+#+ATTR_REVEAL: :frag (appear) 
+#+begin_slideblock
+- *Sciences* vs. *humanities*: “assumptions of *knowledge as observer-independent and certain*, rather than *observer co-dependent and interpretative*. [...] To begin, the concept of *data as a given* has to be rethought through a humanistic lens and characterized as *capta, taken and constructed*."
+
+(cite:DruckerHumanitiesApproachesGraphical2011)
+
+#+end_slideblock
+
 
 *** Humanities Data: Posner
   :PROPERTIES:
@@ -760,34 +654,35 @@ It would be possible to enumerate all of the filmic conventions that recall the 
 | Birth of a Nation     | 1915 | x                | x             | x             | x                | x              |
 | Get Rick Quick        | 1912 | x                |               |               |                  | x              |
 But, seriously, who cares? There’s just such a drastic difference between the richness of the actual film and the data we’re able to capture about it.
-*** Humanities Data: Posner
-  :PROPERTIES:
-  :CUSTOM_ID: humanities-data-posner-1
-  :END:
 
-- “When you call something data, you imply that it exists in discrete, fungible units; that it is computationally tractable; that its meaningful qualities can be enumerated in a finite list; that someone else performing the same operations on the same data will come up with the same results. This is not how humanists think of the material they work with." ([[http://miriamposner.com/blog/humanities-data-a-necessary-contradiction/][http://miriamposner.com/blog/humanities-data-a-necessary-contradiction/]])
-
-
-*** Humanities' Data
+(cite:MiriamPosnerHumanitiesDataNecessary)
+*** Data Universes
 :PROPERTIES:
 :CUSTOM_ID: humanities-data-10
 :style: page-break-before:always; 
+:reveal_extra_attr: class="twobytwo"
 :END:
-
+#+begin_slideblock
 #+begin_quote
 Humanities data has depth in small universes. Our material has the capacity to unfold inwards, as it were, to disclose layer upon layer of insights and connections, within a comparatively tiny amount of data--almost an inverse matryoshka, as it were, where each inner doll is bigger and more complex than the one encasing it.
 #+end_quote
+#+end_slideblock
 
-@@html:<div class="paired fragment appear">@@
+#+begin_slideblock
 https://upload.wikimedia.org/wikipedia/commons/4/41/Floral_matryoshka_set_2_smallest_doll_nested.JPG
 
 BrokenSphere, https://commons.wikimedia.org/w/index.php?curid=3773186
+#+end_slideblock
 
-@@html:</div><div class="paired fragment appear">@@
+#+begin_slideblock
 https://upload.wikimedia.org/wikipedia/commons/3/3d/First_matryoshka_museum_doll_open.jpg
 
+#+end_slideblock
+
+#+begin_slideblock
 Sergiev Posad Museum of Toys, Russia, Public Domain, https://commons.wikimedia.org/w/index.php?curid=5051554
-@@html:</div>@@
+
+#+end_slideblock
 
 
 
@@ -800,19 +695,24 @@ Sergiev Posad Museum of Toys, Russia, Public Domain, https://commons.wikimedia.o
 - Data model: choice of virtual entities, relationships, properties/aspects \rarr “toy universe"
 - Data model: top row of your spreadsheet
 
-*** Metadata
+** Metadata
   :PROPERTIES:
   :CUSTOM_ID: metadata
   :END:
-@@html:<div class="paired fragment appear">@@
+
+#+begin_slideblock
 - Metadata is structured data describing data. Think Author, Title, Date, Subject in your online library catalogue
 - Standard metadata schemas include Dublin Core, MARC, and MODS (each of these schemas has a different set of information it collects).
-@@html:</div><div class="paired fragment appear">@@
-
+#+end_slideblock
+#+begin_slideblock
 [[./images/hokusai-peonies-dc.png]]
-[[https://www.europeana.eu/portal/en/record/08533/artifact_aspx_id_1059.html?q=hokusai#dcId=1557175241529&p=1][Europeana Art Nouveau Exhibition.]] Individual record: Hokusai, /Peonies and Butterfly./
+cite:KatsushiakaHokusaiPeoniesButterfly
 
 Individual item metadata includes title, creator, description, source, rights, etc: the elements of the Dublin Core metadata schema.
+
+#+end_slideblock
+
+
 @@html</div>@@
 #+begin_notes
 Each record of an archive is described by metadata: structured data about data. For example, think about your library's online catalogue: it contains the records of books, with fields like Author, Title, Publisher, Editor, Date. If you use standard metadata schemas, like Dublin Core, MARC, or MODS, your data will be discoverable and interoperable with aggregators and library catalogues.
@@ -822,13 +722,14 @@ Each record of an archive is described by metadata: structured data about data. 
   :CUSTOM_ID: section-4
   :END:
 [[./images/dh-custom-md.png]]
-Custom metadata schema: /Digital Atlas of Roman and Medieval Civilizations/ (Anglo-Saxon Rural Settlements: Eynsham)
+(Custom metadata schema: Anglo-Saxon Rural Settlements: Eynsham, from cite:McCormickMichaelDigitalAtlasRoman)
 
 *** Metadata Standards
   :PROPERTIES:
   :CUSTOM_ID: metadata-standards
   :END:
 https://imgs.xkcd.com/comics/standards.png
+(cite:MunroeRandallStandards)
 *** Vocabulary and Ontology
 - *Controlled vocabulary*: set of permitted literal values to describea given entity (e.g. chairs: desk chairs, rolling chairs, step stools, kitchen table chairs); may include categorization
 - *Ontology*: making explicit the relationships between values in controlled vocabularies
@@ -837,23 +738,6 @@ https://imgs.xkcd.com/comics/standards.png
   :PROPERTIES:
   :CUSTOM_ID: section-5
   :END:
-
-#+begin_src  dot :file ./images/chairs.svg :exports results
-digraph {
-bgcolor="#ffffff00" # RGBA (with alpha)
-node [shape=box,style="filled,rounded",color=".7 .3 1.0"];
-node [shape=box,style="filled,rounded",color="white",fillcolor="#356abf",fontcolor="white",fontname="Liberation Sans", fontsize=18, margin=0.2, penwidth=3];
-edge [arrowhead="none", color="#356abf", penwidth=3];
-"Chairs" -> "No Legs"
-"Chairs" -> "One Leg"
-"Chairs" -> "More Legs"
-"No Legs" -> "Rock"
-"One Leg" -> "Bar Stool"
-"More Legs" -> "Three-legged Stool"
-"More Legs" -> "Desk Chair"
-"More Legs" -> "Rolling Chair"
-}
-#+end_src
 
 #+RESULTS:
 [[file:./images/chairs.svg]]
@@ -865,7 +749,8 @@ edge [arrowhead="none", color="#356abf", penwidth=3];
 
 #+begin_quote
 “A controlled vocabulary is an organized arrangement of words and phrases used to catalog content and/or to retrieve content through browsing or searching. It typically includes preferred and variant terms and has a defined scope or describes a specific domain. [...] While capturing the richness of variant terms, controlled vocabularies also promote consistency in preferred terms and the assignment of the same terms to similar content."
- https://www.getty.edu/research/publications/electronic_publications/intro_controlled_vocab/what.pdf  
+
+cite:HarpringIntroductionControlledVocabularies2010 
 #+end_quote
 [[./images/black-death.png]]
 *** Authority Control
@@ -880,18 +765,6 @@ edge [arrowhead="none", color="#356abf", penwidth=3];
   :CUSTOM_ID: james-joyce
   :END:
 [[./images/joyce-vocab.png]]
-*** 
-  :PROPERTIES:
-  :CUSTOM_ID: section-6
-  :END:
-
-*James Joyce: unique resource identifier*
-[[./images/joyce-vocab.png]]
-*** ACTION 
-  :PROPERTIES:
-  :CUSTOM_ID: section-7
-  :END:
-
 *** Gazetteers: 
   :PROPERTIES:
   :CUSTOM_ID: gazetteers-place-name-dictionaries-maps-atlases-uris
@@ -901,38 +774,23 @@ edge [arrowhead="none", color="#356abf", penwidth=3];
 - place name dictionaries + maps + atlases + URIs (https://pleiades.stoa.org/places/570491)
 - for time: (https://perio.do/en/)
 
-*** Research Data: Life Cycle
+** Research Data: Life Cycle
   :PROPERTIES:
   :CUSTOM_ID: research-data-life-cycle
   :style: page-break-before:always; 
+  :reveal_extra_attr: class="twoc"
   :END:
 
-@@html:<div class="paired">@@
-[[./images/dh-lifecycle.jpg]]
-@@html:</div><div class="paired">@@
- Research Data Life Cycle: https://blogs.ntu.edu.sg/lib-datamanagement/data-lifecycle/
-   
-@@html:</div><@@
-*** ACTION Research Data: Life Cycle
-  :PROPERTIES:
-  :CUSTOM_ID: research-data-life-cycle-1
-  :style: page-break-before:always; 
-  :END:
-@@html:<div class="paired">@@
+#+begin_slideblock
 [[./images/dh-lc2.png]]
-@@html:</div><div class="paired fragment appear">@@
-Go back and pick up what you missed
-
-Revise data model
-@@html:</div>@@
-*** “Data is always a partial representation of the object of study" (Schoch)
-  :PROPERTIES:
-  :CUSTOM_ID: data-is-always-a-partial-representation-of-the-object-of-study-schoch
-  :style: page-break-before:always; 
-  :END:
-
-- “Data is always a partial representation of the object of study" (Schoch)
+- Go back and pick up what you missed
+- Revise data model
+#+end_slideblock
+#+begin_slideblock
+- “Data is always a partial representation of the object of study" (cite:SchochBigSmartClean2013)
 - Failure-, incompleteness-, and pessimism-based approaches to data collection, modelling, analysis, and preservation
+
+#+end_slideblock
 
 *** Preservation-Ready Data
   :PROPERTIES:
@@ -952,8 +810,10 @@ Data: accessible, usable, readable, preservable
 [[./images/dh-arrow.svg]]
 
 ** Reflection 1: DH Project Profile
-[[https://q.utoronto.ca/courses/99251/assignments/168376][Quercus Link]]
+[[https://q.utoronto.ca/courses/127426/assignments/221044][Quercus Link]]
 
+** Bibliography
+bibliography:/home/matt/DH/digitalhistory.bib
 * 03: Omeka and The Final Assignment
 :PROPERTIES:
 :EXPORT_FILE_NAME: 03-omeka-and-assignment
@@ -2546,10 +2406,3 @@ node [shape=box,style="filled,rounded",color=".7 .3 1.0"];
 #+RESULTS:
 [[file:./images/tech-in-practice.svg]]
 
-* COMMENT Local Variables                          
-:PROPERTIES:
-:CUSTOM_ID: local-variables-96d6
-:END:
-# Local Variables:
-# org-reveal-auto-export-on-save: t
-# End:
