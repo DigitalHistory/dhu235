@@ -167,7 +167,7 @@ This assignment is graded out of 20.
 :CANVAS_HTML_URL: https://q.utoronto.ca/courses/127426/pages/reflection-02-handout-and-preliminary-exercises
 :CANVAS_EDITING_ROLES: teachers
 :END:
-
+** 
 In this assignment, you will *encode* parts of a thousand-year-old poem using a markup language, *display* the marked-up text in a web browser using a computational translator, and *discuss* this exercise using the idea of *deformance* as a guide.  This handout *should* contain everything you need to complete the assignment, but please use the discussion forum to ask any technical (or other!) questions.
 ** The Poem: “The Ruin” (from the tenth century Exeter Book), translated by Sian Echard, silently emended
    :PROPERTIES:
