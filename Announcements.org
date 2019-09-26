@@ -52,21 +52,43 @@ We will *definitely* be taking time to discuss tomorrow's readings in class, so 
   - What do the authors mean when they suggest that digital objects can "reify an argument" (p.414)?
   - the [[http://www.textarc.org/PrintEditions.html][original TextArc]] is no longer live but [[http://vallandingham.me/textarc/][this cool partial replica]] can still be found ([[https://github.com/vlandham/textarc][code here]]) 
 
-* Today's Class
+* Today's Class (<2019-09-19 Thu>)
 :PROPERTIES:
-:ORG_LMS_ANNOUNCEMENT_ID: 304956
-:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/99251/discussion_topics/304956
-:ORG_LMS_POSTED_AT: 2019-05-15T14:06:26Z
+:ORG_LMS_ANNOUNCEMENT_ID: 384861
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/127426/discussion_topics/384861
+:ORG_LMS_POSTED_AT: 2019-09-19T22:11:42Z
 :END:
 
 Today's class will be *much* less lecture-y, instead comprising a mix of discussion and workshopping.  Here's the approximate outline:
 
-- discussion of our trip to the library on Monday
-- discussion of today's readings, with an emphasis on [[http://muse.jhu.edu.myaccess.library.utoronto.ca/article/24448][deformance]]. Please spend the next few minutes thinking about the questions you might want to ask.
+- discussion of today's readings, with an emphasis on [[http://muse.jhu.edu.myaccess.library.utoronto.ca/article/24448][deformance]]. Please spend some time thinking about the readings and any questions you might want to ask.  Consider the following:
+  - why do the authors decide to use this new (made-up) word "deformance"?
+  - what does this all have to do with technology (that is, why are we discussing here)? 
 - workshopping with xml/xslt and TEI.  You will want to [[https://q.utoronto.ca/files/3647726/download?download_frd=1][read the handout]] and [[https://q.utoronto.ca/courses/99251/assignments/171001][the assignment]]
-  - You'll need to [[https://www.w3schools.com/xml/tryxslt.asp?xmlfile=cdcatalog&xsltfile=cdcatalog][navigate to the online xslt editor]] and paste i n the code from the assignment.  
+  - You'll need to [[http://fiddle.frameless.io/][navigate to the online xslt editor]] and paste in the code from the assignment.  
 
 I think this will be fun today!   
+
+* XML/TEI intro page!
+I've published a page o n the website with some information about XML and TEI:
+
+https://q.utoronto.ca/courses/127426/pages/introduction-to-xml-xslt-tei-and-html-long
+
+Much of this is recapitulated in the handout, but we'll likely use this page a template for our lecture today, so you might want toread it. 
+
+* Tonight: more deformance, more XML
+:PROPERTIES:
+:ORG_LMS_ANNOUNCEMENT_ID: 393585
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/127426/discussion_topics/393585
+:ORG_LMS_POSTED_AT: 2019-09-26T17:56:32Z
+:END:
+
+Hello everyone,
+
+I wanted to let you know that tonight's class will be, in some ways, a rehash of last week at a higher level.  So 
+
+- Make sure you've read the deformance piece this time! We'll discuss again. 
+- I've put together a somewhat more realistic example of TEI and, incidentally, deformance.  You can [[https://titaniumbones.github.io/xslt-example/rj/rom-act2.xml][see it in action online here]], and you can [[https://github.com/titaniumbones/xslt-example/tree/master/rj][browse the actual code here]]. We will be  examining it in more detail tonight, and you may understand it a lot better if you look at it first. You can easily check it out by pasting the code into [[http://fiddle.frameless.io/][the XML fiddle site]], maybe using he "raw" view of [[https://raw.githubusercontent.com/titaniumbones/xslt-example/master/rj/rom-trans.xsl][the xsl stylesheet]] and [[https://raw.githubusercontent.com/titaniumbones/xslt-example/master/rj/rom-act2.xml][the full xml text]] to copy it more easily.  
 
 * link to code
 :PROPERTIES:
