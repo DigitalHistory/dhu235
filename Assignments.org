@@ -1,5 +1,6 @@
 #+SETUPFILE: ./setup.org
 #+HUGO_SECTION: assignment
+#+ORG_LMS_SECTION: assignment
 #+HUGO_MENU: :menu main :parent Assignments
 
 * COMMENT Hugo Instructions
@@ -159,7 +160,6 @@ This assignment is graded out of 20.
 *** Clarity & Correctness (/4)
 
 - Sentences are clear and vivid. Word usage, grammar, sentence structure, and punctuation are correct. Some informality is acceptable, as long as the reflection is clearly readable.
-
 
 * Reflection 02: Handout and Preliminary Exercises :assignment:
 :PROPERTIES:
@@ -681,18 +681,19 @@ Using the following table, compare and contrast two of the data visualization to
 :PROPERTIES:
 :EXPORT_FILE_NAME: consultation
 :PUBLISH:  t
-:DUE_AT: 2019-06-10
+:DUE_AT: 2019-10-25
 :GRADING_TYPE: pass_fail
 :ASSIGNMENT_TYPE: other
-:ASSIGNMENT_WEIGHT: 0.02
+:ASSIGNMENT_WEIGHT: 0.01
 :CANVAS_SUBMISSION_TYPES: (none)
-:OL_PUBLISH: t
+::OL_PUBLISH: nil
 :BASECOMMIT: none
 :GRADING_STANDARD_ID: nil
-:CANVASID: 175516
-:CANVAS_HTML_URL: https://q.utoronto.ca/courses/99251/assignments/175516
-:CANVAS_SUBMISSION_URL: https://q.utoronto.ca/courses/99251/assignments/175516/submissions?zip=1
-:SUBMISSIONS_DOWNLOAD_URL: https://q.utoronto.ca/courses/99251/assignments/175516/submissions?zip=1
+:CANVASID: 233039
+:CANVAS_HTML_URL: https://q.utoronto.ca/courses/127426/assignments/233039
+:CANVAS_SUBMISSION_URL: https://q.utoronto.ca/courses/127426/assignments/233039/submissions?zip=1
+:SUBMISSIONS_DOWNLOAD_URL: https://q.utoronto.ca/courses/127426/assignments/233039/submissions?zip=1
+:OL_PUBLISH: nil
 :END:
 
 ** Rubric                                                           :rubric:
@@ -701,18 +702,18 @@ Using the following table, compare and contrast two of the data visualization to
 :PROPERTIES:
 :EXPORT_FILE_NAME: book-project-proposal
 :PUBLISH:  t
-:DUE_AT: 2019-06-05
+:DUE_AT: 2019-11-01
 :GRADING_TYPE: letter_grade
 :ASSIGNMENT_TYPE: canvas
-:ASSIGNMENT_WEIGHT: 0.10
+:ASSIGNMENT_WEIGHT: 0.09
 :CANVAS_SUBMISSION_TYPES: (online_upload)
 :OL_PUBLISH: t
 :BASECOMMIT: none
 :GRADING_STANDARD_ID: nil
-:CANVASID: 170175
-:CANVAS_HTML_URL: https://q.utoronto.ca/courses/99251/assignments/170175
-:CANVAS_SUBMISSION_URL: https://q.utoronto.ca/courses/99251/assignments/170175/submissions?zip=1
-:SUBMISSIONS_DOWNLOAD_URL: https://q.utoronto.ca/courses/99251/assignments/170175/submissions?zip=1
+:CANVASID: 233042
+:CANVAS_HTML_URL: https://q.utoronto.ca/courses/127426/assignments/233042
+:CANVAS_SUBMISSION_URL: https://q.utoronto.ca/courses/127426/assignments/233042/submissions?zip=1
+:SUBMISSIONS_DOWNLOAD_URL: https://q.utoronto.ca/courses/127426/assignments/233042/submissions?zip=1
 :END:
 
 Please use this page to hand in your project proposals. For a description of the assignment, see the main project assignment page. 
@@ -725,7 +726,7 @@ Please use this page to hand in your project proposals. For a description of the
 * Final Project: Book Exhibit :assignment:
 :PROPERTIES:
 :PUBLISH:  t
-:DUE_AT: 2019-06-17
+:DUE_AT: 2019-11-29
 :GRADING_TYPE: letter_grade
 :ASSIGNMENT_TYPE: canvas
 :ASSIGNMENT_WEIGHT: 0.35
@@ -734,12 +735,11 @@ Please use this page to hand in your project proposals. For a description of the
 :BASECOMMIT: none
 :GRADING_STANDARD_ID: nil
 :EXPORT_FILE_NAME: book-project-assignment
-:CANVASID: 170176
-:CANVAS_HTML_URL: https://q.utoronto.ca/courses/99251/assignments/170176
-:CANVAS_SUBMISSION_URL: https://q.utoronto.ca/courses/99251/assignments/170176/submissions?zip=1
-:SUBMISSIONS_DOWNLOAD_URL: https://q.utoronto.ca/courses/99251/assignments/170176/submissions?zip=1
+:CANVASID: 233045
+:CANVAS_HTML_URL: https://q.utoronto.ca/courses/127426/assignments/233045
+:CANVAS_SUBMISSION_URL: https://q.utoronto.ca/courses/127426/assignments/233045/submissions?zip=1
+:SUBMISSIONS_DOWNLOAD_URL: https://q.utoronto.ca/courses/127426/assignments/233045/submissions?zip=1
 :END:
-
 ** Overview
    :PROPERTIES:
    :CUSTOM_ID: overview
@@ -781,11 +781,11 @@ By the end of this learning module, you will have learned:
    :CUSTOM_ID: what-you-hand-in
    :END:
 
-1. A proposal describing, in 200 words or fewer, the object whose story you plan to tell: what it is; why it was banned, by whom, and in what historical context; and how you plan to shape your exhibit. *Due <2019-06-05 Wed>*
+1. A proposal describing, in 200 words or fewer, the object whose story you plan to tell: what it is; why it was banned, by whom, and in what historical context; and how you plan to shape your exhibit. *Due <2019-11-01 Fri>*
 
-2. An annotated bibliography ([[http://advice.writing.utoronto.ca/types-of-writing/annotated-bibliography/]]) that contains: links to and descriptions of at least 3 things for your collection; references to and summaries of at least 3 *scholarly* sources (scholarly print books, scholarly journal articles, scholarly encyclopedia entries). *Due <2019-06-17 Mon>*
+2. An annotated bibliography ([[http://advice.writing.utoronto.ca/types-of-writing/annotated-bibliography/]]) that contains: links to and descriptions of at least 3 things for your collection; references to and summaries of at least 3 *scholarly* sources (scholarly print books, scholarly journal articles, scholarly encyclopedia entries). *Due <2019-11-01 Fri>*
 
-3. A complete digital exhibit website that contains your collection of objects and a narrative about that collection. For reference, a former student's UofT Library Research Prize-winning example of such a digital exhibit is d:escribed in detail here [[https://tspace.library.utoronto.ca/handle/1807/88308][Jaya Thirugnanasampanthan's exhibit on /Thirteen Reasons Why/'s banning in the U.S.]] (you will have to click through a bit to find [[https://play.library.utoronto.ca/download/XPYcIMVV80N4][a link to a walkthrough of the site]]).
+3. A complete digital exhibit website that contains your collection of objects and a narrative about that collection. For reference, a former student's UofT Library Research Prize-winning example of such a digital exhibit is described in detail here: [[https://tspace.library.utoronto.ca/handle/1807/88308][Jaya Thirugnanasampanthan's exhibit on /Thirteen Reasons Why/'s banning in the U.S.]] (you will have to click through a bit to find [[https://play.library.utoronto.ca/download/XPYcIMVV80N4][a link to a walkthrough of the site]]).
 
 ** Proposal
    :PROPERTIES:
@@ -893,7 +893,7 @@ Gogata, Cristina. “Parallel Libraries Of The Former Securitate. Ana Blandiana,
    :CUSTOM_ID: books
    :END:
 
-You will select the book from the list below. If there is a book you would like to cover that is not on the list, please come talk to me *well ahead* of the proposal deadline. No more than three students per book, please.
+You will select the book from the list below. If there is a book you would like to cover that is not on the list, please come talk to me and/or Augustine *well ahead* of the proposal deadline. No more than three students per book, please.
 
 Books from the Thomas Fisher Rare Book Library (use these specific editions, please):
 

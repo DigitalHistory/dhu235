@@ -1,12 +1,13 @@
 ---
 title: "Final Project: Book Exhibit"
 author: ["Matt Price"]
-lastmod: 2019-05-13T09:43:44-04:00
+lastmod: 2019-10-02T15:58:25-04:00
 tags: ["assignment"]
 draft: false
+banner: "testbanner"
 menu:
   main:
-    weight: 1005
+    weight: 1008
     identifier: "final-project-book-exhibit"
     parent: "Assignments"
 ---
@@ -242,3 +243,14 @@ _Book & Image Repositories:_
 -   [Metropolitan Museum in New York](http://www.metmuseum.org/art/collection)
 
 -   [Museum of Fine Arts Boston](http://www.mfa.org/collections)
+
+
+## Rubric {#rubric}
+
+**Grade**
+:
+
+
+
+Comments
+:

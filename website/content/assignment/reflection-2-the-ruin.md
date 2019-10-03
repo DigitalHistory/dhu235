@@ -1,9 +1,10 @@
 ---
 title: "Reflection 02: The Ruin"
 author: ["Matt Price"]
-lastmod: 2019-09-03T20:50:42-04:00
+lastmod: 2019-09-22T19:21:11-04:00
 tags: ["assignment"]
 draft: false
+banner: "testbanner"
 menu:
   main:
     weight: 1003
@@ -11,7 +12,7 @@ menu:
     parent: "Assignments"
 ---
 
-Before completing this assignment, read the **recently revised, HTML version** of te handout “[The Ruin: Digital Literary Studies](/assignment/reflection-2-handout)” and carry out the exercises it asks you to do.
+Before completing this assignment, read the **recently revised, HTML version** of the handout “[The Ruin: Digital Literary Studies](https://digitalhistory.github.io/wdw235/assignment/reflection-2-handout/)” and carry out the exercises it asks you to do.
 
 1.  What is _The Ruin_? Briefly describe the poem and its themes. State what passage you are focusing on and analyze its poetic characteristics, as discussed in class. Be specific; cite poem by line numbers. Cite Echard's online translation correctly using the citation format of your choice.
 
@@ -26,17 +27,20 @@ Before completing this assignment, read the **recently revised, HTML version** o
 
     4.  How does your analysis work _with_ or _against_ the poem---that is, are you “breaking” or “recreating” the poem? What difference does it make that you are reading an endangered poem---that is, a poem that comes down to us in fragments, in a single manuscript, in a language no longer spoken? Be as specific as possible.
 
-**Reflection II: Evaluation**
+
+## Evaluation {#evaluation}
 
 This assignment is graded out of 20.
 
-Intro (/4)
+
+### Intro (/4) {#intro--4}
 
 -   A clear contextualization of _The Ruin_: its manuscript context, its historical period, and its content.
 
 -   A clear definition of “deformance” (McGann & Samuels).
 
-TEI (/6)
+
+### TEI (/6) {#tei--6}
 
 -   A clear definition of TEI in the students' own words is present (/2)
 
@@ -44,7 +48,8 @@ TEI (/6)
 
 -   Student invent their own XML tag, highlighting a consequential aspect of the poem (/2)
 
-Analysis (/6)
+
+### Analysis (/6) {#analysis--6}
 
 -   Discussion of imagery, stylistic devices, literary strategies, and thematics of the poem is present
 
@@ -52,6 +57,7 @@ Analysis (/6)
 
 -   Using their own XML tag, students observe interesting poetic details and discuss these details' thematic effects
 
-Clarity & Correctness (/4)
+
+### Clarity & Correctness (/4) {#clarity-and-correctness--4}
 
 -   Sentences are clear and vivid. Word usage, grammar, sentence structure, and punctuation are correct. Some informality is acceptable, as long as the reflection is clearly readable.

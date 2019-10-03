@@ -4,13 +4,14 @@
 :PROPERTIES:
 :CANVASID: 287998
 :CANVAS_PAGE_URL: lectures
-:PUBLISH:  nil
+:OL_PUBLISH: t
+:CANVAS_SHORT_URL: lectures
 :CANVAS_HTML_URL: https://q.utoronto.ca/courses/127426/pages/lectures
 :CANVAS_EDITING_ROLES: teachers
 :END:
 
 
-Because my slides are written directly in HTML, it's difficult for me to upload them to Quercus. For that reason I host them elsewhere ([[https://digitalhistory.github.io/wdw235/slides][you can look at them in their native environment too, if you wish]]). It's a bit cumbersome to navigate among the slides here -- sorry about that!. One hint is to just press ~f~ to get a full-screen view when viewing the lecture. Another is to ~Ctrl-click~ on the links to open them in their own tabs. 
+Because my slides are written directly in HTML, it's difficult for me to upload them to Quercus. For that reason I host them elsewhere ([[https://digitalhistory.github.io/wdw235/slides][you can look at them in their native environment too, if you wish]]). It's a bit cumbersome to navigate among the slides here; sorry about that!. One hint is to just press ~f~ to get a full-screen view when viewing the lecture. Another is to ~Ctrl-click~ on the links to open them in their own tabs. 
 
 Enjoy! 
 
@@ -18,10 +19,9 @@ Enjoy!
 <iframe frameborder="0" src="https://digitalhistory.github.io/wdw235/slides/" style="width:100%; min-height: 80vh;"></iframe>
 #+end_export
 
-
 * Introduction to XML,XSLT, TEI, and HTML (long!)
 :PROPERTIES:
-:PUBLISH:  nil
+:OL_PUBLISH:  t
 :CUSTOM_ID: introduction-to-tei
 :CANVASID: 299518
 :CANVAS_PAGE_URL: introduction-to-xml-xslt-tei-and-html-long
@@ -262,4 +262,18 @@ Hopefully this should be enough for you te get started!
 The [[https://developer.mozilla.org][Mozilla Developer Network]] is the best starting point for almost all technical topics related to the web.  The [[https://developer.mozilla.org/en-US/docs/Web/XML/XML_introduction][XML Introduction]], [[https://developer.mozilla.org/en-US/docs/Web/XSLT][XSLT Intro]], and [[https://developer.mozilla.org/en-US/docs/Web/HTML][much more extensive HTML information]] are all very helpful, and contain links to further information. 
 
 The [[https://tei-c.org/][TEI website]] has extensive information about the TEI standard, but is extremely technical. [[http://teibyexample.org/modules/TBED04v00.htm][TEI By Example]] can be quite helpful, but again, is very detailed.  The full text of /[[https://books.openedition.org/oep/426][What is the Text Encoding Initiative]]/ is available online and may also be helpful. The University of Nebraska's  [[https://cdrh.unl.edu/articles/basicguide][Basic Guide to Text Encoding]] is a lightweight introduction that may be easier to follow than any of the above!
+
+* Exploratory code
+
+#+begin_src emacs-lisp :output raw
+(let ((pages (org-lms-get-all-pages)))
+  (cl-loop for p in pages
+  collect (format "- [[%s][%s]]\n" (plist-get p :html_url)(plist-get p :title))
+))
+#+end_src
+
+#+RESULTS:
+| - [[https://q.utoronto.ca/courses/127426/pages/lectures][Lectures]] |
+|------------|
+|------------|
 

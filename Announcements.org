@@ -1,7 +1,7 @@
 #+MACRO: ts (eval(mwp-get-ts+7  'org-mwp-classtimes-calibrate 2))
 #+STARTUP: customtime
 #+ORG_LMS_COURSEID: 127426
-
+#+ORG_LMS_SECTION: announcement
 
 * Welcome! And Website...
 :PROPERTIES:
@@ -90,14 +90,6 @@ I wanted to let you know that tonight's class will be, in some ways, a rehash of
 - Make sure you've read the deformance piece this time! We'll discuss again. 
 - I've put together a somewhat more realistic example of TEI and, incidentally, deformance.  You can [[https://titaniumbones.github.io/xslt-example/rj/rom-act2.xml][see it in action online here]], and you can [[https://github.com/titaniumbones/xslt-example/tree/master/rj][browse the actual code here]]. We will be  examining it in more detail tonight, and you may understand it a lot better if you look at it first. You can easily check it out by pasting the code into [[http://fiddle.frameless.io/][the XML fiddle site]], maybe using he "raw" view of [[https://raw.githubusercontent.com/titaniumbones/xslt-example/master/rj/rom-trans.xsl][the xsl stylesheet]] and [[https://raw.githubusercontent.com/titaniumbones/xslt-example/master/rj/rom-act2.xml][the full xml text]] to copy it more easily.  
 
-* link to code
-:PROPERTIES:
-:ORG_LMS_ANNOUNCEMENT_ID: 305014
-:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/99251/discussion_topics/305014
-:ORG_LMS_POSTED_AT: 2019-05-15T16:09:25Z
-:END:
-[[https://hackmd.io/s/Bk0KFnYnE][here's the code for today]]
-
 * That last announcement
 :PROPERTIES:
 :ORG_LMS_ANNOUNCEMENT_ID: 305537
@@ -107,17 +99,50 @@ I wanted to let you know that tonight's class will be, in some ways, a rehash of
 
 it wasn't really an announcement, but a more detailed introduction to XML, XSLT, and HTML than we got in class. I'll distribute a bit more info soon -- maybe at the end of the day -- but I wanted to get this off ASAP so you could make use of it for you assignment!
 
-* One more announcement about assignment 2, and I promise to stop
+* link to code
 :PROPERTIES:
-:ORG_LMS_ANNOUNCEMENT_ID: 306174
-:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/99251/discussion_topics/306174
-:ORG_LMS_POSTED_AT: 2019-05-18T16:35:26Z
+:ORG_LMS_ANNOUNCEMENT_ID: 305014
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/99251/discussion_topics/305014
+:ORG_LMS_POSTED_AT: 2019-05-15T16:09:25Z
 :END:
-I've posted an amended version of the handout for assignment 2; it incorporates the XML/XSLT/HTML guide I sent out as an announcement on Thursday. [[https://digitalhistory.github.io/wdw235/assignment/reflection-2-handout/][The new one is written in HTML]] to make the code examples a little clearer.  
+[[https://hackmd.io/s/Bk0KFnYnE][here's the code for today]]
 
-I've also suggested that you use [[http://fiddle.frameless.io/][XML fiddle]] instead of the w3Schools editor.  It's not great either but at least has syntax highlighting.   
+* Readings! Videos! Assignments! Discussions! Visits! Sign-ups!
+:PROPERTIES:
+:ORG_LMS_ANNOUNCEMENT_ID: 400809
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/127426/discussion_topics/400809
+:ORG_LMS_POSTED_AT: 2019-10-03T13:17:45Z
+:END:
+Hello Everyone,
 
-Enjoy your holiday weekend!
+This is a friendly reminder to you all to *do your work before class*. Tomorrow we'll be discussing these texts and videos: 
+- William Noel, “[[http://www.ted.com/talks/william_noel_revealing_the_lost_codex_of_archimedes][Revealing the Lost Codex of Archimedes]]” (2012). [TED TALK]
+- Bethany Nowviskie, “[[http://nowviskie.org/2014/anthropocene/][Digital Humanities in the Anthropocene]]”
+- Eira Tansey, “[[http://eiratansey.com/2017/05/16/fierce-urgencies-2017/][When the Unbearable Becomes Inevitable: Archives and Climate Change]]” (2017).
+
+*don't "forget" to read them!*
+
+In addition, some announcements: 
+- Really sorry about your assignments still not being marked.  Working on it! Some administrative confusion on my end.
+- Some of you have been asking me about citation styles. I don't have strong preferences but I *do* strongly encourage you to use citation-management software, which will make your life *so much easier*. [[https://youtu.be/-hUxgC4EX2s][I recorded this short video introductio nto Zotero]] which I encourage you to watch.  
+- You have hopefully started work on your second assignment. Good! If you're running into trouble, [[https://q.utoronto.ca/courses/127426/discussion_topics/400319][please use the discussion forum that I've set up for the assignment]]. And if you're feeling confident, perhaps head over to the discussion anyway to help your classmates out.
+- Next week we'll be visiting the Fisher Rare Books Library. It will be really fun! The room we're using can only accomodate 20 students at a time, and the library closes at 8, so we will do this trip in *two separate groups* and potentially *end class an hour early* and bundle you off home for the holiday weekend (though I'll be around after 8 to answer questions). I've made a sign-up sheet which [[https://q.utoronto.ca/calendar?include_contexts=course_127426#view_name=week&view_start=2019-10-06][you can find in the course calendar on Quercus]]. Please use it! This is my first time making such a sign-up sheet, so I hope it works :-)
+
+Enjoy the readings and see you in class!
+
+
+* Omeka Login Instructions
+:PROPERTIES:
+:ORG_LMS_ANNOUNCEMENT_ID: 400788
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/127426/discussion_topics/400788
+:ORG_LMS_POSTED_AT: 2019-10-03T12:51:19Z
+:END:
+In this class we have a *shared login* to the local Omeka installation.  We'll talk more about protocols in class today. In this announcement, which should only be visible to the class, I'm giving you the login info: 
+
+- Username: ~WDW235-2019-evening~
+- Password: ~2019-evening~
+
+Please feel free to login and look around before class, but *UNDER NO CIRCUNSTANCES MODIFY ANY RESOURCES THAT YOU FIND THERE.* Again, we'll learn how to use Omeka starting in class today. 
 
 * Class *in Robarts* On June 3 -- PLEASE READ!!
 Hello class,
