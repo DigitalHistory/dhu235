@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Reflection 02: Handout and Preliminary Exercises</title>
+<meta name="author" content="Matt Price"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="http://sandbox.hackinghistory.ca/Tools/reveal.js/css/reveal.css"/>
+
+<link rel="stylesheet" href="http://sandbox.hackinghistory.ca/Tools/reveal.js/css/theme/matt.css" id="theme"/>
+
+<link rel="stylesheet" href="file:///home/matt/src/org-reveal/local.css"/>
+<link rel="stylesheet" href="http://sandbox.hackinghistory.ca/Tools/reveal.js/lib/css/zenburn.css"/>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'http://sandbox.hackinghistory.ca/Tools/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide">
+<h1>Reflection 02: Handout and Preliminary Exercises</h1>
+<h3>Matt Price  </h3>
+<!-- <p class="title-theme-choice">(view this presentation in another theme: 
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/black.css')); return false;">Black (default)</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/white.css')); return false;">White</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/league.css')); return false;">League</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/sky.css')); return false;">Sky</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/beige.css')); return false;">Beige</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/simple.css')); return false;">Simple</a> 
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/serif.css')); return false;">Serif</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/blood.css')); return false;">Blood</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/night.css')); return false;">Night</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/moon.css')); return false;">Moon</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/solarized.css')); return false;">Solarized</a> 
+				)	</p> -->
+
+</section>
+<section>
+<section id="slide-org5f35ef6">
+<h2 id="org5f35ef6"></h2>
+<p>
+In this assignment, you will <b>encode</b> parts of a thousand-year-old poem using a markup language, <b>display</b> the marked-up text in a web browser using a computational translator, and <b>discuss</b> this exercise using the idea of <b>deformance</b> as a guide.  This handout <b>should</b> contain everything you need to complete the assignment, but please use the discussion forum to ask any technical (or other!) questions.
+</p>
+</section>
+</section>
+<section>
+<section id="slide-the-poem-the-ruin-from-the-tenth-century-exeter-book-translated-by-sian-echard-silently-emended">
+<h2 id="the-poem-the-ruin-from-the-tenth-century-exeter-book-translated-by-sian-echard-silently-emended">The Poem: “The Ruin” (from the tenth century Exeter Book), translated by Sian Echard, silently emended</h2>
+<p>
+&ldquo;<a href="http://faculty.arts.ubc.ca/sechard/oeruin.htm">The Ruin</a>&rdquo; was likely written in the 8th or 9th century, and recorded in the <a href="https://en.wikipedia.org/wiki/Exeter_Book">Exeter Book</a> in the 10th century. The only surviving copy has a large burn down the centre of the page that renders parts of the poem illegible. (See <a href="https://sites.nd.edu/manuscript-studies/2017/11/20/ivory-in-the-rust-reading-the-old-english-ruin-in-south-bend">this blog post</a> for a substantive discussion of the poem.)
+</p>
+
+
+<figure>
+<img src="https://sites.nd.edu/manuscript-studies/files/2017/11/Fahey-Screen-Shot-2017-11-17-at-6.13.25-PM-768x585.png" alt="Fahey-Screen-Shot-2017-11-17-at-6.13.25-PM-768x585.png">
+
+<figcaption><span class="figure-number">Figure 1: </span><i>Exeter Cathedral Library MS 3501, f. 124r, all rights reserved Dean &amp; Chapter Exeter Cathedral</i></figcaption>
+</figure>
+
+</section>
+<section id="slide-org113ba62">
+<h3 id="org113ba62">Transcription</h3>
+<form><ol>
+<li>Wondrous is this wall-stead, wasted by fate.</li>
+<li>Battlements broken, giant&rsquo;s work shattered.</li>
+<li>Roofs are in ruin, towers destroyed,</li>
+<li>Broken the barred gate, rime on the plaster,</li>
+<li>walls gape, torn up, destroyed,</li>
+<li>consumed by age. Earth-grip holds</li>
+<li>the proud builders, departed, long lost,</li>
+<li>and the hard grasp of the grave, until a hundred generations</li>
+<li>of people have passed. Often this wall outlasted,</li>
+<li>hoary with lichen, red-stained, withstanding the storm,</li>
+<li>one reign after another; the high arch has now fallen.</li>
+<li>The wall-stone still stands, hacked by weapons,</li>
+<li>by grim-ground files.</li>
+<li>&#x2026;</li>
+<li>&#x2026;</li>
+<li>&#x2026;</li>
+<li>&#x2026;</li>
+<li>Mind quickened &#x2026; and the artificer,</li>
+<li>skilled in round-building, bound the wall-base,</li>
+<li>wondrously with iron.</li>
+<li>Bright were the halls, many the baths,</li>
+<li>High the gables, great the joyful noise,</li>
+<li>many the mead-hall full of pleasures.</li>
+<li>Until fate the mighty overturned it all.</li>
+<li>Slaughter spread wide, pestilence arose,</li>
+<li>and death took all those brave men away.</li>
+<li>Their bulwarks were broken, their halls laid waste,</li>
+<li>the cities crumbled, those who would repair it</li>
+<li>laid in the earth. And so these halls are empty,</li>
+<li>and the curved arch sheds its tiles,</li>
+<li>torn from the roof. Decay has brought it down,</li>
+<li>broken it to rubble. Where once many a warrior,</li>
+<li>high of heart, gold-bright, gleaming in splendour,</li>
+<li>proud and wine-flushed, shone in armour,</li>
+<li>looked on a treasure of silver, on precious gems,</li>
+<li>on riches of pearl&#x2026;</li>
+<li>in that bright city of broad rule.</li>
+<li>Stone courts once stood there, and hot streams gushed forth,</li>
+<li>wide floods of water, surrounded by a wall,</li>
+<li>in its bright bosom, there where the baths were,</li>
+<li>hot in the middle.</li>
+<li>Hot streams ran over hoary stone</li>
+<li>into the ringed water where baths were</li>
+<li>&#x2026;</li>
+<li>&#x2026;</li>
+<li>That was a noble thing, the house and the city.</li>
+
+</ol></form>
+</section>
+</section>
+<section>
+<section id="slide-deformance">
+<h2 id="deformance">Deformance</h2>
+<p>
+We will discuss in class this <a href="https://en.wikipedia.org/wiki/Portmanteau">portmanteau</a> term coined by Lisa Samuels and Jerome McGann, a combination of “deform” and “performance.” Be sure you have some grasp of what this means!
+</p>
+
+
+</section>
+</section>
+<section>
+<section id="slide-introduction-to-tei">
+<h2 id="introduction-to-tei">Introduction to XML,XSLT, TEI, and HTML (!)</h2>
+<p>
+<a href="https://cdrh.unl.edu/articles/basicguide/TEI">TEI</a> is a <a href="https://en.wikipedia.org/wiki/Markup_language">markup language</a> &#x2013; a system for annotating documents that can be read an processed by other compute programs.  It is a format, or defined feature set, of the <a href="https://www.w3schools.com/xml/xml_whatis.asp">XML</a> &ldquo;metalanguage&rdquo;, a very widely-used system for structuring and processing many kinds of data.  Digital humanists use TEI to turn literary texts into structured data that can be manipulated and queried in many ways, but especially on the web.  
+</p>
+
+<p>
+The process of turning a TEI document into a visual representation on a screen is complex:
+</p>
+<form><ul>
+<li>first, the text must be <b>marked up</b> &#x2013; textual elements must be identified and annotated (we&rsquo;ll discuss how this works in more detail very soon).  This work can be both painstaking and tedious</li>
+<li>next, a <b>translation scheme must be written</b> that <i>processes</i> the xml text into <a href="https://en.wikipedia.org/wiki/HTML">HTML</a>, the main language of the web. This translation is almost always written in a language called <a href="https://en.wikipedia.org/wiki/XSLT">XLST</a> (which is itself a dialect of XML)</li>
+<li>finally, the translated document must be <b>displayed by a browser</b> that understands HTML, like Firefox or Chrome.</li>
+
+</ul></form>
+
+<p>
+Becasue this topic is so immense, we will not be producing fully TEI-compliant documents in this class &#x2013; instead, we will make TEI-like XML and process those docs into super-simple HTML documents.  
+</p>
+
+<p>
+So, in order to complete this assignment, you must learn at least a tiny bit about <b>XML</b>, <b>XSLT</b>, and <b>HTML</b>.  That&rsquo;s a lot! I won&rsquo;t give you a systematic introduction to any of these systems; instead, this handout presents a very small amount of information on each, and gives some examples of how you might use them in the assignment. 
+</p>
+
+</section>
+<section id="slide-viewing">
+<h3 id="viewing">Viewing</h3>
+<p>
+To view/work with XML files, please navigate to either of these xml/xslt live editors:
+</p>
+<form><ul>
+<li><a href="http://fiddle.frameless.io/">XML fiddle</a> (this one at least has syntax highlighting, which makes the code a bit easier to read).</li>
+<li><a href="https://www.w3schools.com/xml/tryxslt.asp?xmlfile=cdcatalog&amp;xsltfile=cdcatalog">W3 Schools</a> (I don&rsquo;t like this one as much)</li>
+
+</ul></form>
+
+
+<p>
+<b>Paste your XML poem into the left window of the editor.</b> Start with this code:  
+</p>
+<div class="org-src-container">
+
+<pre><code class=" xml" >&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;poem&gt;
+  &lt;l n="1"&gt;This &lt;concrete-noun&gt;wall-stone&lt;/concrete-noun&gt; is wondrous; fates broke it&lt;/l&gt;
+  &lt;l n="2"&gt;&lt;concrete-noun&gt;courtyard pavements&lt;/concrete-noun&gt; were smashed; the work of giants is decaying.&lt;/l&gt;
+  &lt;l n="3"&gt;&lt;concrete-noun&gt;Roofs&lt;/concrete-noun&gt; are fallen, ruinous &lt;concrete-noun&gt;towers&lt;/concrete-noun&gt;,&lt;/l&gt;
+  &lt;l n="4"&gt; the frosty gate with frost on cement is ravaged, &lt;/l&gt;
+&lt;/poem&gt;
+</code></pre>
+</div>
+
+<p>
+<b>Paste your XSLT (your script for turning XML into HTML) into the right window of the browser.</b> Again, here is some starter code:
+</p>
+
+<div class="org-src-container">
+
+<pre><code class=" xml" >&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;
+  &lt;xsl:template match="/"&gt;
+    &lt;html&gt;
+      &lt;body&gt;
+        &lt;h1&gt;The Ruin&lt;/h1&gt;
+        &lt;xsl:for-each select="poem/l/concrete-noun"&gt;
+          &lt;p&gt; &lt;xsl:value-of select="current()"/&gt; &lt;/p&gt;
+        &lt;/xsl:for-each&gt;
+      &lt;/body&gt;
+    &lt;/html&gt;
+  &lt;/xsl:template&gt;
+&lt;/xsl:stylesheet&gt;
+</code></pre>
+</div>
+
+</section>
+<section id="slide-org99fe3d5">
+<h3 id="org99fe3d5">XML Essentials: Tags &amp; Structures</h3>
+<p>
+XML &ldquo;marks up&rdquo; elements of a text by surrounding bits of text with <a href="https://www.w3schools.com/xml/xml_syntax.asp">tags</a>. The totality of <code>&lt;starting-tag&gt;Content&lt;/end-tag&gt;</code> is called an <a href="https://www.w3schools.com/xml/xml_elements.asp">XML element</a>. 
+</p>
+
+<p>
+Take this example (stolen from <a href="https://www.w3schools.com/xml/xml_elements.asp">W3Schools</a>): 
+</p>
+<div class="org-src-container">
+
+<pre><code class=" xml" >&lt;book category="children"&gt;
+  &lt;title&gt;Harry Potter&lt;/title&gt;
+  &lt;author&gt;J K. Rowling&lt;/author&gt;
+  &lt;year&gt;2005&lt;/year&gt;
+  &lt;price&gt;29.99&lt;/price&gt;
+&lt;/book&gt;
+</code></pre>
+</div>
+
+<p>
+Here we have a <b>root element</b> called <code>&lt;book&gt;</code> which encloses several <a href="https://www.w3schools.com/xml/xml_tree.asp#midcontentadcontainer">child elements</a> (<code>&lt;title&gt;</code>, <code>&lt;author&gt;</code>, etc). Everything between <code>&lt;book category="children"&gt;</code> and <code>&lt;/book&gt;</code> is part of the <code>&lt;book&gt;</code> element.  In general, an element has the structure:
+</p>
+
+<form><ul>
+<li>opening tag: <code>&lt;tag&gt;</code></li>
+<li>content: text and child elements, which must be fully nexted within the parent (if an opening tag is inside the element, the closing tag must <b>also</b> be inside it</li>
+<li>closing tag: <code>&lt;/tag&gt;</code> . Note the forward slash <b>/</b> within the <code>&lt;&gt;</code> greater-than less-than signss.</li>
+
+</ul></form>
+
+<p>
+Here&rsquo;s a trivial example that you might find in a TEI document:
+</p>
+
+<div class="org-src-container">
+
+<pre><code class=" xml" >&lt;l&gt;And then my lord &lt;person&gt;Yvain&lt;/person&gt; arrived in &lt;place&gt;Camelot&lt;/place&gt;.&lt;/l&gt;
+</code></pre>
+</div>
+
+<p>
+The tags here are &ldquo;l&rdquo;, &ldquo;person&rdquo;, and &ldquo;place&rdquo;.
+</p>
+
+</section>
+<section id="slide-xml-dec">
+<h4 id="xml-dec">The XML declaration</h4>
+<p>
+Every real XML document must also begin with an &ldquo;XML Declaration&rdquo; which identifies it as an XML document.  It will look like this: 
+</p>
+
+<div class="org-src-container">
+
+<pre><code class=" xml" >&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+</code></pre>
+</div>
+
+<p>
+And a very simple full document will look like this:
+</p>
+<div class="org-src-container">
+
+<pre><code class=" id="simple-xml" xml" >&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;poem&gt;
+  &lt;l n="1"&gt;This wall-stone is wondrous; fates broke it&lt;/l&gt;
+  &lt;l n="2"&gt;courtyard pavements were smashed; the work of giants is decaying.&lt;/l&gt;
+  &lt;l n="3"&gt;Roofs are fallen, ruinous towers,&lt;/l&gt;
+  &lt;l n="4"&gt; the frosty gate with frost on cement is ravaged, &lt;/l&gt;
+&lt;/poem&gt;
+</code></pre>
+</div>
+
+</section>
+<section id="slide-org3071a73">
+<h3 id="org3071a73">Displaying XML with XSLT</h3>
+<p>
+A document that has been marked up with XML now has a structure that a computer can understand, which is great! But a web browser will not know how to display that document unless we give it instructions for <b>transforming</b> the XML structure into a language that the browser understands. We use XSLT for this purpose &#x2013; a special language that exists to manipulate XML documents.  
+</p>
+
+<p>
+XSLT is complicated, and we will use just a tiny part of it.  We need to understand just a few concepts: 
+</p>
+<form><ul>
+<li><b>stylesheet declaration</b> surrounds the rest of the XSLT document, identifying it as an XSLT instruction set</li>
+<li><b><a href="https://www.w3schools.com/xml/xsl_templates.asp">templates</a></b> give instructions for transforming particular XML elements</li>
+<li><b><a href="https://www.w3schools.com/xml/xpath_syntax.asp">Xpath Expressions</a></b> are used to tell the templates which elements to transform</li>
+<li><b>value statements</b> insert the contents of an element into the final HTML product</li>
+
+</ul></form>
+
+</section>
+<section id="slide-orgf6007c0">
+<h4 id="orgf6007c0">Stylesheet Declaration</h4>
+<p>
+An XSLT Stylesheet always starts with an XML declaration and then an <code>&lt;xsl:stylesheet&gt;</code> tag; the document ends with the closing <code>&lt;/xsl:stylesheet&gt;</code> tag:
+</p>
+
+<div class="org-src-container">
+
+<pre><code class=" xml" >&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;
+
+&lt;!-- Content of Stylesheet Goes Here!! --&gt;
+
+&lt;/xsl:stylesheet&gt;
+</code></pre>
+</div>
+
+</section>
+<section id="slide-org4e5d29c">
+<h4 id="org4e5d29c">XSLT Templates</h4>
+<p class="backwardlink">
+Inside the <code>xsl:stylesheet</code> we put all the <code>xsl:template</code> tags we need.  Each template is an instruction for dealing with a particular tag or set of tags.  So, if we use <a href="#/slide-org44da496" class="backwardlink">our simple XML file from above</a> as the XML source, we might start by building an XSLT document like this:
+</p>
+
+<div class="org-src-container">
+
+<pre><code class=" xml" >&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;
+    &lt;xsl:template match="/"&gt;
+      &lt;xsl:apply-templates/&gt;
+  &lt;/xsl:template&gt;
+
+
+  &lt;xsl:template match="l"&gt;
+    &lt;p&gt; &lt;xsl:value-of select="."/&gt; &lt;/p&gt;
+  &lt;/xsl:template&gt;
+&lt;/xsl:stylesheet&gt;
+</code></pre>
+</div>
+
+<p>
+What&rsquo;s happening here?  We have two templates. The first one &ldquo;matches&rdquo; the &ldquo;root element&rdquo;, while the second one matches all the &ldquo;l&rdquo; elements. So if we read this document top to bottom, we might translate it this way: 
+</p>
+<pre class="example">
+I am an XML Document
+
+Begin Stylesheet
+
+   Begin Template for the root element
+        Apply all Templates!
+   End Template for the root elements
+
+   Begin Template for each l element
+        Return a line of code that reads:
+        "&lt;p&gt; + content of the "l" element + &lt;/p&gt;"
+        (this creates one HTML paragraph for each "l" element in the original)
+   End Template for the L Elements
+
+End Stylesheet
+</pre>
+
+<p>
+Our original XML document is very simple, so we don&rsquo;t need much more than this. But as we&rsquo;ll see later, it can get much more complicated.  And in fact we can make it a little more sophisticated already by adding a bit more complexity: 
+</p>
+
+<div class="org-src-container">
+
+<pre><code class=" xml" >&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;
+
+  &lt;xsl:template match="/"&gt;
+    &lt;body&gt;
+      &lt;h1&gt;Grand title&lt;/h1&gt;
+      &lt;p&gt;Let us begin our discussion of poetry here.&lt;/p&gt;
+          &lt;xsl:apply-templates/&gt;
+    &lt;/body&gt;
+  &lt;/xsl:template&gt;
+
+  &lt;xsl:template match="poem"&gt;
+    &lt;h2&gt;The Ruin&lt;/h2&gt;
+          &lt;xsl:apply-templates/&gt;    
+  &lt;/xsl:template&gt;
+
+
+  &lt;xsl:template match="l"&gt;
+    &lt;p&gt; &lt;xsl:value-of select="."/&gt; &lt;/p&gt;
+  &lt;/xsl:template&gt;
+
+&lt;/xsl:stylesheet&gt;
+</code></pre>
+</div>
+
+<p>
+Try to read the text and understand what&rsquo;s going on!
+</p>
+
+<p>
+Now let&rsquo;s learn a little bit more about how the <code>match</code> and <code>select</code> attributes in the above code really work. 
+</p>
+
+</section>
+<section id="slide-orge7fab4a">
+<h4 id="orge7fab4a">Xpath Expressions</h4>
+<p>
+When we make templates with a <code>match</code> attribute, or use the <code>value-of</code> and <code>apply-templates</code> instructions (see below), we have to tell XSLT which XML elements we are talking about. The selection of elements is done using what are called &ldquo;<a href="https://www.w3schools.com/xml/xpath_syntax.asp">Xpath Expressions</a>&rdquo;. These are a way to describe the position of elements (sometimes called &ldquo;nodes&rdquo;) in the XML document. The syntax is extemely complex, so we will just say a few things about it here: 
+</p>
+
+<form><ul>
+<li>&ldquo;/&rdquo; refers to the root element &#x2013; the element that contains all the other elements in the document</li>
+<li><code>"/poem"</code> refers to a <code>&lt;poem&gt;</code> element <b>at the document root</b>, while &ldquo;poem&rdquo; refers to <b>any poem element in the document</b>.  So for instance, &ldquo;l&rdquo; will match all of our <code>&lt;l&gt;</code> elements, but <code>"/l"</code> <b>won&rsquo;t match anything,</b> because the existing <code>&lt;l&gt;</code> elements are all <i>inside the poem element</i>.</li>
+<li>&ldquo;current()&rdquo; and &ldquo;.&rdquo; both refer to the <b>element that is being discussed at the present moment</b>. So, inside of <code>&lt;xsl:template match="poem"&gt;...&lt;/xsl:template&gt;</code>, <code>"."</code> refers to the <code>&lt;poem&gt;</code> element.</li>
+<li>&ldquo;@n&rdquo; refers to the &ldquo;attribute&rdquo; <b>n</b>. I&rsquo;ll explain more about this in a second&#x2026;</li>
+
+</ul></form>
+
+</section>
+<section id="slide-org96640f8">
+<h4 id="org96640f8">Value Statements (<code>value-of</code> and <code>apply-templates</code>)</h4>
+<p>
+We almost always want to get the value of the XML elements &#x2013; otherwise why would we do all this work? There are two ways to get that value&#x2026;
+</p>
+
+<ul class="org-ul">
+<li><a id="org8cbf0e3"></a><a href="https://www.w3schools.com/xml/ref_xsl_el_value-of.asp">xsl:value-of</a>: the simple way<br>
+<p>
+<code>&lt;xsl:value-of select="."/&gt;</code> just grabs the content of the element and inserts it in the final output.  We don&rsquo;t use it much (see below for reasons), but it can be particularly helpful when we care about <b>attributes</b>.  So for instance, consider this line of XML: 
+</p>
+
+<div class="org-src-container">
+
+<pre><code class=" xml" >&lt;l n="2"&gt;courtyard pavements were smashed; the work of giants is decaying.&lt;/l&gt;
+</code></pre>
+</div>
+
+<p>
+Maybe we really care that this is line 2! Maybe we want to display those line numbers so readers understand what we&rsquo;re talking about! We can use the &ldquo;@n&rdquo; syntax we saw just above: 
+</p>
+
+<div class="org-src-container">
+
+<pre><code class=" xml" >&lt;xsl:value-of select="@n"/&gt;
+</code></pre>
+</div>
+
+<p>
+When this instruction is applied to the line above, it will return the number &ldquo;2&rdquo;!
+</p>
+</li>
+
+<li><a id="org9f68ad1"></a><a href="https://www.w3schools.com/xml/xsl_apply_templates.asp">xsl:apply-templates</a>: the better way (usually)<br>
+<p>
+Most of the time, we use <code>&lt;xsl:apply-templates/&gt;</code> instead of <code>&lt;xsl:value-of select="."/&gt;</code>.  This is because <b>we usually can&rsquo;t be sure that the element doesn&rsquo;t contain other elements.</b> And if we just use &ldquo;value-of&rdquo;, then the elements inside our current element won&rsquo;t be properly translated.  &ldquo;apply-templates&rdquo; will check to see if any templates need to be applied internally, and then after those templates have been applied, it will return the whole resultant text.  
+</p>
+
+<p>
+All of this is really helpful &#x2013; but since we&rsquo;re generating HTML, you <b>also</b> need to know a little bit of HTML to make the text look the way you want it to!
+</p>
+</li>
+</ul>
+</section>
+<section id="slide-org61d7f3b">
+<h4 id="org61d7f3b">HTML Tags and attributes</h4>
+<p>
+I won&rsquo;t go into HTML in much depth &#x2013; there are many many <i>many</i> resources available online.  Here we&rsquo;ll just describe a few very basic features. 
+</p>
+
+<p>
+Like XML documents, HTML documents contain <b>elements</b> delimited by <b>tags</b>. Also like in XML, those tags can have <b>attributes</b> that give extra information.  Here are some tags you may want to use in your work:
+</p>
+
+<div class="org-src-container">
+
+<pre><code class=" html" >&lt;html&gt;
+  &lt;body&gt;
+    Every HTML document should start with a "html" tag and include a "body" tag inside it.
+
+    &lt;h1&gt;first-level header&lt;/h1&gt;
+    &lt;h2&gt;second=level header&lt;/h2&gt;
+    (etc up to "h6")
+    &lt;p&gt;
+      paragraph containing &lt;strong&gt;bold&lt;/strong&gt; and &lt;em&gt;italic&lt;/em&gt; text.
+      Paragraphs can also contain
+      &lt;span&gt;
+        tags, which don't do anything by default...
+        but wait!
+      &lt;/span&gt;
+    &lt;/p&gt;
+    &lt;p style="color;white;background-color:red;border:2px solid black; padding: 10px;"&gt;
+      This paragraph will have white text, a red background, a black border,
+      and lots of space around it. Meanwhile, this
+      &lt;span style="color:red;background-color:green"&gt;
+        will be entirely invisible to red-green colorblind readers.
+      &lt;/span&gt;  
+    &lt;/p&gt;
+
+    &lt;table&gt;
+      &lt;tr&gt;
+        &lt;td&gt;this is a &lt;/td&gt;
+        &lt;td&gt;table with&lt;/td&gt;
+        &lt;td&gt;1 row and 3 columns&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/table&gt;
+
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+</div>
+<form><ul>
+<li><b>p</b> tags are paragraphs</li>
+<li><b>h1, h2&#x2026; h6</b> tags are headers</li>
+<li><b>span</b> tags delineate text within a paragraph</li>
+<li><b>strong</b> and <b>em</b> do bold and italics</li>
+<li>You can build tables using the somewhat complicated syntax above</li>
+<li>you can set style attributes using the &ldquo;style=&rdquo; commands as you see them above; I&rsquo;ve shown a few possibilities but there are literally hundreds more.</li>
+
+</ul></form>
+
+<p>
+Hopefully this should be enough for you to get started!
+</p>
+</section>
+<section id="slide-orga851606">
+<h3 id="orga851606">Learn more</h3>
+<p>
+The <a href="https://developer.mozilla.org">Mozilla Developer Network</a> is the best starting point for almost all technical topics related to the web.  The <a href="https://developer.mozilla.org/en-US/docs/Web/XML/XML_introduction">XML Introduction</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/XSLT">XSLT Intro</a>, and <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">much more extensive HTML information</a> are all very helpful, and contian links to further information. 
+</p>
+
+<p>
+The <a href="https://tei-c.org/">TEI website</a> has extensive information about the TEI standard, but is extremely technical. <a href="http://teibyexample.org/modules/TBED04v00.htm">TEI By Example</a> can be quite helpful, but again, is very detailed.  The full text of <i><a href="https://books.openedition.org/oep/426">What is the Text Encoding Initiative</a></i> is available online and may also be helpful. The University of Nebraska&rsquo;s  <a href="https://cdrh.unl.edu/articles/basicguide">Basic Guide to Text Encoding</a> is a lightweight introduction that may be easier to follow than any of the above!
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-reading">
+<h2 id="reading">Reading Hints</h2>
+<form><ul>
+<li>Content: Read your passage. Flag any parts that are unclear or mysterious or confusing. Summarize its content in one sentence.</li>
+<li>Style: Look for:
+<form><ul>
+<li>verbal patterns (e.g. sentences with the same shape) : what are they? What is their effect?</li>
+<li>sensory imagery (e.g. references to what you can see, hear, touch, feel): any patterns? What do they do for the poem?</li>
+
+</ul></form></li>
+<li>Theme: if you had to summarize the theme of your passage in one word, what would that word be? How does style support or embody theme?</li>
+
+</ul></form>
+</section>
+</section>
+<section>
+<section id="slide-encoding">
+<h2 id="encoding">Encoding</h2>
+<p>
+<b>Choose one of the following passages:</b> 1-15; 16-31a; 31b-46.
+</p>
+
+<p>
+Encode your passage using the following TEI tags:
+</p>
+
+<form><ul>
+<li><b>Lines and line numbers</b></li>
+
+</ul></form>
+
+<div class="org-src-container">
+
+<pre><code class=" xml" > &lt;poem&gt;
+   &lt;l n=″1″&gt;This masonry is wondrous; fates broke it&lt;/l&gt;
+&lt;/poem&gt;
+</code></pre>
+</div>
+
+<form><ul>
+<li><b>At least one made-up tag of your own, specific to the poem</b></li>
+
+</ul></form>
+
+<div class="org-src-container">
+
+<pre><code class=" xml" >&lt;concrete_noun&gt; wall-stone &lt;/concrete_noun&gt;
+&lt;adjective&gt; wondrous &lt;/adjective&gt;
+&lt;colour&gt;golden&lt;/colour&gt;
+&lt;poetic-formula&gt;the work of giants&lt;/thew
+</code></pre>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-encoding-discussion">
+<h2 id="encoding-discussion">Encoding Discussion</h2>
+<p>
+What is your made-up tag(s)? How is this tag supposed to work, within this poem and more generally? Why is it useful?
+</p>
+
+<p>
+After encoding, what additional characteristics of the poem, if any, did you notice in terms of verbal patterns, sensory imagery, or the development of the poem&rsquo;s themes?
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-appendix-more-complex-example">
+<h2 id="appendix-more-complex-example">Appendix: More Complex Example</h2>
+<p>
+It may help you to see a few more tags. Here is a slightly more complex example, with a more completely marked-up selection of the poem. I have <b>not</b> annotated this example, but it showcases a few more features of the systems we&rsquo;re learning.  In particular, this example introduces:
+</p>
+<form><ul>
+<li><a href="https://www.w3schools.com/cssref/css_colors_legal.asp">more complex colors</a></li>
+<li><a href="https://www.w3schools.com/tags/tag_a.asp">the &ldquo;a&rdquo; or hyperlink tag</a></li>
+<li><a href="https://stackoverflow.com/questions/10395488/how-to-concat-a-string-to-xslvalue-of-select">curly braces as a shortcut for xpaths</a></li>
+<li><a href="https://stackoverflow.com/questions/11744465/xpath-difference-between-node-and-text">the somewhat confusing xpath test &ldquo;node&rdquo;</a>, which sometimes makes sense to use when &ldquo;current()&rdquo; doesn&rsquo;t produce the effect you want.</li>
+
+</ul></form>
+
+<div class="org-src-container">
+
+<pre><code class=" xml" >&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;poem&gt;
+  &lt;l n="1"&gt;This &lt;concrete-noun&gt;wall-stone&lt;/concrete-noun&gt; is &lt;adjective&gt;wondrous&lt;/adjective&gt;; &lt;hyperbole&gt;fates broke it&lt;/hyperbole&gt;&lt;/l&gt;
+  &lt;l n="2"&gt;&lt;concrete-noun&gt;courtyard pavements&lt;/concrete-noun&gt; were smashed; the &lt;concrete-noun&gt;work&lt;/concrete-noun&gt; of &lt;concrete-noun&gt;giants&lt;/concrete-noun&gt; is decaying.&lt;/l&gt;
+  &lt;l n="3"&gt;&lt;concrete-noun&gt;Roofs&lt;/concrete-noun&gt; are fallen, ruinous &lt;concrete-noun&gt;towers&lt;/concrete-noun&gt;,&lt;/l&gt;
+  &lt;l n="4"&gt; the frosty &lt;concrete-noun&gt;gate&lt;/concrete-noun&gt; with &lt;concrete-noun&gt;frost&lt;/concrete-noun&gt; on &lt;concrete-noun&gt;cement&lt;/concrete-noun&gt; is &lt;hard-word&gt;ravaged&lt;/hard-word&gt;, &lt;/l&gt;
+&lt;/poem&gt;
+</code></pre>
+</div>
+
+<div class="org-src-container">
+
+<pre><code class=" xml" >&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"&gt;
+
+  &lt;xsl:template match="/"&gt;
+    &lt;html&gt;
+      &lt;body&gt;
+        &lt;h1&gt;The Ruin&lt;/h1&gt;
+        &lt;table&gt;
+          &lt;xsl:apply-templates select="node()"/&gt;
+        &lt;/table&gt;
+      &lt;/body&gt;
+    &lt;/html&gt;
+  &lt;/xsl:template&gt;
+
+  &lt;xsl:template match="poem"&gt;
+    &lt;table&gt;
+      &lt;xsl:apply-templates select="node()"/&gt;
+    &lt;/table&gt;
+  &lt;/xsl:template&gt;
+
+  &lt;xsl:template match="l"&gt;
+    &lt;tr&gt;
+      &lt;td style="padding-right:10px; color:gray"&gt;
+        &lt;xsl:value-of select="@n"/&gt;
+      &lt;/td&gt;
+      &lt;td style="color:white;"&gt;
+        &lt;xsl:apply-templates select="node()"/&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/xsl:template&gt;
+
+  &lt;xsl:template match="concrete-noun"&gt;
+    &lt;strong style="color:black;"&gt;
+      &lt;xsl:apply-templates select="node()"/&gt;
+    &lt;/strong&gt;
+  &lt;/xsl:template&gt;
+  &lt;xsl:template match="adjective"&gt;
+    &lt;span style="color:green"&gt;
+      &lt;xsl:apply-templates select="node()"/&gt;
+    &lt;/span&gt;
+  &lt;/xsl:template&gt;
+
+  &lt;xsl:template match="hyperbole"&gt;
+    &lt;span style="background-color: rgba(250,20,20,0.3)"&gt;
+      &lt;xsl:apply-templates select="node()"/&gt;
+    &lt;/span&gt;
+  &lt;/xsl:template&gt;
+
+  &lt;xsl:template match="hard-word"&gt;
+    &lt;a style="background-color: rgba(20,250,20,0.3)" href="https://www-oed-com.myaccess.library.utoronto.ca/search?q={current()}"&gt;
+      &lt;xsl:apply-templates select="node()"/&gt;
+    &lt;/a&gt;
+  &lt;/xsl:template&gt;
+
+&lt;/xsl:stylesheet&gt;
+
+</code></pre>
+</div>
+</section>
+</section>
+</div>
+</div>
+<script src="http://sandbox.hackinghistory.ca/Tools/reveal.js/lib/js/head.min.js"></script>
+<script src="http://sandbox.hackinghistory.ca/Tools/reveal.js/js/reveal.js"></script>
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: true,
+center: false,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+mouseWheel: false,
+fragmentInURL: false,
+hashOneBasedIndex: false,
+pdfSeparateFragments: true,
+
+overview: true,
+width: "100%",
+height: "100%",
+margin: 0.10,
+minScale: 1.00,
+maxScale: 1.00,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'convex', // see README of reveal.js for options
+transitionSpeed: 'default',
+
+// Optional libraries used to extend reveal.js
+dependencies: [
+{src: 'http://sandbox.hackinghistory.ca/Tools/reveal.js/plugin/klipse_reveal.js'},
+ { src: 'http://sandbox.hackinghistory.ca/Tools/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: 'http://sandbox.hackinghistory.ca/Tools/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'http://sandbox.hackinghistory.ca/Tools/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'http://sandbox.hackinghistory.ca/Tools/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+ { src: 'http://sandbox.hackinghistory.ca/Tools/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'http://sandbox.hackinghistory.ca/Tools/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+
+});
+</script>
+</body>
+</html>
