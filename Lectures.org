@@ -3,9 +3,43 @@
 #+HUGO_MENU: :menu main :parent Assignments
 #+REVEAL_SINGLE_FILE: t
 #+REVEAL_ROOT: file:///home/matt/src/reveal.js
-#+HUVEAL_BASEURL_PREFIX
+#+ORG_LMS_SECTION: lecture
 
-* 01: Digital Humanities --  An Introduction
+* Test code export
+#+BEGIN_SRC xml
+  <msDesc>
+    <msIdentifier>
+      <settlement>Oxford
+      </settlement>
+      <repository>Bodleian Library
+      </repository>
+      <idno>MS. Add. A. 61
+      </idno>
+    </msIdentifier>
+    <msContents>
+    <p>
+        <quote>Hic incipit Bruitus Anglie,
+        </quote> the
+        <title>De origine et gestis  Regum Angliae
+        </title> of Geoffrey of Monmouth (Galfridus Monumetensis): beg.
+        <quote>Cum mecum multa &amp; de multis.
+        </quote> In Latin.
+      </p>
+    </msContents>
+    <physDesc>
+      <p>
+        <material>Parchment
+        </material>: written in more than one hand: 7¼ x 5⅜ in., I + 55 leaves, in double columns: with a few coloured capitals.
+      </p>
+    </physDesc>
+  </msDesc>
+
+#+END_SRC
+
+
+
+
+*  {{{n}}}  Digital Humanities --  An Introduction ({{{ts}}})
 :PROPERTIES:
 :EXPORT_FILE_NAME: 01-intro
 :CUSTOM_ID: 01-dh--an-introduction-a964
@@ -411,7 +445,7 @@ Website for [[https://kcc.hackinghistory.ca/][Khangchendzonga Conservation Commi
 
 [[https://twinery.org/2/][Now Build Your Own Stories]]
 
-* 02: Anatomy of DH Projects
+* {{{n}}}: Anatomy of DH Projects {{{ts}}} 
 :PROPERTIES:
 :EXPORT_FILE_NAME: 02-anatomy-dh-projects
 :END:
@@ -573,7 +607,7 @@ Consider:
 #+end_slideblock
 #+ATTR_REVEAL: :frag (appear) 
 #+begin_slideblock
-  #+BEGIN_SRC xml
+#+BEGIN_SRC xml
   <msDesc>
     <msIdentifier>
       <settlement>Oxford
@@ -601,7 +635,7 @@ Consider:
     </physDesc>
   </msDesc>
 
-  #+END_SRC
+#+END_SRC
 
 
 #+end_slideblock
@@ -814,27 +848,179 @@ Data: accessible, usable, readable, preservable
 
 ** Bibliography
 bibliography:/home/matt/DH/digitalhistory.bib
-* 03: Omeka and The Final Assignment
+
+
+* {{{n}}}:  TEI, XML (see TEI assignment!) {{{ts}}} 
+** Today
+** Deformance
+- what is it? w
+- what was it like to read it?
+- 
+* ACTION {{{n}}}: TEI 2 ({{{ts}}})
+CF the Romeo & Juliet Repo & associated announcements. 
+
+* {{{n}}}: Endangered Knowledge 1: Omeka and The Final Assignment ({{{ts}}})
 :PROPERTIES:
-:EXPORT_FILE_NAME: 03-omeka-and-assignment
+:EXPORT_FILE_NAME: 05-enangered-books-omeka
 :END:
 
 ** Today
 - Assignment Discussion
 - Omeka Introduction
-- Rare Books Visit
 
-** Assignment
+** Bur first this! visit to Fisher library
+ [[https://q.utoronto.ca/calendar?include_contexts=course_127426#view_name=week&view_start=2019-10-06][Sign up here!]]
 
-[[http://localhost:1313/wdw235/assignment/book-project-assignment/][online]] or [[https://q.utoronto.ca/courses/99251/assignments/170176][on Quercus]]
-** Getting Started with omeka.net
-- Go to [[https://omeka.net][omeka.net]], and [[https://www.omeka.net/signup][click on signup]]
-    - Choose the Basic plan (free option at the very bottom) and fill in your information.
-  - You'll need to provide an email address for the link to activate your account.
-  - Once you've signed up, check your email for the link to activate your account.
-  - Your activation link will take you to the Dashboard of your Omeka account.
-- Click on Add a Site. Give it your first and last name (for example, my site is called mattprice.omeka.net).
-- Congratulations! You now have an empty Omeka site.
+** Nothing Lasts Forever
+#+begin_export html
+<iframe width="1200" height="800" src="https://www.youtube.com/embed/NoAzpa1x7jU?start=135" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+#+end_export
+
+
+
+** Medieval Manuscripts
+  :PROPERTIES:
+  :CUSTOM_ID: medieval-manuscripts
+  :END:
+
+*** The Exeter Book Riddles
+  :PROPERTIES:
+  :CUSTOM_ID: the-exeter-book-riddles
+  :style: page-break-before:always; 
+  :END:
+
+#+begin_paired
+Old English poetry (10th c. manuscript): Cathedral Library, Exeter MS. 3501.
+#+end_paired
+#+begin_paired
+[[./images/book-burn.png]]
+#+end_paired
+
+*** Making Parchment
+  :PROPERTIES:
+  :CUSTOM_ID: making-parchment
+  :style: page-break-before:always; 
+  :reveal_extra_attr: class="twoc"
+  :END:
+
+#+begin_slideblock
+Parchment = stretched and processed animal skin (goat, sheep, calf, cow)
+
+but see also: [[https://en.wikipedia.org/wiki/Anthropodermic_bibliopegy][anthropodermic bibliopegy]])
+
+[[https://commons.wikimedia.org/w/index.php?curid=16818][Domestic sheep]]. Public Domain, via Wikipedia 
+
+
+#+end_slideblock
+
+#+begin_slideblock
+[[./images/sheep-flock.jpg]]
+#+end_slideblock
+*** Making Parchment
+  :PROPERTIES:
+  :CUSTOM_ID: making-parchment-1
+  :style: page-break-before:always; 
+  :END:
+
+#+begin_paired
+- Skin is soaked in lime solution to loosen animal hair
+- Animal hair removed with curved knife
+- Skin wetted and stretched on special rack
+
+#+end_paired
+#+begin_paired
+[[./images/parchment-skin.jpg]]
+#+end_paired
+
+*** Writing
+  :PROPERTIES:
+  :CUSTOM_ID: writing
+  :style: page-break-before:always; 
+  :END:
+
+#+begin_paired
+- Rule the parchment (lead point or coloured ink)
+- Write with quill (goose or swan feather cut to form a nib) dipped into ink
+- Erase mistakes by scraping ink off with knife
+
+#+end_paired
+#+begin_paired
+[[./images/colored-writing.png]]
+#+end_paired
+
+*** Illumination
+  :PROPERTIES:
+  :CUSTOM_ID: illumination
+  :style: page-break-before:always; 
+  :END:
+
+#+begin_paired
+- Apply gold leaf
+
+Image:  British Library, The Lindisfarne Gospels (London, British Library Cotton MS Nero D.IV), early 8th c.
+#+end_paired
+#+begin_paired
+[[./images/illumination-detail.png]]
+#+end_paired
+*** Writing
+  :PROPERTIES:
+  :CUSTOM_ID: writing-1
+  :style: page-break-before:always; 
+  :END:
+
+#+begin_paired
+British Library, MS. Arundel 43, f. 80v . Donatus writing his Grammar.
+
+- Rule the parchment (lead point or coloured ink)
+- Write with quill (goose or swan feather cut to form a nib) dipped into ink
+- Erase mistakes by scraping ink off with knife
+
+#+end_paired
+#+begin_paired
+[[./images/writing-monk-detail.png]]
+#+end_paired
+*** Medieval Writing Materials
+[[./images/ink-origins.png]]
+** Early Printed Books
+  :PROPERTIES:
+  :CUSTOM_ID: early-printed-books
+  :style: page-break-before:always; 
+  :END:
+#+ATTR_html: :style max-height:80vh;
+[[./images/library.jpg]]
+*** “Wicked” Bible. Thomas Fisher Rare Books Library.
+  :PROPERTIES:
+  :CUSTOM_ID: section-4
+  :style: page-break-before:always; 
+  :END:
+
+#+begin_paired
+[[./images/wicked-detail.png]]
+#+end_paired
+#+begin_paired
+[[./images/wicked-bible.jpg]]
+
+#+end_paired
+
+*** Gutenberg Process
+  :PROPERTIES:
+  :CUSTOM_ID: section-5
+  :style: page-break-before:always; 
+  :END:
+
+  #+begin_export html
+  <iframe width="1200px" height="800px" src="https://www.youtube.com/embed/EMjhNhQsqsg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  #+end_export
+
+** Rarity and Endangerment 
+- what are the threats (past and present)?
+- what are responsibilities of scholars and curators?
+- how much overlap between them? 
+** Assignment 
+[[https://q.utoronto.ca/courses/127426/assignments/233045][on Quercus]]
+** Getting Started with U of T's Omeka installation
+- Go to [[https://spatial-humanities.library.utoronto.ca/admin][the U of T Spatial Humanities site admin page]], and 
+- sign in with [[https://q.utoronto.ca/courses/127426/discussion_topics/400788][the authorization info that was sent out in a recent announcement]]
 
 ** Omeka!
 @@html:<div class="paired">@@
@@ -883,7 +1069,7 @@ bibliography:/home/matt/DH/digitalhistory.bib
 [[./images/silver.png]]
 *** Items
 @@html:<div class="paired">@@
-- Items are the building blocks of Omeka sites. They alwyas have metadata (Title, Description, Sourc,e Date, etc.) and often have digital files attached (images, documents, etc.)
+- Items are the building blocks of Omeka sites. They always have metadata (Title, Description, Sourc,e Date, etc.) and often have digital files attached (images, documents, etc.)
 @@html:</div><div class="paired">@@
 [[./images/hulk-item.png]]
 @@html:</div>@@
@@ -1120,368 +1306,9 @@ To create a new Block, click on the desired layout. This block will be added as 
 - Draft and save your Item descriptions and your Exhibit content in word processing software; save this draft; 
 - Paste your content from Word into Omeka.
 
-* 07: Data Visualization -- Workshop!
-
-** Notes on Kelly's work
-
-- "Network density"? :: percentage of possible connections between nodes that are actualy present
-- Cleveland and McGill Ranging System :: [[https://amstat.tandfonline.com/doi/abs/10.1080/01621459.1984.10478080?casa_token=KKAblvivO7gAAAAA:GI1jT4SUO1ALwEG4khKyfHHznYkslFAxZJao3hC_Xv94RjodjVQ0Fs16pi8GOxRZhRUIhaZP62-EFw][Graphical Perception]] from 1984. principle finding is the ranking of elementary perceptual tasks given in Kelly's slide 36.
-- small multiples :: dividing plot into multiple individual graphsto avoid overplotting. cf [[https://flowingdata.com/2014/10/15/linked-small-multiples/][this example]]
-- treemaps :: rectangles w/ sub-rectangles.  cf. [[https://developers.google.com/chart/interactive/docs/gallery/treemap?hl=en][google charts api for treempas]]
-- Bertin's varliables :: (1967) what are the categories "selective, associative, ordered, quantitative"?
-  - selective :: is a change enough to allow us to select it from a group?
-  - associative :: is a change enou to allow us to perceive it as a group?
-  - quantitative :: is there a numerical reading obtainable from changes in this variable?
-  -  
- :: 
-- mckinlay :: what are quantitative, ordinal, and nominal categories?  
-- 
-
-
-* 08: Data Visualization 
-:PROPERTIES:
-:EXPORT_FILE_NAME: 08-data-vis
-:END:
-** Today 
-- Reflections on Tableau Workshop
-- Cautionary Tales re: Visualization
-- Peculiarities of Humanities Data
-- Some Viz Examples
-- Play Time
-** Tableau recap 
-- what was most interesting?
-- what was most difficult?
-- what are the take away lessons? 
-** What is data visualization?
-  :PROPERTIES:
-  :CUSTOM_ID: what-is-data-visualization
-  :style: page-break-before:always; 
-  :END:
-= the presentation of data, information, knowledge, or insight in a pictorial or graphical format
-
-*** pretend data 1
-  :PROPERTIES:
-  :CUSTOM_ID: xkcd-f-grapefruit-x-y-chart
-  :style: page-break-before:always; 
-  :END:
-[[https://imgs.xkcd.com/comics/fuck_grapefruit.png]]
-*** pretend data 2
-  :PROPERTIES:
-  :CUSTOM_ID: jessica-hagy-thisisindexed.com
-  :style: page-break-before:always; 
-  :END:
-http://thisisindexed.com/wp-content/uploads/2018/11/card6019.jpg
-*** pretend data 3
-  :PROPERTIES:
-  :CUSTOM_ID: jessica-hagy-thisisindexed.com-1
-  :style: page-break-before:always; 
-  :END:
-http://thisisindexed.com/wp-content/uploads/2017/11/card5371.jpg
-** Lying with Dataviz
-  :PROPERTIES:
-  :CUSTOM_ID: lying-with-dataviz
-  :style: page-break-before:always; 
-  :END:
-*** Ignoring conventions
-  :PROPERTIES:
-  :CUSTOM_ID: how-to-lie-with-data-visualization
-  :style: page-break-before:always; 
-  :END:
-#+CAPTION: [[https://i.kinja-img.com/gawker-media/image/upload/s--SKWrO6sh--/c_fit,f_auto,fl_progressive,q_80,w_636/uqs2i9txqkdyc5jkpfut.jpg][Parik, "How to Lie with Data"]]
-https://i.kinja-img.com/gawker-media/image/upload/s--SKWrO6sh--/c_fit,f_auto,fl_progressive,q_80,w_636/uqs2i9txqkdyc5jkpfut.jpg
-
-*** Cumulative Graphs
-   :PROPERTIES:
-   :CUSTOM_ID: how-to-lie-with-data-visualization-1
-   :END:
-#+CAPTION: [[https://i.kinja-img.com/gawker-media/image/upload/s--SKWrO6sh--/c_fit,f_auto,fl_progressive,q_80,w_636/uqs2i9txqkdyc5jkpfut.jpg][Parik, "How to Lie with Data"]]
-#+begin_paired 
-#+CAPTION: 2006 = 2006 + 2005 + 2004
-https://i.kinja-img.com/gawker-media/image/upload/s--dmLtGbNu--/c_fit,f_auto,fl_progressive,q_80,w_636/cpgpbbrmsc8s49ofewnc.png
-#+end_paired
-
-#+ATTR_REVEAL: frag
-#+ATTR_HTML: class fake
-#+begin_paired 
-#+CAPTION: 2006= 2006
-https://i.kinja-img.com/gawker-media/image/upload/s--4XR_eHJJ--/c_fit,f_auto,fl_progressive,q_80,w_636/gzzbt9k9isykezhw63xx.png
-#+end_paired
-
-*** Non-Zero baseline
-  :PROPERTIES:
-  :CUSTOM_ID: how-to-lie-with-data-visualization-2
-  :style: page-break-before:always; 
-  :END:
-#+CAPTION: [[https://i.kinja-img.com/gawker-media/image/upload/s--SKWrO6sh--/c_fit,f_auto,fl_progressive,q_80,w_636/uqs2i9txqkdyc5jkpfut.jpg][Parik, "How to Lie with Data"]]
-https://i.kinja-img.com/gawker-media/image/upload/ksd0huhaczb6xsxhrszp.png
-** DH-ing with Dataviz
-  :PROPERTIES:
-  :CUSTOM_ID: dh-ing-with-dataviz
-  :style: page-break-before:always; 
-  :END:
-- Unstructured Data
-  - A corpus of literary texts
-- Semi-structured Data
-  - TEI-encoded text
-- Structured Data
-  - Spreadsheet of catalogue entries
-  - collection of geocoded points in a GIS system
-*** Humanities Data: Unstructured
-  :PROPERTIES:
-  :CUSTOM_ID: humanities-data-unstructured
-  :END:
-[[./images/mandeville-cover-page.png]]
-*** Humanities Data: Semi-structured
-  :PROPERTIES:
-  :CUSTOM_ID: humanities-data-semi-structured
-  :style: page-break-before:always; 
-  :END:
-
-  #+begin_src xml
-  <msDesc>
-    <msIdentifier>
-      <settlement>Oxford
-      </settlement>
-      <repository>Bodleian Library
-      </repository>
-      <idno>MS. Add. A. 61
-      </idno>
-    </msIdentifier>
-    <msContents>
-      <p>
-        <quote>Hic incipit Bruitus Anglie,
-        </quote> the
-        <title>De origine et gestis  Regum Angliae
-        </title> of Geoffrey of Monmouth (Galfridus Monumetensis): beg.
-        <quote>Cum mecum multa &amp; de multis.
-        </quote> In Latin.
-      </p>
-    </msContents>
-    <physDesc>
-      <p>
-        <material>Parchment
-        </material>: written in more than one hand: 7¼ x 5⅜ in., I + 55 leaves, in double columns: with a few coloured capitals.
-      </p>
-    </physDesc>
-  </msDesc>
-  
-  #+end_src
-
-*** Humanities Data: Structured
-  :PROPERTIES:
-  :CUSTOM_ID: humanities-data-structured
-  :END:
-[[./images/dc-ss-list.png]]
-
-** Humanities Data:
-  :PROPERTIES:
-  :CUSTOM_ID: humanities-data-1
-  :style: page-break-before:always; 
-  :END:
-
-- What “counts" cannot necessarily be counted
-- Data representation = interpretation:
-- The process of modelling and collecting our data is an interpretive process that is shaped by our choices re. what aspects of the data we model; by our research question, argument, perspective, discipline, social context, institutional context, tools available etc.
-
-*** Is Our Data "fungible"?
-  :PROPERTIES:
-  :CUSTOM_ID: humanities-data-2
-  :style: page-break-before:always; 
-  :END:
-#+begin_quote
-“When you call something data, you imply that it exists in *discrete, fungible units*; that it is *computationally tractable*; that *its meaningful qualities can be enumerated in a finite list*; that *someone else performing the same operations on the same data will come up with the same results*. *This is not how humanists think of the material they work with*." (Miriam Posner, http://miriamposner.com/blog/humanities-data-a-necessary-contradiction/)  
-#+end_quote
-
-*** Reminder: Data and Capta
-  :PROPERTIES:
-  :CUSTOM_ID: humanities-data-3
-  :style: page-break-before:always; 
-  :END:
-
-  #+begin_quote
-  “[DH visualization tools borrowed from the sciences] carry with them assumptions of *knowledge as observer-independent and certain*, rather than *observer co-dependent and interpretative*. [...] To begin, the concept of *data as a given* has to be rethought through a humanistic lens and characterized as *capta, taken and constructed*." Johanna Drucker, “Humanities Approaches to Graphical Display."
-  #+end_quote
-
-*** Display as Argument: Visual Knowledge Creation
-  :PROPERTIES:
-  :CUSTOM_ID: display-as-argument-visual-knowledge-creation
-  :style: page-break-before:always; 
-  :END:
-
-- Data vs. Capta
-- Display as argument:
-
-#+begin_quote
-"Graphic artifacts present knowledge through the combination of symbolic codes and structured relations of these elements in a flat field. […T]he forms that are generally used for the presentation of information can be understood and read as *culturally coded expressions of knowledge with their own epistemological assumptions and historical lineage*" (Drucker, “[[https://journals.tdl.org/paj/index.php/paj/article/view/4][Graphesis: Visual Knowledge Production and Representation]]," 2011).
-#+end_quote
-
-*** Drucker's Graphesis
-  :PROPERTIES:
-  :CUSTOM_ID: graphesis
-  :style: page-break-before:always; 
-  :END:
-
-- Johanna Drucker: graphesis = “the field of knowledge production embodied in visual expressions ... a visual epistemology" (Drucker, “Graphesis" 2011)
-- Visual forms carry the assumptions and values of their fields of origin, and impose these assumptions and values on the data they present, whether these assumptions and values are appropriate to that data or not.
-- As humanists, we ask ourselves: What arguments, values, and perspectives do visualizations encode and embody? What kind of knowledge do they produce? What field's assumptions do they draw from?
-
-** Data vs. Capta -- an Illustration
-  :PROPERTIES:
-  :CUSTOM_ID: data-vs.-capta
-  :style: page-break-before:always; 
-  :END:
-
-- *Data*: “given", objective, observed
-  
-- Quantitative approaches: from concordances to corpora, from measuring word frequencies and stylometric patterns to thematic discovery through topic modelling
-  - Visual representations of quantities, trajectories, measurable relationships
-  - Wordle, Gephi, Cytoscape; pie charts, bar charts, and bubble graphs
-- Qualitative approaches: visual and performative, enacting poetics, making subjectivity and interpretation visible
-  - Maps and timelines of literary narratives; digital collections; interpretive visualizations
-
-*** Data vs. Capta: Two Maps
-  :PROPERTIES:
-  :CUSTOM_ID: section-1
-  :style: page-break-before:always; 
-  :END:
-#+CAPTION: [[https://carto.com/gallery/bbva-geo-risk/][GEOPOLITICAL TENSIONS IN MENA (Middle East & Northern Africa)]]
-https://carto.com/img/layout/gallery/bbva-geo-risk/big.6b6fed37.gif
-
-
-*** Data vs. Capta: Two Maps
-  :PROPERTIES:
-  :CUSTOM_ID: section-2
-  :style: page-break-before:always; 
-  :END:
-
-#+begin_paired
-#+CAPTION: [[https://www.bl.uk/collection-items/psalter-world-map][The PARIS PSALTER map]] (c. 1260, England)
-https://www.bl.uk/britishlibrary/~/media/bl/global/highlights/maps/psalter-map-f9.jpg
-#+end_paired
-#+begin_paired
-#+CAPTION: Detail (British Isles)
-https://www.bl.uk/britishlibrary/~/media/bl/global/highlights/maps/psalter-map-bottomleft-f9.jpg
-#+end_paired
-
-** DH Dataviz: Some Less and More Creative Examples
-  :PROPERTIES:
-  :CUSTOM_ID: dh-dataviz-examples
-  :style: page-break-before:always; 
-  :END:
-*** Network Graph
-  :PROPERTIES:
-  :CUSTOM_ID: network-graph
-  :style: page-break-before:always; 
-  :END:
-
-- Things: nodes (vertices)
-- Relationships: edges
-
-[[./images/network-graph.png]]  
-
-*** Les Miserables: Network Graph of Character Interactions
-  :PROPERTIES:
-  :CUSTOM_ID: les-miserables-network-graph-of-character-interactions
-  :style: page-break-before:always; 
-  :END:
-
-#+CAPTION: co-appearance of characters from /Les Miserables/. Data originally compiled in [[https://github.com/tangentforks/sgb/][The Stanford GraphBook]] ([[https://github.com/tangentforks/sgb/blob/master/jean.dat][original file format]]) in 1993 and made available in various forms including [[https://github.com/gephi/gephi/wiki/Datasets#social-networks][as GML by Gephi]], where it has been widely copied and modified.
-[[./images/les-mis-network.svg]]
-
-*** Word Cloud
-  :PROPERTIES:
-  :CUSTOM_ID: word-cloud
-  :style: page-break-before:always; 
-  :END:
-[[./images/rj-wordle.svg]]
-- Visualizes word frequencies in a text
-- The larger the word, the more often it appears
-
-***  [[http://lklein.com/2012/01/a-report-has-come-here-social-network-analysis-in-the-papers-of-thomas-jefferson/][The Shadow of James Hemings]]
-  :PROPERTIES:
-  :CUSTOM_ID: lauren-f.-klein-a-report-has-come-here
-  :style: page-break-before:always; 
-  :END:
-#+begin_paired
-[[./images/hemmings-relations.jpg]]
-#+end_paired
-#+begin_paired
-#+begin_quote
-"This figure is James Hemings, Thomas Jefferson's enslaved personal chef (and Sally Hemings's older brother). When Jefferson was appointed Ambassador to France, he took Hemings with him to Paris, and there apprenticed him to the chef of a prince. Through the few archival records that relate to Hemings, we also know, for instance, that while in Paris, Hemings hired his own tutor and learned to speak fluent French. And here's another thing Hemings learned in Paris: what it might mean to be free. [...]
-
-It is then a striking instantiation of archival silence that when you perform a "Name" search for a person named James Hemings in the /The Papers of Thomas Jefferson, Digital Edition/, you get no results---because Hemings, in spite of his ability to read and write in two languages--because of his status as a slave--was not a person to whom Jefferson ever wrote, or from whom Jefferson received letters."
-#+end_quote
-#+end_paired
-
-*** Mapping Imaginary Spaces
-  :PROPERTIES:
-  :CUSTOM_ID: project-paradise-a
-  :style: page-break-before:always; 
-  :END:
-[[./images/mandeville-map.jpg]]
-*** Non-Linear Timelines
-  :PROPERTIES:
-  :CUSTOM_ID: the-knotted-line
-  :style: page-break-before:always; 
-  :END:
-
-#+CAPTION: "an interactive, tactile laboratory for exploring the historical relationship between freedom and confinement in the geographic area of the United States" ([[http://knottedline.com/][http://knottedline.com]]/)
-[[./images/knotted-line.png]]
-
-*** Rewriting John Snow 
-  :PROPERTIES:
-  :CUSTOM_ID: from-johanna-druckers-humanities-approaches-to-graphical-display
-  :style: page-break-before:always; 
-  :END:
-#+begin_paired
-#+CAPTION: Dr. John Snow's visualization of cholera deaths in London, 1854.
-http://www.digitalhumanities.org/dhq/vol/5/1/000091/...000091/resources/images/figure16.jpg
-#+end_paired
-
-#+begin_paired
-#+CAPTION: Snow's chart altered. Graphic credit Xárene Eskandar
-http://www.digitalhumanities.org/dhq/vol/5/1/000091/...000091/resources/images/figure17.jpg
-#+end_paired
-
-#+begin_quote
-"Who are those dots? Each individual had a profile, age, size, health, economic potential, family and social roles. [...] But what if we take the rate of deaths, their frequency, and chart that on a temporal axis inflected by increasing panic. Then give a graphical expression to the shape of the terrain, that urban streetscape, as it is redrawn to express the emotional landscape. Then imagine drawing this same streetscape from the point of view of a mother of six young children, a recent widow, a small child, or an elderly man whose son has just died" (Drucker, “[[http://www.digitalhumanities.org/dhq/vol/5/1/000091/000091.html][Humanities Approaches]]").
-
-#+end_quote
-
-** Some Rules of Thumb
-
-- in general, creative relationships to data/capta are *more* work than rigourous but straightforward quantitative analysis
-- they require familiarity both *both* humanities concepts *and* the underlying technologies
-- humaniites tools, though, try to *lower the barrier to entry* and so *often hide the underlying technology*.
-- this lets you *play* with visualization but is rarely sufficient to bring *rela insights* and *creative accomplishments*
-
-
-** Data Visualization: Play Time
-  :PROPERTIES:
-  :CUSTOM_ID: data-visualization-practicum
-  :style: page-break-before:always; 
-  :END:
-- we have 3 texts: /Lady Susan,/, /Frankenstein/, and /Les Misérables/
-- for each of these there is also a *processed data file* and in 2 cases a *project file*
-- we will deal with them in 3 tools: [[https://cytoscape.org/][Cytoscape]] (demo only), [[http://hdlab.stanford.edu/palladio/][Palladio]], and [[https://voyant-tools.org/][voyant Tools]]
-*** Cytoscape
-- original data in *lesmis.txt*
-- project file (if you want to replicate) in *lesmis.cys*
-*** Maps & Networks with Palladio
-  :PROPERTIES:
-  :CUSTOM_ID: maps-networks-with-palladio
-  :style: page-break-before:always; 
-  :END:
-- 
-*** Text Visualization with Voyant Tools
-  :PROPERTIES:
-  :CUSTOM_ID: text-visualization-with-voyant-tools
-  :style: page-break-before:always; 
-  :END:
-- full-text visualization tool
-- try with *frankenstein.txt*, *
-
-* 09 -- Endangered Knowledge: Tears in Rain
+* {{{n}}}: Endangered Knowledge 2: Fisher Library ({{{ts}}})
+* {{{n}}}: Endangered Knowledge 3: Guest Lecture! ({{{ts}}})
+* {{{n}}} -- Endangered Knowledge: Tears in Rain ({{{ts}}})
 :PROPERTIES:
 :EXPORT_FILE_NAME: 09-danger-tears
 :END:
@@ -2154,7 +1981,369 @@ A moth ate words. That seemed to me a marvellous fate, when I heard about that w
 - *Dark archives*: secret, inaccessible archives (disaster recovery)
 
 
-* 11: Finale
+* ACTION {{{n}}}: Data 1: Data Models for the Humanities ({{{ts}}})
+* ACTION OUT OF SEQUENCE: Data Visualization Am I still doing this? 
+:PROPERTIES:
+:EXPORT_FILE_NAME: 08-data-vis
+:END:
+** Today 
+- Reflections on Tableau Workshop
+- Cautionary Tales re: Visualization
+- Peculiarities of Humanities Data
+- Some Viz Examples
+- Play Time
+** Tableau recap 
+- what was most interesting?
+- what was most difficult?
+- what are the take away lessons? 
+** What is data visualization?
+  :PROPERTIES:
+  :CUSTOM_ID: what-is-data-visualization
+  :style: page-break-before:always; 
+  :END:
+= the presentation of data, information, knowledge, or insight in a pictorial or graphical format
+
+*** pretend data 1
+  :PROPERTIES:
+  :CUSTOM_ID: xkcd-f-grapefruit-x-y-chart
+  :style: page-break-before:always; 
+  :END:
+[[https://imgs.xkcd.com/comics/fuck_grapefruit.png]]
+*** pretend data 2
+  :PROPERTIES:
+  :CUSTOM_ID: jessica-hagy-thisisindexed.com
+  :style: page-break-before:always; 
+  :END:
+http://thisisindexed.com/wp-content/uploads/2018/11/card6019.jpg
+*** pretend data 3
+  :PROPERTIES:
+  :CUSTOM_ID: jessica-hagy-thisisindexed.com-1
+  :style: page-break-before:always; 
+  :END:
+http://thisisindexed.com/wp-content/uploads/2017/11/card5371.jpg
+** Lying with Dataviz
+  :PROPERTIES:
+  :CUSTOM_ID: lying-with-dataviz
+  :style: page-break-before:always; 
+  :END:
+*** Ignoring conventions
+  :PROPERTIES:
+  :CUSTOM_ID: how-to-lie-with-data-visualization
+  :style: page-break-before:always; 
+  :END:
+#+CAPTION: [[https://i.kinja-img.com/gawker-media/image/upload/s--SKWrO6sh--/c_fit,f_auto,fl_progressive,q_80,w_636/uqs2i9txqkdyc5jkpfut.jpg][Parik, "How to Lie with Data"]]
+https://i.kinja-img.com/gawker-media/image/upload/s--SKWrO6sh--/c_fit,f_auto,fl_progressive,q_80,w_636/uqs2i9txqkdyc5jkpfut.jpg
+
+*** Cumulative Graphs
+   :PROPERTIES:
+   :CUSTOM_ID: how-to-lie-with-data-visualization-1
+   :END:
+#+CAPTION: [[https://i.kinja-img.com/gawker-media/image/upload/s--SKWrO6sh--/c_fit,f_auto,fl_progressive,q_80,w_636/uqs2i9txqkdyc5jkpfut.jpg][Parik, "How to Lie with Data"]]
+#+begin_paired 
+#+CAPTION: 2006 = 2006 + 2005 + 2004
+https://i.kinja-img.com/gawker-media/image/upload/s--dmLtGbNu--/c_fit,f_auto,fl_progressive,q_80,w_636/cpgpbbrmsc8s49ofewnc.png
+#+end_paired
+
+#+ATTR_REVEAL: frag
+#+ATTR_HTML: class fake
+#+begin_paired 
+#+CAPTION: 2006= 2006
+https://i.kinja-img.com/gawker-media/image/upload/s--4XR_eHJJ--/c_fit,f_auto,fl_progressive,q_80,w_636/gzzbt9k9isykezhw63xx.png
+#+end_paired
+
+*** Non-Zero baseline
+  :PROPERTIES:
+  :CUSTOM_ID: how-to-lie-with-data-visualization-2
+  :style: page-break-before:always; 
+  :END:
+#+CAPTION: [[https://i.kinja-img.com/gawker-media/image/upload/s--SKWrO6sh--/c_fit,f_auto,fl_progressive,q_80,w_636/uqs2i9txqkdyc5jkpfut.jpg][Parik, "How to Lie with Data"]]
+https://i.kinja-img.com/gawker-media/image/upload/ksd0huhaczb6xsxhrszp.png
+** DH-ing with Dataviz
+  :PROPERTIES:
+  :CUSTOM_ID: dh-ing-with-dataviz
+  :style: page-break-before:always; 
+  :END:
+- Unstructured Data
+  - A corpus of literary texts
+- Semi-structured Data
+  - TEI-encoded text
+- Structured Data
+  - Spreadsheet of catalogue entries
+  - collection of geocoded points in a GIS system
+*** Humanities Data: Unstructured
+  :PROPERTIES:
+  :CUSTOM_ID: humanities-data-unstructured
+  :END:
+[[./images/mandeville-cover-page.png]]
+*** Humanities Data: Semi-structured
+  :PROPERTIES:
+  :CUSTOM_ID: humanities-data-semi-structured
+  :style: page-break-before:always; 
+  :END:
+
+  #+begin_src xml
+  <msDesc>
+    <msIdentifier>
+      <settlement>Oxford
+      </settlement>
+      <repository>Bodleian Library
+      </repository>
+      <idno>MS. Add. A. 61
+      </idno>
+    </msIdentifier>
+    <msContents>
+      <p>
+        <quote>Hic incipit Bruitus Anglie,
+        </quote> the
+        <title>De origine et gestis  Regum Angliae
+        </title> of Geoffrey of Monmouth (Galfridus Monumetensis): beg.
+        <quote>Cum mecum multa &amp; de multis.
+        </quote> In Latin.
+      </p>
+    </msContents>
+    <physDesc>
+      <p>
+        <material>Parchment
+        </material>: written in more than one hand: 7¼ x 5⅜ in., I + 55 leaves, in double columns: with a few coloured capitals.
+      </p>
+    </physDesc>
+  </msDesc>
+  
+  #+end_src
+
+*** Humanities Data: Structured
+  :PROPERTIES:
+  :CUSTOM_ID: humanities-data-structured
+  :END:
+[[./images/dc-ss-list.png]]
+
+** Humanities Data:
+  :PROPERTIES:
+  :CUSTOM_ID: humanities-data-1
+  :style: page-break-before:always; 
+  :END:
+
+- What “counts" cannot necessarily be counted
+- Data representation = interpretation:
+- The process of modelling and collecting our data is an interpretive process that is shaped by our choices re. what aspects of the data we model; by our research question, argument, perspective, discipline, social context, institutional context, tools available etc.
+
+*** Is Our Data "fungible"?
+  :PROPERTIES:
+  :CUSTOM_ID: humanities-data-2
+  :style: page-break-before:always; 
+  :END:
+#+begin_quote
+“When you call something data, you imply that it exists in *discrete, fungible units*; that it is *computationally tractable*; that *its meaningful qualities can be enumerated in a finite list*; that *someone else performing the same operations on the same data will come up with the same results*. *This is not how humanists think of the material they work with*." (Miriam Posner, http://miriamposner.com/blog/humanities-data-a-necessary-contradiction/)  
+#+end_quote
+
+*** Reminder: Data and Capta
+  :PROPERTIES:
+  :CUSTOM_ID: humanities-data-3
+  :style: page-break-before:always; 
+  :END:
+
+  #+begin_quote
+  “[DH visualization tools borrowed from the sciences] carry with them assumptions of *knowledge as observer-independent and certain*, rather than *observer co-dependent and interpretative*. [...] To begin, the concept of *data as a given* has to be rethought through a humanistic lens and characterized as *capta, taken and constructed*." Johanna Drucker, “Humanities Approaches to Graphical Display."
+  #+end_quote
+
+*** Display as Argument: Visual Knowledge Creation
+  :PROPERTIES:
+  :CUSTOM_ID: display-as-argument-visual-knowledge-creation
+  :style: page-break-before:always; 
+  :END:
+
+- Data vs. Capta
+- Display as argument:
+
+#+begin_quote
+"Graphic artifacts present knowledge through the combination of symbolic codes and structured relations of these elements in a flat field. […T]he forms that are generally used for the presentation of information can be understood and read as *culturally coded expressions of knowledge with their own epistemological assumptions and historical lineage*" (Drucker, “[[https://journals.tdl.org/paj/index.php/paj/article/view/4][Graphesis: Visual Knowledge Production and Representation]]," 2011).
+#+end_quote
+
+*** Drucker's Graphesis
+  :PROPERTIES:
+  :CUSTOM_ID: graphesis
+  :style: page-break-before:always; 
+  :END:
+
+- Johanna Drucker: graphesis = “the field of knowledge production embodied in visual expressions ... a visual epistemology" (Drucker, “Graphesis" 2011)
+- Visual forms carry the assumptions and values of their fields of origin, and impose these assumptions and values on the data they present, whether these assumptions and values are appropriate to that data or not.
+- As humanists, we ask ourselves: What arguments, values, and perspectives do visualizations encode and embody? What kind of knowledge do they produce? What field's assumptions do they draw from?
+
+** Data vs. Capta -- an Illustration
+  :PROPERTIES:
+  :CUSTOM_ID: data-vs.-capta
+  :style: page-break-before:always; 
+  :END:
+
+- *Data*: “given", objective, observed
+  
+- Quantitative approaches: from concordances to corpora, from measuring word frequencies and stylometric patterns to thematic discovery through topic modelling
+  - Visual representations of quantities, trajectories, measurable relationships
+  - Wordle, Gephi, Cytoscape; pie charts, bar charts, and bubble graphs
+- Qualitative approaches: visual and performative, enacting poetics, making subjectivity and interpretation visible
+  - Maps and timelines of literary narratives; digital collections; interpretive visualizations
+
+*** Data vs. Capta: Two Maps
+  :PROPERTIES:
+  :CUSTOM_ID: section-1
+  :style: page-break-before:always; 
+  :END:
+#+CAPTION: [[https://carto.com/gallery/bbva-geo-risk/][GEOPOLITICAL TENSIONS IN MENA (Middle East & Northern Africa)]]
+https://carto.com/img/layout/gallery/bbva-geo-risk/big.6b6fed37.gif
+
+
+*** Data vs. Capta: Two Maps
+  :PROPERTIES:
+  :CUSTOM_ID: section-2
+  :style: page-break-before:always; 
+  :END:
+
+#+begin_paired
+#+CAPTION: [[https://www.bl.uk/collection-items/psalter-world-map][The PARIS PSALTER map]] (c. 1260, England)
+https://www.bl.uk/britishlibrary/~/media/bl/global/highlights/maps/psalter-map-f9.jpg
+#+end_paired
+#+begin_paired
+#+CAPTION: Detail (British Isles)
+https://www.bl.uk/britishlibrary/~/media/bl/global/highlights/maps/psalter-map-bottomleft-f9.jpg
+#+end_paired
+
+** DH Dataviz: Some Less and More Creative Examples
+  :PROPERTIES:
+  :CUSTOM_ID: dh-dataviz-examples
+  :style: page-break-before:always; 
+  :END:
+*** Network Graph
+  :PROPERTIES:
+  :CUSTOM_ID: network-graph
+  :style: page-break-before:always; 
+  :END:
+
+- Things: nodes (vertices)
+- Relationships: edges
+
+[[./images/network-graph.png]]  
+
+*** Les Miserables: Network Graph of Character Interactions
+  :PROPERTIES:
+  :CUSTOM_ID: les-miserables-network-graph-of-character-interactions
+  :style: page-break-before:always; 
+  :END:
+
+#+CAPTION: co-appearance of characters from /Les Miserables/. Data originally compiled in [[https://github.com/tangentforks/sgb/][The Stanford GraphBook]] ([[https://github.com/tangentforks/sgb/blob/master/jean.dat][original file format]]) in 1993 and made available in various forms including [[https://github.com/gephi/gephi/wiki/Datasets#social-networks][as GML by Gephi]], where it has been widely copied and modified.
+[[./images/les-mis-network.svg]]
+
+*** Word Cloud
+  :PROPERTIES:
+  :CUSTOM_ID: word-cloud
+  :style: page-break-before:always; 
+  :END:
+[[./images/rj-wordle.svg]]
+- Visualizes word frequencies in a text
+- The larger the word, the more often it appears
+
+***  [[http://lklein.com/2012/01/a-report-has-come-here-social-network-analysis-in-the-papers-of-thomas-jefferson/][The Shadow of James Hemings]]
+  :PROPERTIES:
+  :CUSTOM_ID: lauren-f.-klein-a-report-has-come-here
+  :style: page-break-before:always; 
+  :END:
+#+begin_paired
+[[./images/hemmings-relations.jpg]]
+#+end_paired
+#+begin_paired
+#+begin_quote
+"This figure is James Hemings, Thomas Jefferson's enslaved personal chef (and Sally Hemings's older brother). When Jefferson was appointed Ambassador to France, he took Hemings with him to Paris, and there apprenticed him to the chef of a prince. Through the few archival records that relate to Hemings, we also know, for instance, that while in Paris, Hemings hired his own tutor and learned to speak fluent French. And here's another thing Hemings learned in Paris: what it might mean to be free. [...]
+
+It is then a striking instantiation of archival silence that when you perform a "Name" search for a person named James Hemings in the /The Papers of Thomas Jefferson, Digital Edition/, you get no results---because Hemings, in spite of his ability to read and write in two languages--because of his status as a slave--was not a person to whom Jefferson ever wrote, or from whom Jefferson received letters."
+#+end_quote
+#+end_paired
+
+*** Mapping Imaginary Spaces
+  :PROPERTIES:
+  :CUSTOM_ID: project-paradise-a
+  :style: page-break-before:always; 
+  :END:
+[[./images/mandeville-map.jpg]]
+*** Non-Linear Timelines
+  :PROPERTIES:
+  :CUSTOM_ID: the-knotted-line
+  :style: page-break-before:always; 
+  :END:
+
+#+CAPTION: "an interactive, tactile laboratory for exploring the historical relationship between freedom and confinement in the geographic area of the United States" ([[http://knottedline.com/][http://knottedline.com]]/)
+[[./images/knotted-line.png]]
+
+*** Rewriting John Snow 
+  :PROPERTIES:
+  :CUSTOM_ID: from-johanna-druckers-humanities-approaches-to-graphical-display
+  :style: page-break-before:always; 
+  :END:
+#+begin_paired
+#+CAPTION: Dr. John Snow's visualization of cholera deaths in London, 1854.
+http://www.digitalhumanities.org/dhq/vol/5/1/000091/...000091/resources/images/figure16.jpg
+#+end_paired
+
+#+begin_paired
+#+CAPTION: Snow's chart altered. Graphic credit Xárene Eskandar
+http://www.digitalhumanities.org/dhq/vol/5/1/000091/...000091/resources/images/figure17.jpg
+#+end_paired
+
+#+begin_quote
+"Who are those dots? Each individual had a profile, age, size, health, economic potential, family and social roles. [...] But what if we take the rate of deaths, their frequency, and chart that on a temporal axis inflected by increasing panic. Then give a graphical expression to the shape of the terrain, that urban streetscape, as it is redrawn to express the emotional landscape. Then imagine drawing this same streetscape from the point of view of a mother of six young children, a recent widow, a small child, or an elderly man whose son has just died" (Drucker, “[[http://www.digitalhumanities.org/dhq/vol/5/1/000091/000091.html][Humanities Approaches]]").
+
+#+end_quote
+
+** Some Rules of Thumb
+
+- in general, creative relationships to data/capta are *more* work than rigourous but straightforward quantitative analysis
+- they require familiarity both *both* humanities concepts *and* the underlying technologies
+- humaniites tools, though, try to *lower the barrier to entry* and so *often hide the underlying technology*.
+- this lets you *play* with visualization but is rarely sufficient to bring *rela insights* and *creative accomplishments*
+
+
+** Data Visualization: Play Time
+  :PROPERTIES:
+  :CUSTOM_ID: data-visualization-practicum
+  :style: page-break-before:always; 
+  :END:
+- we have 3 texts: /Lady Susan,/, /Frankenstein/, and /Les Misérables/
+- for each of these there is also a *processed data file* and in 2 cases a *project file*
+- we will deal with them in 3 tools: [[https://cytoscape.org/][Cytoscape]] (demo only), [[http://hdlab.stanford.edu/palladio/][Palladio]], and [[https://voyant-tools.org/][voyant Tools]]
+*** Cytoscape
+- original data in *lesmis.txt*
+- project file (if you want to replicate) in *lesmis.cys*
+*** Maps & Networks with Palladio
+  :PROPERTIES:
+  :CUSTOM_ID: maps-networks-with-palladio
+  :style: page-break-before:always; 
+  :END:
+- 
+*** Text Visualization with Voyant Tools
+  :PROPERTIES:
+  :CUSTOM_ID: text-visualization-with-voyant-tools
+  :style: page-break-before:always; 
+  :END:
+- full-text visualization tool
+- try with *frankenstein.txt*, *
+
+* {{{n}}}: Data 2: OpenRefine Workshop! ({{{ts}}})
+* {{{n}}}: Data Visualization -- Workshop! ({{{ts}}})
+
+** Notes on Kelly's work
+
+- "Network density"? :: percentage of possible connections between nodes that are actualy present
+- Cleveland and McGill Ranging System :: [[https://amstat.tandfonline.com/doi/abs/10.1080/01621459.1984.10478080?casa_token=KKAblvivO7gAAAAA:GI1jT4SUO1ALwEG4khKyfHHznYkslFAxZJao3hC_Xv94RjodjVQ0Fs16pi8GOxRZhRUIhaZP62-EFw][Graphical Perception]] from 1984. principle finding is the ranking of elementary perceptual tasks given in Kelly's slide 36.
+- small multiples :: dividing plot into multiple individual graphsto avoid overplotting. cf [[https://flowingdata.com/2014/10/15/linked-small-multiples/][this example]]
+- treemaps :: rectangles w/ sub-rectangles.  cf. [[https://developers.google.com/chart/interactive/docs/gallery/treemap?hl=en][google charts api for treempas]]
+- Bertin's varliables :: (1967) what are the categories "selective, associative, ordered, quantitative"?
+  - selective :: is a change enough to allow us to select it from a group?
+  - associative :: is a change enou to allow us to perceive it as a group?
+  - quantitative :: is there a numerical reading obtainable from changes in this variable?
+  -  
+ :: 
+- mckinlay :: what are quantitative, ordinal, and nominal categories?  
+- 
+
+* {{{n}}}: Finale ({{{ts}}}) 
 :PROPERTIES:
 :EXPORT_FILE_NAME: 11-finale
 :END:
@@ -2406,3 +2595,167 @@ node [shape=box,style="filled,rounded",color=".7 .3 1.0"];
 #+RESULTS:
 [[file:./images/tech-in-practice.svg]]
 
+
+
+* Appendix: More Complex  XML Example (where is this from?) 
+:PROPERTIES:
+:CUSTOM_ID: appendix-more-complex-example
+:END:
+
+** introc
+It may help you to see a few more tags. Here is a slightly more complex example, with a more completely marked-up selection of the poem. I have *not* annotated this example, but it showcases a few more features of the systems we're learning.  In particular, this example introduces:
+- [[https://www.w3schools.com/cssref/css_colors_legal.asp][more complex colors]]
+- [[https://www.w3schools.com/tags/tag_a.asp][the "a" or hyperlink tag]]
+- [[https://stackoverflow.com/questions/10395488/how-to-concat-a-string-to-xslvalue-of-select][curly braces as a shortcut for xpaths]]
+- [[https://stackoverflow.com/questions/11744465/xpath-difference-between-node-and-text][the somewhat confusing xpath test "node"]], which sometimes makes sense to use when "current()" doesn't produce the effect you want.
+** Coce
+:PROPERTIES:
+:reveal_extra_attr: class="splitc"
+:END:
+
+#+begin_slideblock
+#+begin_src sh :exports results :noweb yes :var xml=xml-in :var xslt=xslt-in :results html :wrap src html
+
+#cat (echo $xml)
+echo $xslt > temp.xslt
+echo $xml > temp.xml
+xsltproc temp.xslt temp.xml
+#+end_src
+
+#+RESULTS:
+#+begin_src html
+<html><body>
+<h1>The Ruin</h1>
+<table><table> <tr>
+<td style="padding-right:10px; color:gray">1</td>
+<td style="color:white;">This <strong style="color:black;">wall-stone</strong> is <span style="color:green">wondrous</span>; <span style="background-color: rgba(250,20,20,0.3)">fates broke it</span>
+</td>
+</tr> <tr>
+<td style="padding-right:10px; color:gray">2</td>
+<td style="color:white;">
+<strong style="color:black;">courtyard pavements</strong> were smashed; the <strong style="color:black;">work</strong> of <strong style="color:black;">giants</strong> is decaying.</td>
+</tr> <tr>
+<td style="padding-right:10px; color:gray">3</td>
+<td style="color:white;">
+<strong style="color:black;">Roofs</strong> are fallen, ruinous <strong style="color:black;">towers</strong>,</td>
+</tr> <tr>
+<td style="padding-right:10px; color:gray">4</td>
+<td style="color:white;"> the frosty <strong style="color:black;">gate</strong> with <strong style="color:black;">frost</strong> on <strong style="color:black;">cement</strong> is <a style="background-color: rgba(20,250,20,0.3)" href="https://www-oed-com.myaccess.library.utoronto.ca/search?q=ravaged">ravaged</a>, </td>
+</tr> </table></table>
+</body></html>
+#+end_src
+
+
+#+end_slideblock
+
+#+begin_slideblock
+#+NAME: xml-in
+#+begin_src xml
+<?xml version="1.0" encoding="UTF-8"?>
+<poem>
+  <l n="1">This <concrete-noun>wall-stone</concrete-noun> is <adjective>wondrous</adjective>; <hyperbole>fates broke it</hyperbole></l>
+  <l n="2"><concrete-noun>courtyard pavements</concrete-noun> were smashed; the <concrete-noun>work</concrete-noun> of <concrete-noun>giants</concrete-noun> is decaying.</l>
+  <l n="3"><concrete-noun>Roofs</concrete-noun> are fallen, ruinous <concrete-noun>towers</concrete-noun>,</l>
+  <l n="4"> the frosty <concrete-noun>gate</concrete-noun> with <concrete-noun>frost</concrete-noun> on <concrete-noun>cement</concrete-noun> is <hard-word>ravaged</hard-word>, </l>
+</poem>
+#+end_src
+
+#+end_slideblock
+
+#+begin_slideblock
+#+NAME: xslt-in
+#+begin_src xml
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+  <xsl:template match="/">
+    <html>
+      <body>
+        <h1>The Ruin</h1>
+        <table>
+          <xsl:apply-templates select="node()"/>
+        </table>
+      </body>
+    </html>
+  </xsl:template>
+
+  <xsl:template match="poem">
+    <table>
+      <xsl:apply-templates select="node()"/>
+    </table>
+  </xsl:template>
+
+  <xsl:template match="l">
+    <tr>
+      <td style="padding-right:10px; color:gray">
+        <xsl:value-of select="@n"/>
+      </td>
+      <td style="color:white;">
+        <xsl:apply-templates select="node()"/>
+      </td>
+    </tr>
+  </xsl:template>
+
+  <xsl:template match="concrete-noun">
+    <strong style="color:black;">
+      <xsl:apply-templates select="node()"/>
+    </strong>
+  </xsl:template>
+  <xsl:template match="adjective">
+    <span style="color:green">
+      <xsl:apply-templates select="node()"/>
+    </span>
+  </xsl:template>
+
+  <xsl:template match="hyperbole">
+    <span style="background-color: rgba(250,20,20,0.3)">
+      <xsl:apply-templates select="node()"/>
+    </span>
+  </xsl:template>
+
+  <xsl:template match="hard-word">
+    <a style="background-color: rgba(20,250,20,0.3)" href="https://www-oed-com.myaccess.library.utoronto.ca/search?q={current()}">
+      <xsl:apply-templates select="node()"/>
+    </a>
+  </xsl:template>
+
+</xsl:stylesheet>
+
+#+end_src
+
+
+
+#+end_slideblock
+
+** COMMENT xml language
+#+begin_src emacs-lisp
+(add-to-list 'org-src-lang-modes '("xml" . nxml))
+;; (defvar org-babel-default-header-args:inline-js
+;;   '((:results . "html")
+;; g    (:exports . "results")))
+
+
+(defun org-babel-execute:xml (body params)
+  (let ((full-body (org-babel-expand-body:generic
+		    body params (org-babel-variable-assignments:js params))))
+    full-body))
+#+end_src
+
+#+RESULTS:
+: org-babel-execute:xml
+
+#+begin_src shell
+  echo ${TERM}
+  echo ${0}
+#+end_src
+
+#+RESULTS:
+| dumb     |
+| /bin/zsh |
+
+
+* COMMENT Variables
+# Local Variables:
+# org-time-stamp-custom-formats: ("<%b. %d>" . "<%Y-%m-%d %H:%M>")
+# org-mwp-classtimes-calibrate: ( "<2019-08-29 Thu>" )
+# End:  
