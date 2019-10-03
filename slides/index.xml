@@ -30,11 +30,11 @@
     
     <item>
       <title></title>
-      <link>https://digitalhistory.github.io/wdw235/slides/03-omeka-and-assignment/</link>
+      <link>https://digitalhistory.github.io/wdw235/slides/05-enangered-books-omeka/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://digitalhistory.github.io/wdw235/slides/03-omeka-and-assignment/</guid>
-      <description>03: Omeka and The Final Assignment .underline { text-decoration: underline; }   if( window.location.search.match( /print-pdf/gi ) ) { var link = document.createElement( &#39;link&#39; ); link.rel = &#39;stylesheet&#39;; link.type = &#39;text/css&#39;; link.href = &#39;../../vendor/reveal//css/print/pdf.css&#39;; document.getElementsByTagName( &#39;head&#39; )[0].appendChild( link ); }    03: Omeka and The Final Assignment Matt Price  (view this presentation in another theme: Black (default) - White - League - Sky - Beige - Simple Serif - Blood - Night - Moon - Solarized )	--   Today  Assignment Discussion Omeka Introduction Rare Books Visit     Assignment  online or on Quercus    Getting Started with omeka.</description>
+      <guid>https://digitalhistory.github.io/wdw235/slides/05-enangered-books-omeka/</guid>
+      <description>5: Endangered Knowledge 1: Omeka and The Final Assignment (Oct. 03) .underline { text-decoration: underline; }   /* Position computations of klipse get confused by reveal.js&#39;s scaling. Hence, scaling should be disabled with this code. Fix height of code area with scrollbar (use overflow instead of overflow-y to restore CodeMirror setting afterwards): */ .reveal section pre { max-height: 70vh; height: auto; overflow: auto; } /* Reset some reveal.js and oer-reveal settings: */ .</description>
     </item>
     
     <item>
