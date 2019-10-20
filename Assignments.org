@@ -60,7 +60,7 @@ You may select any project you like from the syllabus or from one of the pages b
 This project profile is not an essay; it is a short, 2-3 page report. You do not need to write a formal introduction, thesis, argument, or conclusion. You should only report on your observations, using the questions below as categories of analysis, each with its own heading. Not all categories and questions apply to all projects, so *do not feel obligated to respond to all of them*. Your project profile will be evaluated for [[http://www.artsci.utoronto.ca/newstudents/transition/academic/grading][accuracy, clarity, detail, quality of analysis, and insight]].
 
 
-1. *Project:* What is the name of the project? Who are its primary authors?
+1. *Project:* What is the name of the project? Who are its primary authors? Be sure to include one or more links in the first paragraph of your assignment, so we can navigate quickly to the project itself. 
 
 2. *Topic:* What is the project about? (Examples: What topic and historical period does it focus on? What texts or art works or other material does it collect, explain, map, or analyze? What questions is the project seeking to answer?)
 
