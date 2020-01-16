@@ -102,56 +102,11 @@ You may select any project you like from the syllabus or from one of the pages b
     
     <item>
       <title></title>
-      <link>https://digitalhistory.github.io/wdw235/slides/01-intro/</link>
+      <link>https://digitalhistory.github.io/wdw235/slides/02-maps/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://digitalhistory.github.io/wdw235/slides/01-intro/</guid>
-      <description>01: Digital Humanities &amp;#x2013; An Introduction .underline { text-decoration: underline; }   if( window.location.search.match( /print-pdf/gi ) ) { var link = document.createElement( &#39;link&#39; ); link.rel = &#39;stylesheet&#39;; link.type = &#39;text/css&#39;; link.href = &#39;../../vendor/reveal//css/print/pdf.css&#39;; document.getElementsByTagName( &#39;head&#39; )[0].appendChild( link ); }    01: Digital Humanities &amp;#x2013; An Introduction Matt Price  (view this presentation in another theme: Black (default) - White - League - Sky - Beige - Simple Serif - Blood - Night - Moon - Solarized )	--   Today  Intro A partial history Course syllabus What is DH?</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://digitalhistory.github.io/wdw235/slides/02-anatomy-dh-projects/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://digitalhistory.github.io/wdw235/slides/02-anatomy-dh-projects/</guid>
-      <description>02: Anatomy of DH Projects .underline { text-decoration: underline; }   /* Position computations of klipse get confused by reveal.js&#39;s scaling. Hence, scaling should be disabled with this code. Fix height of code area with scrollbar (use overflow instead of overflow-y to restore CodeMirror setting afterwards): */ .reveal section pre { max-height: 70vh; height: auto; overflow: auto; } /* Reset some reveal.js and oer-reveal settings: */ .reveal section pre .</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://digitalhistory.github.io/wdw235/slides/05-enangered-books-omeka/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://digitalhistory.github.io/wdw235/slides/05-enangered-books-omeka/</guid>
-      <description>5: Endangered Knowledge 1: Omeka and The Final Assignment (Oct. 03) .underline { text-decoration: underline; }   /* Position computations of klipse get confused by reveal.js&#39;s scaling. Hence, scaling should be disabled with this code. Fix height of code area with scrollbar (use overflow instead of overflow-y to restore CodeMirror setting afterwards): */ .reveal section pre { max-height: 70vh; height: auto; overflow: auto; } /* Reset some reveal.js and oer-reveal settings: */ .</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://digitalhistory.github.io/wdw235/slides/07-tears-in-rain/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://digitalhistory.github.io/wdw235/slides/07-tears-in-rain/</guid>
-      <description>Today .underline { text-decoration: underline; }   /* Position computations of klipse get confused by reveal.js&#39;s scaling. Hence, scaling should be disabled with this code. Fix height of code area with scrollbar (use overflow instead of overflow-y to restore CodeMirror setting afterwards): */ .reveal section pre { max-height: 70vh; height: auto; overflow: auto; } /* Reset some reveal.js and oer-reveal settings: */ .reveal section pre .CodeMirror pre { font-size: 2em; box-shadow: none; width: auto; padding: 0.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://digitalhistory.github.io/wdw235/slides/08-data-vis/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://digitalhistory.github.io/wdw235/slides/08-data-vis/</guid>
-      <description>08: Data Visualization .underline { text-decoration: underline; }   if( window.location.search.match( /print-pdf/gi ) ) { var link = document.createElement( &#39;link&#39; ); link.rel = &#39;stylesheet&#39;; link.type = &#39;text/css&#39;; link.href = &#39;../../vendor/reveal//css/print/pdf.css&#39;; document.getElementsByTagName( &#39;head&#39; )[0].appendChild( link ); }    08: Data Visualization Matt Price  (view this presentation in another theme: Black (default) - White - League - Sky - Beige - Simple Serif - Blood - Night - Moon - Solarized )	--   Today  Reflections on Tableau Workshop Cautionary Tales re: Visualization Peculiarities of Humanities Data Some Viz Examples Play Time     Tableau recap  what was most interesting?</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://digitalhistory.github.io/wdw235/slides/11-finale/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://digitalhistory.github.io/wdw235/slides/11-finale/</guid>
-      <description>11: Finale .underline { text-decoration: underline; }   if( window.location.search.match( /print-pdf/gi ) ) { var link = document.createElement( &#39;link&#39; ); link.rel = &#39;stylesheet&#39;; link.type = &#39;text/css&#39;; link.href = &#39;../../vendor/reveal//css/print/pdf.css&#39;; document.getElementsByTagName( &#39;head&#39; )[0].appendChild( link ); }    11: Finale Matt Price  (view this presentation in another theme: Black (default) - White - League - Sky - Beige - Simple Serif - Blood - Night - Moon - Solarized )	--   Introduction to Digital Humanities    Course Topics  Digital Humanities: A History Anatomy of DH Projects Archives: Endangered, Lost, Banned, Censored Books (visit to Thomas Fischer Rare Book Library) How to Read with DH Data: Zoom In, Zoom Out, Tell Stories, Play Games Interfaces, Users, and Usability Communities, Libraries, and Possible Futures     Learning Goals  Digital Humanities (DH) is a discipline at the intersections of the humanities with computing.</description>
+      <guid>https://digitalhistory.github.io/wdw235/slides/02-maps/</guid>
+      <description>02: Maps .underline { text-decoration: underline; }   /* Position computations of klipse get confused by reveal.js&#39;s scaling. Hence, scaling should be disabled with this code. Fix height of code area with scrollbar (use overflow instead of overflow-y to restore CodeMirror setting afterwards): */ .reveal section pre { max-height: 70vh; height: auto; overflow: auto; } /* Reset some reveal.js and oer-reveal settings: */ .reveal section pre .CodeMirror pre { font-size: 2em; box-shadow: none; width: auto; padding: 0.</description>
     </item>
     
     <item>
