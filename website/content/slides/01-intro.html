@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>01: Introduction</title>
+<meta name="author" content="Matt Price"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="../../vendor/reveal//css/reveal.css"/>
+
+<link rel="stylesheet" href="../../vendor/reveal//css/theme/matt.css" id="theme"/>
+
+<link rel="stylesheet" href=""/>
+<link rel="stylesheet" href="../../vendor/reveal//lib/css/zenburn.css"/>
+<link rel="stylesheet" href="https://sandbox.hackinghistory.ca/vendor/klipse/codemirror.css"/>
+<style>
+/* Position computations of klipse get confused by reveal.js's scaling.
+   Hence, scaling should be disabled with this code.  Fix height of code area
+   with scrollbar (use overflow instead of overflow-y to restore CodeMirror
+   setting afterwards): */
+.reveal section pre { max-height: 70vh; height: auto; overflow: auto; }
+/* Reset some reveal.js and oer-reveal settings: */
+.reveal section pre .CodeMirror pre { font-size: 2em; box-shadow: none; width: auto; padding: 0.4em; display: block; overflow: visible; }
+/* Enlarge cursor: */
+.CodeMirror-cursor { border-left: 3px solid black; }
+</style>
+<script>
+    window.klipse_settings = {
+        selector: '.language-klipse',
+        selector_eval_html: '.language-klipse-html',
+        selector_eval_js: '.language-klipse-javascript',
+        selector_eval_js: '.language-klipse-js',
+        selector_eval_php: '.language-klipse-php',
+        selector_eval_python_client: '.language-klipse-python',
+        selector_eval_ruby: '.language-klipse-ruby',
+        selector_eval_scheme: '.language-klipse-scheme',
+        selector_sql: '.language-klipse-sql'
+    };
+</script>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = '../../vendor/reveal//css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide">
+<h1>01: Introduction</h1>
+<h3>Matt Price  </h3>
+<!-- <p class="title-theme-choice">(view this presentation in another theme: 
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/black.css')); return false;">Black (default)</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/white.css')); return false;">White</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/league.css')); return false;">League</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/sky.css')); return false;">Sky</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/beige.css')); return false;">Beige</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/simple.css')); return false;">Simple</a> 
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/serif.css')); return false;">Serif</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/blood.css')); return false;">Blood</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/night.css')); return false;">Night</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/moon.css')); return false;">Moon</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/solarized.css')); return false;">Solarized</a> 
+				)	</p> -->
+
+</section>
+<section>
+<section id="slide-goals">
+<h2 id="goals">Goals</h2>
+<p>
+By the end of this lecture, you will:
+</p>
+
+<form><ul>
+<li>Be able to define: digital humanities; spatial digital humanities; GIS; virtual reality vs. augmented reality</li>
+<li>Be able to think about maps as interpretations and abstractions of space</li>
+
+</ul></form>
+
+</section>
+</section>
+<section>
+<section id="slide-digital-humanities-dh">
+<h2 id="digital-humanities-dh">Digital Humanities (DH)</h2>
+</section>
+<section id="slide-dh-at-the-fluctuating-intersections-of-the-humanities-with-computing">
+<h3 id="dh-at-the-fluctuating-intersections-of-the-humanities-with-computing">DH: at the fluctuating intersections of the humanities with computing</h3>
+
+<figure>
+<img src="../../ox-hugo/hum-cs-interface.svg" alt="hum-cs-interface.svg">
+
+</figure>
+<aside class="notes">
+<form><ul>
+<li>note the influences go in two directions!</li>
+<li>what does this tell us exactly?</li>
+<li>not a static definition!</li>
+<li>far enough away from the interface, it is just "humanities" or "computer science"</li>
+
+</ul></form>
+
+</aside>
+</section>
+<section id="slide-section-4">
+<h3 id="section-4">Timeline</h3>
+
+<figure>
+<img src="../../ox-hugo/dh-history.png" alt="dh-history.png">
+
+</figure>
+</section>
+<section id="slide-orge188730">
+<h3 id="orge188730">At U of T</h3>
+<form><ul>
+<li>UofT DHN (Digital Humanities Network): 215+ members,</li>
+<li>142 research faculty</li>
+
+</ul></form>
+
+</section>
+</section>
+<section>
+<section id="slide-section-5">
+<h2 id="section-5">Spatial DH</h2>
+
+<figure>
+<img src="../../ox-hugo/spatial-hum-diagram.png" alt="spatial-hum-diagram.png">
+
+</figure>
+
+</section>
+</section>
+<section>
+<section id="slide-spatial-dh">
+<h2 id="spatial-dh">Spatial DH</h2>
+<form><ul>
+<li>Digital mapping (historical data or imaginary spaces): plotting historical or literary data (urban economy, pilgrim routes, a character's journey in a book) onto a modern, historical, or imaginary map</li>
+<li>GIS (Geographical Information System): a system that stores, presents, and analyzes spatial data. Points in this system are identified by location (longitude, latitude, elevation); they are <b>real places on georeferenced maps</b>.
+<form><ul>
+<li>(Well, <b>usually</b> that's true. not always!)</li>
+
+</ul></form></li>
+<li>Digital archives: digital (or digitized) collections of primary documents about a place or a community; more broadly, collections of primary documents, e.g. manuscripts, annotated books, letters, photographs, etc.</li>
+<li>Augmented/virtual reality: using computing to overlay virtual elements onto real landscapes (AR), or using computing tech to simulate an immersive, interactive, three-dimensional virtual environment</li>
+<li>3D printing: turning a digital model into a real object through additive manufacturing (delicate layering of plastic via 3D printer machine)</li>
+
+</ul></form>
+
+</section>
+</section>
+<section>
+<section id="slide-org7bd6c74">
+<h2 id="org7bd6c74">Let's start by&#x2026;</h2>
+<p>
+Drawing a map!
+</p>
+
+<p>
+(this is even for those of us who suck at drawing)
+</p>
+</section>
+</section>
+<section>
+<section id="slide-org3031cc0">
+<h2 id="org3031cc0">What is a map?</h2>
+
+<figure>
+<img src="https://www.mapsofworld.com/maps/world-political-map-new.jpg" alt="world-political-map-new.jpg">
+
+</figure>
+</section>
+<section id="slide-physical-map-of-canada.-wikipedia.">
+<h3 id="physical-map-of-canada.-wikipedia.">Physical map of Ontario.</h3>
+
+<figure>
+<img src="https://upload.wikimedia.org/wikipedia/en/9/9d/Map_ont.jpg" alt="Map_ont.jpg">
+
+</figure>
+</section>
+<section id="slide-the-map-of-the-world.-clay-tablet-babylon-6th-century-bce.-british-museum.">
+<h3 id="the-map-of-the-world.-clay-tablet-babylon-6th-century-bce.-british-museum.">The Map of the World. Clay tablet, Babylon, 6th century BCE. British Museum.</h3>
+
+<figure>
+<img src="https://upload.wikimedia.org/wikipedia/commons/b/bc/The_Babylonian_map_of_the_world%2C_from_Sippar%2C_Mesopotamia..JPG" alt="The_Babylonian_map_of_the_world%2C_from_Sippar%2C_Mesopotamia..JPG">
+
+</figure>
+
+</section>
+<section id="slide-org14abbb7">
+<h3 id="org14abbb7">The Map of the World (medieval mappa mundi).</h3>
+<p>
+Map Psalter, England, c. 1265. British Library.
+<img src="https://www.bl.uk/britishlibrary/~/media/bl/global/highlights/maps/psalter-map-f9.jpg" alt="psalter-map-f9.jpg">
+</p>
+
+</section>
+<section id="slide-orgf02b847">
+<h3 id="orgf02b847">God Holding the World (obverse page of Map Psalter)</h3>
+
+<figure>
+<img src="https://www.bl.uk/britishlibrary/~/media/bl/global/the%20middle%20ages/collection%20items/add_ms_28681_f009v.jpg" alt="add_ms_28681_f009v.jpg">
+
+</figure>
+
+
+</section>
+<section id="slide-org25386d2">
+<h3 id="org25386d2">Matthew Paris's Map of the Route to Jerusalem. St Albans, c.1250</h3>
+<p>
+British Library Royal MS 14 C vii, f. 5
+<img src="https://www.bl.uk/britishlibrary/~/media/bl/global/highlights/maps/matthew-paris-itinerary-map-f2.jpg" alt="matthew-paris-itinerary-map-f2.jpg">
+</p>
+
+</section>
+<section id="slide-org05d4d1f">
+<h3 id="org05d4d1f">London</h3>
+
+<figure>
+<img src="https://media.nationalgeographic.org/assets/photos/000/276/27636.jpg" alt="27636.jpg">
+
+</figure>
+</section>
+<section id="slide-org3ecb77b">
+<h3 id="org3ecb77b">Also London</h3>
+
+<figure>
+<img src="https://tfl.gov.uk/cdn/static/cms/images/tube-map.gif" alt="tube-map.gif">
+
+</figure>
+</section>
+<section id="slide-orgbb80003">
+<h3 id="orgbb80003">Paris</h3>
+
+<figure>
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Mark_Twain%27s_Map_of_Paris%2C_1870_%28flipped%29_-_Cornell_University_Library.jpg" alt="Mark_Twain%27s_Map_of_Paris%2C_1870_%28flipped%29_-_Cornell_University_Library.jpg">
+
+</figure>
+</section>
+<section id="slide-org83b8eee">
+<h3 id="org83b8eee">Mountain?</h3>
+
+<figure>
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Zentralbibliothek_Z%C3%BCrich_-_Ideen_zu_einer_Geographie_der_Pflanzen_nebst_einem_Naturgem%C3%A4lde_der_Tropenl%C3%A4nder_-_000012142.jpg" alt="Zentralbibliothek_Z%C3%BCrich_-_Ideen_zu_einer_Geographie_der_Pflanzen_nebst_einem_Naturgem%C3%A4lde_der_Tropenl%C3%A4nder_-_000012142.jpg">
+
+</figure>
+</section>
+<section id="slide-orgf287178">
+<h3 id="orgf287178">Knowledge?</h3>
+
+<figure>
+<img src="http://philosophy.talons43.ca/files/2016/06/New-Mind-Map_5c9bm4ud-2.jpg" alt="New-Mind-Map_5c9bm4ud-2.jpg">
+
+</figure>
+</section>
+<section id="slide-org2025c22">
+<h3 id="org2025c22">Hanover</h3>
+
+<figure>
+<img src="https://www.bytwerk.com/gpa/images/vb/vb-atlas-hannover.jpg" alt="vb-atlas-hannover.jpg">
+
+</figure>
+</section>
+<section id="slide-org06c1185">
+<h3 id="org06c1185">An Emotional Map of Canada</h3>
+<p>
+<a href="http://shelleygodwinarchive.org/">http://shelleygodwinarchive.org/</a>
+</p>
+</section>
+</section>
+<section>
+<section id="slide-over-to-you">
+<h2 id="over-to-you">Over to you</h2>
+<form><ul>
+<li><a href="http://decima-map.net/">http://decima-map.net/</a></li>
+<li><a href="http://discover.medievalchester.ac.uk">http://discover.medievalchester.ac.uk/</a></li>
+<li><a href="http://mappingislamophobia.org/">http://mappingislamophobia.org/</a></li>
+<li><a href="http://xpmethod.plaintext.in/torn-apart/volume/1/">http://xpmethod.plaintext.in/torn-apart/volume/1/</a></li>
+<li><a href="http://neatline.org/demos/">http://neatline.org/demos/</a></li>
+
+</ul></form>
+
+</section>
+<section id="slide-step-0-find-a-partner">
+<h3 id="step-0-find-a-partner">Step 0: Find a partner</h3>
+<form><ul>
+<li>Find a partner. Sit together at one computer and open your browser.</li>
+<li>One of you will be the Navigator, clicking around.</li>
+<li>The other will be the Observer, taking notes on the process.</li>
+<li>Midway, you'll switch roles.</li>
+
+</ul></form>
+
+</section>
+<section id="slide-step-i-casual-exploration">
+<h3 id="step-i-casual-exploration">Step I: Casual Exploration</h3>
+<form><ul>
+<li>With your partner, explore the project. See what you can learn. Keep track of your work.</li>
+
+</ul></form>
+
+</section>
+<section id="slide-step-ii-topic">
+<h3 id="step-ii-topic">Step II: Topic</h3>
+<p>
+What is the project about?
+</p>
+
+<form><ul>
+<li>What topic and historical period does it focus on?</li>
+<li>What texts or art works or other material does it collect, explain, map, or analyze?</li>
+<li>What questions is the project seeking to answer?</li>
+
+</ul></form>
+
+</section>
+<section id="slide-step-iv-presentation-user-experience">
+<h3 id="step-iv-presentation-user-experience">Step IV: Presentation &amp; User Experience</h3>
+<form><ul>
+<li>What is the “digital artifact” through which this project communicates its findings? A book? A game? A map? An edition? An archive? A tool? Another type of digital artifact?</li>
+<li>As a user external to the project, what steps did you take to explore the project? Can you understand how to read the project's data or how to use the tools it is building? As you explore the project, what do you find easy? What do you find difficult? What do you like? What do you dislike?</li>
+
+</ul></form>
+
+</section>
+<section id="slide-step-v-data">
+<h3 id="step-v-data">Step V: Data</h3>
+<form><ul>
+<li>What data does the project generate? Can you download the data?</li>
+<li>Does the project provide narrative context for its data (that is, does it clearly explain what its data means and why it matters, for readers not familiar with the project)?</li>
+<li>Is access to project data open, subscription-only, or under a specific licence? May other scholars download the project's data?</li>
+
+</ul></form>
+
+</section>
+<section id="slide-step-vi-audience">
+<h3 id="step-vi-audience">Step VI: Audience</h3>
+<form><ul>
+<li>Who is the intended audience for this project? That is, does this project primarily speak to laypeople or to scholars? How can you tell?</li>
+
+</ul></form>
+</section>
+</section>
+<section>
+<section id="slide-orgfd53552">
+<h2 id="orgfd53552">So, what is a map?</h2>
+<form><ul>
+<li class="fragment appear">representational (probably)</li>
+<li class="fragment appear">spatial (usually)</li>
+<li class="fragment appear">instrumental</li>
+<li class="fragment appear">argumentative (always, even when it's invisible)</li>
+<li class="fragment appear">legible under culturally-specific conditions</li>
+
+</ul></form>
+</section>
+</section>
+<section>
+<section id="slide-syllabus">
+<h2 id="syllabus">Syllabus</h2>
+<p>
+(Let's check Quercus)  </p>
+</section>
+</section>
+</div>
+</div>
+<script src="../../vendor/reveal//lib/js/head.min.js"></script>
+<script src="../../vendor/reveal//js/reveal.js"></script>
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: true,
+center: false,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+mouseWheel: false,
+fragmentInURL: false,
+hashOneBasedIndex: false,
+pdfSeparateFragments: true,
+
+overview: true,
+width: "100%",
+height: "100%",
+margin: 0.10,
+minScale: 1.00,
+maxScale: 1.00,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'convex', // see README of reveal.js for options
+transitionSpeed: 'default',
+
+// Optional libraries used to extend reveal.js
+dependencies: [
+{src: '../../vendor/reveal//plugin/klipse_reveal.js'},
+ { src: '../../vendor/reveal//lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: '../../vendor/reveal//plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../../vendor/reveal//plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../../vendor/reveal//plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+ { src: '../../vendor/reveal//plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: '../../vendor/reveal//plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+
+});
+</script>
+<script src="https://sandbox.hackinghistory.ca/vendor/klipse/klipse_plugin.min.js"></script>
+<script>
+/* Recompute layout upon changes by klipse.  Code fragment from
+   asciidoctor-revealjs-klipse by Timothy Pratley under GPLv3:
+   https://github.com/timothypratley/asciidoctor-revealjs-klipse/blob/master/docs/docinfo-footer.html */
+Reveal.addEventListener( 'slidechanged', function( event ) {
+    window.dispatchEvent( new Event('resize') );
+} );
+</script>
+</body>
+</html>
