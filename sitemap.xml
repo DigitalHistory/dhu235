@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
@@ -68,6 +68,11 @@
   </url>
   
   <url>
+    <loc>https://digitalhistory.github.io/wdw235/assignment/02-maps/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://digitalhistory.github.io/wdw235/slides/01-intro/</loc>
     <priority>0</priority>
   </url>
@@ -79,6 +84,11 @@
   
   <url>
     <loc>https://digitalhistory.github.io/wdw235/slides/05-enangered-books-omeka/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://digitalhistory.github.io/wdw235/slides/07-tears-in-rain/</loc>
     <priority>0</priority>
   </url>
   
