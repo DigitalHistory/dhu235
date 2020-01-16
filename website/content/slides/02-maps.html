@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>02: Maps</title>
+<meta name="author" content="Matt Price"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="../../vendor/reveal//css/reveal.css"/>
+
+<link rel="stylesheet" href="../../vendor/reveal//css/theme/matt.css" id="theme"/>
+
+<link rel="stylesheet" href=""/>
+<link rel="stylesheet" href="../../vendor/reveal//lib/css/zenburn.css"/>
+<link rel="stylesheet" href="https://sandbox.hackinghistory.ca/vendor/klipse/codemirror.css"/>
+<style>
+/* Position computations of klipse get confused by reveal.js's scaling.
+   Hence, scaling should be disabled with this code.  Fix height of code area
+   with scrollbar (use overflow instead of overflow-y to restore CodeMirror
+   setting afterwards): */
+.reveal section pre { max-height: 70vh; height: auto; overflow: auto; }
+/* Reset some reveal.js and oer-reveal settings: */
+.reveal section pre .CodeMirror pre { font-size: 2em; box-shadow: none; width: auto; padding: 0.4em; display: block; overflow: visible; }
+/* Enlarge cursor: */
+.CodeMirror-cursor { border-left: 3px solid black; }
+</style>
+<script>
+    window.klipse_settings = {
+        selector: '.language-klipse',
+        selector_eval_html: '.language-klipse-html',
+        selector_eval_js: '.language-klipse-javascript',
+        selector_eval_js: '.language-klipse-js',
+        selector_eval_php: '.language-klipse-php',
+        selector_eval_python_client: '.language-klipse-python',
+        selector_eval_ruby: '.language-klipse-ruby',
+        selector_eval_scheme: '.language-klipse-scheme',
+        selector_sql: '.language-klipse-sql'
+    };
+</script>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = '../../vendor/reveal//css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide">
+<h1>02: Maps</h1>
+<h3>Matt Price  </h3>
+<!-- <p class="title-theme-choice">(view this presentation in another theme: 
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/black.css')); return false;">Black (default)</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/white.css')); return false;">White</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/league.css')); return false;">League</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/sky.css')); return false;">Sky</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/beige.css')); return false;">Beige</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/simple.css')); return false;">Simple</a> 
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/serif.css')); return false;">Serif</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/blood.css')); return false;">Blood</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/night.css')); return false;">Night</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/moon.css')); return false;">Moon</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/solarized.css')); return false;">Solarized</a> 
+				)	</p> -->
+
+</section>
+<section>
+<section id="slide-org7a1fc3f">
+<h2 id="org7a1fc3f">Mapping Assignment!</h2>
+<div class="outline-text-2" id="text-org7a1fc3f">
+</div>
+</section>
+<section id="slide-org34a16cd">
+<h3 id="org34a16cd">Questions</h3>
+<form><ul>
+<li>What is the structure of the assignment?</li>
+<li>Where do I find scholarly sources?</li>
+<li>Where do I find images and artifacts?</li>
+<li>How do I analyze space in the story?</li>
+
+</ul></form>
+</section>
+<section id="slide-orgf2d6a0a">
+<h3 id="orgf2d6a0a">Map Structure</h3>
+<form><ul>
+<li>A map layer: either a static image (of a nineteenth-century map, or of e.g. an indoor space), or an interactive map</li>
+<li>3 "points of interest." Each point of interest should be marked by relevant quotations from the text, including page numbers for reference. A point of interest could include (but is not limited to):
+<form><ul>
+<li>an exact location given in the narrative</li>
+<li>pictures of an exact or approximate location</li>
+<li>pictures of characters, places, or objects mentioned in the text at that exact or approximate location</li>
+
+</ul></form></li>
+<li>POI's should include a blurb written by you, explaining the significance of this point and of its associated artifact (200-300 words)</li>
+<li>At least one line following the movements of a character, also accompanied by a blurb</li>
+<li>While not every POI/line/area requires an image, be sure to include at least three <b>historically interesting</b> images, audio files, videos, or other multimedia resource relevant to an exact or approximate location or a particular portion of text
+<form><ul>
+<li>images, audio files, etc. should be from GLAM (gallery, library, archive, museum) repositories or printed scholarly sources; these sources should be properly documented in Item metadata</li>
+
+</ul></form></li>
+
+</ul></form>
+
+</section>
+<section id="slide-org457a76f">
+<h3 id="org457a76f">Text Structure</h3>
+<p>
+The main project's "Narrative" (found in the exhibit settings) include a substantive discussion of the story, and include the following text sections (1500 words):
+</p>
+
+<form><ol>
+<li><b>Introduction</b>: A summary of your chosen story and of your mapping project (what spaces or itineraries you're mapping; which character(s) you're following; what your most important conclusions are).</li>
+
+<li><b>Space</b>: This section discusses space in your Sherlock Holmes story: how does Doyle create the setting of your story? Through what kinds of geography &#x2013; physical? Urban? Social? Through what stylistic strategies and choices? What sensory or other details establish the spaces through which characters move? How does space shape the story? Please cite at least three scholarly articles on your particular Sherlock Holmes story in this section.</li>
+
+<li><b>Digital Map</b>: This section includes your digital map and explains, for the general reader of Sherlock Holmes stories, how the map illustrates, accompanies, and re-interprets the story. What did you learn about the story by completing this assignment that you could not have learned simply through reading the story? What did you learn about digital mapping in this experience? Include discussion of at least one of the articles read this term in your analysis.</li>
+
+<li><b>Platform</b>: How did you build your project using Neatline? What was easy? What was difficult? What kind of information does this platform enable you to present? What information did you want to present, but could not? How does Neatline work both to present knowledge and to shape that knowledge? Reference at least one article from our course readings.</li>
+
+<li><b>Works Cited</b>: The works, digital and other, that you used in the building of your exhibit. Please use MLA or Chicago style citations. <a href="https://www.zotero.org/">I <b>very strongly recommend</b> using Zotero to manage your bibliographies</a>.</li>
+
+</ol></form>
+
+</section>
+<section id="slide-org61cc247">
+<h3 id="org61cc247">Finding Scholarly Sources</h3>
+<p>
+The Library!
+<img src="../../ox-hugo/library-catalog.png" alt="library-catalog.png">
+</p>
+
+</section>
+<section id="slide-orga2772f8">
+<h4 id="orga2772f8">Use Advanced Search!</h4>
+
+<figure>
+<img src="../../ox-hugo/library-adv.png" alt="library-adv.png">
+
+</figure>
+
+</section>
+<section id="slide-org2667ac7">
+<h4 id="org2667ac7">Filter!</h4>
+
+<figure>
+<img src="../../ox-hugo/library-holdings.png" alt="library-holdings.png">
+
+</figure>
+
+</section>
+<section id="slide-orgd28ef1a">
+<h4 id="orgd28ef1a">Sort!</h4>
+
+<figure>
+<img src="../../ox-hugo/library-sort.png" alt="library-sort.png">
+
+</figure>
+</section>
+<section id="slide-orgb3f2c72">
+<h3 id="orgb3f2c72">Images and Artifacts</h3>
+<form><ul>
+<li><a href="https://www.bl.uk/victorian-britain">British Library</a></li>
+<li><a href="http://www.britishmuseum.org/research/collection_online.aspx">British Museum</a></li>
+<li><a href="https://dp.la/">Digital Public Library of America</a></li>
+<li><a href="http://digital.bodleian.ox.ac.uk/">Digital Bodleian</a></li>
+<li><a href="http://art.thewalters.org/browse/category/manuscript-and-rare-books/">Walters Art Museum</a></li>
+<li><a href="http://www.metmuseum.org/art/collection">Metropolitan Museum in New York:</a></li>
+<li><a href="http://www.mfa.org/collections">Museum of Fine Arts Boston</a></li>
+
+</ul></form>
+</section>
+<section id="slide-orgc574f5c">
+<h3 id="orgc574f5c">Maps</h3>
+<form><ul>
+<li><a href="https://booth.lse.ac.uk/about">Charles Booth’s London</a></li>
+<li><a href="https://www.davidrumsey.com/home">David Rumsey Map collection</a> (e.g., <a href="https://www.davidrumsey.com/luna/servlet/detail/RUMSEY~8~1~270699~90045177:Composite--London-753-Sheets-?sort=Pub_List_No_InitialSort%2CPub_Date%2CPub_List_No%2CSeries_No&amp;qvq=w4s:/where%2FLondon%2B%252528England%252529%2Fwhen%2F1896;q:london;sort:Pub_List_No_InitialSort%2CPub_Date%2CPub_List_No%2CSeries_No;lc:RUMSEY~8~1&amp;mi=0&amp;trs=754">this 1885 London map</a>)</li>
+<li><a href="https://mdl.library.utoronto.ca/scanned-maps?keys=&amp;field_creation_date_year=&amp;field_creation_date_year_1=&amp;field_geo_geography_tid=1213&amp;combine=&amp;sort_by=field_geo_geography_tid&amp;sort_order=ASC">MDL scanned map collections</a></li>
+
+</ul></form>
+</section>
+<section id="slide-org4c10dac">
+<h3 id="org4c10dac">How do I analyze space in the story?</h3>
+<blockquote>
+<p>
+It was a few weeks before my own marriage, during the days when I was still sharing rooms with Holmes in Baker Street, that he came home from an afternoon stroll to find a letter on the table waiting for him. I had remained indoors all day, for the weather had taken a sudden turn to rain, with high autumnal winds, and the Jezail bullet which I had brought back in one of my limbs as a relic of my Afghan campaign throbbed with dull persistence. With my body in one easy-chair and my legs upon another, I had surrounded myself with a cloud of newspapers until at last, saturated with the news of the day, I tossed them all aside and lay listless, watching the huge crest and monogram upon the envelope upon the table and wondering lazily who my friend's noble correspondent could be.
+"Here is a very fashionable epistle," I remarked as he entered. "Your morning letters, if I remember right, were from a fish-monger and a tide-waiter."
+"Yes, my correspondence has certainly the charm of variety," he answered, smiling, "and the humbler are usually the more interesting. This looks like one of those unwelcome social summonses which call upon a man either to be bored or to lie."
+He broke the seal and glanced over the contents.
+</p>
+</blockquote>
+
+</section>
+<section id="slide-orgdf0bf1f">
+<h4 id="orgdf0bf1f"></h4>
+<blockquote>
+<p>
+"There was a paragraph amplifying this [marriage notice] in one of the society papers of the same week. Ah, here it is: 'There will soon be a call for protection in the marriage market, for the present free-trade principle appears to tell heavily against our home product. One by one the management of the noble houses of Great Britain is passing into the hands of our fair cousins from across the Atlantic. An important addition has been made during the last week to the list of the prizes which have been borne away by these charming invaders. Lord St. Simon, who has shown himself for over twenty years proof against the little god's arrows, has now definitely announced his approaching marriage with Miss Hatty Doran, the fascinating daughter of a California millionaire. Miss Doran, whose graceful figure and striking face attracted much attention at the Westbury House festivities, is an only child, and it is currently reported that her dowry will run to considerably over the six figures, with expectancies for the future. As it is an open secret that the Duke of Balmoral has been compelled to sell his pictures within the last few years, and as Lord St. Simon has no property of his own save the small estate of Birchmoor, it is obvious that the Californian heiress is not the only gainer by an alliance which will enable her to make the easy and common transition from a Republican lady to a British peeress.'"
+"Anything else?" asked Holmes, yawning.
+"Oh, yes; plenty. Then there is another note in the Morning Post to say that the marriage would be an absolutely quiet one, that it would be at St. George's, Hanover Square, that only half a dozen intimate friends would be invited, and that the party would return to the furnished house at Lancaster Gate which has been taken by Mr. Aloysius Doran. Two days later&#x2013;that is, on Wednesday last&#x2013;there is a curt announcement that the wedding had taken place, and that the honeymoon would be passed at Lord Backwater's place, near Petersfield. Those are all the notices which appeared before the disappearance of the bride."
+</p>
+</blockquote>
+
+</section>
+<section id="slide-orgab27103">
+<h4 id="orgab27103"></h4>
+<blockquote>
+<p>
+"When did you first meet Miss Hatty Doran?"
+"In San Francisco, a year ago.“
+"You were travelling in the States?"
+"Yes."
+"Did you become engaged then?"
+"No."
+"But you were on a friendly footing?"
+"I was amused by her society, and she could see that I was amused."
+"Her father is very rich?"
+"He is said to be the richest man on the Pacific slope."
+"And how did he make his money?"
+"In mining. He had nothing a few years ago. Then he struck gold, invested it, and came up by leaps and bounds."
+"Now, what is your own impression as to the young lady's&#x2013;your wife's character?"
+The nobleman swung his glasses a little faster and stared down into the fire. "You see, Mr. Holmes," said he, "my wife was twenty before her father became a rich man. During that time she ran free in a mining camp and wandered through woods or mountains, so that her education has come from Nature rather than from the schoolmaster. She is what we call in England a tomboy, with a strong nature, wild and free, unfettered by any sort of traditions. She is impetuous&#x2013;volcanic, I was about to say. She is swift in making up her mind and fearless in carrying out her resolutions. On the other hand, I would not have given her the name which I have the honour to bear"&#x2013;he gave a little stately cough&#x2013;"had not I thought her to be at bottom a noble woman. I believe that she is capable of heroic self-sacrifice and that anything dishonourable would be repugnant to her."
+</p>
+</blockquote>
+
+</section>
+<section id="slide-org750cc33">
+<h4 id="org750cc33"></h4>
+<blockquote>
+<p>
+"And now, Lord St. Simon, I think that I have nearly all my data. May I ask whether you were seated at the breakfast-table so that you could see out of the window?"
+"We could see the other side of the road and the Park [Hyde Park]."
+"Quite so. Then I do not think that I need to detain you longer. I shall communicate with you."
+"Should you be fortunate enough to solve this problem," said our client, rising.
+"I have solved it."
+"Eh? What was that?"
+"I say that I have solved it."
+"Where, then, is my wife?"
+"That is a detail which I shall speedily supply."
+</p>
+</blockquote>
+
+</section>
+<section id="slide-org914d26c">
+<h4 id="org914d26c"></h4>
+<blockquote>
+<p>
+"Then I'll tell our story right away," said the lady. "Frank here and I met in '84, in McQuire's camp, near the Rockies, where pa was working a claim. We were engaged to each other, Frank and I; but then one day father struck a rich pocket and made a pile, while poor Frank here had a claim that petered out and came to nothing. The richer pa grew the poorer was Frank; so at last pa wouldn't hear of our engagement lasting any longer, and he took me away to 'Frisco. Frank wouldn't throw up his hand, though; so he followed me there, and he saw me without pa knowing anything about it. It would only have made him mad to know, so we just fixed it all up for ourselves. Frank said that he would go and make his pile, too, and never come back to claim me until he had as much as pa. So then I promised to wait for him to the end of time and pledged myself not to marry anyone else while he lived. 'Why shouldn't we be married right away, then,' said he, 'and then I will feel sure of you; and I won't claim to be your husband until I come back?' Well, we talked it over, and he had fixed it all up so nicely, with a clergyman all ready in waiting, that we just did it right there; and then Frank went off to seek his fortune, and I went back to pa.
+</p>
+
+<p>
+[Frank is thought dead, so Miss Doran marries Lord St. Simon]
+</p>
+</blockquote>
+
+</section>
+<section id="slide-org1d50c4d">
+<h4 id="org1d50c4d"></h4>
+<blockquote>
+<p>
+"Still, if I had married Lord St. Simon, of course I'd have done my duty by him. We can't command our love, but we can our actions. I went to the altar with him with the intention to make him just as good a wife as it was in me to be. But you may imagine what I felt when, just as I came to the altar rails, I glanced back and saw Frank standing and looking at me out of the first pew. I thought it was his ghost at first; but when I looked again there he was still, with a kind of question in his eyes, as if to ask me whether I were glad or sorry to see him. I wonder I didn't drop. I know that everything was turning round, and the words of the clergyman were just like the buzz of a bee in my ear. I didn't know what to do. Should I stop the service and make a scene in the church? I glanced at him again, and he seemed to know what I was thinking, for he raised his finger to his lips to tell me to be still. Then I saw him scribble on a piece of paper, and I knew that he was writing me a note. As I passed his pew on the way out I dropped my bouquet over to him, and he slipped the note into my hand when he returned me the flowers. It was only a line asking me to join him when he made the sign to me to do so. Of course I never doubted for a moment that my first duty was now to him, and I determined to do just whatever he might direct.
+</p>
+</blockquote>
+
+</section>
+<section id="slide-orgd0acfb2">
+<h4 id="orgd0acfb2"></h4>
+<blockquote>
+<p>
+"When I got back I told my maid, who had known him in California, and had always been his friend. I ordered her to say nothing, but to get a few things packed and my ulster ready. I know I ought to have spoken to Lord St. Simon, but it was dreadful hard before his mother and all those great people. I just made up my mind to run away and explain afterwards. I hadn't been at the table ten minutes before I saw Frank out of the window at the other side of the road. He beckoned to me and then began walking into the Park. I slipped out, put on my things, and followed him. Some woman came talking something or other about Lord St. Simon to me&#x2013;seemed to me from the little I heard as if he had a little secret of his own before marriage also&#x2013;but I managed to get away from her and soon overtook Frank. We got into a cab together, and away we drove to some lodgings he had taken in Gordon Square, and that was my true wedding after all those years of waiting. Frank had been a prisoner among the Apaches, had escaped, came on to 'Frisco, found that I had given him up for dead and had gone to England, followed me there, and had come upon me at last on the very morning of my second wedding […] It was awful to me to think of all those lords and ladies sitting round that breakfast-table and waiting for me to come back. 
+</p>
+</blockquote>
+
+</section>
+<section id="slide-orge3a8ad9">
+<h4 id="orge3a8ad9"></h4>
+
+</section>
+</section>
+<section>
+<section id="slide-orge9ee389">
+<h2 id="orge9ee389">Neatline</h2>
+<form><ul>
+<li>Neatline “allows scholars, students, and curators to tell stories with maps and timelines.”</li>
+<li>Neatline is a suite of Omeka plugins that let you visualize your items in time and space – that is, pin them to a map or make them appear and disappear along a timeline.</li>
+<li><a href="http://neatline.org/">http://neatline.org/</a></li>
+
+</ul></form>
+
+</section>
+<section id="slide-org697b08f">
+<h3 id="org697b08f">Omeka Basics/Login</h3>
+<form><ul>
+<li><a href="https://spatial-humanities.libarary.utoronto.ca">https://spatial-humanities.libarary.utoronto.ca</a></li>
+
+</ul></form>
+
+</section>
+<section id="slide-org91e36ee">
+<h3 id="org91e36ee">Neatline Building Blocks</h3>
+<form><ul>
+<li>Simple Neatline Exhibits have the following basic building blocks:</li>
+<li>Records:  these can be shapes drawn on the map (lines, polygons), text annotations placed on the map, links to Omeka items.  One record can also have all of the above:  it can have a shape drawn on the map, a text annotation, and a link to an Omeka item (which item can itself contain images, sound files, videos, text, etc).</li>
+<li>Maps:  these can be static images or geospatial layers.</li>
+<li>Widgets:  Timeline, Waypoints, Text.  Widgets allow another dimension for your records.  That is,
+<form><ul>
+<li>the map layer of Neatline “locates” records in place;</li>
+<li>the Timeline widget “locates” records on a timeline at the bottom of the map;</li>
+<li>the Waypoints widget “locates” records in a narrative context established by headings on the right-hand side of the exhibit</li>
+
+</ul></form></li>
+
+</ul></form>
+
+</section>
+<section id="slide-orgbe5d7ac">
+<h3 id="orgbe5d7ac">Image Base Map</h3>
+
+<figure>
+<img src="../../ox-hugo/neatline-hereford-base.png" alt="neatline-hereford-base.png">
+
+</figure>
+
+</section>
+<section id="slide-org21fa8eb">
+<h3 id="org21fa8eb">Embedded Omeka Items</h3>
+
+<figure>
+<img src="../../ox-hugo/neatline-embedded-record.png" alt="neatline-embedded-record.png">
+
+</figure>
+
+</section>
+<section id="slide-org0be2c03" class="twoc">
+<h3 id="org0be2c03">Building a Basic Neatline Exhibit</h3>
+<div class="slideblock">
+<form><ul>
+<li>A basic Neatline exhibit is a series of records, or annotations, pinned to an image – whether that image is a map, a manuscript page, or a diagram.</li>
+<li>To add a base image into Neatline:
+<form><ul>
+<li>Make an item in Omeka</li>
+<li>Put the image inside that item in Omeka</li>
+<li>Make a Neatline exhibit using that image file.</li>
+
+</ul></form></li>
+
+</ul></form>
+
+</div>
+
+<div class="slideblock">
+<p>
+
+</p>
+
+
+<figure>
+<img src="../../ox-hugo/neatline-conc-circles.png" alt="neatline-conc-circles.png">
+
+</figure>
+
+</div>
+
+</section>
+<section id="slide-orgbeb0f20">
+<h3 id="orgbeb0f20">Some Omeka/Neatline Hints</h3>
+<form><ul>
+<li>The Omeka interface can feel clumsy, so I recommend you make  a group of bookmarks to simplify navigation. You fill find yourself switching back and forth between the following pages:
+<form><ul>
+<li>The settings page of your Neatline exhibit, which will have the form <a href="https://spatial-humanities.library.utoronto.ca/admin/neatline/edit/3451">https://spatial-humanities.library.utoronto.ca/admin/neatline/edit/3451</a></li>
+<li>The edit page for your Neatline exhibit, which will have the form <a href="https://spatial-humanities.library.utoronto.ca/admin/neatline/editor/3451">https://spatial-humanities.library.utoronto.ca/admin/neatline/editor/3451</a></li>
+<li>The public view of your exhibit, which will have the form</li>
+
+</ul></form></li>
+
+</ul></form>
+<p>
+<a href="https://spatial-humanities.library.utoronto.ca/neatline/show/price-the-adventure-of-the-noble-bachelor-1">https://spatial-humanities.library.utoronto.ca/neatline/show/price-the-adventure-of-the-noble-bachelor-1</a>
+</p>
+<form><ul>
+<li>The Add Item page, <a href="https://spatial-humanities.library.utoronto.ca/admin/items/add">https://spatial-humanities.library.utoronto.ca/admin/items/add</a></li>
+<li>The list of Neatline exhibits. I prefer to list these by creation date, as there are <b>many many exhibits</b> and navigation can get somewhat confusing: <a href="https://spatial-humanities.library.utoronto.ca/admin/neatline?sort_field=added&amp;sort_dir=d">https://spatial-humanities.library.utoronto.ca/admin/neatline?sort_field=added&amp;sort_dir=d</a></li>
+
+</ul></form>
+</section>
+</section>
+</div>
+</div>
+<script src="../../vendor/reveal//lib/js/head.min.js"></script>
+<script src="../../vendor/reveal//js/reveal.js"></script>
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: true,
+center: false,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+mouseWheel: false,
+fragmentInURL: false,
+hashOneBasedIndex: false,
+pdfSeparateFragments: true,
+
+overview: true,
+width: "100%",
+height: "100%",
+margin: 0.10,
+minScale: 1.00,
+maxScale: 1.00,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'convex', // see README of reveal.js for options
+transitionSpeed: 'default',
+
+// Optional libraries used to extend reveal.js
+dependencies: [
+{src: '../../vendor/reveal//plugin/klipse_reveal.js'},
+ { src: '../../vendor/reveal//lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: '../../vendor/reveal//plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../../vendor/reveal//plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../../vendor/reveal//plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+ { src: '../../vendor/reveal//plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: '../../vendor/reveal//plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+
+});
+</script>
+<script src="https://sandbox.hackinghistory.ca/vendor/klipse/klipse_plugin.min.js"></script>
+<script>
+/* Recompute layout upon changes by klipse.  Code fragment from
+   asciidoctor-revealjs-klipse by Timothy Pratley under GPLv3:
+   https://github.com/timothypratley/asciidoctor-revealjs-klipse/blob/master/docs/docinfo-footer.html */
+Reveal.addEventListener( 'slidechanged', function( event ) {
+    window.dispatchEvent( new Event('resize') );
+} );
+</script>
+</body>
+</html>
