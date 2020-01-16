@@ -1,1 +1,590 @@
-{"version":"1.2.9","files":[{"loadFromURL":false,"label":"Untitled","id":0,"autoFields":[],"fields":[{"key":"ID1","description":"ID1","cardinality":41,"type":"number","blanks":0,"uniques":[],"uniqueKey":true,"special":[],"unassignedSpecialChars":[],"countBy":true,"errors":[],"$$hashKey":"object:116","countable":true,"countDescription":"Untitled"},{"key":"Sender","description":"Sender","cardinality":7,"type":"text","blanks":0,"uniques":[],"uniqueKey":false,"special":[],"unassignedSpecialChars":[],"countBy":false,"errors":[],"descriptiveField":"ID1","$$hashKey":"object:117"},{"key":"Recipient","description":"Recipient","cardinality":7,"type":"text","blanks":0,"uniques":[],"uniqueKey":false,"special":[],"unassignedSpecialChars":[],"countBy":false,"errors":[],"descriptiveField":"ID1","$$hashKey":"object:118"},{"key":"Letter No","description":"Letter No","cardinality":41,"type":"number","blanks":0,"uniques":[],"uniqueKey":true,"special":[],"unassignedSpecialChars":[],"countBy":false,"errors":[],"descriptiveField":"ID1","$$hashKey":"object:119"},{"key":"Description","description":"Description","cardinality":41,"type":"text","blanks":0,"uniques":[],"uniqueKey":true,"special":["-"],"unassignedSpecialChars":["-"],"countBy":false,"errors":[],"descriptiveField":"ID1","$$hashKey":"object:120","verifiedSpecialChars":["-"],"confirmed":true},{"key":"Origin Place","description":"Origin Place","cardinality":7,"type":"text","blanks":2,"uniques":[],"uniqueKey":false,"special":[],"unassignedSpecialChars":[],"countBy":false,"errors":[],"descriptiveField":"ID1","$$hashKey":"object:121"},{"key":"Origin Coords","description":"Origin Coords","cardinality":6,"type":"latlong","blanks":4,"uniques":[],"uniqueKey":false,"special":["-",","],"unassignedSpecialChars":[],"countBy":false,"errors":[],"descriptiveField":"ID1","$$hashKey":"object:122","existenceDimension":"0.22g313ltgmf"}],"data":[{"ID1":"1","Sender":"Lady Susan","Recipient":"Mr. Vernon","Letter No":"1","Description":"Letter 1 --  Lady Susan to Mr. Vernon","Origin Place":"Langford","Origin Coords":"51.34,-2.782"},{"ID1":"2","Sender":"Lady Susan","Recipient":"Mrs. Johnson","Letter No":"2","Description":"Letter 2 -- Lady Susan to Mrs. Johnson","Origin Place":"Langford","Origin Coords":"51.34,-2.782"},{"ID1":"3","Sender":"Mrs. Vernon","Recipient":"Lady De Courcy","Letter No":"3","Description":"Letter 3 -- Mrs. Vernon to Lady De Courcy ","Origin Place":"Churchhill","Origin Coords":"51.3354,-2.7963"},{"ID1":"4","Sender":"Mr. De Courcy","Recipient":"Mrs. Vernon","Letter No":"4","Description":"Letter 4 -- Mr. De Courcy to Mrs. Vernon","Origin Place":"Parklands","Origin Coords":"51.3241974854,-2.51400561211"},{"ID1":"5","Sender":"Lady Susan","Recipient":"Mrs. Johnson","Letter No":"5","Description":"Letter 5 -- Lady Susan to Mrs. Johnson","Origin Place":"Churchhill","Origin Coords":"51.3354,-2.7963"},{"ID1":"6","Sender":"Mrs. Vernon","Recipient":"Mr. De Courcy","Letter No":"6","Description":"Letter 6 -- Mrs. Vernon to Mr. De Courcy","Origin Place":"Churchhill","Origin Coords":"51.3354,-2.7963"},{"ID1":"7","Sender":"Lady Susan","Recipient":"Mrs. Johnson","Letter No":"7","Description":"Letter 7 -- Lady Susan to Mrs. Johnson","Origin Place":"Churchhill","Origin Coords":"51.3354,-2.7963"},{"ID1":"8","Sender":"Mrs. Vernon","Recipient":"Lady De Courcy","Letter No":"8","Description":"Letter 8 -- Mrs. Vernon to Lady De Courcy","Origin Place":"Churchhill","Origin Coords":"51.3354,-2.7963"},{"ID1":"9","Sender":"Mrs. Johnson","Recipient":"Lady Susan","Letter No":"9","Description":"Letter 9 -- Mrs. Johnson to Lady Susan","Origin Place":"Edward Street","Origin Coords":"51.4798,-0.0311"},{"ID1":"10","Sender":"Lady Susan","Recipient":"Mrs. Johnson","Letter No":"10","Description":"Letter 10 -- Lady Susan to Mrs. Johnson","Origin Place":"Churchhill","Origin Coords":"51.3354,-2.7963"},{"ID1":"11","Sender":"Mrs. Vernon","Recipient":"Lady De Courcy","Letter No":"11","Description":"Letter 11 -- Mrs. Vernon to Lady De Courcy","Origin Place":"Churchhill","Origin Coords":"51.3354,-2.7963"},{"ID1":"12","Sender":"Sir Reginald De Courcy","Recipient":"Mr. De Courcy","Letter No":"12","Description":"Letter 12 -- Sir Reginald De Courcy to His Son","Origin Place":"Parklands","Origin Coords":"51.3241974854,-2.51400561211"},{"ID1":"13","Sender":"Lady De Courcy","Recipient":"Mrs. Vernon","Letter No":"13","Description":"Letter 13 -- Lady De Courcy to Mrs. Vernon","Origin Place":"Parklands","Origin Coords":"51.3241974854,-2.51400561211"},{"ID1":"14","Sender":"Mr. De Courcy","Recipient":"Sir Reginald De Courcy","Letter No":"14","Description":"Letter 14 -- Mr. De Courcy to Sir Reginald ","Origin Place":"Churchhill","Origin Coords":"51.3354,-2.7963"},{"ID1":"15","Sender":"Mrs. Vernon","Recipient":"Lady De Courcy","Letter No":"15","Description":"Letter 15 -- Mrs. Vernon to Lady De Courcy","Origin Place":"Churchhill","Origin Coords":"51.3354,-2.7963"},{"ID1":"16","Sender":"Lady Susan","Recipient":"Mrs. Johnson","Letter No":"16","Description":"Letter 16 -- Lady Susan to Mrs. Johnson ","Origin Place":"Churchhill","Origin Coords":"51.3354,-2.7963"},{"ID1":"17","Sender":"Mrs. Vernon","Recipient":"Lady De Courcy","Letter No":"17","Description":"Letter 17 -- Mrs. Vernon to Lady De Courcy","Origin Place":"Churchhill","Origin Coords":"51.3354,-2.7963"},{"ID1":"18","Sender":"Mrs. Vernon","Recipient":"Lady De Courcy","Letter No":"18","Description":"Letter 18 -- From the Same to the Same ","Origin Place":"Churchhill","Origin Coords":"51.3354,-2.7963"},{"ID1":"19","Sender":"Lady Susan","Recipient":"Mrs. Johnson","Letter No":"19","Description":"Letter 19 -- Lady Susan to Mrs. Johnson","Origin Place":"Churchhill","Origin Coords":"51.3354,-2.7963"},{"ID1":"20","Sender":"Mrs. Vernon","Recipient":"Lady De Courcy","Letter No":"20","Description":"Letter 20 -- Mrs. Vernon to Lady De Courcy ","Origin Place":"Churchhill","Origin Coords":"51.3354,-2.7963"},{"ID1":"21","Sender":"Miss Vernon","Recipient":"Mr. De Courcy","Letter No":"21","Description":"Letter 21 -- Miss Vernon to Mr. De Courcy ","Origin Place":"","Origin Coords":""},{"ID1":"22","Sender":"Lady Susan","Recipient":"Mrs. Johnson","Letter No":"22","Description":"Letter 22 -- Lady Susan to Mrs. Johnson ","Origin Place":"Churchhill","Origin Coords":"51.3354,-2.7963"},{"ID1":"23","Sender":"Mrs. Vernon","Recipient":"Lady De Courcy","Letter No":"23","Description":"Letter 23 -- Mrs. Vernon to Lady De Courcy","Origin Place":"Churchhill","Origin Coords":"51.3354,-2.7963"},{"ID1":"24","Sender":"Mrs. Vernon","Recipient":"Lady De Courcy","Letter No":"24","Description":"Letter 24 -- From the Same to the Same ","Origin Place":"Churchhill","Origin Coords":"51.3354,-2.7963"},{"ID1":"25","Sender":"Lady Susan","Recipient":"Mrs. Johnson","Letter No":"25","Description":"Letter 25 -- Lady Susan to Mrs. Johnson","Origin Place":"Churchhill","Origin Coords":"51.3354,-2.7963"},{"ID1":"26","Sender":"Mrs. Johnson","Recipient":"Lady Susan","Letter No":"26","Description":"Letter 26 -- Mrs. Johnson to Lady Susan","Origin Place":"Edward Street","Origin Coords":"51.4798,-0.0311"},{"ID1":"27","Sender":"Mrs. Vernon","Recipient":"Lady De Courcy","Letter No":"27","Description":"Letter 27 -- Mrs. Vernon to Lady De Courcy","Origin Place":"Churchhill","Origin Coords":"51.3354,-2.7963"},{"ID1":"28","Sender":"Mrs. Johnson","Recipient":"Lady Susan","Letter No":"28","Description":"Letter 28 -- Mrs. Johnson to Lady Susan","Origin Place":"Edward Street","Origin Coords":"51.4798,-0.0311"},{"ID1":"29","Sender":"Lady Susan","Recipient":"Mrs. Johnson","Letter No":"29","Description":"Letter 29 -- Lady Susan to Mrs. Johnson","Origin Place":"Upper Seymour Street","Origin Coords":"51.515419,-0.141099"},{"ID1":"30","Sender":"Lady Susan","Recipient":"Mr. De Courcy","Letter No":"30","Description":"Letter 30 -- Lady Susan to Mr. De Courcy","Origin Place":"Upper Seymour Street","Origin Coords":"51.515419,-0.141099"},{"ID1":"31","Sender":"Lady Susan","Recipient":"Mrs. Johnson","Letter No":"31","Description":"Letter 31 -- Lady Susan to Mrs. Johnson","Origin Place":"Upper Seymour Street","Origin Coords":"51.515419,-0.141099"},{"ID1":"32","Sender":"Mrs. Johnson","Recipient":"Lady Susan","Letter No":"32","Description":"Letter 32 -- Mrs. Johnson to Lady Susan","Origin Place":"Edward Street","Origin Coords":"51.4798,-0.0311"},{"ID1":"33","Sender":"Lady Susan","Recipient":"Mrs. Johnson","Letter No":"33","Description":"Letter 33 -- Lady Susan to Mrs. Johnson ","Origin Place":"Upper Seymour Street","Origin Coords":"51.515419,-0.141099"},{"ID1":"34","Sender":"Mr. De Courcy","Recipient":"Lady Susan","Letter No":"34","Description":"Letter 34 -- Mr. De Courcy to Lady Susan","Origin Place":"Hotel","Origin Coords":""},{"ID1":"35","Sender":"Lady Susan","Recipient":"Mr. De Courcy","Letter No":"35","Description":"Letter 35 -- Lady Susan to Mr. De Courcy","Origin Place":"Upper Seymour Street","Origin Coords":"51.515419,-0.141099"},{"ID1":"36","Sender":"Mr. De Courcy","Recipient":"Lady Susan","Letter No":"36","Description":"Letter 36 -- Mr. De Courcy to Lady Susan","Origin Place":"Hotel","Origin Coords":""},{"ID1":"37","Sender":"Lady Susan","Recipient":"Mr. De Courcy","Letter No":"37","Description":"Letter 37 -- Lady Susan to Mr. De Courcy","Origin Place":"Upper Seymour Street","Origin Coords":"51.515419,-0.141099"},{"ID1":"38","Sender":"Mrs. Johnson","Recipient":"Lady Susan","Letter No":"38","Description":"Letter 38 -- Mrs. Johnson to Lady Susan Vernon ","Origin Place":"Edward Street","Origin Coords":"51.4798,-0.0311"},{"ID1":"39","Sender":"Lady Susan","Recipient":"Mrs. Johnson","Letter No":"39","Description":"Letter 39 -- Lady Susan to Mrs. Johnson","Origin Place":"Upper Seymour Street.","Origin Coords":"51.515419, -0.141099"},{"ID1":"40","Sender":"Lady De Courcy","Recipient":"Mrs. Vernon","Letter No":"40","Description":"Letter 40 -- Lady De Courcy to Mrs. Vernon ","Origin Place":"","Origin Coords":""},{"ID1":"41","Sender":"Mrs. Vernon","Recipient":"Lady De Courcy","Letter No":"41","Description":"Letter 41 -- Mrs. Vernon to Lady De Courcy ","Origin Place":"Churchhill","Origin Coords":"51.3354,-2.7963"}],"uniqueId":0,"$$hashKey":"object:110"}],"links":[],"layout":"geo","metadata":{"title":"Lady Susan Places and People","author":null,"date":null,"description":null},"vis":[{"type":"palladioFilters","importJson":{"facets":[],"timelines":[],"partimes":[],"timesteps":[]}},{"type":"graphView","importJson":{"showLinks":true,"showLabels":true,"aggregateKey":null,"aggregationType":"COUNT","nodeSize":false,"highlightSource":false,"highlightTarget":false,"aggDimKey":"ID1","sourceDimension":null,"targetDimension":null,"fixedNodes":false}},{"type":"mapView","importJson":{"tileSets":[{"url":null,"mbId":"cesta.k8ghh462","enabled":true,"description":"Terrain"}],"layers":[{"aggDescription":"Sum of Letter No (from Untitled table)","aggregateKey":"Letter No","aggregationType":"SUM","color":"#1528a4","countBy":"ID1","description":"Lady Susan Places","enabled":true,"layerType":"data","descriptiveDimKey":"Sender","mapping":{"sourceCoordinatesKey":"Origin Coords","sourceCoordinatesType":null,"sourceCoordinatesDescription":"Origin Coords","destinationCoordinatesKey":null,"destinationCoordinatesType":null,"destinationCoordinatesDescription":null},"pointSize":true,"showLinks":false,"type":"points"}]}},{"type":"tableView","importJson":{"tableDimensions":[],"countDim":null,"maxDisplay":1000}},{"type":"listView","importJson":{"titleDim":"ID1"}}]}
+{
+  "version": "1.2.9",
+  "files": [
+    {
+      "loadFromURL": false,
+      "label": "Untitled",
+      "id": 0,
+      "autoFields": [],
+      "fields": [
+        {
+          "key": "ID1",
+          "description": "ID1",
+          "cardinality": 41,
+          "type": "number",
+          "blanks": 0,
+          "uniques": [],
+          "uniqueKey": true,
+          "special": [],
+          "unassignedSpecialChars": [],
+          "countBy": true,
+          "errors": [],
+          "$$hashKey": "object:116",
+          "countable": true,
+          "countDescription": "Untitled"
+        },
+        {
+          "key": "Sender",
+          "description": "Sender",
+          "cardinality": 7,
+          "type": "text",
+          "blanks": 0,
+          "uniques": [],
+          "uniqueKey": false,
+          "special": [],
+          "unassignedSpecialChars": [],
+          "countBy": false,
+          "errors": [],
+          "descriptiveField": "ID1",
+          "$$hashKey": "object:117"
+        },
+        {
+          "key": "Recipient",
+          "description": "Recipient",
+          "cardinality": 7,
+          "type": "text",
+          "blanks": 0,
+          "uniques": [],
+          "uniqueKey": false,
+          "special": [],
+          "unassignedSpecialChars": [],
+          "countBy": false,
+          "errors": [],
+          "descriptiveField": "ID1",
+          "$$hashKey": "object:118"
+        },
+        {
+          "key": "Letter No",
+          "description": "Letter No",
+          "cardinality": 41,
+          "type": "number",
+          "blanks": 0,
+          "uniques": [],
+          "uniqueKey": true,
+          "special": [],
+          "unassignedSpecialChars": [],
+          "countBy": false,
+          "errors": [],
+          "descriptiveField": "ID1",
+          "$$hashKey": "object:119"
+        },
+        {
+          "key": "Description",
+          "description": "Description",
+          "cardinality": 41,
+          "type": "text",
+          "blanks": 0,
+          "uniques": [],
+          "uniqueKey": true,
+          "special": [
+            "-"
+          ],
+          "unassignedSpecialChars": [
+            "-"
+          ],
+          "countBy": false,
+          "errors": [],
+          "descriptiveField": "ID1",
+          "$$hashKey": "object:120",
+          "verifiedSpecialChars": [
+            "-"
+          ],
+          "confirmed": true
+        },
+        {
+          "key": "Origin Place",
+          "description": "Origin Place",
+          "cardinality": 7,
+          "type": "text",
+          "blanks": 2,
+          "uniques": [],
+          "uniqueKey": false,
+          "special": [],
+          "unassignedSpecialChars": [],
+          "countBy": false,
+          "errors": [],
+          "descriptiveField": "ID1",
+          "$$hashKey": "object:121"
+        },
+        {
+          "key": "Origin Coords",
+          "description": "Origin Coords",
+          "cardinality": 6,
+          "type": "latlong",
+          "blanks": 4,
+          "uniques": [],
+          "uniqueKey": false,
+          "special": [
+            "-",
+            ","
+          ],
+          "unassignedSpecialChars": [],
+          "countBy": false,
+          "errors": [],
+          "descriptiveField": "ID1",
+          "$$hashKey": "object:122",
+          "existenceDimension": "0.22g313ltgmf"
+        }
+      ],
+      "data": [
+        {
+          "ID1": "1",
+          "Sender": "Lady Susan",
+          "Recipient": "Mr. Vernon",
+          "Letter No": "1",
+          "Description": "Letter 1 --  Lady Susan to Mr. Vernon",
+          "Origin Place": "Langford",
+          "Origin Coords": "51.34,-2.782"
+        },
+        {
+          "ID1": "2",
+          "Sender": "Lady Susan",
+          "Recipient": "Mrs. Johnson",
+          "Letter No": "2",
+          "Description": "Letter 2 -- Lady Susan to Mrs. Johnson",
+          "Origin Place": "Langford",
+          "Origin Coords": "51.34,-2.782"
+        },
+        {
+          "ID1": "3",
+          "Sender": "Mrs. Vernon",
+          "Recipient": "Lady De Courcy",
+          "Letter No": "3",
+          "Description": "Letter 3 -- Mrs. Vernon to Lady De Courcy ",
+          "Origin Place": "Churchhill",
+          "Origin Coords": "51.3354,-2.7963"
+        },
+        {
+          "ID1": "4",
+          "Sender": "Mr. De Courcy",
+          "Recipient": "Mrs. Vernon",
+          "Letter No": "4",
+          "Description": "Letter 4 -- Mr. De Courcy to Mrs. Vernon",
+          "Origin Place": "Parklands",
+          "Origin Coords": "51.3241974854,-2.51400561211"
+        },
+        {
+          "ID1": "5",
+          "Sender": "Lady Susan",
+          "Recipient": "Mrs. Johnson",
+          "Letter No": "5",
+          "Description": "Letter 5 -- Lady Susan to Mrs. Johnson",
+          "Origin Place": "Churchhill",
+          "Origin Coords": "51.3354,-2.7963"
+        },
+        {
+          "ID1": "6",
+          "Sender": "Mrs. Vernon",
+          "Recipient": "Mr. De Courcy",
+          "Letter No": "6",
+          "Description": "Letter 6 -- Mrs. Vernon to Mr. De Courcy",
+          "Origin Place": "Churchhill",
+          "Origin Coords": "51.3354,-2.7963"
+        },
+        {
+          "ID1": "7",
+          "Sender": "Lady Susan",
+          "Recipient": "Mrs. Johnson",
+          "Letter No": "7",
+          "Description": "Letter 7 -- Lady Susan to Mrs. Johnson",
+          "Origin Place": "Churchhill",
+          "Origin Coords": "51.3354,-2.7963"
+        },
+        {
+          "ID1": "8",
+          "Sender": "Mrs. Vernon",
+          "Recipient": "Lady De Courcy",
+          "Letter No": "8",
+          "Description": "Letter 8 -- Mrs. Vernon to Lady De Courcy",
+          "Origin Place": "Churchhill",
+          "Origin Coords": "51.3354,-2.7963"
+        },
+        {
+          "ID1": "9",
+          "Sender": "Mrs. Johnson",
+          "Recipient": "Lady Susan",
+          "Letter No": "9",
+          "Description": "Letter 9 -- Mrs. Johnson to Lady Susan",
+          "Origin Place": "Edward Street",
+          "Origin Coords": "51.4798,-0.0311"
+        },
+        {
+          "ID1": "10",
+          "Sender": "Lady Susan",
+          "Recipient": "Mrs. Johnson",
+          "Letter No": "10",
+          "Description": "Letter 10 -- Lady Susan to Mrs. Johnson",
+          "Origin Place": "Churchhill",
+          "Origin Coords": "51.3354,-2.7963"
+        },
+        {
+          "ID1": "11",
+          "Sender": "Mrs. Vernon",
+          "Recipient": "Lady De Courcy",
+          "Letter No": "11",
+          "Description": "Letter 11 -- Mrs. Vernon to Lady De Courcy",
+          "Origin Place": "Churchhill",
+          "Origin Coords": "51.3354,-2.7963"
+        },
+        {
+          "ID1": "12",
+          "Sender": "Sir Reginald De Courcy",
+          "Recipient": "Mr. De Courcy",
+          "Letter No": "12",
+          "Description": "Letter 12 -- Sir Reginald De Courcy to His Son",
+          "Origin Place": "Parklands",
+          "Origin Coords": "51.3241974854,-2.51400561211"
+        },
+        {
+          "ID1": "13",
+          "Sender": "Lady De Courcy",
+          "Recipient": "Mrs. Vernon",
+          "Letter No": "13",
+          "Description": "Letter 13 -- Lady De Courcy to Mrs. Vernon",
+          "Origin Place": "Parklands",
+          "Origin Coords": "51.3241974854,-2.51400561211"
+        },
+        {
+          "ID1": "14",
+          "Sender": "Mr. De Courcy",
+          "Recipient": "Sir Reginald De Courcy",
+          "Letter No": "14",
+          "Description": "Letter 14 -- Mr. De Courcy to Sir Reginald ",
+          "Origin Place": "Churchhill",
+          "Origin Coords": "51.3354,-2.7963"
+        },
+        {
+          "ID1": "15",
+          "Sender": "Mrs. Vernon",
+          "Recipient": "Lady De Courcy",
+          "Letter No": "15",
+          "Description": "Letter 15 -- Mrs. Vernon to Lady De Courcy",
+          "Origin Place": "Churchhill",
+          "Origin Coords": "51.3354,-2.7963"
+        },
+        {
+          "ID1": "16",
+          "Sender": "Lady Susan",
+          "Recipient": "Mrs. Johnson",
+          "Letter No": "16",
+          "Description": "Letter 16 -- Lady Susan to Mrs. Johnson ",
+          "Origin Place": "Churchhill",
+          "Origin Coords": "51.3354,-2.7963"
+        },
+        {
+          "ID1": "17",
+          "Sender": "Mrs. Vernon",
+          "Recipient": "Lady De Courcy",
+          "Letter No": "17",
+          "Description": "Letter 17 -- Mrs. Vernon to Lady De Courcy",
+          "Origin Place": "Churchhill",
+          "Origin Coords": "51.3354,-2.7963"
+        },
+        {
+          "ID1": "18",
+          "Sender": "Mrs. Vernon",
+          "Recipient": "Lady De Courcy",
+          "Letter No": "18",
+          "Description": "Letter 18 -- From the Same to the Same ",
+          "Origin Place": "Churchhill",
+          "Origin Coords": "51.3354,-2.7963"
+        },
+        {
+          "ID1": "19",
+          "Sender": "Lady Susan",
+          "Recipient": "Mrs. Johnson",
+          "Letter No": "19",
+          "Description": "Letter 19 -- Lady Susan to Mrs. Johnson",
+          "Origin Place": "Churchhill",
+          "Origin Coords": "51.3354,-2.7963"
+        },
+        {
+          "ID1": "20",
+          "Sender": "Mrs. Vernon",
+          "Recipient": "Lady De Courcy",
+          "Letter No": "20",
+          "Description": "Letter 20 -- Mrs. Vernon to Lady De Courcy ",
+          "Origin Place": "Churchhill",
+          "Origin Coords": "51.3354,-2.7963"
+        },
+        {
+          "ID1": "21",
+          "Sender": "Miss Vernon",
+          "Recipient": "Mr. De Courcy",
+          "Letter No": "21",
+          "Description": "Letter 21 -- Miss Vernon to Mr. De Courcy ",
+          "Origin Place": "",
+          "Origin Coords": ""
+        },
+        {
+          "ID1": "22",
+          "Sender": "Lady Susan",
+          "Recipient": "Mrs. Johnson",
+          "Letter No": "22",
+          "Description": "Letter 22 -- Lady Susan to Mrs. Johnson ",
+          "Origin Place": "Churchhill",
+          "Origin Coords": "51.3354,-2.7963"
+        },
+        {
+          "ID1": "23",
+          "Sender": "Mrs. Vernon",
+          "Recipient": "Lady De Courcy",
+          "Letter No": "23",
+          "Description": "Letter 23 -- Mrs. Vernon to Lady De Courcy",
+          "Origin Place": "Churchhill",
+          "Origin Coords": "51.3354,-2.7963"
+        },
+        {
+          "ID1": "24",
+          "Sender": "Mrs. Vernon",
+          "Recipient": "Lady De Courcy",
+          "Letter No": "24",
+          "Description": "Letter 24 -- From the Same to the Same ",
+          "Origin Place": "Churchhill",
+          "Origin Coords": "51.3354,-2.7963"
+        },
+        {
+          "ID1": "25",
+          "Sender": "Lady Susan",
+          "Recipient": "Mrs. Johnson",
+          "Letter No": "25",
+          "Description": "Letter 25 -- Lady Susan to Mrs. Johnson",
+          "Origin Place": "Churchhill",
+          "Origin Coords": "51.3354,-2.7963"
+        },
+        {
+          "ID1": "26",
+          "Sender": "Mrs. Johnson",
+          "Recipient": "Lady Susan",
+          "Letter No": "26",
+          "Description": "Letter 26 -- Mrs. Johnson to Lady Susan",
+          "Origin Place": "Edward Street",
+          "Origin Coords": "51.4798,-0.0311"
+        },
+        {
+          "ID1": "27",
+          "Sender": "Mrs. Vernon",
+          "Recipient": "Lady De Courcy",
+          "Letter No": "27",
+          "Description": "Letter 27 -- Mrs. Vernon to Lady De Courcy",
+          "Origin Place": "Churchhill",
+          "Origin Coords": "51.3354,-2.7963"
+        },
+        {
+          "ID1": "28",
+          "Sender": "Mrs. Johnson",
+          "Recipient": "Lady Susan",
+          "Letter No": "28",
+          "Description": "Letter 28 -- Mrs. Johnson to Lady Susan",
+          "Origin Place": "Edward Street",
+          "Origin Coords": "51.4798,-0.0311"
+        },
+        {
+          "ID1": "29",
+          "Sender": "Lady Susan",
+          "Recipient": "Mrs. Johnson",
+          "Letter No": "29",
+          "Description": "Letter 29 -- Lady Susan to Mrs. Johnson",
+          "Origin Place": "Upper Seymour Street",
+          "Origin Coords": "51.515419,-0.141099"
+        },
+        {
+          "ID1": "30",
+          "Sender": "Lady Susan",
+          "Recipient": "Mr. De Courcy",
+          "Letter No": "30",
+          "Description": "Letter 30 -- Lady Susan to Mr. De Courcy",
+          "Origin Place": "Upper Seymour Street",
+          "Origin Coords": "51.515419,-0.141099"
+        },
+        {
+          "ID1": "31",
+          "Sender": "Lady Susan",
+          "Recipient": "Mrs. Johnson",
+          "Letter No": "31",
+          "Description": "Letter 31 -- Lady Susan to Mrs. Johnson",
+          "Origin Place": "Upper Seymour Street",
+          "Origin Coords": "51.515419,-0.141099"
+        },
+        {
+          "ID1": "32",
+          "Sender": "Mrs. Johnson",
+          "Recipient": "Lady Susan",
+          "Letter No": "32",
+          "Description": "Letter 32 -- Mrs. Johnson to Lady Susan",
+          "Origin Place": "Edward Street",
+          "Origin Coords": "51.4798,-0.0311"
+        },
+        {
+          "ID1": "33",
+          "Sender": "Lady Susan",
+          "Recipient": "Mrs. Johnson",
+          "Letter No": "33",
+          "Description": "Letter 33 -- Lady Susan to Mrs. Johnson ",
+          "Origin Place": "Upper Seymour Street",
+          "Origin Coords": "51.515419,-0.141099"
+        },
+        {
+          "ID1": "34",
+          "Sender": "Mr. De Courcy",
+          "Recipient": "Lady Susan",
+          "Letter No": "34",
+          "Description": "Letter 34 -- Mr. De Courcy to Lady Susan",
+          "Origin Place": "Hotel",
+          "Origin Coords": ""
+        },
+        {
+          "ID1": "35",
+          "Sender": "Lady Susan",
+          "Recipient": "Mr. De Courcy",
+          "Letter No": "35",
+          "Description": "Letter 35 -- Lady Susan to Mr. De Courcy",
+          "Origin Place": "Upper Seymour Street",
+          "Origin Coords": "51.515419,-0.141099"
+        },
+        {
+          "ID1": "36",
+          "Sender": "Mr. De Courcy",
+          "Recipient": "Lady Susan",
+          "Letter No": "36",
+          "Description": "Letter 36 -- Mr. De Courcy to Lady Susan",
+          "Origin Place": "Hotel",
+          "Origin Coords": ""
+        },
+        {
+          "ID1": "37",
+          "Sender": "Lady Susan",
+          "Recipient": "Mr. De Courcy",
+          "Letter No": "37",
+          "Description": "Letter 37 -- Lady Susan to Mr. De Courcy",
+          "Origin Place": "Upper Seymour Street",
+          "Origin Coords": "51.515419,-0.141099"
+        },
+        {
+          "ID1": "38",
+          "Sender": "Mrs. Johnson",
+          "Recipient": "Lady Susan",
+          "Letter No": "38",
+          "Description": "Letter 38 -- Mrs. Johnson to Lady Susan Vernon ",
+          "Origin Place": "Edward Street",
+          "Origin Coords": "51.4798,-0.0311"
+        },
+        {
+          "ID1": "39",
+          "Sender": "Lady Susan",
+          "Recipient": "Mrs. Johnson",
+          "Letter No": "39",
+          "Description": "Letter 39 -- Lady Susan to Mrs. Johnson",
+          "Origin Place": "Upper Seymour Street.",
+          "Origin Coords": "51.515419, -0.141099"
+        },
+        {
+          "ID1": "40",
+          "Sender": "Lady De Courcy",
+          "Recipient": "Mrs. Vernon",
+          "Letter No": "40",
+          "Description": "Letter 40 -- Lady De Courcy to Mrs. Vernon ",
+          "Origin Place": "",
+          "Origin Coords": ""
+        },
+        {
+          "ID1": "41",
+          "Sender": "Mrs. Vernon",
+          "Recipient": "Lady De Courcy",
+          "Letter No": "41",
+          "Description": "Letter 41 -- Mrs. Vernon to Lady De Courcy ",
+          "Origin Place": "Churchhill",
+          "Origin Coords": "51.3354,-2.7963"
+        }
+      ],
+      "uniqueId": 0,
+      "$$hashKey": "object:110"
+    }
+  ],
+  "links": [],
+  "layout": "geo",
+  "metadata": {
+    "title": "Lady Susan Places and People",
+    "author": null,
+    "date": null,
+    "description": null
+  },
+  "vis": [
+    {
+      "type": "palladioFilters",
+      "importJson": {
+        "facets": [],
+        "timelines": [],
+        "partimes": [],
+        "timesteps": []
+      }
+    },
+    {
+      "type": "graphView",
+      "importJson": {
+        "showLinks": true,
+        "showLabels": true,
+        "aggregateKey": null,
+        "aggregationType": "COUNT",
+        "nodeSize": false,
+        "highlightSource": false,
+        "highlightTarget": false,
+        "aggDimKey": "ID1",
+        "sourceDimension": null,
+        "targetDimension": null,
+        "fixedNodes": false
+      }
+    },
+    {
+      "type": "mapView",
+      "importJson": {
+        "tileSets": [
+          {
+            "url": null,
+            "mbId": "cesta.k8ghh462",
+            "enabled": true,
+            "description": "Terrain"
+          }
+        ],
+        "layers": [
+          {
+            "aggDescription": "Sum of Letter No (from Untitled table)",
+            "aggregateKey": "Letter No",
+            "aggregationType": "SUM",
+            "color": "#1528a4",
+            "countBy": "ID1",
+            "description": "Lady Susan Places",
+            "enabled": true,
+            "layerType": "data",
+            "descriptiveDimKey": "Sender",
+            "mapping": {
+              "sourceCoordinatesKey": "Origin Coords",
+              "sourceCoordinatesType": null,
+              "sourceCoordinatesDescription": "Origin Coords",
+              "destinationCoordinatesKey": null,
+              "destinationCoordinatesType": null,
+              "destinationCoordinatesDescription": null
+            },
+            "pointSize": true,
+            "showLinks": false,
+            "type": "points"
+          }
+        ]
+      }
+    },
+    {
+      "type": "tableView",
+      "importJson": {
+        "tableDimensions": [],
+        "countDim": null,
+        "maxDisplay": 1000
+      }
+    },
+    {
+      "type": "listView",
+      "importJson": {
+        "titleDim": "ID1"
+      }
+    }
+  ]
+}

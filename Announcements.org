@@ -144,18 +144,103 @@ In this class we have a *shared login* to the local Omeka installation.  We'll t
 
 Please feel free to login and look around before class, but *UNDER NO CIRCUNSTANCES MODIFY ANY RESOURCES THAT YOU FIND THERE.* Again, we'll learn how to use Omeka starting in class today. 
 
-* Class *in Robarts* On June 3 -- PLEASE READ!!
-Hello class,
+* Class *At Fisher Library* tonight
+:PROPERTIES:
+:ORG_LMS_ANNOUNCEMENT_ID: nil
+:ORG_LMS_ANNOUNCEMENT_URL: nil
+:ORG_LMS_POSTED_AT: nil
+:END:
 
-I'm sorry this message did not go out last week as I intended -- I made  a technical error and have only just caught it.  
+A reminder that we will be meeting in the Fisher Library tonight at 6:00 or at 7:00.  Some details:
 
-I realized rather belatedly that in order to do the planned activity tomorrow, we would need computers with the [[https://www.tableau.com/][tableau]] visualization software installed. It's not on the computers in our classroom, but it *is* on the Map & Data Library computers, so we will be shifting to *the same classroom we used 2 weeks ago on the 5th floor of Robarts*. We'll be there for the whole class, from 10-1. 
+- library is just south of Robarts, and is physically attached to it; [[https://www.google.com/maps?ll=43.664082,-79.398985&z=14&t=m&hl=en&gl=US&mapclient=embed&q=Thomas+Fisher+Rare+Book+Library+120+St+George+St+Toronto,+ON+M5S+1A5+Canada][here's a map]]
+- Please *arrive early* as you will need to check your bags into the library lockers before heading down.  The 7:00 group will need to finish up at about 7:50 and will *start promptly at 7:00*, not at 7:10 -- please *do not come late*
+- If you haven't signed up yet, then *you are in the 7:00 group* --the 6:00 group is full
+- bring a notebook to jot down your thoughts, and a phone to take pictures if you wish.
+- please come with thoughts and questions -- these are special texts and it's a real privilege to see them. Show your appreciation to the library by engaging thoughtfully and actively.
 
-We'll be using a lightly-modified version of [[http://maps.library.utoronto.ca/workshops/IntroDataViz/index.php][the intro to datavisualization workshop materials]] provided by the MDL.  You may want to take a look at them. 
+See you there, either at 6 or at 7!
 
-Please also see the [[https://digitalhistory.github.io/wdw235/syllabus/syllabus/][updated class schedule]], which will allow you to finish the 
-I apologize for not sending this announcement out earlier
+* Consultation Sign-ups!
+:PROPERTIES:
+:ORG_LMS_ANNOUNCEMENT_ID: 418506
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/127426/discussion_topics/418506
+:ORG_LMS_POSTED_AT: 2019-10-22T12:16:13Z
+:END:
+Not sure whether I announced formally that consultation signups have been live since Friday.  Follow [[http://tuftsedtech.screenstepslive.com/s/18992/m/73355/l/810722-student-how-do-i-sign-up-for-an-appointment-group][these instructionsss]] to be sure that you have the course calendar activated in Quercus, and then please sign up -- only a few ooof you have done so so far, and the due date is coming up. 
 
+* Tonight's Class; assignments (<2019-10-24 Thu>)
+Remember that we Have a visit tonight form *Prof. Alexandra Bolintineanu*, who teaches the day class. She will be with us for about 30-45 minutes at the beginning of class. It will be important for you to have *browsed extensively* in the  [[https://samizdatcollections.library.utoronto.ca/][Project for the Study of Dissidence and Samizdat]]. You should know what "Samizdat" means and hopefully have some *questions* for Prof. B. about her presentation. Afterwards we will talk a bit more about Omeka and we'll take the last hour as time to make progress on your presentations.
+
+I have finally handed back assignment 1, as I believe all of you are aware. I had hoped to be a bit further with Assignment 2 than I am; it will certainly be several days before I can get it back to you. I've read about a quarter of your papers so far and I'm pretty pleased with what you've done! 
+
+If you skipped your appointment with me today... Don't do that again! 
+
+See you this afternoon.
+
+* Class *in Robarts* tonight
+:PROPERTIES:
+:ORG_LMS_ANNOUNCEMENT_ID: 440683
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/127426/discussion_topics/440683
+:ORG_LMS_POSTED_AT: 2019-11-14T02:24:27Z
+:END:
+Hello everyone! Welcome back! 
+
+This week we have the first of two sequential -- and exciting -- workshops with Maps and Data Librarian [[https://onesearch.library.utoronto.ca/library-staff/26187/kelly-schultz][Kelly Schulz]].  This week's workshop is on data cleaning; you can see [[http://maps.library.utoronto.ca/workshops/OpenRefine/][the materials online here]], though our workshop won't follow this outline precisely.
+
+Please arrive at Robarts Library *promptly* at 6:00PM. We'll be using the classroom on the 4th floor of Robarts, and the easiest way to get there wil lbe to take the escalator to the 4th floor; at the top of the escalator you'll see a whiteboard with an arrow pointing the way in. 
+
+I'll look forward to seeing you all there -- please don't neglect to come!
+* I forgot to send this out!
+:PROPERTIES:
+:ORG_LMS_ANNOUNCEMENT_ID: 448308
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/127426/discussion_topics/448308
+:ORG_LMS_POSTED_AT: 2019-11-21T21:38:03Z
+:END:
+Remember! We're meeting in Robarts again tonight! See you there!!
+* Short Assignment 3 finally up!!
+:PROPERTIES:
+:ORG_LMS_ANNOUNCEMENT_ID: 448404
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/127426/discussion_topics/448404
+:ORG_LMS_POSTED_AT: 2019-11-21T23:23:09Z
+:END:
+
+Due a week from today.  link: 
+
+https://q.utoronto.ca/courses/123949/assignments/250828
+* Final Class!
+:PROPERTIES:
+:ORG_LMS_ANNOUNCEMENT_ID: 453935
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/127426/discussion_topics/453935
+:ORG_LMS_POSTED_AT: 2019-11-28T01:21:02Z
+:END:
+See you all tomorrow night for the last class of the year. I have fulfilled my promise to bake, but I'm counting on all of you as well!
+
+Please take a quick look at your marks. If you see something that seems wrong -- e.g., if you have a 0 on an assignment but are sure that you handed it in -- please get in touch right away. I believe everything that has been handed in has now been marked.  
+
+A few more remarks to follow soon. 
+* Final Assignment Clarification
+:PROPERTIES:
+:ORG_LMS_ANNOUNCEMENT_ID: 457885
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/127426/discussion_topics/457885
+:ORG_LMS_POSTED_AT: 2019-12-02T19:15:50Z
+:END:
+
+Several of you have asked about the word count for the final assignment. My apologies for not clarifying this sooner.  As you'll recall, the assignment asks you to write at least 4 exhibit sections, ~introduction~, ~book~, ~context~, and ~insights~, and to include a ~works cited~ section. 
+
+Each of those written sections (so, not ~works cited~) should be a minimum of 250-300 words, but *at least 1* of those sections should be substantially longer & represent sustained engagement with the text and the issues it raises (probably this will be ~context~ or ~insights~, or both, or an extra sectio nthat you add at your own discretion). I'm not able to give an exact word count because the main grading criteria will revolve not around length, but instead around *real engagement with an issue that matters.* So as you work, you should be focused as much as possible on that fundamental question -- "Have I explored an issue that I care about to an extent that I find satisfying?".
+
+I hope this helps somewhat!
+* Exhibits back online
+:PROPERTIES:
+:ORG_LMS_ANNOUNCEMENT_ID: 458632
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/127426/discussion_topics/458632
+:ORG_LMS_POSTED_AT: 2019-12-03T08:49:18Z
+:END:
+
+Several of you noticed that the exhibits suddenly disappeared from omeka yesterday afternoon. They appear to have been restored after an unexpected upgrade was triggered.  I believe everything is back to normal now. 
+* Office Hours Today
+As I've told several of you, I'm planning to be in my office today from 12-2.  
 * Tomorrow's class -- PLEASE READ (also: Ref 1 assignment)
 :PROPERTIES:
 :ORG_LMS_ANNOUNCEMENT_ID: 307088
@@ -191,6 +276,42 @@ Best wishes,
 
 Hila 
 
+* Do the Reading Please!
+:PROPERTIES:
+:ORG_LMS_ANNOUNCEMENT_ID: 428707
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/127426/discussion_topics/428707
+:ORG_LMS_POSTED_AT: 2019-10-31T15:59:27Z
+:END:
+At *minimum*, please read the Drucker reading that is o n the syllabus for today: http://www.digitalhumanities.org/dhq/vol/5/1/000091/000091.html -- I hope we can discuss some of the ideas there.  
+
+
+It's Hallowe'en! come in costume if you like!
+
+* More about Drucker
+:PROPERTIES:
+:ORG_LMS_ANNOUNCEMENT_ID: 429203
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/127426/discussion_topics/429203
+:ORG_LMS_POSTED_AT: 2019-10-31T21:30:58Z
+:END:
+
+Come prepared especially to discuss especially and at least figures 1,2,7,14,17.  See you soon! 
+
+Hoping to give you back your papers before then but need to stadardize the marks properly first.
+
+* Proposal Clarifications: What's due tomorrow
+:PROPERTIES:
+:ORG_LMS_ANNOUNCEMENT_ID: 428788
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/127426/discussion_topics/428788
+:ORG_LMS_POSTED_AT: 2019-10-31T16:35:50Z
+:END:
+I think perhaps it doesn't appear to be completely clear what is due tomorrow; I reproduce here the instructions from the main assignment, which hopefully are clearer in isolation: 
+
+
+1. A proposal describing, in 200 words or fewer, the object whose story you plan to tell: what it is; why it was banned, by whom, and in what historical context; and how you plan to shape your exhibit. *Due <2019-11-01 Fri>*
+
+2. An annotated bibliography ([[http://advice.writing.utoronto.ca/types-of-writing/annotated-bibliography/]]) that contains: links to and descriptions of at least 3 things for your collection; references to and summaries of at least 3 *scholarly* sources (scholarly print books, scholarly journal articles, scholarly encyclopedia entries). *Due <2019-11-01 Fri>*
+
+I hope that helps!!
 
 * Notes for Today's class
 :PROPERTIES:
@@ -205,6 +326,25 @@ Meanwhile, I have uploaded our texts to voyant tools to save you the trouble -- 
 - [[https://voyant-tools.org/?corpus=f1e498d87d80d31a08eddee6087498a9][Les Mis as Corpus]]
 - [[https://voyant-tools.org/?corpus=3850b9072e252c0284a555d978538a07][Frankenstein as Corpus]]
 - [[https://voyant-tools.org/?corpus=263abefb0bb190230f8003e5ac16f5b8][Lady Susan as Corpus]]
+
+* Late for office hours
+:PROPERTIES:
+:ORG_LMS_ANNOUNCEMENT_ID: 458925
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/127426/discussion_topics/458925
+:ORG_LMS_POSTED_AT: 2019-12-03T16:42:33Z
+:END:
+
+I'm sorry, I'm a bit late for office hours today due to an illness in my household. I should be there by 1220 at the latest.
+
+* Handing in final assignment
+:PROPERTIES:
+:ORG_LMS_ANNOUNCEMENT_ID: 459069
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/127426/discussion_topics/459069
+:ORG_LMS_POSTED_AT: 2019-12-03T18:04:16Z
+:END:
+
+There have been a few questions about how to hand the assignment in -- I've updated the form so it now allows submission of a website URL and a text comment as well.  Please use that  form and submit the public view of the exhibit.
+
 * Raptors Jubilee
 :PROPERTIES:
 :ORG_LMS_ANNOUNCEMENT_ID: 319546
@@ -229,6 +369,22 @@ There have been several questions about handing in the final assignment, so I mu
 
 If you've already done this, don't worry about it! Congratulations on finishing and have a great summer!
 
+
+* Grades due today
+:PROPERTIES:
+:ORG_LMS_ANNOUNCEMENT_ID: 468227
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/127426/discussion_topics/468227
+:ORG_LMS_POSTED_AT: 2019-12-13T16:57:34Z
+:END:
+For those of you with late work, my marks are due tomorrow. Please hand in everything you'd like to have marked by the end of the day Friday!
+
+* Make sure you submit your project URL via Quercus
+:PROPERTIES:
+:ORG_LMS_ANNOUNCEMENT_ID: 468235
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/127426/discussion_topics/468235
+:ORG_LMS_POSTED_AT: 2019-12-13T17:17:52Z
+:END:
+A surprising number of projects are missing from Quercus. Please double-check to be sure you entered a URL there. You don't want a 0 in that assignment. 
 
 * COMMENT get student list (for GH roster)
 

@@ -184,18 +184,18 @@ A *very* brief intro to Omeka, the framework we'll use to build your class proje
 We visit the Thomas Fisher Rare Book Library under the guidance of Tim Perry, Cataloguer and Reference Librarian at the Library, and are introduced to the candidate books for your final projects.
 
 *Please Note:* This may be rescheduled to Oct. 24! Thanks for your patience 
+** {{{n}}} ({{{ts}}}) Endangered Knowledge: Theory and Practice
+We examine digital archives, discussing creation, preservation, ethical concerns, relationships with communities, and security and environmental issues raised by cloud computing and machine learning.  We examine UofT’s guidelines around the ethical and technical management of human research data.
+***  Readings & Discussion
+- 
+*** Tools Workshop: More Omeka 
 ** {{{n}}} ({{{ts}}}) Endangered Knowledge: Remembering the Soviet Bloc
 *** Readings & Discussion
 - Browse *extensively* in the [[https://samizdatcollections.library.utoronto.ca/][Project for the Study of Dissidence and Samizdat]]
 *** Special Guest Lecture!
 [[https://alexandrabolintineanu.wordpress.com/][Prof. Alexandra Bolintineanu]] will share some reflections on Samizdat and censorship in late Twentieth Century Romania.  
-** {{{n}}} ({{{ts}}}) Endangered Knowledge: Theory and Practice
-We examine digital archives, discussing creation, preservation, ethical concerns, relationships with communities, and security and environmental issues raised by cloud computing and machine learning.  We examine UofT’s guidelines around the ethical and technical management of human research data.
-*** ACTION Readings & Discussion
-- TBA
-*** Tools Workshop: More Omeka 
 ** {{{n}}} ({{{ts}}}) Data 1: Data Models for the Humanities
-We back up and ask: what are data models and algorithms? We discuss how data models, algorithms, and digital platforms inform ways of knowing, learning, and reading. Data as endangered/endangering kn;owledge. 
+We back up and ask: what are data models and algorithms? We discuss how data models, algorithms, and digital platforms inform ways of knowing, learning, and reading. Data as endangered/endangering knowledge. 
 
 *** Readings & Discussion:
 - Johanna Drucker, “[[http://www.digitalhumanities.org/dhq/vol/5/1/000091/000091.html][Humanities Approaches to Graphical Display]]” (2011).
@@ -207,6 +207,7 @@ We back up and ask: what are data models and algorithms? We discuss how data mod
 - Safiya Umoja Noble. /[[https://ebookcentral-proquest-com.myaccess.library.utoronto.ca/lib/utoronto/detail.action?docID=4834260][Algorithms Of Oppression: How Search Engines Reinforce Racism]]/. (2018)
 *** Reflection Assignment: Data Tool Comparison
 
+** {{{n}}} ({{{ts}}}) NO CLASS READING WEEK
 ** {{{n}}} ({{{ts}}}) Data 2: OpenRefine
 - A special 3-hour workshop with OpenRefine in the Map and Data Library (5th Floor Robarts)
 
@@ -220,7 +221,6 @@ In a facilitated workshop, we turn to data visualization of humanities materials
 
 *** Readings & Discussion
 - Workshop Materials Link to be distributed
-** {{{n}}} ({{{ts}}}) NO CLASS READING WEEK
 ** {{{n}}} ({{{ts}}}) Retrospective
 The last class is a retrospective look at the course. We'll discuss how to use DH approaches and tools in your home disciplines. We also discuss how we might apply the course learning outcomes to jobs in the corporate sector: we dissect a job ad from Monster.ca to align students' newly acquired skills with every requirement of that position.
 

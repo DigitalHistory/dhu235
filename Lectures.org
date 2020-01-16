@@ -38,8 +38,7 @@
 
 
 
-
-*  {{{n}}}  Digital Humanities --  An Introduction ({{{ts}}})
+* :{{{n}}}  Digital Humanities --  An Introduction ({{{ts}}})
 :PROPERTIES:
 :EXPORT_FILE_NAME: 01-intro
 :CUSTOM_ID: 01-dh--an-introduction-a964
@@ -71,7 +70,7 @@
 - what does this tell us exactly?
 - not a static definition!
 - far enough away from the interface, it is just "humanities" or "computer science"
-#+end_notes
+#+end_notes/
 ** EX: The Book of John Mandeville.
 :PROPERTIES:
 :CUSTOM_ID: british-library-ms.-harley-3954.-the-book-of-john-mandeville.
@@ -849,7 +848,6 @@ Data: accessible, usable, readable, preservable
 ** Bibliography
 bibliography:/home/matt/DH/digitalhistory.bib
 
-
 * {{{n}}}:  TEI, XML (see TEI assignment!) {{{ts}}} 
 ** Today
 ** Deformance
@@ -863,7 +861,6 @@ CF the Romeo & Juliet Repo & associated announcements.
 :PROPERTIES:
 :EXPORT_FILE_NAME: 05-enangered-books-omeka
 :END:
-
 ** Today
 - Assignment Discussion
 - Omeka Introduction
@@ -1306,13 +1303,552 @@ To create a new Block, click on the desired layout. This block will be added as 
 - Draft and save your Item descriptions and your Exhibit content in word processing software; save this draft; 
 - Paste your content from Word into Omeka.
 
-* {{{n}}}: Endangered Knowledge 2: Fisher Library ({{{ts}}})
-* {{{n}}}: Endangered Knowledge 3: Guest Lecture! ({{{ts}}})
 * {{{n}}} -- Endangered Knowledge: Tears in Rain ({{{ts}}})
+:PROPERTIES:
+:EXPORT_FILE_NAME: 07-tears-in-rain
+:END:
+** Today
+- Knowledge, Danger, Digital
+- Omeka: Your Questions and Concerns
+** Writing Exercise 1:  
+- 3 minutes: 3 impressions from your trip to the library
+** Writing Exercise 2: 
+- 3 minutes: what are the most serious threats to knowledge today?  
+
+** Making & Sustaining Digital Archives
+  :PROPERTIES:
+  :CUSTOM_ID: making-sustaining-digital-archives
+  :style: page-break-before:always; 
+  :END:
+
+[[./images/archive-defn.png]]
+
+
+** Toronto Public Library Digital Archive: Print Media, Digitized
+  :PROPERTIES:
+  :CUSTOM_ID: toronto-public-library-digital-archive-print-media-digitized
+  :style: page-break-before:always; 
+  :END:
+[[./images/tpl-arc.png]]
+
+Digital archives can originate with print media, like the Toronto Public Library Digital Archive.
+
+** Digital Archives: Egyptian Revolution (Born Digital)
+  :PROPERTIES:
+  :CUSTOM_ID: digital-archives-egyptian-revolution-born-digital
+  :style: page-break-before:always; 
+  :END:
+
+[[./images/egypt-rev.png]]
+
+Other archives are born digital.
+
+
+[[http://guides.library.cornell.edu/c.php?g=31688&p=200748][https://archive-it.org/collections/2358]]
+
+[[http://guides.library.cornell.edu/c.php?g=31688&p=200748][http://guides.library.cornell.edu/c.php?g=31688&p=200748]]
+
+[[https://storify.com/acarvin/new-story-2][https://storify.com/acarvin/new-story-2]]
+
+
+#+begin_notes
+
+Other archives are born digital. Here is an archive of social media activity during the *Egyptian revolution of 2011*: tweets, blogs, Facebook posts, and so on. This is maintained by the American University in Cairo in partnership with the Internet Archive.
+
+#+end_notes
+
+** 
+  :PROPERTIES:
+  :CUSTOM_ID: section-12
+  :style: page-break-before:always; 
+  :END:
+
+[[./images/born-dig-collections.png]]
+
+Archives consist of records: digitized manuscripts, books, newspapers, legal documents, video footage, oral histories, sounds, tweets.
+
+** Digitizing Parchment & Paper
+  :PROPERTIES:
+  :CUSTOM_ID: digitizing-parchment-paper
+  :style: page-break-before:always; 
+  :END:
+
+*** Internet Archive
+  :PROPERTIES:
+  :CUSTOM_ID: section-13
+  :style: page-break-before:always; 
+  :END:
+
+[[./images/ia-screenshot.png]]
+
+*** Materials
+
+[[./images/boxes.jpg]]
+#+begin_notes
+Digitization requires very specialized equipment and expertise. Before digitization can begin, materials travel to the scanning centre. Some books travel in humble cardboard boxes, like this stack of yearbooks from Vancouver College.
+
+#+end_notes
+*** Internet Archive: Materials for digitization. 
+   :PROPERTIES:
+   :CUSTOM_ID: internet-archive-materials-for-digitization.-photo-a.-bolintineanu-2016.-1
+   :reveal_extra_attr: class="twoc"
+   :END:
+
+#+begin_slideblock
+
+[[./images/coffin.png]]
+
+#+end_slideblock
+
+#+begin_slideblock
+
+[[./images/book-coffin.jpg]]
+
+#+end_slideblock
+
+   #+begin_notes
+Other materials travel in style---in this case, in enclosed archival boxes that themselves travel in padded wooden crates very much like vampire coffins (because, like vampires, these books are fragile and long-lived, travellers from an earlier time).
+   
+   #+end_notes
+
+  #+begin_notes
+  Here's the vampire coffin.
+  #+end_notes
+
+*** Digitizing Manuscripts
+  :PROPERTIES:
+  :CUSTOM_ID: digitizing-manuscripts
+  :style: page-break-before:always; 
+  :END:
+
+Digitisation of a Dunhuang manuscript (Pictured: De Vere 480 camera. Wikipedia: International Dunhuang Project, 2006.)
+
+[[./images/manuscript-scan/jpg]]
+#+begin_notes
+Once you have assembled your material, digitization work can begin. You'll need a specialized camera that can capture the colours of your manuscript, the tiny details (some not visible to the naked eye), erasures, scribal doodles, the marginal notes written by scribes and readers over the years, even bookworm damage. You'll need a cradle to support the manuscript. You'll need a conservation-friendly room, where you can control all the light sources, to make sure you take the clearest, most accurate photograph.
+
+#+end_notes
+*** Digitizing Printed Books
+  :PROPERTIES:
+  :CUSTOM_ID: digitizing-printed-books
+  :style: page-break-before:always; 
+  :END:
+
+Digitizing Books at the Fisher Library (Photo: Paul Armstrong, 2016)
+
+[[./images/scanner.png]]
+#+begin_notes
+Here is a specialized scanner as used by the Fisher Library. Notice the black book cradle under the book, and colour calibration strip on the right-hand side of the book. These help ensure archival-quality images.
+
+#+end_notes
+*** Digitizing Printed Books
+  :PROPERTIES:
+  :CUSTOM_ID: digitizing-printed-books-1
+  :style: page-break-before:always; 
+  :END:
+
+[[./images/darkroom-scan.jpg]]
+  #+begin_notes
+  Here is a specialized scanning station from the Internet Archive's outpost on the seventh floor of Robarts. Notice the curtains around the station, ensuring a minimum of light interference; the bright light on the scanner itself; the computer screen, to check the quality of the scan; and the book cradle, holding the book half-open so as not to injure its spine. On the seventh floor of Robarts, in the Internet Archive's quarters, there are seven or eight such digitization stations, each in its own cocoon of drapery and with its own overhead light.
+
+  #+end_notes
+*** Digitizing Printed Books
+  :PROPERTIES:
+  :CUSTOM_ID: digitizing-printed-books-2
+  :style: page-break-before:always; 
+  :END:
+
+[[./images/darkroom-person.png]]
+  #+begin_notes
+  
+The scanning bed is angled, forming a book cradle that allows a book to sit partially open. This supports fragile spines and bindings.
+
+  #+end_notes
+** Google Data Centre: Server Farm
+  :PROPERTIES:
+  :CUSTOM_ID: google-data-centre-server-farm
+  :style: page-break-before:always; 
+  :END:
+Image: Google, Data Centre Gallery (https://www.google.com/about/datacenters/gallery)
+[[./images/datacenter.png]]
+** “The Mirror of the World & Its Memory”
+  :PROPERTIES:
+  :CUSTOM_ID: the-mirror-of-the-world-its-memory
+  :style: page-break-before:always; 
+  :END:
+
+#+begin_quote
+  
+“Documentary heritage reflects the diversity of languages, peoples and cultures. It is the mirror of the world and its memory. But this memory is fragile. Every day, irreplaceable parts of this memory disappear for ever.”
+
+-- UNESCO Memory of the World Programme
+#+end_quote
+*** British Library, Endangered Archives Programme
+  :PROPERTIES:
+  :CUSTOM_ID: british-library-endangered-archives-programme
+  :style: page-break-before:always; 
+  :END:
+
+[[./images/endangered-archives.png]]
+
+http://eap.bl.uk/database/map.a4d
+
+
+*** Digital Imaging of Endangered Books
+  :PROPERTIES:
+  :CUSTOM_ID: digital-imaging-of-endangered-books
+  :style: page-break-before:always; 
+  :END:
+[[./images/hmml.png]]
+*** 
+  :PROPERTIES:
+  :CUSTOM_ID: section-16
+  :style: page-break-before:always; 
+  :END:
+[[./images/hmml-2.png]]
+** COMMENT Hyperspectral or Multispectral Imaging
+  :PROPERTIES:
+  :CUSTOM_ID: hyperspectral-or-multispectral-imaging
+  :style: page-break-before:always; 
+  :END:
+#+begin_paired
+[[./images/hyper1.png]]
+#+end_paired
+#+begin_paired
+[[./images/hyper2.jpg]]
+#+end_paired
+** COMMENT Hyperspectral or Multispectral Imaging
+  :PROPERTIES:
+  :CUSTOM_ID: hyperspectral-or-multispectral-imaging-1
+  :style: page-break-before:always; 
+  :END:
+
+  #+begin_quote
+   “a powerful, noncontact technique with a range of capabilities. The critical component of the advanced spectral imaging is the capability for chemical characterization of materials, providing both access and enhanced non-visible and visible information in registered high-resolution digital images. This noncontact tool can identify and characterize colorants, inks, and substrates through their specific spectral response, monitor deterioration or changes due to exhibit and other environmental conditions, assess and potentially identify previous treatments that modify chemical and spectral responses of cultural heritage materials...” (Fenella G. France et al)
+
+  #+end_quote
+*** Archimedes Codex
+  :PROPERTIES:
+  :CUSTOM_ID: archimedes-codex
+  :style: page-break-before:always; 
+  :END:
+#+begin_paired
+
+[[https://www.ted.com/talks/william_noel_revealing_the_lost_codex_of_archimedes][https://www.ted.com/talks/william_noel_revealing_the_lost_codex_of_archimedes]]
+
+[[http://archimedespalimpsest.net/Data/][http://archimedespalimpsest.net/Data/]]
+
+#+end_paired
+#+begin_paired
+[[./images/arch.jpg]]
+#+end_paired
+*** Herculaneum Scrolls
+  :PROPERTIES:
+  :CUSTOM_ID: herculaneum-scrolls
+  :style: page-break-before:always; 
+  :END:
+
+#+begin_paired
+  #+begin_quote
+  A papyrus scrolls from Herculaneum, which was carbonized in the eruption of Mt. Vesuvius, undergoes part of the CT scan process to help decipher the writing contained within the scrolls, in an image from the University of Kentucky's Center for Visualization and Virtual Environments taken in 2009. ([[https://www.newsweek.com/2016/01/29/x-rays-reveal-secrets-egyptian-scrolls-papyrus-416719.html][https://www.newsweek.com/2016/01/29/x-rays-reveal-secrets-egyptian-scrolls-papyrus-416719.html]])
+
+  #+end_quote
+#+end_paired
+#+begin_paired
+[[./images/herc.jpg]]
+#+end_paired
+** The Declaration of Independence (draft)
+  :PROPERTIES:
+  :CUSTOM_ID: the-declaration-of-independence-draft
+  :style: page-break-before:always; 
+  :END:
+
+*** Declaration of Independence: Patriots? Residents?
+   :PROPERTIES:
+   :CUSTOM_ID: patriots-residents
+   :reveal_extra_attr: class="twobytwo"
+   :END:
+#+begin_slideblock
+
+[[./images/declaration.png]]
+
+#+end_slideblock
+#+begin_slideblock
+
+- Fenella G. France and Michael B. Toth. 2011. [[https://ieeexplore-ieee-org.myaccess.library.utoronto.ca/search/searchresult.jsp?newsearch=true&queryText=Spectral+imaging+for+revealing+and+preserving+world+cultural+heritage][“Spectral imaging for revealing and 
+preserving world cultural heritage]].” The Institute of Electrical and Electronics Engineers, Inc. (IEEE) Conference Proceedings, 08/2011, pp. 1450 -- 1454.
+#+end_slideblock
+
+#+begin_slideblock
+
+[[./images/dec-full.jpg]]
+#+end_slideblock
+
+#+begin_slideblock
+
+[[./images/dec-side.png]]
+
+#+end_slideblock
+
+** Risks to Digital Archives
+  :PROPERTIES:
+  :CUSTOM_ID: risks-to-digital-archives
+  :style: page-break-before:always; 
+  :END:
+
+
+*** Risks to Digital Archives
+  :PROPERTIES:
+  :CUSTOM_ID: risks-to-digital-archives-1
+  :style: page-break-before:always; 
+  :END:
+#+begin_paired
+[[./images/worm-fole.jpg]]
+#+end_paired
+#+begin_paired
+[[./images/blue-screen.png]]
+#+end_paired
+** Domesday Book
+  :PROPERTIES:
+  :CUSTOM_ID: doomsday-book
+  :style: page-break-before:always; 
+  :END:
+
+#+begin_paired
+[[./images/domesday.jpg]]
+1086
+#+end_paired
+#+begin_paired
+[[./images/domes-2.jpg]]
+#+end_paired
+
+#+begin_notes
+Let me tell you the story of the two Doomsday Books. The firsts is a Latin manuscript of the eleventh century: for taxation purposes, William the Conqueror ordered a record made of landholders and their property in much of England and parts of Wales. The book was finished in 1086 and it resides at The National Archives at Kew, London.
+
+The second Doomsday Book was a BBC initiative, 900 years later: an attempt to build a “digital snapshot of the country,” a documentation of everyday life in communities around the United Kingdom. Over a million people contributed. 
+
+The BBC Domesday Project was stored on adapted laser discs. Reading these discs required a state-of-the-art microcomputer, the Acorn BBC Master, customized with a specially produced laserdisc player.
+
+Unfortunately, as the machines became obsolete, the laser discs and the data on them became unreadable. Until, roughly, 2011. After efforts by academics and technologists around the world, the BBC's own technologists, George Auckland and his Innovations Team, completed the extraction of the laser disc. The BBC Domesday Book is now available to the world at large online.
+
+#+end_notes
+
+
+
+
+** Data Loss and Digital Archives: Storage, Loss, Preservation
+
+
+*** Data Storage
+  :PROPERTIES:
+  :CUSTOM_ID: data-storage
+  :style: page-break-before:always; 
+  :END:
+
+- *Risky*
+  - Own machine: YIKES
+  - Dropbox or Google Drive: better, but not perfect
+
+- *Safer*
+  - Multiple backups off-site
+  - GitHub (version control)
+  - Institutional repository (i.e. the library) with technical safeguards against data degradation
+  - LOCKSS: distributed network of institutional repositories
+  - Dark archives: secret, inaccessible archives (disaster recovery)
+
+#+begin_notes 
+Storing the data on your own machine is very risky. If you put it in Dropbox or Google Drive, that's better, but not perfect: what if you or a team member deletes the data by accident? Even better if you have multiple off-site backups: so if e.g. Dropbox has a security failure and your own computer is compromised, you can still get your data from the hard-drive at your parents'. Even better: GitHub (which is a platform that tracks versions of your data, where you have the history of your data and can go back to earlier versions).
+
+If you're a research institution, you have some other, even safer options.
+
+Your institutional repository is maintained by the library: it's a place to park your data that has sophisticated technical safeguards against data degradation.
+
+If one institutional repository is nice, more are even better. LOCKSS is an open-source preservation system that sustains a distributed network of institutional repositories. It's like storing your backup hard-drive at your parents' and having them store their hard-drive at your house. In other words, everyone protects everyone else's data. LOCKSS stands for “lots of copies keep stuff safe.” And for additional protection, there are dark archives, for disaster recovery. These keep data secret and inaccessible until a trigger event such as a natural disaster or another kind of catastrophic data loss.
+#+end_notes
+
+*** Hardware and Software Platforms
+  :PROPERTIES:
+  :CUSTOM_ID: hardware-and-software-platforms
+  :style: page-break-before:always; 
+  :END:
+
+- *Risky*
+  - Dedicated, unique software platforms made by commercial providers to fit your data beautifully.
+- *Safer*
+  - Open-source, community-supported software
+
+*** Preservation Approaches
+  :PROPERTIES:
+  :CUSTOM_ID: preservation-approaches
+  :style: page-break-before:always; 
+  :END:
+
+- *Migration*
+  - Moving your data from an obsolete, less stable platform and format into a newer, more stable platform and format.
+  - Great for simpler digital objects (text, images)
+  - Example: DOE data.
+
+- *Emulation*
+  - In a new, stable software platform, recreating the---now obsolete---original environment of a digital object
+  - Good for complicated digital objects (software)
+  - Example: old arcade video games.
+
+
+#+begin_notes
+Suppose your data is in an obsolete, unstable platform. What can you do?
+#+end_notes
+** Marginalized Communities: Archival Absence & Misrepresentation
+  :PROPERTIES:
+  :CUSTOM_ID: marginalized-communities-archival-absence-misrepresentation
+  :style: page-break-before:always; 
+  :reveal_extra_attr: class="twobytwo"
+  :END:
+
+#+begin_slideblock
+
+[[./images/illegal.png]]
+
+#+end_slideblock
+
+#+begin_slideblock
+
+[[./images//sup-ind.png]]
+
+#+end_slideblock
+#+begin_slideblock
+
+[[./images/rec.png]]
+
+#+end_slideblock
+
+#+begin_notes
+Think about the residential school system in Canada, under which about 150,000 First Nation, Inuit and Métis children were removed from their communities, forced to attend residential schools, not allowed to speak their first language, not allowed to practice native traditions. Many were starved, beaten, sexually abused. Two days ago, Ontario Premier Kathleen Wynne officially apologized to First Nations, Metis, and Inuit communities for the abuses of the residential school system. Part of the Truth and Reconciliation Commission's work has been to uncover this history. It is not recovery. It is not undoing of cultural genocide. But, and I quote the National Centre for Truth and Reconciliation, “A shared vision held by those affected by Indian residential schools was to create a place of learning and dialogue where the truths of their experiences were honoured and kept safe for future generations. They wanted their families, communities and all of Canada to learn from these hard lessons so they would not be repeated.” The Governing Circle of the archive must “ensure Indigenous control over the materials, ensure Indigenous control over the materials; provide guidance on policies, activities, ceremonies and protocols; and provide guidance on methods and sources for expanding the Centre's holdings and resources.” The archive does not turn back time. But it safeguards the past and, in so doing, opens up possible futures.
+
+#+end_notes
+#+begin_slideblock
+
+
+[[./images/muk-logo.png]]
+
+
+“Mukurtu (MOOK-oo-too) is a grassroots project aiming to empower communities to manage, share, narrate, and exchange their digital heritage in culturally relevant and ethically-minded ways.”
+
+#+end_slideblock
+
+
+#+begin_export html
+<iframe width="1200px" height="800px" src="https://voicesofamiskwaciy.ca/" frameborder="0"  allowfullscreen></iframe>
+#+end_export
+
+#+end_paired
+
+** Disasters
+  :PROPERTIES:
+  :CUSTOM_ID: disasters
+  :style: page-break-before:always; 
+  :END:
+*** Fires
+#+begin_paired
+ Library of Celsus, Ephesus, Anatolia, now part of Selçuk, Turkey -- destroyed by earthquake and/or fire and/or Goth invasion in 3rd century AD.
+
+Photo: Benh LIEU SONG - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=15578063
+
+#+end_paired
+#+begin_paired
+[[./images/anatolia.jpg]]
+#+end_paired
+
+*** Freezers
+  :PROPERTIES:
+  :CUSTOM_ID: section-25
+  :style: page-break-before:always; 
+  :END:
+
+#+begin_paired
+
+Canadian Ice Core Archive
+
+Freezer fails,  temperature rises to about 100 degrees F, ice core samples from Canadian Arctic “which contained 22,000 years' worth of atmospheric information, were entirely or partially destroyed” (Martin Sharp, cited by Tatiana Schlossberg, “An Ice Scientist's Worst Nightmare,” New York Times, 11 April 2017)
+
+#+end_paired
+#+begin_paired
+[[./images/ice-core.png]]
+#+end_paired
+
+*** Flim-Flam Men
+[[./images/toxic-agenda.jpg]]
+
+**  EDGI & The Archiving Movement
+[[./images/g-a.png]]
+
+*** Data Rescue
+[[./images/dr.png]]
+
+*** COMMENT Coverage 
+[[./images/coverage.png]]
+*** Website Monitoring
+[[./images/wm-changes.png]]
+
+*** Website Monitoring
+[[./images/wm-flow.svg]]
+
+*** Infrastructure
+[[./images/edgi-gh.png]]
+
+*** What's the /Real/ Nature of the problem?
+- single point of failure
+- who owns knowledge
+- who can/should we trust?
+
+** COMMENT Risk Mitigation
+  :PROPERTIES:
+  :CUSTOM_ID: risk-mitigation-1
+  :style: page-break-before:always; 
+  :END:
+
+  #+begin_quote 
+collection evacuation risks, prompted by wildfires, floods, and hurricanes long-term relocation decisions due to sea-level rise and coastal erosion, or if a weather event is so devastating, rebuilding is inadvisable or impossible increasing infrastructure and preservation costs when current HVAC systems can't keep up with future increases in temperature and humidity” (Eira Tansey, “When the Unbearable Becomes Inevitable: Archives and Climate Change,” 2017, [[http://eiratansey.com/2017/05/16/fierce-urgencies-2017/][http://eiratansey.com/2017/05/16/fierce-urgencies-2017/]])
+
+
+  #+end_quote
+LOCKSS, dark archives, community building
+
+** COMMENT Death in the Archives: Bits against Ruins
+  :PROPERTIES:
+  :CUSTOM_ID: death-in-the-archives-bits-against-ruins
+  :style: page-break-before:always; 
+  :END:
+
+*** Communities of practice, ethics of care
+   :PROPERTIES:
+   :CUSTOM_ID: communities-of-practice-ethics-of-care
+   :END:
+
+   #+begin_quote
+   Moððe word fræt.      Me þæt þuhte wrætlicu wyrd,     þa ic þæt wundor gefrægn, þæt se wyrm forswealg     wera gied sumes, þeof in þystro,     þrymfæstne cwide ond þæs strangan staþol.    Stælgiest ne wæs wihte þy gleawra,    þe he þam wordum swealg.
+
+A moth ate words. That seemed to me a marvellous fate, when I heard about that wonder, that the worm swallowed up a certain man's song, the thief in darkness, a glory-fast speech and its strong foundation. The stealing guest was not at all the wiser, for those words he swallowed.
+
+   #+end_quote
+
+** COMMENT *Archive*: a collection of records
+  :PROPERTIES:
+  :CUSTOM_ID: archive-a-collection-of-records
+  :style: page-break-before:always; 
+  :END:
+
+- *Archive*: a collection of records
+- *Metadata*: structured data describing data. Think Author, Title, Date in your online library catalogue.
+- *Open-source:* Source code of a program is publicly available, and developers may study, modify, and redistribute the code.
+- *Migration*: taking data from an obsolete platform or standard into a new, more stable platform and standard
+- *Emulation*: accessing data on a new, more stable platform by building around it an environment like that in which it was originally created
+- *LOCKSS*: Lots of Copies Keep Stuff Safe
+- *Dark archives*: secret, inaccessible archives (disaster recovery)
+
+*  COMMENT -- Endangered Knowledge: Tears in Rain 
 :PROPERTIES:
 :EXPORT_FILE_NAME: 09-danger-tears
 :END:
-
 ** Today
 - Knowledge, Danger, Digital
 - Omeka: Your Questions and Concerns
@@ -1630,9 +2166,9 @@ Image: Google, Data Centre Gallery (https://www.google.com/about/datacenters/gal
   :style: page-break-before:always; 
   :END:
 
-[[./endangered-archives.png]]
+[[./images/endangered-archives.png]]
 
-http://eap.bl.uk/database/map.a4d
+https://eap.bl.uk/
 
 
 *** Digital Imaging of Endangered Books
@@ -1647,7 +2183,7 @@ http://eap.bl.uk/database/map.a4d
   :style: page-break-before:always; 
   :END:
 [[./images/hmml-2.png]]
-** Hyperspectral or Multispectral Imaging
+** COMMENT Hyperspectral or Multispectral Imaging
   :PROPERTIES:
   :CUSTOM_ID: hyperspectral-or-multispectral-imaging
   :style: page-break-before:always; 
@@ -1658,7 +2194,7 @@ http://eap.bl.uk/database/map.a4d
 #+begin_paired
 [[./images/hyper2.jpg]]
 #+end_paired
-** Hyperspectral or Multispectral Imaging
+** COMMENT Hyperspectral or Multispectral Imaging
   :PROPERTIES:
   :CUSTOM_ID: hyperspectral-or-multispectral-imaging-1
   :style: page-break-before:always; 
@@ -1718,13 +2254,13 @@ http://eap.bl.uk/database/map.a4d
   :style: page-break-before:always; 
   :END:
 
-[[./images/dec-full.png]]
+[[./images/dec-full.]]jpg
 *** 
   :PROPERTIES:
   :CUSTOM_ID: section-17
   :style: page-break-before:always; 
   :END:
-[[./dec-side.png]]
+[[./images/dec-side.png]]
 
 ** Risks to Digital Archives
   :PROPERTIES:
@@ -1923,7 +2459,7 @@ Freezer fails,  temperature rises to about 100 degrees F, ice core samples from
 *** Data Rescue
 [[./images/dr.png]]
 
-*** Coverage
+*** COMMENT Coverage 
 [[./images/coverage.png]]
 *** Website Monitoring
 [[./images/wm-changes.png]]
@@ -1945,10 +2481,12 @@ Freezer fails,  temperature rises to about 100 degrees F, ice core samples from
   :style: page-break-before:always; 
   :END:
 
-- “collection evacuation risks, prompted by wildfires, floods, and hurricanes
-- “long-term relocation decisions due to sea-level rise and coastal erosion, or if a weather event is so devastating, rebuilding is inadvisable or impossible
-- “increasing infrastructure and preservation costs when current HVAC systems can't keep up with future increases in temperature and humidity” (Eira Tansey, “When the Unbearable Becomes Inevitable: Archives and Climate Change,” 2017, [[http://eiratansey.com/2017/05/16/fierce-urgencies-2017/][http://eiratansey.com/2017/05/16/fierce-urgencies-2017/]])
-- LOCKSS, dark archives, community building
+  #+begin_quote 
+collection evacuation risks, prompted by wildfires, floods, and hurricanes long-term relocation decisions due to sea-level rise and coastal erosion, or if a weather event is so devastating, rebuilding is inadvisable or impossible increasing infrastructure and preservation costs when current HVAC systems can't keep up with future increases in temperature and humidity” (Eira Tansey, “When the Unbearable Becomes Inevitable: Archives and Climate Change,” 2017, [[http://eiratansey.com/2017/05/16/fierce-urgencies-2017/][http://eiratansey.com/2017/05/16/fierce-urgencies-2017/]])
+
+
+  #+end_quote
+LOCKSS, dark archives, community building
 
 ** Death in the Archives: Bits against Ruins
   :PROPERTIES:
@@ -1961,10 +2499,12 @@ Freezer fails,  temperature rises to about 100 degrees F, ice core samples from
    :CUSTOM_ID: communities-of-practice-ethics-of-care
    :END:
 
-Moððe word fræt.      Me þæt þuhte wrætlicu wyrd,     þa ic þæt wundor gefrægn, þæt se wyrm forswealg     wera gied sumes, þeof in þystro,     þrymfæstne cwide ond þæs strangan staþol.    Stælgiest ne wæs wihte þy gleawra,    þe he þam wordum swealg.
+   #+begin_quote
+   Moððe word fræt.      Me þæt þuhte wrætlicu wyrd,     þa ic þæt wundor gefrægn, þæt se wyrm forswealg     wera gied sumes, þeof in þystro,     þrymfæstne cwide ond þæs strangan staþol.    Stælgiest ne wæs wihte þy gleawra,    þe he þam wordum swealg.
 
 A moth ate words. That seemed to me a marvellous fate, when I heard about that wonder, that the worm swallowed up a certain man's song, the thief in darkness, a glory-fast speech and its strong foundation. The stealing guest was not at all the wiser, for those words he swallowed.
 
+   #+end_quote
 
 ** *Archive*: a collection of records
   :PROPERTIES:
@@ -1980,12 +2520,122 @@ A moth ate words. That seemed to me a marvellous fate, when I heard about that w
 - *LOCKSS*: Lots of Copies Keep Stuff Safe
 - *Dark archives*: secret, inaccessible archives (disaster recovery)
 
-
-* ACTION {{{n}}}: Data 1: Data Models for the Humanities ({{{ts}}})
-* ACTION OUT OF SEQUENCE: Data Visualization Am I still doing this? 
+* {{{n}}}: Endangered Knowledge 2: Fisher Library ({{{ts}}})
+* {{{n}}}: Endangered Knowledge 3: Guest Lecture! ({{{ts}}})
 :PROPERTIES:
-:EXPORT_FILE_NAME: 08-data-vis
+:EXPORT_FILE_NAME: 07-enangered-3-samizdat
 :END:
+** Prof B!
+** cool-looking talk! 
+file:///home/matt/wdw235/images/mattu-data-driven-society-oct-30-2019.jpg
+** "Endangerment" and Censorship
+** Understanding my  comments
+| Word/symbol | meaning                                                                                                     |
+|-------------+-------------------------------------------------------------------------------------------------------------|
+| \para           | paragraph; by itself it means "new paragraph here"                                                          |
+| \checkmark           | "good job; this is what you need to do to move your argument forward"  It doesn't mean "I agree"            |
+| awk/awkward | "This sentence or phrase is not clear, and that unclarity potentially affects the success of your argument" |
+| grammar     | grammatical error; should be obvious to you                                                                 |
+| agreement   | subject & verb do not agree                                                                                 |
+| :smile:         | :-)                                                                                                         |
+
+- overall: you guys did pretty well. congrats.
+- First Person: when to avoid
+- close reading: it's hard
+
+** Assignment 2
+- marking is coming along, but won't be done tomorrow
+- so far so good!
+** Proposal Details!
+- Due next Friday
+- Assignment says 100-200 words but *you may need more*
+  - identify your book
+  - explain its significance
+  - Describe the ban or challenge
+  - Briefly describe your plans for the project
+** Project Planning!
+- what main themes will you discuss?
+- what images do you need
+- how will you imagine the layout (wireframe) 
+** More Omeka!
+
+*  {{{n}}}: Data 1: Data Models for the Humanities ({{{ts}}})
+:PROPERTIES:
+:EXPORT_FILE_NAME: 09-data-1
+:END:
+
+** What is Data?
+#+begin_quote
+Data pass themselves off as mere descriptions of a priori conditions. Rendering /observation/ (the act of creating a statistical, empirical, or subjective account or image) as if it were /the same as the phenomena observed/ collapses the critical distance between the phenomenal world and its interpretation, undoing the basis of interpretation on which humanistic knowledge production is based. We know this. But we seem ready and eager to suspend critical judgment in a rush to visualization.
+#+end_quote
+
+** Data and Capta
+#+begin_quote
+To overturn the assumptions that structure conventions acquired from other domains requires that we re-examine the intellectual foundations of digital humanities, putting techniques of graphical display on a foundation that is humanistic at its base. /This requires first and foremost that we reconceive all data as capta/. Differences in the etymological roots of the terms data and capta make the distinction between constructivist and realist approaches clear. /Capta/ is “taken” actively while /data/ is assumed to be a “given” able to be recorded and observed. From this distinction, a world of differences arises. Humanistic inquiry acknowledges the situated, partial, and constitutive character of knowledge production, the recognition that knowledge is constructed, /taken/, not simply given as a natural representation of pre-existing fact.
+
+#+end_quote
+** Preserving Humanistic Inquiry
+
+#+begin_quote
+The polemic I set forth here outlines several basic principles on which to proceed differently by suggesting that what is needed is not a set of applications to display humanities “data” but a new approach that uses humanities principles to constitute capta and its display. At stake, as I have said before and in many contexts, is the authority of humanistic knowledge in a culture increasingly beset by quantitative approaches that operate on claims of certainty. Bureaucracies process human activity through statistical means and when the methods grounded in empirical sciences are put at the service of the social sciences or humanities in a crudely reductive manner, basic principles of critical thought are violated, or at the very least, put too far to the side. To intervene in this ideological system, humanists, and the values they embrace and enact, must counter with conceptual tools that demonstrate humanities principles in their operation, execution, and display. 
+#+end_quote
+
+** Ambiguity as /merely irreducible/ or /constitutive/
+
+#+begin_quote
+But an important distinction needs to be clear from the outset: the task of representing ambiguity and uncertainty has to be distinguished from a second task -- that of using interpretations that arise in observer-codependence, characterized by ambiguity and uncertainty, as the basis on which a representation is constructed. This is the difference between putting many kinds of points on a map to show degrees of certainty by shades of color, degrees of crispness, transparency etc., and creating a map whose basic coordinate grid is constructed /as an effect/ of these ambiguities. In the first instance, we have a standard map with a nuanced symbol set. In the second, we create a non-standard map that expresses the constructed-ness of space.
+
+#+end_quote
+
+** COMMENT Graphs 
+#+begin_quote
+The graphical force conceals what the statistician knows very well --- that no “data” pre-exist their parameterization. /Data are capta/, taken not given, constructed as an interpretation of the phenomenal world, not inherent in it.
+
+http://www.digitalhumanities.org/dhq/vol/5/1/000091/000091.html#p9
+<<p9>>
+To expose the constructedness of data as capta a number of systematic changes have to be applied to the creation of graphical displays. That is the foundation and purpose of a /humanistic approach/ to the qualitative display of graphical information. Read that last formulation carefully, /humanistic approach/ means that the premises are rooted in the recognition of the /interpretative/ nature of knowledge, that the /display/ itself is conceived to /embody qualitative expressions/, and that the information is understood as /graphically constituted/. Each of these factors contains an explicit critique of assumptions in the conventional “visual display of quantitative information” that is the common currency.
+
+#+end_quote
+** Compare Graphs
+:PROPERTIES:
+:reveal_extra_attr: class="twoc"
+:END:
+#+begin_slideblock
+#+CAPTION: uncritical population figures  
+[[http://www.digitalhumanities.org/dhq/vol/5/1/000091/...000091/resources/images/figure01.jpg]]
+
+#+end_slideblock
+
+#+begin_slideblock
+#+CAPTION: Compare with this destabilizing visualization
+http://www.digitalhumanities.org/dhq/vol/5/1/000091/...000091/resources/images/figure02.jpg
+
+#+end_slideblock
+
+** Spatiality
+
+#+begin_quote
+We can construct a concrete example of spatiality that parallels this example of temporality, and also depends on temporal models. For instance, imagine an open stretch of beach, relatively unconstrained and unconstructed. When a sailing ship is washed up at a certain point on the beach, not only that point, but the space around it, becomes transformed. The presence of the wreck creates a huge impact, and the space almost palpably bends, compresses, expands, and warps around it, with waves of resonance rippling outward from that point.
+
+#+end_quote
+
+http://www.digitalhumanities.org/dhq/vol/5/1/000091/...000091/resources/images/figure14.jpg
+
+
+#+begin_quote
+Figure 14. 
+
+In this example, a geographical space (a stretch of beach) is affected by a change in the state or circumstance. First we see the space mapped according to a regular Cartesian coordinate system. Then the grid is inflected by the arrival of a beached ship, around which the beach bends because the sense of each spot as relative equal is distorted by the attention that the ship commands. The space acquires one inflection after another as graffiti marks the ship, a chain link fence goes up with a police notice, footprints create a pattern in the sand, pathways for observation re-route pedestrian traffic etc. The “space” of the beach is transformed physically and in terms of attention getting and effect so that it is no longer a set of equal and neutral elements of a rational spatial system, but one that must be expressed with graphical distortions that show these inflections. Graphic credit Xárene Eskandar.
+
+#+end_quote
+
+
+** Drucker: Temporality
+#+CAPTION: Temporal Folding
+http://www.digitalhumanities.org/dhq/vol/5/1/000091/...000091/resources/images/figure07.jpg
+
+#+CAPTION: 
+
 ** Today 
 - Reflections on Tableau Workshop
 - Cautionary Tales re: Visualization
@@ -2031,14 +2681,14 @@ http://thisisindexed.com/wp-content/uploads/2017/11/card5371.jpg
   :CUSTOM_ID: how-to-lie-with-data-visualization
   :style: page-break-before:always; 
   :END:
-#+CAPTION: [[https://i.kinja-img.com/gawker-media/image/upload/s--SKWrO6sh--/c_fit,f_auto,fl_progressive,q_80,w_636/uqs2i9txqkdyc5jkpfut.jpg][Parik, "How to Lie with Data"]]
+[[https://i.kinja-img.com/gawker-media/image/upload/s--SKWrO6sh--/c_fit,f_auto,fl_progressive,q_80,w_636/uqs2i9txqkdyc5jkpfut.jpg][Parik, "How to Lie with Data"]]
 https://i.kinja-img.com/gawker-media/image/upload/s--SKWrO6sh--/c_fit,f_auto,fl_progressive,q_80,w_636/uqs2i9txqkdyc5jkpfut.jpg
 
 *** Cumulative Graphs
    :PROPERTIES:
    :CUSTOM_ID: how-to-lie-with-data-visualization-1
    :END:
-#+CAPTION: [[https://i.kinja-img.com/gawker-media/image/upload/s--SKWrO6sh--/c_fit,f_auto,fl_progressive,q_80,w_636/uqs2i9txqkdyc5jkpfut.jpg][Parik, "How to Lie with Data"]]
+ [[https://i.kinja-img.com/gawker-media/image/upload/s--SKWrO6sh--/c_fit,f_auto,fl_progressive,q_80,w_636/uqs2i9txqkdyc5jkpfut.jpg][Parik, "How to Lie with Data"]]
 #+begin_paired 
 #+CAPTION: 2006 = 2006 + 2005 + 2004
 https://i.kinja-img.com/gawker-media/image/upload/s--dmLtGbNu--/c_fit,f_auto,fl_progressive,q_80,w_636/cpgpbbrmsc8s49ofewnc.png
@@ -2188,7 +2838,7 @@ https://i.kinja-img.com/gawker-media/image/upload/ksd0huhaczb6xsxhrszp.png
   :CUSTOM_ID: section-1
   :style: page-break-before:always; 
   :END:
-#+CAPTION: [[https://carto.com/gallery/bbva-geo-risk/][GEOPOLITICAL TENSIONS IN MENA (Middle East & Northern Africa)]]
+#+CAPTION: GEOPOLITICAL TENSIONS IN MENA (Middle East & Northern Africa)
 https://carto.com/img/layout/gallery/bbva-geo-risk/big.6b6fed37.gif
 
 
@@ -2327,7 +2977,7 @@ http://www.digitalhumanities.org/dhq/vol/5/1/000091/...000091/resources/images/f
 
 * {{{n}}}: Data 2: OpenRefine Workshop! ({{{ts}}})
 * {{{n}}}: Data Visualization -- Workshop! ({{{ts}}})
-
+{{{ts}}} {{{n}}}
 ** Notes on Kelly's work
 
 - "Network density"? :: percentage of possible connections between nodes that are actualy present
@@ -2398,9 +3048,10 @@ http://www.digitalhumanities.org/dhq/vol/5/1/000091/...000091/resources/images/f
 ** Requirements vs. Achievements
   :PROPERTIES:
   :CUSTOM_ID: job-requirements
+  :reveal_extra_attr: class="twoc"
   :END:
 
-#+begin_paired
+#+begin_slideblock
 *Job Requirements*
 
 - Brainstorming solutions to complex business problems through working sessions, wireframing and developing mockups
@@ -2410,8 +3061,10 @@ http://www.digitalhumanities.org/dhq/vol/5/1/000091/...000091/resources/images/f
 - Liaising with data science and data architecture team members to optimize client data for visualization purposes
 - Managing project timelines and client deliverables
 
-#+end_paired
-#+begin_paired
+#+end_slideblock
+
+#+ATTR_REVEAL: frag
+#+begin_slideblock
 *WDW235 Achievements*
 
 - Completed a major digital exhibit project, from research with banned books from rare book collection, to public-facing digital exhibit about censorship and knowledge transmission
@@ -2419,7 +3072,7 @@ http://www.digitalhumanities.org/dhq/vol/5/1/000091/...000091/resources/images/f
 - Worked through iterative cycles, from proposal pitch to mock-up development, incorporating feedback at each stage
 - Managed project timelines and multiple deliverables
 
-#+end_paired
+#+end_slideblock
 ** Continuing in DH
 #+ATTR_REVEAL: :frag appear
 - Statistical reasoning
@@ -2752,6 +3405,7 @@ xsltproc temp.xslt temp.xml
 #+RESULTS:
 | dumb     |
 | /bin/zsh |
+
 
 
 * COMMENT Variables

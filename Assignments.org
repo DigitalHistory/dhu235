@@ -26,8 +26,27 @@ testing out the overview
 
 
 * Participation :assignment:
+:PROPERTIES:
+:EXPORT_FILE_NAME: Participation
+:PUBLISH:  nil
+:ORG_LMS_EMAIL_COMMENTS: t
+:ORG_LMS_CANVAS_COMMENTS: t
+:DUE_AT: 2019-12-05
+:GRADING_TYPE: letter_grade
+:ASSIGNMENT_TYPE: canvas
+:CANVAS_SUBMISSION_TYPES: (online_upload)
+:ASSIGNMENT_WEIGHT: 0.15
+:OL_PUBLISH: nil
+:CANVASID: 259610
+:CANVAS_HTML_URL: https://q.utoronto.ca/courses/127426/assignments/259610
+:CANVAS_SUBMISSION_URL: https://q.utoronto.ca/courses/127426/assignments/259610/submissions?zip=1
+:SUBMISSIONS_DOWNLOAD_URL: https://q.utoronto.ca/courses/127426/assignments/259610/submissions?zip=1
+:GRADING_STANDARD_ID: nil
+:END:
 
 ** Rubric :rubric:
+- *Attendance* :: 
+- *Active Participation* :: 
 - *Grade* :: 
 * Reflection 01: DH Project Profile :assignment:
 :PROPERTIES:
@@ -105,6 +124,7 @@ Components (check/no-check)
 :ASSIGNMENT_WEIGHT: 0.20
 :CANVAS_SUBMISSION_TYPES: (online_upload)
 :OL_PUBLISH: t
+:ASSIGNMENT_TYPE: canvas
 :BASECOMMIT: none
 :GRADING_STANDARD_ID: nil
 :ID:       831680db-1f4c-441a-9b5d-28d30066ae13
@@ -131,7 +151,7 @@ Before completing this assignment, read the *recently revised, HTML version* of 
    4. How does your analysis work /with/ or /against/ the poem---that is, are you “breaking” or “recreating” the poem? What difference does it make that you are reading an endangered poem---that is, a poem that comes down to us in fragments, in a single manuscript, in a language no longer spoken? Be as specific as possible.
 
 
-** Evaluation
+** Evaluation 
 
 This assignment is graded out of 20.
 
@@ -160,6 +180,19 @@ This assignment is graded out of 20.
 *** Clarity & Correctness (/4)
 
 - Sentences are clear and vivid. Word usage, grammar, sentence structure, and punctuation are correct. Some informality is acceptable, as long as the reflection is clearly readable.
+
+** Rubric 
+
+- Grade :: 
+
+| Part          | Score | out of | Comments |
+|---------------+-------+--------+----------|
+| Intro         |       |      4 |          |
+| TEI           |       |      6 |          |
+| Analysis      |       |      6 |          |
+| Clear/Correct |       |      4 |          |
+
+- General Comments :: 
 
 * Reflection 02: Handout and Preliminary Exercises :assignment:
 :PROPERTIES:
@@ -645,36 +678,31 @@ It may help you to see a few more tags. Here is a slightly more complex example,
 :PROPERTIES:
 :EXPORT_FILE_NAME: reflection-3-data-visualization
 :PUBLISH:  t
-:DUE_AT: 2019-06-10
+:DUE_AT: 2019-11-28
 :GRADING_TYPE: points
 :ASSIGNMENT_TYPE: canvas
 :ASSIGNMENT_WEIGHT: 0.10
 :CANVAS_SUBMISSION_TYPES: (online_upload)
 :OL_PUBLISH: t
+:PUBLISH: t
 :BASECOMMIT: none
 :GRADING_STANDARD_ID: nil
-:CANVASID: 169214
-:CANVAS_HTML_URL: https://q.utoronto.ca/courses/99251/assignments/169214
-:CANVAS_SUBMISSION_URL: https://q.utoronto.ca/courses/99251/assignments/169214/submissions?zip=1
-:SUBMISSIONS_DOWNLOAD_URL: https://q.utoronto.ca/courses/99251/assignments/169214/submissions?zip=1
+:CANVASID: 250846
+:CANVAS_HTML_URL: https://q.utoronto.ca/courses/127426/assignments/250846
+:CANVAS_SUBMISSION_URL: https://q.utoronto.ca/courses/127426/assignments/250846/submissions?zip=1
+:SUBMISSIONS_DOWNLOAD_URL: https://q.utoronto.ca/courses/127426/assignments/250846/submissions?zip=1
 :END:
 
-*Please download the template document, which can be found in the files section of Quercus, which will make it easier to fill in the form.  If you prefer to write in another format, (such as markdown) that is fine too.*
+In approximately 600-800 words, briefly discuss the *Tableau* software we used in the Data Visualization workshop, considering in particular its uses and limitations when it comes to *dealing with humanities data* (remember [[http://www.digitalhumanities.org/dhq/vol/5/1/000091/000091.html][Johanna Drucker's essay on graphical display in the humanities!]]).  Be sure to address the following categories:
 
+- briefly introduce the tool, describing its main features and uses
+- Assess the tool's usability, and describe its principal user base
+- describe the *characteristics of the data Tableau can make use of*, and any limitations on that data
+- describe the *kinds of output* that Tableau produces, and again, any limitations
+- Does the tool make hidden assumptions about the nature of knowledge, and do we learn anything form making those assumptions explicit? (Here it may be particularly useful to refer to Drucker's essay.)
+- How might you make use of this tool in your own work *as a digital humanist*? Give a hypothetical example, in as much detail as you can muster. 
 
-Using the following table, compare and contrast two of the data visualization tools we have used in this course: Tableau, Voyant, Palladio. Think about the Drucker, Nowviskie, and Posner readings, especially with respect to the Assumptions category!
-
-| /Tool/Platform/                                 |   |   |
-|-------------------------------------------------+---+---|
-| *Brief Description*                             |   |   |
-| *Data: nature, format, & other characteristics* |   |   |
-| *Output*                                        |   |   |
-| *User Experience*                               |   |   |
-| *User Base*                                     |   |   |
-| *Use Cases*                                     |   |   |
-| *Assumptions about Knowledge (Input, Output)*   |   |   |
-
-** Rubric *rubric* 
+** COMMENT Rubric *rubric* 
 - *Grade* ::
 - *Comments* :: see inline
 * Final Project: Consultation                                    :assignment:
@@ -726,7 +754,7 @@ Please use this page to hand in your project proposals. For a description of the
 * Final Project: Book Exhibit :assignment:
 :PROPERTIES:
 :PUBLISH:  t
-:DUE_AT: 2019-11-29
+:DUE_AT: 2019-12-04
 :GRADING_TYPE: letter_grade
 :ASSIGNMENT_TYPE: canvas
 :ASSIGNMENT_WEIGHT: 0.35
