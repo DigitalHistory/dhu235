@@ -1,0 +1,23 @@
+* Assignments
+** Reflection 01
+- add examples of "bad" projects;
+- try to define the discipline a little better.  
+** Data Vis
+- add some possible datasets, and give *refinement* and *visualization* options
+- American Library Association list of banned/challenged books (cf. http://www.ala.org/advocacy/bbooks)
+- Miriam Posner's list of DH projects.
+** 
+
+* Class Meetings
+** Intro
+** Round Table of DH practitioners
+** History of DH
+** Library Visit
+** Challenges
+** TEI 
+** TEI 2
+** Data 1: refinement
+** Data 2: visualization
+** Data 3: in-class practice
+** 
+** Outro

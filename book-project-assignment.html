@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2019-12-02 Mon 13:49 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Final Project: Book Exhibit</title>
+<meta name="generator" content="Org mode">
+<meta name="author" content="Matt Price">
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2019 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<article id="content">
+<header>
+<h1 class="title">Final Project: Book Exhibit</h1>
+</header><nil id="outline-container-org5aa14a3" class="outline-2">
+<h2 id="overview">Overview</h2>
+<div class="outline-text-2" id="text-overview">
+<p>
+In this assignment, you get to tell the story of a banned book you have seen in person, either from the Thomas Fisher Rare Book Library or from our list.
+</p>
+
+<p>
+You will create a website that features a digital collection and exhibit about that book, using the free, open-source content management platform Omeka. Like a good museum curator, you will bring together a gallery of exciting pictures, and you will guide your visitors through that gallery through a well-researched, interesting narrative about your book.
+</p>
+
+<ul class="org-ul">
+<li>Your digital collection will catalogue evidence about your book: photographs of the book itself (title page, illustrations, marginal annotations, damage, other interesting features); images of related books from other museums; manuscript illuminations; other relevant multimedia. Each object of your digital collection will be described systematically, as books are described in a library catalogue.</li>
+
+<li>Your exhibit will be a guided tour about your book and the circumstances under which it was banned.</li>
+
+<li>You will use some digital technology as part of this assignment.</li>
+</ul>
+
+<p>
+This is a scaffolded assignment: that is, you will produce several components at each stage, and each component builds on the ones before it&#x2013; like LEGO, except you get to build your own bricks.
+</p>
+</div>
+</nil>
+
+<nil id="outline-container-org5e6a995" class="outline-2">
+<h2 id="learning-goals">Learning Goals</h2>
+<div class="outline-text-2" id="text-learning-goals">
+<p>
+By the end of this learning module, you will have learned:
+</p>
+
+<ul class="org-ul">
+<li>How to understand your book&rsquo;s significance, history, and meaning, in its historical context;</li>
+
+<li>How to think about the transmission and attempted restriction of knowledge in different technological platforms (manuscripts, printed books, digital media)</li>
+
+<li>How to build an exhibit around objects and their history;</li>
+
+<li>What metadata is, and why metadata matters</li>
+
+<li>What Omeka is, and what content management systems are</li>
+
+<li>How to create your own Omeka site: building items, creating digital collections and building exhibits featuring scholarly materials</li>
+</ul>
+</div>
+</nil>
+
+<nil id="outline-container-org8bf5cea" class="outline-2">
+<h2 id="what-you-hand-in">What You Hand In:</h2>
+<div class="outline-text-2" id="text-what-you-hand-in">
+<ol class="org-ol">
+<li>A proposal describing, in 200 words or fewer, the object whose story you plan to tell: what it is; why it was banned, by whom, and in what historical context; and how you plan to shape your exhibit. <b>Due <span class="timestamp-wrapper"><span class="timestamp">11/01</span></span></b></li>
+
+<li>An annotated bibliography (<a href="http://advice.writing.utoronto.ca/types-of-writing/annotated-bibliography/">http://advice.writing.utoronto.ca/types-of-writing/annotated-bibliography/</a>) that contains: links to and descriptions of at least 3 things for your collection; references to and summaries of at least 3 <b>scholarly</b> sources (scholarly print books, scholarly journal articles, scholarly encyclopedia entries). <b>Due <span class="timestamp-wrapper"><span class="timestamp">11/01</span></span></b></li>
+
+<li>A complete digital exhibit website that contains your collection of objects and a narrative about that collection. For reference, a former student&rsquo;s UofT Library Research Prize-winning example of such a digital exhibit is described in detail here: <a href="https://tspace.library.utoronto.ca/handle/1807/88308">Jaya Thirugnanasampanthan&rsquo;s exhibit on <i>Thirteen Reasons Why</i>&rsquo;s banning in the U.S.</a> (you will have to click through a bit to find <a href="https://play.library.utoronto.ca/download/XPYcIMVV80N4">a link to a walkthrough of the site</a>).</li>
+</ol>
+</div>
+</nil>
+
+<nil id="outline-container-org498c728" class="outline-2">
+<h2 id="proposal">Proposal</h2>
+<div class="outline-text-2" id="text-proposal">
+<p>
+<b>100-200 words</b>: describe your book and the structure of your exhibit.
+</p>
+
+<p>
+<b>Sample Proposal</b>
+</p>
+
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left"><b>Example</b></th>
+<th scope="col" class="org-left"><b>Discussion</b></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">My exhibit focuses on Ana Blandiana&rsquo;s <i>Întâmplări de pe strada mea</i></td>
+<td class="org-left">One sentence identifying your object and</td>
+</tr>
+
+<tr>
+<td class="org-left">(‘Events From My Street&rsquo;), a Romanian children&rsquo;s book, which was banned</td>
+<td class="org-left">its place/time of origin.</td>
+</tr>
+
+<tr>
+<td class="org-left">in Romania during the Ceaușescu regime.</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">I will discuss this book from the following points of view:</td>
+<td class="org-left">An overview of your exhibit: its sections</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">and some of its objects.</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Book</b> I will describe the book itself, published in 1988 and banned</td>
+<td class="org-left">Describe the book itself.</td>
+</tr>
+
+<tr>
+<td class="org-left">shortly afterwards.</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Ban or Challenge</b>. I discuss why the book was scrutinized by the</td>
+<td class="org-left">You will probably have less to say in your</td>
+</tr>
+
+<tr>
+<td class="org-left">Communist regime. Some items here include: photos of the pages with the</td>
+<td class="org-left">proposal: that is FINE. Indicate who banned</td>
+</tr>
+
+<tr>
+<td class="org-left">poem “A star on my street,” a poem about a boastful kitten which was</td>
+<td class="org-left">the bool, and why, and how your exhibit will</td>
+</tr>
+
+<tr>
+<td class="org-left">interpreted as a criticism of the dictator Ceausescu and caused the</td>
+<td class="org-left">show this.</td>
+</tr>
+
+<tr>
+<td class="org-left">book to be scrutinized by the Securitate (the secret police); archival</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">photos of schoolchildren forced to celebrate Ceausescu; and children&rsquo;s</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">textbooks featuring first-page photographs of Ceausescu. These</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">artifacts show how official culture sought to frame and control the</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">experience and knowledge of childhood.</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Conclusion.</b> I discuss children&rsquo;s literature in Communist Romania as</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">a space in which writers dared to experiment, because children&rsquo;s books</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">allowed writers to say uncomfortable things in playful or disguised</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">ways.</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">I contrast this with the ways the contemporary school system, in their</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">censorship of e.g. history books, competed to shape children&rsquo;s worlds</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">and knowledge, selecting the literature and history curriculum to</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">reflect the ideology of the totalitarian government.</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</nil>
+
+<nil id="outline-container-org31c4b49" class="outline-2">
+<h2 id="collection">Collection</h2>
+<div class="outline-text-2" id="text-collection">
+<p>
+<b>5 Items or more, to be described with Dublin Core metadata, including photos of your book:</b>
+</p>
+
+<p>
+The collection is a set of at least 5 items that document your book and the context in which it was banned. Photographs of the book should be taken by yourself; the other photographs, you may find on museum websites and cite properly.
+</p>
+
+<p>
+Some examples of objects that shed light on your book and the context in which your book was banned:
+</p>
+
+<ul class="org-ul">
+<li>If you are studying a book banned in Nazi Germany, find digitized archival photographs documenting e.g. book burnings in Nazi Germany;</li>
+
+<li>If you are studying a book banned by the Catholic Church, photograph the Index;</li>
+
+<li>If you are studying, say, Darwin&rsquo;s <i>Origin of Species</i>, you can document its impact with photos of 19<sup>th</sup> century newspaper articles about it&#x2026;or with 21<sup>st</sup> century newspaper articles on the controversy around the depiction and teaching of evolution vs. creationism in U.S. schools</li>
+
+<li>If you are studying a science book, you can illustrate the science of the day with museum pictures of relevant scientific instruments (microscopes, telescopes);</li>
+
+<li>If you are studying a book of saints&rsquo; lives (banned by Protestants) or a theological work (attacking the Catholic Church), you may look for contemporary images of e.g. book burnings, anti-Papal posters, etc.</li>
+</ul>
+</div>
+</nil>
+
+<nil id="outline-container-org4e8df8f" class="outline-2">
+<h2 id="org4e8df8f">Exhibit</h2>
+<div class="outline-text-2" id="text-org4e8df8f">
+<p>
+In every exhibit, at least four sections are mandatory: <b>Introduction</b>; <b><i>Book</i></b>; <b>Context</b>; and <b>Insights</b>. You may include other sections if needed.
+</p>
+</div>
+
+<div id="outline-container-org4a444ff" class="outline-3">
+<h3 id="org4a444ff">Introduction</h3>
+<div class="outline-text-3" id="text-org4a444ff">
+<p>
+This section is a summary of your exhibit, indicating what your book is, when it was banned, and why. 100-150 words. (A cleaned-up version of your proposal.)
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf79ed73" class="outline-3">
+<h3 id="orgf79ed73">Book</h3>
+<div class="outline-text-3" id="text-orgf79ed73">
+<p>
+In this section, you describe your book and its author. What is its title? Who is its author? In detail and in your own words, summarize what the book is about. (size; shape; damage; marginal annotations, if any; illustrations, if any; other distinguishing marks, if any.) Your items in this section can be different photos of your book. Include as much descriptive detail as you can.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7044f7b" class="outline-3">
+<h3 id="org7044f7b">Context</h3>
+<div class="outline-text-3" id="text-org7044f7b">
+<p>
+In this section, you describe the social and historical context of your book: that is, the book&rsquo;s <b>time</b>, <b>place</b>, and <b>purpose</b>. When and where was it written? What text technologies were involved in its creation? To what effect? Who was its intended audience? Why is the book in danger? If it is a banned or censored book, then who banned or challenged the book, and why? How was this censorship or challenge enforced? Your exhibit items can include maps, photographs of people reading the book, photographs of people destroying the book, recordings, etc.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org50df2d6" class="outline-3">
+<h3 id="org50df2d6">Insights</h3>
+<div class="outline-text-3" id="text-org50df2d6">
+<p>
+What insights (specific to your book&#x2014;not a general conclusion that almost any other banned or endangered book could illustrate) into text technologies and the transmission of knowledge would you like your viewer to draw from your exhibit?
+</p>
+
+<p>
+More specifically: how do the cultural and technical conditions in which the book was produced affect its endangerment and its afterlife? And how does the digital exhibit help you reflect on the text culture of your book?
+</p>
+
+<p>
+Draw on the scholarly readings of this course, from Alan Liu to Bethany Nowviskie, to discuss the “new media encounter” moment between the endangered book and your presentation of it in a digital medium. (Some things to think about: textual stability, deformance, sustainability, new media encounters, deep time&#x2026;)
+</p>
+</div>
+</div>
+
+<div id="outline-container-org02203ff" class="outline-3">
+<h3 id="org02203ff">Works Cited</h3>
+<div class="outline-text-3" id="text-org02203ff">
+<p>
+This section contains resources&#x2014;scholarly articles or museum articles or books&#x2014;on which your exhibit draws. You may use any scholarly citation style you like, as long as you are consistent.
+</p>
+
+<p>
+Example:
+</p>
+
+<p>
+Gogata, Cristina. “Parallel Libraries Of The Former Securitate. Ana Blandiana, ‘Intamplari De Pe Strada Mea&rsquo; (‘Events From My Street&rsquo;).” Studia Universitatis Babes-Bolyai. 61(2): 2006, pp. 97-100.
+</p>
+
+<p>
+<i>Happy researching!</i>
+</p>
+</div>
+</div>
+</nil>
+
+<nil id="outline-container-orgf904b57" class="outline-2">
+<h2 id="books">Books</h2>
+<div class="outline-text-2" id="text-books">
+<p>
+You will select the book from the list below. If there is a book you would like to cover that is not on the list, please come talk to me and/or Augustine <b>well ahead</b> of the proposal deadline. No more than three students per book, please.
+</p>
+
+<p>
+Books from the Thomas Fisher Rare Book Library (use these specific editions, please):
+</p>
+
+<ol class="org-ol">
+<li>Martin Luther. <i>Piae ac doctae in psalmos operationes</i>. Basileae: Adamus Petri, 1521.</li>
+
+<li>Judah ben Samuel. <i>Sefer ha hasidim</i>. Bolonya: Avraham ha-Kohen b.k.mo.ha-r. Mosheh ha-Kohen, 5298 (1537/1538 CE).</li>
+
+<li>Nicholas Copernicus. <i>De revolutionibus orbium coelestium.</i> Basileae: Ex Officina Henricpetrina, 1566.</li>
+
+<li>Johannes Kepler. <i>Epitome astronomiae Copernicanae</i>. Lentijs ad Danubium: Excudebat J. Plancus, 1618-22.</li>
+
+<li><i>The Holy Bible: Containing the Old and New Testaments.</i> London: Robert Barker, 1631.</li>
+
+<li>Galileo Galilei. <i>Dialogo sopra I due massimi sistemi del mondo tolemaico e copernicano.</i> In Fiorenza: B. Landini, 1632.</li>
+
+<li>Albertus Magnus. <i>De secretis mulierum. Item de virtutibus herbarum, lapidum et animalium.</i> (Of the secrets of women. Also about the virtues of herbs, stones, and animals. [magic])</li>
+
+<li>Charles Darwin. <i>On the Origin of Species</i>. London: J. Murray, 1859.</li>
+
+<li>Sigmund Freud. <i>Vorlesungen zur Einfuehrung in die Psychoanalyse</i>. Leipzig und Wien: H. Heller, 1916-1917.</li>
+
+<li>Niccolo Machiavelli. <i>Princeps</i>. Basiliae, 1589.</li>
+
+<li>Rene Descartes. <i>Les meditations metaphysiques.</i> Paris: La veuue I. Camvsat, et P. le Petit, 1647.</li>
+
+<li>John Milton. <i>Pro populo Anglicano defensio</i>. Londini: Typis Du Gardianis, 1651.</li>
+
+<li>John Locke. Essay Concerning Human Understanding. London: Printed by Eliz. Holt, for Thomas Basset, 1690.</li>
+
+<li>David Hume. <i>Philosophical Essays Concerning Human Understanding.</i> London: Printed for A. Millar, 1749.</li>
+
+<li>John Wilkes. <i>The North Briton</i>, No. XLV. London, 23 April 1763.</li>
+
+<li>Voltaire. <i>Dictionnaire philosophique.</i> 1765.</li>
+
+<li>Thomas Paine. <i>The Rights of Man.</i> London: Printed for J.S. Jordan, 1791-2.</li>
+
+<li>Karl Marx and Friedrich Engels. <i>The Manifesto of the Communist Party</i>. Vancouver: Whitehead Estate, 1919.</li>
+
+<li>Dante Alighieri. <i>La commedia.</i> Vinegia: Petrus de Plasiis, Cremonensis, dictus Veronensis/,/ 18 Nov., 1491.</li>
+
+<li>Geoffrey Chaucer. <i>The Canterbury Tales.</i> London: Printed by [R. Grafton for] Wyllyam Bonham, 1542.</li>
+
+<li>Giovanni Boccaccio. <i>Il Decameron.</i> In Vinezia: Per li Giunti di Frienze, 1585.</li>
+
+<li>Nathaniel Hawthorne. <i>The Scarlet Letter.</i> Boston: Ticknor, Reed, and Fields, 1850.</li>
+
+<li>Walt Whitman. <i>Leaves of Grass</i>. Brooklyn, 1856.</li>
+
+<li>George Eliot. <i>Adam Bede</i>. Edinburgh: W. Blackwood, 1859.</li>
+
+<li>Victor Hugo. <i>Les miserables</i>. Bruxelles: A. Lacroix, Verboeckhoven, 1862.</li>
+
+<li>Mark Twain. <i>Adventures of Tom Sawyer.</i> Toronto: Belford Bros., 1876.</li>
+
+<li>Aristophanes. <i>Lysistrata</i>. Sydney: Fanfrolico Press, 1925.</li>
+</ol>
+</div>
+</nil>
+
+<nil id="outline-container-org3d3c8f9" class="outline-2">
+<h2 id="org3d3c8f9">Useful Resources</h2>
+<div class="outline-text-2" id="text-org3d3c8f9">
+<p>
+<i>Reference Works:</i>
+</p>
+
+<ul class="org-ul">
+<li>American Library Association. <a href="http://www.ala.org/advocacy/bbooks">Banned and Challenged Books</a>.</li>
+
+<li>Carefoote, Pearce J, and Alberto Manguel. <i>Nihil Obstat: An Exhibition of Banned, Censored &amp; Challenged Books in the West, 1491-2000; Exhibition and Catalogue</i>. Toronto: University of Toronto Library, 2005. Print.</li>
+
+<li><i>Censorship: 500 Years of Conflict</i>. New York, N.Y: Oxford University Press, 1984. Print.</li>
+<li><a href="http://www.oxfordbibliographies.com.myaccess.library.utoronto.ca/view/document/obo-9780199791286/obo-9780199791286-0015.xml">Censorship</a> (Oxford Bibliographies Online).</li>
+</ul>
+
+<p>
+<i>Book &amp; Image Repositories:</i>
+</p>
+
+<ul class="org-ul">
+<li><a href="https://www.bl.uk/victorian-britain">British Library</a></li>
+
+<li><a href="http://www.britishmuseum.org/research/collection_online.aspx">British Mueum</a></li>
+
+<li><a href="https://dp.la/">Digital Public Library of America</a></li>
+
+<li><a href="http://digital.bodleian.ox.ac.uk/">Digital Bodleian</a></li>
+
+<li><a href="http://art.thewalters.org/browse/category/manuscript-and-rare-books/">Walters Art Museum</a></li>
+
+<li><a href="http://www.metmuseum.org/art/collection">Metropolitan Museum in New York</a></li>
+
+<li><a href="http://www.mfa.org/collections">Museum of Fine Arts Boston</a></li>
+</ul>
+</div>
+</nil>
+
+<nil id="outline-container-org19ab954" class="outline-2">
+<h2 id="org19ab954">Rubric&#xa0;&#xa0;&#xa0;<span class="tag"><span class="rubric">rubric</span></span></h2>
+<div class="outline-text-2" id="text-org19ab954">
+<dl class="org-dl">
+<dt><b>Grade</b></dt><dd></dd>
+
+<dt>Comments</dt><dd></dd>
+</dl>
+</div>
+</nil>
+</article>
+<section id="postamble" class="status">
+<p class="author">Author: Matt Price</p>
+<p class="date">Created: 2019-12-02 Mon 13:49</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</section>
+<script>window.klipse_settings = {selector_eval_html: '.src-html',
+                             selector_eval_js: '.src-js',
+                             selector_eval_python_client: '.src-python',
+                             selector_eval_scheme: '.src-scheme',
+                             selector: '.src-clojure',
+                             selector_eval_ruby: '.src-ruby'};</script><script src="https://storage.googleapis.com/app.klipse.tech/plugin_prod/js/klipse_plugin.min.js"></script><link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/app.klipse.tech/css/codemirror.css"/></body>
+</html>
