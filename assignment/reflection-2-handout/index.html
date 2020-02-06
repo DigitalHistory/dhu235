@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2020-01-16T18:00:09 EST">
+<meta name="revised" content="2020-02-06T18:25:34 EST">
 <title>Reflection 02: Handout and Preliminary Exercises :: HIS393: Digital History</title>
 <link rel="shortcut icon" href="/wdw235/images/favicon.png" type="image/x-icon" />
 <link href="/wdw235/css/nucleus.css" rel="stylesheet">
@@ -153,6 +153,13 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
+      <li data-nav-id="/wdw235/slides/04-3d-printing/" class="dd-item">
+        <div>
+          <a href="/wdw235/slides/04-3d-printing/">
+            
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
         </ul>
     </li>
     <li data-nav-id="/wdw235/tools/" class="dd-item
@@ -284,7 +291,7 @@
 <h3 id="transcription">Transcription</h3>
 <ol>
 <li>Wondrous is this wall-stead, wasted by fate.</li>
-<li>Battlements broken, giant's work shattered.</li>
+<li>Battlements broken, giant&rsquo;s work shattered.</li>
 <li>Roofs are in ruin, towers destroyed,</li>
 <li>Broken the barred gate, rime on the plaster,</li>
 <li>walls gape, torn up, destroyed,</li>
@@ -336,17 +343,17 @@
 <p><a href="https://cdrh.unl.edu/articles/basicguide/TEI">TEI</a> is a <a href="https://en.wikipedia.org/wiki/Markup%5Flanguage">markup language</a> &ndash; a system for annotating documents that can be read an processed by other compute programs.  It is a format, or defined feature set, of the <a href="https://www.w3schools.com/xml/xml%5Fwhatis.asp">XML</a> &ldquo;metalanguage&rdquo;, a very widely-used system for structuring and processing many kinds of data.  Digital humanists use TEI to turn literary texts into structured data that can be manipulated and queried in many ways, but especially on the web.</p>
 <p>The process of turning a TEI document into a visual representation on a screen is complex:</p>
 <ul>
-<li>first, the text must be <strong>marked up</strong> &ndash; textual elements must be identified and annotated (we'll discuss how this works in more detail very soon).  This work can be both painstaking and tedious</li>
+<li>first, the text must be <strong>marked up</strong> &ndash; textual elements must be identified and annotated (we&rsquo;ll discuss how this works in more detail very soon).  This work can be both painstaking and tedious</li>
 <li>next, a <strong>translation scheme must be written</strong> that <em>processes</em> the xml text into <a href="https://en.wikipedia.org/wiki/HTML">HTML</a>, the main language of the web. This translation is almost always written in a language called <a href="https://en.wikipedia.org/wiki/XSLT">XLST</a> (which is itself a dialect of XML)</li>
 <li>finally, the translated document must be <strong>displayed by a browser</strong> that understands HTML, like Firefox or Chrome.</li>
 </ul>
 <p>Becasue this topic is so immense, we will not be producing fully TEI-compliant documents in this class &ndash; instead, we will make TEI-like XML and process those docs into super-simple HTML documents.</p>
-<p>So, in order to complete this assignment, you must learn at least a tiny bit about <strong>XML</strong>, <strong>XSLT</strong>, and <strong>HTML</strong>.  That's a lot! I won't give you a systematic introduction to any of these systems; instead, this handout presents a very small amount of information on each, and gives some examples of how you might use them in the assignment.</p>
+<p>So, in order to complete this assignment, you must learn at least a tiny bit about <strong>XML</strong>, <strong>XSLT</strong>, and <strong>HTML</strong>.  That&rsquo;s a lot! I won&rsquo;t give you a systematic introduction to any of these systems; instead, this handout presents a very small amount of information on each, and gives some examples of how you might use them in the assignment.</p>
 <h3 id="viewing">Viewing</h3>
 <p>To view/work with XML files, please navigate to either of these xml/xslt live editors:</p>
 <ul>
 <li><a href="http://fiddle.frameless.io/">XML fiddle</a> (this one at least has syntax highlighting, which makes the code a bit easier to read).</li>
-<li><a href="https://www.w3schools.com/xml/tryxslt.asp?xmlfile=cdcatalog&amp;xsltfile=cdcatalog">W3 Schools</a> (I don't like this one as much)</li>
+<li><a href="https://www.w3schools.com/xml/tryxslt.asp?xmlfile=cdcatalog&amp;xsltfile=cdcatalog">W3 Schools</a> (I don&rsquo;t like this one as much)</li>
 </ul>
 <p><strong>Paste your XML poem into the left window of the editor.</strong> Start with this code:</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#080">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;</span>
@@ -385,7 +392,7 @@
 <li>content: text and child elements, which must be fully nexted within the parent (if an opening tag is inside the element, the closing tag must <strong>also</strong> be inside it</li>
 <li>closing tag: <code>&lt;/tag&gt;</code> . Note the forward slash <strong>/</strong> within the <code>&lt;&gt;</code> greater-than less-than signss.</li>
 </ul>
-<p>Here's a trivial example that you might find in a TEI document:</p>
+<p>Here&rsquo;s a trivial example that you might find in a TEI document:</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#008000;font-weight:bold">&lt;l</span><span style="color:#008000;font-weight:bold">&gt;</span>And then my lord <span style="color:#008000;font-weight:bold">&lt;person</span><span style="color:#008000;font-weight:bold">&gt;</span>Yvain<span style="color:#008000;font-weight:bold">&lt;/person&gt;</span> arrived in <span style="color:#008000;font-weight:bold">&lt;place</span><span style="color:#008000;font-weight:bold">&gt;</span>Camelot<span style="color:#008000;font-weight:bold">&lt;/place&gt;</span>.<span style="color:#008000;font-weight:bold">&lt;/l&gt;</span>
 </code></pre></div><p>The tags here are &ldquo;l&rdquo;, &ldquo;person&rdquo;, and &ldquo;place&rdquo;.</p>
 <h4 id="xml-dec">The XML declaration</h4>
@@ -430,7 +437,7 @@
     <span style="color:#008000;font-weight:bold">&lt;p</span><span style="color:#008000;font-weight:bold">&gt;</span> <span style="color:#008000;font-weight:bold">&lt;xsl:value-of</span> <span style="color:#b44">select=</span><span style="color:#b44">&#34;.&#34;</span><span style="color:#008000;font-weight:bold">/&gt;</span> <span style="color:#008000;font-weight:bold">&lt;/p&gt;</span>
   <span style="color:#008000;font-weight:bold">&lt;/xsl:template&gt;</span>
 <span style="color:#008000;font-weight:bold">&lt;/xsl:stylesheet&gt;</span>
-</code></pre></div><p>What's happening here?  We have two templates. The first one &ldquo;matches&rdquo; the &ldquo;root element&rdquo;, while the second one matches all the &ldquo;l&rdquo; elements. So if we read this document top to bottom, we might translate it this way:</p>
+</code></pre></div><p>What&rsquo;s happening here?  We have two templates. The first one &ldquo;matches&rdquo; the &ldquo;root element&rdquo;, while the second one matches all the &ldquo;l&rdquo; elements. So if we read this document top to bottom, we might translate it this way:</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">I am an XML Document
 
 Begin Stylesheet
@@ -446,7 +453,7 @@ Begin Stylesheet
    End Template for the L Elements
 
 End Stylesheet
-</code></pre></div><p>Our original XML document is very simple, so we don't need much more than this. But as we'll see later, it can get much more complicated.  And in fact we can make it a little more sophisticated already by adding a bit more complexity:</p>
+</code></pre></div><p>Our original XML document is very simple, so we don&rsquo;t need much more than this. But as we&rsquo;ll see later, it can get much more complicated.  And in fact we can make it a little more sophisticated already by adding a bit more complexity:</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#080">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;</span>
 <span style="color:#008000;font-weight:bold">&lt;xsl:stylesheet</span> <span style="color:#b44">version=</span><span style="color:#b44">&#34;1.0&#34;</span> <span style="color:#b44">xmlns:xsl=</span><span style="color:#b44">&#34;http://www.w3.org/1999/XSL/Transform&#34;</span><span style="color:#008000;font-weight:bold">&gt;</span>
 
@@ -469,15 +476,15 @@ End Stylesheet
   <span style="color:#008000;font-weight:bold">&lt;/xsl:template&gt;</span>
 
 <span style="color:#008000;font-weight:bold">&lt;/xsl:stylesheet&gt;</span>
-</code></pre></div><p>Try to read the text and understand what's going on!</p>
-<p>Now let's learn a little bit more about how the <code>match</code> and <code>select</code> attributes in the above code really work.</p>
+</code></pre></div><p>Try to read the text and understand what&rsquo;s going on!</p>
+<p>Now let&rsquo;s learn a little bit more about how the <code>match</code> and <code>select</code> attributes in the above code really work.</p>
 <h4 id="xpath-expressions">Xpath Expressions</h4>
 <p>When we make templates with a <code>match</code> attribute, or use the <code>value-of</code> and <code>apply-templates</code> instructions (see below), we have to tell XSLT which XML elements we are talking about. The selection of elements is done using what are called &ldquo;<a href="https://www.w3schools.com/xml/xpath%5Fsyntax.asp">Xpath Expressions</a>&quot;. These are a way to describe the position of elements (sometimes called &ldquo;nodes&rdquo;) in the XML document. The syntax is extemely complex, so we will just say a few things about it here:</p>
 <ul>
 <li>&ldquo;/&rdquo; refers to the root element &ndash; the element that contains all the other elements in the document</li>
-<li><code>&quot;/poem&quot;</code> refers to a <code>&lt;poem&gt;</code> element <strong>at the document root</strong>, while &ldquo;poem&rdquo; refers to <strong>any poem element in the document</strong>.  So for instance, &ldquo;l&rdquo; will match all of our <code>&lt;l&gt;</code> elements, but <code>&quot;/l&quot;</code> <strong>won't match anything,</strong> because the existing <code>&lt;l&gt;</code> elements are all <em>inside the poem element</em>.</li>
+<li><code>&quot;/poem&quot;</code> refers to a <code>&lt;poem&gt;</code> element <strong>at the document root</strong>, while &ldquo;poem&rdquo; refers to <strong>any poem element in the document</strong>.  So for instance, &ldquo;l&rdquo; will match all of our <code>&lt;l&gt;</code> elements, but <code>&quot;/l&quot;</code> <strong>won&rsquo;t match anything,</strong> because the existing <code>&lt;l&gt;</code> elements are all <em>inside the poem element</em>.</li>
 <li>&ldquo;current()&rdquo; and &ldquo;.&rdquo; both refer to the <strong>element that is being discussed at the present moment</strong>. So, inside of <code>&lt;xsl:template match=&quot;poem&quot;&gt;...&lt;/xsl:template&gt;</code>, <code>&quot;.&quot;</code> refers to the <code>&lt;poem&gt;</code> element.</li>
-<li>&ldquo;@n&rdquo; refers to the &ldquo;attribute&rdquo; <strong>n</strong>. I'll explain more about this in a second&hellip;</li>
+<li>&ldquo;@n&rdquo; refers to the &ldquo;attribute&rdquo; <strong>n</strong>. I&rsquo;ll explain more about this in a second&hellip;</li>
 </ul>
 <h4 id="value-statements--value-of-and-apply-templates">Value Statements (<code>value-of</code> and <code>apply-templates</code>)</h4>
 <p>We almost always want to get the value of the XML elements &ndash; otherwise why would we do all this work? There are two ways to get that value&hellip;</p>
@@ -506,7 +513,7 @@ When this instruction is applied to the line above, it will return the number &q
 All of this is really helpful -- but since we're generating HTML, you **also** need to know a little bit of HTML to make the text look the way you want it to!
 </code></pre>
 <h4 id="html-tags-and-attributes">HTML Tags and attributes</h4>
-<p>I won't go into HTML in much depth &ndash; there are many many <em>many</em> resources available online.  Here we'll just describe a few very basic features.</p>
+<p>I won&rsquo;t go into HTML in much depth &ndash; there are many many <em>many</em> resources available online.  Here we&rsquo;ll just describe a few very basic features.</p>
 <p>Like XML documents, HTML documents contain <strong>elements</strong> delimited by <strong>tags</strong>. Also like in XML, those tags can have <strong>attributes</strong> that give extra information.  Here are some tags you may want to use in your work:</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#008000;font-weight:bold">html</span>&gt;
   &lt;<span style="color:#008000;font-weight:bold">body</span>&gt;
@@ -548,12 +555,12 @@ All of this is really helpful -- but since we're generating HTML, you **also** n
 <li><strong>span</strong> tags delineate text within a paragraph</li>
 <li><strong>strong</strong> and <strong>em</strong> do bold and italics</li>
 <li>You can build tables using the somewhat complicated syntax above</li>
-<li>you can set style attributes using the &ldquo;style=&rdquo; commands as you see them above; I've shown a few possibilities but there are literally hundreds more.</li>
+<li>you can set style attributes using the &ldquo;style=&rdquo; commands as you see them above; I&rsquo;ve shown a few possibilities but there are literally hundreds more.</li>
 </ul>
 <p>Hopefully this should be enough for you to get started!</p>
 <h3 id="learn-more">Learn more</h3>
 <p>The <a href="https://developer.mozilla.org">Mozilla Developer Network</a> is the best starting point for almost all technical topics related to the web.  The <a href="https://developer.mozilla.org/en-US/docs/Web/XML/XML%5Fintroduction">XML Introduction</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/XSLT">XSLT Intro</a>, and <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">much more extensive HTML information</a> are all very helpful, and contian links to further information.</p>
-<p>The <a href="https://tei-c.org/">TEI website</a> has extensive information about the TEI standard, but is extremely technical. <a href="http://teibyexample.org/modules/TBED04v00.htm">TEI By Example</a> can be quite helpful, but again, is very detailed.  The full text of <em><a href="https://books.openedition.org/oep/426">What is the Text Encoding Initiative</a></em> is available online and may also be helpful. The University of Nebraska's  <a href="https://cdrh.unl.edu/articles/basicguide">Basic Guide to Text Encoding</a> is a lightweight introduction that may be easier to follow than any of the above!</p>
+<p>The <a href="https://tei-c.org/">TEI website</a> has extensive information about the TEI standard, but is extremely technical. <a href="http://teibyexample.org/modules/TBED04v00.htm">TEI By Example</a> can be quite helpful, but again, is very detailed.  The full text of <em><a href="https://books.openedition.org/oep/426">What is the Text Encoding Initiative</a></em> is available online and may also be helpful. The University of Nebraska&rsquo;s  <a href="https://cdrh.unl.edu/articles/basicguide">Basic Guide to Text Encoding</a> is a lightweight introduction that may be easier to follow than any of the above!</p>
 <h2 id="reading">Reading Hints</h2>
 <ul>
 <li>Content: Read your passage. Flag any parts that are unclear or mysterious or confusing. Summarize its content in one sentence.</li>
@@ -585,14 +592,14 @@ All of this is really helpful -- but since we're generating HTML, you **also** n
 <span style="color:#008000;font-weight:bold">&lt;poetic-formula</span><span style="color:#008000;font-weight:bold">&gt;</span>the work of giants<span style="">&lt;</span>/thew
 </code></pre></div><h2 id="encoding-discussion">Encoding Discussion</h2>
 <p>What is your made-up tag(s)? How is this tag supposed to work, within this poem and more generally? Why is it useful?</p>
-<p>After encoding, what additional characteristics of the poem, if any, did you notice in terms of verbal patterns, sensory imagery, or the development of the poem's themes?</p>
+<p>After encoding, what additional characteristics of the poem, if any, did you notice in terms of verbal patterns, sensory imagery, or the development of the poem&rsquo;s themes?</p>
 <h2 id="appendix-more-complex-example">Appendix: More Complex Example</h2>
-<p>It may help you to see a few more tags. Here is a slightly more complex example, with a more completely marked-up selection of the poem. I have <strong>not</strong> annotated this example, but it showcases a few more features of the systems we're learning.  In particular, this example introduces:</p>
+<p>It may help you to see a few more tags. Here is a slightly more complex example, with a more completely marked-up selection of the poem. I have <strong>not</strong> annotated this example, but it showcases a few more features of the systems we&rsquo;re learning.  In particular, this example introduces:</p>
 <ul>
 <li><a href="https://www.w3schools.com/cssref/css%5Fcolors%5Flegal.asp">more complex colors</a></li>
 <li><a href="https://www.w3schools.com/tags/tag%5Fa.asp">the &ldquo;a&rdquo; or hyperlink tag</a></li>
 <li><a href="https://stackoverflow.com/questions/10395488/how-to-concat-a-string-to-xslvalue-of-select">curly braces as a shortcut for xpaths</a></li>
-<li><a href="https://stackoverflow.com/questions/11744465/xpath-difference-between-node-and-text">the somewhat confusing xpath test &ldquo;node&rdquo;</a>, which sometimes makes sense to use when &ldquo;current()&rdquo; doesn't produce the effect you want.</li>
+<li><a href="https://stackoverflow.com/questions/11744465/xpath-difference-between-node-and-text">the somewhat confusing xpath test &ldquo;node&rdquo;</a>, which sometimes makes sense to use when &ldquo;current()&rdquo; doesn&rsquo;t produce the effect you want.</li>
 </ul>
 <!-- raw HTML omitted -->
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#080">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;</span>

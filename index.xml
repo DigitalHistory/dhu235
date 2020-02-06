@@ -50,7 +50,7 @@ Grade :</description>
       
       <guid>https://digitalhistory.github.io/wdw235/assignment/reflection-2-the-ruin/</guid>
       <description>Before completing this assignment, read the recently revised, HTML version of the handout “The Ruin: Digital Literary Studies” and carry out the exercises it asks you to do.
-  What is The Ruin? Briefly describe the poem and its themes. State what passage you are focusing on and analyze its poetic characteristics, as discussed in class. Be specific; cite poem by line numbers. Cite Echard&#39;s online translation correctly using the citation format of your choice.</description>
+  What is The Ruin? Briefly describe the poem and its themes. State what passage you are focusing on and analyze its poetic characteristics, as discussed in class. Be specific; cite poem by line numbers. Cite Echard&amp;rsquo;s online translation correctly using the citation format of your choice.</description>
     </item>
     
     <item>
@@ -88,7 +88,7 @@ You may select any project you like from the syllabus or from one of the pages b
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://digitalhistory.github.io/wdw235/01-intro/</guid>
-      <description>01: DH &amp;#x2013; An Introduction .underline { text-decoration: underline; }   if( window.location.search.match( /print-pdf/gi ) ) { var link = document.createElement( &#39;link&#39; ); link.rel = &#39;stylesheet&#39;; link.type = &#39;text/css&#39;; link.href = &#39;../../vendor/reveal//css/print/pdf.css&#39;; document.getElementsByTagName( &#39;head&#39; )[0].appendChild( link ); }     Today  Intro A partial history Course syllabus What is DH? Project examples A Little Game      Introductions      Me Historian of Science, Emphasis on &amp;ldquo;Engaged Teaching&amp;rdquo;   You Let&amp;rsquo;s discuss        DH: at the fluctuating intersections of the humanities with computing    note the influences go in two directions!</description>
+      <description></description>
     </item>
     
     <item>
@@ -97,7 +97,7 @@ You may select any project you like from the syllabus or from one of the pages b
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://digitalhistory.github.io/wdw235/slides/01-intro/</guid>
-      <description>01: Introduction .underline { text-decoration: underline; }   /* Position computations of klipse get confused by reveal.js&#39;s scaling. Hence, scaling should be disabled with this code. Fix height of code area with scrollbar (use overflow instead of overflow-y to restore CodeMirror setting afterwards): */ .reveal section pre { max-height: 70vh; height: auto; overflow: auto; } /* Reset some reveal.js and oer-reveal settings: */ .reveal section pre .CodeMirror pre { font-size: 2em; box-shadow: none; width: auto; padding: 0.</description>
+      <description></description>
     </item>
     
     <item>
@@ -106,7 +106,16 @@ You may select any project you like from the syllabus or from one of the pages b
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://digitalhistory.github.io/wdw235/slides/02-maps/</guid>
-      <description>02: Maps and assignments .underline { text-decoration: underline; }   /* Position computations of klipse get confused by reveal.js&#39;s scaling. Hence, scaling should be disabled with this code. Fix height of code area with scrollbar (use overflow instead of overflow-y to restore CodeMirror setting afterwards): */ .reveal section pre { max-height: 70vh; height: auto; overflow: auto; } /* Reset some reveal.js and oer-reveal settings: */ .reveal section pre .</description>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://digitalhistory.github.io/wdw235/slides/04-3d-printing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digitalhistory.github.io/wdw235/slides/04-3d-printing/</guid>
+      <description></description>
     </item>
     
     <item>
