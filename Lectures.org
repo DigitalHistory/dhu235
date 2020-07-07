@@ -38,7 +38,7 @@
 
 
 
-* :{{{n}}}  Digital Humanities --  An Introduction ({{{ts}}})
+* {{{n}}}  Digital Humanities --  An Introduction ({{{ts}}})
 :PROPERTIES:
 :EXPORT_FILE_NAME: 01-intro
 :CUSTOM_ID: 01-dh--an-introduction-a964
@@ -65,12 +65,13 @@
    :END:
 
 [[./images/hum-cs-interface.svg]]
+
 #+begin_notes
 - note the influences go in two directions!
 - what does this tell us exactly?
 - not a static definition!
 - far enough away from the interface, it is just "humanities" or "computer science"
-#+end_notes/
+#+end_notes
 ** EX: The Book of John Mandeville.
 :PROPERTIES:
 :CUSTOM_ID: british-library-ms.-harley-3954.-the-book-of-john-mandeville.
@@ -359,7 +360,7 @@ Heather Eason: five artists' representations of threshold crossings in Dante's 
 *** Others 
 Website for [[https://kcc.hackinghistory.ca/][Khangchendzonga Conservation Committee]], written and developed by students from HIS455, /Hacking History/, 2018.
 
-[[/home/matt/wdw235/images/kcc.jpg]]
+[[/home/matt/WDW235/images/kcc.jpg]]
 
 *** [[https://chauceranditaly.library.utoronto.ca/neatline/show/liminal-representation-inferno][Collaboration & Infrastructures]]
 :PROPERTIES:
@@ -378,28 +379,28 @@ Website for [[https://kcc.hackinghistory.ca/][Khangchendzonga Conservation Commi
 :END:
 #+ATTR_REVEAL: :frag (appear) 
 #+begin_slideblock
-*Intro* (~2 weeks)
+*Intro* (~2 sessions)
 - Aims: 
   - understand /scope and nature/ of Digital humanities
   - Begin experimenting with DH tools and methos
 #+end_slideblock
 #+ATTR_REVEAL: :frag (appear) 
 #+begin_slideblock
-*Digital Texts* (2 weeks)
+*Digital Texts* (2 sessions)
 - Aims:
   - understand /what happens to text when it goes digital/
   - experiment with treating texts as data
 #+end_slideblock
 #+ATTR_REVEAL: :frag (appear) 
 #+begin_slideblock
-*Endangered Knowledge* (4 weeks, the heart of the course)
+*Plague Literature* (4 sessions, the heart of the course)
 - Aims:
-  - explore DH in the context of banned, censored, and threatened texts
+  - explore DH in the context of plague literature
   - major project using a scholarly Content Management System
 #+end_slideblock
 #+ATTR_REVEAL: :frag (appear) 
 #+begin_slideblock
-*Data in the Humanities* (~3 weeks)
+*Data in the Humanities* (~3 sessions)
 - Aims:
   - arrive at a humanities-centric conception of data
   - become familiar with standard data cleaning and data visualization tools
@@ -418,7 +419,7 @@ Website for [[https://kcc.hackinghistory.ca/][Khangchendzonga Conservation Commi
 
 #+ATTR_REVEAL: :frag (appear) 
 #+begin_slideblock
-*Banned Book Project*
+*Plague Lit Project*
 - major scaffolded assignment
 - consultation, proposal, and exhibit all marked
 - Assignment handed out by Oct. 1
@@ -2537,7 +2538,7 @@ file:///home/matt/wdw235/images/mattu-data-driven-society-oct-30-2019.jpg
 | awk/awkward | "This sentence or phrase is not clear, and that unclarity potentially affects the success of your argument" |
 | grammar     | grammatical error; should be obvious to you                                                                 |
 | agreement   | subject & verb do not agree                                                                                 |
-| :smile:         | :-)                                                                                                         |
+| :smile:     | :-)                                                                                                         |
 
 - overall: you guys did pretty well. congrats.
 - First Person: when to avoid
@@ -3411,5 +3412,5 @@ xsltproc temp.xslt temp.xml
 * COMMENT Variables
 # Local Variables:
 # org-time-stamp-custom-formats: ("<%b. %d>" . "<%Y-%m-%d %H:%M>")
-# org-mwp-classtimes-calibrate: ( "<2019-08-29 Thu>" )
+# org-mwp-classtimes-calibrate: ( "<2020-07-02 Thu>" "<2020-06-30 Tue>" )
 # End:  
