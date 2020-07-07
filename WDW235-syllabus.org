@@ -22,7 +22,9 @@
 
 Digital Humanities (DH) is a discipline at the intersections of the humanities with computing.  DH studies human culture -- art, literature, history, geography, religion -- through computational tools and methodologies; and, in turn, DH studies digital artifacts through humanist lenses, as complex cultural objects shaped by wider social, political, and philosophical concerns. Digital humanists [[http://www.doe.utoronto.ca][analyze languages through digital text collections]]; [[https://samizdat.library.utoronto.ca/][build digital archives of forbidden books]]; [[http://sites.utm.utoronto.ca/gillespie/content/welcome-book-fame][construct video games to study literature]]; or [[https://decima-map.net/][resurrect historical cities through digital maps]].
 
-This year, the course once again focuses on endangered books: /fragile, hidden, censored, forbidden/. We speak to scholars who build archives of forbidden literature. We visit the Thomas Fisher Rare Book Library. We study rare books' histories through digital exhibits. By the end of the course, you will have mastered concepts and technologies you can use in future courses and workplaces:  text encoding and data visualization, data analysis and digital exhibit platforms. And you will learn how our stories and cultural conversations work and shapeshift through digital environments.
+Our world is even more digital than usual this summer! As a result, we're taking a hiatus from the usual project theme of "endangered books: fragile, hidden, censored, forbidden." We will still discuss these themese to some extent, but your projects, and some of our lecture material, will focus instead on *plague literature*. We'll discuss this theme throughout your assignments and as a recurring example in class lectures and discussions. 
+
+By the end of the course, you will have mastered concepts and technologies you can use in future courses and workplaces:  text encoding and data visualization, data analysis and digital exhibit platforms. And you will learn how our stories and cultural conversations work and shapeshift through digital environments.
 
 * Learning Goals
    :PROPERTIES:
@@ -48,14 +50,16 @@ Through hands-on workshops:
 
 Course readings will be available either as links in the syllabus or via the course Quercus site each week. You are responsible for checking the Quercus site and ensuring you receive course announcements posted via Quercus.
 
-All technologies used in this course are open-source or, in rare cases, licensed for use by U of T students. You will need access to a working computer to complete the work for this course.
+All technologies used in this course are open-source or, in rare cases, licensed for use by U of T students. You will need access to a working computer to complete the work for this course. This is an unusual year and things will be a bit different than normal. We will try to keep software installation requirements to a minimum, but some new tools may be inevitable. 
 
 * How This Course Works
    :PROPERTIES:
    :CUSTOM_ID: how-this-course-works
    :END:
 
-Each week we have three hours of class, which include lecture, discussion, and hands-on work in the computer lab. Much of your course work will be done in class, in facilitated environments and hands-on workshops. Given the fast pace and praxis-oriented environment, you must come to class on time, all the time: it is all too easy, otherwise, to get lost. If this poses a problem, please let me know as soon as possible.
+Each week we have approximately three hours of class time, which include lecture, discussion, and hands-on work. Doing this virtually will be something of a challenge. As much as possible, *I will deliver the lecture component asynchronously* via a YouTube channel (starting with the second class meeting). You should watch these lectures before coming to class, and be prepared to discuss questions raised in them. Most of our time together will be focussed on making progress on course assignments. Much of your course work will be done in class, in facilitated environments and hands-on workshops. Given the fast pace and praxis-oriented environment, you must come to class on time, all the time: it is all too easy, otherwise, to get lost. If this poses a problem, please let me know as soon as possible.
+
+Because lectures will be delivered asynchronously, synchronous class time will generally be somewhat shorter than 3 hours. If you have experience with a "[[https://en.wikipedia.org/wiki/Flipped_classroom][flipped classroom]]", this summer's course format may feel familiar.
 
 * Accessibility 
    :PROPERTIES:
@@ -73,11 +77,11 @@ See [[http://www.studentlife.utoronto.ca/as][A&S Accessibility Website]] for mor
 
 | *Assignment*                                    | *%* | *Due Date*                                    |
 |-------------------------------------------------+-----+-----------------------------------------------|
-| Short Assignments (3)                           |  45 | <2019-09-19 Thu>, <2019-10-10 Thu>, <2019-11-21 Thu>                     |
+| Short Assignments (3)                           |  45 | <2020-07-16 Thu>, <2020-07-21 Tue>, <2020-08-04 Tue>                     |
 | Participation                                   |  10 | All semester; alternatives.                   |
-| Book Project: Consultation                      |   1 | Oct. 11-25, in office hours or by appointment |
-| Book Project: Proposal & Annotated Bibliography |   9 | <2019-11-01 Fri>                                       |
-| Book Project: Digital Exhibit                   |  35 | <2019-11-29 Fri>                                       |
+| Book Project: Consultation                      |   1 | July , by appointment      |
+| Book Project: Proposal & Annotated Bibliography |   9 | <2020-07-31 Fri>                                       |
+| Book Project: Digital Exhibit                   |  35 | <2020-08-14 Fri>                                       |
 | Total                                           | 100 |                                               |
 #+TBLFM: @>$2=vsum(@2..@-1)
 
@@ -89,12 +93,10 @@ See [[http://www.studentlife.utoronto.ca/as][A&S Accessibility Website]] for mor
    :CUSTOM_ID: assignments
    :END:
 ** Participation
-Every week, you are also responsible for coming to the lab and undertaking the project or field trip of the week in a facilitated environment.  This is where you can explore, experiment, fail creatively:  all I require is *engaged participation—that is, you come to class, do the hands-on computer work, ask questions, and engage in class discussion*. If you miss class or are more than ten minutes late for class, you will miss the grades, unless your absence is excused. 
+Every week, you are also responsible for coming to the synchronous class meetings and undertaking the facilitated classwork in a structured environment.  This is where you can explore, experiment, fail creatively:  all I require is *engaged participation—that is, you come to class, do the hands-on computer work, ask questions, and engage in class discussion*. If you miss class or are more than ten minutes late for class, you will miss the grades, unless your absence is excused. 
 ** Short Assignments
-
-You are responsible for writing three short assignments in this course. These include discussions of in-class digital artifacts as well as course readings. You will work on these assignments in class as well as outside class, and you will hand them in via Quercus. They need not be perfect, just done.700 words approximately.
-
-** DH Project Profile
+You are responsible for writing three short assignments in this course. These include discussions of in-class digital artifacts as well as course readings. You will work on these assignments in class as well as outside class, and you will hand them in via Quercus. They need not be perfect, just done. 800 words approximately.
+** DH Project Proposal
 
 Your first assignment is to profile a Digital Humanities project, analyzing its research aims, its form and content, its interface, technologies, and intended audience. 500-700 words. You will select the project from a sign-up list available via our course site.
 
@@ -134,7 +136,7 @@ In this course, you will work with texts, objects, and digital artifacts. As you
    :CUSTOM_ID: acknowledgements
    :END:
 
-This syllabus was originally written by [[https://alexandrabolintineanu.wordpress.com/][Alexandra Bolintineanu]], and draws on both Kristen Mapes' /[[http://dx.doi.org/10.17613/M6H34B][Introduction to Digital Humanities, AL285]]/ and on Miriam Posner's /[[http://dh101.humanities.ucla.edu/][DH101: Introduction to Digital Humanities]]/ Fall 2014, UCLA.
+An earlier version of this syllabus was originally written by [[https://alexandrabolintineanu.wordpress.com/][Alexandra Bolintineanu]], and draws on both Kristen Mapes' /[[http://dx.doi.org/10.17613/M6H34B][Introduction to Digital Humanities, AL285]]/ and on Miriam Posner's /[[http://dh101.humanities.ucla.edu/][DH101: Introduction to Digital Humanities]]/ Fall 2014, UCLA.
 
 * Course Overview (Subject to Change)
    :PROPERTIES:
