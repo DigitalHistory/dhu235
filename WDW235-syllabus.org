@@ -154,7 +154,7 @@ We discuss the components of digital humanities projects—data, code, tools, pl
 - Miriam Posner, “[[http://miriamposner.com/blog/how-did-they-make-that/][How Did They Make That?]]” (2013) 
 - Alan Galey & Stan Ruecker, “[[https://doi.org/10.1093/llc/fqq021][How a Prototype Argues]]” (2010) (in-class discussion)
 *** Reflection Handed Out: DH Project Profile
-*Due <2019-09-19 Thu>*
+*Due <2020-07-16 Thu>*
 ** {{{n}}} ({{{ts}}}) Digital Texts: Reading and Writing
 
 - Kinds of danger, types of responses
@@ -165,40 +165,31 @@ We discuss the components of digital humanities projects—data, code, tools, pl
 :END:
 - Lisa Samuels and Jerome J. McGann, “[[http://bf4dv7zn3u.search.serialssolutions.com.myaccess.library.utoronto.ca/?ctx_ver=Z39.88-2004&ctx_enc=info%253Aofi%252Fenc%253AUTF-8&rfr_id=info%253Asid%252Fsummon.serialssolutions.com&rft_val_fmt=info%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal&rft.genre=article&rft.atitle=Deformance+and+Interpretation&rft.jtitle=New+Literary+History%253A+a+journal+of+theory+and+interpretation&rft.au=Samuels%252C+Lisa&rft.au=McGann%252C+Jerome&rft.date=1999&rft.issn=0028-6087&rft.eissn=1080-661X&rft.volume=30&rft.issue=1&rft.spage=25&rft.externalDocID=R03182533][Deformance and Interpretation]],” /New Literary History/ 30, No. 1 (Winter, 1999): 25-56. (in-class discussion) 	 
 -  Alan Liu, “[[http://www.digitalhumanities.org/companion/view?docId=blackwell/9781405148641/9781405148641.xml&chunk.id=ss1-3-1&toc.depth=1&toc.id=ss1-3-1&brand=9781405148641_brand][Imagining the New Media Encounter]].” A Companion to Digital Literary Studies. Ed. Ray Siemens and Susan Schreibman. Malden, MA: Blackwell, 2007. 3-25
-*** Tool Workshop/Reflection Assignment: [[https://tei-c.org/][TEI]] and The Ruin
-- How do digital humanities text analysis tools open new ways of reading literature? We experiment with text encoding using the TEI system, and the text of a medieval poem. 
+*** Tool Workshop/Reflection Assignment: JSON and A Litany
+- How do digital humanities text analysis tools open new ways of reading literature? We discuss  [[https://tei-c.org/][TEI]], then experiment with text encoding using JSON data structures, and the text of an early-modern poem. 
 ** {{{n}}} ({{{ts}}}) Digital Texts: oral poetry, cultural memory
-Continuation of the discussion from last time, with more about both TEI and Twine. 
-** {{{n}}} ({{{ts}}}) Endangered Knowledge: Rare Books & Digital Archives
+Continuation of the discussion from last time, with more about JSON, TEI, and Twine. 
+** {{{n}}} ({{{ts}}}) Plague Literature: The Past
 
-The first part of class is devoted to understanding the main course assignment, with some lecture material about *endangered knowledge*
+The first part of class is devoted to understanding the main course assignment, with some lecture material about *understanding illness as a humanist*
 *** Readings and Discussion
 On Resurrections, Risks, Losses
-- William Noel, “[[http://www.ted.com/talks/william_noel_revealing_the_lost_codex_of_archimedes][Revealing the Lost Codex of Archimedes]]” (2012). [TED TALK]
 - Bethany Nowviskie, “[[http://nowviskie.org/2014/anthropocene/][Digital Humanities in the Anthropocene]]”
-- Eira Tansey, “[[http://eiratansey.com/2017/05/16/fierce-urgencies-2017/][When the Unbearable Becomes Inevitable: Archives and Climate Change]]” (2017).
 
 *** Tools Workshop: Omeka
 A *very* brief intro to Omeka, the framework we'll use to build your class projects.
 
-** {{{n}}} ({{{ts}}}) Endangered Knowledge : Library Visit (tentative)
-*** Class Outing: Banned and Censored Books
-We visit the Thomas Fisher Rare Book Library under the guidance of Tim Perry, Cataloguer and Reference Librarian at the Library, and are introduced to the candidate books for your final projects.
+** {{{n}}} ({{{ts}}}) Plague Literature: The Present
+*** Class Project: Thinking the Present
+Interlude: we discuss our experience of the current lockdown, and how to approach it as a scholar in the humanities
 
-*Please Note:* This may be rescheduled to Oct. 24! Thanks for your patience 
-** {{{n}}} ({{{ts}}}) Endangered Knowledge: Theory and Practice
+** {{{n}}} ({{{ts}}}) Literature and History: Theory and Practice
 We examine digital archives, discussing creation, preservation, ethical concerns, relationships with communities, and security and environmental issues raised by cloud computing and machine learning.  We examine UofT’s guidelines around the ethical and technical management of human research data.
 ***  Readings & Discussion
-- 
+- Coming soon!
 *** Tools Workshop: More Omeka 
-** {{{n}}} ({{{ts}}}) Endangered Knowledge: Remembering the Soviet Bloc
-*** Readings & Discussion
-- Browse *extensively* in the [[https://samizdatcollections.library.utoronto.ca/][Project for the Study of Dissidence and Samizdat]]
-*** Special Guest Lecture!
-[[https://alexandrabolintineanu.wordpress.com/][Prof. Alexandra Bolintineanu]] will share some reflections on Samizdat and censorship in late Twentieth Century Romania.  
 ** {{{n}}} ({{{ts}}}) Data 1: Data Models for the Humanities
 We back up and ask: what are data models and algorithms? We discuss how data models, algorithms, and digital platforms inform ways of knowing, learning, and reading. Data as endangered/endangering knowledge. 
-
 *** Readings & Discussion:
 - Johanna Drucker, “[[http://www.digitalhumanities.org/dhq/vol/5/1/000091/000091.html][Humanities Approaches to Graphical Display]]” (2011).
 - Miriam Posner, [[https://www.youtube.com/watch?v=sW0u1pNQNxc][Data Trouble: Why Humanists Have Problems with Datavis, and Why Anyone Should]]
@@ -207,22 +198,21 @@ We back up and ask: what are data models and algorithms? We discuss how data mod
 - U of T's [[https://onesearch.library.utoronto.ca/researchdata][research data management policies]], including [[https://onesearch.library.utoronto.ca/researchdata/sensitive-data][guidelines on handling sensitive data]] (including de-identification, i.e. anonymizing your data) and on [[https://onesearch.library.utoronto.ca/researchdata/funder-requirements][Canadian funders' data publication requirements]] (two of the three federal funding bodies mandate that data created with gov't funding be made public).
 - Cathy O’Neil, /[[https://search.library.utoronto.ca/search?Ntx=mode%2520matchallpartial&Ntk=Anywhere&N=0&Ntt=%2522weapons%2520of%2520math%2520destruction%2522&Nr=p_work_normalized:ONeil%2520Cathy%2520Weapons%2520of%2520math%2520destruction&uuid=7c23a669-7240-41dc-94d6-592f201cb609][Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy]]/. (2016)
 - Safiya Umoja Noble. /[[https://ebookcentral-proquest-com.myaccess.library.utoronto.ca/lib/utoronto/detail.action?docID=4834260][Algorithms Of Oppression: How Search Engines Reinforce Racism]]/. (2018)
-*** Reflection Assignment: Data Tool Comparison
+*** Reflection Assignment: Data Viz Reflection
 
-** {{{n}}} ({{{ts}}}) NO CLASS READING WEEK
 ** {{{n}}} ({{{ts}}}) Data 2: OpenRefine
-- A special 3-hour workshop with OpenRefine in the Map and Data Library (5th Floor Robarts)
-
+- An introduction to data, and to data cleaning with OpenRefine
 *** Data & Map Workshop
 Introduction to data cleaning with [[http://openrefine.org/][OpenRefine]], a powerful data cleaning and transformation tool. 
 ** {{{n}}} ({{{ts}}}) Data Visualization Workshop
-*** Data & Map Workshop 2
-Two weeks in a row! 
-
-In a facilitated workshop, we turn to data visualization of humanities materials, using Jane Austen’s /Lady Susan/ for experimentation ([[https://voyant-tools.org/][Voyant]], [[http://hdlab.stanford.edu/palladio/][Palladio]], [[https://cytoscape.org/][Cytoscape]], [[https://www.tableau.com/][Tableau]]:  text and corpus work, network graphs, mapping, annotation).  Then we analyze the American Library Association’s data on banned books and discuss how we might model, interpret, question, and visualize this data.
+*** Data & Map Workshop
+In a facilitated workshop, we turn to data visualization, using the  [[https://www.tableau.com/][Tableau]] software and the publicly-available [[https://covidtracking.com/data/api][COVID-19 Dataset from /The Atlantic/]]
 
 *** Readings & Discussion
 - Workshop Materials Link to be distributed
+** {{{n}}} ({{{ts}}}) Plague Lit: Final Discussion
+*** Readings & Discussion
+- Coming Soon!
 ** {{{n}}} ({{{ts}}}) Retrospective
 The last class is a retrospective look at the course. We'll discuss how to use DH approaches and tools in your home disciplines. We also discuss how we might apply the course learning outcomes to jobs in the corporate sector: we dissect a job ad from Monster.ca to align students' newly acquired skills with every requirement of that position.
 
@@ -240,5 +230,5 @@ The last class is a retrospective look at the course. We'll discuss how to use D
 local variables need to be set at the end of the file.  
 # Local Variables:
 # org-time-stamp-custom-formats: ("<%b. %d>" . "<%Y-%m-%d %H:%M>")
-# org-mwp-classtimes-calibrate: ( "<2019-08-29 Thu>" )
+# org-mwp-classtimes-calibrate: ( "<2020-07-02 Thu>" "<2020-06-30 Tue>" )
 # End:  
