@@ -1,7 +1,7 @@
-#+MACRO: ts (eval(mwp-get-ts+7  'org-mwp-classtimes-calibrate 1))
+#+MACRO: ts (eval(mwp-get-ts+7  'org-mwp-classtimes-calibrate 2))
 #+TITLE: WDW235 Syllabus
 #+STARTUP: customtime
-#+ORG_LMS_COURSEID: 127426
+#+ORG_LMS_COURSEID: 157875
 #+HUGO_BASE_DIR: ./website/
 #+HUGO_CUSTOM_FRONT_MATTER: :banner "testbanner"
 #+IS_PUBLIC: t
