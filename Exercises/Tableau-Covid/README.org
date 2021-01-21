@@ -1,0 +1,14 @@
+* Intro
+OK folks, building on our experience last time, let's do some COVID dataviz. We'll talk along the way about some of the challenges involved!
+
+* Data Sources
+** Toronto Data
+
+- [[https://open.toronto.ca/dataset/covid-19-cases-in-toronto/][TO Open Data portal COVID data -- download as CSV for this exercise]]
+  JSON is in some ways nicer but Tableau has strange limitations on joining JDON Data
+- [[https://open.toronto.ca/dataset/neighbourhoods/][TO Open Data portal Neighbourhood data]] -- thisi s the source for our shapefiles, but use the cleaned verison I provide here instead, as otherwise the fields do not match
+** Canada Data
+For Canada-wide data, the [[git@github.com:ishaberry/Covid19Canada.git][dataset maintained by Berry /et al/]] is the easiest to use; there's a copy in [[./Covid19Canada]].
+** World Data
+There are several sources for international data. Probably the most complete public source is [[https://covidtracking.com/data/api][Covid Tracking]] and we will be using some of their data in our projects. The most-used data source is maintained by Johns Hopkins and ocllects data from numerous sources.  [[https://github.com/CSSEGISandData/COVID-19][The data is here]] and there are various API projects that serve the data live in JSON format, [[https://blogs.mulesoft.com/dev/api-dev/track-covid-19/][a few of which are described here]].
+

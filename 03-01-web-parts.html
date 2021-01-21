@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>3.1 Understanding The Web &#x2013; HTML, CSS, JS</title>
+<meta name="author" content="Matt Price"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="file:///home/matt/src/reveal.js/css/reveal.css"/>
+
+<link rel="stylesheet" href="file:///home/matt/src/reveal.js/css/theme/matt.css" id="theme"/>
+<link rel="stylesheet" href="file:///home/matt/src/reveal.js/lib/css/zenburn.css"/>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'file:///home/matt/src/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide">
+<h1>3.1 Understanding The Web &#x2013; HTML, CSS, JS</h1>
+<h3>Matt Price  </h3>
+<!-- <p class="title-theme-choice">(view this presentation in another theme: 
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/black.css')); return false;">Black (default)</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/white.css')); return false;">White</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/league.css')); return false;">League</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/sky.css')); return false;">Sky</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/beige.css')); return false;">Beige</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/simple.css')); return false;">Simple</a> 
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/serif.css')); return false;">Serif</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/blood.css')); return false;">Blood</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/night.css')); return false;">Night</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/moon.css')); return false;">Moon</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/solarized.css')); return false;">Solarized</a> 
+				)	</p> -->
+
+</section>
+<section>
+<section id="slide-machine-readable-text-2a02" class="splitc">
+<h2 id="machine-readable-text-2a02">HTML at work,  and some consequences</h2>
+<div class="fragment (appear) slideblock">
+<h1>This is the top-level heading</h1>
+<p>
+  This is a paragraph. It can contain <i>further markup</i> and also 
+  <a href="http:/some.where.com">more complex content</a>.
+</p>
+<aside>
+  Sometimes you'll see <i>semantic</i> tags, like "aside",
+  "header", "footer", "article", or "section".  
+</aside>
+<stanza>
+    <line>
+        It is also permissible to make up your own tags in HTML. 
+    </line>
+    <line>
+        Usually this is a complex procedure.
+    </line>
+</stanza>
+
+</div>
+<div class="fragment (appear) slideblock">
+<p>
+On the web, text is &ldquo;Marked up&rdquo; 
+</p>
+<div class="org-src-container">
+
+<pre><code class=" html" >&lt;h1&gt;This is a top-level heading&lt;/h1&gt;
+&lt;p&gt;
+    This is a paragraph. It can contain &lt;i&gt;further markup&lt;/i&gt; and also 
+    &lt;a href="http:/some.where.com"&gt;more complex content&lt;/a&gt;.
+&lt;/p&gt;
+&lt;aside&gt;
+    Sometimes you'll see &lt;i&gt;semantic&lt;/i&gt; tags, like "aside",
+    "header", "footer", "article", or "section".  
+&lt;/aside&gt;
+&lt;stanza&gt;
+    &lt;line&gt;
+        It is also permissible to make up your own tags in HTML. 
+    &lt;/line&gt;
+    &lt;line&gt;
+        Usually this is a complex procedure.
+    &lt;/line&gt;
+&lt;/stanza&gt;
+
+</code></pre>
+</div>
+
+</div>
+<div class="fragment (appear) slideblock">
+<form><ul>
+<li>Programs can scan this text, interpret it&#x2026;</li>
+<li>then treat it as <i>data</i> which can be combined, analyzed, etc.</li>
+
+</ul></form>
+<form><ul class="fragment appear">
+<li>point of learning HTML is</li>
+
+</ul></form>
+<form><ul class="fragment appear">
+<li>Understand how to achieve a certain &ldquo;look&rdquo;</li>
+<li>Understand how a complex computer algorithm might treat it as &ldquo;data&rdquo;.</li>
+
+</ul></form>
+
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-org8227a6b">
+<h2 id="org8227a6b">Three Levels</h2>
+<form><ul>
+<li>HTML for <b>structure/content</b>;</li>
+<li>CSS for <b>presentation</b></li>
+<li>JS for <b>dynamic changes</b> and <b>rendering remote data</b></li>
+
+</ul></form>
+
+</section>
+</section>
+<section>
+<section id="slide-selectortag-anatomy-9f2b">
+<h2 id="selectortag-anatomy-9f2b">Tag Anatomy</h2>
+
+<figure>
+<img src="./images/tagname.png" alt="tagname.png">
+
+</figure>
+
+<form><ul>
+<li>opening and closing <b>tags</b> around <b>content</b></li>
+<li>&ldquo;attributes&rdquo; can affect how the browser displays and interprets the tag</li>
+<li>the only attribute that really matters for us in this exercise is</li>
+<li><code>class="list of classnames"</code></li>
+
+</ul></form>
+</section>
+</section>
+<section>
+<section id="slide-css-basics-6376">
+<h2 id="css-basics-6376">CSS Basics</h2>
+<form><ul>
+<li>&ldquo;<a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets">Cascading Style Sheets</a>&rdquo;</li>
+<li>Style sheet</li>
+<li>that &ldquo;cascades&rdquo; = overrides prior values</li>
+
+</ul></form>
+
+<figure>
+<img src="http://bollig.co/assets/page-images/understanding-the-cascade-part-1/css-cascade.jpg" alt="css-cascade.jpg">
+
+</figure>
+
+<aside class="notes">
+<p>
+two &ldquo;dimensions&rdquo; to cascade (source order and specificity)
+</p>
+
+<form><ul>
+<li>specificity is the hard/important one.</li>
+
+</ul></form>
+
+</aside>
+
+
+</section>
+</section>
+<section>
+<section id="slide--c0f8" class="twoc">
+<h2 id="-c0f8">CSS Anatomy</h2>
+<div class="slideblock">
+<div class="org-src-container">
+
+<pre><code class=" css" >h1 {
+    color:blue;
+    font-family:serif; 
+    font-size:24px; 
+}
+
+div {
+    border: 1px solid black;
+}
+
+div.main p {
+    color:red;
+}
+
+#specialid {
+    float:left;
+}
+</code></pre>
+</div>
+
+</div>
+<div class="slideblock">
+<p>
+When you look at a CSS file, you will see it is divided into a bunch of stanzas, like this.  Each of these stanzas is called a &ldquo;selector statement&rdquo;:
+They all follow the same pattern: 
+</p>
+<form><ul>
+<li>first, a <b>selector</b> that identifies the elements to which these instructions will apply</li>
+<li>then <b>an open brace</b> &ldquo;{&rdquo; which marks the start of the actual instructions</li>
+<li>then a series of <b>property-value pairs</b>.  Each of these sets the <i>value</i> of a particular <i>property</i> (duh).  Note that at the end of a property, there is <b>always</b> a semi-colon!</li>
+<li>finally, <b>a closing brace</b> that ends the selector declaration.</li>
+
+</ul></form>
+
+</div>
+
+<aside class="notes">
+<p>
+When you look at a CSS file, you will see it is divided into a bunch of stanzas, like this.  Each of these stanzas is called a &ldquo;selector statement&rdquo;:
+They all follow the same pattern: 
+</p>
+<form><ul>
+<li>first, a <b>selector</b> that identifies the elements to which these instructions will apply</li>
+<li>then <b>an open brace</b> &ldquo;{&rdquo; which marks the start of the actual instructions</li>
+<li>then a series of <b>property-value pairs</b>.  Each of these sets the <i>value</i> of a particular <i>property</i> (duh).  Note that at the end of a property, there is <b>always</b> a semi-colon!</li>
+<li>finally, <b>a closing brace</b> that ends the selector declaration.</li>
+
+</ul></form>
+
+</aside>
+</section>
+</section>
+<section>
+<section id="slide-with-and-without-css-43a6">
+<h2 id="with-and-without-css-43a6">With and without CSS</h2>
+
+<figure>
+<img src="./images/nytimes-w-css.png" alt="nytimes-w-css.png" class="paired">  
+
+</figure>
+
+<figure>
+<img src="./images/nytimes-no-css.png" alt="nytimes-no-css.png" class="paired"> 
+
+</figure>
+
+</section>
+</section>
+<section>
+<section id="slide-org760e17b">
+<h2 id="org760e17b">JavaScript</h2>
+<form><ul>
+<li>add dynamic transformations</li>
+<li>as in e.g. this silly example: <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript#A_high-level_definition">https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript#A_high-level_definition</a></li>
+<li><b>we are not really learning to program in this class</b></li>
+<li>but <b>it helps to be aware of JS</b> and we will fool around with it during class</li>
+
+</ul></form>
+
+</section>
+</section>
+<section>
+<section id="slide-org1d6b7cf">
+<h2 id="org1d6b7cf">Learning More</h2>
+<p>
+<a href="https://developer.mozilla.org/en-US/docs/Learn">The Mozilla Developers&rsquo; Network</a> Is the best place to learn about web technologies, though there are lots of other resources too!
+</p>
+<form><ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web">Check out the &ldquo;Complete Beginners&rdquo; Sequence here</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML">Teach yourself HTML here</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS">Get started with CSS here</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics">The JavaScript page of the &ldquo;Complete Beginners&rdquo; course is a really good place to start learning JS</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript">Afterwards you can check out the JS sequence</a></li>
+
+</ul></form>
+
+
+<p>
+For the assignment, you may want to learn about some specific CSS rules. <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">Every current and proposed CSS rule is listed here</a> with links to a very full explanation of how to use it.  </p>
+</section>
+</section>
+</div>
+</div>
+<script src="file:///home/matt/src/reveal.js/lib/js/head.min.js"></script>
+<script src="file:///home/matt/src/reveal.js/js/reveal.js"></script>
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: true,
+center: false,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+mouseWheel: false,
+fragmentInURL: false,
+hashOneBasedIndex: false,
+pdfSeparateFragments: true,
+
+overview: true,
+width: "100%",
+height: "100%",
+margin: 0.10,
+minScale: 1.00,
+maxScale: 1.00,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'convex', // see README of reveal.js for options
+transitionSpeed: 'default',
+
+// Optional libraries used to extend reveal.js
+dependencies: [
+{src: 'file:///home/matt/src/reveal.js/plugin/klipse_reveal.js'},
+ { src: 'file:///home/matt/src/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: 'file:///home/matt/src/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'file:///home/matt/src/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'file:///home/matt/src/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+ { src: 'file:///home/matt/src/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'file:///home/matt/src/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+
+});
+</script>
+</body>
+</html>

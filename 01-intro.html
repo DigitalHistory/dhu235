@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>1  Digital Humanities &#x2013;  An Introduction</title>
+<meta name="author" content="Matt Price"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="file:///home/matt/src/reveal.js/css/reveal.css"/>
+
+<link rel="stylesheet" href="file:///home/matt/src/reveal.js/css/theme/matt.css" id="theme"/>
+<link rel="stylesheet" href="file:///home/matt/src/reveal.js/lib/css/zenburn.css"/>
+<link rel="stylesheet" href="https://sandbox.hackinghistory.ca/vendor/klipse/codemirror.css"/>
+<style>
+/* Position computations of klipse get confused by reveal.js's scaling.
+   Hence, scaling should be disabled with this code.  Fix height of code area
+   with scrollbar (use overflow instead of overflow-y to restore CodeMirror
+   setting afterwards): */
+.reveal section pre { max-height: 70vh; height: auto; overflow: auto; }
+/* Reset some reveal.js and oer-reveal settings: */
+.reveal section pre .CodeMirror pre { font-size: 2.0em; box-shadow: none; width: auto; padding: 0.4em; display: block; overflow: visible; }
+/* Enlarge cursor: */
+.CodeMirror-cursor { border-left: 3px solid black; }
+</style>
+<script>
+    window.klipse_settings = {
+        selector: '.language-klipse',
+        selector_eval_html: '.language-klipse-html',
+        selector_eval_js: '.language-klipse-javascript',
+        selector_eval_js: '.language-klipse-js',
+        selector_eval_php: '.language-klipse-php',
+        selector_eval_python_client: '.language-klipse-python',
+        selector_eval_ruby: '.language-klipse-ruby',
+        selector_eval_scheme: '.language-klipse-scheme',
+        selector_sql: '.language-klipse-sql'
+    };
+</script>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'file:///home/matt/src/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide">
+<h1>1  Digital Humanities &#x2013;  An Introduction</h1>
+<h3>Matt Price  </h3>
+<!-- <p class="title-theme-choice">(view this presentation in another theme: 
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/black.css')); return false;">Black (default)</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/white.css')); return false;">White</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/league.css')); return false;">League</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/sky.css')); return false;">Sky</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/beige.css')); return false;">Beige</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/simple.css')); return false;">Simple</a> 
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/serif.css')); return false;">Serif</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/blood.css')); return false;">Blood</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/night.css')); return false;">Night</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/moon.css')); return false;">Moon</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/solarized.css')); return false;">Solarized</a> 
+				)	</p> -->
+
+</section>
+<section>
+<section id="slide-today-6959">
+<h2 id="today-6959">Today</h2>
+<form><ul>
+<li>Intro</li>
+<li>What is DH?</li>
+<li>DH: A partial history</li>
+<li>Course syllabus</li>
+<li>Project examples (will move mostly to async)</li>
+<li>A Little Game, a little thinking</li>
+
+</ul></form>
+
+</section>
+<section id="slide-org085b142">
+<h3 id="org085b142">Patience and Attention!</h3>
+<form><ul>
+<li>Online classes move <b>slowly</b>! Async lectures will help a little, but please be patient</li>
+<li>Even so, <b>please pay attention</b> or this will be much harder!</li>
+
+</ul></form>
+
+</section>
+<section id="slide-orgba28120">
+<h3 id="orgba28120">Sign up for Slack!</h3>
+<p>
+I&rsquo;d like to keep all chat <b>in Slack</b> during class.  So please click on this link in your copy of the lecture notes:
+</p>
+
+</section>
+<section id="slide-org19a9893">
+<h3 id="org19a9893">Chat &amp; Hand-raising</h3>
+<form><ul>
+<li>please feel free to chat in the <code>#meeting-1</code> channel in slack</li>
+<li>I likely can&rsquo;t respond to everything</li>
+<li>if you need to get my attention, signal with the BB Collaborate <b>hand raising</b> action</li>
+<li>Please please please please <b>add profile photos</b> to your BB Collaborate personas so I know you are not automata</li>
+
+</ul></form>
+
+</section>
+</section>
+<section>
+<section id="slide-orgcc7d46e">
+<h2 id="orgcc7d46e">Introductions</h2>
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Me</td>
+<td class="org-left">Historian of Science, Emphasis on &ldquo;Engaged Teaching&rdquo;</td>
+</tr>
+
+<tr>
+<td class="org-left">You</td>
+<td class="org-left">Let&rsquo;s discuss</td>
+</tr>
+</tbody>
+</table>
+
+<form><ul>
+<li>will test out &ldquo;breakout rooms&rdquo;</li>
+<li>take 10 minutes to find out this info from others in the room:
+<form><ul>
+<li>name, majors, is this person a DH minor?</li>
+<li>why interested in class?</li>
+<li>what skills are they hoping to develop here/elsewhere/in future?</li>
+<li>one interesting fact the person is willing to share <b>with everyone in the class</b> (nothing private)</li>
+
+</ul></form></li>
+<li>Everyone in the group should write a message in Slack <b>introducing one other person</b>.</li>
+
+</ul></form>
+
+
+</section>
+</section>
+<section>
+<section id="slide-dh-at-the-fluctuating-intersections-of-the-humanities-with-computing">
+<h2 id="dh-at-the-fluctuating-intersections-of-the-humanities-with-computing">DH: at the fluctuating intersections of the humanities with computing</h2>
+
+<figure>
+<img src="./images/hum-cs-interface.svg" alt="hum-cs-interface.svg">
+
+</figure>
+
+<aside class="notes">
+<form><ul>
+<li>note the influences go in two directions!</li>
+<li>what does this tell us exactly?</li>
+<li>not a static definition!</li>
+<li>far enough away from the interface, it is just &ldquo;humanities&rdquo; or &ldquo;computer science&rdquo;</li>
+
+</ul></form>
+
+</aside>
+
+</section>
+</section>
+<section>
+<section id="slide-org5c244ce">
+<h2 id="org5c244ce">DH Minor</h2>
+<form><ul>
+<li>exposure to established tools (but these change!)</li>
+<li>awareness of <b>what the humanities are</b></li>
+<li>thoughtful attention to <b>form</b>, <b>content</b>, and their relationship.</li>
+<li>willingness to explore technical skills</li>
+
+</ul></form>
+
+</section>
+</section>
+<section>
+<section id="slide-humanities-data">
+<h2 id="humanities-data">Humanities&rsquo; Data</h2>
+
+<figure>
+<img src="./images/h-data-types-graphic.png" alt="h-data-types-graphic.png">
+
+</figure>
+
+</section>
+<section id="slide-humanities-data-1" class="splitc">
+<h3 id="humanities-data-1">Humanities&rsquo; Data</h3>
+<div class="slideblock">
+<blockquote>
+<p>
+Humanities data has depth in small universes. Our material has the capacity to unfold inwards, as it were, to disclose layer upon layer of insights and connections, within a comparatively tiny amount of data&#x2013;almost an inverse matryoshka, as it were, where each inner doll is bigger and more complex than the one encasing it.
+</p>
+</blockquote>
+
+</div>
+
+<div class="slideblock">
+
+<figure>
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Floral_matryoshka_set_2_smallest_doll_nested.JPG" alt="Floral_matryoshka_set_2_smallest_doll_nested.JPG">
+
+<figcaption><span class="figure-number">Figure 3: </span><a class="org-ref-reference" href="#/slide-bibliography">[BrokenSpheresmallestdollset2007]</a></figcaption>
+</figure>
+
+</div>
+
+<div class="fragment (appear) slideblock">
+
+<figure>
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/First_matryoshka_museum_doll_open.jpg" alt="First_matryoshka_museum_doll_open.jpg">
+
+<figcaption><span class="figure-number">Figure 4: </span><a class="org-ref-reference" href="#/slide-bibliography">[Malyutinfirstoriginalmatryoshka2000]</a></figcaption>
+</figure>
+
+</div>
+
+
+</section>
+<section id="slide-data-in-medieval-studies">
+<h3 id="data-in-medieval-studies">Data and &ldquo;Capta&rdquo;</h3>
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left"><b>*Data</b></td>
+<td class="org-left">given</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>*Capta</b></td>
+<td class="org-left">acquired/captured/constructed through interpretation</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<a href="http://www.digitalhumanities.org/dhq/vol/5/1/000091/000091.html">Johanna Drucker</a>
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-history">
+<h2 id="history">History</h2>
+
+<figure>
+<img src="./images/dh-timeline.png" alt="dh-timeline.png">
+
+</figure>
+
+</section>
+<section id="slide-father-roberto-busa">
+<h3 id="father-roberto-busa">Father Roberto Busa, S. J. (1913-2011)</h3>
+<p>
+<div class="paired fragment appear">
+ <i>Index Thomisticus (1950s &#x2013; 1980s; 2005 online)</i>
+</p>
+
+<form><ul>
+<li>11 million words of medieval Latin</li>
+<li>30+ years of editing and analysis</li>
+<li>8000+ hours of computer processing stacks of punch cards</li>
+<li>1500 + km of magnetic tape</li>
+
+</ul></form>
+<p>
+</div><div class="paired fragment appear">
+<img src="https://web.archive.org/web/20160910202350if_/http://blog.gale.com/wp-content/uploads/2016/05/busa1.jpg" alt="busa1.jpg">
+</div>
+</p>
+
+
+</section>
+<section id="slide-punch-1">
+<h3 id="punch-1">Father Busa&rsquo;s Female Punch Card Operators</h3>
+<p class="paired">
+From Father Busa&rsquo;s archive. CIRCSE Research Centre, Università Cattolica del Sacro Cuore, Milan, Italy.in <a class="org-ref-reference" href="#/slide-bibliography">[TerrasAdaLovelaceDay2013]</a> Top left: Livia Canestraro.
+</p>
+
+
+<figure>
+<img src="https://melissaterras.files.wordpress.com/2013/10/728a0-0028.jpg" alt="728a0-0028.jpg" class="paired">
+
+</figure>
+
+</section>
+<section id="slide-father-busa-and-the-index-thomisticus">
+<h3 id="father-busa-and-the-index-thomisticus">Father Busa and the <i>Index Thomisticus</i></h3>
+
+<figure>
+<img src="./images/index-thom-online.png" alt="index-thom-online.png">
+
+</figure>
+</section>
+</section>
+<section>
+<section id="slide-flower-1">
+<h2 id="flower-1">DH Today</h2>
+
+<figure>
+<img src="./images/dh-flower.png" alt="dh-flower.png">
+
+</figure>
+</section>
+</section>
+<section>
+<section id="slide--ec62">
+<h2 id="-ec62"></h2>
+
+<figure>
+<img src="./images/dh-flower-plus.png" alt="dh-flower-plus.png">
+
+</figure>
+
+
+</section>
+</section>
+<section>
+<section id="slide-dh-projects">
+<h2 id="dh-projects">DH: Projects</h2>
+<form><ul>
+<li>Digital editing &amp; narratives: making texts and narratives available digitally</li>
+<li>Data visualization: giving visual forms to data</li>
+<li>Digital archives: digital (or digitized) collections of primary documents</li>
+<li>Digital mapping: plotting historical or literary data  onto a modern, historical, or imaginary map</li>
+<li>Augmented/virtual reality: using computing to overlay virtual elements onto real landscapes (AR)</li>
+<li>3D printing: turning a digital model into a real object</li>
+<li>Storytelling &amp; performance: video games, coding as art practice</li>
+
+</ul></form>
+
+<aside class="notes">
+<form><ul>
+<li>Digital editing &amp; narratives: making texts and narratives available digitally, allowing readers multimodal ways of accessing a text or a narrative (e.g. viewing transcribed text alongside manuscript of that text; or viewing a project that integrates curated artifacts, digital maps, and recorded interviews)</li>
+<li>Data visualization: giving visual forms to data in order to explore and discern patterns, gain or illustrate insights</li>
+<li>Digital archives: digital (or digitized) collections of primary documents about a place or a community; more broadly, collections of primary documents, e.g. manuscripts, books, letters, photographs, etc.</li>
+<li>Digital mapping: plotting historical or literary data (urban economy, pilgrim routes, artifacts found at different archaeological sites, a character&rsquo;s journey in a book) onto a modern, historical, or imaginary map</li>
+<li>Augmented/virtual reality: using computing to overlay virtual elements onto real landscapes (AR), or using computing tech to simulate an immersive, interactive, three-dimensional virtual environment</li>
+<li>3D printing: turning a digital model into a real object through additive manufacturing (delicate layering of plastic via 3D printer machine)</li>
+<li>Storytelling &amp; performance: video games, coding as art practice</li>
+
+</ul></form>
+
+</aside>
+
+</section>
+</section>
+<section>
+<section id="slide-digital-editions-archives-narratives">
+<h2 id="digital-editions-archives-narratives">Digital Editions, Archives, Narratives</h2>
+</section>
+<section id="slide-folger-shakespeare-library">
+<h3 id="folger-shakespeare-library"><a href="https://www.folger.edu/folger-digital-texts">Folger: Shakespeare Library</a></h3>
+
+<figure>
+<img src="./images/folger.png" alt="folger.png">
+
+</figure>
+
+</section>
+<section id="slide-shelley-godwin-archive">
+<h3 id="shelley-godwin-archive"><a href="http://shelleygodwinarchive.org/">Shelley-Godwin Archive</a></h3>
+
+<figure>
+<img src="./images/shelley-g.png" alt="shelley-g.png">
+
+</figure>
+
+</section>
+<section id="slide-the-archimedes-palimpsest-multispectral-imaging">
+<h3 id="the-archimedes-palimpsest-multispectral-imaging"><a href="http://www.archimedespalimpsest.org/">The Archimedes Palimpsest</a>: Multispectral Imaging</h3>
+
+<figure>
+<img src="./images/a-palimpset.jpg" alt="a-palimpset.jpg">
+
+</figure>
+
+</section>
+<section id="slide-infinite-ulysses-interactive-readers-edition-by-amanda-visconti">
+<h3 id="infinite-ulysses-interactive-readers-edition-by-amanda-visconti"><a href="http://infiniteulysses.com/">Infinite Ulysses</a>: interactive reader&rsquo;s edition by Amanda Visconti</h3>
+
+<figure>
+<img src="./images/ulysses.png" alt="ulysses.png">
+
+</figure>
+
+</section>
+</section>
+<section>
+<section id="slide-maps-visualizations-interpretations">
+<h2 id="maps-visualizations-interpretations">Maps, Visualizations, Interpretations</h2>
+</section>
+<section id="slide-mapping-medieval-chester">
+<h3 id="mapping-medieval-chester"><a href="http://www.medievalchester.ac.uk/">Mapping Medieval Chester</a></h3>
+<form><ul>
+<li>Goal: making a digital map of medieval Chester by combining post-medieval maps with archaeological and historical evidence</li>
+<li>Digital advantage: interactive, layered, &amp; transparent</li>
+
+</ul></form>
+
+<figure>
+<img src="./images/chester.png" alt="chester.png">
+
+</figure>
+
+</section>
+<section id="slide-mapping-homers-catalogue-of-ships">
+<h3 id="mapping-homers-catalogue-of-ships"><a href="https://ships.lib.virginia.edu/">Mapping Homer&rsquo;s Catalogue of Ships</a></h3>
+<p>
+Courtney Evans and Ben Jasnow, with Jenny Strauss Clay and the UVA Scholars&rsquo; Lab (2013)
+</p>
+
+<p>
+Mapping the towns in Homer&rsquo;s Catalogue of Ships to analyze underlying organizing principles for the narration
+<img src="./images/ships.png" alt="ships.png">
+</p>
+
+</section>
+<section id="slide-project-decima">
+<h3 id="project-decima"><a href="https://decima-map.net/">Project DECIMA</a></h3>
+<p>
+University of Toronto, History Dept.
+</p>
+
+<p>
+Onto a 16th century map of Florence, DECIMA maps census data about Florence&rsquo;s inhabitants, their occupations, wealth, and daily life.
+</p>
+
+
+<figure>
+<img src="./images/decima.png" alt="decima.png">   
+
+</figure>
+</section>
+<section id="slide-topostext-ancient-texts-maps">
+<h3 id="topostext-ancient-texts-maps"><a href="https://topostext.org/">ToposText</a>: Ancient Texts + Maps</h3>
+
+<figure>
+<img src="./images/ttext.png" alt="ttext.png">
+
+</figure>
+</section>
+<section id="slide-mapping-ararat">
+<h3 id="mapping-ararat"><a href="http://www.mappingararat.com/">Mapping Ararat</a></h3>
+
+<figure>
+<img src="./images/ararat.png" alt="ararat.png">
+
+</figure>
+</section>
+<section id="slide-orgeae4971">
+<h3 id="orgeae4971">About that Land Acknowledgment</h3>
+<form><ul>
+<li>History of Life on this shore</li>
+<li>Dish with One Spoon</li>
+<li>Continuity and Disjuncture</li>
+
+</ul></form>
+<div class="paired">
+
+<figure>
+<img src="file:///home/matt/WDW235/images/dish-spoon-territory.png" alt="dish-spoon-territory.png">
+
+</figure>
+
+</div>
+<div class="paired">
+
+<figure>
+<img src="https://www.indiantime.net/home/cms_data/dfault/photos/stories/id/1/0/7510/.TEMP/s_topTEMP425x425-8032.jpeg" alt="s_topTEMP425x425-8032.jpeg">
+
+</figure>
+
+</div>
+
+<aside class="notes">
+<p>
+We would like to acknowledge this sacred land on which the University of Toronto operates. It has been a site of human activity for 15,000 years. This land is the territory of the Huron-Wendat and Petun First Nations, the Seneca, and most recently, the Mississaugas of the Credit River. The territory was the subject of the Dish with One Spoon Wampum Belt Covenant, an agreement between the Iroquois Confederacy and Confederacy of the Ojibwe and allied nations to peaceably share and care for the resources around the Great Lakes. Today, the meeting place of Toronto is still the home to many Indigenous people from across Turtle Island and we are grateful to have the opportunity to work in the community, on this territory.
+</p>
+
+</aside>
+</section>
+</section>
+<section>
+<section id="slide-communication">
+<h2 id="communication">Communication</h2>
+<form><ul>
+<li>Scholarly Writings</li>
+<li>Public Engagement</li>
+<li>Social Media</li>
+<li>Teaching &amp; Collaboration</li>
+
+</ul></form>
+
+</section>
+<section id="slide-scholarly-books-the-networked-monograph">
+<h3 id="scholarly-books-the-networked-monograph">Scholarly Books: The Networked Monograph</h3>
+<p>
+<div class="paired">
+</p>
+
+<p>
+In addition to printed books, can scholarly monographs expand their forms to “take advantage [&#x2026;] of the interactive, annotative, and computational affordances of the web&ldquo;? Donald J. Waters, “Monograph Publishing in the Digital Age&rdquo; (2016)
+</p>
+
+<p>
+Digitally augmented scholarly monographs (e.g. Mellon-funded collaboration between NYU Library and NYU Press
+</div><div class="paired">
+<img src="./images/n-monograph.jpg" alt="n-monograph.jpg">
+</div>
+</p>
+
+</section>
+<section id="slide-vr3d-printing-for-cultural-heritage-collections-small-wonders-ago">
+<h3 id="vr3d-printing-for-cultural-heritage-collections-small-wonders-ago">VR/3D Printing for Cultural Heritage Collections: <a href="http://boxwood.ago.ca/">Small</a> <a href="https://www.youtube.com/watch?v=Mc4MA8srQDM">Wonders</a> (AGO)</h3>
+<form><ul>
+<li>Miniature boxwood carvings from the early 1500s</li>
+<li>Studied and exhibited through digital imaging (micro CAT scanning), VR, and 3D printing</li>
+
+</ul></form>
+
+<figure>
+<img src="./images/small-wonders.jpg" alt="small-wonders.jpg">
+
+</figure>
+
+</section>
+<section id="slide-research-materials-medieval-manuscripts-and-social-media">
+<h3 id="research-materials-medieval-manuscripts-and-social-media">Research Materials: Medieval Manuscripts and Social Media</h3>
+
+<figure>
+<img src="https://pbs.twimg.com/media/A3zuNR6CIAAeHsk.jpg" alt="A3zuNR6CIAAeHsk.jpg">
+
+<figcaption><span class="figure-number">Figure 21: </span>Cat paws in a fifteenth-century manuscript (photo taken at the Dubrovnik archives by @EmirOFilipovic, disseminated by Eric Kwakkel)</figcaption>
+</figure>
+</section>
+</section>
+<section>
+<section id="slide-section-7">
+<h2 id="section-7">Teaching</h2>
+</section>
+<section id="slide-org5390a20">
+<h3 id="org5390a20">This Class</h3>
+<p>
+<a href="https://chauceranditaly.library.utoronto.ca/neatline/show/liminal-representation-inferno">Heather Eason: five artists&rsquo; representations of threshold crossings</a> in Dante&rsquo;s <i>Inferno</i>. Omeka/Neatline undergraduate student project.
+</p>
+
+
+<figure>
+<img src="./images/inferno.png" alt="inferno.png">
+
+</figure>
+<aside class="notes">
+<p>
+Heather Eason: five artists&rsquo; representations of threshold crossings in Dante&rsquo;s <i>Inferno</i>&#x2013;the unknown illustrator of the fourteenth-century MS Holkham misc. 48; Priamo della Quercia of the fifteenth-century Yates Thompson MS 36; Gustave Doré; Salvador Dalí; and Dante himself.
+</p>
+
+</aside>
+
+</section>
+<section id="slide-org0d90e06">
+<h3 id="org0d90e06">Others</h3>
+<p>
+Website for <a href="https://kcc.hackinghistory.ca/">Khangchendzonga Conservation Committee</a>, written and developed by students from HIS455, <i>Hacking History</i>, 2018.
+</p>
+
+
+<figure>
+<img src="file:///home/matt/WDW235/images/kcc.jpg" alt="kcc.jpg">
+
+</figure>
+
+</section>
+<section id="slide-collaboration-infrastructures">
+<h3 id="collaboration-infrastructures"><a href="https://chauceranditaly.library.utoronto.ca/neatline/show/liminal-representation-inferno">Collaboration &amp; Infrastructures</a></h3>
+
+<figure>
+<img src="./images/edgi-wm.png" alt="edgi-wm.png">
+
+</figure>
+</section>
+</section>
+<section>
+<section id="slide-course-syllabus">
+<h2 id="course-syllabus">Course Syllabus</h2>
+</section>
+<section id="slide-syl-blocks" class="twobytwo">
+<h3 id="syl-blocks">4 main blocks!</h3>
+<div class="fragment (appear) slideblock">
+<p>
+<b>Intro</b> (~2 sessions)
+</p>
+<form><ul>
+<li>Aims: 
+<form><ul>
+<li>understand <i>scope and nature</i> of Digital humanities</li>
+<li>Begin experimenting with DH tools and methos</li>
+
+</ul></form></li>
+
+</ul></form>
+
+</div>
+<div class="fragment (appear) slideblock">
+<p>
+<b>Digital Texts</b> (2 sessions)
+</p>
+<form><ul>
+<li>Aims:
+<form><ul>
+<li>understand <i>what happens to text when it goes digital</i></li>
+<li>experiment with treating texts as data</li>
+
+</ul></form></li>
+
+</ul></form>
+
+</div>
+<div class="fragment (appear) slideblock">
+<p>
+<b>Plague Literature</b> (4 sessions, the heart of the course)
+</p>
+<form><ul>
+<li>Aims:
+<form><ul>
+<li>explore DH in the context of plague literature</li>
+<li>major project using a scholarly Content Management System</li>
+
+</ul></form></li>
+
+</ul></form>
+
+</div>
+<div class="fragment (appear) slideblock">
+<p>
+<b>Data in the Humanities</b> (~3 sessions)
+</p>
+<form><ul>
+<li>Aims:
+<form><ul>
+<li>arrive at a humanities-centric conception of data</li>
+<li>become familiar with standard data cleaning and data visualization tools</li>
+
+</ul></form></li>
+
+</ul></form>
+
+</div>
+
+</section>
+<section id="slide-org68a4b86" class="twobytwo">
+<h3 id="org68a4b86">Assignments!</h3>
+<div class="slideblock">
+<p>
+<b>3 Short Assignments</b>
+</p>
+<form><ul>
+<li>~700 words</li>
+<li>engagement with texts and tools we&rsquo;ve learned about.</li>
+<li>first 2 handed out togethr, next week</li>
+
+</ul></form>
+
+</div>
+
+<div class="fragment (appear) slideblock">
+<p>
+<b>Plague Lit Project</b>
+</p>
+<form><ul>
+<li>major scaffolded assignment</li>
+<li>consultation, proposal, and exhibit all marked</li>
+<li>Assignment handed out by Oct. 1</li>
+
+</ul></form>
+
+</div>
+<div class="fragment (appear) slideblock">
+<p>
+<b>And don&rsquo;t forget participation</b>
+</p>
+<form><ul>
+<li>come to all the clases!</li>
+<li>Pay attention</li>
+<li>Do the work!</li>
+<li>Be respectful - to everyone!</li>
+
+</ul></form>
+
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-let's-play-a-game-670e">
+<h2 id="let's-play-a-game-670e">Let&rsquo;s Play a Game!</h2>
+<p>
+<a href="https://twinery.org/2/#!/stories/dbeebaff-c046-41b3-96eb-7a4ca799eef7/play">Navigate here</a>
+</p>
+
+<p>
+<a href="https://twinery.org/2/#!/stories/dbeebaff-c046-41b3-96eb-7a4ca799eef7">Let&rsquo;s Look at the &ldquo;code&rdquo;</a>
+</p>
+
+
+<p>
+<a href="https://twinery.org/2/">Now Build Your Own Stories</a>
+</p>
+</section>
+</section>
+</div>
+</div>
+<script src="file:///home/matt/src/reveal.js/lib/js/head.min.js"></script>
+<script src="file:///home/matt/src/reveal.js/js/reveal.js"></script>
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: true,
+center: false,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+mouseWheel: false,
+fragmentInURL: false,
+hashOneBasedIndex: false,
+pdfSeparateFragments: true,
+
+overview: true,
+width: "100%",
+height: "100%",
+margin: 0.10,
+minScale: 1.00,
+maxScale: 1.00,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'convex', // see README of reveal.js for options
+transitionSpeed: 'default',
+
+// Optional libraries used to extend reveal.js
+dependencies: [
+{src: 'file:///home/matt/src/reveal.js/plugin/klipse_reveal.js'},
+ { src: 'file:///home/matt/src/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: 'file:///home/matt/src/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'file:///home/matt/src/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'file:///home/matt/src/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+ { src: 'file:///home/matt/src/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'file:///home/matt/src/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+
+});
+</script>
+<script src="https://sandbox.hackinghistory.ca/vendor/klipse/klipse_plugin.min.js"></script>
+<script>
+/* Recompute layout upon changes by klipse.  Code fragment from
+   asciidoctor-revealjs-klipse by Timothy Pratley under GPLv3:
+   https://github.com/timothypratley/asciidoctor-revealjs-klipse/blob/master/docs/docinfo-footer.html */
+Reveal.addEventListener( 'slidechanged', function( event ) {
+    window.dispatchEvent( new Event('resize') );
+} );
+</script>
+</body>
+</html>

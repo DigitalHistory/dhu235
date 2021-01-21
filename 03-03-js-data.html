@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>3.3 Javascript Data Structures</title>
+<meta name="author" content="Matt Price"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="file:///home/matt/src/reveal.js/css/reveal.css"/>
+
+<link rel="stylesheet" href="file:///home/matt/src/reveal.js/css/theme/matt.css" id="theme"/>
+<link rel="stylesheet" href="file:///home/matt/src/reveal.js/lib/css/zenburn.css"/>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'file:///home/matt/src/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide">
+<h1>3.3 Javascript Data Structures</h1>
+<h3>Matt Price  </h3>
+<!-- <p class="title-theme-choice">(view this presentation in another theme: 
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/black.css')); return false;">Black (default)</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/white.css')); return false;">White</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/league.css')); return false;">League</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/sky.css')); return false;">Sky</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/beige.css')); return false;">Beige</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/simple.css')); return false;">Simple</a> 
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/serif.css')); return false;">Serif</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/blood.css')); return false;">Blood</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/night.css')); return false;">Night</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/moon.css')); return false;">Moon</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/solarized.css')); return false;">Solarized</a> 
+				)	</p> -->
+
+</section>
+<section>
+<section id="slide-orgdac04ba">
+<h2 id="orgdac04ba">Arrays</h2>
+<div class="org-src-container">
+
+<pre><code class=" js" >let myArray = ["some",
+               "collection",
+               "of", 
+               "things",
+               4,
+               7,
+               3458,
+               ["a", "sub", "array"],
+               "pretty",
+               "random"
+               ]
+</code></pre>
+</div>
+<form><ul>
+<li>an array is a <b>list</b> of <b>elements</b> separated by <b>commas</b>, and delimited by <code>[]</code></li>
+<li>note 3 kinds of elements in this particular array:
+<form><ul>
+<li>string: collection of characters delimited by <code>""</code></li>
+<li>number: numerals only, no quotes</li>
+<li>array: one of the array elements is itself an array!</li>
+
+</ul></form></li>
+
+</ul></form>
+</section>
+</section>
+<section>
+<section id="slide-org5a542ed">
+<h2 id="org5a542ed">Objects</h2>
+<div class="org-src-container">
+
+<pre><code class=" javascript" >{
+  title: "I am a collection of key-value pairs",
+  separation: "always separated by commas",
+  possibleValues: ["value", "can", "be", "any", "javascript", "data structure"],
+  evenOtherObjects: {
+    subvalue1: "Even other objects",
+    subvalue2: 234098,
+    subvalue3: "This is getting silly"
+  },
+  "propertyNamesCanBeQuoted": "Not really a good idea but we do it anyway"
+}
+</code></pre>
+</div>
+<form><ul>
+<li>key-value pairs</li>
+<li>separated by commas (remember: CSS rule separator is semi-colon, JS object property separator is comma)</li>
+<li>value can itself be a complex data structure</li>
+
+</ul></form>
+</section>
+</section>
+<section>
+<section id="slide-orgd9b9c5b">
+<h2 id="orgd9b9c5b">In our Assignment</h2>
+<div class="org-src-container">
+
+<pre><code class=" json" >{
+    "type": "stanza",
+    "class": "",
+    "content": [
+      {
+        "type": "line",
+        "class": "",
+        "content": [
+          {"type": "word", "content": "Everywhere", "class": "", "meta": ""},
+          {"type": "word", "content": "lies", "class": "", "meta": ""},
+          {"type": "word", "content": "a", "class": "", "meta": ""},
+          {"type": "word", "content": "corpse", "meta": ""},
+          {"type": "punctuation", "content": ",", "class": "", "meta": ""},
+          {"type": "word", "content": "mourned", "class": "", "meta": ""}
+        ]
+      },
+      {
+        "type": "line",
+        "class": "",
+        "content": [
+          {"type": "word", "content": "without", "class": "", "meta": ""},
+          {"type": "word", "content": "a", "class": "", "meta": ""},
+          {"type": "word", "content": "eulogy", "class": "", "meta": "How do we think of a eulogy?"},
+          {"type": "word", "content": "or", "class": "", "meta": ""},
+          {"type": "word", "content": "a", "class": "", "meta": ""},
+          {"type": "word", "content": "moment", "class": "", "meta": ""},
+          {"type": "word", "content": "of", "class": "", "meta": ""},
+          {"type": "word", "content": "silence", "class": "", "meta": ""},
+          {"type": "punctuation", "content": ".", "class": "", "meta": ""}
+        ]
+      }
+    ]
+  }
+</code></pre>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org000bd81">
+<h2 id="org000bd81">Your Task: JS part</h2>
+<form><ul>
+<li><b>add classes to relevant components</b></li>
+<li><b>consider adding meta, if you want to explain something</b></li>
+<li>also possible to add new elements!</li>
+
+</ul></form>
+<div class="org-src-container">
+
+<pre><code class=" json" >{
+    "type": "stanza",
+    "class": "",
+    "content": [
+      {
+        "type": "line",
+        "class": "",
+        "content": [
+          {"type": "word", "content": "without", "class": "", "meta": ""},
+          {"type": "word", "content": "a", "class": "", "meta": ""},
+          {"type": "word", "content": "eulogy", "class": "death", "meta": ""},
+          {"type": "word", "content": "or", "class": "", "meta": ""},
+          {"type": "word", "content": "a", "class": "", "meta": ""},
+          {"type": "phrase", "class": "",
+           "meta": "To be without a moment of silence, amidst the grieving; the agony is awful",
+           "content": [
+             {"type": "word", "content": "moment", "class": "time", "meta": ""},
+             {"type": "word", "content": "of", "class": "", "meta": ""},
+             {"type": "word", "content": "silence", "class": "", "meta": ""}
+           ]},
+          {"type": "punctuation", "content": ".", "class": "", "meta": ""}
+        ]
+      }
+    ]
+  }
+</code></pre>
+</div>
+</section>
+</section>
+</div>
+</div>
+<script src="file:///home/matt/src/reveal.js/lib/js/head.min.js"></script>
+<script src="file:///home/matt/src/reveal.js/js/reveal.js"></script>
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: true,
+center: false,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+mouseWheel: false,
+fragmentInURL: false,
+hashOneBasedIndex: false,
+pdfSeparateFragments: true,
+
+overview: true,
+width: "100%",
+height: "100%",
+margin: 0.10,
+minScale: 1.00,
+maxScale: 1.00,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'convex', // see README of reveal.js for options
+transitionSpeed: 'default',
+
+// Optional libraries used to extend reveal.js
+dependencies: [
+{src: 'file:///home/matt/src/reveal.js/plugin/klipse_reveal.js'},
+ { src: 'file:///home/matt/src/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: 'file:///home/matt/src/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'file:///home/matt/src/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'file:///home/matt/src/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+ { src: 'file:///home/matt/src/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'file:///home/matt/src/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+
+});
+</script>
+</body>
+</html>

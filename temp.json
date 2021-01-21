@@ -1,0 +1,784 @@
+[
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "species_guess",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Fungi including Lichens",
+          "fungi including lichens",
+          "Fungi including lichens"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fungi Including Lichens"
+      }
+    ],
+    "description": "Mass edit cells in column species_guess"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "species_guess",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "flowering plants",
+          "Flowering plants",
+          "Flowering Plants"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "flowering plants"
+      },
+      {
+        "from": [
+          "Wood sorrels",
+          "wood sorrels",
+          "Wood Sorrels"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Wood sorrels"
+      },
+      {
+        "from": [
+          "loblolly pine",
+          "Loblolly Pine",
+          "Loblolly pine"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "loblolly pine"
+      },
+      {
+        "from": [
+          "Christmas Fern",
+          "Christmas fern"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Christmas Fern"
+      },
+      {
+        "from": [
+          "common vetch",
+          "Common vetch"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "common vetch"
+      },
+      {
+        "from": [
+          "Heavenly bamboo",
+          "heavenly bamboo"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Heavenly bamboo"
+      },
+      {
+        "from": [
+          "Virginia creeper",
+          "Virginia Creeper"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Virginia creeper"
+      },
+      {
+        "from": [
+          "Pink Lady's Slipper",
+          "pink lady's slipper"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pink Lady's Slipper"
+      },
+      {
+        "from": [
+          "dicots",
+          "Dicots"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "dicots"
+      },
+      {
+        "from": [
+          "American Pokeweed",
+          "American pokeweed"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "American Pokeweed"
+      },
+      {
+        "from": [
+          "white oak",
+          "White oak"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "white oak"
+      },
+      {
+        "from": [
+          "Ant",
+          "ant"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ant"
+      },
+      {
+        "from": [
+          "Poison Ivy",
+          "poison ivy"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Poison Ivy"
+      },
+      {
+        "from": [
+          "Japanese Honeysuckle",
+          "Japanese honeysuckle"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Japanese Honeysuckle"
+      },
+      {
+        "from": [
+          "Northern Cricket Frog",
+          "northern cricket frog"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Northern Cricket Frog"
+      },
+      {
+        "from": [
+          "river birch",
+          "River Birch"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "river birch"
+      },
+      {
+        "from": [
+          "Spurges",
+          "spurges"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Spurges"
+      },
+      {
+        "from": [
+          "brambles",
+          "Brambles"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "brambles"
+      },
+      {
+        "from": [
+          "Shelf fungi",
+          "shelf fungi"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Shelf fungi"
+      },
+      {
+        "from": [
+          "American sweetgum",
+          "American Sweetgum"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "American sweetgum"
+      },
+      {
+        "from": [
+          "Buttonweed",
+          "buttonweed"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Buttonweed"
+      },
+      {
+        "from": [
+          "Grapevines",
+          "grapevines"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Grapevines"
+      },
+      {
+        "from": [
+          "Vine",
+          "vine"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Vine"
+      },
+      {
+        "from": [
+          "Tree",
+          "tree"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tree"
+      },
+      {
+        "from": [
+          "Catchweed bedstraw",
+          "catchweed bedstraw"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Catchweed bedstraw"
+      },
+      {
+        "from": [
+          "Blue Jay",
+          "blue jay"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Blue Jay"
+      },
+      {
+        "from": [
+          "eastern red cedar",
+          "Eastern Red Cedar"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "eastern red cedar"
+      },
+      {
+        "from": [
+          "English ivy",
+          "English Ivy"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "English ivy"
+      },
+      {
+        "from": [
+          "Star Chickweed",
+          "star chickweed"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Star Chickweed"
+      },
+      {
+        "from": [
+          "Winged Insect",
+          "Winged insect"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Winged Insect"
+      },
+      {
+        "from": [
+          "Southern Red Oak",
+          "southern red oak"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Southern Red Oak"
+      },
+      {
+        "from": [
+          "common dandelion",
+          "Common Dandelion"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "common dandelion"
+      },
+      {
+        "from": [
+          "Fly",
+          "fly"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fly"
+      },
+      {
+        "from": [
+          "Woolly Blue Violet",
+          "Woolly blue violet"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Woolly Blue Violet"
+      },
+      {
+        "from": [
+          "Blackberry",
+          "blackberry"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Blackberry"
+      },
+      {
+        "from": [
+          "coral honeysuckle",
+          "Coral honeysuckle"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "coral honeysuckle"
+      },
+      {
+        "from": [
+          "Mosses, hornworts, and liverworts",
+          "mosses, hornworts, and liverworts"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Mosses, hornworts, and liverworts"
+      },
+      {
+        "from": [
+          "ferns",
+          "Ferns"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ferns"
+      },
+      {
+        "from": [
+          "Carolina Cranesbill",
+          "Carolina crane's-bill"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Carolina Cranesbill"
+      },
+      {
+        "from": [
+          "Red Maple",
+          "red maple"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Red Maple"
+      },
+      {
+        "from": [
+          "Lizard's Tail",
+          "Lizard's tail"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lizard's Tail"
+      },
+      {
+        "from": [
+          "Aster family",
+          "aster family"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Aster family"
+      },
+      {
+        "from": [
+          "greenbriars",
+          "Greenbriars"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "greenbriars"
+      },
+      {
+        "from": [
+          "Flowering Dogwood",
+          "flowering dogwood"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Flowering Dogwood"
+      },
+      {
+        "from": [
+          "Oaks",
+          "oaks"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Oaks"
+      },
+      {
+        "from": [
+          "Mint family",
+          "mint family"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Mint family"
+      },
+      {
+        "from": [
+          "Tulip Tree",
+          "tulip tree"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Tulip Tree"
+      },
+      {
+        "from": [
+          "Kudzu",
+          "kudzu"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Kudzu"
+      },
+      {
+        "from": [
+          "mayapple",
+          "Mayapple"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "mayapple"
+      },
+      {
+        "from": [
+          "Black cherry",
+          "black cherry"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Black cherry"
+      },
+      {
+        "from": [
+          "conifers",
+          "Conifers"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "conifers"
+      },
+      {
+        "from": [
+          "Common greenbriar",
+          "common greenbriar"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Common greenbriar"
+      },
+      {
+        "from": [
+          "Titan Arum",
+          "Titan arum"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Titan Arum"
+      }
+    ],
+    "description": "Mass edit cells in column species_guess"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "species_guess",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Spider Web",
+          "Spider Webs"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Spider Web"
+      },
+      {
+        "from": [
+          "Insects",
+          "Insect"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Insects"
+      },
+      {
+        "from": [
+          "Earthworms",
+          "Earthworm"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Earthworms"
+      },
+      {
+        "from": [
+          "Geranium",
+          "Geraniums"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Geranium"
+      },
+      {
+        "from": [
+          "Spider",
+          "Spiders"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Spider"
+      },
+      {
+        "from": [
+          "Crape myrtle",
+          "crapemyrtle"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Crape myrtle"
+      },
+      {
+        "from": [
+          "dandelions",
+          "Dandelion"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "dandelions"
+      },
+      {
+        "from": [
+          "English ivy",
+          "Engliseh Ivy"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "English ivy"
+      },
+      {
+        "from": [
+          "Erebid Moth",
+          "Erebid Moths"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Erebid Moth"
+      },
+      {
+        "from": [
+          "Clover",
+          "clovers"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Clover"
+      },
+      {
+        "from": [
+          "flowering plants",
+          "Flowering plant"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "flowering plants"
+      },
+      {
+        "from": [
+          "Magnolia",
+          "Magnolias"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Magnolia"
+      },
+      {
+        "from": [
+          "Mock orange",
+          "Mock-orange"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Mock orange"
+      },
+      {
+        "from": [
+          "Dragonfly",
+          "Dragon Fly"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Dragonfly"
+      }
+    ],
+    "description": "Mass edit cells in column species_guess"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "scientific_name",
+    "guessCellType": true,
+    "removeOriginalColumn": false,
+    "mode": "separator",
+    "separator": " ",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column scientific_name by separator"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "scientific_name 1",
+    "newColumnName": "genus",
+    "description": "Rename column scientific_name 1 to genus"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "scientific_name 2",
+    "newColumnName": "epithet",
+    "description": "Rename column scientific_name 2 to epithet"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "user_id",
+    "expression": "grel:cells.user_login.value + \" (\" + value + \")\"",
+    "onError": "set-to-blank",
+    "newColumnName": "User",
+    "columnInsertIndex": 7,
+    "description": "Create column User at index 7 based on column user_id using expression grel:cells.user_login.value + \" (\" + value + \")\""
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "out_of_range",
+    "description": "Remove column out_of_range"
+  },
+  {
+    "op": "core/column-reorder",
+    "columnNames": [
+      "id",
+      "quality_grade",
+      "license",
+      "species_guess",
+      "observed_on_string",
+      "observed_on",
+      "time_observed_at",
+      "time_zone",
+      "user_id",
+      "User",
+      "user_login",
+      "created_at",
+      "updated_at",
+      "url",
+      "image_url",
+      "description",
+      "id_please",
+      "num_identification_agreements",
+      "num_identification_disagreements",
+      "captive_cultivated",
+      "oauth_application_id",
+      "place_guess",
+      "latitude",
+      "longitude",
+      "positional_accuracy",
+      "private_place_guess",
+      "private_latitude",
+      "private_longitude",
+      "coordinates_obscured",
+      "positioning_method",
+      "positioning_device",
+      "scientific_name",
+      "genus",
+      "epithet",
+      "scientific_name 3",
+      "common_name",
+      "iconic_taxon_name",
+      "taxon_id"
+    ],
+    "description": "Reorder columns"
+  },
+  {
+    "op": "core/row-flag",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "license",
+          "expression": "value",
+          "columnName": "license",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [],
+          "selectBlank": true,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "quality_grade",
+          "expression": "value",
+          "columnName": "quality_grade",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "casual",
+                "l": "casual"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "flagged": true,
+    "description": "Flag rows"
+  }
+]
