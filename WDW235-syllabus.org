@@ -9,11 +9,12 @@
    :CUSTOM_ID: course-details
    :END:
    
-| Instructor   | Matt Price                                            |
-| Course Hours | Th 5-8                                                |
-| Office Hours | Th 12-1  (SS 3077)                                    |
-| Email        | [[mailto:alexandra.bolintineanu@utoronto.ca][matt.price@utoronto.ca]] (weekdays 9-5, 48h turnaround) |
-| TA           | TBD                                                   |
+| Instructor        | Matt Price                                            |
+| Sync Course Hours | T Th 2-5 [[https://q.utoronto.ca/courses/157875/external_tools/246][In BB Collaborate]] (but [[#how-this-course-works][see below]])            |
+| Sync Office Hours | T Th 1-2  (online)                                    |
+| Email             | [[mailto:matt.price@utoronto.ca][matt.price@utoronto.ca]] (weekdays 9-5, 48h turnaround) |
+| TA                | TBD                                                   |
+| Slack             | [[https://join.slack.com/t/uoftdh/shared_invite/zt-fq2pcjk4-Y3Vvyu6~tNDjYbfH~T6mJA][Join Here]]                                             |
 
 * Course Description
    :PROPERTIES:
@@ -75,18 +76,18 @@ See [[http://www.studentlife.utoronto.ca/as][A&S Accessibility Website]] for mor
    :CUSTOM_ID: grading-scheme
    :END:
 
-| *Assignment*                                    | *%* | *Due Date*                                    |
-|-------------------------------------------------+-----+-----------------------------------------------|
-| Short Assignments (3)                           |  45 | <2020-07-16 Thu>, <2020-07-21 Tue>, <2020-08-04 Tue>                     |
-| Participation                                   |  10 | All semester; alternatives.                   |
-| Book Project: Consultation                      |   1 | July , by appointment      |
-| Book Project: Proposal & Annotated Bibliography |   9 | <2020-07-31 Fri>                                       |
-| Book Project: Digital Exhibit                   |  35 | <2020-08-14 Fri>                                       |
-| Total                                           | 100 |                                               |
+| *Assignment*                                    | *%* | *Due Date*                  |
+|-------------------------------------------------+-----+-----------------------------|
+| Short Assignments (3)                           |  45 | <2020-07-16 Thu>, <2020-07-21 Tue>, <2020-08-04 Tue>   |
+| Participation                                   |  10 | All semester; alternatives. |
+| Book Project: Consultation                      |   1 | July 20-30, by appointment  |
+| Book Project: Proposal & Annotated Bibliography |   9 | <2020-08-04 Tue>                     |
+| Book Project: Digital Exhibit                   |  35 | <2020-08-14 Fri>                     |
+| Total                                           | 100 |                             |
 #+TBLFM: @>$2=vsum(@2..@-1)
 
 - Reflections include in-class digital artifacts as well as discussion of course readings.
-- You will work on reflections in class as well as outside class, and you will hand them in via Quercus. 400-500 words maximum.
+- You will work on reflections in class as well as outside class, and you will hand them in via Quercus. 
 
 * Graded Work
    :PROPERTIES:
@@ -102,7 +103,7 @@ Your first assignment is to profile a Digital Humanities project, analyzing its 
 
 ** Book Project
 
-Your major assignment in this course is to tell the story of a banned, challenged, or endangered book through a digital exhibit.
+Your major assignment in this course is to tell the story of a work of plague literature through a digital exhibit.
 
 * Contact
    :PROPERTIES:

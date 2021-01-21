@@ -26,7 +26,7 @@ function getScrollBarWidth() {
 };
 
 // for the window resize
-$(window).resize(function() {});
+// $(window).resize(function() {});
 
 // debouncing function from John Hann
 // http://unscriptable.com/index.php/2009/03/20/debouncing-javascript-methods/

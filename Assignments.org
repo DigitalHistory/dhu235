@@ -116,41 +116,41 @@ Components (check/no-check)
 
 - *Grade* ::
 - *Comments* :: 
-* Reflection 02: The Ruin :assignment:
+* Reflection 02: Litany                                          :assignment:
 :PROPERTIES:
 :EXPORT_FILE_NAME: reflection-2-the-ruin
-:PUBLISH:  t
-:DUE_AT: 2019-10-10
+:PUBLISH:  nil
+:DUE_AT: 2020-07-21
 :GRADING_TYPE: points
 :ASSIGNMENT_TYPE: canvas
 :ASSIGNMENT_WEIGHT: 0.20
 :CANVAS_SUBMISSION_TYPES: (online_upload)
-:OL_PUBLISH: t
+:OL_PUBLISH: nil
 :ASSIGNMENT_TYPE: canvas
 :BASECOMMIT: none
 :GRADING_STANDARD_ID: nil
 :ID:       831680db-1f4c-441a-9b5d-28d30066ae13
-:CANVASID: 226000
-:CANVAS_HTML_URL: https://q.utoronto.ca/courses/127426/assignments/226000
-:CANVAS_SUBMISSION_URL: https://q.utoronto.ca/courses/127426/assignments/226000/submissions?zip=1
-:SUBMISSIONS_DOWNLOAD_URL: https://q.utoronto.ca/courses/127426/assignments/226000/submissions?zip=1
+:CANVASID: 361850
+:CANVAS_HTML_URL: https://q.utoronto.ca/courses/157875/assignments/361850
+:CANVAS_SUBMISSION_URL: https://q.utoronto.ca/courses/157875/assignments/361850/submissions?zip=1
+:SUBMISSIONS_DOWNLOAD_URL: https://q.utoronto.ca/courses/157875/assignments/361850/submissions?zip=1
 :END:
 
-Before completing this assignment, read the *recently revised, HTML version* of the handout “[[https://digitalhistory.github.io/wdw235/assignment/reflection-2-handout/][The Ruin: Digital Literary Studies]]” and carry out the exercises it asks you to do.
+Before completing this assignment, read the *recently revised, HTML version* of the handout “[[https://q.utoronto.ca/courses/157875/pages/reflection-02-handout-and-preliminary-exercises][Reflection 02: Handout and Preliminary Exercises]]” and carry out the exercises it asks you to do. Then [[https://github.com/DigitalHistory/poem-json-project/releases/][Download the project files from this location]]. After completion of the assignment, save all your changes to the project files and drop your essay into the same directory. Then save that directory as a zipfile and upload to Quercus. Here is the assignment itself: 
 
-1. What is /The Ruin/? Briefly describe the poem and its themes. State what passage you are focusing on and analyze its poetic characteristics, as discussed in class. Be specific; cite poem by line numbers. Cite Echard's online translation correctly using the citation format of your choice.
+1. What is /A Litany in Time of Plague/? Briefly describe the poem and its themes. State what passage you are focusing on and analyze its poetic characteristics, as discussed in class. Be specific; cite poem by line numbers. Cite the poem correctly using the citation format of your choice.
 
-2. What is “deformance,” as defined by McGann and Davidson, and how did you practice deformance on /The Ruin?/ Cite McGann and Davidson correctly using the citation format of your choice.
+2. What is “deformance,” as defined by McGann and Samuels, and how did you practice deformance on /A Litany in Time of Plague?/ Cite McGann and Samuels correctly using the citation format of your choice.
 
 3. Describe the literary study methodology we used. Make sure you answer the following questions:
 
-   1. What is TEI? How did we use it? (Your own words, please.)
+   1. What is TEI? How does it differ from our encoding of the poem as data? (Your own words, please.)
 
-   2. What tag did you create? What is it supposed to describe? Why did you choose it? Include at least one screenshot of the viewing screen with your TEI code, XSLT code, and results.
+   2. What additions did you make to the poem data. What are these changes supposed to describe? Why did you choose them? 
 
-   3. What did you learn from making these digital artifacts that simply reading the poem did not uncover? What is the most significant affordance of your tools and digital artifacts that enabled you to gain these insights? What /failed/ to work---that is, what was difficult or counterproductive about working with TEI and XSLT?
+   3. What did you learn from making these digital artifacts that simply reading the poem did not uncover? What is the most significant affordance of your tools and digital artifacts that enabled you to gain these insights? What /failed/ to work---that is, what was difficult or counterproductive about working with the poem this way? 
 
-   4. How does your analysis work /with/ or /against/ the poem---that is, are you “breaking” or “recreating” the poem? What difference does it make that you are reading an endangered poem---that is, a poem that comes down to us in fragments, in a single manuscript, in a language no longer spoken? Be as specific as possible.
+   4. How does your analysis work /with/ or /against/ the poem---that is, are you “breaking” or “recreating” the poem? Be as specific as possible.
 
 
 ** Evaluation 
@@ -159,25 +159,22 @@ This assignment is graded out of 20.
 
 *** Intro (/4)
 
-- A clear contextualization of /The Ruin/: its manuscript context, its historical period, and its content.
+- A clear contextualization of the poem: its manuscript context, its historical period, and its content.
 
 - A clear definition of “deformance” (McGann & Samuels).
 
-*** TEI (/6)
+*** Data Structure and Display (/6)
 
-- A clear definition of TEI in the students' own words is present (/2)
-
-- Screenshots of TEI and XSLT code are present; output of the TEI and XSLT code is present (/2)
-
-- Student invent their own XML tag, highlighting a consequential aspect of the poem (/2)
+- Data structure has been modified and is free of syntax errors
+- CSS has been modified and effectively trnasforms the visual presentation of the poem
 
 *** Analysis (/6)
 
 - Discussion of imagery, stylistic devices, literary strategies, and thematics of the poem is present
 
-- Students' observations are specific -- that is, observations could not apply to any Old English poem (“alliteration creates rhythm in the poem”) or to any text (“verbs describe the action in the poem”); instead, they point out characteristics of this particular poem.
+- Students' observations are specific -- that is, observations could not apply to any English poem (“alliteration creates rhythm in the poem”) or to any text (“verbs describe the action in the poem”); instead, they point out characteristics of this particular poem.
 
-- Using their own XML tag, students observe interesting poetic details and discuss these details' thematic effects
+- Using their own data structures, students observe interesting poetic details and discuss these details' thematic effects
 
 *** Clarity & Correctness (/4)
 
@@ -201,78 +198,322 @@ This assignment is graded out of 20.
 :PUBLISH:  nil
 :CUSTOM_ID: the-ruin-digital-literary-studies
 :EXPORT_FILE_NAME: reflection-2-handout
-:CANVASID: 299511
-:CANVAS_PAGE_URL: reflection-02-handout-and-preliminary-exercises
-:CANVAS_HTML_URL: https://q.utoronto.ca/courses/127426/pages/reflection-02-handout-and-preliminary-exercises
 :CANVAS_EDITING_ROLES: teachers
+:CANVASID: 451101
+:CANVAS_PAGE_URL: reflection-02-handout-and-preliminary-exercises
+:OL_PUBLISH: nil
+:CANVAS_HTML_URL: https://q.utoronto.ca/courses/157875/pages/reflection-02-handout-and-preliminary-exercises
+:CANVAS_SHORT_URL: reflection-02-handout-and-preliminary-exercises
 :END:
 ** 
-In this assignment, you will *encode* parts of a thousand-year-old poem using a markup language, *display* the marked-up text in a web browser using a computational translator, and *discuss* this exercise using the idea of *deformance* as a guide.  This handout *should* contain everything you need to complete the assignment, but please use the discussion forum to ask any technical (or other!) questions.
-** The Poem: “The Ruin” (from the tenth century Exeter Book), translated by Sian Echard, silently emended
+In this assignment, you will *encode* a four-hundred-year-old poem using a generic data standard, *display* the marked-up text in a web browser using a computational translator, and *discuss* this exercise using the idea of *deformance* as a guide.  This handout *should* contain everything you need to complete the assignment, but please use the discussion forum to ask any technical (or other!) questions.
+** The Poem: “A Litany in Time of Plague”, (1592) by Thomas Nashe
    :PROPERTIES:
    :CUSTOM_ID: the-poem-the-ruin-from-the-tenth-century-exeter-book-translated-by-sian-echard-silently-emended
    :END:
 
- "[[http://faculty.arts.ubc.ca/sechard/oeruin.htm][The Ruin]]" was likely written in the 8th or 9th century, and recorded in the [[https://en.wikipedia.org/wiki/Exeter_Book][Exeter Book]] in the 10th century. The only surviving copy has a large burn down the centre of the page that renders parts of the poem illegible. (See [[https://sites.nd.edu/manuscript-studies/2017/11/20/ivory-in-the-rust-reading-the-old-english-ruin-in-south-bend][this blog post]] for a substantive discussion of the poem.)
+ "[[https://poets.org/poem/litany-time-plague][A Litany in Time of Plague]]" was initially written as part of a morality play, /Summer's Last Will and Testament/, by the Elizabethan playwright and pamphleteer [[https://en.wikipedia.org/wiki/Thomas_Nashe][Thomas Nashe]]. Untitled in that work, it was widely collected under several names in the 19th and 20th centuries before the current title was settled on. As Daniel Swift [[https://fsgworkinprogress.com/2020/05/01/poetry-in-a-time-of-plague/][reminds us]], "A litany is a prayer that takes the form of a series of petitions followed by a communal response: here, the kyrie eleison, 'Lord have mercy.'"
+ 
+*** Text of the Poem
+1. Adieu, farewell, earth's bliss;
+2. This world uncertain is;
+3. Fond are life's lustful joys;
+4. Death proves them all but toys;
+5. None from his darts can fly;
+6. I am sick, I must die.
+7. Lord, have mercy on us!
 
-#+CAPTION: /Exeter Cathedral Library MS 3501, f. 124r, all rights reserved Dean & Chapter Exeter Cathedral/
-https://sites.nd.edu/manuscript-studies/files/2017/11/Fahey-Screen-Shot-2017-11-17-at-6.13.25-PM-768x585.png
+8. [@8]Rich men, trust not in wealth,
+9. Gold cannot buy you health;
+10. Physic himself must fade.
+11. All things to end are made,
+12. The plague full swift goes by;
+13. I am sick, I must die.
+14. Lord, have mercy on us!
+ 
+15. [@15]Beauty is but a flower
+16. Which wrinkles will devour;
+17. Brightness falls from the air;
+18. Queens have died young and fair;
+19. Dust hath closed Helen's eye.
+20. I am sick, I must die.
+21. Lord, have mercy on us!
+    
+22. [@22]Strength stoops unto the grave,
+23. Worms feed on Hector brave;
+24. Swords may not fight with fate,
+25. Earth still holds open her gate.
+26. "Come, come!" the bells do cry.
+27. I am sick, I must die.
+28. Lord, have mercy on us!
+    
+29. [@29]Wit with his wantonness
+30. Tasteth death's bitterness;
+31. Hell's executioner
+32. Hath no ears for to hear
+33. What vain art can reply.
+34. I am sick, I must die.
+35. Lord, have mercy on us!
+    
+36. [@36]Haste, therefore, each degree,
+37. To welcome destiny;
+38. Heaven is our heritage,
+39. Earth but a player's stage;
+40. Mount we unto the sky.
+41. I am sick, I must die.
+42. Lord, have mercy on us!
 
-*** Transcription
-1. Wondrous is this wall-stead, wasted by fate.
-2. Battlements broken, giant's work shattered.
-3. Roofs are in ruin, towers destroyed,
-4. Broken the barred gate, rime on the plaster,
-5. walls gape, torn up, destroyed,
-6. consumed by age. Earth-grip holds
-7. the proud builders, departed, long lost,
-8. and the hard grasp of the grave, until a hundred generations
-9. of people have passed. Often this wall outlasted,
-10. hoary with lichen, red-stained, withstanding the storm,
-11. one reign after another; the high arch has now fallen.
-12. The wall-stone still stands, hacked by weapons,
-13. by grim-ground files.
-14. ...
-15. ...
-16. ...
-17. ...
-18. Mind quickened ... and the artificer,
-19. skilled in round-building, bound the wall-base,
-20. wondrously with iron.
-21. Bright were the halls, many the baths,
-22. High the gables, great the joyful noise,
-23. many the mead-hall full of pleasures.
-24. Until fate the mighty overturned it all.
-25. Slaughter spread wide, pestilence arose,
-26. and death took all those brave men away.
-27. Their bulwarks were broken, their halls laid waste,
-28. the cities crumbled, those who would repair it
-29. laid in the earth. And so these halls are empty,
-30. and the curved arch sheds its tiles,
-31. torn from the roof. Decay has brought it down,
-32. broken it to rubble. Where once many a warrior,
-33. high of heart, gold-bright, gleaming in splendour,
-34. proud and wine-flushed, shone in armour,
-35. looked on a treasure of silver, on precious gems,
-36. on riches of pearl...
-37. in that bright city of broad rule.
-38. Stone courts once stood there, and hot streams gushed forth,
-39. wide floods of water, surrounded by a wall,
-40. in its bright bosom, there where the baths were,
-41. hot in the middle.
-42. Hot streams ran over hoary stone
-43. into the ringed water where baths were
-44. ...
-45. ...
-46. That was a noble thing, the house and the city.
 ** Deformance
    :PROPERTIES:
    :CUSTOM_ID: deformance
    :END:
 We will discuss in class this [[https://en.wikipedia.org/wiki/Portmanteau][portmanteau]] term coined by Lisa Samuels and Jerome McGann, a combination of “deform” and “performance.” Be sure you have some grasp of what this means!
 
+** Introduction to JavaScript Data Structures, HTML, and CSS
 
-** Introduction to XML,XSLT, TEI, and HTML (!)
+In class, we briefly discussed [[https://cdrh.unl.edu/articles/basicguide/TEI][TEI]], a widely-used  [[https://en.wikipedia.org/wiki/Markup_language][markup language]] used by scholars for producing semi-structured representations of literary texts. TEI is a format, or defined feature set, of the [[https://www.w3schools.com/xml/xml_whatis.asp][XML]] "metalanguage", a very widely-used system for structuring and processing many kinds of data, and it is very much worth learning if you are interested in pursuing literary DH. In this assignment, however, we will *not* be using TEI.  Instead, we will use an entirely different data format -- the [[https://www.json.org/json-en.html][JavaScript Object Notation]], which has emerged as a sort of successor to XML for many applications. We will be seeing JSON again later in the semester, so try hard to understand this part now.
+
+*** Writing Code
+
+In this assignment, as in DH in general, it's very important to use a *code editor* rather than a *word processor*.  My strong recommendation is that you install [[https://code.visualstudio.com/][Visual Studio Code]] and begin to familiarize yourself with this fundamental tool. You should also [[https://code.visualstudio.com/docs/languages/html#_does-vs-code-have-html-preview][install any of the several live-preview extensions discussed in this linked web page]].
+
+However, Windows users may prefer the very lightweight [[https://notepad-plus-plus.org/downloads/][Notepad++]], while many Mac and Linux users enjoy [[https://www.sublimetext.com/3][SublimeText]]. If you're a programmer and already have a preferred editor, stick with what you're used to.
+
+*** JavaScript Data Structures
+
+All programming languages provide a variety of "data types" for storing information. In our example, the phone poem is represented as an [[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array][Array]], which is essentially a list of items. You can tell it is an array because it starts with ~[~, ends with ~]~, and the individual items are delimited by ~,~ (commas). Each item in the array is a JavaScript [[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects][object]] representing a poem stanza.  Objects are more complex data structures made up of so-called properties or [[https://javascript.info/object][key-value pairs]]: the whole object is delimited by "curly braces" (~{...}~), and each "property" of the object has two parts: the name, or key, followed by a colon, and then the value. Properties are separated by commas, just like array items:
+
+#+begin_src js
+{
+  key1: value1,
+  key2: value2
+  }
+#+end_src
+
+Property values can be [[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Data_and_Structure_types][any valid JavaScript data type]], so they can themselves have internal structure.  A value might be a number, a [[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#String_type][string]], an array, or even another object.  That means an object can contain hierarchical structures of objects within objects, like the Matryoshka dolls we saw in a lecture slide. Here's an example of such a data structure:
+
+#+begin_src js
+{
+  key1: value1,
+  key2: {
+    key2a: value2a,
+    key2b: [value2b1, value2b2, value2b3]
+  }
+}
+#+end_src
+
+In this case, we are creating a representation of the poem for later display in a browser.  The poem contains parts (stanzas) which themselves contain parts (lines) which themselves contain parts (words, punctuation, and indentations). So it will make sense to use a "nested" or hierarchical structure of elements to represent the poem as a whole.
+
+*** HTML Structures
+[[https://en.wikipedia.org/wiki/HTML][HTML]] presents a document as a hierarchy of nested elements (much as discussed in the previous section), which the browser displays according to a set of rules.  A normal HTML document might look something like this:
+
+#+begin_src html
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Document Title</title>
+    </head>
+    <body>
+        <h1>Top-Level Heading</h1>
+        <p>Pragraph containing <em>italicized</em> and <strong>bold</strong> text, as well as <a href="https://google.com">a link to Google</a>.</p>
+    </body>
+</html>
+#+end_src
+
+The indentation hopefully helps you to see the nested structure.  The "root" element is of type "html, and has two direct "children", "head", and "body", each of which has several children of its own.  The "p" element then has several of its own children.  
+
+*** CSS Instructions
+HTML provides a structure.  [[https://developer.mozilla.org/en-US/docs/Web/CSS][CSS]] controls the *presentation* or *display* of the elements in that structure.  The CSS language is relatively simple, and is composed of *rulesets* that apply to one or more *selectors*. These rulesets contain key-value pairs of *properties* and *values*. For instance, the default css file in your assignment contains the following rulesets:
+
+#+begin_src css
+stanza {
+    border: black solid 2px;    /*add a border around stanzas*/
+    margin: 5px;                /*with margins so that borders don't run into each other! */
+    display: block;             /*this is important! display on its own line*/
+}
+
+/* .... [bunch of other stuff] ...  */
+
+.death {
+    color: #991111;
+    background-color: rgba(4,4,4,0.3);
+    font-weight:700;
+}
+
+#+end_src
+
+Each ruleset starts with the *selector*. The first is ~stanza~, while the second is ~.death~. Take note of that initial ~.~ in ~.death~, I'll say more about it in a second.  
+
+After the selector is a set of curly braces, ~{ ... [bunch of stuff] ..}~, and in between the braces you can find the rules themselves, which look a lot like JavaScript object properties: ~property-name: value;~. Notice, though, that the line ends in ~;~ (semi-colon) rather than a ~,~ (comma). There is an immense amount to learn in CSS, and [[https://developer.mozilla.org/en-US/docs/Learn/CSS][I encourage you to teach yourself as much as you like]]. The default file contains some common examples:
+- border: creates a border around the selected elements
+- margin: adds space to the top, bottom, left, and right of the selected elements
+- display: tells the browser how to manage the selected element in the document flow:
+  - *block* means "give this element its own line,
+  - *inline* means "use the line (or box) that the parent element has already defined
+  - *none* means "just don't use display this element at all
+- color and background-color: the text color for the element's contents and their background. See [[https://developer.mozilla.org/en-US/docs/Web/HTML/Applying_color][this tutorial]] for more details, and especially [[https://developer.mozilla.org/en-US/docs/Web/HTML/Applying_color#How_to_describe_a_color][the section "how to describe a color"]] for instructions on valid color values
+- a few others that you can look up on the web (there are excellent tutorials everywhere, and one goal of this course is to accustom you to using web resources to teach yourself technical skills)
+
+** Reading Hints
+   :PROPERTIES:
+   :CUSTOM_ID: reading
+   :END:
+
+- Content: Read the poem. Flag any parts that are unclear or mysterious or confusing. Summarize its content in one sentence.
+- Style: Look for:
+  - verbal patterns (e.g. sentences with the same shape) : what are they? What is their effect?
+  - sensory imagery (e.g. references to what you can see, hear, touch, feel): any patterns? What do they do for the poem?
+  - sounds: rhymes, [[https://www.google.com/search?client=firefox-b-d&q=alliteration][alliteration]], [[https://www.google.com/search?client=firefox-b-d&q=alliteration#dobs=assonance][assonance]]. Note these devices, and think about how they affect your understanding of the poem
+- Theme: if you had to summarize the theme of your passage in one word, what would that word be? How does style support or embody theme?
+** Encoding: the initial file
+   :PROPERTIES:
+   :CUSTOM_ID: encoding
+   :END:
+
+Your assignment package contains the file ~poem.js~, which defines a single global variable ~poem~ with a "starter kit" encoding the entire poem in a primitive data structure of this form:
+
+#+begin_src js
+let poem = [
+/* ... headers and stuff first, and then this */
+{
+    "type": "stanza",
+    "class": "",
+    "content": [
+      {
+        "type": "line",
+        "class": "",
+        "content": [
+          {"type": "word", "content": "Adieu", "class": "", "meta": ""},
+          {"type": "punctuation", "content": ",", "class": "", "meta": ""},
+          {"type": "word", "content": "farewell", "class": "", "meta": ""},
+          {"type": "punctuation", "content": ",", "class": "", "meta": ""},
+          {"type": "word", "content": "earth's", "class": "", "meta": ""},
+          {"type": "word", "content": "bliss", "class": "", "meta": ""},
+          {"type": "punctuation", "content": ";", "class": "", "meta": ""}
+        ]
+      }
+    /* ... etc */ 
+    ]
+  }
+  /*... other stanzas follow */
+]
+#+end_src
+
+This encoding was produced automatically from the original text of the poem, as found in ~poem.txt~. If you are interested in the original code, see ~tokenizer.js~ and the brief discussion in [[https://github.com/DigitalHistory/poem-json-project#poetry-project-for-students-on-dh235][the online code repository for this assignment]]. 
+
+The data structure for the poem is an *array* of *objects*. Each object has up to four *attributes*:
+- type: a *string* initially set to *stanza*, *line*, *word*, or *punctuation*
+- content: either a *string* containing a word, a punctuation mark, or a number of spaces, or a *nested object* with the same structure as the parent
+- class: in the file you receive, this is *always* set to an *empty string* or ~null~. You will want to change these values
+- meta: like ~class~, this is set to an empty string or null/undefined, and you will likely want to modify the meta value of some words.
+
+This data structure serves as input to a JavaScript program that uses it to create a *nested structure of HTML nodes* for display to a reader. This script included in your assignment, and you are welcome to inspect or even modify it, but you are not required to do so.  For each unit in the data structure,  attributes will be translated in the following way:
+  - ~type~ defines the *HTML tag name* of a new  [[https://developer.mozilla.org/en-US/docs/Glossary/Element][HTML element]]
+  - ~content~ defines the full contents of that element
+  - ~class~ adds one or more *[[https://www.w3schools.com/html/html_classes.asp][HTML classes]]* to the element
+  - ~meta~ defines the content of a "[[https://www.w3schools.com/css/css_tooltip.asp][tooltip]]" that appears on the tag's contents when the reader's mouse hovers over it
+
+  So, for instance, the fragment above will produce the following HTML:
+
+  #+begin_src html
+  <stanza>
+      <line>
+          <word>Adieu</word>
+          <punctuation>,</punctuation>
+          <word>farewell</word>
+          <punctuation>,</punctuation>
+          <word>earth's</word>
+          <word>bliss</word>
+          <punctuation>;</punctuation>
+      </line>
+  </stanza>
+  #+end_src
+
+Your job (see next section) is to modify this default data structure so that the reader sees something different.
+
+** Encoding: your assignment
+
+By default, the poem is already properly displayed. Your assignment is to highlight or remove certain features of the poem in two steps:
+- first, *add extra information to the underlying data structure*. Choose particular items -- individual words, lines, punctuation marks, or stanzas -- and consider doing some of the following:
+  - add *classes* to words that have some common characteristic.  If you're interested in rhymes, you can tag rhyming words (you could even distinguish A and B rhyming couplets in a given stanza). If you are interested in a particular theme, choose a class name for words that are associated with that theme. If you have identified some other characteristic as relevant to your interpretation of the poem, find a way to formalize that relationship through a carefully-chosen classname.
+  - add *meta* to the item, to provide context to the reader as they encounter the poem.
+  - If you are so inclined, think about whether the currently-chosen element structure (of words and punctuation marks) is the best classification scheme. Make changes if you have a better idea.
+- second, *adjust the display of the poem units* to "deform" the text in a manner that transforms the reader's interpretation.  Do this by editing ~poem.css~ in your assignment package, changing or adding rules for some of the existing rulesets, and adding new rulesets for selectors that match your new classes.
+
+So for instance, let's make a few changes to the underlying data:
+
+#+begin_src js
+let poem = [
+/* ... headers and stuff first, and then this */
+{
+    "type": "stanza",
+    "class": "",
+    "content": [
+      {
+        "type": "line",
+        "class": "",
+        "content": [
+          {"type": "word", "content": "Adieu", "class": "bye", "meta": ""},
+          {"type": "punctuation", "content": ",", "class": "", "meta": ""},
+          {"type": "word", "content": "farewell", "class": "bye", "meta": "why the heck does he say 'bye' twice?"},
+          {"type": "punctuation", "content": ",", "class": "", "meta": ""},
+          {"type": "word", "content": "earth's", "class": "", "meta": ""},
+          {"type": "word", "content": "bliss", "class": "goodstuff", "meta": ""},
+          {"type": "punctuation", "content": ";", "class": "", "meta": ""}
+        ]
+      }
+    /* ... etc */ 
+    ]
+  }
+  /*... other stanzas follow */
+]
+#+end_src
+
+This will produce the following HTML:
+  #+begin_src html
+  <stanza>
+      <line>
+          <word class="bye">Adieu</word>
+          <punctuation>,</punctuation>
+          <word class="bye tooltip-reference">farewell
+              <tooltip>
+                Why the heck does he say 'bye' twice?
+              </tooltip>
+          </word>
+          <punctuation>,</punctuation>
+          <word>earth's</word>
+          <word class=goodstuff>bliss</word>
+          <punctuation>;</punctuation>
+      </line>
+  </stanza>
+  #+end_src
+
+the tooltip will show up automatically. Now let's add some color to the newly-classed elements by adding to poem.css:
+#+begin_src css
+.bye {
+    color: red;
+}
+
+.goodstuff {
+    color: gold;
+}
+#+end_src
+
+Now reload the poem in your browser (or live preview in your text editor), and you'll see the changes!
+
+We'll practice this process in class, using a different poem.
+
+
+** Discussion Section of the Assignment
+   :PROPERTIES:
+   :CUSTOM_ID: encoding-discussion
+   :END:
+
+Describe the changes you made to the poem data and the CSS rules that govern its display. Why did you choose these particular classes & meta fields? Are you satisfied with the results? Did you properties of the poem become more apparent to you after representing the poem in this particular way? If so, describe these properties. Are you convinced that this work meets the definition of "deformance" as described in the text? Is it a useful concept?
+
+* COMMENT Leftover XML stuff
+** COMMENT Introduction to XML,XSLT, TEI, and HTML (!)
    :PROPERTIES:
    :CUSTOM_ID: introduction-to-tei
    :END:
@@ -552,52 +793,7 @@ The [[https://developer.mozilla.org][Mozilla Developer Network]] is the best sta
 
 The [[https://tei-c.org/][TEI website]] has extensive information about the TEI standard, but is extremely technical. [[http://teibyexample.org/modules/TBED04v00.htm][TEI By Example]] can be quite helpful, but again, is very detailed.  The full text of /[[https://books.openedition.org/oep/426][What is the Text Encoding Initiative]]/ is available online and may also be helpful. The University of Nebraska's  [[https://cdrh.unl.edu/articles/basicguide][Basic Guide to Text Encoding]] is a lightweight introduction that may be easier to follow than any of the above!
 
-** Reading Hints
-   :PROPERTIES:
-   :CUSTOM_ID: reading
-   :END:
-
-- Content: Read your passage. Flag any parts that are unclear or mysterious or confusing. Summarize its content in one sentence.
-- Style: Look for:
-   - verbal patterns (e.g. sentences with the same shape) : what are they? What is their effect?
-   - sensory imagery (e.g. references to what you can see, hear, touch, feel): any patterns? What do they do for the poem?
-- Theme: if you had to summarize the theme of your passage in one word, what would that word be? How does style support or embody theme?
-** Encoding
-   :PROPERTIES:
-   :CUSTOM_ID: encoding
-   :END:
-
-*Choose one of the following passages:* 1-15; 16-31a; 31b-46.
-
-Encode your passage using the following TEI tags:
-
-- *Lines and line numbers*
-
-#+begin_src xml
- <poem>
-   <l n=″1″>This masonry is wondrous; fates broke it</l>
-</poem>
-#+end_src
-
-- *At least one made-up tag of your own, specific to the poem*
-
-#+begin_src xml
-<concrete_noun> wall-stone </concrete_noun>
-<adjective> wondrous </adjective>
-<colour>golden</colour>
-<poetic-formula>the work of giants</thew
-#+end_src
-
-** Encoding Discussion
-   :PROPERTIES:
-   :CUSTOM_ID: encoding-discussion
-   :END:
-
-What is your made-up tag(s)? How is this tag supposed to work, within this poem and more generally? Why is it useful?
-
-After encoding, what additional characteristics of the poem, if any, did you notice in terms of verbal patterns, sensory imagery, or the development of the poem's themes?
-
-** Appendix: More Complex Example
+** COMMENT Appendix: More Complex Example
    :PROPERTIES:
    :CUSTOM_ID: appendix-more-complex-example
    :END:
@@ -676,11 +872,11 @@ It may help you to see a few more tags. Here is a slightly more complex example,
 </xsl:stylesheet>
 
 #+end_src
-* Reflection 03: Data visualization Comparison :assignment:
+* Reflection 03: Data visualization Reflection                   :assignment:
 :PROPERTIES:
 :EXPORT_FILE_NAME: reflection-3-data-visualization
 :PUBLISH:  t
-:DUE_AT: 2019-11-28
+:DUE_AT: 2020-08-07
 :GRADING_TYPE: points
 :ASSIGNMENT_TYPE: canvas
 :ASSIGNMENT_WEIGHT: 0.10
@@ -689,20 +885,21 @@ It may help you to see a few more tags. Here is a slightly more complex example,
 :PUBLISH: t
 :BASECOMMIT: none
 :GRADING_STANDARD_ID: nil
-:CANVASID: 250846
-:CANVAS_HTML_URL: https://q.utoronto.ca/courses/127426/assignments/250846
-:CANVAS_SUBMISSION_URL: https://q.utoronto.ca/courses/127426/assignments/250846/submissions?zip=1
-:SUBMISSIONS_DOWNLOAD_URL: https://q.utoronto.ca/courses/127426/assignments/250846/submissions?zip=1
+:CANVASID: 380260
+:CANVAS_HTML_URL: https://q.utoronto.ca/courses/157875/assignments/380260
+:CANVAS_SUBMISSION_URL: https://q.utoronto.ca/courses/157875/assignments/380260/submissions?zip=1
+:SUBMISSIONS_DOWNLOAD_URL: https://q.utoronto.ca/courses/157875/assignments/380260/submissions?zip=1
 :END:
 
-In approximately 600-800 words, briefly discuss the *Tableau* software we used in the Data Visualization workshop, considering in particular its uses and limitations when it comes to *dealing with humanities data* (remember [[http://www.digitalhumanities.org/dhq/vol/5/1/000091/000091.html][Johanna Drucker's essay on graphical display in the humanities!]]).  Be sure to address the following categories:
+In approximately 600-800 words, briefly discuss the *Tableau* software we used in the Data Visualization workshop, considering in particular its uses and limitations when it comes to *dealing with humanities data* (remember [[http://www.digitalhumanities.org/dhq/vol/5/1/000091/000091.html][Johanna Drucker's essay on graphical display in the humanities!]]).  This assignment will be marked as most short essays normally are: it should present a coherent account of the tool and your experience with it. This description should not be considered a checklist of boxes you must tick off, but instead a set of suggestions for directions you might take in what is after a ll a very brief assignment.  
 
 - briefly introduce the tool, describing its main features and uses
 - Assess the tool's usability, and describe its principal user base
 - describe the *characteristics of the data Tableau can make use of*, and any limitations on that data
 - describe the *kinds of output* that Tableau produces, and again, any limitations
 - Does the tool make hidden assumptions about the nature of knowledge, and do we learn anything form making those assumptions explicit? (Here it may be particularly useful to refer to Drucker's essay.)
-- How might you make use of this tool in your own work *as a digital humanist*? Give a hypothetical example, in as much detail as you can muster. 
+- How might you make use of this tool in your own work *as a digital humanist*? Give a hypothetical example, in as much detail as you can muster.
+- Does the exercise give you any insight into the COVID-19 visualizations you have been routinely following since the beginning of the pandemic? 
 
 ** COMMENT Rubric *rubric* 
 - *Grade* ::
@@ -756,7 +953,7 @@ Please use this page to hand in your project proposals. For a description of the
 * Final Project: Book Exhibit :assignment:
 :PROPERTIES:
 :PUBLISH:  t
-:DUE_AT: 2019-12-04
+:DUE_AT: 2020-08-14
 :GRADING_TYPE: letter_grade
 :ASSIGNMENT_TYPE: canvas
 :ASSIGNMENT_WEIGHT: 0.35
@@ -765,23 +962,23 @@ Please use this page to hand in your project proposals. For a description of the
 :BASECOMMIT: none
 :GRADING_STANDARD_ID: nil
 :EXPORT_FILE_NAME: book-project-assignment
-:CANVASID: 233045
-:CANVAS_HTML_URL: https://q.utoronto.ca/courses/127426/assignments/233045
-:CANVAS_SUBMISSION_URL: https://q.utoronto.ca/courses/127426/assignments/233045/submissions?zip=1
-:SUBMISSIONS_DOWNLOAD_URL: https://q.utoronto.ca/courses/127426/assignments/233045/submissions?zip=1
+:CANVASID: 376866
+:CANVAS_HTML_URL: https://q.utoronto.ca/courses/157875/assignments/376866
+:CANVAS_SUBMISSION_URL: https://q.utoronto.ca/courses/157875/assignments/376866/submissions?zip=1
+:SUBMISSIONS_DOWNLOAD_URL: https://q.utoronto.ca/courses/157875/assignments/376866/submissions?zip=1
 :END:
 ** Overview
    :PROPERTIES:
    :CUSTOM_ID: overview
    :END:
 
-In this assignment, you get to tell the story of a banned book you have seen in person, either from the Thomas Fisher Rare Book Library or from our list.
+In this assignment, you get to tell the story of a work of *plague literature*, broadly construed:  probably a book, but possibly some other cultural artifact such as a film or other work of art. 
 
-You will create a website that features a digital collection and exhibit about that book, using the free, open-source content management platform Omeka. Like a good museum curator, you will bring together a gallery of exciting pictures, and you will guide your visitors through that gallery through a well-researched, interesting narrative about your book.
+You will create a website that features a digital collection and exhibit about that work, using the free, open-source content management platform Omeka. Like a good museum curator, you will bring together a gallery of exciting pictures, and you will guide your visitors through that gallery through a well-researched, interesting narrative about your subject.
 
 - Your digital collection will catalogue evidence about your book: photographs of the book itself (title page, illustrations, marginal annotations, damage, other interesting features); images of related books from other museums; manuscript illuminations; other relevant multimedia. Each object of your digital collection will be described systematically, as books are described in a library catalogue.
 
-- Your exhibit will be a guided tour about your book and the circumstances under which it was banned.
+- Your exhibit will be a guided tour about your work and the circumstances under which it was banned.
 
 - You will use some digital technology as part of this assignment.
 
@@ -795,6 +992,8 @@ This is a scaffolded assignment: that is, you will produce several components at
 By the end of this learning module, you will have learned:
 
 - How to understand your book's significance, history, and meaning, in its historical context;
+
+- How to treat 
 
 - How to think about the transmission and attempted restriction of knowledge in different technological platforms (manuscripts, printed books, digital media)
 
@@ -811,11 +1010,11 @@ By the end of this learning module, you will have learned:
    :CUSTOM_ID: what-you-hand-in
    :END:
 
-1. A proposal describing, in 200 words or fewer, the object whose story you plan to tell: what it is; why it was banned, by whom, and in what historical context; and how you plan to shape your exhibit. *Due <2019-11-01 Fri>*
+1. A proposal describing, in 200 words or fewer, the object whose story you plan to tell: what it is; what illness (real or fictional) it depicts, and a brief summary of the importance of that illness in the work's construction; in what historical context; and how you plan to shape your exhibit. *Due <2020-08-04 Tue>*
 
-2. An annotated bibliography ([[http://advice.writing.utoronto.ca/types-of-writing/annotated-bibliography/]]) that contains: links to and descriptions of at least 3 things for your collection; references to and summaries of at least 3 *scholarly* sources (scholarly print books, scholarly journal articles, scholarly encyclopedia entries). *Due <2019-11-01 Fri>*
+2. *At the same time as the proposal*, n annotated bibliography ([[http://advice.writing.utoronto.ca/types-of-writing/annotated-bibliography/]]) that contains: links to and descriptions of at least 3 things for your collection; references to and summaries of at least 3 *scholarly* sources (scholarly print books, scholarly journal articles, scholarly encyclopedia entries).
 
-3. A complete digital exhibit website that contains your collection of objects and a narrative about that collection. For reference, a former student's UofT Library Research Prize-winning example of such a digital exhibit is described in detail here: [[https://tspace.library.utoronto.ca/handle/1807/88308][Jaya Thirugnanasampanthan's exhibit on /Thirteen Reasons Why/'s banning in the U.S.]] (you will have to click through a bit to find [[https://play.library.utoronto.ca/download/XPYcIMVV80N4][a link to a walkthrough of the site]]).
+3. A complete digital exhibit website that contains your collection of objects and a narrative about that collection. For reference, a former student's UofT Library Research Prize-winning example of such a digital exhibit is described in detail here: [[https://tspace.library.utoronto.ca/handle/1807/88308][Jaya Thirugnanasampanthan's exhibit on /Thirteen Reasons Why/'s banning in the U.S.]] (you will have to click through a bit to find [[https://play.library.utoronto.ca/download/XPYcIMVV80N4][a link to a walkthrough of the site]]).  *Due <2020-08-14 Fri>*
 
 ** Proposal
    :PROPERTIES:
@@ -872,17 +1071,16 @@ By the end of this learning module, you will have learned:
 
 The collection is a set of at least 5 items that document your book and the context in which it was banned. Photographs of the book should be taken by yourself; the other photographs, you may find on museum websites and cite properly.
 
-Some examples of objects that shed light on your book and the context in which your book was banned:
+Some examples of objects that shed light on your book and the historical context of its production:
 
-- If you are studying a book banned in Nazi Germany, find digitized archival photographs documenting e.g. book burnings in Nazi Germany;
+- If you are studying a book about bubonic plague in the middle ages, include images of plague-stricken cities or individuals, or maps of the plague's spread in the 14th century;
 
-- If you are studying a book banned by the Catholic Church, photograph the Index;
+- If your book or work concerns AIDS in the US, include links to ACT UP and discuss its legacy in the formation of gay identity
 
-- If you are studying, say, Darwin's /Origin of Species/, you can document its impact with photos of 19^{th} century newspaper articles about it...or with 21^{st} century newspaper articles on the controversy around the depiction and teaching of evolution vs. creationism in U.S. schools
+- If your book concerns AIDS in South Africa, include a page o n the controversy over HIV in that country, and the paradoxical role of anti-colonial politics in the denigration of scientific explanation in the epidemic in that country
 
-- If you are studying a science book, you can illustrate the science of the day with museum pictures of relevant scientific instruments (microscopes, telescopes);
+- If your book contains an imaginary plague (e.g. one that turns sufferers into vampires or zombies) include a page on the history of disease in horror films
 
-- If you are studying a book of saints' lives (banned by Protestants) or a theological work (attacking the Catholic Church), you may look for contemporary images of e.g. book burnings, anti-Papal posters, etc.
 
 ** Exhibit
 
@@ -898,15 +1096,15 @@ In this section, you describe your book and its author. What is its title? Who i
 
 *** Context
 
-In this section, you describe the social and historical context of your book: that is, the book's *time*, *place*, and *purpose*. When and where was it written? What text technologies were involved in its creation? To what effect? Who was its intended audience? Why is the book in danger? If it is a banned or censored book, then who banned or challenged the book, and why? How was this censorship or challenge enforced? Your exhibit items can include maps, photographs of people reading the book, photographs of people destroying the book, recordings, etc.
+In this section, you describe the social and historical context of your book: that is, the book's *time*, *place*, and *purpose*. When and where was it written? What text technologies were involved in its creation? To what effect? Who was its intended audience?  If the book is set in an earlier historical period, what specific comparisons did the author hope to ake with her contemporary era? Your exhibit items can include maps, photographs of people reading the book, photographs of people destroying the book, recordings, etc.
 
 *** Insights
 
 What insights (specific to your book---not a general conclusion that almost any other banned or endangered book could illustrate) into text technologies and the transmission of knowledge would you like your viewer to draw from your exhibit?
 
-More specifically: how do the cultural and technical conditions in which the book was produced affect its endangerment and its afterlife? And how does the digital exhibit help you reflect on the text culture of your book?
+More specifically: how do the cultural and technical conditions in which the book was produced affect its impact and legacy?  how does the digital exhibit help you reflect on the text culture of your book?
 
-Draw on the scholarly readings of this course, from Alan Liu to Bethany Nowviskie, to discuss the “new media encounter” moment between the endangered book and your presentation of it in a digital medium. (Some things to think about: textual stability, deformance, sustainability, new media encounters, deep time...)
+Take a moment to think about how the work sheds light on the current crisis. You may find it difficult to 
 
 *** Works Cited
 
@@ -923,65 +1121,12 @@ Gogata, Cristina. “Parallel Libraries Of The Former Securitate. Ana Blandiana,
    :CUSTOM_ID: books
    :END:
 
-You will select the book from the list below. If there is a book you would like to cover that is not on the list, please come talk to me and/or Augustine *well ahead* of the proposal deadline. No more than three students per book, please.
-
-Books from the Thomas Fisher Rare Book Library (use these specific editions, please):
-
-1. Martin Luther. /Piae ac doctae in psalmos operationes/. Basileae: Adamus Petri, 1521.
-
-2. Judah ben Samuel. /Sefer ha hasidim/. Bolonya: Avraham ha-Kohen b.k.mo.ha-r. Mosheh ha-Kohen, 5298 (1537/1538 CE).
-
-3. Nicholas Copernicus. /De revolutionibus orbium coelestium./ Basileae: Ex Officina Henricpetrina, 1566.
-
-4. Johannes Kepler. /Epitome astronomiae Copernicanae/. Lentijs ad Danubium: Excudebat J. Plancus, 1618-22.
-
-5. /The Holy Bible: Containing the Old and New Testaments./ London: Robert Barker, 1631.
-
-6. Galileo Galilei. /Dialogo sopra I due massimi sistemi del mondo tolemaico e copernicano./ In Fiorenza: B. Landini, 1632.
-
-7. Albertus Magnus. /De secretis mulierum. Item de virtutibus herbarum, lapidum et animalium./ (Of the secrets of women. Also about the virtues of herbs, stones, and animals. [magic])
-
-8. Charles Darwin. /On the Origin of Species/. London: J. Murray, 1859.
-
-9. Sigmund Freud. /Vorlesungen zur Einfuehrung in die Psychoanalyse/. Leipzig und Wien: H. Heller, 1916-1917.
-
-10. Niccolo Machiavelli. /Princeps/. Basiliae, 1589.
-
-11. Rene Descartes. /Les meditations metaphysiques./ Paris: La veuue I. Camvsat, et P. le Petit, 1647.
-
-12. John Milton. /Pro populo Anglicano defensio/. Londini: Typis Du Gardianis, 1651.
-
-13. John Locke. Essay Concerning Human Understanding. London: Printed by Eliz. Holt, for Thomas Basset, 1690.
-
-14. David Hume. /Philosophical Essays Concerning Human Understanding./ London: Printed for A. Millar, 1749.
-
-15. John Wilkes. /The North Briton/, No. XLV. London, 23 April 1763.
-
-16. Voltaire. /Dictionnaire philosophique./ 1765.
-
-17. Thomas Paine. /The Rights of Man./ London: Printed for J.S. Jordan, 1791-2.
-
-18. Karl Marx and Friedrich Engels. /The Manifesto of the Communist Party/. Vancouver: Whitehead Estate, 1919.
-
-19. Dante Alighieri. /La commedia./ Vinegia: Petrus de Plasiis, Cremonensis, dictus Veronensis/,/ 18 Nov., 1491.
-
-20. Geoffrey Chaucer. /The Canterbury Tales./ London: Printed by [R. Grafton for] Wyllyam Bonham, 1542.
-
-21. Giovanni Boccaccio. /Il Decameron./ In Vinezia: Per li Giunti di Frienze, 1585.
-
-22. Nathaniel Hawthorne. /The Scarlet Letter./ Boston: Ticknor, Reed, and Fields, 1850.
-
-23. Walt Whitman. /Leaves of Grass/. Brooklyn, 1856.
-
-24. George Eliot. /Adam Bede/. Edinburgh: W. Blackwood, 1859.
-
-25. Victor Hugo. /Les miserables/. Bruxelles: A. Lacroix, Verboeckhoven, 1862.
-
-26. Mark Twain. /Adventures of Tom Sawyer./ Toronto: Belford Bros., 1876.
-
-27. Aristophanes. /Lysistrata/. Sydney: Fanfrolico Press, 1925.
+You will select your work from [[https://docs.google.com/document/d/1UeAN5jhSib-CsP17keNC6c3iMF7PgE3KDDDBy24w0xY/edit?fbclid=IwAR3RpL3PfIhvp7b8YZB1uJp57kzJ71mDBbAvhv0meN5F9wLemiLffUIWpbI#heading=h.djjdbrh56zmt][The list of primary sources in this crowdsourced coronavirus syllabus]]. If you'd like to use another work, please make sure to talk to me!!
 
 ** Useful Resources
+
+There are many, many places to tart looking but the [[https://github.com/DigitalHistory/current-plague/blob/develop/covid-resources-list.org#syllabi][syllabi o nthis list]] are an excellent starting point. 
+** COMMENT Useful Resources
 
 /Reference Works:/
 

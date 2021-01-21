@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-<title>9: Data 1: Data Models for the Humanities (<span class="timestamp-wrapper"><span class="timestamp">Oct. 31</span></span>)</title>
+<title>5.2 Omeka</title>
 <meta name="author" content="Matt Price"/>
 <style type="text/css">
 .underline { text-decoration: underline; }
@@ -21,7 +21,7 @@
    setting afterwards): */
 .reveal section pre { max-height: 70vh; height: auto; overflow: auto; }
 /* Reset some reveal.js and oer-reveal settings: */
-.reveal section pre .CodeMirror pre { font-size: 2em; box-shadow: none; width: auto; padding: 0.4em; display: block; overflow: visible; }
+.reveal section pre .CodeMirror pre { font-size: 2.0em; box-shadow: none; width: auto; padding: 0.4em; display: block; overflow: visible; }
 /* Enlarge cursor: */
 .CodeMirror-cursor { border-left: 3px solid black; }
 </style>
@@ -54,7 +54,7 @@
 <div class="reveal">
 <div class="slides">
 <section id="sec-title-slide">
-<h1>9: Data 1: Data Models for the Humanities (<span class="timestamp-wrapper"><span class="timestamp">Oct. 31</span></span>)</h1>
+<h1>5.2 Omeka</h1>
 <h3>Matt Price  </h3>
 <!-- <p class="title-theme-choice">(view this presentation in another theme: 
 <a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/black.css')); return false;">Black (default)</a> -
@@ -72,570 +72,466 @@
 
 </section>
 <section>
-<section id="slide-orgd542fbc">
-<h2 id="orgd542fbc">My notes on J Drucker, &ldquo;Humanities Approaches to Graphical display&rdquo;</h2>
-
-</section>
-</section>
-<section>
-<section id="slide-orgf524ef5">
-<h2 id="orgf524ef5">What is Data?</h2>
-<blockquote>
-<p>
-Data pass themselves off as mere descriptions of a priori conditions. Rendering <i>observation</i> (the act of creating a statistical, empirical, or subjective account or image) as if it were <i>the same as the phenomena observed</i> collapses the critical distance between the phenomenal world and its interpretation, undoing the basis of interpretation on which humanistic knowledge production is based. We know this. But we seem ready and eager to suspend critical judgment in a rush to visualization.
-</p>
-</blockquote>
-
-</section>
-</section>
-<section>
-<section id="slide-org1bdfd69">
-<h2 id="org1bdfd69">Data and Capta</h2>
-<blockquote>
-<p>
-To overturn the assumptions that structure conventions acquired from other domains requires that we re-examine the intellectual foundations of digital humanities, putting techniques of graphical display on a foundation that is humanistic at its base. <i>This requires first and foremost that we reconceive all data as capta</i>. Differences in the etymological roots of the terms data and capta make the distinction between constructivist and realist approaches clear. <i>Capta</i> is “taken” actively while <i>data</i> is assumed to be a “given” able to be recorded and observed. From this distinction, a world of differences arises. Humanistic inquiry acknowledges the situated, partial, and constitutive character of knowledge production, the recognition that knowledge is constructed, <i>taken</i>, not simply given as a natural representation of pre-existing fact.
-</p>
-</blockquote>
-</section>
-</section>
-<section>
-<section id="slide-org6c6071b">
-<h2 id="org6c6071b">Preserving Humanistic Inquiry</h2>
-<blockquote>
-<p>
-The polemic I set forth here outlines several basic principles on which to proceed differently by suggesting that what is needed is not a set of applications to display humanities “data” but a new approach that uses humanities principles to constitute capta and its display. At stake, as I have said before and in many contexts, is the authority of humanistic knowledge in a culture increasingly beset by quantitative approaches that operate on claims of certainty. Bureaucracies process human activity through statistical means and when the methods grounded in empirical sciences are put at the service of the social sciences or humanities in a crudely reductive manner, basic principles of critical thought are violated, or at the very least, put too far to the side. To intervene in this ideological system, humanists, and the values they embrace and enact, must counter with conceptual tools that demonstrate humanities principles in their operation, execution, and display. 
-</p>
-</blockquote>
-
-</section>
-</section>
-<section>
-<section id="slide-orgfddbc27">
-<h2 id="orgfddbc27">Ambiguity as <i>merely irreducible</i> or <i>constitutive</i></h2>
-<blockquote>
-<p>
-But an important distinction needs to be clear from the outset: the task of representing ambiguity and uncertainty has to be distinguished from a second task &#x2013; that of using interpretations that arise in observer-codependence, characterized by ambiguity and uncertainty, as the basis on which a representation is constructed. This is the difference between putting many kinds of points on a map to show degrees of certainty by shades of color, degrees of crispness, transparency etc., and creating a map whose basic coordinate grid is constructed <i>as an effect</i> of these ambiguities. In the first instance, we have a standard map with a nuanced symbol set. In the second, we create a non-standard map that expresses the constructed-ness of space.
-</p>
-</blockquote>
-
-</section>
-</section>
-<section>
-<section id="slide-org1ebf8b0" class="twoc">
-<h2 id="org1ebf8b0">Compare Graphs</h2>
-<div class="slideblock">
-
-<figure>
-<img src="http://www.digitalhumanities.org/dhq/vol/5/1/000091/...000091/resources/images/figure01.jpg" alt="figure01.jpg">
-
-<figcaption><span class="figure-number">Figure 1: </span>uncritical population figures</figcaption>
-</figure>
-
-</div>
-
-<div class="slideblock">
-
-<figure>
-<img src="http://www.digitalhumanities.org/dhq/vol/5/1/000091/...000091/resources/images/figure02.jpg" alt="figure02.jpg">
-
-<figcaption><span class="figure-number">Figure 2: </span>Compare with this destabilizing visualization</figcaption>
-</figure>
-
-</div>
-
-</section>
-</section>
-<section>
-<section id="slide-org64e17bf">
-<h2 id="org64e17bf">Spatiality</h2>
-<blockquote>
-<p>
-We can construct a concrete example of spatiality that parallels this example of temporality, and also depends on temporal models. For instance, imagine an open stretch of beach, relatively unconstrained and unconstructed. When a sailing ship is washed up at a certain point on the beach, not only that point, but the space around it, becomes transformed. The presence of the wreck creates a huge impact, and the space almost palpably bends, compresses, expands, and warps around it, with waves of resonance rippling outward from that point.
-</p>
-</blockquote>
-
-
-<figure>
-<img src="http://www.digitalhumanities.org/dhq/vol/5/1/000091/...000091/resources/images/figure14.jpg" alt="figure14.jpg">
-
-</figure>
-
-
-<blockquote>
-<p>
-Figure 14. 
-</p>
-
-<p>
-In this example, a geographical space (a stretch of beach) is affected by a change in the state or circumstance. First we see the space mapped according to a regular Cartesian coordinate system. Then the grid is inflected by the arrival of a beached ship, around which the beach bends because the sense of each spot as relative equal is distorted by the attention that the ship commands. The space acquires one inflection after another as graffiti marks the ship, a chain link fence goes up with a police notice, footprints create a pattern in the sand, pathways for observation re-route pedestrian traffic etc. The “space” of the beach is transformed physically and in terms of attention getting and effect so that it is no longer a set of equal and neutral elements of a rational spatial system, but one that must be expressed with graphical distortions that show these inflections. Graphic credit Xárene Eskandar.
-</p>
-</blockquote>
-
-
-</section>
-</section>
-<section>
-<section id="slide-orgc784094">
-<h2 id="orgc784094">Drucker: Temporality</h2>
-
-<figure>
-<img src="http://www.digitalhumanities.org/dhq/vol/5/1/000091/...000091/resources/images/figure07.jpg" alt="figure07.jpg">
-
-<figcaption><span class="figure-number">Figure 4: </span>Temporal Folding</figcaption>
-</figure>
-
-</section>
-</section>
-<section>
-<section id="slide-org72eea13">
-<h2 id="org72eea13">Today</h2>
+<section id="slide-orgc728fdd">
+<h2 id="orgc728fdd">Getting Started with U of T&rsquo;s Omeka installation</h2>
 <form><ul>
-<li>Reflections on Tableau Workshop</li>
-<li>Cautionary Tales re: Visualization</li>
-<li>Peculiarities of Humanities Data</li>
-<li>Some Viz Examples</li>
-<li>Play Time</li>
+<li>Go to <a href="https://spatial-humanities.library.utoronto.ca/admin">the U of T Spatial Humanities site admin page</a>, and</li>
+<li>sign in with <a href="https://q.utoronto.ca/courses/127426/discussion_topics/400788">the authorization info that was sent out in a recent announcement</a></li>
 
 </ul></form>
+
 </section>
 </section>
 <section>
-<section id="slide-org8e2203b">
-<h2 id="org8e2203b">Tableau recap</h2>
-<form><ul>
-<li>what was most interesting?</li>
-<li>what was most difficult?</li>
-<li>what are the take away lessons?</li>
-
-</ul></form>
-</section>
-</section>
-<section>
-<section id="slide-what-is-data-visualization">
-<h2 id="what-is-data-visualization">What is data visualization?</h2>
+<section id="slide-org0739111">
+<h2 id="org0739111">Omeka!</h2>
 <p>
-= the presentation of data, information, knowledge, or insight in a pictorial or graphical format
-</p>
-
-</section>
-<section id="slide-xkcd-f-grapefruit-x-y-chart">
-<h3 id="xkcd-f-grapefruit-x-y-chart">pretend data 1</h3>
-
-<figure>
-<img src="https://imgs.xkcd.com/comics/fuck_grapefruit.png" alt="fuck_grapefruit.png">
-
-</figure>
-</section>
-<section id="slide-jessica-hagy-thisisindexed.com">
-<h3 id="jessica-hagy-thisisindexed.com">pretend data 2</h3>
-
-<figure>
-<img src="http://thisisindexed.com/wp-content/uploads/2018/11/card6019.jpg" alt="card6019.jpg">
-
-</figure>
-</section>
-<section id="slide-jessica-hagy-thisisindexed.com-1">
-<h3 id="jessica-hagy-thisisindexed.com-1">pretend data 3</h3>
-
-<figure>
-<img src="http://thisisindexed.com/wp-content/uploads/2017/11/card5371.jpg" alt="card5371.jpg">
-
-</figure>
-</section>
-</section>
-<section>
-<section id="slide-lying-with-dataviz">
-<h2 id="lying-with-dataviz">Lying with Dataviz</h2>
-</section>
-<section id="slide-how-to-lie-with-data-visualization">
-<h3 id="how-to-lie-with-data-visualization">Ignoring conventions</h3>
-<p>
-<a href="https://i.kinja-img.com/gawker-media/image/upload/s--SKWrO6sh--/c_fit,f_auto,fl_progressive,q_80,w_636/uqs2i9txqkdyc5jkpfut.jpg">Parik, &ldquo;How to Lie with Data&rdquo;</a>
-<img src="https://i.kinja-img.com/gawker-media/image/upload/s--SKWrO6sh--/c_fit,f_auto,fl_progressive,q_80,w_636/uqs2i9txqkdyc5jkpfut.jpg" alt="uqs2i9txqkdyc5jkpfut.jpg">
-</p>
-
-</section>
-<section id="slide-how-to-lie-with-data-visualization-1">
-<h3 id="how-to-lie-with-data-visualization-1">Cumulative Graphs</h3>
-<p>
-<a href="https://i.kinja-img.com/gawker-media/image/upload/s--SKWrO6sh--/c_fit,f_auto,fl_progressive,q_80,w_636/uqs2i9txqkdyc5jkpfut.jpg">Parik, &ldquo;How to Lie with Data&rdquo;</a>
-</p>
 <div class="paired">
-
-<figure>
-<img src="https://i.kinja-img.com/gawker-media/image/upload/s--dmLtGbNu--/c_fit,f_auto,fl_progressive,q_80,w_636/cpgpbbrmsc8s49ofewnc.png" alt="cpgpbbrmsc8s49ofewnc.png">
-
-<figcaption><span class="figure-number">Figure 8: </span>2006 = 2006 + 2005 + 2004</figcaption>
-</figure>
-
-</div>
-
-<div class="paired">
-
-<figure>
-<img src="https://i.kinja-img.com/gawker-media/image/upload/s--4XR_eHJJ--/c_fit,f_auto,fl_progressive,q_80,w_636/gzzbt9k9isykezhw63xx.png" alt="gzzbt9k9isykezhw63xx.png">
-
-<figcaption><span class="figure-number">Figure 9: </span>2006= 2006</figcaption>
-</figure>
-
-</div>
-
-</section>
-<section id="slide-how-to-lie-with-data-visualization-2">
-<h3 id="how-to-lie-with-data-visualization-2">Non-Zero baseline</h3>
-
-<figure>
-<img src="https://i.kinja-img.com/gawker-media/image/upload/ksd0huhaczb6xsxhrszp.png" alt="ksd0huhaczb6xsxhrszp.png">
-
-<figcaption><span class="figure-number">Figure 10: </span><a href="https://i.kinja-img.com/gawker-media/image/upload/s--SKWrO6sh--/c_fit,f_auto,fl_progressive,q_80,w_636/uqs2i9txqkdyc5jkpfut.jpg">Parik, &ldquo;How to Lie with Data&rdquo;</a></figcaption>
-</figure>
-</section>
-</section>
-<section>
-<section id="slide-dh-ing-with-dataviz">
-<h2 id="dh-ing-with-dataviz">DH-ing with Dataviz</h2>
+</p>
 <form><ul>
-<li>Unstructured Data
-<form><ul>
-<li>A corpus of literary texts</li>
-
-</ul></form></li>
-<li>Semi-structured Data
-<form><ul>
-<li>TEI-encoded text</li>
-
-</ul></form></li>
-<li>Structured Data
-<form><ul>
-<li>Spreadsheet of catalogue entries</li>
-<li>collection of geocoded points in a GIS system</li>
-
-</ul></form></li>
+<li>&ldquo;Wordpress for Museums&rdquo;</li>
+<li>Designed <b>especially</b> for projects with strict metadata requirements, e.g.: archives of books, images, etc</li>
+<li>Free to Use</li>
+<li>Open Source (<a href="https://github.com/omeka/Omeka/blob/master/license.txt">GPL 3</a>)</li>
+<li>Widely used in libraries &amp; classrooms</li>
 
 </ul></form>
-</section>
-<section id="slide-humanities-data-unstructured">
-<h3 id="humanities-data-unstructured">Humanities Data: Unstructured</h3>
-
-<figure>
-<img src="./images/mandeville-cover-page.png" alt="mandeville-cover-page.png">
-
-</figure>
-</section>
-<section id="slide-humanities-data-semi-structured">
-<h3 id="humanities-data-semi-structured">Humanities Data: Semi-structured</h3>
-<div class="org-src-container">
-
-<pre><code class=" xml" >&lt;msDesc&gt;
-  &lt;msIdentifier&gt;
-    &lt;settlement&gt;Oxford
-    &lt;/settlement&gt;
-    &lt;repository&gt;Bodleian Library
-    &lt;/repository&gt;
-    &lt;idno&gt;MS. Add. A. 61
-    &lt;/idno&gt;
-  &lt;/msIdentifier&gt;
-  &lt;msContents&gt;
-    &lt;p&gt;
-      &lt;quote&gt;Hic incipit Bruitus Anglie,
-      &lt;/quote&gt; the
-      &lt;title&gt;De origine et gestis  Regum Angliae
-      &lt;/title&gt; of Geoffrey of Monmouth (Galfridus Monumetensis): beg.
-      &lt;quote&gt;Cum mecum multa &amp;amp; de multis.
-      &lt;/quote&gt; In Latin.
-    &lt;/p&gt;
-  &lt;/msContents&gt;
-  &lt;physDesc&gt;
-    &lt;p&gt;
-      &lt;material&gt;Parchment
-      &lt;/material&gt;: written in more than one hand: 7¼ x 5⅜ in., I + 55 leaves, in double columns: with a few coloured capitals.
-    &lt;/p&gt;
-  &lt;/physDesc&gt;
-&lt;/msDesc&gt;
-
-</code></pre>
+<p>
+</div><div class="paired">
+<img src="https://omeka.org/images/omeka-logo.png" alt="omeka-logo.png">
 </div>
+</p>
 
 </section>
-<section id="slide-humanities-data-structured">
-<h3 id="humanities-data-structured">Humanities Data: Structured</h3>
+<section id="slide-org10b8b0f">
+<h3 id="org10b8b0f">Items and Collections</h3>
+<p>
+<div class="paired">
+</p>
+<form><ul>
+<li>Users can curate <a href="https://omeka.org/classic/docs/Content/Collections/">collections</a> of digital <a href="https://omeka.org/classic/docs/Content/Items/">items</a></li>
+<li>Each Item has rich <a href="https://omeka.org/classic/docs/Content/Working_with_Dublin_Core/">metadata</a></li>
+
+</ul></form>
+<p>
+</div><div class="paired">
+<img src="./images/omeka-md.png" alt="omeka-md.png">
+</div>
+</p>
+
+</section>
+<section id="slide-org3babdc1">
+<h3 id="org3babdc1">Exhibits</h3>
+<p>
+<div class="paired">
+</p>
+<form><ul>
+<li>Through its <a href="https://omeka.org/classic/docs/Plugins/ExhibitBuilder/">Exhibit</a> plugin, Omeka lets users tell stories with their collections.</li>
+<li>Users can arrange items from their collections into multimedia essays, using the “Lego bricks&ldquo; of the archive to tell stories and make arguments.
+</div><div class="paired"></li>
+
+</ul></form>
 
 <figure>
-<img src="./images/dc-ss-list.png" alt="dc-ss-list.png">
+<img src="./images/martha.png" alt="martha.png">
 
 </figure>
+
+<p>
+</div>
+</p>
 
 </section>
 </section>
 <section>
-<section id="slide-humanities-data-1">
-<h2 id="humanities-data-1">Humanities Data:</h2>
+<section id="slide-orgb21d51f">
+<h2 id="orgb21d51f">Omeka Building Blocks</h2>
+<form><dl>
+<dt>Items</dt><dd>individual pieces of content</dd>
+<dt>Metadata</dt><dd>information about an item &#x2013; &ldquo;<a href="http://www.dublincore.org/resources/metadata-basics/">Dublin Core</a>&rdquo; Standard</dd>
+<dt>Collections</dt><dd>groups of items; each item is in exactly one collection</dd>
+<dt>Exhibits</dt><dd>narratives woven around items.</dd>
+
+</dl></form>
+
+</section>
+<section id="slide-heroes-and-villains-silver-age-comics">
+<h3 id="heroes-and-villains-silver-age-comics">Heroes and Villains:  <a href="https://silveragecomics.uncc.edu/">SilverAge Comics</a></h3>
 <form><ul>
-<li>What “counts&ldquo; cannot necessarily be counted</li>
-<li>Data representation = interpretation:</li>
-<li>The process of modelling and collecting our data is an interpretive process that is shaped by our choices re. what aspects of the data we model; by our research question, argument, perspective, discipline, social context, institutional context, tools available etc.</li>
+<li><b>Heroes and Villains</b> is a digital archive of Silver Age superhero comic books from J. Murrey Atkins Library Special Collections. Credits: Marc Bess, J. Murrey Atkins Library Digital Scholarship Lab, UNC Charlotte.</li>
+
+</ul></form>
+
+<figure>
+<img src="./images/silver.png" alt="silver.png">
+
+</figure>
+</section>
+<section id="slide-org97a4cf4">
+<h3 id="org97a4cf4">Items</h3>
+<p>
+<div class="paired">
+</p>
+<form><ul>
+<li>Items are the building blocks of Omeka sites. They always have metadata (Title, Description, Sourc,e Date, etc.) and often have digital files attached (images, documents, etc.)</li>
+
+</ul></form>
+<p>
+</div><div class="paired">
+<img src="./images/hulk-item.png" alt="hulk-item.png">
+</div>
+</p>
+
+</section>
+<section id="slide-orga07136c">
+<h3 id="orga07136c">Metadata</h3>
+<p>
+<div class="paired">
+</p>
+<form><ul>
+<li>Structured data about data</li>
+<li>Omeka uses Dublin Core, which is a widely-used international standard</li>
+
+</ul></form>
+<p>
+</div><div class="paired">
+<img src="./images/hulk-md.png" alt="hulk-md.png">
+</div>
+</p>
+
+</section>
+<section id="slide-org9c5cafb">
+<h3 id="org9c5cafb">Collections</h3>
+<p>
+<div class="paired">
+</p>
+<form><ul>
+<li>logical/hierarchical groupings of items (like &ldquo;folders&rdquo; in your computer desktop)</li>
+<li>Each item can be in only one collection</li>
+
+</ul></form>
+<p>
+</div><div class="paired">
+<img src="./images/omeka-coll.png" alt="omeka-coll.png">
+</div>
+</p>
+
+</section>
+<section id="slide-orgdf7b09e">
+<h3 id="orgdf7b09e">Exhibits</h3>
+<p>
+<div class="paired">
+</p>
+<form><ul>
+<li>narratives that tell the story of some items &amp; explain their significance. It&rsquo;s important to highlight exhibits in an omeka site, since Omeka can be hard to navigate without them.</li>
+
+</ul></form>
+<p>
+</div><div class="paired">
+<img src="./images/omeka-exhibit.png" alt="omeka-exhibit.png">
+</div>
+</p>
+
+</section>
+<section id="slide-org9737afe">
+<h3 id="org9737afe">Exhibits</h3>
+
+<figure>
+<img src="./images/silver-age.png" alt="silver-age.png">
+
+</figure>
+
+</section>
+</section>
+<section>
+<section id="slide-org5f2cc8b">
+<h2 id="org5f2cc8b">Add an Item</h2>
+<p>
+<div class="paired">
+</p>
+<form><ul>
+<li>got to &ldquo;dashboard&rdquo; and select &ldquo;Items&rdquo;</li>
+<li>select &ldquo;Add an Item&rdquo;</li>
+
+</ul></form>
+<p>
+</div><div class="paired">
+<img src="./images/omeka-add-item.png" alt="omeka-add-item.png">
+</div>
+</p>
+
+</section>
+<section id="slide-org327d107">
+<h3 id="org327d107">Add an Item: Dublin Core Metadata</h3>
+<form><ul>
+<li>In the Item&rsquo;s fields, enter the metadata: Title, Subject, Description, etc. Before you add items to your collection, you will have figured out how the Dublin Core metadata schema applies to your particular data: consistency across your collection is key.</li>
+<li>For example, for medieval manuscripts, you can list authors of the texts under Author: but what of known scribes, who may have also intervened in the text? Are they Authors or Publishers or Contributors? Pick what makes sense and apply it consistently.</li>
+<li>For details on Dublin Core :</li>
+<li><a href="http://dublincore.org/documents/dces/">http://dublincore.org/documents/dces/</a></li>
+<li>If you wish the Item to be visible on the public view of the site, check “Public&ldquo; (under “Add Item&rdquo;).</li>
+<li>Click “Add Item&ldquo; (green, right).</li>
 
 </ul></form>
 
 </section>
-<section id="slide-humanities-data-2">
-<h3 id="humanities-data-2">Is Our Data &ldquo;fungible&rdquo;?</h3>
-<blockquote>
-<p>
-“When you call something data, you imply that it exists in <b>discrete, fungible units</b>; that it is <b>computationally tractable</b>; that <b>its meaningful qualities can be enumerated in a finite list</b>; that <b>someone else performing the same operations on the same data will come up with the same results</b>. <b>This is not how humanists think of the material they work with</b>.&ldquo; (Miriam Posner, <a href="http://miriamposner.com/blog/humanities-data-a-necessary-contradiction/">http://miriamposner.com/blog/humanities-data-a-necessary-contradiction/</a>)  
-</p>
-</blockquote>
-
-</section>
-<section id="slide-humanities-data-3">
-<h3 id="humanities-data-3">Reminder: Data and Capta</h3>
-<blockquote>
-<p>
-“[DH visualization tools borrowed from the sciences] carry with them assumptions of <b>knowledge as observer-independent and certain</b>, rather than <b>observer co-dependent and interpretative</b>. [&#x2026;] To begin, the concept of <b>data as a given</b> has to be rethought through a humanistic lens and characterized as <b>capta, taken and constructed</b>.&ldquo; Johanna Drucker, “Humanities Approaches to Graphical Display.&rdquo;
-</p>
-</blockquote>
-
-</section>
-<section id="slide-display-as-argument-visual-knowledge-creation">
-<h3 id="display-as-argument-visual-knowledge-creation">Display as Argument: Visual Knowledge Creation</h3>
+<section id="slide-add-an-item-dublin-core-metadata-1">
+<h3 id="add-an-item-dublin-core-metadata-1">Add an item: Dublin Core Metadata</h3>
 <form><ul>
-<li>Data vs. Capta</li>
-<li>Display as argument:</li>
+<li>In this assignment, you are responsible for the following fields (and some may have to stay blank):</li>
+<li>Title;</li>
+<li>Description (a paragraph recording your description of the object, in your own words: 100-200 words)</li>
+<li>Creator;</li>
+<li>Source (can be e.g. manuscript or book or collection);</li>
+<li>Publisher;</li>
+<li>Date;</li>
+<li>Rights (i.e. who owns copyright &#x2013; language here will vary strongly depending on institution the items come from, and that is not an error on the students&rsquo; part);</li>
+<li>Format material, e.g. bronze, parchment, etc.);</li>
+<li>Language;</li>
+<li>Coverage (place where the object is from/was made).</li>
 
 </ul></form>
 
-<blockquote>
+</section>
+<section id="slide-add-an-item-success">
+<h3 id="add-an-item-success">Add an Item: Success</h3>
 <p>
-&ldquo;Graphic artifacts present knowledge through the combination of symbolic codes and structured relations of these elements in a flat field. […T]he forms that are generally used for the presentation of information can be understood and read as <b>culturally coded expressions of knowledge with their own epistemological assumptions and historical lineage</b>&rdquo; (Drucker, “<a href="https://journals.tdl.org/paj/index.php/paj/article/view/4">Graphesis: Visual Knowledge Production and Representation</a>,&ldquo; 2011).
+<div class="paired">
 </p>
-</blockquote>
+<form><ul>
+<li>Success: our trial item (“New Item&ldquo;) was created and added to the digital collection!</li>
+
+</ul></form>
+<p>
+</div><div class="paired">
+<img src="./images/omeka-success.png" alt="omeka-success.png">
+</div>
+</p>
 
 </section>
-<section id="slide-graphesis">
-<h3 id="graphesis">Drucker&rsquo;s Graphesis</h3>
+<section id="slide-add-an-image-to-the-item">
+<h3 id="add-an-image-to-the-item">Add an Image to the Item</h3>
+<p>
+<div class="paired">
+</p>
 <form><ul>
-<li>Johanna Drucker: graphesis = “the field of knowledge production embodied in visual expressions &#x2026; a visual epistemology&ldquo; (Drucker, “Graphesis&rdquo; 2011)</li>
-<li>Visual forms carry the assumptions and values of their fields of origin, and impose these assumptions and values on the data they present, whether these assumptions and values are appropriate to that data or not.</li>
-<li>As humanists, we ask ourselves: What arguments, values, and perspectives do visualizations encode and embody? What kind of knowledge do they produce? What field&rsquo;s assumptions do they draw from?</li>
+<li>Go to the Items and select the “Edit&ldquo; option under your Item</li>
+
+</ul></form>
+
+<p>
+</div><div class="paired">
+<img src="./images/omeka-add-image.png" alt="omeka-add-image.png">
+</div>
+</p>
+
+</section>
+<section id="slide-org841f146">
+<h3 id="org841f146">Add an Image to the Item</h3>
+<p>
+<div class="paired">
+</p>
+<form><ul>
+<li>From the top horizontal row of options of the Item: select Files Choose File</li>
+<li>Upload your image</li>
+<li>Save changes</li>
+
+</ul></form>
+
+<p>
+</div><div class="paired">
+<img src="./images/omeka-add-file.png" alt="omeka-add-file.png">
+</div>
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-orgcf9ff82">
+<h2 id="orgcf9ff82">Collections</h2>
+<p>
+<div class="paired">
+</p>
+<form><ul>
+<li>Collections are logical groupings or “folders&ldquo; of Items. An item can be in only one Collection at a time.</li>
+<li>Go to Dashboard and select “Collections&ldquo;</li>
+<li>Select “Add a Collection&ldquo;</li>
+<li>Fill in the metadata elements as desired, as for Item. (Everything in Omeka has metadata: it is turtles all the way down.)</li>
+
+</ul></form>
+
+<p>
+</div><div class="paired">
+<img src="./images/omeka-new-coll.png" alt="omeka-new-coll.png">
+</div>
+</p>
+
+</section>
+<section id="slide-orgfa514a6">
+<h3 id="orgfa514a6">Collections</h3>
+<p>
+<div class="paired">
+</p>
+<form><ul>
+<li>Collections are logical groupings or “folders&ldquo; of Items. An item can be in only one Collection at a time.</li>
+<li>Go to Dashboard and select “Collections&ldquo;</li>
+<li>Select “Add a Collection&ldquo;</li>
+<li>Please use <b>WDW235 &#x2013; Your Last Name</b> as your Collection title.</li>
+
+</ul></form>
+<p>
+</div><div class="paired">
+<img src="./images/omeka-new-coll.png" alt="omeka-new-coll.png">
+</div>
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-add-an-exhibit-plan">
+<h2 id="add-an-exhibit-plan">Add an Exhibit: Plan</h2>
+<form><ul>
+<li>The Exhibit is a narrative pathway through the collection; or, if you will, a digital essay based on the items in your collection.</li>
+<li>First write the prose for your exhibit and decide what items need to appear in it.</li>
+<li>To look pretty in the Exhibit, the items need to have picture or video files attached.</li>
+<li>Save your prose in a separate file.</li>
+<li>Put your immortal prose somewhere safe. <b>Omeka Exhibits cannot be exported automatically: and if you ever delete yours in error, there is no getting it back.</b></li>
+
+</ul></form>
+
+</section>
+<section id="slide-add-an-exhibit-structure">
+<h3 id="add-an-exhibit-structure">Add an Exhibit: Structure</h3>
+<p>
+<div class="paired">
+An Omeka Exhibit has:
+</p>
+
+<form><ul>
+<li>An overview page: displays an abstract (summary) of your exhibit</li>
+<li>Pages: sections of your exhibit; these display text as well as items (remember, to look pretty, the items need to have files attached)</li>
+<li>In each Page: blocks</li>
+<li>Pages are about content; Blocks are about layout/format</li>
+
+</ul></form>
+
+<p>
+You get to decide the content and layout of your pages.
+</p>
+
+<p>
+</div><div class="paired">
+<img src="./images/omeka-ww.png" alt="omeka-ww.png">
+</div>
+</p>
+</section>
+<section id="slide-add-an-exhibit-creation">
+<h3 id="add-an-exhibit-creation">Add an Exhibit: Creation</h3>
+<p>
+<div class="paired">
+</p>
+
+<form><ul>
+<li>Go to the Dashboard and click on Exhibits.</li>
+<li>Click Add an Exhibit.</li>
+
+</ul></form>
+
+<p>
+</div><div class="paired">
+<img src="./images/omeka-ex-create.png" alt="omeka-ex-create.png">
+</div>
+</p>
+</section>
+<section id="slide-add-an-exhibit-metadata">
+<h3 id="add-an-exhibit-metadata">Add an Exhibit: Metadata</h3>
+<p>
+<div class="paired">
+</p>
+
+<form><ul>
+<li>Every Exhibit has metadata.</li>
+<li>Title displays as the Exhibits title.</li>
+<li>Slug forms the URL.</li>
+<li>Description is an abstract of the Exhibit that appears on its first page.</li>
+
+</ul></form>
+
+<p>
+</div><div class="paired">
+<img src="./images/omeka-ex-det.png" alt="omeka-ex-det.png">
+</div>
+</p>
+</section>
+<section id="slide-add-an-exhibit-structure-1">
+<h3 id="add-an-exhibit-structure-1">Add an Exhibit: Structure</h3>
+<form><ul>
+<li>The Exhibit consists of Pages.</li>
+<li>Each Page is a section of your Exhibit.</li>
+<li>To build your Exhibit, start adding Pages by clicking the Add Page green button.</li>
+
+</ul></form>
+
+</section>
+<section id="slide-add-an-exhibit-pages">
+<h3 id="add-an-exhibit-pages">Add an Exhibit: Pages</h3>
+<p>
+<div class="paired">
+Each Page may consist of multiple blocks:
+</p>
+
+<form><ul>
+<li>Text and an item block</li>
+<li>A gallery of items block</li>
+<li>Text block</li>
+
+</ul></form>
+
+<p>
+To create a new Block, click on the desired layout. This block will be added as a section of this page. Your page can contain as many blocks as you like; you can drag them around to rearrange them.
+</p>
+
+<p>
+</div><div class="paired">
+<img src="./images/omeka-add-block.png" alt="omeka-add-block.png">
+</div>
+</p>
+
+</section>
+<section id="slide-add-an-exhibit-blocks-1">
+<h3 id="add-an-exhibit-blocks-1">Add an Exhibit: Blocks</h3>
+<p>
+<div class="paired">
+</p>
+<form><ul>
+<li>Once you have added your narrative and selected your Items, your block will look like this:</li>
+<li>To see what the Page actually looks like, select the View Public Page button (right side of browser, in line with Content).</li>
+
+</ul></form>
+
+<p>
+</div><div class="paired">
+<img src="./images/omeka-block-content.png" alt="omeka-block-content.png">
+</div>
+</p>
+</section>
+<section id="slide-add-an-exhibit-overall-design">
+<h3 id="add-an-exhibit-overall-design">Add an Exhibit: Overall Design</h3>
+<form><ul>
+<li>In your finished Exhibit, each Page will be a Section of the Narrative, illustrated with Items from your digital collection.</li>
+<li>You can use and reuse items from your collection in as many Exhibits as you wish.</li>
 
 </ul></form>
 
 </section>
 </section>
 <section>
-<section id="slide-data-vs.-capta">
-<h2 id="data-vs.-capta">Data vs. Capta &#x2013; an Illustration</h2>
+<section id="slide-orgd0d119c">
+<h2 id="orgd0d119c">Building an Omeka Site: Conclusions</h2>
 <form><ul>
-<li><b>Data</b>: “given&ldquo;, objective, observed</li>
-
-<li>Quantitative approaches: from concordances to corpora, from measuring word frequencies and stylometric patterns to thematic discovery through topic modelling
-<form><ul>
-<li>Visual representations of quantities, trajectories, measurable relationships</li>
-<li>Wordle, Gephi, Cytoscape; pie charts, bar charts, and bubble graphs</li>
-
-</ul></form></li>
-<li>Qualitative approaches: visual and performative, enacting poetics, making subjectivity and interpretation visible
-<form><ul>
-<li>Maps and timelines of literary narratives; digital collections; interpretive visualizations</li>
-
-</ul></form></li>
-
-</ul></form>
-
-</section>
-<section id="slide-section-1">
-<h3 id="section-1">Data vs. Capta: Two Maps</h3>
-
-<figure>
-<img src="https://carto.com/img/layout/gallery/bbva-geo-risk/big.6b6fed37.gif" alt="big.6b6fed37.gif">
-
-<figcaption><span class="figure-number">Figure 13: </span>GEOPOLITICAL TENSIONS IN MENA (Middle East &amp; Northern Africa)</figcaption>
-</figure>
-
-
-</section>
-<section id="slide-section-2">
-<h3 id="section-2">Data vs. Capta: Two Maps</h3>
-<div class="paired">
-
-<figure>
-<img src="https://www.bl.uk/britishlibrary/~/media/bl/global/highlights/maps/psalter-map-f9.jpg" alt="psalter-map-f9.jpg">
-
-<figcaption><span class="figure-number">Figure 14: </span><a href="https://www.bl.uk/collection-items/psalter-world-map">The PARIS PSALTER map</a> (c. 1260, England)</figcaption>
-</figure>
-
-</div>
-<div class="paired">
-
-<figure>
-<img src="https://www.bl.uk/britishlibrary/~/media/bl/global/highlights/maps/psalter-map-bottomleft-f9.jpg" alt="psalter-map-bottomleft-f9.jpg">
-
-<figcaption><span class="figure-number">Figure 15: </span>Detail (British Isles)</figcaption>
-</figure>
-
-</div>
-
-</section>
-</section>
-<section>
-<section id="slide-dh-dataviz-examples">
-<h2 id="dh-dataviz-examples">DH Dataviz: Some Less and More Creative Examples</h2>
-</section>
-<section id="slide-network-graph">
-<h3 id="network-graph">Network Graph</h3>
-<form><ul>
-<li>Things: nodes (vertices)</li>
-<li>Relationships: edges</li>
-
-</ul></form>
-
-
-<figure>
-<img src="./images/network-graph.png" alt="network-graph.png">  
-
-</figure>
-
-</section>
-<section id="slide-les-miserables-network-graph-of-character-interactions">
-<h3 id="les-miserables-network-graph-of-character-interactions">Les Miserables: Network Graph of Character Interactions</h3>
-
-<figure>
-<img src="./images/les-mis-network.svg" alt="les-mis-network.svg">
-
-<figcaption><span class="figure-number">Figure 17: </span>co-appearance of characters from <i>Les Miserables</i>. Data originally compiled in <a href="https://github.com/tangentforks/sgb/">The Stanford GraphBook</a> (<a href="https://github.com/tangentforks/sgb/blob/master/jean.dat">original file format</a>) in 1993 and made available in various forms including <a href="https://github.com/gephi/gephi/wiki/Datasets#social-networks">as GML by Gephi</a>, where it has been widely copied and modified.</figcaption>
-</figure>
-
-</section>
-<section id="slide-word-cloud">
-<h3 id="word-cloud">Word Cloud</h3>
-
-<figure>
-<img src="./images/rj-wordle.svg" alt="rj-wordle.svg">
-
-</figure>
-<form><ul>
-<li>Visualizes word frequencies in a text</li>
-<li>The larger the word, the more often it appears</li>
-
-</ul></form>
-
-</section>
-<section id="slide-lauren-f.-klein-a-report-has-come-here">
-<h3 id="lauren-f.-klein-a-report-has-come-here"><a href="http://lklein.com/2012/01/a-report-has-come-here-social-network-analysis-in-the-papers-of-thomas-jefferson/">The Shadow of James Hemings</a></h3>
-<div class="paired">
-
-<figure>
-<img src="./images/hemmings-relations.jpg" alt="hemmings-relations.jpg">
-
-</figure>
-
-</div>
-<div class="paired">
-<blockquote>
-<p>
-&ldquo;This figure is James Hemings, Thomas Jefferson&rsquo;s enslaved personal chef (and Sally Hemings&rsquo;s older brother). When Jefferson was appointed Ambassador to France, he took Hemings with him to Paris, and there apprenticed him to the chef of a prince. Through the few archival records that relate to Hemings, we also know, for instance, that while in Paris, Hemings hired his own tutor and learned to speak fluent French. And here&rsquo;s another thing Hemings learned in Paris: what it might mean to be free. [&#x2026;]
-</p>
-
-<p>
-It is then a striking instantiation of archival silence that when you perform a &ldquo;Name&rdquo; search for a person named James Hemings in the <i>The Papers of Thomas Jefferson, Digital Edition</i>, you get no results&#x2014;because Hemings, in spite of his ability to read and write in two languages&#x2013;because of his status as a slave&#x2013;was not a person to whom Jefferson ever wrote, or from whom Jefferson received letters.&ldquo;
-</p>
-</blockquote>
-
-</div>
-
-</section>
-<section id="slide-project-paradise-a">
-<h3 id="project-paradise-a">Mapping Imaginary Spaces</h3>
-
-<figure>
-<img src="./images/mandeville-map.jpg" alt="mandeville-map.jpg">
-
-</figure>
-</section>
-<section id="slide-the-knotted-line">
-<h3 id="the-knotted-line">Non-Linear Timelines</h3>
-
-<figure>
-<img src="./images/knotted-line.png" alt="knotted-line.png">
-
-<figcaption><span class="figure-number">Figure 21: </span>&ldquo;an interactive, tactile laboratory for exploring the historical relationship between freedom and confinement in the geographic area of the United States&rdquo; (<a href="http://knottedline.com/">http://knottedline.com</a>/)</figcaption>
-</figure>
-
-</section>
-<section id="slide-from-johanna-druckers-humanities-approaches-to-graphical-display">
-<h3 id="from-johanna-druckers-humanities-approaches-to-graphical-display">Rewriting John Snow</h3>
-<div class="paired">
-
-<figure>
-<img src="http://www.digitalhumanities.org/dhq/vol/5/1/000091/...000091/resources/images/figure16.jpg" alt="figure16.jpg">
-
-<figcaption><span class="figure-number">Figure 22: </span>Dr. John Snow&rsquo;s visualization of cholera deaths in London, 1854.</figcaption>
-</figure>
-
-</div>
-
-<div class="paired">
-
-<figure>
-<img src="http://www.digitalhumanities.org/dhq/vol/5/1/000091/...000091/resources/images/figure17.jpg" alt="figure17.jpg">
-
-<figcaption><span class="figure-number">Figure 23: </span>Snow&rsquo;s chart altered. Graphic credit Xárene Eskandar</figcaption>
-</figure>
-
-</div>
-
-<blockquote>
-<p>
-&ldquo;Who are those dots? Each individual had a profile, age, size, health, economic potential, family and social roles. [&#x2026;] But what if we take the rate of deaths, their frequency, and chart that on a temporal axis inflected by increasing panic. Then give a graphical expression to the shape of the terrain, that urban streetscape, as it is redrawn to express the emotional landscape. Then imagine drawing this same streetscape from the point of view of a mother of six young children, a recent widow, a small child, or an elderly man whose son has just died&rdquo; (Drucker, “<a href="http://www.digitalhumanities.org/dhq/vol/5/1/000091/000091.html">Humanities Approaches</a>&ldquo;).
-</p>
-</blockquote>
-
-</section>
-</section>
-<section>
-<section id="slide-orgab99771">
-<h2 id="orgab99771">Some Rules of Thumb</h2>
-<form><ul>
-<li>in general, creative relationships to data/capta are <b>more</b> work than rigourous but straightforward quantitative analysis</li>
-<li>they require familiarity both <b>both</b> humanities concepts <b>and</b> the underlying technologies</li>
-<li>humaniites tools, though, try to <b>lower the barrier to entry</b> and so <b>often hide the underlying technology</b>.</li>
-<li>this lets you <b>play</b> with visualization but is rarely sufficient to bring <b>rela insights</b> and <b>creative accomplishments</b></li>
-
-</ul></form>
-
-
-</section>
-</section>
-<section>
-<section id="slide-data-visualization-practicum">
-<h2 id="data-visualization-practicum">Data Visualization: Play Time</h2>
-<form><ul>
-<li>we have 3 texts: <i>Lady Susan,</i>, <i>Frankenstein</i>, and <i>Les Misérables</i></li>
-<li>for each of these there is also a <b>processed data file</b> and in 2 cases a <b>project file</b></li>
-<li>we will deal with them in 3 tools: <a href="https://cytoscape.org/">Cytoscape</a> (demo only), <a href="http://hdlab.stanford.edu/palladio/">Palladio</a>, and <a href="https://voyant-tools.org/">voyant Tools</a></li>
-
-</ul></form>
-</section>
-<section id="slide-orga17e770">
-<h3 id="orga17e770">Cytoscape</h3>
-<form><ul>
-<li>original data in <b>lesmis.txt</b></li>
-<li>project file (if you want to replicate) in <b>lesmis.cys</b></li>
-
-</ul></form>
-</section>
-<section id="slide-maps-networks-with-palladio">
-<h3 id="maps-networks-with-palladio">Maps &amp; Networks with Palladio</h3>
-<form><ul>
-<li></li>
-
-</ul></form>
-</section>
-<section id="slide-text-visualization-with-voyant-tools">
-<h3 id="text-visualization-with-voyant-tools">Text Visualization with Voyant Tools</h3>
-<form><ul>
-<li>full-text visualization tool</li>
-<li>try with <b>frankenstein.txt</b>, *</li>
+<li>Make a project plan with deadlines. But allow for disasters.</li>
+<li>Plan your exhibits (possibly on paper) well ahead of time</li>
+<li>Draft and save your Item descriptions and your Exhibit content in word processing software; save this draft;</li>
+<li>Paste your content from Word into Omeka.</li>
 
 </ul></form>
 </section>

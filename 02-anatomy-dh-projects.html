@@ -1,289 +1,326 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2019-09-13 Fri 15:05 -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>02: Anatomy of DH Projects</title>
-<meta name="generator" content="Org mode">
-<meta name="author" content="Matt Price">
+<meta charset="utf-8"/>
+<title>2: Anatomy of DH Projects</title>
+<meta name="author" content="Matt Price"/>
 <style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
-  .title  { text-align: center;
-             margin-bottom: .2em; }
-  .subtitle { text-align: center;
-              font-size: medium;
-              font-weight: bold;
-              margin-top:0; }
-  .todo   { font-family: monospace; color: red; }
-  .done   { font-family: monospace; color: green; }
-  .priority { font-family: monospace; color: orange; }
-  .tag    { background-color: #eee; font-family: monospace;
-            padding: 2px; font-size: 80%; font-weight: normal; }
-  .timestamp { color: #bebebe; }
-  .timestamp-kwd { color: #5f9ea0; }
-  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
-  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
-  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
-  .underline { text-decoration: underline; }
-  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
-  p.verse { margin-left: 3%; }
-  pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
-    padding: 8pt;
-    font-family: monospace;
-    overflow: auto;
-    margin: 1.2em;
-  }
-  pre.src {
-    position: relative;
-    overflow: visible;
-    padding-top: 1.2em;
-  }
-  pre.src:before {
-    display: none;
-    position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
-    padding: 3px;
-    border: 1px solid black;
-  }
-  pre.src:hover:before { display: inline;}
-  /* Languages per Org manual */
-  pre.src-asymptote:before { content: 'Asymptote'; }
-  pre.src-awk:before { content: 'Awk'; }
-  pre.src-C:before { content: 'C'; }
-  /* pre.src-C++ doesn't work in CSS */
-  pre.src-clojure:before { content: 'Clojure'; }
-  pre.src-css:before { content: 'CSS'; }
-  pre.src-D:before { content: 'D'; }
-  pre.src-ditaa:before { content: 'ditaa'; }
-  pre.src-dot:before { content: 'Graphviz'; }
-  pre.src-calc:before { content: 'Emacs Calc'; }
-  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
-  pre.src-fortran:before { content: 'Fortran'; }
-  pre.src-gnuplot:before { content: 'gnuplot'; }
-  pre.src-haskell:before { content: 'Haskell'; }
-  pre.src-hledger:before { content: 'hledger'; }
-  pre.src-java:before { content: 'Java'; }
-  pre.src-js:before { content: 'Javascript'; }
-  pre.src-latex:before { content: 'LaTeX'; }
-  pre.src-ledger:before { content: 'Ledger'; }
-  pre.src-lisp:before { content: 'Lisp'; }
-  pre.src-lilypond:before { content: 'Lilypond'; }
-  pre.src-lua:before { content: 'Lua'; }
-  pre.src-matlab:before { content: 'MATLAB'; }
-  pre.src-mscgen:before { content: 'Mscgen'; }
-  pre.src-ocaml:before { content: 'Objective Caml'; }
-  pre.src-octave:before { content: 'Octave'; }
-  pre.src-org:before { content: 'Org mode'; }
-  pre.src-oz:before { content: 'OZ'; }
-  pre.src-plantuml:before { content: 'Plantuml'; }
-  pre.src-processing:before { content: 'Processing.js'; }
-  pre.src-python:before { content: 'Python'; }
-  pre.src-R:before { content: 'R'; }
-  pre.src-ruby:before { content: 'Ruby'; }
-  pre.src-sass:before { content: 'Sass'; }
-  pre.src-scheme:before { content: 'Scheme'; }
-  pre.src-screen:before { content: 'Gnu Screen'; }
-  pre.src-sed:before { content: 'Sed'; }
-  pre.src-sh:before { content: 'shell'; }
-  pre.src-sql:before { content: 'SQL'; }
-  pre.src-sqlite:before { content: 'SQLite'; }
-  /* additional languages in org.el's org-babel-load-languages alist */
-  pre.src-forth:before { content: 'Forth'; }
-  pre.src-io:before { content: 'IO'; }
-  pre.src-J:before { content: 'J'; }
-  pre.src-makefile:before { content: 'Makefile'; }
-  pre.src-maxima:before { content: 'Maxima'; }
-  pre.src-perl:before { content: 'Perl'; }
-  pre.src-picolisp:before { content: 'Pico Lisp'; }
-  pre.src-scala:before { content: 'Scala'; }
-  pre.src-shell:before { content: 'Shell Script'; }
-  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
-  /* additional language identifiers per "defun org-babel-execute"
-       in ob-*.el */
-  pre.src-cpp:before  { content: 'C++'; }
-  pre.src-abc:before  { content: 'ABC'; }
-  pre.src-coq:before  { content: 'Coq'; }
-  pre.src-groovy:before  { content: 'Groovy'; }
-  /* additional language identifiers from org-babel-shell-names in
-     ob-shell.el: ob-shell is the only babel language using a lambda to put
-     the execution function name together. */
-  pre.src-bash:before  { content: 'bash'; }
-  pre.src-csh:before  { content: 'csh'; }
-  pre.src-ash:before  { content: 'ash'; }
-  pre.src-dash:before  { content: 'dash'; }
-  pre.src-ksh:before  { content: 'ksh'; }
-  pre.src-mksh:before  { content: 'mksh'; }
-  pre.src-posh:before  { content: 'posh'; }
-  /* Additional Emacs modes also supported by the LaTeX listings package */
-  pre.src-ada:before { content: 'Ada'; }
-  pre.src-asm:before { content: 'Assembler'; }
-  pre.src-caml:before { content: 'Caml'; }
-  pre.src-delphi:before { content: 'Delphi'; }
-  pre.src-html:before { content: 'HTML'; }
-  pre.src-idl:before { content: 'IDL'; }
-  pre.src-mercury:before { content: 'Mercury'; }
-  pre.src-metapost:before { content: 'MetaPost'; }
-  pre.src-modula-2:before { content: 'Modula-2'; }
-  pre.src-pascal:before { content: 'Pascal'; }
-  pre.src-ps:before { content: 'PostScript'; }
-  pre.src-prolog:before { content: 'Prolog'; }
-  pre.src-simula:before { content: 'Simula'; }
-  pre.src-tcl:before { content: 'tcl'; }
-  pre.src-tex:before { content: 'TeX'; }
-  pre.src-plain-tex:before { content: 'Plain TeX'; }
-  pre.src-verilog:before { content: 'Verilog'; }
-  pre.src-vhdl:before { content: 'VHDL'; }
-  pre.src-xml:before { content: 'XML'; }
-  pre.src-nxml:before { content: 'XML'; }
-  /* add a generic configuration mode; LaTeX export needs an additional
-     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
-  pre.src-conf:before { content: 'Configuration File'; }
-
-  table { border-collapse:collapse; }
-  caption.t-above { caption-side: top; }
-  caption.t-bottom { caption-side: bottom; }
-  td, th { vertical-align:top;  }
-  th.org-right  { text-align: center;  }
-  th.org-left   { text-align: center;   }
-  th.org-center { text-align: center; }
-  td.org-right  { text-align: right;  }
-  td.org-left   { text-align: left;   }
-  td.org-center { text-align: center; }
-  dt { font-weight: bold; }
-  .footpara { display: inline; }
-  .footdef  { margin-bottom: 1em; }
-  .figure { padding: 1em; }
-  .figure p { text-align: center; }
-  .equation-container {
-    display: table;
-    text-align: center;
-    width: 100%;
-  }
-  .equation {
-    vertical-align: middle;
-  }
-  .equation-label {
-    display: table-cell;
-    text-align: right;
-    vertical-align: middle;
-  }
-  .inlinetask {
-    padding: 10px;
-    border: 2px solid gray;
-    margin: 10px;
-    background: #ffffcc;
-  }
-  #org-div-home-and-up
-   { text-align: right; font-size: 70%; white-space: nowrap; }
-  textarea { overflow-x: auto; }
-  .linenr { font-size: smaller }
-  .code-highlighted { background-color: #ffff00; }
-  .org-info-js_info-navigation { border-style: none; }
-  #org-info-js_console-label
-    { font-size: 10px; font-weight: bold; white-space: nowrap; }
-  .org-info-js_search-highlight
-    { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { width: 90%; }
-  /*]]>*/-->
+.underline { text-decoration: underline; }
 </style>
-<script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
+<link rel="stylesheet" href="file:///home/matt/src/reveal.js/css/reveal.css"/>
 
-Copyright (C) 2012-2019 Free Software Foundation, Inc.
+<link rel="stylesheet" href="file:///home/matt/src/reveal.js/css/theme/matt.css" id="theme"/>
+<link rel="stylesheet" href="file:///home/matt/src/reveal.js/lib/css/zenburn.css"/>
 
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
-<!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'file:///home/matt/src/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
 </script>
 </head>
 <body>
-<article id="content">
-<header>
-<h1 class="title">02: Anatomy of DH Projects</h1>
-</header><nil id="outline-container-orgfc35d80" class="outline-2">
-<h2 id="orgfc35d80">Today</h2>
-<div class="outline-text-2" id="text-orgfc35d80">
-<ul class="org-ul">
-<li>How do we Think about Technology?</li>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide">
+<h1>2: Anatomy of DH Projects</h1>
+<h3>Matt Price  </h3>
+<!-- <p class="title-theme-choice">(view this presentation in another theme: 
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/black.css')); return false;">Black (default)</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/white.css')); return false;">White</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/league.css')); return false;">League</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/sky.css')); return false;">Sky</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/beige.css')); return false;">Beige</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/simple.css')); return false;">Simple</a> 
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/serif.css')); return false;">Serif</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/blood.css')); return false;">Blood</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/night.css')); return false;">Night</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/moon.css')); return false;">Moon</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/solarized.css')); return false;">Solarized</a> 
+				)	</p> -->
+
+</section>
+<section>
+<section id="slide-orgd01ea87">
+<h2 id="orgd01ea87">Today</h2>
+<form><ul>
+<li>First, some DH examples
+How do we Think about Technology?</li>
 <li>Very Basic Design Parameters</li>
 <li>Data and Data Models</li>
 <li>Assignment 1</li>
-</ul>
-</div>
-</nil>
 
-<nil id="outline-container-org57e5353" class="outline-2">
-<h2 id="org57e5353">Why &ldquo;Anatomy of DH&rdquo;?</h2>
-<div class="outline-text-2" id="text-org57e5353">
-<ul class="org-ul">
+</ul></form>
+
+</section>
+</section>
+<section>
+<section id="slide-org75995df">
+<h2 id="org75995df">Project Examples</h2>
+<div class="outline-text-2" id="text-org75995df">
+</div>
+</section>
+<section id="slide-digital-editions-archives-narratives">
+<h3 id="digital-editions-archives-narratives">Digital Editions, Archives, Narratives</h3>
+</section>
+<section id="slide-folger-shakespeare-library">
+<h4 id="folger-shakespeare-library"><a href="https://www.folger.edu/folger-digital-texts">Folger: Shakespeare Library</a></h4>
+
+<figure>
+<img src="./images/folger.png" alt="folger.png">
+
+</figure>
+
+</section>
+<section id="slide-shelley-godwin-archive">
+<h4 id="shelley-godwin-archive"><a href="http://shelleygodwinarchive.org/">Shelley-Godwin Archive</a></h4>
+
+<figure>
+<img src="./images/shelley-g.png" alt="shelley-g.png">
+
+</figure>
+
+</section>
+<section id="slide-the-archimedes-palimpsest-multispectral-imaging">
+<h4 id="the-archimedes-palimpsest-multispectral-imaging"><a href="http://www.archimedespalimpsest.org/">The Archimedes Palimpsest</a>: Multispectral Imaging</h4>
+
+<figure>
+<img src="./images/a-palimpset.jpg" alt="a-palimpset.jpg">
+
+</figure>
+
+</section>
+<section id="slide-infinite-ulysses-interactive-readers-edition-by-amanda-visconti">
+<h4 id="infinite-ulysses-interactive-readers-edition-by-amanda-visconti"><a href="http://infiniteulysses.com/">Infinite Ulysses</a>: interactive reader&rsquo;s edition by Amanda Visconti</h4>
+
+<figure>
+<img src="./images/ulysses.png" alt="ulysses.png">
+
+</figure>
+
+</section>
+<section id="slide-maps-visualizations-interpretations">
+<h3 id="maps-visualizations-interpretations">Maps, Visualizations, Interpretations</h3>
+</section>
+<section id="slide-mapping-medieval-chester">
+<h4 id="mapping-medieval-chester"><a href="http://www.medievalchester.ac.uk/">Mapping Medieval Chester</a></h4>
+<form><ul>
+<li>Goal: making a digital map of medieval Chester by combining post-medieval maps with archaeological and historical evidence</li>
+<li>Digital advantage: interactive, layered, &amp; transparent</li>
+
+</ul></form>
+
+<figure>
+<img src="./images/chester.png" alt="chester.png">
+
+</figure>
+
+</section>
+<section id="slide-mapping-homers-catalogue-of-ships">
+<h4 id="mapping-homers-catalogue-of-ships"><a href="https://ships.lib.virginia.edu/">Mapping Homer&rsquo;s Catalogue of Ships</a></h4>
+<p>
+Courtney Evans and Ben Jasnow, with Jenny Strauss Clay and the UVA Scholars&rsquo; Lab (2013)
+</p>
+
+<p>
+Mapping the towns in Homer&rsquo;s Catalogue of Ships to analyze underlying organizing principles for the narration
+<img src="./images/ships.png" alt="ships.png">
+</p>
+
+</section>
+<section id="slide-project-decima">
+<h4 id="project-decima"><a href="https://decima-map.net/">Project DECIMA</a></h4>
+<p>
+University of Toronto, History Dept.
+</p>
+
+<p>
+Onto a 16th century map of Florence, DECIMA maps census data about Florence&rsquo;s inhabitants, their occupations, wealth, and daily life.
+</p>
+
+
+<figure>
+<img src="./images/decima.png" alt="decima.png">   
+
+</figure>
+</section>
+<section id="slide-topostext-ancient-texts-maps">
+<h4 id="topostext-ancient-texts-maps"><a href="https://topostext.org/">ToposText</a>: Ancient Texts + Maps</h4>
+
+<figure>
+<img src="./images/ttext.png" alt="ttext.png">
+
+</figure>
+</section>
+<section id="slide-mapping-ararat">
+<h4 id="mapping-ararat"><a href="http://www.mappingararat.com/">Mapping Ararat</a></h4>
+
+<figure>
+<img src="./images/ararat.png" alt="ararat.png">
+
+</figure>
+</section>
+<section id="slide-orgc8652b3">
+<h4 id="orgc8652b3">About that Land Acknowledgment</h4>
+<form><ul>
+<li>History of Life on this shore</li>
+<li>Dish with One Spoon</li>
+<li>Continuity and Disjuncture</li>
+
+</ul></form>
+<div class="paired">
+
+<figure>
+<img src="file:///home/matt/WDW235/images/dish-spoon-territory.png" alt="dish-spoon-territory.png">
+
+</figure>
+
+</div>
+<div class="paired">
+
+<figure>
+<img src="https://www.indiantime.net/home/cms_data/dfault/photos/stories/id/1/0/7510/.TEMP/s_topTEMP425x425-8032.jpeg" alt="s_topTEMP425x425-8032.jpeg">
+
+</figure>
+
+</div>
+
+<aside class="notes">
+<p>
+We would like to acknowledge this sacred land on which the University of Toronto operates. It has been a site of human activity for 15,000 years. This land is the territory of the Huron-Wendat and Petun First Nations, the Seneca, and most recently, the Mississaugas of the Credit River. The territory was the subject of the Dish with One Spoon Wampum Belt Covenant, an agreement between the Iroquois Confederacy and Confederacy of the Ojibwe and allied nations to peaceably share and care for the resources around the Great Lakes. Today, the meeting place of Toronto is still the home to many Indigenous people from across Turtle Island and we are grateful to have the opportunity to work in the community, on this territory.
+</p>
+
+</aside>
+</section>
+<section id="slide-communication">
+<h3 id="communication">Communication</h3>
+<form><ul>
+<li>Scholarly Writings</li>
+<li>Public Engagement</li>
+<li>Social Media</li>
+<li>Teaching &amp; Collaboration</li>
+
+</ul></form>
+
+</section>
+<section id="slide-scholarly-books-the-networked-monograph">
+<h4 id="scholarly-books-the-networked-monograph">Scholarly Books: The Networked Monograph</h4>
+<p>
+<div class="paired">
+</p>
+
+<p>
+In addition to printed books, can scholarly monographs expand their forms to “take advantage [&#x2026;] of the interactive, annotative, and computational affordances of the web&ldquo;? Donald J. Waters, “Monograph Publishing in the Digital Age&rdquo; (2016)
+</p>
+
+<p>
+Digitally augmented scholarly monographs (e.g. Mellon-funded collaboration between NYU Library and NYU Press
+</div><div class="paired">
+<img src="./images/n-monograph.jpg" alt="n-monograph.jpg">
+</div>
+</p>
+
+</section>
+<section id="slide-vr3d-printing-for-cultural-heritage-collections-small-wonders-ago">
+<h4 id="vr3d-printing-for-cultural-heritage-collections-small-wonders-ago">VR/3D Printing for Cultural Heritage Collections: <a href="http://boxwood.ago.ca/">Small</a> <a href="https://www.youtube.com/watch?v=Mc4MA8srQDM">Wonders</a> (AGO)</h4>
+<form><ul>
+<li>Miniature boxwood carvings from the early 1500s</li>
+<li>Studied and exhibited through digital imaging (micro CAT scanning), VR, and 3D printing</li>
+
+</ul></form>
+
+<figure>
+<img src="./images/small-wonders.jpg" alt="small-wonders.jpg">
+
+</figure>
+
+</section>
+<section id="slide-research-materials-medieval-manuscripts-and-social-media">
+<h4 id="research-materials-medieval-manuscripts-and-social-media">Research Materials: Medieval Manuscripts and Social Media</h4>
+
+<figure>
+<img src="https://pbs.twimg.com/media/A3zuNR6CIAAeHsk.jpg" alt="A3zuNR6CIAAeHsk.jpg">
+
+<figcaption><span class="figure-number">Figure 12: </span>Cat paws in a fifteenth-century manuscript (photo taken at the Dubrovnik archives by @EmirOFilipovic, disseminated by Eric Kwakkel)</figcaption>
+</figure>
+</section>
+<section id="slide-section-7">
+<h3 id="section-7">Teaching</h3>
+</section>
+<section id="slide-org3952590">
+<h4 id="org3952590">This Class</h4>
+<p>
+<a href="https://chauceranditaly.library.utoronto.ca/neatline/show/liminal-representation-inferno">Heather Eason: five artists&rsquo; representations of threshold crossings</a> in Dante&rsquo;s <i>Inferno</i>. Omeka/Neatline undergraduate student project.
+</p>
+
+
+<figure>
+<img src="./images/inferno.png" alt="inferno.png">
+
+</figure>
+<aside class="notes">
+<p>
+Heather Eason: five artists&rsquo; representations of threshold crossings in Dante&rsquo;s <i>Inferno</i>&#x2013;the unknown illustrator of the fourteenth-century MS Holkham misc. 48; Priamo della Quercia of the fifteenth-century Yates Thompson MS 36; Gustave Doré; Salvador Dalí; and Dante himself.
+</p>
+
+</aside>
+
+</section>
+<section id="slide-org36ab3a2">
+<h4 id="org36ab3a2">Others</h4>
+<p>
+Website for <a href="https://kcc.hackinghistory.ca/">Khangchendzonga Conservation Committee</a>, written and developed by students from HIS455, <i>Hacking History</i>, 2018.
+</p>
+
+
+<figure>
+<img src="file:///home/matt/WDW235/images/kcc.jpg" alt="kcc.jpg">
+
+</figure>
+
+</section>
+<section id="slide-collaboration-infrastructures">
+<h4 id="collaboration-infrastructures"><a href="https://chauceranditaly.library.utoronto.ca/neatline/show/liminal-representation-inferno">Collaboration &amp; Infrastructures</a></h4>
+
+<figure>
+<img src="./images/edgi-wm.png" alt="edgi-wm.png">
+
+</figure>
+
+</section>
+</section>
+<section>
+<section id="slide-org8d97b75">
+<h2 id="org8d97b75">Why &ldquo;Anatomy of DH&rdquo;?</h2>
+<form><ul>
 <li>Design &amp; evaluation of DH projects specifically</li>
 <li>Design &amp; evaluation of projects (digital and otherwise) more generally</li>
 <li>Understanding of knowledge production in digital environments</li>
-</ul>
-</div>
 
-<div id="outline-container-orgf78db89" class="outline-3">
-<h3 id="orgf78db89">DH pipelines</h3>
-<div class="outline-text-3" id="text-orgf78db89">
+</ul></form>
+
+</section>
+<section id="slide-orge8ea656">
+<h3 id="orge8ea656">DH pipelines</h3>
 
 <figure>
 <img src="./images/dh-arrow.svg" alt="dh-arrow.svg">
 
 </figure>
 
-<div class="notes">
+<aside class="notes">
 <p>
 
 </p>
 
-</div>
-</div>
-</div>
-<div id="outline-container-org12bea7c" class="outline-3">
-<h3 id="org12bea7c">Tools &amp; Technologies</h3>
-<div class="outline-text-3" id="text-org12bea7c">
+</aside>
+</section>
+<section id="slide-orge0f9e6f" class="twoc">
+<h3 id="orge0f9e6f">Tools &amp; Technologies</h3>
 <div class="slideblock">
 
 <figure>
@@ -299,55 +336,53 @@ for the JavaScript code in this tag.
 </p>
 
 </div>
-</div>
-</div>
 
 
 
-<div id="outline-container-orgfca4e5a" class="outline-3">
-<h3 id="orgfca4e5a">Technology in DH</h3>
-<div class="outline-text-3" id="text-orgfca4e5a">
-<ul class="org-ul">
-<li>New or existing? Software ecology?</li>
-<li>Open-source?
-<ul class="org-ul">
+</section>
+<section id="slide-orgfa2efa7">
+<h3 id="orgfa2efa7">Technology in DH</h3>
+<form><ul>
+<li class="fragment appear">New or existing? Software ecology?</li>
+<li class="fragment appear">Open-source?
+<form><ul>
 <li>GNU General Public License (GPL):  source code for an application is freely available for study &amp; modification– “as long as further developments and applications are put under the same licence</li>
-</ul></li>
-<li>Widely adopted? By your colleagues/ collaborators?</li>
-<li>User base: humanities? Industry? Institutions?</li>
-<li>Prerequisites:  
-<ul class="org-ul">
-<li>Data formats</li>
-<li>Tech stack (other software)</li>
-<li>Server space</li>
-<li>Training</li>
-</ul></li>
-</ul>
-</div>
-</div>
 
-<div id="outline-container-orgf50d32f" class="outline-3">
-<h3 id="orgf50d32f">Choosing a Tool</h3>
-<div class="outline-text-3" id="text-orgf50d32f">
+</ul></form></li>
+<li class="fragment appear">Widely adopted? By your colleagues/ collaborators?</li>
+<li class="fragment appear">User base: humanities? Industry? Institutions?</li>
+<li class="fragment appear">Prerequisites:  
+<form><ul>
+<li class="fragment appear">Data formats</li>
+<li class="fragment appear">Tech stack (other software)</li>
+<li class="fragment appear">Server space</li>
+<li class="fragment appear">Training</li>
+
+</ul></form></li>
+
+</ul></form>
+
+</section>
+<section id="slide-orgcdd05ea">
+<h3 id="orgcdd05ea">Choosing a Tool</h3>
 
 <figure>
 <img src="./images/dh-tool-decisions.png" alt="dh-tool-decisions.png">
 
 </figure>
-</div>
-</div>
 
-<div id="outline-container-org355df8d" class="outline-3">
-<h3 id="org355df8d">Affordances</h3>
-<div class="outline-text-3" id="text-org355df8d">
+</section>
+<section id="slide-orgbd785f1" class="twoc">
+<h3 id="orgbd785f1">Affordances</h3>
 <div class="slideblock">
 <blockquote>
 <p>
 Affordances of a technology = properties of a technology that enable certain tasks; tasks that users can perform with a technology (e.g. query, search, analysis, visualization)
 </p>
-<ul class="org-ul">
-<li><a href="http://www.oed.com.myaccess.library.utoronto.ca/view/Entry/263548?redirectedFrom=affordance&amp;">OED</a>, Accessed <span class="timestamp-wrapper"><span class="timestamp">05/06</span></span></li>
-</ul>
+<form><ul>
+<li><a href="http://www.oed.com.myaccess.library.utoronto.ca/view/Entry/263548?redirectedFrom=affordance&amp;">OED</a>, Accessed <span class="timestamp-wrapper"><span class="timestamp">May. 06</span></span></li>
+
+</ul></form>
 </blockquote>
 
 </div>
@@ -356,23 +391,24 @@ Affordances of a technology = properties of a technology that enable certain tas
 <p>
 Digital documents..have their own affordances. They can be easily searched, shared, stored, accessed remotely&#x2026; But they lack the affordances that really matter to a group of people working together.
 </p>
-<ul class="org-ul">
-<li>(<a href="#citeproc_bib_item_3">Gladwell 2002</a>)  2019-09-12</li>
-</ul>
+<form><ul>
+<li><a class="org-ref-reference" href="#/slide-bibliography">[Gladwellsociallifepaper2002]</a>  2019-09-12</li>
+
+</ul></form>
 </blockquote>
 
 </div>
-</div>
-</div>
-</nil>
 
-<nil id="outline-container-org254da4d" class="outline-2">
-<h2 id="org254da4d">Users, Readers, Communities</h2>
-<div class="outline-text-2" id="text-org254da4d">
+</section>
+</section>
+<section>
+<section id="slide-orgac7a78f">
+<h2 id="orgac7a78f">Users, Readers, Communities</h2>
+<div class="outline-text-2" id="text-orgac7a78f">
 </div>
-<div id="outline-container-orgcb89951" class="outline-3">
-<h3 id="orgcb89951">Technology-in-practice (Wanda Orlikowski)</h3>
-<div class="outline-text-3" id="text-orgcb89951">
+</section>
+<section id="slide-org0f01f32">
+<h3 id="org0f01f32">Technology-in-practice (Wanda Orlikowski)</h3>
 <blockquote>
 <p>
 The notion of “technology-in-practice&ldquo; suggests that the technology is not just the machinery, digital or analog, but on the one hand <span style="color:red;">the organizational or institutional culture around it, and on the other hand, <span style="color:red;">the needs and practices of its user community. Organizational culture and user community create a “behavioural and interpretive template&rdquo; for the use of a technology. 
@@ -383,90 +419,80 @@ Technology-in-practice:  not only the technology itself, but “the ways it is e
 </p>
 
 <p>
-(<a href="#citeproc_bib_item_8">Orlikowski 2000</a>)
+<a class="org-ref-reference" href="#/slide-bibliography">[OrlikowskiUsingTechnologyConstituting2000]</a>
 </p>
 </blockquote>
-</div>
-</div>
 
-<div id="outline-container-org2507bde" class="outline-3">
-<h3 id="org2507bde">Technology-in-practice (DH)</h3>
-<div class="outline-text-3" id="text-org2507bde">
+</section>
+<section id="slide-org11e2881">
+<h3 id="org11e2881">Technology-in-practice (DH)</h3>
 <p>
 DH:  technology-in-practice is software and data as used by scholarly communities of practice, within institutional and disciplinary concerns and constraints, in conversation with audiences.
 </p>
-</div>
-</div>
 
-<div id="outline-container-org83384c7" class="outline-3">
-<h3 id="org83384c7">Technology-in-practice</h3>
-<div class="outline-text-3" id="text-org83384c7">
+</section>
+<section id="slide-org96c30e3">
+<h3 id="org96c30e3">Technology-in-practice</h3>
 
 <figure>
 <img src="./images/tech-in-practice2.svg" alt="tech-in-practice2.svg">
 
 </figure>
-</div>
-</div>
 
-<div id="outline-container-orgca5d8f3" class="outline-3">
-<h3 id="orgca5d8f3">Users and Intended Audiences</h3>
-<div class="outline-text-3" id="text-orgca5d8f3">
+</section>
+<section id="slide-org76027b0">
+<h3 id="org76027b0">Users and Intended Audiences</h3>
 <blockquote>
 <p>
 [E]ven doorknobs have politics in that they may be round, requiring a human hand to turn them, or shaped as levers, such that a person with a prosthetic limb or an armload of groceries with one free elbow can still successfully use them. This is more than simply a matter of utility. Both designs are political in that they presume and construct different kinds of worlds, with the round doorknob presuming a world in which everyone’s bodies are the same, and in which hands with opposable thumbs and sufficient grip strength are always available
 </p>
 
 <p>
-(<a href="#citeproc_bib_item_2">Galey and Ruecker 2010</a>)
+<a class="org-ref-reference" href="#/slide-bibliography">[GaleyHowprototypeargues2010a]</a>
 </p>
 </blockquote>
-</div>
-</div>
-<div id="outline-container-orgaebc31a" class="outline-3">
-<h3 id="orgaebc31a">What groups of users/readers are invited in?  What groups of users/readers are shut out?</h3>
-<div class="outline-text-3" id="text-orgaebc31a">
+</section>
+<section id="slide-orgce8a14c">
+<h3 id="orgce8a14c">What groups of users/readers are invited in?  What groups of users/readers are shut out?</h3>
 <p>
 Consider:  
 </p>
-<ul class="org-ul">
+<form><ul>
 <li class="off"><input type='checkbox' /> expertise &amp; interest; scholars &amp; laypersons</li>
 <li class="off"><input type='checkbox' /> use of e.g. assistive technologies like screen readers, speech recognition, close captioning, etc.</li>
 <li class="off"><input type='checkbox' /> level of technical training (or lack of it)</li>
 <li class="off"><input type='checkbox' /> limited access to (powerful) computers</li>
 <li class="off"><input type='checkbox' /> limited internet bandwidth</li>
 <li class="off"><input type='checkbox' /> Tradeoffs &amp; compromises</li>
-</ul>
-</div>
-</div>
-<div id="outline-container-org2f3b22f" class="outline-3">
+
+</ul></form>
+</section>
+<section id="slide-user-experience-interfaces-display">
 <h3 id="user-experience-interfaces-display">User Experience, Interfaces, &amp; Display</h3>
-<div class="outline-text-3" id="text-user-experience-interfaces-display">
-<ul class="org-ul">
+<form><ul>
 <li>UX (user experience) &amp; usability testing</li>
 <li>User stories: descriptions, from a user&rsquo;s perspective, of a tool: who they are, what they want the tool to do, in what order&#x2026;</li>
-</ul>
-</div>
-</div>
-</nil>
 
-<nil id="outline-container-org61118c2" class="outline-2">
-<h2 id="org61118c2">Data</h2>
-<div class="outline-text-2" id="text-org61118c2">
+</ul></form>
+
+</section>
+</section>
+<section>
+<section id="slide-org2d2a5e8">
+<h2 id="org2d2a5e8">Data</h2>
+<div class="outline-text-2" id="text-org2d2a5e8">
 </div>
-<div id="outline-container-org4752b7c" class="outline-3">
+</section>
+<section id="slide-humanities-data-0">
 <h3 id="humanities-data-0">Uses of Humanities Data</h3>
-<div class="outline-text-3" id="text-humanities-data-0">
 
 <figure>
 <img src="./images/h-data-types-graphic.png" alt="h-data-types-graphic.png">
 
 </figure>
-</div>
-</div>
-<div id="outline-container-orge0a8f96" class="outline-3">
+</section>
+<section id="slide-humanities-data-0" class="twobytwo">
 <h3 id="humanities-data-0">Classifying Hum Data</h3>
-<div class="outline-text-3" id="text-humanities-data-0">
 <div class="slideblock">
 <table>
 
@@ -499,12 +525,13 @@ Consider:
 </tbody>
 </table>
 
-<ul class="org-ul">
-<li>“Big? Smart? Clean? Messy?&ldquo; ((<a href="#citeproc_bib_item_10">Schöch 2013</a>))</li>
-</ul>
+<form><ul>
+<li>“Big? Smart? Clean? Messy?&ldquo; (<a class="org-ref-reference" href="#/slide-bibliography">[SchochBigSmartClean2013]</a>)</li>
+
+</ul></form>
 
 </div>
-<div class="slideblock">
+<div class="fragment (appear) slideblock">
 
 <figure>
 <img src="./images/mandeville-cover-page.png" alt="mandeville-cover-page.png">
@@ -512,40 +539,39 @@ Consider:
 </figure>
 
 </div>
-<div class="slideblock">
-<div class="org-src-container">
-<pre class="src src-xml"><code>&lt;<span style="color: #b57614;">msDesc</span>&gt;</code>
-<code>  &lt;<span style="color: #b57614;">msIdentifier</span>&gt;</code>
-<code>    &lt;<span style="color: #b57614;">settlement</span>&gt;Oxford</code>
-<code>    &lt;/<span style="color: #b57614;">settlement</span>&gt;</code>
-<code>    &lt;<span style="color: #b57614;">repository</span>&gt;Bodleian Library</code>
-<code>    &lt;/<span style="color: #b57614;">repository</span>&gt;</code>
-<code>    &lt;<span style="color: #b57614;">idno</span>&gt;MS. Add. A. 61</code>
-<code>    &lt;/<span style="color: #b57614;">idno</span>&gt;</code>
-<code>  &lt;/<span style="color: #b57614;">msIdentifier</span>&gt;</code>
-<code>  &lt;<span style="color: #b57614;">msContents</span>&gt;</code>
-<code>    &lt;<span style="color: #b57614;">p</span>&gt;</code>
-<code>      &lt;<span style="color: #b57614;">quote</span>&gt;Hic incipit Bruitus Anglie,</code>
-<code>      &lt;/<span style="color: #b57614;">quote</span>&gt; the</code>
-<code>      &lt;<span style="color: #b57614;">title</span>&gt;De origine et gestis  Regum Angliae</code>
-<code>      &lt;/<span style="color: #b57614;">title</span>&gt; of Geoffrey of Monmouth (Galfridus Monumetensis): beg.</code>
-<code>      &lt;<span style="color: #b57614;">quote</span>&gt;Cum mecum multa <span style="color: #8f3f71;">&amp;</span><span style="color: #8f3f71;">amp</span><span style="color: #8f3f71;">;</span> de multis.</code>
-<code>      &lt;/<span style="color: #b57614;">quote</span>&gt; In Latin.</code>
-<code>    &lt;/<span style="color: #b57614;">p</span>&gt;</code>
-<code>  &lt;/<span style="color: #b57614;">msContents</span>&gt;</code>
-<code>  &lt;<span style="color: #b57614;">physDesc</span>&gt;</code>
-<code>    &lt;<span style="color: #b57614;">p</span>&gt;</code>
-<code>      &lt;<span style="color: #b57614;">material</span>&gt;Parchment</code>
-<code>      &lt;/<span style="color: #b57614;">material</span>&gt;: written in more than one hand: 7&#188; x 5&#8540; in., I + 55 leaves, in double columns: with a few coloured capitals.</code>
-<code>    &lt;/<span style="color: #b57614;">p</span>&gt;</code>
-<code>  &lt;/<span style="color: #b57614;">physDesc</span>&gt;</code>
-<code>&lt;/<span style="color: #b57614;">msDesc</span>&gt;</code>
-<code></code>
+<div class="fragment (appear) slideblock">
+<pre  class="example">
+&lt;msDesc&gt;
+  &lt;msIdentifier&gt;
+    &lt;settlement&gt;Oxford
+    &lt;/settlement&gt;
+    &lt;repository&gt;Bodleian Library
+    &lt;/repository&gt;
+    &lt;idno&gt;MS. Add. A. 61
+    &lt;/idno&gt;
+  &lt;/msIdentifier&gt;
+  &lt;msContents&gt;
+    &lt;p&gt;
+      &lt;quote&gt;Hic incipit Bruitus Anglie,
+      &lt;/quote&gt; the
+      &lt;title&gt;De origine et gestis  Regum Angliae
+      &lt;/title&gt; of Geoffrey of Monmouth (Galfridus Monumetensis): beg.
+      &lt;quote&gt;Cum mecum multa &amp;amp; de multis.
+      &lt;/quote&gt; In Latin.
+    &lt;/p&gt;
+  &lt;/msContents&gt;
+  &lt;physDesc&gt;
+    &lt;p&gt;
+      &lt;material&gt;Parchment
+      &lt;/material&gt;: written in more than one hand: 7¼ x 5⅜ in., I + 55 leaves, in double columns: with a few coloured capitals.
+    &lt;/p&gt;
+  &lt;/physDesc&gt;
+&lt;/msDesc&gt;
+
 </pre>
-</div>
 
 </div>
-<div class="slideblock">
+<div class="fragment (appear) slideblock">
 
 <figure>
 <img src="./images/dc-ss-list.png" alt="dc-ss-list.png">
@@ -553,58 +579,51 @@ Consider:
 </figure>
 
 </div>
-</div>
-</div>
 
 
-<div id="outline-container-orgd348226" class="outline-3">
-<h3 id="humanities-data-3"></h3>
-<div class="outline-text-3" id="text-humanities-data-3">
-</div>
-</div>
-
-<div id="outline-container-org1d0e207" class="outline-3">
+</section>
+<section id="slide-humanities-data-4">
 <h3 id="humanities-data-4">But then, Thinking <b>Hard</b> about Data</h3>
-<div class="outline-text-3" id="text-humanities-data-4">
 <div class="slideblock">
-<ul class="org-ul">
+<form><ul>
 <li>What “counts&ldquo; cannot necessarily be counted</li>
 <li>Data representation = interpretation:
-<ul class="org-ul">
+<form><ul>
 <li>The process of modelling and collecting our data is an interpretive process that is shaped by our choices re. what aspects of the data we model; by our research question, argument, perspective, discipline, social context, institutional context, tools available etc.</li>
-</ul></li>
-</ul>
+
+</ul></form></li>
+
+</ul></form>
 
 </div>
-<div class="slideblock">
+<div class="fragment (appear) slideblock">
 <blockquote>
 <p>
 “When you call something data, you imply that it exists in discrete, fungible units; that it is computationally tractable; that its meaningful qualities can be enumerated in a finite list; that someone else performing the same operations on the same data will come up with the same results. This is not how humanists think of the material they work with.&ldquo; 
 </p>
 
 <p>
-(<a href="#citeproc_bib_item_9">Posner, n.d.</a>)
+<a class="org-ref-reference" href="#/slide-bibliography">[MiriamPosnerHumanitiesDataNecessary]</a>
 </p>
 </blockquote>
 
 </div>
-<div class="slideblock">
-<ul class="org-ul">
+<div class="fragment (appear) slideblock">
+<form><ul>
 <li><b>Sciences</b> vs. <b>humanities</b>: “assumptions of <b>knowledge as observer-independent and certain</b>, rather than <b>observer co-dependent and interpretative</b>. [&#x2026;] To begin, the concept of <b>data as a given</b> has to be rethought through a humanistic lens and characterized as <b>capta, taken and constructed</b>.&ldquo;</li>
-</ul>
+
+</ul></form>
 
 <p>
-((<a href="#citeproc_bib_item_1">Drucker 2011</a>))
+(<a class="org-ref-reference" href="#/slide-bibliography">[DruckerHumanitiesApproachesGraphical2011]</a>)
 </p>
 
 </div>
-</div>
-</div>
 
 
-<div id="outline-container-org4132f1c" class="outline-3">
+</section>
+<section id="slide-humanities-data-posner">
 <h3 id="humanities-data-posner">Humanities Data: Posner</h3>
-<div class="outline-text-3" id="text-humanities-data-posner">
 <p>
 It would be possible to enumerate all of the filmic conventions that recall the conventions of melodrama. Is there a villain? Is there a heroine? Are good and evil depicted in stark, black-and-white terms? You could even build a dataset like this and use it to show how film changed over time.
 </p>
@@ -673,13 +692,11 @@ But, seriously, who cares? There’s just such a drastic difference between the 
 </p>
 
 <p>
-((<a href="#citeproc_bib_item_9">Posner, n.d.</a>))
+(<a class="org-ref-reference" href="#/slide-bibliography">[MiriamPosnerHumanitiesDataNecessary]</a>)
 </p>
-</div>
-</div>
-<div id="outline-container-orge1d3c0f" class="outline-3">
+</section>
+<section id="slide-humanities-data-10" class="twobytwo">
 <h3 id="humanities-data-10">Data Universes</h3>
-<div class="outline-text-3" id="text-humanities-data-10">
 <div class="slideblock">
 <blockquote>
 <p>
@@ -717,37 +734,38 @@ Sergiev Posad Museum of Toys, Russia, Public Domain, <a href="https://commons.wi
 </p>
 
 </div>
-</div>
-</div>
-</nil>
 
 
 
-<nil id="outline-container-orgbbfc4de" class="outline-2">
+</section>
+</section>
+<section>
+<section id="slide-data-models">
 <h2 id="data-models">Data Models</h2>
-<div class="outline-text-2" id="text-data-models">
-<ul class="org-ul">
+<form><ul>
 <li>Data model: abstract representation of things or processes</li>
 <li>Data model: choice of virtual entities, relationships, properties/aspects &rarr; “toy universe&ldquo;</li>
 <li>Data model: top row of your spreadsheet</li>
-</ul>
-</div>
-</nil>
 
-<nil id="outline-container-org2a1f6bf" class="outline-2">
+</ul></form>
+
+</section>
+</section>
+<section>
+<section id="slide-metadata">
 <h2 id="metadata">Metadata</h2>
-<div class="outline-text-2" id="text-metadata">
 <div class="slideblock">
-<ul class="org-ul">
+<form><ul>
 <li>Metadata is structured data describing data. Think Author, Title, Date, Subject in your online library catalogue</li>
 <li>Standard metadata schemas include Dublin Core, MARC, and MODS (each of these schemas has a different set of information it collects).</li>
-</ul>
+
+</ul></form>
 
 </div>
 <div class="slideblock">
 <p>
 <img src="./images/hokusai-peonies-dc.png" alt="hokusai-peonies-dc.png">
-(<a href="#citeproc_bib_item_5">Hokusai, n.d.</a>)
+<a class="org-ref-reference" href="#/slide-bibliography">[KatsushiakaHokusaiPeoniesButterfly]</a>
 </p>
 
 <p>
@@ -760,63 +778,55 @@ Individual item metadata includes title, creator, description, source, rights, e
 <p>
 @@html&lt;/div&gt;@@
 </p>
-<div class="notes">
+<aside class="notes">
 <p>
 Each record of an archive is described by metadata: structured data about data. For example, think about your library&rsquo;s online catalogue: it contains the records of books, with fields like Author, Title, Publisher, Editor, Date. If you use standard metadata schemas, like Dublin Core, MARC, or MODS, your data will be discoverable and interoperable with aggregators and library catalogues.
 </p>
 
-</div>
-</div>
-<div id="outline-container-org7ea7c87" class="outline-3">
+</aside>
+</section>
+<section id="slide-section-4">
 <h3 id="section-4">Oops! Custom Metadata</h3>
-<div class="outline-text-3" id="text-section-4">
 <p>
 <img src="./images/dh-custom-md.png" alt="dh-custom-md.png">
-(Custom metadata schema: Anglo-Saxon Rural Settlements: Eynsham, from (<a href="#citeproc_bib_item_6">McCormick et al., n.d.</a>))
+(Custom metadata schema: Anglo-Saxon Rural Settlements: Eynsham, from <a class="org-ref-reference" href="#/slide-bibliography">[McCormickMichaelDigitalAtlasRoman]</a>)
 </p>
-</div>
-</div>
 
-<div id="outline-container-orge1522df" class="outline-3">
+</section>
+<section id="slide-metadata-standards">
 <h3 id="metadata-standards">Metadata Standards</h3>
-<div class="outline-text-3" id="text-metadata-standards">
 <p>
 <img src="https://imgs.xkcd.com/comics/standards.png" alt="standards.png">
-((<a href="#citeproc_bib_item_7">Munroe, n.d.</a>))
+(<a class="org-ref-reference" href="#/slide-bibliography">[MunroeRandallStandards]</a>)
 </p>
-</div>
-</div>
-<div id="outline-container-org0ac4aed" class="outline-3">
-<h3 id="org0ac4aed">Vocabulary and Ontology</h3>
-<div class="outline-text-3" id="text-org0ac4aed">
-<ul class="org-ul">
+</section>
+<section id="slide-org3df313b">
+<h3 id="org3df313b">Vocabulary and Ontology</h3>
+<form><ul>
 <li><b>Controlled vocabulary</b>: set of permitted literal values to describea given entity (e.g. chairs: desk chairs, rolling chairs, step stools, kitchen table chairs); may include categorization</li>
 <li><b>Ontology</b>: making explicit the relationships between values in controlled vocabularies</li>
-</ul>
-</div>
-</div>
 
-<div id="outline-container-orgb379b71" class="outline-3">
+</ul></form>
+
+</section>
+<section id="slide-section-5">
 <h3 id="section-5">Vocabulary and Ontology</h3>
-<div class="outline-text-3" id="text-section-5">
 
 <figure>
 <img src="./images/chairs.svg" alt="chairs.svg">
 
 </figure>
-</div>
-</div>
 
-<div id="outline-container-org095ba6b" class="outline-3">
+</section>
+<section id="slide-controlled-vocabulary">
 <h3 id="controlled-vocabulary">Controlled Vocabulary</h3>
-<div class="outline-text-3" id="text-controlled-vocabulary">
 <blockquote>
 <p>
 “A controlled vocabulary is an organized arrangement of words and phrases used to catalog content and/or to retrieve content through browsing or searching. It typically includes preferred and variant terms and has a defined scope or describes a specific domain. [&#x2026;] While capturing the richness of variant terms, controlled vocabularies also promote consistency in preferred terms and the assignment of the same terms to similar content.&ldquo;
 </p>
 
 <p>
-(<a href="#citeproc_bib_item_4">Harpring 2010</a>) 
+<a class="org-ref-reference" href="#/slide-bibliography">[HarpringIntroductionControlledVocabularies2010]</a> 
 </p>
 </blockquote>
 
@@ -824,69 +834,65 @@ Each record of an archive is described by metadata: structured data about data. 
 <img src="./images/black-death.png" alt="black-death.png">
 
 </figure>
-</div>
-</div>
-<div id="outline-container-org6c9bd76" class="outline-3">
+</section>
+<section id="slide-authority-control">
 <h3 id="authority-control">Authority Control</h3>
-<div class="outline-text-3" id="text-authority-control">
-<ul class="org-ul">
+<form><ul>
 <li>The practice of systematizing controlled vocabularies so descriptors of entities are unique, non-overlapping, and consistently used&#x2013;e.g. having an accepted set of “correct&ldquo; subject headings</li>
-</ul>
-</div>
-</div>
 
-<div id="outline-container-orgcd56690" class="outline-3">
+</ul></form>
+
+</section>
+<section id="slide-james-joyce">
 <h3 id="james-joyce">James Joyce</h3>
-<div class="outline-text-3" id="text-james-joyce">
 
 <figure>
 <img src="./images/joyce-vocab.png" alt="joyce-vocab.png">
 
 </figure>
-</div>
-</div>
-<div id="outline-container-orgc4b1db5" class="outline-3">
+</section>
+<section id="slide-gazetteers-place-name-dictionaries-maps-atlases-uris">
 <h3 id="gazetteers-place-name-dictionaries-maps-atlases-uris">Gazetteers:</h3>
-<div class="outline-text-3" id="text-gazetteers-place-name-dictionaries-maps-atlases-uris">
-<ul class="org-ul">
+<form><ul>
 <li>place name dictionaries + maps + atlases + URIs (<a href="https://pleiades.stoa.org/places/570491">https://pleiades.stoa.org/places/570491</a>)</li>
 <li>for time: (<a href="https://perio.do/en/">https://perio.do/en/</a>)</li>
-</ul>
-</div>
-</div>
-</nil>
 
-<nil id="outline-container-orga7d71b9" class="outline-2">
+</ul></form>
+
+</section>
+</section>
+<section>
+<section id="slide-research-data-life-cycle" class="twoc">
 <h2 id="research-data-life-cycle">Research Data: Life Cycle</h2>
-<div class="outline-text-2" id="text-research-data-life-cycle">
 <div class="slideblock">
 
 <figure>
 <img src="./images/dh-lc2.png" alt="dh-lc2.png">
 
 </figure>
-<ul class="org-ul">
+<form><ul>
 <li>Go back and pick up what you missed</li>
 <li>Revise data model</li>
-</ul>
+
+</ul></form>
 
 </div>
 <div class="slideblock">
-<ul class="org-ul">
-<li>“Data is always a partial representation of the object of study&ldquo; ((<a href="#citeproc_bib_item_10">Schöch 2013</a>))</li>
+<form><ul>
+<li>“Data is always a partial representation of the object of study&ldquo; (<a class="org-ref-reference" href="#/slide-bibliography">[SchochBigSmartClean2013]</a>)</li>
 <li>Failure-, incompleteness-, and pessimism-based approaches to data collection, modelling, analysis, and preservation</li>
-</ul>
+
+</ul></form>
 
 </div>
-</div>
 
-<div id="outline-container-orgb680a9f" class="outline-3">
+</section>
+<section id="slide-preservation-ready-data">
 <h3 id="preservation-ready-data">Preservation-Ready Data</h3>
-<div class="outline-text-3" id="text-preservation-ready-data">
 <p>
 Data: accessible, usable, readable, preservable
 </p>
-<ul class="org-ul">
+<form><ul>
 <li>Human-readable and human-editable</li>
 <li>Separable from technical platforms</li>
 <li>Described via metadata standards used in your discipline</li>
@@ -894,54 +900,137 @@ Data: accessible, usable, readable, preservable
 <li>Housed in non-proprietary, open source standards and technologies</li>
 <li>Saved in, or reducible to, simple formats: .txt, TEI P5, .csv, JSON, .pdf, .jpg, tiff</li>
 <li>Embedded in your disciplinary community</li>
-</ul>
-</div>
-</div>
-</nil>
 
-<nil id="outline-container-org5e46ae6" class="outline-2">
-<h2 id="org5e46ae6">DH pipelines</h2>
-<div class="outline-text-2" id="text-org5e46ae6">
+</ul></form>
+
+</section>
+</section>
+<section>
+<section id="slide-orgbf1544c">
+<h2 id="orgbf1544c">DH pipelines</h2>
 
 <figure>
 <img src="./images/dh-arrow.svg" alt="dh-arrow.svg">
 
 </figure>
-</div>
-</nil>
 
-<nil id="outline-container-org6ab10b0" class="outline-2">
-<h2 id="org6ab10b0">Reflection 1: DH Project Profile</h2>
-<div class="outline-text-2" id="text-org6ab10b0">
+</section>
+</section>
+<section>
+<section id="slide-org76b6bc1">
+<h2 id="org76b6bc1">Reflection 1: DH Project Profile</h2>
 <p>
 <a href="https://q.utoronto.ca/courses/127426/assignments/221044">Quercus Link</a>
 </p>
-</div>
-</nil>
 
-<nil id="outline-container-org22e9cb9" class="outline-2">
-<h2 id="org22e9cb9">Bibliography</h2>
-<div class="outline-text-2" id="text-org22e9cb9">
-<style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><h2 class='citeproc-org-bib-h2'>Bibliography</h2>
-<div class="csl-bib-body">
-  <div class="csl-entry"><a name="citeproc_bib_item_1"></a>Drucker, Johanna. 2011. “Humanities Approaches to Graphical Display.” <i>Digital Humanities Quarterly</i> 005 (1).</div>
-  <div class="csl-entry"><a name="citeproc_bib_item_2"></a>Galey, Alan, and Stan Ruecker. 2010. “How a Prototype Argues.” <i>Literary and Linguistic Computing</i> 25 (4):405–24.</div>
-  <div class="csl-entry"><a name="citeproc_bib_item_3"></a>Gladwell, Malcolm. 2002. “The Social Life of Paper: Looking for Method in the Mess.” <i>The New Yorker</i>.</div>
-  <div class="csl-entry"><a name="citeproc_bib_item_4"></a>Harpring, Patricia. 2010. <i>Introduction to Controlled Vocabularies: Terminology for Art, Architecture, and Other Cultural Works</i>. Getty Publications.</div>
-  <div class="csl-entry"><a name="citeproc_bib_item_5"></a>Hokusai, Katsushiaka. n.d. “Peonies and Butterfly.” <i>Europeana Collections</i>.</div>
-  <div class="csl-entry"><a name="citeproc_bib_item_6"></a>McCormick, Michael, Eurydice Georganteli, Leland Grigoli, and Alexander More. n.d. “The Digital Atlas of Roman and Medieval Civilizations.”</div>
-  <div class="csl-entry"><a name="citeproc_bib_item_7"></a>Munroe, Randall. n.d. “Standards.” <i>Xkcd</i>.</div>
-  <div class="csl-entry"><a name="citeproc_bib_item_8"></a>Orlikowski, Wanda J. 2000. “Using Technology and Constituting Structures: A Practice Lens for Studying Technology in Organizations.” <i>Organization Science</i> 11 (4):404–28.</div>
-  <div class="csl-entry"><a name="citeproc_bib_item_9"></a>Posner, Miriam. n.d. “Humanities Data: A Necessary Contradiction Textendash Miriam Posner’s Blog.”</div>
-  <div class="csl-entry"><a name="citeproc_bib_item_10"></a>Schöch, Christof. 2013. “Big? Smart? Clean? Messy? Data in the Humanities.” <i>Journal of Digital Humanities</i>.</div>
-</div>
-</div>
-</nil>
-</article>
-<section id="postamble" class="status">
-<p class="author">Author: Matt Price</p>
-<p class="date">Created: 2019-09-13 Fri 15:05</p>
-<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </section>
+</section>
+<section>
+<section id="slide-orge780aec">
+<h2 id="orge780aec">Bibliography</h2>
+<ul class='org-ref-bib'><li><a id="DruckerHumanitiesApproachesGraphical2011">[DruckerHumanitiesApproachesGraphical2011]</a> <a name="DruckerHumanitiesApproachesGraphical2011"></a>Drucker, Humanities Approaches to Graphical Display, <i>Digital Humanities Quarterly</i>, <b>005(1)</b>, (2011).</li>
+<li><a id="GaleyHowprototypeargues2010a">[GaleyHowprototypeargues2010a]</a> <a name="GaleyHowprototypeargues2010a"></a>Galey & Ruecker, How a prototype argues, <i>Literary and Linguistic Computing</i>, <b>25(4)</b>, 405-424 (2010). <a href="http://dx.doi.org/10.1093/llc/fqq021">doi</a>.</li>
+<li><a id="Gladwellsociallifepaper2002">[Gladwellsociallifepaper2002]</a> <a name="Gladwellsociallifepaper2002"></a>@miscGladwellsociallifepaper2002,
+  title = The social life of paper: looking for method in the mess,
+  shorttitle = The social life of paper,
+  author = Gladwell, Malcolm,
+  year = 2002,
+  month = mar,
+  file = /home/matt/Zotero/storage/BNH58GA9/retrieve.html,
+  howpublished = http://link.galegroup.com/apps/doc/A84156646/LitRC?sid=googlescholar,
+  journal = The New Yorker,
+  language = English
+</li>
+<li><a id="HarpringIntroductionControlledVocabularies2010">[HarpringIntroductionControlledVocabularies2010]</a> <a name="HarpringIntroductionControlledVocabularies2010"></a>Harpring, Introduction to Controlled Vocabularies: Terminology for Art, Architecture, and Other Cultural Works, Getty Publications (2010).</li>
+<li><a id="KatsushiakaHokusaiPeoniesButterfly">[KatsushiakaHokusaiPeoniesButterfly]</a> <a name="KatsushiakaHokusaiPeoniesButterfly"></a>@miscKatsushiakaHokusaiPeoniesButterfly,
+  title = Peonies and Butterfly,
+  author = Katsushiaka Hokusai,
+  abstract = Hokusai presents a fleeting moment from nature. The elegant blooms of the peonies sway in the breeze, and a colourful butterfly flutters down over them. The gentle breeze that captures the blossomi...,
+  file = /home/matt/Zotero/storage/8H8XXP6E/artifact_aspx_id_1059.html,
+  howpublished = https://www.europeana.eu/portal/record/08533/artifact_aspx_id_1059.html,
+  journal = Europeana Collections,
+  language = en
+</li>
+<li><a id="McCormickMichaelDigitalAtlasRoman">[McCormickMichaelDigitalAtlasRoman]</a> <a name="McCormickMichaelDigitalAtlasRoman"></a>@miscMcCormickMichaelDigitalAtlasRoman,
+  title = The Digital Atlas of Roman and Medieval Civilizations,
+  author = McCormick, Michael and Eurydice Georganteli and Leland Grigoli and Alexander More,
+  file = /home/matt/Zotero/storage/NG4PDP22/darmc.harvard.edu.html,
+  howpublished = https://darmc.harvard.edu/home,
+  language = en
+</li>
+<li><a id="MiriamPosnerHumanitiesDataNecessary">[MiriamPosnerHumanitiesDataNecessary]</a> <a name="MiriamPosnerHumanitiesDataNecessary"></a>@miscMiriamPosnerHumanitiesDataNecessary,
+  title = Humanities Data: A Necessary Contradiction – Miriam Posner's Blog,
+  shorttitle = Humanities Data,
+  author = Miriam Posner,
+  file = /home/matt/Zotero/storage/AZP26S6N/humanities-data-a-necessary-contradiction.html,
+  language = en-US
+</li>
+<li><a id="MunroeRandallStandards">[MunroeRandallStandards]</a> <a name="MunroeRandallStandards"></a>@miscMunroeRandallStandards,
+  title = Standards,
+  author = Munroe, Randall,
+  file = /home/matt/Zotero/storage/UJNESRVB/927.html,
+  howpublished = https://xkcd.com/927/,
+  journal = xkcd
+</li>
+<li><a id="OrlikowskiUsingTechnologyConstituting2000">[OrlikowskiUsingTechnologyConstituting2000]</a> <a name="OrlikowskiUsingTechnologyConstituting2000"></a>Orlikowski, Using Technology and Constituting Structures: A Practice Lens for Studying Technology in Organizations, <i>Organization Science</i>, <b>11(4)</b>, 404-428 (2000).</li>
+<li><a id="SchochBigSmartClean2013">[SchochBigSmartClean2013]</a> <a name="SchochBigSmartClean2013"></a>@miscSchochBigSmartClean2013,
+  title = Big? Smart? Clean? Messy? Data in the Humanities,
+  shorttitle = Big?,
+  author = Schöch, Christof,
+  year = 2013,
+  month = nov,
+  file = /home/matt/Zotero/storage/4UC9BXMF/big-smart-clean-messy-data-in-the-humanities.html,
+  howpublished = http://journalofdigitalhumanities.org/2-3/big-smart-clean-messy-data-in-the-humanities/,
+  journal = Journal of Digital Humanities,
+  keywords = Features,Vol. 2; No. 3 Summer 2013,
+  language = English
+</li>
+</ul>
+</section>
+</section>
+</div>
+</div>
+<script src="file:///home/matt/src/reveal.js/lib/js/head.min.js"></script>
+<script src="file:///home/matt/src/reveal.js/js/reveal.js"></script>
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: true,
+center: false,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+mouseWheel: false,
+fragmentInURL: false,
+hashOneBasedIndex: false,
+pdfSeparateFragments: true,
+
+overview: true,
+width: "100%",
+height: "100%",
+margin: 0.10,
+minScale: 1.00,
+maxScale: 1.00,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'convex', // see README of reveal.js for options
+transitionSpeed: 'default',
+
+// Optional libraries used to extend reveal.js
+dependencies: [
+{src: 'file:///home/matt/src/reveal.js/plugin/klipse_reveal.js'},
+ { src: 'file:///home/matt/src/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: 'file:///home/matt/src/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'file:///home/matt/src/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'file:///home/matt/src/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+ { src: 'file:///home/matt/src/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'file:///home/matt/src/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+
+});
+</script>
 </body>
 </html>

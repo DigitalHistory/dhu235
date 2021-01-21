@@ -1,3 +1,6 @@
 [submodule "website/themes/docdock"]
 	path = website/themes/docdock
 	url = https://github.com/vjeantet/hugo-theme-docdock.git
+[submodule "Exercises/Tableau-Covid/Covid19Canada"]
+	path = Exercises/Tableau-Covid/Covid19Canada
+	url = git@github.com:ishaberry/Covid19Canada.git

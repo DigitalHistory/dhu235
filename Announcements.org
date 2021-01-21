@@ -1,27 +1,92 @@
 #+MACRO: ts (eval(mwp-get-ts+7  'org-mwp-classtimes-calibrate 2))
 #+STARTUP: customtime
-#+ORG_LMS_COURSEID: 127426
+#+SETUPFILE: ./setup.org
 #+ORG_LMS_SECTION: announcement
 
 * Welcome! And Website...
 :PROPERTIES:
-:ORG_LMS_ANNOUNCEMENT_ID: 299852
-:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/99251/discussion_topics/299852
-:ORG_LMS_POSTED_AT: 2019-05-05T17:56:42Z
+:ORG_LMS_ANNOUNCEMENT_ID: 694692
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/157875/discussion_topics/694692
+:ORG_LMS_POSTED_AT: 2020-07-07T06:55:15Z
 :END:
 
-Welcome, everyone, to WDW235! I'm looking forward to meeting you all very soon. 
+Welcome, everyone, to WDW235! I'm looking forward to meeting you all very soon. [[https://q.utoronto.ca/courses/157875][The Quercus webstie is now live]], and we will be meeting synchronously at 2pm [[https://q.utoronto.ca/courses/157875/external_tools/246][Using BB Collaborate]]. If you haven't used it before... it's not quite as good as Zoom! But it's what we've got for now.  Please turn your video *off* when you connect to the classroom, as otherwise bandwidth will be a real problem.  Since I won't be able to see your faces, I'd really appreciate it if you could *add a profile picture* so that I can tell you're ahuman being. The instructions for doing so [[https://help.blackboard.com/Collaborate/Ultra/Participant/Get_Started#add-a-profile-picture_OTP-2][are here]].
 
-I'm very much looking forward to this class, which I'll be teaching for the second time. I normally use lower-level tools than we'll be using in this course (that is, I tend to program in a text-based environment, rather than using these graphic user interfaces), so I'm looking forward to exploring some of these amazing DH projects with you. 
+I'll also be asking you to [[https://join.slack.com/t/uoftdh/shared_invite/zt-fq2pcjk4-Y3Vvyu6~tNDjYbfH~T6mJA][join Slack]] and engage in conversation there.  This is my first time teaching a sizeable lecture class in this format, so there will be a bit of learning for all of us.  I do think Slack will help us with that.  [[https://slack.com/intl/en-ca/downloads][Be sure to download the desktop app]], which is somewhat easier to usee than the browser-based version.  
 
-Quercus has been an immense improvement over Blackboard but for this class there are still a few missing pieces.  As a result, I am (for now at least) maintaining a *separate website* for HIS393. It can be found [[https://digitalhistory.github.io/wdw235/][on Github]], which incidentally is also a piece of infrastructure we will discuss in the course. 
+I'm very much looking forward to this class, which I'll be teaching for the third time. I normally use lower-level tools than we'll be using in this course (that is, I tend to program in a text-based environment, rather than using these graphic user interfaces), so I'm looking forward to exploring some of these amazing DH projects with you. 
 
 There will be *many* more details forthcoming, both in class and on the website.  
 
-See you in class!
+See you in class in a few hours!
  
-* See you Tonight!
-Hello everyone, I'm looking forward to meeting you all tonight.  
+* Please sign up for Slack!
+:PROPERTIES:
+:ORG_LMS_ANNOUNCEMENT_ID: 695104
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/157875/discussion_topics/695104
+:ORG_LMS_POSTED_AT: 2020-07-07T16:43:35Z
+:END:
+
+We'll be using it in class today.  [[https://join.slack.com/t/uoftdh/shared_invite/zt-fq2pcjk4-Y3Vvyu6~tNDjYbfH~T6mJA][Here is the link again]]. About 10 of you have signed up so far but the more who have done it before class, the better.  Thanks! 
+
+* Technical difficulties!
+:PROPERTIES:
+:ORG_LMS_ANNOUNCEMENT_ID: 697298
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/157875/discussion_topics/697298
+:ORG_LMS_POSTED_AT: 2020-07-09T15:27:17Z
+:END:
+
+I'm having some technical difficulties with video recordings so unfortunately you will have to sit through lecture live today. My apologies!
+
+* Omeka @ U of T
+
+We're going to be practicing with the Omeka framework today.  It is a little bit difficult to navigate so it might be useful for you to at least login before class and take a look around. You will be *sharing* a login with others, which I'm afraid can be a bit frustrating, but as I don't have admin access to the site this is the best I can do for now (I may make some changes later if I'm able to). Login data is also a bit out of date but you should be able to figure it out :-) 
+
+- login here: https://spatial-humanities.library.utoronto.ca/admin/users/login
+- Username: WDW235-2019-evening
+- Password: 2019-evening
+
+Thanks!  
+
+* Data visualization today -- Downlad Tableau Public!
+:PROPERTIES:
+:ORG_LMS_ANNOUNCEMENT_ID: 718435
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/157875/discussion_topics/718435
+:ORG_LMS_POSTED_AT: 2020-07-30T15:25:51Z
+:END:
+
+We are entering a part of the class in which we will really be missing the special classroom we normally have! For today's class, we'll be using the public version of the Tableau Desktop software.  We'll walk through some basic visualization examples, but it will definitely be slower than it normally would and you will have to work more independently than otherwise would be the case.
+
+Next class we will take these skills and apply them to some slightly more interesting data
+
+To prepare for this afternoons's class,
+
+- [[https://public.tableau.com/en-us/s/][Download the Tableau Public software]] You'll need a mac of windows computer, or a windows virtual machine on linux (I had a bit of trouble with my license key so I will be coming to you live from windows land)
+- [[https://maps.library.utoronto.ca/workshops/IntroDataViz/index.php][Download the workshop example data files]] and unzip them. Be sure you know how to find them again (probably in you ~Downloads~ folder)
+- [[https://public.tableau.com/][Create an account at Tableau by clicking on the "Sign Up" Button here]]
+
+Though proprietary and a bit evil, Tableau is an immensely powerful tool and totally worth getting to know.  You may find it comes in handy in other contexts. 
+
+* Data Cleaning Today -- Sorry Please Download these files!
+:PROPERTIES:
+:ORG_LMS_ANNOUNCEMENT_ID: 725397
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/157875/discussion_topics/725397
+:ORG_LMS_POSTED_AT: 2020-08-06T17:40:52Z
+:END:
+Oops, forgot to tell you about some stuff you need to download for today's class!
+- [[https://openrefine.org/download.html][Please download and install the OpenRefine Software!]] It should be compatible with everyone's laptops, unlike Tableau!
+- [[https://maps.library.utoronto.ca/workshops/OpenRefine/][Please go to the Maps & Data Library website and download "WorkshopFiles.zip" fro mthis address]]
+
+  Also, there may be an issue with video in today's class... which will be somewhat difficult if it turns out to be ture! If so, we'll muddle through as best we can. 
+
+* Slides for Lecture 2
+:PROPERTIES:
+:ORG_LMS_ANNOUNCEMENT_ID: 697686
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/157875/discussion_topics/697686
+:ORG_LMS_POSTED_AT: 2020-07-09T18:06:44Z
+:END:
+
+They're [[https://q.utoronto.ca/courses/157875/files/folder/Lectures?preview=7954856][on Quercus (just remembered to upload now)]]
 
 * Assignment 1
 :PROPERTIES:
@@ -30,6 +95,59 @@ Hello everyone, I'm looking forward to meeting you all tonight.
 :ORG_LMS_POSTED_AT: 2019-09-12T14:18:57Z
 :END:
 Just a quick note that [[https://q.utoronto.ca/courses/127426/assignments/221044][the first assignment is now online]].  Please take a look before class today, and esp. look for any errors or confusion so I can correct them! 
+
+* Today's Lecture Notes
+:PROPERTIES:
+:ORG_LMS_ANNOUNCEMENT_ID: 695268
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/157875/discussion_topics/695268
+:ORG_LMS_POSTED_AT: 2020-07-07T17:55:50Z
+:END:
+Had some trouble getting lecture notes online in their natural environment but [[https://q.utoronto.ca/courses/157875/files/folder/Lectures][you can find a PDF here in Quercus for now]]. You will likely want to follow along -- we will probably skip some stuff today in favour of an async presentation in the next 36 hours. 
+
+* Argh! Once again, lecture will be live today. Code editors!
+:PROPERTIES:
+:ORG_LMS_ANNOUNCEMENT_ID: 702103
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/157875/discussion_topics/702103
+:ORG_LMS_POSTED_AT: 2020-07-14T15:25:37Z
+:END:
+Sorry for the repeated technical issues (irony is fully appreciated). We'll have to do class live today.  Before class starts, *please* take time to install a text editor and open it up/explore. As I mention elsewhere, [[https://code.visualstudio.com/download][I strongly recommend Visual Studio Code]] and a [[https://marketplace.visualstudio.com/search?term=live%20preview&target=VSCode&category=All%20categories&sortBy=Relevance][Live Preview Extension]] (if you like, you can also install the [[https://marketplace.visualstudio.com/items?itemName=digital-history.history-hack-pack][History Hack Pack]], which I maintain for use in HIS393; but it has a lot of stuff you won't need for this assignment or for this class).
+
+Getting VS Code installed is probably the best use you can make of your time.  You might also want to [[https://github.com/DigitalHistory/poem-json-project/releases/][download and unzip the files for Assignment 2]]. 
+
+* In-Class Exercise
+:PROPERTIES:
+:ORG_LMS_ANNOUNCEMENT_ID: 702137
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/157875/discussion_topics/702137
+:ORG_LMS_POSTED_AT: 2020-07-14T15:58:13Z
+:END:
+Today we'll be walking through the assignment with *a different poem* as an example. Please download [[https://q.utoronto.ca/courses/157875/files/folder/Handouts][al-kolera.zip from the "Handouts" folder in the Quercus files]]. Thanks!
+
+* Lectures online!
+:PROPERTIES:
+:ORG_LMS_ANNOUNCEMENT_ID: 705435
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/157875/discussion_topics/705435
+:ORG_LMS_POSTED_AT: 2020-07-16T16:58:52Z
+:END:
+Shoot! I forgot to announce this except in slack -- lectures are online here:
+https://www.youtube.com/playlist?list=PLLY-W2GKX2ZKWlJa7auAkC__nAP2GVrQU
+
+
+Why don't we start class a little late, say 2:30, so you have time to watch these first.
+
+* Readings for Tomorrow!
+:PROPERTIES:
+:ORG_LMS_ANNOUNCEMENT_ID: 709653
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/157875/discussion_topics/709653
+:ORG_LMS_POSTED_AT: 2020-07-21T11:16:17Z
+:END:
+Hello class,
+
+I have just realized that the syllabus is missing the readings for tomorrow. My apologies!
+
+Please read Edgar Allen Poe's short story [[https://www.gutenberg.org/files/1064/1064-h/1064-h.htm][The Masque of the Red Death]] and also please make at least an attempt at the more difficult [[https://q.utoronto.ca/courses/157875/files/folder/Readings][The Meaning of Contagion]] by Margaret Pelling (link is to a folder in Quercus).  Lectures to follow around noon though I'll also make some more specific announcements about the plan for the day.
+
+See you soon!
+
 
 * Lecture Notes; Assignment; Readings for Wednesday
 :PROPERTIES:

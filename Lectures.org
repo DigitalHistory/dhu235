@@ -4,6 +4,7 @@
 #+REVEAL_SINGLE_FILE: t
 #+REVEAL_ROOT: file:///home/matt/src/reveal.js
 #+ORG_LMS_SECTION: lecture
+# #+OPTIONS: reveal_single_file:t
 
 * Test code export
 #+BEGIN_SRC xml
@@ -37,29 +38,65 @@
 #+END_SRC
 
 
+#+begin_src emacs-lisp
+(setq org-huveal-root "../../vendor/reveal")
+#+end_src
 
-* {{{n}}}  Digital Humanities --  An Introduction ({{{ts}}})
+#+RESULTS:
+: ../../vendor/reveal
+
+* Lecture test -- dull
+:PROPERTIES:
+:EXPORT_FILE_NAME: test-only
+:END:
+** testing this
+hello
+* 1  Digital Humanities --  An Introduction
 :PROPERTIES:
 :EXPORT_FILE_NAME: 01-intro
 :CUSTOM_ID: 01-dh--an-introduction-a964
+:reveal_single_file: nil
 :END:
+
 ** Today
 :PROPERTIES:
 :CUSTOM_ID: today-6959
 :END:
  - Intro       
- - A partial history 
- - Course syllabus 
  - What is DH? 
- - Project examples
- - A Little Game
-*** Introductions
+ - DH: A partial history 
+ - Course syllabus 
+ - Project examples (will move mostly to async)
+ - A Little Game, a little thinking
+   
+*** Patience and Attention!
+- Online classes move *slowly*! Async lectures will help a little, but please be patient
+- Even so, *please pay attention* or this will be much harder!
+
+*** Sign up for Slack!
+I'd like to keep all chat *in Slack* during class.  So please click on this link in your copy of the lecture notes:
+
+*** Chat & Hand-raising
+- please feel free to chat in the ~#meeting-1~ channel in slack
+- I likely can't respond to everything
+- if you need to get my attention, signal with the BB Collaborate *hand raising* action
+- Please please please please *add profile photos* to your BB Collaborate personas so I know you are not automata
+
+** Introductions
 
 | Me  | Historian of Science, Emphasis on "Engaged Teaching" |
 | You | Let's discuss                                        |
 
+- will test out "breakout rooms"
+- take 10 minutes to find out this info from others in the room:
+  - name, majors, is this person a DH minor?
+  - why interested in class?
+  - what skills are they hoping to develop here/elsewhere/in future?
+  - one interesting fact the person is willing to share *with everyone in the class* (nothing private)
+- Everyone in the group should write a message in Slack *introducing one other person*.
 
-**** DH: at the fluctuating intersections of the humanities with computing
+  
+** DH: at the fluctuating intersections of the humanities with computing
    :PROPERTIES:
    :CUSTOM_ID: dh-at-the-fluctuating-intersections-of-the-humanities-with-computing
    :END:
@@ -72,30 +109,12 @@
 - not a static definition!
 - far enough away from the interface, it is just "humanities" or "computer science"
 #+end_notes
-** EX: The Book of John Mandeville.
-:PROPERTIES:
-:CUSTOM_ID: british-library-ms.-harley-3954.-the-book-of-john-mandeville.
-:reveal_extra_attr: class="twoc"
-:END:
 
-#+begin_slideblock
-2007 Hand-drawn Sketch 
-[[./images/a-bolintineanu-sketch.jpg]]
-#+end_slideblock
-#+ATTR_REVEAL: :frag (appear) 
-#+begin_slideblock
-2019 full-colour online image
-https://www.bl.uk/britishlibrary/~/media/bl/global/dl%20shakespeare/shakespeare%20collection%20items/manuscript-of-mandevilles-travels-harley_3954_f42r.jpg
-#+end_slideblock
-
-
-
-#+begin_notes
-Digital archives provide access to material that may be housed far from a scholar's physical location. Ten years ago, I had to travel to the British Library to work with their medieval manuscripts. (Incidentally, I still have the sketches I made of their illumination. In pencil, because you can't take pens into the reading room.) I got to handle a fourteenth-century manuscript, its parchment pages as supple, its illuminations as vivid as the day the book was scribed. I sat in the special collections library for seven hours. I looked at the illuminations; I handled the parchment, noting the differences between hair side and flesh side (parchment is made of animal skin, so you can see which side faced the outside and which faced the inside of the animal). For days, my hands smelled like goat.
-
-Now, I am able to access the images in the manuscript online---anytime, from my office at UofT. I can compare the images to other manuscripts of the Book of John Mandeville. I can study them, annotate them, put them in Powerpoints, and reference them robustly in scholarly arguments.
-#+end_notes
-
+** DH Minor
+- exposure to established tools (but these change!)
+- awareness of *what the humanities are*
+- thoughtful attention to *form*, *content*, and their relationship.
+- willingness to explore technical skills
 
 ** Humanities' Data
 :PROPERTIES:
@@ -219,41 +238,42 @@ https://melissaterras.files.wordpress.com/2013/10/728a0-0028.jpg
 
 #+end_notes
 
-** Digital Editions, Archives, Narratives
+** Project Examples
+*** Digital Editions, Archives, Narratives
 :PROPERTIES:
 :CUSTOM_ID: digital-editions-archives-narratives
 :END:
 
-*** [[https://www.folger.edu/folger-digital-texts][Folger: Shakespeare Library]]
+**** [[https://www.folger.edu/folger-digital-texts][Folger: Shakespeare Library]]
 :PROPERTIES:
 :CUSTOM_ID: folger-shakespeare-library
 :END:
 [[./images/folger.png]]
 
-*** [[http://shelleygodwinarchive.org/][Shelley-Godwin Archive]]
+**** [[http://shelleygodwinarchive.org/][Shelley-Godwin Archive]]
 :PROPERTIES:
 :CUSTOM_ID: shelley-godwin-archive
 :END:
 [[./images/shelley-g.png]]
 
-*** [[http://www.archimedespalimpsest.org/][The Archimedes Palimpsest]]: Multispectral Imaging
+**** [[http://www.archimedespalimpsest.org/][The Archimedes Palimpsest]]: Multispectral Imaging
 :PROPERTIES:
 :CUSTOM_ID: the-archimedes-palimpsest-multispectral-imaging
 :END:
 [[./images/a-palimpset.jpg]]
 
-*** [[http://infiniteulysses.com/][Infinite Ulysses]]: interactive reader's edition by Amanda Visconti
+**** [[http://infiniteulysses.com/][Infinite Ulysses]]: interactive reader's edition by Amanda Visconti
 :PROPERTIES:
 :CUSTOM_ID: infinite-ulysses-interactive-readers-edition-by-amanda-visconti
 :END:
 [[./images/ulysses.png]]
 
-** Maps, Visualizations, Interpretations
+*** Maps, Visualizations, Interpretations
 :PROPERTIES:
 :CUSTOM_ID: maps-visualizations-interpretations
 :END:
 
-*** [[http://www.medievalchester.ac.uk/][Mapping Medieval Chester]]
+**** [[http://www.medievalchester.ac.uk/][Mapping Medieval Chester]]
 :PROPERTIES:
 :CUSTOM_ID: mapping-medieval-chester
 :END:
@@ -262,7 +282,7 @@ https://melissaterras.files.wordpress.com/2013/10/728a0-0028.jpg
 - Digital advantage: interactive, layered, & transparent
 [[./images/chester.png]]
 
-*** [[https://ships.lib.virginia.edu/][Mapping Homer's Catalogue of Ships]]
+**** [[https://ships.lib.virginia.edu/][Mapping Homer's Catalogue of Ships]]
 :PROPERTIES:
 :CUSTOM_ID: mapping-homers-catalogue-of-ships
 :END:
@@ -271,7 +291,7 @@ Courtney Evans and Ben Jasnow, with Jenny Strauss Clay and the UVA Scholars' Lab
 Mapping the towns in Homer's Catalogue of Ships to analyze underlying organizing principles for the narration
 [[./images/ships.png]]
 
-*** [[https://decima-map.net/][Project DECIMA]]
+**** [[https://decima-map.net/][Project DECIMA]]
 :PROPERTIES:
 :CUSTOM_ID: project-decima
 :END:
@@ -281,22 +301,22 @@ University of Toronto, History Dept.
 Onto a 16th century map of Florence, DECIMA maps census data about Florence's inhabitants, their occupations, wealth, and daily life.
 
 [[./images/decima.png]]   
-*** [[https://topostext.org/][ToposText]]: Ancient Texts + Maps
+**** [[https://topostext.org/][ToposText]]: Ancient Texts + Maps
 :PROPERTIES:
 :CUSTOM_ID: topostext-ancient-texts-maps
 :END:
 [[./images/ttext.png]]
-*** [[http://www.mappingararat.com/][Mapping Ararat]]
+**** [[http://www.mappingararat.com/][Mapping Ararat]]
 :PROPERTIES:
 :CUSTOM_ID: mapping-ararat
 :END:
 [[./images/ararat.png]]
-*** About that Land Acknowledgment 
+**** About that Land Acknowledgment 
 - History of Life on this shore
 - Dish with One Spoon
 - Continuity and Disjuncture
 #+begin_paired
-[[/home/matt/wdw235/images/dish-spoon-territory.png]]
+[[/home/matt/WDW235/images/dish-spoon-territory.png]]
 #+end_paired
 #+begin_paired
 https://www.indiantime.net/home/cms_data/dfault/photos/stories/id/1/0/7510/.TEMP/s_topTEMP425x425-8032.jpeg
@@ -305,7 +325,7 @@ https://www.indiantime.net/home/cms_data/dfault/photos/stories/id/1/0/7510/.TEMP
 #+begin_notes
 We would like to acknowledge this sacred land on which the University of Toronto operates. It has been a site of human activity for 15,000 years. This land is the territory of the Huron-Wendat and Petun First Nations, the Seneca, and most recently, the Mississaugas of the Credit River. The territory was the subject of the Dish with One Spoon Wampum Belt Covenant, an agreement between the Iroquois Confederacy and Confederacy of the Ojibwe and allied nations to peaceably share and care for the resources around the Great Lakes. Today, the meeting place of Toronto is still the home to many Indigenous people from across Turtle Island and we are grateful to have the opportunity to work in the community, on this territory.
 #+end_notes
-** Communication
+*** Communication
 :PROPERTIES:
 :CUSTOM_ID: communication
 :END:
@@ -315,7 +335,7 @@ We would like to acknowledge this sacred land on which the University of Toronto
 - Social Media
 - Teaching & Collaboration
 
-*** Scholarly Books: The Networked Monograph
+**** Scholarly Books: The Networked Monograph
 :PROPERTIES:
 :CUSTOM_ID: scholarly-books-the-networked-monograph
 :END:
@@ -328,7 +348,7 @@ Digitally augmented scholarly monographs (e.g. Mellon-funded collaboration betwe
 [[./images/n-monograph.jpg]]
 @@html:</div>@@
 
-*** VR/3D Printing for Cultural Heritage Collections: [[http://boxwood.ago.ca/][Small]] [[https://www.youtube.com/watch?v=Mc4MA8srQDM][Wonders]] (AGO)
+**** VR/3D Printing for Cultural Heritage Collections: [[http://boxwood.ago.ca/][Small]] [[https://www.youtube.com/watch?v=Mc4MA8srQDM][Wonders]] (AGO)
 :PROPERTIES:
 :CUSTOM_ID: vr3d-printing-for-cultural-heritage-collections-small-wonders-ago
 :END:
@@ -337,18 +357,18 @@ Digitally augmented scholarly monographs (e.g. Mellon-funded collaboration betwe
 - Studied and exhibited through digital imaging (micro CAT scanning), VR, and 3D printing
 [[./images/small-wonders.jpg]]
 
-*** Research Materials: Medieval Manuscripts and Social Media
+**** Research Materials: Medieval Manuscripts and Social Media
 :PROPERTIES:
 :CUSTOM_ID: research-materials-medieval-manuscripts-and-social-media
 :END:
 
 #+CAPTION: Cat paws in a fifteenth-century manuscript (photo taken at the Dubrovnik archives by @EmirOFilipovic, disseminated by Eric Kwakkel)
 https://pbs.twimg.com/media/A3zuNR6CIAAeHsk.jpg
-** Teaching
+*** Teaching
 :PROPERTIES:
 :CUSTOM_ID: section-7
 :END:
-*** This Class
+**** This Class
 [[https://chauceranditaly.library.utoronto.ca/neatline/show/liminal-representation-inferno][Heather Eason: five artists' representations of threshold crossings]] in Dante's /Inferno/. Omeka/Neatline undergraduate student project.
 
 [[./images/inferno.png]]
@@ -357,12 +377,12 @@ Heather Eason: five artists' representations of threshold crossings in Dante's 
 
 #+end_notes
 
-*** Others 
+**** Others 
 Website for [[https://kcc.hackinghistory.ca/][Khangchendzonga Conservation Committee]], written and developed by students from HIS455, /Hacking History/, 2018.
 
 [[/home/matt/WDW235/images/kcc.jpg]]
 
-*** [[https://chauceranditaly.library.utoronto.ca/neatline/show/liminal-representation-inferno][Collaboration & Infrastructures]]
+**** [[https://chauceranditaly.library.utoronto.ca/neatline/show/liminal-representation-inferno][Collaboration & Infrastructures]]
 :PROPERTIES:
 :CUSTOM_ID: collaboration-infrastructures
 :END:
@@ -433,7 +453,6 @@ Website for [[https://kcc.hackinghistory.ca/][Khangchendzonga Conservation Commi
 - Be respectful - to everyone!
 #+end_slideblock
 
-
 ** Let's Play a Game!
 :PROPERTIES:
 :CUSTOM_ID: let's-play-a-game-670e
@@ -441,32 +460,172 @@ Website for [[https://kcc.hackinghistory.ca/][Khangchendzonga Conservation Commi
 
 [[https://twinery.org/2/#!/stories/dbeebaff-c046-41b3-96eb-7a4ca799eef7/play][Navigate here]]
 
-[[https://twinery.org/2/#!/stories/dbeebaff-c046-41b3-96eb-7a4ca799eef7][Let's Look at the code]]
+[[https://twinery.org/2/#!/stories/dbeebaff-c046-41b3-96eb-7a4ca799eef7][Let's Look at the "code"]]
+
 
 [[https://twinery.org/2/][Now Build Your Own Stories]]
 
-* {{{n}}}: Anatomy of DH Projects {{{ts}}} 
+* 2: Anatomy of DH Projects
 :PROPERTIES:
 :EXPORT_FILE_NAME: 02-anatomy-dh-projects
 :END:
 
-** ACTION COMMENT Post-lecture improvements
-- what is the point of this lecture?
-  - intro to some ideas about technology
-  - designing DH
-  - introducing some ideas about data
-
-*** Reaction
-I found this very scattered. Partly this could be a prep problem, but partly it doeesn't really proceed systematically through the material. There needs to be a more distinct thread, so e.g.:
-- strengthen the phil of tech section so that it actually makees a coherent argument. Don't just rely on quotes; give propositions and examples
-- 
-*** 
-
 ** Today
-- How do we Think about Technology?
+- First, some DH examples
+  How do we Think about Technology?
 - Very Basic Design Parameters
 - Data and Data Models
 - Assignment 1
+
+** Project Examples
+*** Digital Editions, Archives, Narratives
+:PROPERTIES:
+:CUSTOM_ID: digital-editions-archives-narratives
+:END:
+
+**** [[https://www.folger.edu/folger-digital-texts][Folger: Shakespeare Library]]
+:PROPERTIES:
+:CUSTOM_ID: folger-shakespeare-library
+:END:
+[[./images/folger.png]]
+
+**** [[http://shelleygodwinarchive.org/][Shelley-Godwin Archive]]
+:PROPERTIES:
+:CUSTOM_ID: shelley-godwin-archive
+:END:
+[[./images/shelley-g.png]]
+
+**** [[http://www.archimedespalimpsest.org/][The Archimedes Palimpsest]]: Multispectral Imaging
+:PROPERTIES:
+:CUSTOM_ID: the-archimedes-palimpsest-multispectral-imaging
+:END:
+[[./images/a-palimpset.jpg]]
+
+**** [[http://infiniteulysses.com/][Infinite Ulysses]]: interactive reader's edition by Amanda Visconti
+:PROPERTIES:
+:CUSTOM_ID: infinite-ulysses-interactive-readers-edition-by-amanda-visconti
+:END:
+[[./images/ulysses.png]]
+
+*** Maps, Visualizations, Interpretations
+:PROPERTIES:
+:CUSTOM_ID: maps-visualizations-interpretations
+:END:
+
+**** [[http://www.medievalchester.ac.uk/][Mapping Medieval Chester]]
+:PROPERTIES:
+:CUSTOM_ID: mapping-medieval-chester
+:END:
+
+- Goal: making a digital map of medieval Chester by combining post-medieval maps with archaeological and historical evidence
+- Digital advantage: interactive, layered, & transparent
+[[./images/chester.png]]
+
+**** [[https://ships.lib.virginia.edu/][Mapping Homer's Catalogue of Ships]]
+:PROPERTIES:
+:CUSTOM_ID: mapping-homers-catalogue-of-ships
+:END:
+Courtney Evans and Ben Jasnow, with Jenny Strauss Clay and the UVA Scholars' Lab (2013)
+
+Mapping the towns in Homer's Catalogue of Ships to analyze underlying organizing principles for the narration
+[[./images/ships.png]]
+
+**** [[https://decima-map.net/][Project DECIMA]]
+:PROPERTIES:
+:CUSTOM_ID: project-decima
+:END:
+
+University of Toronto, History Dept.
+
+Onto a 16th century map of Florence, DECIMA maps census data about Florence's inhabitants, their occupations, wealth, and daily life.
+
+[[./images/decima.png]]   
+**** [[https://topostext.org/][ToposText]]: Ancient Texts + Maps
+:PROPERTIES:
+:CUSTOM_ID: topostext-ancient-texts-maps
+:END:
+[[./images/ttext.png]]
+**** [[http://www.mappingararat.com/][Mapping Ararat]]
+:PROPERTIES:
+:CUSTOM_ID: mapping-ararat
+:END:
+[[./images/ararat.png]]
+**** About that Land Acknowledgment 
+- History of Life on this shore
+- Dish with One Spoon
+- Continuity and Disjuncture
+#+begin_paired
+[[/home/matt/WDW235/images/dish-spoon-territory.png]]
+#+end_paired
+#+begin_paired
+https://www.indiantime.net/home/cms_data/dfault/photos/stories/id/1/0/7510/.TEMP/s_topTEMP425x425-8032.jpeg
+#+end_paired
+
+#+begin_notes
+We would like to acknowledge this sacred land on which the University of Toronto operates. It has been a site of human activity for 15,000 years. This land is the territory of the Huron-Wendat and Petun First Nations, the Seneca, and most recently, the Mississaugas of the Credit River. The territory was the subject of the Dish with One Spoon Wampum Belt Covenant, an agreement between the Iroquois Confederacy and Confederacy of the Ojibwe and allied nations to peaceably share and care for the resources around the Great Lakes. Today, the meeting place of Toronto is still the home to many Indigenous people from across Turtle Island and we are grateful to have the opportunity to work in the community, on this territory.
+#+end_notes
+*** Communication
+:PROPERTIES:
+:CUSTOM_ID: communication
+:END:
+
+- Scholarly Writings
+- Public Engagement
+- Social Media
+- Teaching & Collaboration
+
+**** Scholarly Books: The Networked Monograph
+:PROPERTIES:
+:CUSTOM_ID: scholarly-books-the-networked-monograph
+:END:
+@@html:<div class="paired">@@
+
+ In addition to printed books, can scholarly monographs expand their forms to “take advantage [...] of the interactive, annotative, and computational affordances of the web"? Donald J. Waters, “Monograph Publishing in the Digital Age" (2016)
+
+Digitally augmented scholarly monographs (e.g. Mellon-funded collaboration between NYU Library and NYU Press
+@@html:</div><div class="paired">@@
+[[./images/n-monograph.jpg]]
+@@html:</div>@@
+
+**** VR/3D Printing for Cultural Heritage Collections: [[http://boxwood.ago.ca/][Small]] [[https://www.youtube.com/watch?v=Mc4MA8srQDM][Wonders]] (AGO)
+:PROPERTIES:
+:CUSTOM_ID: vr3d-printing-for-cultural-heritage-collections-small-wonders-ago
+:END:
+
+- Miniature boxwood carvings from the early 1500s
+- Studied and exhibited through digital imaging (micro CAT scanning), VR, and 3D printing
+[[./images/small-wonders.jpg]]
+
+**** Research Materials: Medieval Manuscripts and Social Media
+:PROPERTIES:
+:CUSTOM_ID: research-materials-medieval-manuscripts-and-social-media
+:END:
+
+#+CAPTION: Cat paws in a fifteenth-century manuscript (photo taken at the Dubrovnik archives by @EmirOFilipovic, disseminated by Eric Kwakkel)
+https://pbs.twimg.com/media/A3zuNR6CIAAeHsk.jpg
+*** Teaching
+:PROPERTIES:
+:CUSTOM_ID: section-7
+:END:
+**** This Class
+[[https://chauceranditaly.library.utoronto.ca/neatline/show/liminal-representation-inferno][Heather Eason: five artists' representations of threshold crossings]] in Dante's /Inferno/. Omeka/Neatline undergraduate student project.
+
+[[./images/inferno.png]]
+#+begin_notes
+Heather Eason: five artists' representations of threshold crossings in Dante's /Inferno/--the unknown illustrator of the fourteenth-century MS Holkham misc. 48; Priamo della Quercia of the fifteenth-century Yates Thompson MS 36; Gustave Doré; Salvador Dalí; and Dante himself.
+
+#+end_notes
+
+**** Others 
+Website for [[https://kcc.hackinghistory.ca/][Khangchendzonga Conservation Committee]], written and developed by students from HIS455, /Hacking History/, 2018.
+
+[[/home/matt/WDW235/images/kcc.jpg]]
+
+**** [[https://chauceranditaly.library.utoronto.ca/neatline/show/liminal-representation-inferno][Collaboration & Infrastructures]]
+:PROPERTIES:
+:CUSTOM_ID: collaboration-infrastructures
+:END:
+[[./images/edgi-wm.png]]
 
 ** Why "Anatomy of DH"?
 - Design & evaluation of DH projects specifically
@@ -607,7 +766,7 @@ Consider:
 #+end_slideblock
 #+ATTR_REVEAL: :frag (appear) 
 #+begin_slideblock
-#+BEGIN_SRC xml
+#+BEGIN_SRC 
   <msDesc>
     <msIdentifier>
       <settlement>Oxford
@@ -644,11 +803,6 @@ Consider:
 [[./images/dc-ss-list.png]]
 #+end_slideblock
 
-
-*** 
-  :PROPERTIES:
-  :CUSTOM_ID: humanities-data-3
-  :END:
 
 *** But then, Thinking *Hard* about Data
   :PROPERTIES:
@@ -849,176 +1003,517 @@ Data: accessible, usable, readable, preservable
 ** Bibliography
 bibliography:/home/matt/DH/digitalhistory.bib
 
-* {{{n}}}:  TEI, XML (see TEI assignment!) {{{ts}}} 
+* 3:  TEI, XML (see TEI assignment!) <2020-07-07 Tue> 
 ** Today
 ** Deformance
 - what is it? w
 - what was it like to read it?
 - 
-* ACTION {{{n}}}: TEI 2 ({{{ts}}})
+
+* 3.1 Understanding The Web -- HTML, CSS, JS
+:PROPERTIES:
+:EXPORT_FILE_NAME: 03-01-web-parts
+:END:
+
+** HTML at work,  and some consequences
+:PROPERTIES:
+:CUSTOM_ID: machine-readable-text-2a02
+:reveal_extra_attr: class="splitc"
+:END:
+#+ATTR_REVEAL: :frag (appear) 
+#+begin_slideblock
+#+BEGIN_EXPORT html
+<h1>This is the top-level heading</h1>
+<p>
+  This is a paragraph. It can contain <i>further markup</i> and also 
+  <a href="http:/some.where.com">more complex content</a>.
+</p>
+<aside>
+  Sometimes you'll see <i>semantic</i> tags, like "aside",
+  "header", "footer", "article", or "section".  
+</aside>
+<stanza>
+    <line>
+        It is also permissible to make up your own tags in HTML. 
+    </line>
+    <line>
+        Usually this is a complex procedure.
+    </line>
+</stanza>
+#+END_EXPORT
+#+end_slideblock
+#+ATTR_REVEAL: :frag (appear) 
+#+begin_slideblock
+On the web, text is "Marked up" 
+#+ATTR_REVEAL: :no-klipsify t
+#+begin_src html
+<h1>This is a top-level heading</h1>
+<p>
+    This is a paragraph. It can contain <i>further markup</i> and also 
+    <a href="http:/some.where.com">more complex content</a>.
+</p>
+<aside>
+    Sometimes you'll see <i>semantic</i> tags, like "aside",
+    "header", "footer", "article", or "section".  
+</aside>
+<stanza>
+    <line>
+        It is also permissible to make up your own tags in HTML. 
+    </line>
+    <line>
+        Usually this is a complex procedure.
+    </line>
+</stanza>
+
+#+end_src
+#+end_slideblock
+#+ATTR_REVEAL: :frag (appear) 
+#+begin_slideblock
+- Programs can scan this text, interpret it...
+- then treat it as /data/ which can be combined, analyzed, etc.
+#+ATTR_REVEAL: :frag appear
+- point of learning HTML is
+#+ATTR_REVEAL: :frag appear
+  - Understand how to achieve a certain "look"
+  - Understand how a complex computer algorithm might treat it as "data".
+
+#+end_slideblock
+
+** Three Levels
+- HTML for *structure/content*;
+- CSS for *presentation*
+- JS for *dynamic changes* and *rendering remote data*
+
+** Tag Anatomy                       
+:PROPERTIES:
+:CUSTOM_ID: selectortag-anatomy-9f2b
+:END:
+
+[[./images/tagname.png]]
+
+- opening and closing *tags* around *content*
+- "attributes" can affect how the browser displays and interprets the tag
+- the only attribute that really matters for us in this exercise is 
+- ~class="list of classnames"~
+** CSS Basics
+:PROPERTIES:
+:CUSTOM_ID: css-basics-6376
+:END:
+- "[[http://en.wikipedia.org/wiki/Cascading_Style_Sheets][Cascading Style Sheets]]"
+- Style sheet
+- that "cascades" = overrides prior values
+[[http://bollig.co/assets/page-images/understanding-the-cascade-part-1/css-cascade.jpg]]
+
+#+begin_notes
+two "dimensions" to cascade (source order and specificity)
+
+- specificity is the hard/important one.  
+#+end_notes
+
+
+** CSS Anatomy
+:PROPERTIES:
+:CUSTOM_ID: -c0f8
+:reveal_extra_attr: class="twoc"
+:END:
+#+begin_slideblock
+#+BEGIN_SRC css 
+  h1 {
+      color:blue;
+      font-family:serif; 
+      font-size:24px; 
+  }
+
+  div {
+      border: 1px solid black;
+  }
+
+  div.main p {
+      color:red;
+  }
+
+  #specialid {
+      float:left;
+  }
+#+END_SRC
+
+#+end_slideblock
+#+begin_slideblock
+When you look at a CSS file, you will see it is divided into a bunch of stanzas, like this.  Each of these stanzas is called a "selector statement":
+They all follow the same pattern: 
+- first, a *selector* that identifies the elements to which these instructions will apply
+- then *an open brace* "{" which marks the start of the actual instructions
+- then a series of *property-value pairs*.  Each of these sets the /value/ of a particular /property/ (duh).  Note that at the end of a property, there is *always* a semi-colon!  
+- finally, *a closing brace* that ends the selector declaration.
+#+end_slideblock
+
+#+BEGIN_NOTES
+When you look at a CSS file, you will see it is divided into a bunch of stanzas, like this.  Each of these stanzas is called a "selector statement":
+They all follow the same pattern: 
+- first, a *selector* that identifies the elements to which these instructions will apply
+- then *an open brace* "{" which marks the start of the actual instructions
+- then a series of *property-value pairs*.  Each of these sets the /value/ of a particular /property/ (duh).  Note that at the end of a property, there is *always* a semi-colon!  
+- finally, *a closing brace* that ends the selector declaration.
+#+END_NOTES
+** With and without CSS
+:PROPERTIES:
+:CUSTOM_ID: with-and-without-css-43a6
+:END:
+#+ATTR_HTML: :class paired
+[[./images/nytimes-w-css.png]]  
+#+ATTR_HTML: :class paired
+[[./images/nytimes-no-css.png]] 
+
+** JavaScript
+- add dynamic transformations
+- as in e.g. this silly example: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript#A_high-level_definition 
+- *we are not really learning to program in this class*
+- but *it helps to be aware of JS* and we will fool around with it during class
+
+** Learning More
+[[https://developer.mozilla.org/en-US/docs/Learn][The Mozilla Developers' Network]] Is the best place to learn about web technologies, though there are lots of other resources too!
+- [[https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web][Check out the "Complete Beginners" Sequence here]]
+- [[https://developer.mozilla.org/en-US/docs/Learn/HTML][Teach yourself HTML here]]
+- [[https://developer.mozilla.org/en-US/docs/Learn/CSS][Get started with CSS here]]
+- [[https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics][The JavaScript page of the "Complete Beginners" course is a really good place to start learning JS]]
+- [[https://developer.mozilla.org/en-US/docs/Learn/JavaScript][Afterwards you can check out the JS sequence]]
+
+
+For the assignment, you may want to learn about some specific CSS rules. [[https://developer.mozilla.org/en-US/docs/Web/CSS/Reference][Every current and proposed CSS rule is listed here]] with links to a very full explanation of how to use it.  
+* 3.2 Encoding Text -- TEI
+:PROPERTIES:
+:EXPORT_FILE_NAME: 03-02-encoding-text
+:END:
+** Encodings
+- HTML is a text encoming system
+- but of course there are many others, often with different purposes!
+- HTML is a *web standard* but there are other *standards*
+- [[https://tei-c.org/][TEI]] is an influential standard designed *by and for* humanists for *encoding textual complexity*
+** TEI is XML
+- the *eXtensible Markup Language* looks a bit like HTML but is much more complex
+- remains a key technology in many domains (e.g., your word docs and powerpoints slides are written in XML)
+- built with similar syntax but much, much more powerful
+- also *way* harder to read
+
+#+begin_src xml
+  <book category="children">
+    <title>Harry Potter</title>
+    <author>J K. Rowling</author>
+    <year>2005</year>
+    <price>29.99</price>
+  </book>
+#+end_src
+
+(trivial example)
+** Real TEI
+:PROPERTIES:
+:reveal_extra_attr: class="twoc"
+:END:
+#+begin_slideblock
+#+begin_src xml
+
+<lg type="poem">
+  <lg type="stanza">
+    <l>
+      <rhyme>Poppadom</rhyme>
+    </l>
+    <l>
+      <rhyme>Oatmeal</rhyme>
+    </l>
+    <l>Bubble <rhyme>gum</rhyme> </l>
+    <l>Cut of <rhyme>veal</rhyme> </l>
+  </lg>
+  <lg type="stanza">
+    <l>Mince for <rhyme>pie</rhyme> </l>
+    <l>Frozen <rhyme>peas</rhyme> </l>
+    <l>Video for <rhyme>Guy</rhyme> </l>
+    <l>Selection of <rhyme>teas</rhyme> </l>
+  </lg>
+  <lg type="stanza">
+    <l>Paper towels/garbage <rhyme>bags</rhyme> </l>
+    <l>Pasta sauce and <rhyme>Parmesan</rhyme> </l>
+    <l>Pumpkin seed and olive <rhyme>oil</rhyme> </l>
+  </lg>
+  <lg type="stanza">
+    <l>Cheesy crisps and favourite <rhyme>mags</rhyme> </l>
+    <l>Kidney beans (1 large <rhyme>can</rhyme>)</l>
+    <l>Cling film and kitchen <rhyme>foil</rhyme> </l>
+  </lg>
+</lg>
+#+end_src
+
+#+end_slideblock
+
+#+begin_slideblock
+
+- all these tags are *defined in a standard* which is [[https://tei-c.org/guidelines/p5/][available online]] in a readable format but *also is a machine-readable standard for XML interpreters*
+- The power of XML/TEI (like that of HTML) comes in part from that *machine-readable standard*
+#+end_slideblock
+
+ 
+** Using TEI
+- we won't!
+- but you might want to if:
+  - you want to record textual complexities in a rigourous format
+  - you hope to collaborate with others/make your work useful to others
+  - you want to join a scholarly community around precise textual analysis
+
+- our work in the class is *theatically similar* even if we don't use the *same technlogy*
+* 3.3 Javascript Data Structures
+:PROPERTIES:
+:EXPORT_FILE_NAME: 03-03-js-data
+:END:
+** Arrays
+#+begin_src js
+let myArray = ["some",
+               "collection",
+               "of", 
+               "things",
+               4,
+               7,
+               3458,
+               ["a", "sub", "array"],
+               "pretty",
+               "random"
+               ]
+#+end_src
+- an array is a *list* of *elements* separated by *commas*, and delimited by ~[]~
+- note 3 kinds of elements in this particular array:
+  - string: collection of characters delimited by ~""~
+  - number: numerals only, no quotes
+  - array: one of the array elements is itself an array!
+** Objects
+#+begin_src javascript
+{
+  title: "I am a collection of key-value pairs",
+  separation: "always separated by commas",
+  possibleValues: ["value", "can", "be", "any", "javascript", "data structure"],
+  evenOtherObjects: {
+    subvalue1: "Even other objects",
+    subvalue2: 234098,
+    subvalue3: "This is getting silly"
+  },
+  "propertyNamesCanBeQuoted": "Not really a good idea but we do it anyway"
+}
+#+end_src
+- key-value pairs
+- separated by commas (remember: CSS rule separator is semi-colon, JS object property separator is comma)
+- value can itself be a complex data structure
+** In our Assignment
+#+begin_src json
+{
+    "type": "stanza",
+    "class": "",
+    "content": [
+      {
+        "type": "line",
+        "class": "",
+        "content": [
+          {"type": "word", "content": "Everywhere", "class": "", "meta": ""},
+          {"type": "word", "content": "lies", "class": "", "meta": ""},
+          {"type": "word", "content": "a", "class": "", "meta": ""},
+          {"type": "word", "content": "corpse", "meta": ""},
+          {"type": "punctuation", "content": ",", "class": "", "meta": ""},
+          {"type": "word", "content": "mourned", "class": "", "meta": ""}
+        ]
+      },
+      {
+        "type": "line",
+        "class": "",
+        "content": [
+          {"type": "word", "content": "without", "class": "", "meta": ""},
+          {"type": "word", "content": "a", "class": "", "meta": ""},
+          {"type": "word", "content": "eulogy", "class": "", "meta": "How do we think of a eulogy?"},
+          {"type": "word", "content": "or", "class": "", "meta": ""},
+          {"type": "word", "content": "a", "class": "", "meta": ""},
+          {"type": "word", "content": "moment", "class": "", "meta": ""},
+          {"type": "word", "content": "of", "class": "", "meta": ""},
+          {"type": "word", "content": "silence", "class": "", "meta": ""},
+          {"type": "punctuation", "content": ".", "class": "", "meta": ""}
+        ]
+      }
+    ]
+  }
+#+end_src
+** Your Task: JS part
+- *add classes to relevant components*
+- *consider adding meta, if you want to explain something*
+- also possible to add new elements!
+#+begin_src json
+{
+    "type": "stanza",
+    "class": "",
+    "content": [
+      {
+        "type": "line",
+        "class": "",
+        "content": [
+          {"type": "word", "content": "without", "class": "", "meta": ""},
+          {"type": "word", "content": "a", "class": "", "meta": ""},
+          {"type": "word", "content": "eulogy", "class": "death", "meta": ""},
+          {"type": "word", "content": "or", "class": "", "meta": ""},
+          {"type": "word", "content": "a", "class": "", "meta": ""},
+          {"type": "phrase", "class": "",
+           "meta": "To be without a moment of silence, amidst the grieving; the agony is awful",
+           "content": [
+             {"type": "word", "content": "moment", "class": "time", "meta": ""},
+             {"type": "word", "content": "of", "class": "", "meta": ""},
+             {"type": "word", "content": "silence", "class": "", "meta": ""}
+           ]},
+          {"type": "punctuation", "content": ".", "class": "", "meta": ""}
+        ]
+      }
+    ]
+  }
+#+end_src
+* Some CSS Rules
+:PROPERTIES:
+:EXPORT_FILE_NAME: 03-03-css
+:END:
+** Display and Visibility
+- display: tells the browser how to manage the selected element in the document flow:
+  - *block* means "give this element its own line,"
+  - *inline* means "use the line (or box) that the parent element has already defined"
+  - *none* means "just don't use display this element at all" -- it will be removed from the screen
+- visibility: tells the browser to hide the text, but still *reserve the space that it would normally take up*
+** color and background-color
+- ~color~ sets the text content color
+- ~background-clor~ sets the background color 
+- you can use the pre-defined named colors like white, black, magenta, fuchsia, etc
+- or you can use rgb values (red,green, blue values between 0 and 255): ~rgb(127,127,127)~ is grey, for instance
+- or you can use hex values: ~#888888~ is also grey
+** font-style and font-weight
+- font-style can be set to ~italic~
+- font-weight can be set to ~bold~ or ~normal~
+** Other Rules/values
+
+- think about what effect you want to achieve
+- then google around/ask in Slack about how to do it!
+
+* 3.4 Openness
+:PROPERTIES:
+:EXPORT_FILE_NAME: 03-04-openness
+:END:
+
+** 
+:PROPERTIES:
+:CUSTOM_ID: op-enness-0724
+:END:
+#+BEGIN_QUOTE
+...ideas that were more-or-less serviceable in the world before networked computers... are now up for debate.  The emergence of new rights regimes (such as *open access, open content and open source*) and the explosion of new information are manifestations of these changing costs. (Turkel)
+#+END_QUOTE
+** Ideals of openness
+:PROPERTIES:
+:CUSTOM_ID: ideals-of-openness-cb72
+:END:
+
+#+begin_paired
+[[file:~/DH/images/louvre-jean-baptiste-greuze-la-lecture-de-la-bible.jpg]]
+#+end_paired
+#+begin_paired
+[[file:~/DH/images/jos-wri-airpump.jpg]]
+#+end_paired
+
+- rooted in Enlightenment
+- at the foundation of scholarship
+- yet, not manifest in our scholarly journals & publishing regimes
+** Jefferson on Freedom of Information
+:PROPERTIES:
+:CUSTOM_ID: jefferson-on-freedom-of-information-bd14
+:END:
+#+BEGIN_QUOTE
+ It would be curious then, if an idea, the fugitive fermentation of an individual brain, could, of natural right, be claimed in exclusive and stable property. If nature has made any one thing less susceptible than all others of exclusive property, it is the action of the thinking power called an idea, which an individual may exclusively possess as long as he keeps it to himself; but *the moment it is divulged, it forces itself into the possession of every one,* and the receiver cannot dispossess himself of it. Its peculiar character, too, is that no one possesses the less, because every other possesses the whole of it. He who receives an idea from me, receives instruction himself without lessening mine; as he who lights his taper at mine, receives light without darkening me. *That ideas should freely spread from one to another over the globe, for the moral and mutual instruction of man, and improvement of his condition, seems to have been peculiarly and benevolently designed by nature, when she made them,* like fire, expansible over all space, without lessening their density in any point, and like the air in which we breathe, move, and have our physical being, incapable of confinement or exclusive appropriation. Inventions then cannot, in nature, be a subject of property.
+#+END_QUOTE
+** the web as open space
+:PROPERTIES:
+:CUSTOM_ID: the-web-as-open-space-e7e9
+:END:
+- Origins of Web wrapped up in ideologies of Freedom
+#+BEGIN_QUOTE
+"Information wants to be free - because it is now so easy to copy and distribute casually - and information wants to be expensive - because in an Information Age, nothing is so valuable as the right information at the right time. (Brand, ca. 1984)
+
+When information is generally useful, redistributing it makes humanity wealthier no matter who is distributing and no matter who is receiving. (Stallman, ~1990, quoted by Dening)
+#+END_QUOTE
+- but different freedoms compete
+- "walled gardens" vs /open access/
+- Struggles only intensifying, with battle lines not quite stable
+  - net neutrality
+  - the Facebook problem
+  - Digital Public Library of America
+  - archive.org
+** Free and Open Source Software
+- GNU GPL in 1970s
+- "Open Source" licenses in 1980s and 90s
+- now a dominant mode of software production 
+** Open [Source|Standard|Access|Culture|X]
+- *free* something, or
+- *open* something
+- often means "the principles of openness articulated by Open Source Software advocates, but applied to some other domain
+
+
+- *standard*: the interface is defined and ratified by some open body, and anyone can use it.  Could be hardware or software
+- *access*: anyone can read this publication, you don't need an expensive subscription
+- *culture*: usually Creative Commons -- cultural work that is (mostly) free to reuse
+- etc
+
+* 3.5 Reading Poetry
+** Some poems
+- https://www.babelmatrix.org/works/pl/Herbert%2C_Zbigniew-1924/Tren_Fortynbrasa/en/5483-Elegy_of_Fortinbras
+- https://www.youtube.com/watch?v=1C68vc8plVI&t=2s
+- https://poets.org/poem/atavism
+- http://strangehorizons.com/poetry/you-are-here/
+- https://www.poetryfoundation.org/poems/44087/wild-nights-wild-nights-269
+- https://www.poetryfoundation.org/poems/42916/jabberwocky
+
+* ACTION 4: TEI 2 (<2020-07-09 Thu>)
 CF the Romeo & Juliet Repo & associated announcements. 
 
-* {{{n}}}: Endangered Knowledge 1: Omeka and The Final Assignment ({{{ts}}})
+* 5.1: Contagion, Pandemic History, and Literature
 :PROPERTIES:
-:EXPORT_FILE_NAME: 05-enangered-books-omeka
+:EXPORT_FILE_NAME: 05-02-contagion
 :END:
-** Today
-- Assignment Discussion
-- Omeka Introduction
+** The Long Arc of Disease
+- in 2019, we lived in a relatively epidemic-free moment in human history
+- not anymore!
+- what can we learn from the broad sweep of human encounters with widespread infections disease?
+** Some moments in Pandemic History
+- actual "plague": 3 pandemics: "Justinian" (6th C CE), "Black Death" (1346-~1700), "Modern Plague" (mid-c.19-~1959)
+- Syphilis (~1500-early c.20)
+- Cholera: early c.19-present
+- AIDS: late c.20-present
+- Ebola: 2014-present
 
-** Bur first this! visit to Fisher library
- [[https://q.utoronto.ca/calendar?include_contexts=course_127426#view_name=week&view_start=2019-10-06][Sign up here!]]
+(many others)
+** Disease *in* and *as* culture
+- diseases have *many cultural effects*
+- also, we *understand disease* in culturally-specific ways
+- "dialectical" (or "feedback") relationships
+- literature as *reflection* and *generator* of understanding
+** Breakout groups: how to do this
+- quickly assign someone as record keeper. This person will *report back in real time *in Slack*, where everyone ca see the conversation
+- meanwhile, I (and Cai if they're around) will float around and listen in -- not to eavesdrop, but to be helpful 
+** "Meaning of Contagion"
+- what is the thesis of this essay (approx)?
+- did you have trouble understanding it? what parts?
+- what struck you as particularly interesting/insightful?
+** Masque of the Red Death
+- Let's spend some time understanding this text:
+  - What do you know about the author & their place in the history of literature?
+  - did you understand the plot/sequence of events? Was it interesting/compelling? was it irritating/frustrating?
+  - beyond plot: how would you characterize the story *thematically*?
+  - if you were to construct a website around this story... how would you start? 
 
-** Nothing Lasts Forever
-#+begin_export html
-<iframe width="1200" height="800" src="https://www.youtube.com/embed/NoAzpa1x7jU?start=135" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-#+end_export
-
-
-
-** Medieval Manuscripts
-  :PROPERTIES:
-  :CUSTOM_ID: medieval-manuscripts
-  :END:
-
-*** The Exeter Book Riddles
-  :PROPERTIES:
-  :CUSTOM_ID: the-exeter-book-riddles
-  :style: page-break-before:always; 
-  :END:
-
-#+begin_paired
-Old English poetry (10th c. manuscript): Cathedral Library, Exeter MS. 3501.
-#+end_paired
-#+begin_paired
-[[./images/book-burn.png]]
-#+end_paired
-
-*** Making Parchment
-  :PROPERTIES:
-  :CUSTOM_ID: making-parchment
-  :style: page-break-before:always; 
-  :reveal_extra_attr: class="twoc"
-  :END:
-
-#+begin_slideblock
-Parchment = stretched and processed animal skin (goat, sheep, calf, cow)
-
-but see also: [[https://en.wikipedia.org/wiki/Anthropodermic_bibliopegy][anthropodermic bibliopegy]])
-
-[[https://commons.wikimedia.org/w/index.php?curid=16818][Domestic sheep]]. Public Domain, via Wikipedia 
-
-
-#+end_slideblock
-
-#+begin_slideblock
-[[./images/sheep-flock.jpg]]
-#+end_slideblock
-*** Making Parchment
-  :PROPERTIES:
-  :CUSTOM_ID: making-parchment-1
-  :style: page-break-before:always; 
-  :END:
-
-#+begin_paired
-- Skin is soaked in lime solution to loosen animal hair
-- Animal hair removed with curved knife
-- Skin wetted and stretched on special rack
-
-#+end_paired
-#+begin_paired
-[[./images/parchment-skin.jpg]]
-#+end_paired
-
-*** Writing
-  :PROPERTIES:
-  :CUSTOM_ID: writing
-  :style: page-break-before:always; 
-  :END:
-
-#+begin_paired
-- Rule the parchment (lead point or coloured ink)
-- Write with quill (goose or swan feather cut to form a nib) dipped into ink
-- Erase mistakes by scraping ink off with knife
-
-#+end_paired
-#+begin_paired
-[[./images/colored-writing.png]]
-#+end_paired
-
-*** Illumination
-  :PROPERTIES:
-  :CUSTOM_ID: illumination
-  :style: page-break-before:always; 
-  :END:
-
-#+begin_paired
-- Apply gold leaf
-
-Image:  British Library, The Lindisfarne Gospels (London, British Library Cotton MS Nero D.IV), early 8th c.
-#+end_paired
-#+begin_paired
-[[./images/illumination-detail.png]]
-#+end_paired
-*** Writing
-  :PROPERTIES:
-  :CUSTOM_ID: writing-1
-  :style: page-break-before:always; 
-  :END:
-
-#+begin_paired
-British Library, MS. Arundel 43, f. 80v . Donatus writing his Grammar.
-
-- Rule the parchment (lead point or coloured ink)
-- Write with quill (goose or swan feather cut to form a nib) dipped into ink
-- Erase mistakes by scraping ink off with knife
-
-#+end_paired
-#+begin_paired
-[[./images/writing-monk-detail.png]]
-#+end_paired
-*** Medieval Writing Materials
-[[./images/ink-origins.png]]
-** Early Printed Books
-  :PROPERTIES:
-  :CUSTOM_ID: early-printed-books
-  :style: page-break-before:always; 
-  :END:
-#+ATTR_html: :style max-height:80vh;
-[[./images/library.jpg]]
-*** “Wicked” Bible. Thomas Fisher Rare Books Library.
-  :PROPERTIES:
-  :CUSTOM_ID: section-4
-  :style: page-break-before:always; 
-  :END:
-
-#+begin_paired
-[[./images/wicked-detail.png]]
-#+end_paired
-#+begin_paired
-[[./images/wicked-bible.jpg]]
-
-#+end_paired
-
-*** Gutenberg Process
-  :PROPERTIES:
-  :CUSTOM_ID: section-5
-  :style: page-break-before:always; 
-  :END:
-
-  #+begin_export html
-  <iframe width="1200px" height="800px" src="https://www.youtube.com/embed/EMjhNhQsqsg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  #+end_export
-
-** Rarity and Endangerment 
-- what are the threats (past and present)?
-- what are responsibilities of scholars and curators?
-- how much overlap between them? 
-** Assignment 
-[[https://q.utoronto.ca/courses/127426/assignments/233045][on Quercus]]
+* 5.2 Omeka
+:PROPERTIES:
+:EXPORT_FILE_NAME: 05-02-omeka
+:END:
 ** Getting Started with U of T's Omeka installation
 - Go to [[https://spatial-humanities.library.utoronto.ca/admin][the U of T Spatial Humanities site admin page]], and 
 - sign in with [[https://q.utoronto.ca/courses/127426/discussion_topics/400788][the authorization info that was sent out in a recent announcement]]
+*** Addendum: possible shift for assignment
+- I managed to install omeka on my server
+- trying to figure out accounts
+- hold off on starting your *real* assignment till next week (you can still do your thinking work)
 
 ** Omeka!
 @@html:<div class="paired">@@
@@ -1304,18 +1799,21 @@ To create a new Block, click on the desired layout. This block will be added as 
 - Draft and save your Item descriptions and your Exhibit content in word processing software; save this draft; 
 - Paste your content from Word into Omeka.
 
-* {{{n}}} -- Endangered Knowledge: Tears in Rain ({{{ts}}})
+** Class Exercise: Life In Quarntine -- an Omeka project?
+- imagine an open-ended assignment/project:  build an omeka site about your life under quarantine
+- what does your *ideal site* look like?
+- what kinds of scholarly sources would you use?
+- what kinds of items?
+- now start playing in omeka...  
+
+* 
+* Digital Archives
 :PROPERTIES:
 :EXPORT_FILE_NAME: 07-tears-in-rain
 :END:
 ** Today
 - Knowledge, Danger, Digital
 - Omeka: Your Questions and Concerns
-** Writing Exercise 1:  
-- 3 minutes: 3 impressions from your trip to the library
-** Writing Exercise 2: 
-- 3 minutes: what are the most serious threats to knowledge today?  
-
 ** Making & Sustaining Digital Archives
   :PROPERTIES:
   :CUSTOM_ID: making-sustaining-digital-archives
@@ -1424,7 +1922,7 @@ Other materials travel in style---in this case, in enclosed archival boxes that 
 
 Digitisation of a Dunhuang manuscript (Pictured: De Vere 480 camera. Wikipedia: International Dunhuang Project, 2006.)
 
-[[./images/manuscript-scan/jpg]]
+[[./images/manuscript-scan.jpg]]
 #+begin_notes
 Once you have assembled your material, digitization work can begin. You'll need a specialized camera that can capture the colours of your manuscript, the tiny details (some not visible to the naked eye), erasures, scribal doodles, the marginal notes written by scribes and readers over the years, even bookworm damage. You'll need a cradle to support the manuscript. You'll need a conservation-friendly room, where you can control all the light sources, to make sure you take the clearest, most accurate photograph.
 
@@ -1507,57 +2005,6 @@ http://eap.bl.uk/database/map.a4d
   :style: page-break-before:always; 
   :END:
 [[./images/hmml-2.png]]
-** COMMENT Hyperspectral or Multispectral Imaging
-  :PROPERTIES:
-  :CUSTOM_ID: hyperspectral-or-multispectral-imaging
-  :style: page-break-before:always; 
-  :END:
-#+begin_paired
-[[./images/hyper1.png]]
-#+end_paired
-#+begin_paired
-[[./images/hyper2.jpg]]
-#+end_paired
-** COMMENT Hyperspectral or Multispectral Imaging
-  :PROPERTIES:
-  :CUSTOM_ID: hyperspectral-or-multispectral-imaging-1
-  :style: page-break-before:always; 
-  :END:
-
-  #+begin_quote
-   “a powerful, noncontact technique with a range of capabilities. The critical component of the advanced spectral imaging is the capability for chemical characterization of materials, providing both access and enhanced non-visible and visible information in registered high-resolution digital images. This noncontact tool can identify and characterize colorants, inks, and substrates through their specific spectral response, monitor deterioration or changes due to exhibit and other environmental conditions, assess and potentially identify previous treatments that modify chemical and spectral responses of cultural heritage materials...” (Fenella G. France et al)
-
-  #+end_quote
-*** Archimedes Codex
-  :PROPERTIES:
-  :CUSTOM_ID: archimedes-codex
-  :style: page-break-before:always; 
-  :END:
-#+begin_paired
-
-[[https://www.ted.com/talks/william_noel_revealing_the_lost_codex_of_archimedes][https://www.ted.com/talks/william_noel_revealing_the_lost_codex_of_archimedes]]
-
-[[http://archimedespalimpsest.net/Data/][http://archimedespalimpsest.net/Data/]]
-
-#+end_paired
-#+begin_paired
-[[./images/arch.jpg]]
-#+end_paired
-*** Herculaneum Scrolls
-  :PROPERTIES:
-  :CUSTOM_ID: herculaneum-scrolls
-  :style: page-break-before:always; 
-  :END:
-
-#+begin_paired
-  #+begin_quote
-  A papyrus scrolls from Herculaneum, which was carbonized in the eruption of Mt. Vesuvius, undergoes part of the CT scan process to help decipher the writing contained within the scrolls, in an image from the University of Kentucky's Center for Visualization and Virtual Environments taken in 2009. ([[https://www.newsweek.com/2016/01/29/x-rays-reveal-secrets-egyptian-scrolls-papyrus-416719.html][https://www.newsweek.com/2016/01/29/x-rays-reveal-secrets-egyptian-scrolls-papyrus-416719.html]])
-
-  #+end_quote
-#+end_paired
-#+begin_paired
-[[./images/herc.jpg]]
-#+end_paired
 ** The Declaration of Independence (draft)
   :PROPERTIES:
   :CUSTOM_ID: the-declaration-of-independence-draft
@@ -1592,13 +2039,6 @@ preserving world cultural heritage]].” The Institute of Electrical and Electro
 #+end_slideblock
 
 ** Risks to Digital Archives
-  :PROPERTIES:
-  :CUSTOM_ID: risks-to-digital-archives
-  :style: page-break-before:always; 
-  :END:
-
-
-*** Risks to Digital Archives
   :PROPERTIES:
   :CUSTOM_ID: risks-to-digital-archives-1
   :style: page-break-before:always; 
@@ -1785,8 +2225,6 @@ Freezer fails,  temperature rises to about 100 degrees F, ice core samples from
 *** Data Rescue
 [[./images/dr.png]]
 
-*** COMMENT Coverage 
-[[./images/coverage.png]]
 *** Website Monitoring
 [[./images/wm-changes.png]]
 
@@ -1801,728 +2239,8 @@ Freezer fails,  temperature rises to about 100 degrees F, ice core samples from
 - who owns knowledge
 - who can/should we trust?
 
-** COMMENT Risk Mitigation
-  :PROPERTIES:
-  :CUSTOM_ID: risk-mitigation-1
-  :style: page-break-before:always; 
-  :END:
-
-  #+begin_quote 
-collection evacuation risks, prompted by wildfires, floods, and hurricanes long-term relocation decisions due to sea-level rise and coastal erosion, or if a weather event is so devastating, rebuilding is inadvisable or impossible increasing infrastructure and preservation costs when current HVAC systems can't keep up with future increases in temperature and humidity” (Eira Tansey, “When the Unbearable Becomes Inevitable: Archives and Climate Change,” 2017, [[http://eiratansey.com/2017/05/16/fierce-urgencies-2017/][http://eiratansey.com/2017/05/16/fierce-urgencies-2017/]])
-
-
-  #+end_quote
-LOCKSS, dark archives, community building
-
-** COMMENT Death in the Archives: Bits against Ruins
-  :PROPERTIES:
-  :CUSTOM_ID: death-in-the-archives-bits-against-ruins
-  :style: page-break-before:always; 
-  :END:
-
-*** Communities of practice, ethics of care
-   :PROPERTIES:
-   :CUSTOM_ID: communities-of-practice-ethics-of-care
-   :END:
-
-   #+begin_quote
-   Moððe word fræt.      Me þæt þuhte wrætlicu wyrd,     þa ic þæt wundor gefrægn, þæt se wyrm forswealg     wera gied sumes, þeof in þystro,     þrymfæstne cwide ond þæs strangan staþol.    Stælgiest ne wæs wihte þy gleawra,    þe he þam wordum swealg.
-
-A moth ate words. That seemed to me a marvellous fate, when I heard about that wonder, that the worm swallowed up a certain man's song, the thief in darkness, a glory-fast speech and its strong foundation. The stealing guest was not at all the wiser, for those words he swallowed.
-
-   #+end_quote
-
-** COMMENT *Archive*: a collection of records
-  :PROPERTIES:
-  :CUSTOM_ID: archive-a-collection-of-records
-  :style: page-break-before:always; 
-  :END:
-
-- *Archive*: a collection of records
-- *Metadata*: structured data describing data. Think Author, Title, Date in your online library catalogue.
-- *Open-source:* Source code of a program is publicly available, and developers may study, modify, and redistribute the code.
-- *Migration*: taking data from an obsolete platform or standard into a new, more stable platform and standard
-- *Emulation*: accessing data on a new, more stable platform by building around it an environment like that in which it was originally created
-- *LOCKSS*: Lots of Copies Keep Stuff Safe
-- *Dark archives*: secret, inaccessible archives (disaster recovery)
-
-*  COMMENT -- Endangered Knowledge: Tears in Rain 
-:PROPERTIES:
-:EXPORT_FILE_NAME: 09-danger-tears
-:END:
-** Today
-- Knowledge, Danger, Digital
-- Omeka: Your Questions and Concerns
-** Nothing Lasts Forever
-#+begin_export html
-<iframe width="1200" height="800" src="https://www.youtube.com/embed/NoAzpa1x7jU?start=135" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-#+end_export
-
-
-
-** Medieval Manuscripts
-  :PROPERTIES:
-  :CUSTOM_ID: medieval-manuscripts
-  :END:
-
-*** The Exeter Book Riddles
-  :PROPERTIES:
-  :CUSTOM_ID: the-exeter-book-riddles
-  :style: page-break-before:always; 
-  :END:
-
-#+begin_paired
-Old English poetry (10th c. manuscript): Cathedral Library, Exeter MS. 3501.
-#+end_paired
-#+begin_paired
-[[./images/book-burn.png]]
-#+end_paired
-
-*** Making Parchment
-  :PROPERTIES:
-  :CUSTOM_ID: making-parchment
-  :style: page-break-before:always; 
-  :END:
-
-#+begin_paired
-Parchment = stretched and processed animal skin (goat, sheep, calf, cow)
-
-but see also: anthropodermic bibliopegy)
-
-Domestic sheep. Public Domain, https://commons.wikimedia.org/w/index.php?curid=16818.
-
-
-#+end_paired
-#+begin_paired
-[[./images/sheep-flock.jpg]]
-#+end_paired
-*** Making Parchment
-  :PROPERTIES:
-  :CUSTOM_ID: making-parchment-1
-  :style: page-break-before:always; 
-  :END:
-
-#+begin_paired
-- Skin is soaked in lime solution to loosen animal hair
-- Animal hair removed with curved knife
-- Skin wetted and stretched on special rack
-
-#+end_paired
-#+begin_paired
-[[./images/parchment-skin.jpg]]
-#+end_paired
-
-*** Writing
-  :PROPERTIES:
-  :CUSTOM_ID: writing
-  :style: page-break-before:always; 
-  :END:
-
-#+begin_paired
-- Rule the parchment (lead point or coloured ink)
-- Write with quill (goose or swan feather cut to form a nib) dipped into ink
-- Erase mistakes by scraping ink off with knife
-
-#+end_paired
-#+begin_paired
-[[./images/colored-writing.png]]
-#+end_paired
-
-*** Illumination
-  :PROPERTIES:
-  :CUSTOM_ID: illumination
-  :style: page-break-before:always; 
-  :END:
-
-#+begin_paired
-- Apply gold leaf
-
-Image:  British Library, The Lindisfarne Gospels (London, British Library Cotton MS Nero D.IV), early 8th c.
-#+end_paired
-#+begin_paired
-[[./images/illumination-detail.png]]
-#+end_paired
-*** Writing
-  :PROPERTIES:
-  :CUSTOM_ID: writing-1
-  :style: page-break-before:always; 
-  :END:
-
-#+begin_paired
-British Library, MS. Arundel 43, f. 80v . Donatus writing his Grammar.
-
-- Rule the parchment (lead point or coloured ink)
-- Write with quill (goose or swan feather cut to form a nib) dipped into ink
-- Erase mistakes by scraping ink off with knife
-
-#+end_paired
-#+begin_paired
-[[./images/writing-monk-detail.png]]
-#+end_paired
-*** Medieval Writing Materials
-[[./images/ink-origins.png]]
-
-** Early Printed Books
-  :PROPERTIES:
-  :CUSTOM_ID: early-printed-books
-  :style: page-break-before:always; 
-  :END:
-
-*** 
-  :PROPERTIES:
-  :CUSTOM_ID: section-3
-  :style: page-break-before:always; 
-  :END:
-[[./images/library.jpg]]
-*** “Wicked” Bible. Thomas Fisher Rare Books Library.
-  :PROPERTIES:
-  :CUSTOM_ID: section-4
-  :style: page-break-before:always; 
-  :END:
-
-#+begin_paired
-[[./images/wicked-detail.png]]
-#+end_paired
-#+begin_paired
-[[./images/wicked-bible.jpg]]
-
-#+end_paired
-
-*** Gutenberg Process
-  :PROPERTIES:
-  :CUSTOM_ID: section-5
-  :style: page-break-before:always; 
-  :END:
-
-  #+begin_export html
-  <iframe width="1200px" height="800px" src="https://www.youtube.com/embed/EMjhNhQsqsg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  #+end_export
-
-** Making & Sustaining Digital Archives
-  :PROPERTIES:
-  :CUSTOM_ID: making-sustaining-digital-archives
-  :style: page-break-before:always; 
-  :END:
-
-[[./images/archive-defn.png]]
-
-
-** Toronto Public Library Digital Archive: Print Media, Digitized
-  :PROPERTIES:
-  :CUSTOM_ID: toronto-public-library-digital-archive-print-media-digitized
-  :style: page-break-before:always; 
-  :END:
-[[./images/tpl-arc.png]]
-
-Digital archives can originate with print media, like the Toronto Public Library Digital Archive.
-
-** Digital Archives: Egyptian Revolution (Born Digital)
-  :PROPERTIES:
-  :CUSTOM_ID: digital-archives-egyptian-revolution-born-digital
-  :style: page-break-before:always; 
-  :END:
-
-[[./images/egypt-rev.png]]
-
-Other archives are born digital.
-
-
-[[http://guides.library.cornell.edu/c.php?g=31688&p=200748][https://archive-it.org/collections/2358]]
-
-[[http://guides.library.cornell.edu/c.php?g=31688&p=200748][http://guides.library.cornell.edu/c.php?g=31688&p=200748]]
-
-[[https://storify.com/acarvin/new-story-2][https://storify.com/acarvin/new-story-2]]
-
-
-#+begin_notes
-
-Other archives are born digital. Here is an archive of social media activity during the *Egyptian revolution of 2011*: tweets, blogs, Facebook posts, and so on. This is maintained by the American University in Cairo in partnership with the Internet Archive.
-
-#+end_notes
-
-** 
-  :PROPERTIES:
-  :CUSTOM_ID: section-12
-  :style: page-break-before:always; 
-  :END:
-
-[[./images/born-dig-collections.png]]
-
-Archives consist of records: digitized manuscripts, books, newspapers, legal documents, video footage, oral histories, sounds, tweets.
-
-** Digitizing Parchment & Paper
-  :PROPERTIES:
-  :CUSTOM_ID: digitizing-parchment-paper
-  :style: page-break-before:always; 
-  :END:
-
-*** Internet Archive
-  :PROPERTIES:
-  :CUSTOM_ID: section-13
-  :style: page-break-before:always; 
-  :END:
-
-[[./images/ia-screenshot.png]]
-
-*** Materials
-
-[[./images/boxes.jpg]]
-#+begin_notes
-Digitization requires very specialized equipment and expertise. Before digitization can begin, materials travel to the scanning centre. Some books travel in humble cardboard boxes, like this stack of yearbooks from Vancouver College.
-
-#+end_notes
-*** Internet Archive: Materials for digitization. Photo: A. Bolintineanu, 2016.
-   :PROPERTIES:
-   :CUSTOM_ID: internet-archive-materials-for-digitization.-photo-a.-bolintineanu-2016.-1
-   :END:
-
-[[./images/coffin.png]]
-   #+begin_notes
-Other materials travel in style---in this case, in enclosed archival boxes that themselves travel in padded wooden crates very much like vampire coffins (because, like vampires, these books are fragile and long-lived, travellers from an earlier time).
-   
-   #+end_notes
-
-*** Internet Archive: Materials for digitization. Photo: A. Bolintineanu, 2016.
-  :PROPERTIES:
-  :CUSTOM_ID: internet-archive-materials-for-digitization.-photo-a.-bolintineanu-2016.-2
-  :style: page-break-before:always; 
-  :END:
-
-[[./images/book-coffin.jpg]]
-  #+begin_notes
-  Here's the vampire coffin.
-  #+end_notes
-
-*** Digitizing Manuscripts
-  :PROPERTIES:
-  :CUSTOM_ID: digitizing-manuscripts
-  :style: page-break-before:always; 
-  :END:
-
-Digitisation of a Dunhuang manuscript (Pictured: De Vere 480 camera. Wikipedia: International Dunhuang Project, 2006.)
-
-[[./images/manuscript-scan/jpg]]
-#+begin_notes
-Once you have assembled your material, digitization work can begin. You'll need a specialized camera that can capture the colours of your manuscript, the tiny details (some not visible to the naked eye), erasures, scribal doodles, the marginal notes written by scribes and readers over the years, even bookworm damage. You'll need a cradle to support the manuscript. You'll need a conservation-friendly room, where you can control all the light sources, to make sure you take the clearest, most accurate photograph.
-
-#+end_notes
-*** Digitizing Printed Books
-  :PROPERTIES:
-  :CUSTOM_ID: digitizing-printed-books
-  :style: page-break-before:always; 
-  :END:
-
-Digitizing Books at the Fisher Library (Photo: Paul Armstrong, 2016)
-
-[[./images/scanner.pg]]
-#+begin_notes
-Here is a specialized scanner as used by the Fisher Library. Notice the black book cradle under the book, and colour calibration strip on the right-hand side of the book. These help ensure archival-quality images.
-
-#+end_notes
-*** Digitizing Printed Books
-  :PROPERTIES:
-  :CUSTOM_ID: digitizing-printed-books-1
-  :style: page-break-before:always; 
-  :END:
-
-[[./images/darkroom-scan.jpg]]
-  #+begin_notes
-  Here is a specialized scanning station from the Internet Archive's outpost on the seventh floor of Robarts. Notice the curtains around the station, ensuring a minimum of light interference; the bright light on the scanner itself; the computer screen, to check the quality of the scan; and the book cradle, holding the book half-open so as not to injure its spine. On the seventh floor of Robarts, in the Internet Archive's quarters, there are seven or eight such digitization stations, each in its own cocoon of drapery and with its own overhead light.
-
-  #+end_notes
-*** Digitizing Printed Books
-  :PROPERTIES:
-  :CUSTOM_ID: digitizing-printed-books-2
-  :style: page-break-before:always; 
-  :END:
-
-[[./images/darkroom-person.jpg]]
-  #+begin_notes
-  
-The scanning bed is angled, forming a book cradle that allows a book to sit partially open. This supports fragile spines and bindings.
-
-  #+end_notes
-** Google Data Centre: Server Farm
-  :PROPERTIES:
-  :CUSTOM_ID: google-data-centre-server-farm
-  :style: page-break-before:always; 
-  :END:
-Image: Google, Data Centre Gallery (https://www.google.com/about/datacenters/gallery)
-[[./images/datacenter.png]]
-** “The Mirror of the World & Its Memory”
-  :PROPERTIES:
-  :CUSTOM_ID: the-mirror-of-the-world-its-memory
-  :style: page-break-before:always; 
-  :END:
-
-#+begin_quote
-  
-“Documentary heritage reflects the diversity of languages, peoples and cultures. It is the mirror of the world and its memory. But this memory is fragile. Every day, irreplaceable parts of this memory disappear for ever.”
-
--- UNESCO Memory of the World Programme
-#+end_quote
-*** British Library, Endangered Archives Programme
-  :PROPERTIES:
-  :CUSTOM_ID: british-library-endangered-archives-programme
-  :style: page-break-before:always; 
-  :END:
-
-[[./images/endangered-archives.png]]
-
-https://eap.bl.uk/
-
-
-*** Digital Imaging of Endangered Books
-  :PROPERTIES:
-  :CUSTOM_ID: digital-imaging-of-endangered-books
-  :style: page-break-before:always; 
-  :END:
-[[./images/hmml.png]]
-*** 
-  :PROPERTIES:
-  :CUSTOM_ID: section-16
-  :style: page-break-before:always; 
-  :END:
-[[./images/hmml-2.png]]
-** COMMENT Hyperspectral or Multispectral Imaging
-  :PROPERTIES:
-  :CUSTOM_ID: hyperspectral-or-multispectral-imaging
-  :style: page-break-before:always; 
-  :END:
-#+begin_paired
-[[./images/hyper1.png]]
-#+end_paired
-#+begin_paired
-[[./images/hyper2.jpg]]
-#+end_paired
-** COMMENT Hyperspectral or Multispectral Imaging
-  :PROPERTIES:
-  :CUSTOM_ID: hyperspectral-or-multispectral-imaging-1
-  :style: page-break-before:always; 
-  :END:
-
-  #+begin_quote
-   “a powerful, noncontact technique with a range of capabilities. The critical component of the advanced spectral imaging is the capability for chemical characterization of materials, providing both access and enhanced non-visible and visible information in registered high-resolution digital images. This noncontact tool can identify and characterize colorants, inks, and substrates through their specific spectral response, monitor deterioration or changes due to exhibit and other environmental conditions, assess and potentially identify previous treatments that modify chemical and spectral responses of cultural heritage materials...” (Fenella G. France et al)
-
-  #+end_quote
-*** Archimedes Codex
-  :PROPERTIES:
-  :CUSTOM_ID: archimedes-codex
-  :style: page-break-before:always; 
-  :END:
-#+begin_paired
-
-[[https://www.ted.com/talks/william_noel_revealing_the_lost_codex_of_archimedes][https://www.ted.com/talks/william_noel_revealing_the_lost_codex_of_archimedes]]
-
-[[http://archimedespalimpsest.net/Data/][http://archimedespalimpsest.net/Data/]]
-
-#+end_paired
-#+begin_paired
-[[./images/arch.jpg]]
-#+end_paired
-*** Herculaneum Scrolls
-  :PROPERTIES:
-  :CUSTOM_ID: herculaneum-scrolls
-  :style: page-break-before:always; 
-  :END:
-
-#+begin_paired
-  #+begin_quote
-  A papyrus scrolls from Herculaneum, which was carbonized in the eruption of Mt. Vesuvius, undergoes part of the CT scan process to help decipher the writing contained within the scrolls, in an image from the University of Kentucky's Center for Visualization and Virtual Environments taken in 2009. ([[https://www.newsweek.com/2016/01/29/x-rays-reveal-secrets-egyptian-scrolls-papyrus-416719.html][https://www.newsweek.com/2016/01/29/x-rays-reveal-secrets-egyptian-scrolls-papyrus-416719.html]])
-
-  #+end_quote
-#+end_paired
-#+begin_paired
-[[./images/herc.jpg]]
-#+end_paired
-** The Declaration of Independence (draft)
-  :PROPERTIES:
-  :CUSTOM_ID: the-declaration-of-independence-draft
-  :style: page-break-before:always; 
-  :END:
-
-*** Patriots? Residents?
-   :PROPERTIES:
-   :CUSTOM_ID: patriots-residents
-   :END:
-[[./images/declaration.png]]
-
-- Fenella G. France and Michael B. Toth. 2011. [[https://ieeexplore-ieee-org.myaccess.library.utoronto.ca/search/searchresult.jsp?newsearch=true&queryText=Spectral+imaging+for+revealing+and+preserving+world+cultural+heritage][“Spectral imaging for revealing and preserving world cultural heritage]].” The Institute of Electrical and Electronics Engineers, Inc. (IEEE) Conference Proceedings, 08/2011, pp. 1450 -- 1454.
-
-*** The Declaration of Independence (draft)
-  :PROPERTIES:
-  :CUSTOM_ID: the-declaration-of-independence-draft-1
-  :style: page-break-before:always; 
-  :END:
-
-[[./images/dec-full.]]jpg
-*** 
-  :PROPERTIES:
-  :CUSTOM_ID: section-17
-  :style: page-break-before:always; 
-  :END:
-[[./images/dec-side.png]]
-
-** Risks to Digital Archives
-  :PROPERTIES:
-  :CUSTOM_ID: risks-to-digital-archives
-  :style: page-break-before:always; 
-  :END:
-
-
-*** Risks to Digital Archives
-  :PROPERTIES:
-  :CUSTOM_ID: risks-to-digital-archives-1
-  :style: page-break-before:always; 
-  :END:
-#+begin_paired
-[[./images/worm-fole.jpg]]
-#+end_paired
-#+begin_paired
-[[./images/blue-screen.png]]
-#+end_paired
-** Domesday Book
-  :PROPERTIES:
-  :CUSTOM_ID: doomsday-book
-  :style: page-break-before:always; 
-  :END:
-
-#+begin_paired
-[[./images/domesday.jpg]]
-1086
-#+end_paired
-#+begin_paired
-[[./images/domes-2.pg]]
-#+end_paired
-
-#+begin_notes
-Let me tell you the story of the two Doomsday Books. The firsts is a Latin manuscript of the eleventh century: for taxation purposes, William the Conqueror ordered a record made of landholders and their property in much of England and parts of Wales. The book was finished in 1086 and it resides at The National Archives at Kew, London.
-
-The second Doomsday Book was a BBC initiative, 900 years later: an attempt to build a “digital snapshot of the country,” a documentation of everyday life in communities around the United Kingdom. Over a million people contributed. 
-
-The BBC Domesday Project was stored on adapted laser discs. Reading these discs required a state-of-the-art microcomputer, the Acorn BBC Master, customized with a specially produced laserdisc player.
-
-
-#+end_notes
-
-
-** Domesday Book
-Unfortunately, as the machines became obsolete, the laser discs and the data on them became unreadable. Until, roughly, 2011. After efforts by academics and technologists around the world, the BBC's own technologists, George Auckland and his Innovations Team, completed the extraction of the laser disc. The BBC Domesday Book is now available to the world at large online.
-
-
-** Data Loss and Digital Archives: Storage, Loss, Preservation
-
-
-*** Data Storage
-  :PROPERTIES:
-  :CUSTOM_ID: data-storage
-  :style: page-break-before:always; 
-  :END:
-
-- *Risky*
-  - Own machine: YIKES
-  - Dropbox or Google Drive: better, but not perfect
-
-- *Safer*
-  - Multiple backups off-site
-  - GitHub (version control)
-  - Institutional repository (i.e. the library) with technical safeguards against data degradation
-  - LOCKSS: distributed network of institutional repositories
-  - Dark archives: secret, inaccessible archives (disaster recovery)
-
-#+begin_notes 
-Storing the data on your own machine is very risky. If you put it in Dropbox or Google Drive, that's better, but not perfect: what if you or a team member deletes the data by accident? Even better if you have multiple off-site backups: so if e.g. Dropbox has a security failure and your own computer is compromised, you can still get your data from the hard-drive at your parents'. Even better: GitHub (which is a platform that tracks versions of your data, where you have the history of your data and can go back to earlier versions).
-
-If you're a research institution, you have some other, even safer options.
-
-Your institutional repository is maintained by the library: it's a place to park your data that has sophisticated technical safeguards against data degradation.
-
-If one institutional repository is nice, more are even better. LOCKSS is an open-source preservation system that sustains a distributed network of institutional repositories. It's like storing your backup hard-drive at your parents' and having them store their hard-drive at your house. In other words, everyone protects everyone else's data. LOCKSS stands for “lots of copies keep stuff safe.” And for additional protection, there are dark archives, for disaster recovery. These keep data secret and inaccessible until a trigger event such as a natural disaster or another kind of catastrophic data loss.
-#+end_notes
-
-*** Hardware and Software Platforms
-  :PROPERTIES:
-  :CUSTOM_ID: hardware-and-software-platforms
-  :style: page-break-before:always; 
-  :END:
-
-- *Risky*
-  - Dedicated, unique software platforms made by commercial providers to fit your data beautifully.
-- *Safer*
-  - Open-source, community-supported software
-
-*** Preservation Approaches
-  :PROPERTIES:
-  :CUSTOM_ID: preservation-approaches
-  :style: page-break-before:always; 
-  :END:
-
-- *Migration*
-  - Moving your data from an obsolete, less stable platform and format into a newer, more stable platform and format.
-  - Great for simpler digital objects (text, images)
-  - Example: DOE data.
-
-- *Emulation*
-  - In a new, stable software platform, recreating the---now obsolete---original environment of a digital object
-  - Good for complicated digital objects (software)
-  - Example: old arcade video games.
-
-
-#+begin_notes
-Suppose your data is in an obsolete, unstable platform. What can you do?
-#+end_notes
-** Marginalized Communities: Archival Absence & Misrepresentation
-  :PROPERTIES:
-  :CUSTOM_ID: marginalized-communities-archival-absence-misrepresentation
-  :style: page-break-before:always; 
-  :END:
-[[./images/illega.png]]
-*** Marginalized Communities: Archival Absence & Misrepresentation
-  :PROPERTIES:
-  :CUSTOM_ID: marginalized-communities-archival-absence-misrepresentation-1
-  :style: page-break-before:always; 
-  :END:
-[[./sup-ind.png]]
-*** 
-  :PROPERTIES:
-  :CUSTOM_ID: section-26
-  :style: page-break-before:always; 
-  :END:
-
-\\
-
-[[./images/rec.png]]
-#+begin_notes
-Think about the residential school system in Canada, under which about 150,000 First Nation, Inuit and Métis children were removed from their communities, forced to attend residential schools, not allowed to speak their first language, not allowed to practice native traditions. Many were starved, beaten, sexually abused. Two days ago, Ontario Premier Kathleen Wynne officially apologized to First Nations, Metis, and Inuit communities for the abuses of the residential school system. Part of the Truth and Reconciliation Commission's work has been to uncover this history. It is not recovery. It is not undoing of cultural genocide. But, and I quote the National Centre for Truth and Reconciliation, “A shared vision held by those affected by Indian residential schools was to create a place of learning and dialogue where the truths of their experiences were honoured and kept safe for future generations. They wanted their families, communities and all of Canada to learn from these hard lessons so they would not be repeated.” The Governing Circle of the archive must “ensure Indigenous control over the materials, ensure Indigenous control over the materials; provide guidance on policies, activities, ceremonies and protocols; and provide guidance on methods and sources for expanding the Centre's holdings and resources.” The archive does not turn back time. But it safeguards the past and, in so doing, opens up possible futures.
-
-#+end_notes
-*** MUKURTU
-  :PROPERTIES:
-  :CUSTOM_ID: mukurtu
-  :style: page-break-before:always; 
-  :END:
-#+begin_paired
-[[./images/muk-logo.png]]
-#+end_paired
-#+begin_paired
-“Mukurtu (MOOK-oo-too) is a grassroots project aiming to empower communities to manage, share, narrate, and exchange their digital heritage in culturally relevant and ethically-minded ways.”
-
-#+end_paired
-
-*** MUKURTU
-  :PROPERTIES:
-  :CUSTOM_ID: section-28
-  :style: page-break-before:always; 
-  :END:
-  #+begin_export html
-  <iframe width="1200px" height="800px" src="https://voicesofamiskwaciy.ca/" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  #+end_export
-
-** Disasters
-  :PROPERTIES:
-  :CUSTOM_ID: disasters
-  :style: page-break-before:always; 
-  :END:
-*** Fires
-#+begin_paired
- Library of Celsus, Ephesus, Anatolia, now part of Selçuk, Turkey -- destroyed by earthquake and/or fire and/or Goth invasion in 3rd century AD.
-
-Photo: Benh LIEU SONG - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=15578063
-
-#+end_paired
-#+begin_paired
-[[./images/anatolia.jpg]]
-#+end_paired
-
-*** Freezers
-  :PROPERTIES:
-  :CUSTOM_ID: section-25
-  :style: page-break-before:always; 
-  :END:
-
-#+begin_paired
-
-Canadian Ice Core Archive
-
-Freezer fails,  temperature rises to about 100 degrees F, ice core samples from Canadian Arctic “which contained 22,000 years' worth of atmospheric information, were entirely or partially destroyed” (Martin Sharp, cited by Tatiana Schlossberg, “An Ice Scientist's Worst Nightmare,” New York Times, 11 April 2017)
-
-#+end_paired
-#+begin_paired
-[[./images/ice-core.png]]
-#+end_paired
-
-*** Flim-Flam Men
-[[./images/toxic-agenda.jpg]]
-
-**  EDGI & The Archiving Movement
-[[./g-a.png]]
-
-*** Data Rescue
-[[./images/dr.png]]
-
-*** COMMENT Coverage 
-[[./images/coverage.png]]
-*** Website Monitoring
-[[./images/wm-changes.png]]
-
-*** Website Monitoring
-[[./images/wm-flow.svg]]
-
-*** Infrastructure
-[[./images/edgi-gh.png]]
-
-*** What's the /Real/ Nature of the problem?
-- single point of failure
-- who owns knowledge
-- who can/should we trust?
-
-** Risk Mitigation
-  :PROPERTIES:
-  :CUSTOM_ID: risk-mitigation-1
-  :style: page-break-before:always; 
-  :END:
-
-  #+begin_quote 
-collection evacuation risks, prompted by wildfires, floods, and hurricanes long-term relocation decisions due to sea-level rise and coastal erosion, or if a weather event is so devastating, rebuilding is inadvisable or impossible increasing infrastructure and preservation costs when current HVAC systems can't keep up with future increases in temperature and humidity” (Eira Tansey, “When the Unbearable Becomes Inevitable: Archives and Climate Change,” 2017, [[http://eiratansey.com/2017/05/16/fierce-urgencies-2017/][http://eiratansey.com/2017/05/16/fierce-urgencies-2017/]])
-
-
-  #+end_quote
-LOCKSS, dark archives, community building
-
-** Death in the Archives: Bits against Ruins
-  :PROPERTIES:
-  :CUSTOM_ID: death-in-the-archives-bits-against-ruins
-  :style: page-break-before:always; 
-  :END:
-
-*** Communities of practice, ethics of care
-   :PROPERTIES:
-   :CUSTOM_ID: communities-of-practice-ethics-of-care
-   :END:
-
-   #+begin_quote
-   Moððe word fræt.      Me þæt þuhte wrætlicu wyrd,     þa ic þæt wundor gefrægn, þæt se wyrm forswealg     wera gied sumes, þeof in þystro,     þrymfæstne cwide ond þæs strangan staþol.    Stælgiest ne wæs wihte þy gleawra,    þe he þam wordum swealg.
-
-A moth ate words. That seemed to me a marvellous fate, when I heard about that wonder, that the worm swallowed up a certain man's song, the thief in darkness, a glory-fast speech and its strong foundation. The stealing guest was not at all the wiser, for those words he swallowed.
-
-   #+end_quote
-
-** *Archive*: a collection of records
-  :PROPERTIES:
-  :CUSTOM_ID: archive-a-collection-of-records
-  :style: page-break-before:always; 
-  :END:
-
-- *Archive*: a collection of records
-- *Metadata*: structured data describing data. Think Author, Title, Date in your online library catalogue.
-- *Open-source:* Source code of a program is publicly available, and developers may study, modify, and redistribute the code.
-- *Migration*: taking data from an obsolete platform or standard into a new, more stable platform and standard
-- *Emulation*: accessing data on a new, more stable platform by building around it an environment like that in which it was originally created
-- *LOCKSS*: Lots of Copies Keep Stuff Safe
-- *Dark archives*: secret, inaccessible archives (disaster recovery)
-
-* {{{n}}}: Endangered Knowledge 2: Fisher Library ({{{ts}}})
-* {{{n}}}: Endangered Knowledge 3: Guest Lecture! ({{{ts}}})
+* 5: Endangered Knowledge 2: Fisher Library (<2020-07-14 Tue>)
+* 6: Endangered Knowledge 3: Guest Lecture! (<2020-07-16 Thu>)
 :PROPERTIES:
 :EXPORT_FILE_NAME: 07-enangered-3-samizdat
 :END:
@@ -2560,7 +2278,7 @@ file:///home/matt/wdw235/images/mattu-data-driven-society-oct-30-2019.jpg
 - how will you imagine the layout (wireframe) 
 ** More Omeka!
 
-*  {{{n}}}: Data 1: Data Models for the Humanities ({{{ts}}})
+*  7: Data 1: Data Models for the Humanities (<2020-07-21 Tue>)
 :PROPERTIES:
 :EXPORT_FILE_NAME: 09-data-1
 :END:
@@ -2588,15 +2306,6 @@ But an important distinction needs to be clear from the outset: the task of repr
 
 #+end_quote
 
-** COMMENT Graphs 
-#+begin_quote
-The graphical force conceals what the statistician knows very well --- that no “data” pre-exist their parameterization. /Data are capta/, taken not given, constructed as an interpretation of the phenomenal world, not inherent in it.
-
-http://www.digitalhumanities.org/dhq/vol/5/1/000091/000091.html#p9
-<<p9>>
-To expose the constructedness of data as capta a number of systematic changes have to be applied to the creation of graphical displays. That is the foundation and purpose of a /humanistic approach/ to the qualitative display of graphical information. Read that last formulation carefully, /humanistic approach/ means that the premises are rooted in the recognition of the /interpretative/ nature of knowledge, that the /display/ itself is conceived to /embody qualitative expressions/, and that the information is understood as /graphically constituted/. Each of these factors contains an explicit critique of assumptions in the conventional “visual display of quantitative information” that is the common currency.
-
-#+end_quote
 ** Compare Graphs
 :PROPERTIES:
 :reveal_extra_attr: class="twoc"
@@ -2732,7 +2441,7 @@ https://i.kinja-img.com/gawker-media/image/upload/ksd0huhaczb6xsxhrszp.png
   :style: page-break-before:always; 
   :END:
 
-  #+begin_src xml
+  #+BEGIN_SRC xml
   <msDesc>
     <msIdentifier>
       <settlement>Oxford
@@ -2759,8 +2468,8 @@ https://i.kinja-img.com/gawker-media/image/upload/ksd0huhaczb6xsxhrszp.png
       </p>
     </physDesc>
   </msDesc>
-  
-  #+end_src
+
+  #+END_SRC
 
 *** Humanities Data: Structured
   :PROPERTIES:
@@ -2976,9 +2685,9 @@ http://www.digitalhumanities.org/dhq/vol/5/1/000091/...000091/resources/images/f
 - full-text visualization tool
 - try with *frankenstein.txt*, *
 
-* {{{n}}}: Data 2: OpenRefine Workshop! ({{{ts}}})
-* {{{n}}}: Data Visualization -- Workshop! ({{{ts}}})
-{{{ts}}} {{{n}}}
+* 8: Data 2: OpenRefine Workshop! (<2020-07-23 Thu>)
+* 9: Data Visualization -- Workshop! (<2020-07-28 Tue>)
+<2020-07-30 Thu> 10
 ** Notes on Kelly's work
 
 - "Network density"? :: percentage of possible connections between nodes that are actualy present
@@ -2994,7 +2703,7 @@ http://www.digitalhumanities.org/dhq/vol/5/1/000091/...000091/resources/images/f
 - mckinlay :: what are quantitative, ordinal, and nominal categories?  
 - 
 
-* {{{n}}}: Finale ({{{ts}}}) 
+* 11: Finale (<2020-08-04 Tue>) 
 :PROPERTIES:
 :EXPORT_FILE_NAME: 11-finale
 :END:
@@ -3381,36 +3090,3 @@ xsltproc temp.xslt temp.xml
 
 #+end_slideblock
 
-** COMMENT xml language
-#+begin_src emacs-lisp
-(add-to-list 'org-src-lang-modes '("xml" . nxml))
-;; (defvar org-babel-default-header-args:inline-js
-;;   '((:results . "html")
-;; g    (:exports . "results")))
-
-
-(defun org-babel-execute:xml (body params)
-  (let ((full-body (org-babel-expand-body:generic
-		    body params (org-babel-variable-assignments:js params))))
-    full-body))
-#+end_src
-
-#+RESULTS:
-: org-babel-execute:xml
-
-#+begin_src shell
-  echo ${TERM}
-  echo ${0}
-#+end_src
-
-#+RESULTS:
-| dumb     |
-| /bin/zsh |
-
-
-
-* COMMENT Variables
-# Local Variables:
-# org-time-stamp-custom-formats: ("<%b. %d>" . "<%Y-%m-%d %H:%M>")
-# org-mwp-classtimes-calibrate: ( "<2020-07-02 Thu>" "<2020-06-30 Tue>" )
-# End:  
