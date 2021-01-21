@@ -6,11 +6,7 @@
     <description>Recent content on HIS393: Digital History</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 02 Oct 2019 15:58:25 -0400</lastBuildDate>
-    
-	<atom:link href="https://digitalhistory.github.io/wdw235/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 02 Oct 2019 15:58:25 -0400</lastBuildDate><atom:link href="https://digitalhistory.github.io/wdw235/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Final Project: Book Exhibit</title>
       <link>https://digitalhistory.github.io/wdw235/assignment/book-project-assignment/</link>
@@ -83,39 +79,39 @@ You may select any project you like from the syllabus or from one of the pages b
     </item>
     
     <item>
-      <title></title>
-      <link>https://digitalhistory.github.io/wdw235/01-intro/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://digitalhistory.github.io/wdw235/01-intro/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
+      <title>01: Introduction</title>
       <link>https://digitalhistory.github.io/wdw235/slides/01-intro/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://digitalhistory.github.io/wdw235/slides/01-intro/</guid>
-      <description></description>
+      <description>01: Introduction .underline { text-decoration: underline; }   /* Position computations of klipse get confused by reveal.js&#39;s scaling. Hence, scaling should be disabled with this code. Fix height of code area with scrollbar (use overflow instead of overflow-y to restore CodeMirror setting afterwards): */ .reveal section pre { max-height: 70vh; height: auto; overflow: auto; } /* Reset some reveal.js and oer-reveal settings: */ .reveal section pre .CodeMirror pre { font-size: 2.</description>
     </item>
     
     <item>
-      <title></title>
+      <title>02: Maps and assignments</title>
       <link>https://digitalhistory.github.io/wdw235/slides/02-maps/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://digitalhistory.github.io/wdw235/slides/02-maps/</guid>
-      <description></description>
+      <description>02: Maps and assignments .underline { text-decoration: underline; }   /* Position computations of klipse get confused by reveal.js&#39;s scaling. Hence, scaling should be disabled with this code. Fix height of code area with scrollbar (use overflow instead of overflow-y to restore CodeMirror setting afterwards): */ .reveal section pre { max-height: 70vh; height: auto; overflow: auto; } /* Reset some reveal.js and oer-reveal settings: */ .reveal section pre .</description>
     </item>
     
     <item>
-      <title></title>
-      <link>https://digitalhistory.github.io/wdw235/slides/04-3d-printing/</link>
+      <title>Mapping: Few More thoughts, then a Workshop</title>
+      <link>https://digitalhistory.github.io/wdw235/slides/04-maps-last-thoughts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://digitalhistory.github.io/wdw235/slides/04-3d-printing/</guid>
-      <description></description>
+      <guid>https://digitalhistory.github.io/wdw235/slides/04-maps-last-thoughts/</guid>
+      <description>Mapping: Few More thoughts, then a Workshop .underline { text-decoration: underline; }   /* Position computations of klipse get confused by reveal.js&#39;s scaling. Hence, scaling should be disabled with this code. Fix height of code area with scrollbar (use overflow instead of overflow-y to restore CodeMirror setting afterwards): */ .reveal section pre { max-height: 70vh; height: auto; overflow: auto; } /* Reset some reveal.js and oer-reveal settings: */ .</description>
+    </item>
+    
+    <item>
+      <title>WDW235 Syllabus</title>
+      <link>https://digitalhistory.github.io/wdw235/slides/lectures/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://digitalhistory.github.io/wdw235/slides/lectures/</guid>
+      <description>WDW235 Syllabus .underline { text-decoration: underline; }   /* Position computations of klipse get confused by reveal.js&#39;s scaling. Hence, scaling should be disabled with this code. Fix height of code area with scrollbar (use overflow instead of overflow-y to restore CodeMirror setting afterwards): */ .reveal section pre { max-height: 70vh; height: auto; overflow: auto; } /* Reset some reveal.js and oer-reveal settings: */ .reveal section pre .CodeMirror pre { font-size: 2.</description>
     </item>
     
     <item>
