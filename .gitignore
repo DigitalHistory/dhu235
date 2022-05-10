@@ -1,3 +1,4 @@
+old-html-files
 .#*
 website/public
 website/.git-old-deleting
@@ -7,3 +8,4 @@ website/.git-old-deleting
 /wdw235-test.org
 /wdw235.html
 /Grades
+*.html
