@@ -2,18 +2,18 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-<title>7: Data 1: Data Models for the Humanities (<span class="timestamp-wrapper"><span class="timestamp">Jul. 21</span></span>)</title>
+<title>Data 1: Data Models for the Humanities</title>
 <meta name="author" content="Matt Price"/>
 <style type="text/css">
 .underline { text-decoration: underline; }
 </style>
-<link rel="stylesheet" href="file:///home/matt/src/reveal.js/css/reveal.css"/>
+<link rel="stylesheet" href="file:///home/matt/src/reveal.js/dist/reveal.css"/>
 
-<link rel="stylesheet" href="file:///home/matt/src/reveal.js/css/theme/matt.css" id="theme"/>
+<link rel="stylesheet" href="file:///home/matt/src/reveal.js/dist/theme/matt.css" id="theme"/>
 
-<link rel="stylesheet" href="file:///home/matt/src/org-reveal/local.css"/>
-<link rel="stylesheet" href="file:///home/matt/src/reveal.js/lib/css/zenburn.css"/>
-<link rel="stylesheet" href="https://sandbox.hackinghistory.ca/vendor/klipse/codemirror.css"/>
+<link rel="stylesheet" href="https://unpkg.com/tippy.js@6/tippy.js/themes/light.css'"/>
+<link rel="stylesheet" href="file:///home/matt/src/reveal.js/plugin/highlight/zenburn.css"/>
+<link rel="stylesheet" href="https://storage.googleapis.com/app.klipse.tech/css/codemirror.css"/>
 <style>
 /* Position computations of klipse get confused by reveal.js's scaling.
    Hence, scaling should be disabled with this code.  Fix height of code area
@@ -38,42 +38,18 @@
         selector_sql: '.language-klipse-sql'
     };
 </script>
-
-<!-- If the query includes 'print-pdf', include the PDF print sheet -->
-<script>
-    if( window.location.search.match( /print-pdf/gi ) ) {
-        var link = document.createElement( 'link' );
-        link.rel = 'stylesheet';
-        link.type = 'text/css';
-        link.href = 'file:///home/matt/src/reveal.js/css/print/pdf.css';
-        document.getElementsByTagName( 'head' )[0].appendChild( link );
-    }
-</script>
 </head>
 <body>
 <div class="reveal">
 <div class="slides">
 <section id="sec-title-slide">
-<h1>7: Data 1: Data Models for the Humanities (<span class="timestamp-wrapper"><span class="timestamp">Jul. 21</span></span>)</h1>
+<h1>Data 1: Data Models for the Humanities</h1>
 <h3>Matt Price  </h3>
-<!-- <p class="title-theme-choice">(view this presentation in another theme: 
-<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/black.css')); return false;">Black (default)</a> -
-<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/white.css')); return false;">White</a> -
-<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/league.css')); return false;">League</a> -
-<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/sky.css')); return false;">Sky</a> -
-<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/beige.css')); return false;">Beige</a> -
-<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/simple.css')); return false;">Simple</a> 
-<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/serif.css')); return false;">Serif</a> -
-<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/blood.css')); return false;">Blood</a> -
-<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/night.css')); return false;">Night</a> -
-<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/moon.css')); return false;">Moon</a> -
-<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/solarized.css')); return false;">Solarized</a> 
-				)	</p> -->
 
 </section>
 <section>
-<section id="slide-org6884754">
-<h2 id="org6884754">What is Data?</h2>
+<section id="slide-org05832d0">
+<h2 id="org05832d0">What is Data?</h2>
 <blockquote>
 <p>
 Data pass themselves off as mere descriptions of a priori conditions. Rendering <i>observation</i> (the act of creating a statistical, empirical, or subjective account or image) as if it were <i>the same as the phenomena observed</i> collapses the critical distance between the phenomenal world and its interpretation, undoing the basis of interpretation on which humanistic knowledge production is based. We know this. But we seem ready and eager to suspend critical judgment in a rush to visualization.
@@ -83,8 +59,8 @@ Data pass themselves off as mere descriptions of a priori conditions. Rendering 
 </section>
 </section>
 <section>
-<section id="slide-org90c62e7">
-<h2 id="org90c62e7">Data and Capta</h2>
+<section id="slide-org17861cc">
+<h2 id="org17861cc">Data and Capta</h2>
 <blockquote>
 <p>
 To overturn the assumptions that structure conventions acquired from other domains requires that we re-examine the intellectual foundations of digital humanities, putting techniques of graphical display on a foundation that is humanistic at its base. <i>This requires first and foremost that we reconceive all data as capta</i>. Differences in the etymological roots of the terms data and capta make the distinction between constructivist and realist approaches clear. <i>Capta</i> is “taken” actively while <i>data</i> is assumed to be a “given” able to be recorded and observed. From this distinction, a world of differences arises. Humanistic inquiry acknowledges the situated, partial, and constitutive character of knowledge production, the recognition that knowledge is constructed, <i>taken</i>, not simply given as a natural representation of pre-existing fact.
@@ -93,8 +69,8 @@ To overturn the assumptions that structure conventions acquired from other domai
 </section>
 </section>
 <section>
-<section id="slide-orgff0cc24">
-<h2 id="orgff0cc24">Preserving Humanistic Inquiry</h2>
+<section id="slide-orgcdf5358">
+<h2 id="orgcdf5358">Preserving Humanistic Inquiry</h2>
 <blockquote>
 <p>
 The polemic I set forth here outlines several basic principles on which to proceed differently by suggesting that what is needed is not a set of applications to display humanities “data” but a new approach that uses humanities principles to constitute capta and its display. At stake, as I have said before and in many contexts, is the authority of humanistic knowledge in a culture increasingly beset by quantitative approaches that operate on claims of certainty. Bureaucracies process human activity through statistical means and when the methods grounded in empirical sciences are put at the service of the social sciences or humanities in a crudely reductive manner, basic principles of critical thought are violated, or at the very least, put too far to the side. To intervene in this ideological system, humanists, and the values they embrace and enact, must counter with conceptual tools that demonstrate humanities principles in their operation, execution, and display. 
@@ -104,8 +80,8 @@ The polemic I set forth here outlines several basic principles on which to proce
 </section>
 </section>
 <section>
-<section id="slide-org74b0113">
-<h2 id="org74b0113">Ambiguity as <i>merely irreducible</i> or <i>constitutive</i></h2>
+<section id="slide-org3caa351">
+<h2 id="org3caa351">Ambiguity as <i>merely irreducible</i> or <i>constitutive</i></h2>
 <blockquote>
 <p>
 But an important distinction needs to be clear from the outset: the task of representing ambiguity and uncertainty has to be distinguished from a second task &#x2013; that of using interpretations that arise in observer-codependence, characterized by ambiguity and uncertainty, as the basis on which a representation is constructed. This is the difference between putting many kinds of points on a map to show degrees of certainty by shades of color, degrees of crispness, transparency etc., and creating a map whose basic coordinate grid is constructed <i>as an effect</i> of these ambiguities. In the first instance, we have a standard map with a nuanced symbol set. In the second, we create a non-standard map that expresses the constructed-ness of space.
@@ -115,11 +91,11 @@ But an important distinction needs to be clear from the outset: the task of repr
 </section>
 </section>
 <section>
-<section id="slide-org5e997be" class="twoc">
-<h2 id="org5e997be">Compare Graphs</h2>
-<div class="slideblock">
+<section id="slide-org0c80b88" class="twoc">
+<h2 id="org0c80b88">Compare Graphs</h2>
+<div class="slideblock" id="orgc66c202">
 
-<figure>
+<figure id="orgcdf0fb2">
 <img src="http://www.digitalhumanities.org/dhq/vol/5/1/000091/...000091/resources/images/figure01.jpg" alt="figure01.jpg">
 
 <figcaption><span class="figure-number">Figure 1: </span>uncritical population figures</figcaption>
@@ -127,9 +103,9 @@ But an important distinction needs to be clear from the outset: the task of repr
 
 </div>
 
-<div class="slideblock">
+<div class="slideblock" id="org16ba621">
 
-<figure>
+<figure id="orgdde42ae">
 <img src="http://www.digitalhumanities.org/dhq/vol/5/1/000091/...000091/resources/images/figure02.jpg" alt="figure02.jpg">
 
 <figcaption><span class="figure-number">Figure 2: </span>Compare with this destabilizing visualization</figcaption>
@@ -140,16 +116,24 @@ But an important distinction needs to be clear from the outset: the task of repr
 </section>
 </section>
 <section>
-<section id="slide-org609b237">
-<h2 id="org609b237">Spatiality</h2>
+<section id="slide-orgba66493" class="twoc">
+<h2 id="orgba66493">Spatiality</h2>
+<div class="slideblock" id="org7f63940">
 <blockquote>
 <p>
 We can construct a concrete example of spatiality that parallels this example of temporality, and also depends on temporal models. For instance, imagine an open stretch of beach, relatively unconstrained and unconstructed. When a sailing ship is washed up at a certain point on the beach, not only that point, but the space around it, becomes transformed. The presence of the wreck creates a huge impact, and the space almost palpably bends, compresses, expands, and warps around it, with waves of resonance rippling outward from that point.
 </p>
 </blockquote>
 
+</div>
 
-<figure>
+<div class="slideblock" id="orga17b966">
+<p>
+
+</p>
+
+
+<figure id="orgae6bc41">
 <img src="http://www.digitalhumanities.org/dhq/vol/5/1/000091/...000091/resources/images/figure14.jpg" alt="figure14.jpg">
 
 </figure>
@@ -165,43 +149,20 @@ In this example, a geographical space (a stretch of beach) is affected by a chan
 </p>
 </blockquote>
 
+</div>
 
 </section>
 </section>
 <section>
-<section id="slide-orgd89b487">
-<h2 id="orgd89b487">Drucker: Temporality</h2>
+<section id="slide-org2be8cad">
+<h2 id="org2be8cad">Drucker: Temporality</h2>
 
-<figure>
+<figure id="orgddbb280">
 <img src="http://www.digitalhumanities.org/dhq/vol/5/1/000091/...000091/resources/images/figure07.jpg" alt="figure07.jpg">
 
-<figcaption><span class="figure-number">Figure 4: </span>Temporal Folding</figcaption>
+<figcaption><span class="figure-number">Figure 3: </span>Temporal Folding</figcaption>
 </figure>
 
-</section>
-</section>
-<section>
-<section id="slide-org13f5e5d">
-<h2 id="org13f5e5d">Today</h2>
-<form><ul>
-<li>Reflections on Tableau Workshop</li>
-<li>Cautionary Tales re: Visualization</li>
-<li>Peculiarities of Humanities Data</li>
-<li>Some Viz Examples</li>
-<li>Play Time</li>
-
-</ul></form>
-</section>
-</section>
-<section>
-<section id="slide-org9cba52d">
-<h2 id="org9cba52d">Tableau recap</h2>
-<form><ul>
-<li>what was most interesting?</li>
-<li>what was most difficult?</li>
-<li>what are the take away lessons?</li>
-
-</ul></form>
 </section>
 </section>
 <section>
@@ -215,7 +176,7 @@ In this example, a geographical space (a stretch of beach) is affected by a chan
 <section id="slide-xkcd-f-grapefruit-x-y-chart">
 <h3 id="xkcd-f-grapefruit-x-y-chart">pretend data 1</h3>
 
-<figure>
+<figure id="org008aa75">
 <img src="https://imgs.xkcd.com/comics/fuck_grapefruit.png" alt="fuck_grapefruit.png">
 
 </figure>
@@ -223,7 +184,7 @@ In this example, a geographical space (a stretch of beach) is affected by a chan
 <section id="slide-jessica-hagy-thisisindexed.com">
 <h3 id="jessica-hagy-thisisindexed.com">pretend data 2</h3>
 
-<figure>
+<figure id="orgeec3217">
 <img src="http://thisisindexed.com/wp-content/uploads/2018/11/card6019.jpg" alt="card6019.jpg">
 
 </figure>
@@ -231,18 +192,16 @@ In this example, a geographical space (a stretch of beach) is affected by a chan
 <section id="slide-jessica-hagy-thisisindexed.com-1">
 <h3 id="jessica-hagy-thisisindexed.com-1">pretend data 3</h3>
 
-<figure>
+<figure id="org173aade">
 <img src="http://thisisindexed.com/wp-content/uploads/2017/11/card5371.jpg" alt="card5371.jpg">
 
 </figure>
 </section>
-</section>
-<section>
 <section id="slide-lying-with-dataviz">
-<h2 id="lying-with-dataviz">Lying with Dataviz</h2>
+<h3 id="lying-with-dataviz">Lying with Dataviz</h3>
 </section>
 <section id="slide-how-to-lie-with-data-visualization">
-<h3 id="how-to-lie-with-data-visualization">Ignoring conventions</h3>
+<h4 id="how-to-lie-with-data-visualization">Ignoring conventions</h4>
 <p>
 <a href="https://i.kinja-img.com/gawker-media/image/upload/s--SKWrO6sh--/c_fit,f_auto,fl_progressive,q_80,w_636/uqs2i9txqkdyc5jkpfut.jpg">Parik, &ldquo;How to Lie with Data&rdquo;</a>
 <img src="https://i.kinja-img.com/gawker-media/image/upload/s--SKWrO6sh--/c_fit,f_auto,fl_progressive,q_80,w_636/uqs2i9txqkdyc5jkpfut.jpg" alt="uqs2i9txqkdyc5jkpfut.jpg">
@@ -250,44 +209,42 @@ In this example, a geographical space (a stretch of beach) is affected by a chan
 
 </section>
 <section id="slide-how-to-lie-with-data-visualization-1">
-<h3 id="how-to-lie-with-data-visualization-1">Cumulative Graphs</h3>
+<h4 id="how-to-lie-with-data-visualization-1">Cumulative Graphs</h4>
 <p>
 <a href="https://i.kinja-img.com/gawker-media/image/upload/s--SKWrO6sh--/c_fit,f_auto,fl_progressive,q_80,w_636/uqs2i9txqkdyc5jkpfut.jpg">Parik, &ldquo;How to Lie with Data&rdquo;</a>
 </p>
-<div class="paired">
+<div class="paired" id="org3d2e3c1">
 
-<figure>
+<figure id="org06449a0">
 <img src="https://i.kinja-img.com/gawker-media/image/upload/s--dmLtGbNu--/c_fit,f_auto,fl_progressive,q_80,w_636/cpgpbbrmsc8s49ofewnc.png" alt="cpgpbbrmsc8s49ofewnc.png">
 
-<figcaption><span class="figure-number">Figure 8: </span>2006 = 2006 + 2005 + 2004</figcaption>
+<figcaption><span class="figure-number">Figure 4: </span>2006 = 2006 + 2005 + 2004</figcaption>
 </figure>
 
 </div>
 
-<div class="paired">
+<div class="paired" id="orgb400df7">
 
-<figure>
+<figure id="org5fc13c9">
 <img src="https://i.kinja-img.com/gawker-media/image/upload/s--4XR_eHJJ--/c_fit,f_auto,fl_progressive,q_80,w_636/gzzbt9k9isykezhw63xx.png" alt="gzzbt9k9isykezhw63xx.png">
 
-<figcaption><span class="figure-number">Figure 9: </span>2006= 2006</figcaption>
+<figcaption><span class="figure-number">Figure 5: </span>2006= 2006</figcaption>
 </figure>
 
 </div>
 
 </section>
 <section id="slide-how-to-lie-with-data-visualization-2">
-<h3 id="how-to-lie-with-data-visualization-2">Non-Zero baseline</h3>
+<h4 id="how-to-lie-with-data-visualization-2">Non-Zero baseline</h4>
 
-<figure>
+<figure id="orgc80c5fb">
 <img src="https://i.kinja-img.com/gawker-media/image/upload/ksd0huhaczb6xsxhrszp.png" alt="ksd0huhaczb6xsxhrszp.png">
 
-<figcaption><span class="figure-number">Figure 10: </span><a href="https://i.kinja-img.com/gawker-media/image/upload/s--SKWrO6sh--/c_fit,f_auto,fl_progressive,q_80,w_636/uqs2i9txqkdyc5jkpfut.jpg">Parik, &ldquo;How to Lie with Data&rdquo;</a></figcaption>
+<figcaption><span class="figure-number">Figure 6: </span><a href="https://i.kinja-img.com/gawker-media/image/upload/s--SKWrO6sh--/c_fit,f_auto,fl_progressive,q_80,w_636/uqs2i9txqkdyc5jkpfut.jpg">Parik, &ldquo;How to Lie with Data&rdquo;</a></figcaption>
 </figure>
 </section>
-</section>
-<section>
 <section id="slide-dh-ing-with-dataviz">
-<h2 id="dh-ing-with-dataviz">DH-ing with Dataviz</h2>
+<h3 id="dh-ing-with-dataviz">DH-ing with Dataviz</h3>
 <form><ul>
 <li>Unstructured Data
 <form><ul>
@@ -309,18 +266,18 @@ In this example, a geographical space (a stretch of beach) is affected by a chan
 </ul></form>
 </section>
 <section id="slide-humanities-data-unstructured">
-<h3 id="humanities-data-unstructured">Humanities Data: Unstructured</h3>
+<h4 id="humanities-data-unstructured">Humanities Data: Unstructured</h4>
 
-<figure>
+<figure id="orgf152f55">
 <img src="./images/mandeville-cover-page.png" alt="mandeville-cover-page.png">
 
 </figure>
 </section>
 <section id="slide-humanities-data-semi-structured">
-<h3 id="humanities-data-semi-structured">Humanities Data: Semi-structured</h3>
-<blockquote>
-<p>
-&lt;msDesc&gt;
+<h4 id="humanities-data-semi-structured">Humanities Data: Semi-structured</h4>
+<div class="org-src-container">
+
+<pre><code class="xml" >&lt;msDesc&gt;
   &lt;msIdentifier&gt;
     &lt;settlement&gt;Oxford
     &lt;/settlement&gt;
@@ -346,23 +303,22 @@ In this example, a geographical space (a stretch of beach) is affected by a chan
     &lt;/p&gt;
   &lt;/physDesc&gt;
 &lt;/msDesc&gt;
-</p>
-</blockquote>
+
+</code></pre>
+</div>
 
 </section>
 <section id="slide-humanities-data-structured">
-<h3 id="humanities-data-structured">Humanities Data: Structured</h3>
+<h4 id="humanities-data-structured">Humanities Data: Structured</h4>
 
-<figure>
+<figure id="orgd12e653">
 <img src="./images/dc-ss-list.png" alt="dc-ss-list.png">
 
 </figure>
 
 </section>
-</section>
-<section>
 <section id="slide-humanities-data-1">
-<h2 id="humanities-data-1">Humanities Data:</h2>
+<h3 id="humanities-data-1">Humanities Data:</h3>
 <form><ul>
 <li>What “counts&ldquo; cannot necessarily be counted</li>
 <li>Data representation = interpretation:</li>
@@ -372,7 +328,7 @@ In this example, a geographical space (a stretch of beach) is affected by a chan
 
 </section>
 <section id="slide-humanities-data-2">
-<h3 id="humanities-data-2">Is Our Data &ldquo;fungible&rdquo;?</h3>
+<h4 id="humanities-data-2">Is Our Data &ldquo;fungible&rdquo;?</h4>
 <blockquote>
 <p>
 “When you call something data, you imply that it exists in <b>discrete, fungible units</b>; that it is <b>computationally tractable</b>; that <b>its meaningful qualities can be enumerated in a finite list</b>; that <b>someone else performing the same operations on the same data will come up with the same results</b>. <b>This is not how humanists think of the material they work with</b>.&ldquo; (Miriam Posner, <a href="http://miriamposner.com/blog/humanities-data-a-necessary-contradiction/">http://miriamposner.com/blog/humanities-data-a-necessary-contradiction/</a>)  
@@ -381,7 +337,7 @@ In this example, a geographical space (a stretch of beach) is affected by a chan
 
 </section>
 <section id="slide-humanities-data-3">
-<h3 id="humanities-data-3">Reminder: Data and Capta</h3>
+<h4 id="humanities-data-3">Reminder: Data and Capta</h4>
 <blockquote>
 <p>
 “[DH visualization tools borrowed from the sciences] carry with them assumptions of <b>knowledge as observer-independent and certain</b>, rather than <b>observer co-dependent and interpretative</b>. [&#x2026;] To begin, the concept of <b>data as a given</b> has to be rethought through a humanistic lens and characterized as <b>capta, taken and constructed</b>.&ldquo; Johanna Drucker, “Humanities Approaches to Graphical Display.&rdquo;
@@ -390,7 +346,7 @@ In this example, a geographical space (a stretch of beach) is affected by a chan
 
 </section>
 <section id="slide-display-as-argument-visual-knowledge-creation">
-<h3 id="display-as-argument-visual-knowledge-creation">Display as Argument: Visual Knowledge Creation</h3>
+<h4 id="display-as-argument-visual-knowledge-creation">Display as Argument: Visual Knowledge Creation</h4>
 <form><ul>
 <li>Data vs. Capta</li>
 <li>Display as argument:</li>
@@ -405,7 +361,7 @@ In this example, a geographical space (a stretch of beach) is affected by a chan
 
 </section>
 <section id="slide-graphesis">
-<h3 id="graphesis">Drucker&rsquo;s Graphesis</h3>
+<h4 id="graphesis">Drucker&rsquo;s Graphesis</h4>
 <form><ul>
 <li>Johanna Drucker: graphesis = “the field of knowledge production embodied in visual expressions &#x2026; a visual epistemology&ldquo; (Drucker, “Graphesis&rdquo; 2011)</li>
 <li>Visual forms carry the assumptions and values of their fields of origin, and impose these assumptions and values on the data they present, whether these assumptions and values are appropriate to that data or not.</li>
@@ -414,10 +370,8 @@ In this example, a geographical space (a stretch of beach) is affected by a chan
 </ul></form>
 
 </section>
-</section>
-<section>
 <section id="slide-data-vs.-capta">
-<h2 id="data-vs.-capta">Data vs. Capta &#x2013; an Illustration</h2>
+<h3 id="data-vs.-capta">Data vs. Capta &#x2013; an Illustration</h3>
 <form><ul>
 <li><b>Data</b>: “given&ldquo;, objective, observed</li>
 
@@ -437,45 +391,43 @@ In this example, a geographical space (a stretch of beach) is affected by a chan
 
 </section>
 <section id="slide-section-1">
-<h3 id="section-1">Data vs. Capta: Two Maps</h3>
+<h4 id="section-1">Data vs. Capta: Two Maps</h4>
 
-<figure>
+<figure id="org17ce5bc">
 <img src="https://carto.com/img/layout/gallery/bbva-geo-risk/big.6b6fed37.gif" alt="big.6b6fed37.gif">
 
-<figcaption><span class="figure-number">Figure 13: </span>GEOPOLITICAL TENSIONS IN MENA (Middle East &amp; Northern Africa)</figcaption>
+<figcaption><span class="figure-number">Figure 7: </span>GEOPOLITICAL TENSIONS IN MENA (Middle East &amp; Northern Africa)</figcaption>
 </figure>
 
 
 </section>
 <section id="slide-section-2">
-<h3 id="section-2">Data vs. Capta: Two Maps</h3>
-<div class="paired">
+<h4 id="section-2">Data vs. Capta: Two Maps</h4>
+<div class="paired" id="orgca1be52">
 
-<figure>
+<figure id="org0f056c4">
 <img src="https://www.bl.uk/britishlibrary/~/media/bl/global/highlights/maps/psalter-map-f9.jpg" alt="psalter-map-f9.jpg">
 
-<figcaption><span class="figure-number">Figure 14: </span><a href="https://www.bl.uk/collection-items/psalter-world-map">The PARIS PSALTER map</a> (c. 1260, England)</figcaption>
+<figcaption><span class="figure-number">Figure 8: </span><a href="https://www.bl.uk/collection-items/psalter-world-map">The PARIS PSALTER map</a> (c. 1260, England)</figcaption>
 </figure>
 
 </div>
-<div class="paired">
+<div class="paired" id="orgeded8f0">
 
-<figure>
+<figure id="org2cb0d14">
 <img src="https://www.bl.uk/britishlibrary/~/media/bl/global/highlights/maps/psalter-map-bottomleft-f9.jpg" alt="psalter-map-bottomleft-f9.jpg">
 
-<figcaption><span class="figure-number">Figure 15: </span>Detail (British Isles)</figcaption>
+<figcaption><span class="figure-number">Figure 9: </span>Detail (British Isles)</figcaption>
 </figure>
 
 </div>
 
 </section>
-</section>
-<section>
 <section id="slide-dh-dataviz-examples">
-<h2 id="dh-dataviz-examples">DH Dataviz: Some Less and More Creative Examples</h2>
+<h3 id="dh-dataviz-examples">DH Dataviz: Some Less and More Creative Examples</h3>
 </section>
 <section id="slide-network-graph">
-<h3 id="network-graph">Network Graph</h3>
+<h4 id="network-graph">Network Graph</h4>
 <form><ul>
 <li>Things: nodes (vertices)</li>
 <li>Relationships: edges</li>
@@ -483,26 +435,26 @@ In this example, a geographical space (a stretch of beach) is affected by a chan
 </ul></form>
 
 
-<figure>
+<figure id="org7725418">
 <img src="./images/network-graph.png" alt="network-graph.png">  
 
 </figure>
 
 </section>
 <section id="slide-les-miserables-network-graph-of-character-interactions">
-<h3 id="les-miserables-network-graph-of-character-interactions">Les Miserables: Network Graph of Character Interactions</h3>
+<h4 id="les-miserables-network-graph-of-character-interactions">Les Miserables: Network Graph of Character Interactions</h4>
 
-<figure>
+<figure id="org1d011d3">
 <img src="./images/les-mis-network.svg" alt="les-mis-network.svg">
 
-<figcaption><span class="figure-number">Figure 17: </span>co-appearance of characters from <i>Les Miserables</i>. Data originally compiled in <a href="https://github.com/tangentforks/sgb/">The Stanford GraphBook</a> (<a href="https://github.com/tangentforks/sgb/blob/master/jean.dat">original file format</a>) in 1993 and made available in various forms including <a href="https://github.com/gephi/gephi/wiki/Datasets#social-networks">as GML by Gephi</a>, where it has been widely copied and modified.</figcaption>
+<figcaption><span class="figure-number">Figure 10: </span>co-appearance of characters from <i>Les Miserables</i>. Data originally compiled in <a href="https://github.com/tangentforks/sgb/">The Stanford GraphBook</a> (<a href="https://github.com/tangentforks/sgb/blob/master/jean.dat">original file format</a>) in 1993 and made available in various forms including <a href="https://github.com/gephi/gephi/wiki/Datasets#social-networks">as GML by Gephi</a>, where it has been widely copied and modified.</figcaption>
 </figure>
 
 </section>
 <section id="slide-word-cloud">
-<h3 id="word-cloud">Word Cloud</h3>
+<h4 id="word-cloud">Word Cloud</h4>
 
-<figure>
+<figure id="orgfe8ca87">
 <img src="./images/rj-wordle.svg" alt="rj-wordle.svg">
 
 </figure>
@@ -514,16 +466,16 @@ In this example, a geographical space (a stretch of beach) is affected by a chan
 
 </section>
 <section id="slide-lauren-f.-klein-a-report-has-come-here">
-<h3 id="lauren-f.-klein-a-report-has-come-here"><a href="http://lklein.com/2012/01/a-report-has-come-here-social-network-analysis-in-the-papers-of-thomas-jefferson/">The Shadow of James Hemings</a></h3>
-<div class="paired">
+<h4 id="lauren-f.-klein-a-report-has-come-here"><a href="http://lklein.com/2012/01/a-report-has-come-here-social-network-analysis-in-the-papers-of-thomas-jefferson/">The Shadow of James Hemings</a></h4>
+<div class="paired" id="org5e266fd">
 
-<figure>
+<figure id="org0af07af">
 <img src="./images/hemmings-relations.jpg" alt="hemmings-relations.jpg">
 
 </figure>
 
 </div>
-<div class="paired">
+<div class="paired" id="orgad1c407">
 <blockquote>
 <p>
 &ldquo;This figure is James Hemings, Thomas Jefferson&rsquo;s enslaved personal chef (and Sally Hemings&rsquo;s older brother). When Jefferson was appointed Ambassador to France, he took Hemings with him to Paris, and there apprenticed him to the chef of a prince. Through the few archival records that relate to Hemings, we also know, for instance, that while in Paris, Hemings hired his own tutor and learned to speak fluent French. And here&rsquo;s another thing Hemings learned in Paris: what it might mean to be free. [&#x2026;]
@@ -538,41 +490,41 @@ It is then a striking instantiation of archival silence that when you perform a 
 
 </section>
 <section id="slide-project-paradise-a">
-<h3 id="project-paradise-a">Mapping Imaginary Spaces</h3>
+<h4 id="project-paradise-a">Mapping Imaginary Spaces</h4>
 
-<figure>
+<figure id="org685a8c0">
 <img src="./images/mandeville-map.jpg" alt="mandeville-map.jpg">
 
 </figure>
 </section>
 <section id="slide-the-knotted-line">
-<h3 id="the-knotted-line">Non-Linear Timelines</h3>
+<h4 id="the-knotted-line">Non-Linear Timelines</h4>
 
-<figure>
+<figure id="org58671eb">
 <img src="./images/knotted-line.png" alt="knotted-line.png">
 
-<figcaption><span class="figure-number">Figure 21: </span>&ldquo;an interactive, tactile laboratory for exploring the historical relationship between freedom and confinement in the geographic area of the United States&rdquo; (<a href="http://knottedline.com/">http://knottedline.com</a>/)</figcaption>
+<figcaption><span class="figure-number">Figure 11: </span>&ldquo;an interactive, tactile laboratory for exploring the historical relationship between freedom and confinement in the geographic area of the United States&rdquo; (<a href="http://knottedline.com/">http://knottedline.com</a>/)</figcaption>
 </figure>
 
 </section>
 <section id="slide-from-johanna-druckers-humanities-approaches-to-graphical-display">
-<h3 id="from-johanna-druckers-humanities-approaches-to-graphical-display">Rewriting John Snow</h3>
-<div class="paired">
+<h4 id="from-johanna-druckers-humanities-approaches-to-graphical-display">Rewriting John Snow</h4>
+<div class="paired" id="org2344fa6">
 
-<figure>
+<figure id="org70f5ed7">
 <img src="http://www.digitalhumanities.org/dhq/vol/5/1/000091/...000091/resources/images/figure16.jpg" alt="figure16.jpg">
 
-<figcaption><span class="figure-number">Figure 22: </span>Dr. John Snow&rsquo;s visualization of cholera deaths in London, 1854.</figcaption>
+<figcaption><span class="figure-number">Figure 12: </span>Dr. John Snow&rsquo;s visualization of cholera deaths in London, 1854.</figcaption>
 </figure>
 
 </div>
 
-<div class="paired">
+<div class="paired" id="org30db8b6">
 
-<figure>
+<figure id="orgf68fef6">
 <img src="http://www.digitalhumanities.org/dhq/vol/5/1/000091/...000091/resources/images/figure17.jpg" alt="figure17.jpg">
 
-<figcaption><span class="figure-number">Figure 23: </span>Snow&rsquo;s chart altered. Graphic credit Xárene Eskandar</figcaption>
+<figcaption><span class="figure-number">Figure 13: </span>Snow&rsquo;s chart altered. Graphic credit Xárene Eskandar</figcaption>
 </figure>
 
 </div>
@@ -584,10 +536,8 @@ It is then a striking instantiation of archival silence that when you perform a 
 </blockquote>
 
 </section>
-</section>
-<section>
-<section id="slide-orgba32f7a">
-<h2 id="orgba32f7a">Some Rules of Thumb</h2>
+<section id="slide-org44728b0">
+<h3 id="org44728b0">Some Rules of Thumb</h3>
 <form><ul>
 <li>in general, creative relationships to data/capta are <b>more</b> work than rigourous but straightforward quantitative analysis</li>
 <li>they require familiarity both <b>both</b> humanities concepts <b>and</b> the underlying technologies</li>
@@ -596,12 +546,9 @@ It is then a striking instantiation of archival silence that when you perform a 
 
 </ul></form>
 
-
 </section>
-</section>
-<section>
 <section id="slide-data-visualization-practicum">
-<h2 id="data-visualization-practicum">Data Visualization: Play Time</h2>
+<h3 id="data-visualization-practicum">Data Visualization: Play Time</h3>
 <form><ul>
 <li>we have 3 texts: <i>Lady Susan,</i>, <i>Frankenstein</i>, and <i>Les Misérables</i></li>
 <li>for each of these there is also a <b>processed data file</b> and in 2 cases a <b>project file</b></li>
@@ -609,8 +556,8 @@ It is then a striking instantiation of archival silence that when you perform a 
 
 </ul></form>
 </section>
-<section id="slide-orgb0194dc">
-<h3 id="orgb0194dc">Cytoscape</h3>
+<section id="slide-org8be6be8">
+<h4 id="org8be6be8">Cytoscape</h4>
 <form><ul>
 <li>original data in <b>lesmis.txt</b></li>
 <li>project file (if you want to replicate) in <b>lesmis.cys</b></li>
@@ -618,25 +565,74 @@ It is then a striking instantiation of archival silence that when you perform a 
 </ul></form>
 </section>
 <section id="slide-maps-networks-with-palladio">
-<h3 id="maps-networks-with-palladio">Maps &amp; Networks with Palladio</h3>
+<h4 id="maps-networks-with-palladio">Maps &amp; Networks with Palladio</h4>
 <form><ul>
 <li></li>
 
 </ul></form>
 </section>
 <section id="slide-text-visualization-with-voyant-tools">
-<h3 id="text-visualization-with-voyant-tools">Text Visualization with Voyant Tools</h3>
+<h4 id="text-visualization-with-voyant-tools">Text Visualization with Voyant Tools</h4>
 <form><ul>
 <li>full-text visualization tool</li>
-<li>try with <b>frankenstein.txt</b>, *</li>
+<li>try with <b>frankenstein.txt</b>,</li>
 
 </ul></form>
 </section>
 </section>
 </div>
 </div>
-<script src="file:///home/matt/src/reveal.js/lib/js/head.min.js"></script>
-<script src="file:///home/matt/src/reveal.js/js/reveal.js"></script>
+<script src="file:///home/matt/src/reveal.js/dist/reveal.js"></script>
+<script src="file:///home/matt/src/reveal.js/plugin/markdown/markdown.js"></script>
+<script src="file:///home/matt/src/reveal.js/plugin/highlight/highlight.js"></script>
+<script src="file:///home/matt/src/reveal.js/plugin/zoom/zoom.js"></script>
+<script src="file:///home/matt/src/reveal.js/plugin/notes/notes.js"></script>
+<script src="https://s.electerious.com/basicLightbox/dist/basicLightbox.min.js"></script>
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
+<script>
+async function revealLightbox ()  {
+while(!window.hasOwnProperty('Reveal') || !window.Reveal.hasOwnProperty('addKeyBinding'))
+  await new Promise(resolve => setTimeout(resolve, 100));
+Reveal.addKeyBinding({keyCode: 27,
+                      key: 'ESC',
+                      description: 'Close lightbox or toggle overlay'},
+                     ()=> {
+                       if (this.Reveal.isLightboxed) {
+                         Reveal.currentLightbox.close()
+                       } else if( this.Reveal.closeOverlay() === false ) {
+                         this.Reveal.overview.toggle();
+                       }
+                       event.preventDefault && event.preventDefault();
+                     })
+
+
+document.querySelectorAll('figure>img').forEach(
+  (fig)=> {
+    fig.onclick=() => {
+      Reveal.isLightboxed = true
+      Reveal.currentLightbox = basicLightbox
+        .create(fig.parentElement.outerHTML,
+                {onClose: (instance) => Reveal.isLightboxed = null});
+      Reveal.currentLightbox.show()
+      }
+   })
+}
+revealLightbox()
+
+tippy('[data-template]', {
+  content(reference) {
+    const id = reference.getAttribute('data-template');
+    console.log(id)
+    const template = document.getElementById(id).parentElement;
+    console.log(template);
+    return template.innerHTML;
+  },
+  allowHTML: true,
+  interactive: true,
+  theme: 'light'
+})
+  </script>
 <script>
 // Full list of configuration options available here:
 // https://github.com/hakimel/reveal.js#configuration
@@ -650,10 +646,9 @@ slideNumber: 'c',
 rollingLinks: false,
 keyboard: true,
 mouseWheel: false,
-fragmentInURL: false,
+fragmentInURL: true,
 hashOneBasedIndex: false,
 pdfSeparateFragments: true,
-
 overview: true,
 width: "100%",
 height: "100%",
@@ -661,23 +656,19 @@ margin: 0.10,
 minScale: 1.00,
 maxScale: 1.00,
 
-theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-transition: Reveal.getQueryHash().transition || 'convex', // see README of reveal.js for options
+transition: 'convex',
 transitionSpeed: 'default',
+
+// Plugins with reveal.js 4.x
+plugins: [ RevealMarkdown, RevealHighlight, RevealZoom, RevealNotes ],
 
 // Optional libraries used to extend reveal.js
 dependencies: [
-{src: 'file:///home/matt/src/reveal.js/plugin/klipse_reveal.js'},
- { src: 'file:///home/matt/src/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
- { src: 'file:///home/matt/src/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
- { src: 'file:///home/matt/src/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
- { src: 'file:///home/matt/src/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
- { src: 'file:///home/matt/src/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
- { src: 'file:///home/matt/src/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+{src: 'file:///home/matt/src/reveal.js/plugin/klipse_reveal.js'}]
 
 });
 </script>
-<script src="https://sandbox.hackinghistory.ca/vendor/klipse/klipse_plugin.min.js"></script>
+<script src="https://storage.googleapis.com/app.klipse.tech/plugin_prod/js/klipse_plugin.min.js"></script>
 <script>
 /* Recompute layout upon changes by klipse.  Code fragment from
    asciidoctor-revealjs-klipse by Timothy Pratley under GPLv3:

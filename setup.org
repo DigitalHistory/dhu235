@@ -1,7 +1,5 @@
-#+MACRO: ts (eval(mwp-get-ts+7  'org-mwp-classtimes-calibrate 2))
-#+TITLE: WDW235 Syllabus
 #+STARTUP: customtime
-#+ORG_LMS_COURSEID: 157875
+#+ORG_LMS_COURSEID: 233877
 #+HUGO_BASE_DIR: ./website/
 #+HUGO_CUSTOM_FRONT_MATTER: :banner "testbanner"
 #+IS_PUBLIC: t
@@ -10,4 +8,37 @@
 #+HUGO_STATIC_IMAGES: Images
 #+HUGO_AUTO_SET_LASTMOD: t
 #+CSL_STYLE: /home/matt/Zotero/styles/chicago-manual-of-style-16th-edition-inline-notes-for-syllabi.csl
+* Modules :ignore:noexport:
+#+begin_src emacs-lisp :results code
+(cl-loop for mod in  (org-lms-get-modules)
+         do
+         
+         (map-delete mod :prerequisite_module_ids )
+         (map-delete mod :require_sequential_progress )
+         (map-delete mod  :publish_final_grade)
+         (map-delete mod  :position )
+         (map-delete mod :unlock_at)
+         (map-put mod :items_url (concat "[[" (map-elt mod :items_url) "][API URL]]"))
+          collect
+          ;;(map-values mod)
+          mod
+         )
+;;(org-lms-get-single-module 459519)
+#+end_src
 
+#+RESULTS:
+#+begin_src emacs-lisp
+(:id 459519 :name "Defining DH" :position 1 :unlock_at nil :require_sequential_progress nil :publish_final_grade nil :prerequisite_module_ids nil :published nil :items_count 3 :items_url "https://q.utoronto.ca/api/v1/courses/219069/modules/459519/items" :items
+     ((:id 2507270 :title "Poems -- Class 4" :position 1 :indent 0 :quiz_lti nil :type "Assignment" :module_id 459519 :html_url "https://q.utoronto.ca/courses/219069/modules/items/2507270" :content_id 603897 :url "https://q.utoronto.ca/api/v1/courses/219069/assignments/603897" :published t)
+      (:id 2507283 :title "Reflection 01: DH Project Profile" :position 2 :indent 0 :quiz_lti nil :type "Assignment" :module_id 459519 :html_url "https://q.utoronto.ca/courses/219069/modules/items/2507283" :content_id 603895 :url "https://q.utoronto.ca/api/v1/courses/219069/assignments/603895" :published t)
+      (:id 2507415 :title "Introduction to XML,XSLT, TEI, and HTML (long!)" :position 3 :indent 0 :quiz_lti nil :type "Page" :module_id 459519 :html_url "https://q.utoronto.ca/courses/219069/modules/items/2507415" :page_url "introduction-to-xml-xslt-tei-and-html-long" :url "https://q.utoronto.ca/api/v1/courses/219069/pages/introduction-to-xml-xslt-tei-and-html-long" :published nil)))
+#+end_src
+
+#+begin_src emacs-lisp
+(org-lms-get-all-pages)
+#+end_src 
+
+#+RESULTS:
+| :title | Lectures                                         | :created_at | 2021-04-29T17:13:42Z | :url | lectures                                        | :editing_roles | teachers | :page_id | 770883 | :published | t   | :hide_from_students | nil | :front_page | nil | :html_url | https://q.utoronto.ca/courses/219069/pages/lectures                                        | :todo_date | nil | :updated_at | 2021-04-29T17:13:42Z | :locked_for_user | nil |
+| :title | Reflection 02: Handout and Preliminary Exercises | :created_at | 2021-04-29T17:13:42Z | :url | reflection-02-handout-and-preliminary-exercises | :editing_roles | teachers | :page_id | 770884 | :published | t   | :hide_from_students | nil | :front_page | nil | :html_url | https://q.utoronto.ca/courses/219069/pages/reflection-02-handout-and-preliminary-exercises | :todo_date | nil | :updated_at | 2021-04-29T17:13:42Z | :locked_for_user | nil |
+| :title | Introduction to XML,XSLT, TEI, and HTML (long!)  | :created_at | 2021-04-29T17:13:42Z | :url | introduction-to-xml-xslt-tei-and-html-long      | :editing_roles | teachers | :page_id | 770885 | :published | nil | :hide_from_students | t   | :front_page | nil | :html_url | https://q.utoronto.ca/courses/219069/pages/introduction-to-xml-xslt-tei-and-html-long      | :todo_date | nil | :updated_at | 2021-04-29T17:13:42Z | :locked_for_user | nil |

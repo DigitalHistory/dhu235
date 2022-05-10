@@ -26,7 +26,7 @@ print(package["result"])
 	
 # For example, to retrieve the data content for the first resource in the datastore:
 	
- 
+print (package["result"]["resources"])
 	
 for idx, resource in enumerate(package["result"]["resources"]):
 	
@@ -39,6 +39,8 @@ for idx, resource in enumerate(package["result"]["resources"]):
         data = requests.get(url, params = p).json()
 	
         df = pd.DataFrame(data["result"]["records"])
+
+        df.to_csv("downloaded_csv.csv")
 	
         break
 	

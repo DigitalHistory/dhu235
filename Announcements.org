@@ -2,25 +2,362 @@
 #+STARTUP: customtime
 #+SETUPFILE: ./setup.org
 #+ORG_LMS_SECTION: announcement
-
-* Welcome! And Website...
+#+MACRO: courseid
+#+ORG_LMS_COURSEID: 233877
+#
+* Fall 2021
 :PROPERTIES:
-:ORG_LMS_ANNOUNCEMENT_ID: 694692
-:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/157875/discussion_topics/694692
-:ORG_LMS_POSTED_AT: 2020-07-07T06:55:15Z
+:ORG_LMS_ANNOUNCEMENT_ID: nil
+:ORG_LMS_ANNOUNCEMENT_URL: nil
+:ORG_LMS_POSTED_AT: nil
+:END:
+** Welcome! Details on First Class! Course Site is Up
+:PROPERTIES:
+:ORG_LMS_ANNOUNCEMENT_ID: 1362888
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/233877/discussion_topics/1362888
+:ORG_LMS_POSTED_AT: 2021-09-15T13:57:56Z
+:END:
+Welcome back to school, everyone! I know it's been a long week already.
+
+I apologize for the delay in getting the Qerucus site up.  It is now ready for you, and you should be able to see [[https://q.utoronto.ca/courses/233877][the syllabus]] as well as [[https://q.utoronto.ca/courses/233877/modules][the modules]] and [[https://q.utoronto.ca/courses/233877/assignments][assignments]] (though most of the latter two have not yet been published).
+
+*Important:* I have been back and forth a bit about tomorrow's class, and here is what we will be doing:
+
+- I will shortly publish a video recording of my lecture materials. Rather than sit in a crowded room together, *please find a quiet place to watch this lecture on your own*.
+- *don't come to class at 10:00! Instead, let's start class at 11:30. I will be in the classroom about 15 minutes early, and you can use that time to ask me questions if you like.
+- In the classroom, we will take a few minutes to familiarize ourselves with the computers, go over the syllabus to answer any questions you have, and then do a little project together, which you will hand in on Quercus.
+** Lecture Files available; slack config
+:PROPERTIES:
+:ORG_LMS_ANNOUNCEMENT_ID: 1362890
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/233877/discussion_topics/1362890
+:ORG_LMS_POSTED_AT: 2021-09-15T13:58:14Z
+:END:
+I've posted links to the [[https://q.utoronto.ca/courses/233877/files/15860975?module_item_id=2961301&fd_cookie_set=1][Lecture Slides]] and the [[https://www.youtube.com/watch?v=LrPHnQTr7-E&list=PLLY-W2GKX2ZLWvds_dpx-11Il0cbeZ5T0&index=1][Lecture Recording]] on the modules page.
+
+Please also make sure to  [[https://join.slack.com/t/uoftdh/signup][join the slack discusssion]] and introduce yourself (see lecture for details 
+
+Looking forward to meeting many ofy ou in person tomorrow!
+
+mp
+** Terrible confusion!
+Dear Students,
+
+My Apologies for a number of very significant errors. While I did publish several announcements last night about today's class, I did so *on last year's Quercus site*.  I am gravely sorry for that. I've now republished them here... but it is quite, quite late. I will show up on Zoom now, briefly, to talk to you... and perhaps we should do the whole class that way.  I'm really quite soorry.  Here is the zoom link: 
+
+https://utoronto.zoom.us/j/87927835032
+
+Passcode: DHU235
+
+drat. I'm very sorry.  I really liked my plan!
+** Class Sept 22
+:PROPERTIES:
+:ORG_LMS_ANNOUNCEMENT_ID: 1380592
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/233877/discussion_topics/1380592
+:ORG_LMS_POSTED_AT: 2021-09-22T04:47:18Z
+:END:
+Hi Everyone; remember
+- we will meet in person in the basement computer lab at *11:30AM*, but
+- please 8watch the pre-recorded lecture* during the time that you would other wise allot to be in class.
+- the recording and the accompanying slides are both available [[https://q.utoronto.ca/courses/233877/modules][on the modules page]]
+
+We'll spend the balance of our time tomorrow working on some in-class exercises, to be handed in by the end of the day. See you then!
+** Class Sept 29: Bring a Poem! Please watch lecture first! See you at *11:10*
+:PROPERTIES:
+:ORG_LMS_ANNOUNCEMENT_ID: 1393233
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/233877/discussion_topics/1393233
+:ORG_LMS_POSTED_AT: 2021-09-27T22:11:41Z
+:END:
+Hello everyone,
+
+I've recorded a lecture for you to watch *before* our class, and added both the recording and my lecture slides to the "Digital Texts" module; [[https://q.utoronto.ca/courses/233877/modules][Please watch it before class]]! I'll be relying on some prior exposure to make class run smoothly.  
+
+Meanwhile: we will be doing a bunch of fun work with *poems* in class. Can you please *bring a poem of your choice to class*.  Please bring a text you actually enjoy, and preferably a text of some subtlety and complexity, so we can use it to think about relatively complex textual issues. 
+
+I think our work may take quite a while, and I have to leave by 1:00PM sharp this week, so let's start earlier than we have for the last two weeks, at *11:10* (11:00 U of T time).
+
+*Excited to see you!* But *please really do watch the lecture and bring a poem!*
+** Class Oct. 6: come at 10:00. Bring that Poem!
+:PROPERTIES:
+:ORG_LMS_ANNOUNCEMENT_ID: 1410127
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/233877/discussion_topics/1410127
+:ORG_LMS_POSTED_AT: 2021-10-06T02:21:58Z
+:END:
+Hi folks, we'll have a fully hands-on lesson this week, in preparation for assignment 2. As a result, you should come at 10:00. Please come with a poem and be prepared to discuss it with your classmates, as well as to write about it.  
+
+See you then!
+** Slack Channel for questions on Assignment 2
+:PROPERTIES:
+:ORG_LMS_ANNOUNCEMENT_ID: 1412305
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/233877/discussion_topics/1412305
+:ORG_LMS_POSTED_AT: 2021-10-07T01:12:02Z
+:END:
+I imagine there will be lots of questions as you move forward with Assignment #2 over the next week. I've [[https://uoftdh.slack.com/archives/C02GV9GD2UV][set up a channel on slack]] for such questions. I will make my best effort to respond quickly!  However, I'll be somewhat hard to reach for the next few days -- I'll start replying to things on Sunday.
+
+I hope to record a very brief lecture on Elizabethan drama tomorrow morning, and share it with you as soon as I can. If I run out of time, though, I'll have to do it after I get back
+
+Enjoy your weekend!
+** Class today
+:PROPERTIES:
+:ORG_LMS_ANNOUNCEMENT_ID: 1420168
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/233877/discussion_topics/1420168
+:ORG_LMS_POSTED_AT: 2021-10-13T13:21:09Z
+:END:
+Hello everyone,
+
+I hope you had a restful holiday. I've just noticed that there are several questions in Slack about class times this week.  
+
+My apologies, but my plan has been to meet for the whole session, from 10;1.  However, I can see that is not a universal expectation.
+
+Therefore: I'll come at 10, but can reserve the first hour for questions and catch-up, with a more formal beginning at 11.  However, we have a lot to do today. I want to help you think about /contextualizing and analyzing literature/. We'll do this primarily in 2 ways: 
+- I want to discuss the /genres/ of Elizabethan drama -- the interlude, the morality play, and their relationship to the dramas with which you are more familiar. You'll need to think hard about these contexts for your upcoming assignment, so please make yourself familiar with the [[https://q.utoronto.ca/courses/233877/pages/reflection-02-handout-and-preliminary-exercises?module_item_id=3012380][background handout]].  Pay special attention to the links in the first paragraph.
+- I want *you* to analyze and contextualize Edgar Allen Poe's "Masque of the Red Death". We'll do this collaboratively, so please make sure you have also read this short story carefully (see the syllabus for link). 
+
+Finally, I also want to make sure you have an opportunity to use CSS in a sophisticated way for your poem deformation. So bring any questions you might have to class, and  I will do my best to answer them.  
+
+See you very soon!
+** Nov.4 5:00-6:00 consultations *CANCELED*
+:PROPERTIES:
+:ORG_LMS_ANNOUNCEMENT_ID: 1457823
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/233877/discussion_topics/1457823
+:ORG_LMS_POSTED_AT: 2021-11-04T13:49:17Z
+:END:
+Hi everyone,
+
+My apologies, I accidentally double-booked myself for 5-6pm today -- I only meant to schedule meetings until 5pm.  Those of you who are affected, please *contact me by email or slack* and we can reschedule with an appropriate short extension on the proposal duedate.  
+
+Again, sorry!
+
+** Class Oct. 27: Omeka Login
+:PROPERTIES:
+:ORG_LMS_ANNOUNCEMENT_ID: 1444063
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/233877/discussion_topics/1444063
+:ORG_LMS_POSTED_AT: 2021-10-27T13:31:13Z
+:END:
+Today we'll be getting started with the course project, which involves an introduction to the [[https://omeka.org][Omeka]] content management system (CMS). This announcement gives you the login information for the website. When you get to class, oo to the login page for the DH Omeka site (https://spatial-humanities.library.utoronto.ca/admin/users/login) and sign in with this auth:
+  - user: DHU
+
+235-daytime
+  - pass: PlagueLitProject
+
+See you shortly!
+
+** Class Nov. 17 & 24: Flipped classroom, online modules
+:PROPERTIES:
+:ORG_LMS_ANNOUNCEMENT_ID: 1474019
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/233877/discussion_topics/1474019
+:ORG_LMS_POSTED_AT: 2021-11-16T03:05:56Z
+:END:
+For the next two weeks, we're going to be working our way through two excellent, brief online courses form the Map and Data Library. The first one takes about two to three hours, and the second one is slightly longer.  Both use tools that are freely available to the U of T community -- [[https://openrefine.org/][OpenRefine]] is an open source "data cleaning" tool developed by Google, while [[https://public.tableau.com][Tableau]] is a closed-source data visualization tool.
+
+The final Reflection assignment is based on these workshops, so you'll need to do them to complete the assignment. 
+
+It will be easiest for you to work through these terrific courses on your own, rather than all gathering together in the classroom at once. This is partly because *neither of the programs we need is installed on the lab computers*. Therefore you will probably want to work at home, or on your own  laptop in the classroom if you have one. Therefore, let's please do the following:
+*** Open Refine -- this week (Nov 15-19)
+- I will record and post a brief introductory lecture about data and data cleaning. Please watch at your leisure -- you can start the other exercises before it's posted.
+- Work through the [[http://q.utoronto.ca/enroll/E4JKAW][OpenRefine course]] at your own pace. You'll need to install the tool on your computers; please allow some extra time to do that. 
+- I will be present in the classroom on Wednesday from *11 to 1* to help you with *either* OpenRefine or your final project.  I'll keep zoom open as well, and we can use slack too. The classroom itself will be open at 10, so you are welcome to work there.  
+*** Tableau -- next week (Nov 22-26)
+- Again, I'll record and post a brief introductory lecture about visualization. This will have some overlap with the excellent [[https://q.utoronto.ca/courses/222389][Data Viz Part 1]] course, which you may want to check out, even though it is not mandatory for our purposes.
+- Please work your way through [[https://q.utoronto.ca/enroll/WTYPDT][Data Viz Part 2 -- Practice with Tableau]]. This course is genuinely fun and very rewarding. *Please do your best to complete the course before class on the 24th.*  
+- We will have a *full live class period* from 10-1 on Nov. 24. We'll work our way through an additional data visualization exercise and try to think critically about data representation.  I'll also do my very best to finish early enough to be able to help you with questions you might have about the final assignment.
+
+I'll see you all oon, and look forward to seeing you in class on Wednesday!
+
+** I lied. In classroom at 10, but no zoom till at least... 10:30
+:PROPERTIES:
+:ORG_LMS_ANNOUNCEMENT_ID: 1486474
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/233877/discussion_topics/1486474
+:ORG_LMS_POSTED_AT: 2021-11-24T14:25:42Z
 :END:
 
-Welcome, everyone, to WDW235! I'm looking forward to meeting you all very soon. [[https://q.utoronto.ca/courses/157875][The Quercus webstie is now live]], and we will be meeting synchronously at 2pm [[https://q.utoronto.ca/courses/157875/external_tools/246][Using BB Collaborate]]. If you haven't used it before... it's not quite as good as Zoom! But it's what we've got for now.  Please turn your video *off* when you connect to the classroom, as otherwise bandwidth will be a real problem.  Since I won't be able to see your faces, I'd really appreciate it if you could *add a profile picture* so that I can tell you're ahuman being. The instructions for doing so [[https://help.blackboard.com/Collaborate/Ultra/Participant/Get_Started#add-a-profile-picture_OTP-2][are here]].
+I realize I will have to do a fair amount of setup before our class today, and I can't get into the classroom before about 10:10.  So... please use the time before 10:30 to work on the Tableau course if you haven't completed it yet, or on your final project if you have.  And see you in person around 10 or on zoom at 10:30 or a little bit afterwards. 
 
-I'll also be asking you to [[https://join.slack.com/t/uoftdh/shared_invite/zt-fq2pcjk4-Y3Vvyu6~tNDjYbfH~T6mJA][join Slack]] and engage in conversation there.  This is my first time teaching a sizeable lecture class in this format, so there will be a bit of learning for all of us.  I do think Slack will help us with that.  [[https://slack.com/intl/en-ca/downloads][Be sure to download the desktop app]], which is somewhat easier to usee than the browser-based version.  
+** My Windows VM is Updating
+:PROPERTIES:
+:ORG_LMS_ANNOUNCEMENT_ID: 1486630
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/233877/discussion_topics/1486630
+:ORG_LMS_POSTED_AT: 2021-11-24T15:20:46Z
+:END:
+My windows VM just started an update cycle.  I may be even longer than I said. 
 
-I'm very much looking forward to this class, which I'll be teaching for the third time. I normally use lower-level tools than we'll be using in this course (that is, I tend to program in a text-based environment, rather than using these graphic user interfaces), so I'm looking forward to exploring some of these amazing DH projects with you. 
+** Zoom Recording from Last Week
+:PROPERTIES:
+:ORG_LMS_ANNOUNCEMENT_ID: 1492368
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/233877/discussion_topics/1492368
+:ORG_LMS_POSTED_AT: 2021-11-28T02:28:03Z
+:END:
+
+My apologies for the delay; here is the recording of at week's session! There's a lot of dead space in the middle, but a few important details right at the end.  
+
+https://utoronto.zoom.us/rec/share/QL4WwH-GHAoeNAPA-ZVG95hHZfCI5GfRWOcPtYZ1rMBd-8qo6TX5iRp89ED9vya5.HQxXh5K_2ettaQUe
+Passcode: 8!Z&.yZ1xx 
+
+See yu next week!
+
+** Intro Lecture online, see you at 11:00 (Live or Zoom)!
+:PROPERTIES:
+:ORG_LMS_ANNOUNCEMENT_ID: 1476293
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/233877/discussion_topics/1476293
+:ORG_LMS_POSTED_AT: 2021-11-17T14:21:42Z
+:END:
+Just a note to say I've posted a tiny tiny intro lecture for this week's OpenRefine workshop, and the links are in the Data module. It's only 7 minutes long so you can easily watch it on the TTC or while eating breakfast. As I said in my last announcement, I'll be physically present in class today from 11:00-1:00 to talk about either OpenRefine or your final projects, and I will also have Zoom running & try to help you all out there.  This is an *informal class* you will mostly be working on your own,, but I will be around to help out. I'll have slack running as well!  See you there.  
+* Old Announcements
+** This week's classes, grading backlog, Consultation meetings
+:PROPERTIES:
+:ORG_LMS_ANNOUNCEMENT_ID: 1225048
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/219069/discussion_topics/1225048
+:ORG_LMS_POSTED_AT: 2021-06-01T12:08:40Z
+:END:
+Hello everyone,
+
+There's lots to talk about today!
+*** Preparing for this week's classes
+
+This week we will be doing two workshops in a row. The first is on *data cleaning* and uses the open source *OpenRefine* tool.  It's pretty fun, but can be a little bit fincky, so come prepared! The second uses the proprietary *Tableau* software, and is also extremely interesting; Tableau is extremely user-friendly, but the download process is complex, so make sure you do that in advance.
+
+These two workshops are modified versions of the truly excellent workshops from the *Map and Data Library*, and you can now (as of quite recently!) access these directly on the [[https://mdl.library.utoronto.ca/support/workshops-training/workshop-schedule][Map and Data Library Workshops Page]]. You may in particular want to [[https://q.utoronto.ca/enroll/DC8HHW][enroll in the Data Visualization Part 1 Quercus Course]] and explore it before Thursday, as we will skip over most of that material. Also, if you have trouble during class or miss parts of the lecture, you may find the MDL courses a little easier to do on your own. Tuesday's class closely follows the content of [[http://q.utoronto.ca/enroll/E4JKAW][Cleaning Messy Data with OpenRefine]], and Thursday's is close to [[https://q.utoronto.ca/enroll/WTYPDT][Data Visualization Part 2]]. Feel free to explore these before class if you like, especially if you are worried about keeping up during class.
+
+In any case, *everyone* should prepare for both workshops *today* by installing both OpenRefine and Tableau:
+- [[https://mdl.library.utoronto.ca/technology/tutorials/openrefine-installation-instructions][Install OpenRefine using these instructions]] (this may take a while if Java is not already installed on your computer!)
+- [[https://mdl.library.utoronto.ca/technology/tutorials/installing-tableau-desktop][Install Tableau on your laptop]] -- Please note that *this will not work on Linux* and if you don't have access to a Mac or a Windows machine things become much more complicated (I have to run Tableau in a VM on my own laptop, for instance). Also note that *you will have to wait and respond to an email verifying your student ID* -- this can take a couple of hours so please do htis *today* rather than waiting until Thursday.
+
+  I will also be posting links to some file downloads soon -- Please be on the lookout for that.
+*** Grading
+I have read everyone's Reflection 1 and just need to make sure my grades are consistent. I hope to have them back to you before class, but may have to wait till afterwards.  Assignment 2 is coming! Hopefully by Thursday. I think all of the in-class assignments have been handed back, though there are more coming this week and I will likely fall a bit behind on those. 
+*** Consultation Meetings
+For your final project, I have created a series of consultation appointments in Quercus. The time slots are from 11:00-14:00 Wednesday and Thursday, and from 12:00-14:00 on Friday, in 10 minute intervals. Please sign up for one of these.  
+** Oh gosh! Please read this!
+:PROPERTIES:
+:ORG_LMS_ANNOUNCEMENT_ID: 1230546
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/219069/discussion_topics/1230546
+:ORG_LMS_POSTED_AT: 2021-06-08T16:35:16Z
+:END:
+
+Hi Folks!
+
+Drat, I forgot to send this off earlier! So... let's spend the first 30 minutes of class *reading* this short story: http://www.lightspeedmagazine.com/fiction/last-flight-doctor-ain/
+
+Meet at 2:40 to discuss it!  Think about *genre*, *conventions of the text*, *role of the plague*, ad how all ofit differs from "Masque of the Red Death".  See you then!!!
+
+
+** Class Tomorrow -- Assignment 2, and Elizabethan Drama
+:PROPERTIES:
+:ORG_LMS_ANNOUNCEMENT_ID: 1211207
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/219069/discussion_topics/1211207
+:ORG_LMS_POSTED_AT: 2021-05-13T02:44:49Z
+:END:
+Hi Everyone, We'll be spending tomorrow's class prepping for assignment 2. So, please read the assignment and the associated handout carefully (see my last announcement for links!), and also it might be a good idea to take a look at [[http://elizabethandrama.org/elizabethan-drama-miscellany/precursors-to-elizabethan-drama/][this brief discussion of Elizabethan theatre practices]]. See you in the afternoon!
+** Argh! Class Readings!!
+:PROPERTIES:
+:ORG_LMS_ANNOUNCEMENT_ID: 1219796
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/219069/discussion_topics/1219796
+:ORG_LMS_POSTED_AT: 2021-05-25T17:52:19Z
+:END:
+I realize I forgot to send out an announcement asking you to read something for today -- and I further realize that due to a bug, several classes were missing from the syllabus!!!! In retrospect I realize that someone called my attention to this, but I failed to inspect the version that you see and didn't understand the issue..
+
+SO, please take a look at [[https://q.utoronto.ca/courses/219069#org2818397][the readings listed here, under May 18]].
+he 
+Today will, I think, mostly be an assisted reading day.
+
+** Visual Studio Code
+:PROPERTIES:
+:ORG_LMS_ANNOUNCEMENT_ID: 1211352
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/219069/discussion_topics/1211352
+:ORG_LMS_POSTED_AT: 2021-05-13T11:22:15Z
+:END:
+
+If you've read the assignment package, you should know that this assignment will be a lot easier if you use a modern text editor. If you've never used one before, I would advise downloading [[https://code.visualstudio.com/][Visual Studio Code]] before class today!
+
+See you soon!
+** Class Today: Delay
+:PROPERTIES:
+:ORG_LMS_ANNOUNCEMENT_ID: 1217044
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/219069/discussion_topics/1217044
+:ORG_LMS_POSTED_AT: 2021-05-20T17:40:39Z
+:END:
+
+Hey everyone, I am finally getting started marking and I think I should get all the way through your assignments from Tuesday. Let's start class a little late today, say 2:30. I'll turn the zoom call on but spend those first 20 minutes thinking about reflection 2: in particular, what *analysis* do you want to make? That is, what interesting things do you have to say about the poem, and how does that impact what deformation you choose to make?
+** Class exercises returned
+:PROPERTIES:
+:ORG_LMS_ANNOUNCEMENT_ID: 1217066
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/219069/discussion_topics/1217066
+:ORG_LMS_POSTED_AT: 2021-05-20T17:59:50Z
+:END:
+Hey, sorry for the delay, class exercise has now been returned, nice work, I'll discuss in class (around 230 remember!)
+
+** Welcome! And Website...
+:PROPERTIES:
+:ORG_LMS_ANNOUNCEMENT_ID: 1200947
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/219069/discussion_topics/1200947
+:ORG_LMS_POSTED_AT: 2021-05-03T22:49:21Z
+:END:
+
+Welcome, everyone, to WDW235! I'm looking forward to meeting you all very soon. [[https://q.utoronto.ca/courses/219069][The Quercus website is now live]], and we will be meeting synchronously Tuesday at 2pm [[https://q.utoronto.ca/courses/157875/external_tools/246][Using Zoom]].    Please turn your video *off* when you connect to the classroom, as otherwise bandwidth will be a real problem.  Since I won't be able to see your faces, I'd really appreciate it if you could *add a profile picture* so that I can tell you're a human being. The instructions for doing so [[https://support.zoom.us/hc/en-us/articles/201363203-Customizing-your-profile][are here]].
+
+I'll also be asking you to [[https://join.slack.com/t/summerdhatuoft/shared_invite/zt-ptiofr5v-X2d85jVqMYjYJ9D46B9b_w][join Slack for conversations]].    [[https://slack.com/intl/en-ca/downloads][Be sure to download the desktop app]], which is somewhat easier to usee than the browser-based version.  
+
+I'm very much looking forward to this class, which I'll be teaching for the fourth time. I normally use lower-level tools than we'll be using in this course (that is, I tend to program in a text-based environment, rather than using these graphic user interfaces), so I'm looking forward to exploring some of these amazing DH projects with you. 
 
 There will be *many* more details forthcoming, both in class and on the website.  
 
-See you in class in a few hours!
+See you in class tomorrow.
  
-* Please sign up for Slack!
+** Lecture Notes
+:PROPERTIES:
+:ORG_LMS_ANNOUNCEMENT_ID: 1202212
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/219069/discussion_topics/1202212
+:ORG_LMS_POSTED_AT: 2021-05-04T17:47:54Z
+:END:
+Lecture notes [[https://q.utoronto.ca/courses/219069/files/folder/Lectures][Are in the "Lectures" folder in Quercus]], and will in general be there. I'm also trying to use [[https://q.utoronto.ca/courses/219069/modules][Modules]] this term, but that's a bit of an experiment and I may not always update right away..
+
+When viewing in Quercus, the lecture may be a bit cramped. Press "F" to toggle full-screen mode, and use your browser's built-in zoom controls (usually ~Control-plus~ / ~Control-minus~, or on Apple machines, use the squiggly ~Command~ key instead of ~Control~.
+** More About Tomorrow
+:PROPERTIES:
+:ORG_LMS_ANNOUNCEMENT_ID: 1200958
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/219069/discussion_topics/1200958
+:ORG_LMS_POSTED_AT: 2021-05-03T22:58:24Z
+:END:
+We'll be doing a little exercise in class tomorrow, which actually involves a very short in-class assignment.  You might want to prepare by:
+- Exploring the files in [[https://q.utoronto.ca/courses/219069/files/folder/In%20Class/Class%201%3A%20Twine][the Twine folder]] on Quercus;
+- Perhaps [[https://www.theverge.com/22321816/twine-games-history-legacy-art][reading a little bit]] about Twine, or [[https://twinery.org/2][Exploring the Twine interface]], or perhaps [[https://twinery.org/][downloading the desktop client if you prefer to run it that way]].
+
+  And in preparation for class, here is [[https://q.utoronto.ca/courses/219069/assignments/607135][the hand-in link]] for your in-class assignment.
+** Class #2:Defining Humanities/Creating Projects
+:PROPERTIES:
+:ORG_LMS_ANNOUNCEMENT_ID: 1204608
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/219069/discussion_topics/1204608
+:ORG_LMS_POSTED_AT: 2021-05-06T15:28:21Z
+:END:
+Everyone please be sure to at least briefly look at the class readings before class today. We will have at least one long group work session in which you will be discussing the readings and [[https://q.utoronto.ca/courses/219069/assignments/607205][drafting the in-class assignment]]. It wil be very dull if you haven't made an effort to understand the first reading!
+** Class #3: "Deformance". Interpretation. Petry. TEI. HTML. CSS. The Web.
+:PROPERTIES:
+:ORG_LMS_ANNOUNCEMENT_ID: 1209087
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/219069/discussion_topics/1209087
+:ORG_LMS_POSTED_AT: 2021-05-11T16:37:11Z
+:END:
+We're going to have *lots* to do today.  We will be taking it a little bit slow.  As I mentioned in class, start by *bringing the text of a favourite poem to class.* We'll work with it and you'll hand it in.
+
+** Reflection #2 assignment online
+:PROPERTIES:
+:ORG_LMS_ANNOUNCEMENT_ID: 1209723
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/219069/discussion_topics/1209723
+:ORG_LMS_POSTED_AT: 2021-05-12T03:07:45Z
+:END:
+You can find Reflection 2 [[https://q.utoronto.ca/courses/219069/assignments/603899][online here]]. The assignment includes links to a lengthy help document, and a set of template files which you will need to use.  please read thesebefore class on Thursday so you are prepared to participate in our class activities,which will revolve around those files.
+
+These files are also all linked from the "Plague Literature" module, listed on [[https://q.utoronto.ca/courses/219069/modules][the Mdules page]] of the quercus site.
+
+** Zoom link!
+:PROPERTIES:
+:ORG_LMS_ANNOUNCEMENT_ID: 1202247
+:ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/219069/discussion_topics/1202247
+:ORG_LMS_POSTED_AT: 2021-05-04T18:16:19Z
+:END:
+
+Hey everyone,
+
+I think I sent out a bad link in the last announcement. We are here: https://utoronto.zoom.us/j/83160746745 (Password: 328737)
+** Please sign up for Slack!
 :PROPERTIES:
 :ORG_LMS_ANNOUNCEMENT_ID: 695104
 :ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/157875/discussion_topics/695104
@@ -29,7 +366,7 @@ See you in class in a few hours!
 
 We'll be using it in class today.  [[https://join.slack.com/t/uoftdh/shared_invite/zt-fq2pcjk4-Y3Vvyu6~tNDjYbfH~T6mJA][Here is the link again]]. About 10 of you have signed up so far but the more who have done it before class, the better.  Thanks! 
 
-* Technical difficulties!
+** Technical difficulties!
 :PROPERTIES:
 :ORG_LMS_ANNOUNCEMENT_ID: 697298
 :ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/157875/discussion_topics/697298
@@ -38,7 +375,7 @@ We'll be using it in class today.  [[https://join.slack.com/t/uoftdh/shared_invi
 
 I'm having some technical difficulties with video recordings so unfortunately you will have to sit through lecture live today. My apologies!
 
-* Omeka @ U of T
+** Omeka @ U of T
 
 We're going to be practicing with the Omeka framework today.  It is a little bit difficult to navigate so it might be useful for you to at least login before class and take a look around. You will be *sharing* a login with others, which I'm afraid can be a bit frustrating, but as I don't have admin access to the site this is the best I can do for now (I may make some changes later if I'm able to). Login data is also a bit out of date but you should be able to figure it out :-) 
 
@@ -48,7 +385,7 @@ We're going to be practicing with the Omeka framework today.  It is a little bit
 
 Thanks!  
 
-* Data visualization today -- Downlad Tableau Public!
+** Data visualization today -- Downlad Tableau Public!
 :PROPERTIES:
 :ORG_LMS_ANNOUNCEMENT_ID: 718435
 :ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/157875/discussion_topics/718435
@@ -67,7 +404,7 @@ To prepare for this afternoons's class,
 
 Though proprietary and a bit evil, Tableau is an immensely powerful tool and totally worth getting to know.  You may find it comes in handy in other contexts. 
 
-* Data Cleaning Today -- Sorry Please Download these files!
+** Data Cleaning Today -- Sorry Please Download these files!
 :PROPERTIES:
 :ORG_LMS_ANNOUNCEMENT_ID: 725397
 :ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/157875/discussion_topics/725397
@@ -79,7 +416,7 @@ Oops, forgot to tell you about some stuff you need to download for today's class
 
   Also, there may be an issue with video in today's class... which will be somewhat difficult if it turns out to be ture! If so, we'll muddle through as best we can. 
 
-* Slides for Lecture 2
+** Slides for Lecture 2
 :PROPERTIES:
 :ORG_LMS_ANNOUNCEMENT_ID: 697686
 :ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/157875/discussion_topics/697686
@@ -88,7 +425,7 @@ Oops, forgot to tell you about some stuff you need to download for today's class
 
 They're [[https://q.utoronto.ca/courses/157875/files/folder/Lectures?preview=7954856][on Quercus (just remembered to upload now)]]
 
-* Assignment 1
+** Assignment 1
 :PROPERTIES:
 :ORG_LMS_ANNOUNCEMENT_ID: 374399
 :ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/127426/discussion_topics/374399
@@ -96,7 +433,7 @@ They're [[https://q.utoronto.ca/courses/157875/files/folder/Lectures?preview=795
 :END:
 Just a quick note that [[https://q.utoronto.ca/courses/127426/assignments/221044][the first assignment is now online]].  Please take a look before class today, and esp. look for any errors or confusion so I can correct them! 
 
-* Today's Lecture Notes
+** Today's Lecture Notes
 :PROPERTIES:
 :ORG_LMS_ANNOUNCEMENT_ID: 695268
 :ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/157875/discussion_topics/695268
@@ -104,7 +441,7 @@ Just a quick note that [[https://q.utoronto.ca/courses/127426/assignments/221044
 :END:
 Had some trouble getting lecture notes online in their natural environment but [[https://q.utoronto.ca/courses/157875/files/folder/Lectures][you can find a PDF here in Quercus for now]]. You will likely want to follow along -- we will probably skip some stuff today in favour of an async presentation in the next 36 hours. 
 
-* Argh! Once again, lecture will be live today. Code editors!
+** Argh! Once again, lecture will be live today. Code editors!
 :PROPERTIES:
 :ORG_LMS_ANNOUNCEMENT_ID: 702103
 :ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/157875/discussion_topics/702103
@@ -114,7 +451,7 @@ Sorry for the repeated technical issues (irony is fully appreciated). We'll have
 
 Getting VS Code installed is probably the best use you can make of your time.  You might also want to [[https://github.com/DigitalHistory/poem-json-project/releases/][download and unzip the files for Assignment 2]]. 
 
-* In-Class Exercise
+** In-Class Exercise
 :PROPERTIES:
 :ORG_LMS_ANNOUNCEMENT_ID: 702137
 :ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/157875/discussion_topics/702137
@@ -122,7 +459,7 @@ Getting VS Code installed is probably the best use you can make of your time.  Y
 :END:
 Today we'll be walking through the assignment with *a different poem* as an example. Please download [[https://q.utoronto.ca/courses/157875/files/folder/Handouts][al-kolera.zip from the "Handouts" folder in the Quercus files]]. Thanks!
 
-* Lectures online!
+** Lectures online!
 :PROPERTIES:
 :ORG_LMS_ANNOUNCEMENT_ID: 705435
 :ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/157875/discussion_topics/705435
@@ -134,8 +471,8 @@ https://www.youtube.com/playlist?list=PLLY-W2GKX2ZKWlJa7auAkC__nAP2GVrQU
 
 Why don't we start class a little late, say 2:30, so you have time to watch these first.
 
-* Readings for Tomorrow!
-:PROPERTIES:
+** Readings for Tomorrow!
+:PRO<PARTIES:
 :ORG_LMS_ANNOUNCEMENT_ID: 709653
 :ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/157875/discussion_topics/709653
 :ORG_LMS_POSTED_AT: 2020-07-21T11:16:17Z
@@ -148,20 +485,19 @@ Please read Edgar Allen Poe's short story [[https://www.gutenberg.org/files/1064
 
 See you soon!
 
-
-* Lecture Notes; Assignment; Readings for Wednesday
+** Lecture Notes; Assignment; Readings for Wednesday
 :PROPERTIES:
 :ORG_LMS_ANNOUNCEMENT_ID: 301087
 :ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/99251/discussion_topics/301087
 :ORG_LMS_POSTED_AT: 2019-05-07T13:46:52Z
 :END:
-** Lecture Notes Fixed
+*** Lecture Notes Fixed
  [[https://digitalhistory.github.io/wdw235/slides/01-intro][Slides from yesterday's lecture]] should now display more-or-less as expected; had some trouble w/ local images which has now been debugged :-) 
 
-** Reflection Assignment 1
+*** Reflection Assignment 1
 The Reflection assignment, which we will discuss more on Wednesday, is now up on both Quercus and [[https://digitalhistory.github.io/wdw235/assignment/][the course website]]. 
 
-** Readings
+*** Readings
 We will *definitely* be taking time to discuss tomorrow's readings in class, so please make sure you actually read them.
 - Miriam Posner's [[http://miriamposner.com/blog/how-did-they-make-that/][blog post]] discusses a number of projects -- please be sure to follow the (many) links whenever you can (some of them have aged a bit and are broken). Think about where your own interests lie.
 - Ruecker & Galey's piece interweaves a numbrer of themes.  You yourself may not be especially interested in "how DH project should count when someone comes up for tenure", which is clearly one motivation of the essay, but the other themes will be relevant to many of you. You may find it a bit complex or convoluted, but please persevere.  You may find the going easier if you think about the following:
@@ -170,7 +506,7 @@ We will *definitely* be taking time to discuss tomorrow's readings in class, so 
   - What do the authors mean when they suggest that digital objects can "reify an argument" (p.414)?
   - the [[http://www.textarc.org/PrintEditions.html][original TextArc]] is no longer live but [[http://vallandingham.me/textarc/][this cool partial replica]] can still be found ([[https://github.com/vlandham/textarc][code here]]) 
 
-* Today's Class (<2019-09-19 Thu>)
+** Today's Class (<2019-09-19 Thu>)
 :PROPERTIES:
 :ORG_LMS_ANNOUNCEMENT_ID: 384861
 :ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/127426/discussion_topics/384861
@@ -187,14 +523,14 @@ Today's class will be *much* less lecture-y, instead comprising a mix of discuss
 
 I think this will be fun today!   
 
-* XML/TEI intro page!
+** XML/TEI intro page!
 I've published a page o n the website with some information about XML and TEI:
 
 https://q.utoronto.ca/courses/127426/pages/introduction-to-xml-xslt-tei-and-html-long
 
 Much of this is recapitulated in the handout, but we'll likely use this page a template for our lecture today, so you might want toread it. 
 
-* Tonight: more deformance, more XML
+** Tonight: more deformance, more XML
 :PROPERTIES:
 :ORG_LMS_ANNOUNCEMENT_ID: 393585
 :ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/127426/discussion_topics/393585
@@ -208,7 +544,7 @@ I wanted to let you know that tonight's class will be, in some ways, a rehash of
 - Make sure you've read the deformance piece this time! We'll discuss again. 
 - I've put together a somewhat more realistic example of TEI and, incidentally, deformance.  You can [[https://titaniumbones.github.io/xslt-example/rj/rom-act2.xml][see it in action online here]], and you can [[https://github.com/titaniumbones/xslt-example/tree/master/rj][browse the actual code here]]. We will be  examining it in more detail tonight, and you may understand it a lot better if you look at it first. You can easily check it out by pasting the code into [[http://fiddle.frameless.io/][the XML fiddle site]], maybe using he "raw" view of [[https://raw.githubusercontent.com/titaniumbones/xslt-example/master/rj/rom-trans.xsl][the xsl stylesheet]] and [[https://raw.githubusercontent.com/titaniumbones/xslt-example/master/rj/rom-act2.xml][the full xml text]] to copy it more easily.  
 
-* That last announcement
+** That last announcement
 :PROPERTIES:
 :ORG_LMS_ANNOUNCEMENT_ID: 305537
 :ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/99251/discussion_topics/305537
@@ -217,7 +553,7 @@ I wanted to let you know that tonight's class will be, in some ways, a rehash of
 
 it wasn't really an announcement, but a more detailed introduction to XML, XSLT, and HTML than we got in class. I'll distribute a bit more info soon -- maybe at the end of the day -- but I wanted to get this off ASAP so you could make use of it for you assignment!
 
-* link to code
+** link to code
 :PROPERTIES:
 :ORG_LMS_ANNOUNCEMENT_ID: 305014
 :ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/99251/discussion_topics/305014
@@ -225,7 +561,7 @@ it wasn't really an announcement, but a more detailed introduction to XML, XSLT,
 :END:
 [[https://hackmd.io/s/Bk0KFnYnE][here's the code for today]]
 
-* Readings! Videos! Assignments! Discussions! Visits! Sign-ups!
+** Readings! Videos! Assignments! Discussions! Visits! Sign-ups!
 :PROPERTIES:
 :ORG_LMS_ANNOUNCEMENT_ID: 400809
 :ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/127426/discussion_topics/400809
@@ -248,8 +584,7 @@ In addition, some announcements:
 
 Enjoy the readings and see you in class!
 
-
-* Omeka Login Instructions
+** Omeka Login Instructions
 :PROPERTIES:
 :ORG_LMS_ANNOUNCEMENT_ID: 400788
 :ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/127426/discussion_topics/400788
@@ -262,7 +597,7 @@ In this class we have a *shared login* to the local Omeka installation.  We'll t
 
 Please feel free to login and look around before class, but *UNDER NO CIRCUNSTANCES MODIFY ANY RESOURCES THAT YOU FIND THERE.* Again, we'll learn how to use Omeka starting in class today. 
 
-* Class *At Fisher Library* tonight
+** Class *At Fisher Library* tonight
 :PROPERTIES:
 :ORG_LMS_ANNOUNCEMENT_ID: nil
 :ORG_LMS_ANNOUNCEMENT_URL: nil
@@ -279,7 +614,7 @@ A reminder that we will be meeting in the Fisher Library tonight at 6:00 or at 7
 
 See you there, either at 6 or at 7!
 
-* Consultation Sign-ups!
+** Consultation Sign-ups!
 :PROPERTIES:
 :ORG_LMS_ANNOUNCEMENT_ID: 418506
 :ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/127426/discussion_topics/418506
@@ -287,7 +622,7 @@ See you there, either at 6 or at 7!
 :END:
 Not sure whether I announced formally that consultation signups have been live since Friday.  Follow [[http://tuftsedtech.screenstepslive.com/s/18992/m/73355/l/810722-student-how-do-i-sign-up-for-an-appointment-group][these instructionsss]] to be sure that you have the course calendar activated in Quercus, and then please sign up -- only a few ooof you have done so so far, and the due date is coming up. 
 
-* Tonight's Class; assignments (<2019-10-24 Thu>)
+** Tonight's Class; assignments (<2019-10-24 Thu>)
 Remember that we Have a visit tonight form *Prof. Alexandra Bolintineanu*, who teaches the day class. She will be with us for about 30-45 minutes at the beginning of class. It will be important for you to have *browsed extensively* in the  [[https://samizdatcollections.library.utoronto.ca/][Project for the Study of Dissidence and Samizdat]]. You should know what "Samizdat" means and hopefully have some *questions* for Prof. B. about her presentation. Afterwards we will talk a bit more about Omeka and we'll take the last hour as time to make progress on your presentations.
 
 I have finally handed back assignment 1, as I believe all of you are aware. I had hoped to be a bit further with Assignment 2 than I am; it will certainly be several days before I can get it back to you. I've read about a quarter of your papers so far and I'm pretty pleased with what you've done! 
@@ -296,7 +631,7 @@ If you skipped your appointment with me today... Don't do that again!
 
 See you this afternoon.
 
-* Class *in Robarts* tonight
+** Class *in Robarts* tonight
 :PROPERTIES:
 :ORG_LMS_ANNOUNCEMENT_ID: 440683
 :ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/127426/discussion_topics/440683
@@ -309,14 +644,14 @@ This week we have the first of two sequential -- and exciting -- workshops with 
 Please arrive at Robarts Library *promptly* at 6:00PM. We'll be using the classroom on the 4th floor of Robarts, and the easiest way to get there wil lbe to take the escalator to the 4th floor; at the top of the escalator you'll see a whiteboard with an arrow pointing the way in. 
 
 I'll look forward to seeing you all there -- please don't neglect to come!
-* I forgot to send this out!
+** I forgot to send this out!
 :PROPERTIES:
 :ORG_LMS_ANNOUNCEMENT_ID: 448308
 :ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/127426/discussion_topics/448308
 :ORG_LMS_POSTED_AT: 2019-11-21T21:38:03Z
 :END:
 Remember! We're meeting in Robarts again tonight! See you there!!
-* Short Assignment 3 finally up!!
+** Short Assignment 3 finally up!!
 :PROPERTIES:
 :ORG_LMS_ANNOUNCEMENT_ID: 448404
 :ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/127426/discussion_topics/448404
@@ -326,7 +661,7 @@ Remember! We're meeting in Robarts again tonight! See you there!!
 Due a week from today.  link: 
 
 https://q.utoronto.ca/courses/123949/assignments/250828
-* Final Class!
+** Final Class!
 :PROPERTIES:
 :ORG_LMS_ANNOUNCEMENT_ID: 453935
 :ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/127426/discussion_topics/453935
@@ -337,7 +672,7 @@ See you all tomorrow night for the last class of the year. I have fulfilled my p
 Please take a quick look at your marks. If you see something that seems wrong -- e.g., if you have a 0 on an assignment but are sure that you handed it in -- please get in touch right away. I believe everything that has been handed in has now been marked.  
 
 A few more remarks to follow soon. 
-* Final Assignment Clarification
+** Final Assignment Clarification
 :PROPERTIES:
 :ORG_LMS_ANNOUNCEMENT_ID: 457885
 :ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/127426/discussion_topics/457885
@@ -349,7 +684,7 @@ Several of you have asked about the word count for the final assignment. My apol
 Each of those written sections (so, not ~works cited~) should be a minimum of 250-300 words, but *at least 1* of those sections should be substantially longer & represent sustained engagement with the text and the issues it raises (probably this will be ~context~ or ~insights~, or both, or an extra sectio nthat you add at your own discretion). I'm not able to give an exact word count because the main grading criteria will revolve not around length, but instead around *real engagement with an issue that matters.* So as you work, you should be focused as much as possible on that fundamental question -- "Have I explored an issue that I care about to an extent that I find satisfying?".
 
 I hope this helps somewhat!
-* Exhibits back online
+** Exhibits back online
 :PROPERTIES:
 :ORG_LMS_ANNOUNCEMENT_ID: 458632
 :ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/127426/discussion_topics/458632
@@ -357,9 +692,9 @@ I hope this helps somewhat!
 :END:
 
 Several of you noticed that the exhibits suddenly disappeared from omeka yesterday afternoon. They appear to have been restored after an unexpected upgrade was triggered.  I believe everything is back to normal now. 
-* Office Hours Today
+** Office Hours Today
 As I've told several of you, I'm planning to be in my office today from 12-2.  
-* Tomorrow's class -- PLEASE READ (also: Ref 1 assignment)
+** Tomorrow's class -- PLEASE READ (also: Ref 1 assignment)
 :PROPERTIES:
 :ORG_LMS_ANNOUNCEMENT_ID: 307088
 :ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/99251/discussion_topics/307088
@@ -373,7 +708,7 @@ Please take a look at the [[https://q.utoronto.ca/courses/99251/files/folder/Han
 
 I've also returned your reflection 1 -- I hope! -- please let me know if there are any issues.  
 
-* Lost Charger?
+** Lost Charger?
 :PROPERTIES:
 :ORG_LMS_ANNOUNCEMENT_ID: 317646
 :ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/99251/discussion_topics/317646
@@ -394,7 +729,7 @@ Best wishes,
 
 Hila 
 
-* Do the Reading Please!
+** Do the Reading Please!
 :PROPERTIES:
 :ORG_LMS_ANNOUNCEMENT_ID: 428707
 :ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/127426/discussion_topics/428707
@@ -405,7 +740,7 @@ At *minimum*, please read the Drucker reading that is o n the syllabus for today
 
 It's Hallowe'en! come in costume if you like!
 
-* More about Drucker
+** More about Drucker
 :PROPERTIES:
 :ORG_LMS_ANNOUNCEMENT_ID: 429203
 :ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/127426/discussion_topics/429203
@@ -416,7 +751,7 @@ Come prepared especially to discuss especially and at least figures 1,2,7,14,17.
 
 Hoping to give you back your papers before then but need to stadardize the marks properly first.
 
-* Proposal Clarifications: What's due tomorrow
+** Proposal Clarifications: What's due tomorrow
 :PROPERTIES:
 :ORG_LMS_ANNOUNCEMENT_ID: 428788
 :ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/127426/discussion_topics/428788
@@ -431,7 +766,7 @@ I think perhaps it doesn't appear to be completely clear what is due tomorrow; I
 
 I hope that helps!!
 
-* Notes for Today's class
+** Notes for Today's class
 :PROPERTIES:
 :ORG_LMS_ANNOUNCEMENT_ID: 312501
 :ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/99251/discussion_topics/312501
@@ -445,7 +780,7 @@ Meanwhile, I have uploaded our texts to voyant tools to save you the trouble -- 
 - [[https://voyant-tools.org/?corpus=3850b9072e252c0284a555d978538a07][Frankenstein as Corpus]]
 - [[https://voyant-tools.org/?corpus=263abefb0bb190230f8003e5ac16f5b8][Lady Susan as Corpus]]
 
-* Late for office hours
+** Late for office hours
 :PROPERTIES:
 :ORG_LMS_ANNOUNCEMENT_ID: 458925
 :ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/127426/discussion_topics/458925
@@ -454,7 +789,7 @@ Meanwhile, I have uploaded our texts to voyant tools to save you the trouble -- 
 
 I'm sorry, I'm a bit late for office hours today due to an illness in my household. I should be there by 1220 at the latest.
 
-* Handing in final assignment
+** Handing in final assignment
 :PROPERTIES:
 :ORG_LMS_ANNOUNCEMENT_ID: 459069
 :ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/127426/discussion_topics/459069
@@ -463,7 +798,7 @@ I'm sorry, I'm a bit late for office hours today due to an illness in my househo
 
 There have been a few questions about how to hand the assignment in -- I've updated the form so it now allows submission of a website URL and a text comment as well.  Please use that  form and submit the public view of the exhibit.
 
-* Raptors Jubilee
+** Raptors Jubilee
 :PROPERTIES:
 :ORG_LMS_ANNOUNCEMENT_ID: 319546
 :ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/99251/discussion_topics/319546
@@ -475,7 +810,7 @@ In the Middle Ages, it was common for royal anniversaries and other great celebr
 In accordance with this tradition, and in light of the Raptors victory in game 6, I can grant a *general extension* on the final assignment till Wednesday night, and I plan to cut class short today so that you can get to Nathan Philips Square in time to enjoy the end of the parade if you want.  
 
 See you shortly!
-* Handing in the final Assignment
+** Handing in the final Assignment
 :PROPERTIES:
 :ORG_LMS_ANNOUNCEMENT_ID: 320854
 :ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/99251/discussion_topics/320854
@@ -487,8 +822,7 @@ There have been several questions about handing in the final assignment, so I mu
 
 If you've already done this, don't worry about it! Congratulations on finishing and have a great summer!
 
-
-* Grades due today
+** Grades due today
 :PROPERTIES:
 :ORG_LMS_ANNOUNCEMENT_ID: 468227
 :ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/127426/discussion_topics/468227
@@ -496,7 +830,7 @@ If you've already done this, don't worry about it! Congratulations on finishing 
 :END:
 For those of you with late work, my marks are due tomorrow. Please hand in everything you'd like to have marked by the end of the day Friday!
 
-* Make sure you submit your project URL via Quercus
+** Make sure you submit your project URL via Quercus
 :PROPERTIES:
 :ORG_LMS_ANNOUNCEMENT_ID: 468235
 :ORG_LMS_ANNOUNCEMENT_URL: https://q.utoronto.ca/courses/127426/discussion_topics/468235
@@ -504,7 +838,7 @@ For those of you with late work, my marks are due tomorrow. Please hand in every
 :END:
 A surprising number of projects are missing from Quercus. Please double-check to be sure you entered a URL there. You don't want a 0 in that assignment. 
 
-* COMMENT get student list (for GH roster)
+** COMMENT get student list (for GH roster)
 
 #+begin_src emacs-lisp
 (let* ((students 

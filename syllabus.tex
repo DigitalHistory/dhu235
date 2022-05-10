@@ -1,4 +1,4 @@
-% Created 2020-07-09 Thu 09:04
+% Created 2021-09-22 Wed 17:59
 % Intended LaTeX compiler: pdflatex
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
@@ -22,7 +22,6 @@
 \usepackage[inline]{enumitem}
 \usepackage[compact]{titlesec}
 \PassOptionsToPackage{hyphens}{url}
-\hypersetup{linktoc = all, colorlinks = true, urlcolor = Blue4, citecolor = PaleGreen1, linkcolor = black}
 \setlength{\parskip}{0.8em}
 \setlength{\parindent}{0pt}
 
@@ -30,11 +29,10 @@
 
 \renewcommand*\oldstylenums[1]{{\droidsans #1}}
 \renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be typewriter style
-\setitemize{noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt}
 \newenvironment{temphelvet}{\fontfamily{phv}\selectfont}{}
   \newcommand{\letterhead}{
  \begin{minipage}{0.14\textwidth}
- \includegraphics[width=1.8cm]{./Pictures/1000020100000107000001CF636AB597708AB63A.png}
+ \includegraphics[width=1.8cm]{~/Recommendations/Pictures/letterhead.png}
  \end{minipage}
  \begin{minipage}{0.86\textwidth}
  \begin{temphelvet}
@@ -55,41 +53,40 @@
  }
 \author{Matt Price}
 \date{\today}
-\title{WDW235 Syllabus}
+\title{DHU235 (Fall 2021)}
 \hypersetup{
  pdfauthor={Matt Price},
- pdftitle={WDW235 Syllabus},
+ pdftitle={DHU235 (Fall 2021)},
  pdfkeywords={},
  pdfsubject={},
- pdfcreator={Emacs 28.0.50 (Org mode 9.3.7)}, 
+ pdfcreator={Emacs 28.0.50 (Org mode 9.4.6)}, 
  pdflang={English}}
 \begin{document}
 
 \maketitle
-
 \section*{Course Details}
-\label{sec:orge755fbd}
+\label{sec:org4a4c3a9}
 \begin{center}
 \begin{tabular}{ll}
 Instructor & Matt Price\\
-Sync Course Hours & T Th 2-5 \href{https://q.utoronto.ca/courses/157875/external\_tools/246}{In BB Collaborate} (but \hyperref[sec:org786621a]{see below})\\
-Sync Office Hours & T Th 1-2  (online)\\
+Sync Course Hours & W 10-1 \textbf{HYBRID}; SS 561 (see below)\\
+Emergency Online Backup & \href{https://utoronto.zoom.us/j/87927835032}{Zoom} (Passcode: DHU235 )\\
+Office Hrs: & T 4-5, Th 3-4 ET via \href{https://utoronto.zoom.us/j/94323465867}{Zoom} (Password: TalkToMatt ) (Pls make an appointment)\\
 Email & \href{mailto:matt.price@utoronto.ca}{matt.price@utoronto.ca} (weekdays 9-5, 48h turnaround)\\
-TA & TBD\\
-Slack & \href{https://join.slack.com/t/uoftdh/shared\_invite/zt-fq2pcjk4-Y3Vvyu6\~tNDjYbfH\~T6mJA}{Join Here}\\
+Slack & \href{https://join.slack.com/t/uoftdh/signup}{Join Here}\\
 \end{tabular}
 \end{center}
 
 \section*{Course Description}
-\label{sec:org1ab6785}
+\label{sec:org4c622c2}
 Digital Humanities (DH) is a discipline at the intersections of the humanities with computing.  DH studies human culture -- art, literature, history, geography, religion -- through computational tools and methodologies; and, in turn, DH studies digital artifacts through humanist lenses, as complex cultural objects shaped by wider social, political, and philosophical concerns. Digital humanists \href{http://www.doe.utoronto.ca}{analyze languages through digital text collections}; \href{https://samizdat.library.utoronto.ca/}{build digital archives of forbidden books}; \href{http://sites.utm.utoronto.ca/gillespie/content/welcome-book-fame}{construct video games to study literature}; or \href{https://decima-map.net/}{resurrect historical cities through digital maps}.
 
-Our world is even more digital than usual this summer! As a result, we're taking a hiatus from the usual project theme of ``endangered books: fragile, hidden, censored, forbidden.'' We will still discuss these themese to some extent, but your projects, and some of our lecture material, will focus instead on \textbf{plague literature}. We'll discuss this theme throughout your assignments and as a recurring example in class lectures and discussions. 
+Our world has even more digital than usual this year! As a result, we're taking a hiatus from the usual project theme of ``endangered books: fragile, hidden, censored, forbidden.'' We will still discuss these themese to some extent, but your projects, and some of our lecture material, will focus instead on \textbf{plague literature}. We'll discuss this theme throughout your assignments and as a recurring example in class lectures and discussions. 
 
 By the end of the course, you will have mastered concepts and technologies you can use in future courses and workplaces:  text encoding and data visualization, data analysis and digital exhibit platforms. And you will learn how our stories and cultural conversations work and shapeshift through digital environments.
 
-\section*{Learning Goals}
-\label{sec:orgcbb4fca}
+\subsection*{Learning Goals}
+\label{sec:org30fe9e4}
 By the end of the course:
 
 \begin{itemize}
@@ -99,77 +96,64 @@ By the end of the course:
 \end{itemize}
 
 Through hands-on workshops:
-
 \begin{itemize}
-\item You will experiment with text encoding, quantitative text analysis, and text-based videogames as tools of scholarly research
+\item You will experiment with text encoding, quantitative text analysis, and text-based videogames as tools of scholarship
 \item You will create and analyze data visualizations
 \item You will research and author your own digital exhibit
 \end{itemize}
 
-\section*{Course Readings \& Technologies}
-\label{sec:org8516200}
+\subsection*{Course Readings \& Technologies}
+\label{sec:org9bf36bd}
 Course readings will be available either as links in the syllabus or via the course Quercus site each week. You are responsible for checking the Quercus site and ensuring you receive course announcements posted via Quercus.
 
-All technologies used in this course are open-source or, in rare cases, licensed for use by U of T students. You will need access to a working computer to complete the work for this course. This is an unusual year and things will be a bit different than normal. We will try to keep software installation requirements to a minimum, but some new tools may be inevitable. 
+All technologies used in this course are open-source or, in rare cases, licensed for use by U of T students. You will need access to a working computer to complete the work for this course. With luck, we will be able to complete ourwork in the computer lab, but there is no guarantee. This is once again an unusual year, and things will be a bit different than normal. We will try to keep software installation requirements to a minimum, but some new tools may be inevitable. 
 
-\section*{How This Course Works}
-\label{sec:org786621a}
-Each week we have approximately three hours of class time, which include lecture, discussion, and hands-on work. Doing this virtually will be something of a challenge. As much as possible, \textbf{I will deliver the lecture component asynchronously} via a YouTube channel (starting with the second class meeting). You should watch these lectures before coming to class, and be prepared to discuss questions raised in them. Most of our time together will be focussed on making progress on course assignments. Much of your course work will be done in class, in facilitated environments and hands-on workshops. Given the fast pace and praxis-oriented environment, you must come to class on time, all the time: it is all too easy, otherwise, to get lost. If this poses a problem, please let me know as soon as possible.
+\subsection*{Course Format}
+\label{sec:orgdd1f523}
+Each week we have approximately three hours of class time, which include lecture, discussion, and hands-on work. Doing this virtually will be something of a challenge. As much as possible, \textbf{I will deliver the lecture component asynchronously} via a YouTube channel. You should watch these lectures before coming to class, and be prepared to discuss questions raised in them. Most of our time together will be focussed on making progress on course assignments \& skill acquisition. Much of your course work will be done in class, in facilitated environments and hands-on workshops. Given the fast pace and praxis-oriented environment, you must come to class on time, all the time: it is all too easy, otherwise, to get lost. If this poses a problem, please let me know as soon as possible.
 
-Because lectures will be delivered asynchronously, synchronous class time will generally be somewhat shorter than 3 hours. If you have experience with a ``\href{https://en.wikipedia.org/wiki/Flipped\_classroom}{flipped classroom}'', this summer's course format may feel familiar.
+Because lectures will be delivered asynchronously, synchronous class time will generally be somewhat shorter than 3 hours; \textbf{I aim to keep us in the confined space of the classroom for no longer than 90 minutes a week.} If you have experience with a ``\href{https://en.wikipedia.org/wiki/Flipped\_classroom}{flipped classroom}'', this semester's course format may feel familiar.
 
-\section*{Accessibility}
-\label{sec:org88746e2}
-Students with diverse learning styles and needs are more than welcome in this course. Please feel free to approach me or Accessibility Services so we can assist you in achieving academic success in this course. 
-
-See \href{http://www.studentlife.utoronto.ca/as}{A\&S Accessibility Website} for more details on the Accessibility policy.
-
-\section*{Grading Scheme}
-\label{sec:orgbb43134}
+\section*{Course Requirements and Assignments}
+\label{sec:orgcf272c9}
 \begin{center}
 \begin{tabular}{lrl}
 \textbf{Assignment} & \textbf{\%} & \textbf{Due Date}\\
 \hline
-Short Assignments (3) & 45 & \textit{Jul. 16}, \textit{Jul. 21}, \textit{Aug. 04}\\
-Participation & 10 & All semester; alternatives.\\
-Book Project: Consultation & 1 & July , by appointment\\
-Book Project: Proposal \& Annotated Bibliography & 9 & \textit{Jul. 31}\\
-Book Project: Digital Exhibit & 35 & \textit{Aug. 14}\\
+Short Assignments (3) & 45 & \textit{Sep. 25}, \textit{Oct. 24}, \textit{Dec. 01}\\
+Participation & 10 & All semester\\
+Book Project: Consultation & 1 & Oct. 27-Nov 4 by appointment\\
+Book Project: Proposal \& Annotated Bibliography & 9 & \textit{Nov. 06}\\
+Book Project: Digital Exhibit & 35 & \textit{Dec. 11}\\
 Total & 100 & \\
 \end{tabular}
 \end{center}
-
-\begin{itemize}
-\item Reflections include in-class digital artifacts as well as discussion of course readings.
-\item You will work on reflections in class as well as outside class, and you will hand them in via Quercus. 400-500 words maximum.
-\end{itemize}
-
-\section*{Graded Work}
-\label{sec:org01d0513}
 \subsection*{Participation}
-\label{sec:org9d1366b}
+\label{sec:org0c9f569}
 Every week, you are also responsible for coming to the synchronous class meetings and undertaking the facilitated classwork in a structured environment.  This is where you can explore, experiment, fail creatively:  all I require is \textbf{engaged participation—that is, you come to class, do the hands-on computer work, ask questions, and engage in class discussion}. If you miss class or are more than ten minutes late for class, you will miss the grades, unless your absence is excused. 
 \subsection*{Short Assignments}
-\label{sec:org1267fd1}
-You are responsible for writing three short assignments in this course. These include discussions of in-class digital artifacts as well as course readings. You will work on these assignments in class as well as outside class, and you will hand them in via Quercus. They need not be perfect, just done. 800 words approximately.
-\subsection*{DH Project Proposal}
-\label{sec:org19d0ac8}
-
-Your first assignment is to profile a Digital Humanities project, analyzing its research aims, its form and content, its interface, technologies, and intended audience. 500-700 words. You will select the project from a sign-up list available via our course site.
-
+\label{sec:orgacba504}
+You are responsible for writing three short assignments in this course. These include discussions of in-class digital artifacts as well as course readings. You will work on these assignments in class as well as outside class, and you will hand them in via Quercus. They need not be perfect, just done. 900 words approximately.
 \subsection*{Book Project}
-\label{sec:org704b29c}
+\label{sec:orgbc53f3c}
+Your major assignment in this course is to tell the story of a work of plague literature through a digital exhibit. This is a scaffolded assignment with several parts. 
 
-Your major assignment in this course is to tell the story of a banned, challenged, or endangered book through a digital exhibit.
+\section*{Policies}
+\label{sec:org73df263}
+\subsection*{Accessibility}
+\label{sec:orgf18d638}
+Students with diverse learning styles and needs are more than welcome in this course. Please feel free to approach me or Accessibility Services so we can assist you in achieving academic success in this course. 
 
-\section*{Contact}
-\label{sec:orgd3c30c4}
-I love hearing from you! \textbf{The best way to contact me is to talk to me in person in office hours.} I also answer emails at \href{mailto:matt.price@utoronto.ca}{matt.price@utoronto.ca} within 48 hours or fewer on business days. However, I do not answer email after 5:00 p.m. or on weekends, and I do not expect you to do so, either. Please email me as soon as possible to make sure you receive your answers in good time.
+See the \href{https://studentlife.utoronto.ca/department/accessibility-services/}{A\&S Accessibility Website} for more details on the Accessibility policy.
 
-\section*{Due Dates \& Late Penalties}
-\label{sec:org57079a9}
+\subsection*{Contact}
+\label{sec:org76f42c1}
+I love hearing from you! \textbf{The best way to contact me is to talk to me in person in office hours.} I also answer emails at \href{mailto:matt.price@utoronto.ca}{matt.price@utoronto.ca} within 48 hours or fewer on business days, and I monitor Slack as often as I can. However, I do not answer email after 5:00 p.m. or on weekends, and I do not expect you to do so, either. Please email me as soon as possible to make sure you receive your answers in good time.
+
+\subsection*{Due Dates \& Late Penalties}
+\label{sec:orgbfcc465}
 \begin{description}
-\item[{Assignments}] Assignments are due at the beginning of each class. Late assignments will be penalized three percentage points per day unless you have prior permission from the instructor in writing (email). (Of course, late penalties do not apply when the lateness was caused by illness, bereavement, or other serious circumstances outside students' control. For religious observances, please notify instructor before the due date.)
+\item[{Assignments}] Assignments are generally due at midnight. Late assignments will be penalized two percentage points per day unless you have prior permission from the instructor in writing (email). (Of course, late penalties do not apply when the lateness was caused by illness, bereavement, or other serious circumstances outside students' control. For religious observances, please notify instructor before the due date.)
 
 \item[{Lab Work}] If you miss a class, you are responsible for catching up with the work and will not receive credit for that class. (Of course, I will not penalize you if your absence is caused by illness, bereavement, religious observances, or other serious circumstances outside students' control.)
 
@@ -178,137 +162,141 @@ I love hearing from you! \textbf{The best way to contact me is to talk to me in 
 \item[{Re-marking}] The deadline for requesting a re-marking is one week from the date the term work was made available for pickup. Unfortunately, I am unable to accept late re-marking requests.
 \end{description}
 
-\section*{Academic Integrity}
-\label{sec:org6ca8b97}
-In this course, you will work with texts, objects, and digital artifacts. As you navigate the world of digital cultural heritage and write for a wider public, you are allowed (indeed, encouraged!) to use the work of others -- but you must carefully and conscientiously acknowledge your sources, give credit where credit is due, and respect \href{http://www.artsci.utoronto.ca/osai/The-rules/what-is-academic-misconduc}{the University of Toronto's expectations of academic integrity}.
-
-\section*{Acknowledgments}
-\label{sec:orgf0782cc}
-An earlier version of this syllabus was originally written by \href{https://alexandrabolintineanu.wordpress.com/}{Alexandra Bolintineanu}, and draws on both Kristen Mapes' \emph{\href{http://dx.doi.org/10.17613/M6H34B}{Introduction to Digital Humanities, AL285}} and on Miriam Posner's \emph{\href{http://dh101.humanities.ucla.edu/}{DH101: Introduction to Digital Humanities}} Fall 2014, UCLA.
+\subsection*{Academic Integrity}
+\label{sec:orgda7e248}
+In this course, you will work with texts, objects, and digital artifacts. As you navigate the world of digital cultural heritage and write for a wider public, you are allowed (indeed, encouraged!) to use the work of others -- but you must carefully and conscientiously acknowledge your sources, give credit where credit is due, and respect \href{https://www.academicintegrity.utoronto.ca/}{the University of Toronto's expectations of academic integrity}.
 
 \section*{Course Overview (Subject to Change)}
-\label{sec:org5d4d2e6}
-\subsection*{1 (\textit{Jul. 07}) Introduction to Digital Humanities}
-\label{sec:orge936ff5}
+\label{sec:orgc9c2513}
+\subsection*{1 (\textit{Sep. 15}) Introduction to Digital Humanities}
+\label{sec:org14d44ce}
 What is “Digital Humanities”? We discuss the range of projects, activities, and concerns of this growing field, and collaboratively survey representative projects from around the world. We discuss DH in relation to the theme of the course, banned books. 
 
 \subsubsection*{Tool Workshop: \href{https://twinery.org/}{Twine}}
-\label{sec:org9d40a1a}
+\label{sec:orge00eccf}
 \begin{itemize}
 \item How do digital media change possibilities for humanists to express themselves and craft persuasive arguments? We experiment via a popular game-design tool.
 \end{itemize}
-\subsection*{2 (\textit{Jul. 09}) The Anatomy of DH Projects}
-\label{sec:org45247a0}
-We discuss the components of digital humanities projects—data, code, tools, platforms, standards and communities of practice—as they manifest across a gallery of projects, living or dead. We investigate success, failure, and sustainability in DH projects. We collaboratively analyze two DH projects, peering “under the hood” of their technical framework and examining their research questions, digital artifacts, user experiences and intended audiences, and disciplinary implications.
+\subsection*{2 (\textit{Sep. 22}) Thinking the Humanities; and: the Anatomy of DH Projects}
+\label{sec:org94c375f}
+We'll talk about \textbf{what the humanities are}, and \textbf{what they mean to you}. 
+
+Then we'll discuss the components of digital humanities projects—data, code, tools, platforms, standards and communities of practice—as they manifest across a gallery of projects, living or dead. We investigate success, failure, and sustainability in DH projects. We collaboratively analyze two DH projects, peering “under the hood” of their technical framework and examining their research questions, digital artifacts, user experiences and intended audiences, and disciplinary implications.
 
 \subsubsection*{Readings and Discussion:}
-\label{sec:org4dc0b0b}
+\label{sec:org0207d6c}
 \begin{itemize}
+\item Rens Bod, ``Introduction'', in \emph{\href{https://librarysearch.library.utoronto.ca/discovery/fulldisplay?docid=alma991106146656606196\&context=L\&vid=01UTORONTO\_INST:UTORONTO\&lang=en\&search\_scope=UTL\_AND\_CI\&adaptor=Local\%20Search\%20Engine\&tab=Everything\&query=any,contains,A\%20New\%20History\%20of\%20the\%20Humanities:\%20The\%20Search\%20for\%20Principles\%20and\%20Patterns\%20from\%20Antiquity\%20to\%20the\%20Present\&offset=0}{A New History of the Humanities}} (2013)
 \item Miriam Posner, “\href{http://miriamposner.com/blog/how-did-they-make-that/}{How Did They Make That?}” (2013)
 \item Alan Galey \& Stan Ruecker, “\href{https://doi.org/10.1093/llc/fqq021}{How a Prototype Argues}” (2010) (in-class discussion)
 \end{itemize}
 \subsubsection*{Reflection Handed Out: DH Project Profile}
-\label{sec:org423c71a}
-\textbf{Due \textit{Jul. 16}}
-\subsection*{3 (\textit{Jul. 14}) Digital Texts: Reading and Writing}
-\label{sec:orgd5251bb}
-
+\label{sec:org1f4cf8f}
+\subsection*{3 (\textit{Sep. 29}) Digital Texts: Reading and Writing}
+\label{sec:org0db9d76}
 \begin{itemize}
 \item Kinds of danger, types of responses
 \item Using digital methods to discover and highlight new understanding of literary texts
 \end{itemize}
 \subsubsection*{Readings \& Discussion:}
-\label{sec:org54ad689}
+\label{sec:orgbd82012}
 \begin{itemize}
 \item Lisa Samuels and Jerome J. McGann, “\href{http://bf4dv7zn3u.search.serialssolutions.com.myaccess.library.utoronto.ca/?ctx\_ver=Z39.88-2004\&ctx\_enc=info\%253Aofi\%252Fenc\%253AUTF-8\&rfr\_id=info\%253Asid\%252Fsummon.serialssolutions.com\&rft\_val\_fmt=info\%253Aofi\%252Ffmt\%253Akev\%253Amtx\%253Ajournal\&rft.genre=article\&rft.atitle=Deformance+and+Interpretation\&rft.jtitle=New+Literary+History\%253A+a+journal+of+theory+and+interpretation\&rft.au=Samuels\%252C+Lisa\&rft.au=McGann\%252C+Jerome\&rft.date=1999\&rft.issn=0028-6087\&rft.eissn=1080-661X\&rft.volume=30\&rft.issue=1\&rft.spage=25\&rft.externalDocID=R03182533}{Deformance and Interpretation},” \emph{New Literary History} 30, No. 1 (Winter, 1999): 25-56. (in-class discussion)
 \item Alan Liu, “\href{http://www.digitalhumanities.org/companion/view?docId=blackwell/9781405148641/9781405148641.xml\&chunk.id=ss1-3-1\&toc.depth=1\&toc.id=ss1-3-1\&brand=9781405148641\_brand}{Imagining the New Media Encounter}.” A Companion to Digital Literary Studies. Ed. Ray Siemens and Susan Schreibman. Malden, MA: Blackwell, 2007. 3-25
 \end{itemize}
 \subsubsection*{Tool Workshop/Reflection Assignment: JSON and A Litany}
-\label{sec:org39b6c91}
+\label{sec:orgbc70ce9}
 \begin{itemize}
 \item How do digital humanities text analysis tools open new ways of reading literature? We discuss  \href{https://tei-c.org/}{TEI}, then experiment with text encoding using JSON data structures, and the text of an early-modern poem.
 \end{itemize}
-\subsection*{4 (\textit{Jul. 16}) Digital Texts: oral poetry, cultural memory}
-\label{sec:org6201e0b}
-Continuation of the discussion from last time, with more about JSON, TEI, and Twine. 
-\subsection*{5 (\textit{Jul. 21}) Plague Literature: The Past}
-\label{sec:org01811be}
-
+\subsection*{4 (\textit{Oct. 06}) Digital Texts: oral poetry, cultural memory}
+\label{sec:orgcfcfddf}
+Continuation of the discussion from last time, with more about JSON, HTML, CSS, and Elizabethan Drama 
+\subsection*{5 (\textit{Oct. 13}) Plague Literature: The Past}
+\label{sec:orgdb63d4a}
 The first part of class is devoted to understanding the main course assignment, with some lecture material about \textbf{understanding illness as a humanist}
 \subsubsection*{Readings and Discussion}
-\label{sec:org7b14af1}
+\label{sec:org6c4b99a}
 On Resurrections, Risks, Losses
 \begin{itemize}
 \item Bethany Nowviskie, “\href{http://nowviskie.org/2014/anthropocene/}{Digital Humanities in the Anthropocene}”
+\item Pelling,  ``\href{https://q.utoronto.ca/courses/219069/files/folder/Readings}{Meaning of Contagion}''
+\item Poe, ``\href{https://www.gutenberg.org/files/1064/1064-h/1064-h.htm}{The Masque of the Red Death}''
 \end{itemize}
-
 \subsubsection*{Tools Workshop: Omeka}
-\label{sec:org2c9aea9}
+\label{sec:orgf045a98}
 A \textbf{very} brief intro to Omeka, the framework we'll use to build your class projects.
 
-\subsection*{6 (\textit{Jul. 23}) Plague Literature: The Present}
-\label{sec:orgfabe1f2}
+\subsection*{6 (\textit{Oct. 20}) Plague Literature:}
+\label{sec:org91dd24f}
 \subsubsection*{Class Project: Thinking the Present}
-\label{sec:org93bf41f}
-Interlude: we discuss our experience of the current lockdown, and how to approach it as a scholar in the humanities
+\label{sec:org0783f49}
+Interlude: we discuss our experience of the last year, and how to approach it as a scholar in the humanities
 
-\subsection*{7 (\textit{Jul. 28}) Literature and History: Theory and Practice}
-\label{sec:orgfd77bd1}
+\subsection*{7 (\textit{Oct. 27}) Literature and History: Theory and Practice}
+\label{sec:org3461094}
 We examine digital archives, discussing creation, preservation, ethical concerns, relationships with communities, and security and environmental issues raised by cloud computing and machine learning.  We examine UofT’s guidelines around the ethical and technical management of human research data.
 \subsubsection*{Readings \& Discussion}
-\label{sec:orge4de18a}
-\begin{itemize}
-\item Coming soon!
-\end{itemize}
+\label{sec:org18d742d}
+
 \subsubsection*{Tools Workshop: More Omeka}
-\label{sec:org2056513}
-\subsection*{8 (\textit{Jul. 30}) Data 1: Data Models for the Humanities}
-\label{sec:orgf9076a4}
+\label{sec:orgf40fcc1}
+\subsection*{8 (\textit{Nov. 03}) Data 1: Data Models for the Humanities}
+\label{sec:org320bf26}
 We back up and ask: what are data models and algorithms? We discuss how data models, algorithms, and digital platforms inform ways of knowing, learning, and reading. Data as endangered/endangering knowledge. 
 \subsubsection*{Readings \& Discussion:}
-\label{sec:orgafc115a}
+\label{sec:org11a551b}
 \begin{itemize}
 \item Johanna Drucker, “\href{http://www.digitalhumanities.org/dhq/vol/5/1/000091/000091.html}{Humanities Approaches to Graphical Display}” (2011).
 \item Miriam Posner, \href{https://www.youtube.com/watch?v=sW0u1pNQNxc}{Data Trouble: Why Humanists Have Problems with Datavis, and Why Anyone Should}
 \item Miriam Posner, \href{http://miriamposner.com/blog/humanities-data-a-necessary-contradiction/}{Humanities Data: A Necessary Contradiction} (2015) Accessed April 30, 2019.
 \end{itemize}
 \subsubsection*{Further Reading:}
-\label{sec:orgcda2a33}
+\label{sec:orgc5c8321}
 \begin{itemize}
 \item U of T's \href{https://onesearch.library.utoronto.ca/researchdata}{research data management policies}, including \href{https://onesearch.library.utoronto.ca/researchdata/sensitive-data}{guidelines on handling sensitive data} (including de-identification, i.e. anonymizing your data) and on \href{https://onesearch.library.utoronto.ca/researchdata/funder-requirements}{Canadian funders' data publication requirements} (two of the three federal funding bodies mandate that data created with gov't funding be made public).
 \item Cathy O’Neil, \emph{\href{https://search.library.utoronto.ca/search?Ntx=mode\%2520matchallpartial\&Ntk=Anywhere\&N=0\&Ntt=\%2522weapons\%2520of\%2520math\%2520destruction\%2522\&Nr=p\_work\_normalized:ONeil\%2520Cathy\%2520Weapons\%2520of\%2520math\%2520destruction\&uuid=7c23a669-7240-41dc-94d6-592f201cb609}{Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy}}. (2016)
 \item Safiya Umoja Noble. \emph{\href{https://ebookcentral-proquest-com.myaccess.library.utoronto.ca/lib/utoronto/detail.action?docID=4834260}{Algorithms Of Oppression: How Search Engines Reinforce Racism}}. (2018)
 \end{itemize}
 \subsubsection*{Reflection Assignment: Data Viz Reflection}
-\label{sec:orgb397e61}
+\label{sec:org8e125cb}
 
-\subsection*{9 (\textit{Aug. 04}) Data 2: OpenRefine}
-\label{sec:orga7d92ba}
+\subsection*{9 (\textit{Nov. 10}) READING WEEK -- NO CLASS}
+\label{sec:org7a382dd}
+\subsection*{10 (\textit{Nov. 17}) Data 2: OpenRefine}
+\label{sec:org7e8f5eb}
 \begin{itemize}
 \item An introduction to data, and to data cleaning with OpenRefine
 \end{itemize}
 \subsubsection*{Data \& Map Workshop}
-\label{sec:org5e29e42}
+\label{sec:org92d8903}
 Introduction to data cleaning with \href{http://openrefine.org/}{OpenRefine}, a powerful data cleaning and transformation tool. 
-\subsection*{10 (\textit{Aug. 06}) Data Visualization Workshop}
-\label{sec:org0b3e951}
+\subsection*{11 (\textit{Nov. 24}) Data Visualization Workshop}
+\label{sec:org5bfa486}
 \subsubsection*{Data \& Map Workshop}
-\label{sec:orge6ccf70}
-In a facilitated workshop, we turn to data visualization, using the  \href{https://www.tableau.com/}{Tableau} software and the publicly-available \href{https://covidtracking.com/data/api}{COVID-19 Dataset from \emph{The Atlantic}}
-
+\label{sec:orgdbd8d97}
+In another workshop, we turn to data visualization, using the  \href{https://www.tableau.com/}{Tableau} software and the publicly-available \href{https://covidtracking.com/data/api}{COVID-19 Dataset from \emph{The Atlantic}}
 \subsubsection*{Readings \& Discussion}
-\label{sec:orge481ebd}
+\label{sec:org6b1c1ed}
 \begin{itemize}
 \item Workshop Materials Link to be distributed
 \end{itemize}
-\subsection*{11 (\textit{Aug. 11}) Plague Lit: Final Discussion}
-\label{sec:org00ec805}
+\subsection*{12 (\textit{Dec. 01}) Plague Lit: Final Discussion}
+\label{sec:org7589e7e}
 \subsubsection*{Readings \& Discussion}
-\label{sec:org905b3ec}
+\label{sec:org34470dd}
 \begin{itemize}
 \item Coming Soon!
 \end{itemize}
-\subsection*{12 (\textit{Aug. 13}) Retrospective}
-\label{sec:org5112581}
+\subsection*{13 (\textit{Dec. 08}) Retrospective}
+\label{sec:org7a4c9c0}
 The last class is a retrospective look at the course. We'll discuss how to use DH approaches and tools in your home disciplines. We also discuss how we might apply the course learning outcomes to jobs in the corporate sector: we dissect a job ad from Monster.ca to align students' newly acquired skills with every requirement of that position.
+
+\section*{Acknowledgments}
+\label{sec:org2f69ab5}
+An earlier version of this syllabus was originally written by \href{https://alexandrabolintineanu.wordpress.com/}{Alexandra Bolintineanu}, and draws on both Kristen Mapes' \emph{\href{http://dx.doi.org/10.17613/M6H34B}{Introduction to Digital Humanities, AL285}} and on Miriam Posner's \emph{\href{http://dh101.humanities.ucla.edu/}{DH101: Introduction to Digital Humanities}} Fall 2014, UCLA.
+
+
+\section*{Sources}
+\label{sec:org7b02481}
 \end{document}

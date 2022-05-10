@@ -1,36 +1,63 @@
+:PROPERTIES:
+:ID:       51fb5346-08e7-4844-991a-81160c4dae78
+:END:
+#+SYLLABUS_URL: https://q.utoronto.ca/courses/233877/assignments/syllabus
+#+bibliography: ./digitalhumanities.bib
+#+cite_export: csl "/home/matt/src/styles/apa-syllabus.csl"
 #+SETUPFILE: ./setup.org
 #+ODT_STYLES_FILE: "/home/matt/.emacs.d/Templates/syl-temp-2019.odt"
 #+HUGO_SECTION: syllabus
+#+ORG_LMS_SECTION: syllabus
 #+EXPORT_FILE_NAME: syllabus
+#+TITLE: DHU235 (Fall 2021)
 #+HUGO_MENU: :menu main :weight 10
+#+MACRO: ts (eval(mwp-get-ts+7  'org-mwp-classtimes-calibrate 2))
+* Date shifting :noexport:
+
+I have ~update-org-days~ [[id:b2242a03-a35d-4138-a48e-14e1dff05fb9][in my init file]]. So I just need to iterate after I know the date difference, which I can easily calculate in the table below.
+[cite:@LiuImaginingNewMedia2013]
+#+begin_src emacs-lisp
+
+(update-org-days -301)
+#+end_src
+
+#+RESULTS:
+
+| <2020-07-07 Tue> | <2021-05-04 Tue> | 301 |
+|         |         |   0 |
+#+TBLFM: $3=$2-$1
 
 * Course Details
    :PROPERTIES:
    :CUSTOM_ID: course-details
+   :CANVAS_HTML_TOGGLE: t
+   :CANVAS_HTML_FAT: t
    :END:
    
-| Instructor        | Matt Price                                            |
-| Sync Course Hours | T Th 2-5 [[https://q.utoronto.ca/courses/157875/external_tools/246][In BB Collaborate]] (but [[#how-this-course-works][see below]])            |
-| Sync Office Hours | T Th 1-2  (online)                                    |
-| Email             | [[mailto:matt.price@utoronto.ca][matt.price@utoronto.ca]] (weekdays 9-5, 48h turnaround) |
-| TA                | TBD                                                   |
-| Slack             | [[https://join.slack.com/t/uoftdh/shared_invite/zt-fq2pcjk4-Y3Vvyu6~tNDjYbfH~T6mJA][Join Here]]                                             |
+# | Emergency Online Backup | [[https://utoronto.zoom.us/j/87927835032][Zoom]] (Passcode: DHU235 )                                                    |
+| Instructor      | Matt Price                                                          |
+| Course Meetings | Tth 2-5PM SS 561 (see below)                                        |
+| Office Hrs:     | TTH 11-12 via [[https://utoronto.zoom.us/j/86508398806?pwd=NG5oRVc3aCs4Z0ZsZWUrWGo3c2tqdz09][Zoom]] (Password: MPOffice ) (Pls make an appointment!) |
+| Email           | [[mailto:matt.price@utoronto.ca][matt.price@utoronto.ca]] (weekdays 9-5, 48h turnaround)               |
+| Slack           | [[https://join.slack.com/t/uoftdh/signup][Join Here]]                                                           |
 
 * Course Description
    :PROPERTIES:
    :CUSTOM_ID: course-description
+   :CANVAS_HTML_TOGGLE: t
+   :CANVAS_HTML_FAT: t
    :END:
 
 Digital Humanities (DH) is a discipline at the intersections of the humanities with computing.  DH studies human culture -- art, literature, history, geography, religion -- through computational tools and methodologies; and, in turn, DH studies digital artifacts through humanist lenses, as complex cultural objects shaped by wider social, political, and philosophical concerns. Digital humanists [[http://www.doe.utoronto.ca][analyze languages through digital text collections]]; [[https://samizdat.library.utoronto.ca/][build digital archives of forbidden books]]; [[http://sites.utm.utoronto.ca/gillespie/content/welcome-book-fame][construct video games to study literature]]; or [[https://decima-map.net/][resurrect historical cities through digital maps]].
 
-Our world is even more digital than usual this summer! As a result, we're taking a hiatus from the usual project theme of "endangered books: fragile, hidden, censored, forbidden." We will still discuss these themese to some extent, but your projects, and some of our lecture material, will focus instead on *plague literature*. We'll discuss this theme throughout your assignments and as a recurring example in class lectures and discussions. 
+We're taking a hiatus from the usual project theme of "endangered books: fragile, hidden, censored, forbidden." We will still discuss these themese to some extent, but your projects, and some of our lecture material, will focus instead on *plague literature*. We'll discuss this theme throughout your assignments and as a recurring example in class lectures and discussions. 
 
 By the end of the course, you will have mastered concepts and technologies you can use in future courses and workplaces:  text encoding and data visualization, data analysis and digital exhibit platforms. And you will learn how our stories and cultural conversations work and shapeshift through digital environments.
 
-* Learning Goals
-   :PROPERTIES:
-   :CUSTOM_ID: learning-goals
-   :END:
+** Learning Goals
+:PROPERTIES:
+:CUSTOM_ID: learning-goals
+:END:
 
 By the end of the course:
 
@@ -39,85 +66,78 @@ By the end of the course:
 - You will have analyzed data and digital artifacts as complex cultural objects, shaped by, and shaping, how we live, think, and know.
 
 Through hands-on workshops:
-
-- You will experiment with text encoding, quantitative text analysis, and text-based videogames as tools of scholarly research
+- You will experiment with text encoding, quantitative text analysis, and text-based videogames as tools of scholarship
 - You will create and analyze data visualizations
 - You will research and author your own digital exhibit
 
-* Course Readings & Technologies
-   :PROPERTIES:
-   :CUSTOM_ID: course-readings-technologies
-   :END:
+** Course Readings & Technologies
+:PROPERTIES:
+:CUSTOM_ID: course-readings-technologies
+:END:
 
 Course readings will be available either as links in the syllabus or via the course Quercus site each week. You are responsible for checking the Quercus site and ensuring you receive course announcements posted via Quercus.
 
-All technologies used in this course are open-source or, in rare cases, licensed for use by U of T students. You will need access to a working computer to complete the work for this course. This is an unusual year and things will be a bit different than normal. We will try to keep software installation requirements to a minimum, but some new tools may be inevitable. 
+All technologies used in this course are open-source or, in rare cases, licensed for use by U of T students. You will need access to a working computer to complete the work for this course. With luck, we will be able to complete ourwork in the computer lab, but there is no guarantee. This is once again an unusual year, and things will be a bit different than normal. We will try to keep software installation requirements to a minimum, but some new tools may be inevitable. 
 
-* How This Course Works
-   :PROPERTIES:
-   :CUSTOM_ID: how-this-course-works
-   :END:
+** Course Format
+:PROPERTIES:
+:CUSTOM_ID: how-this-course-works
+:END:
 
-Each week we have approximately three hours of class time, which include lecture, discussion, and hands-on work. Doing this virtually will be something of a challenge. As much as possible, *I will deliver the lecture component asynchronously* via a YouTube channel (starting with the second class meeting). You should watch these lectures before coming to class, and be prepared to discuss questions raised in them. Most of our time together will be focussed on making progress on course assignments. Much of your course work will be done in class, in facilitated environments and hands-on workshops. Given the fast pace and praxis-oriented environment, you must come to class on time, all the time: it is all too easy, otherwise, to get lost. If this poses a problem, please let me know as soon as possible.
+Each session we have approximately three hours of class time, which include lecture, discussion, and hands-on work. For now, at least, we will be meeting in person (yay!). In general, our classes will begin with lecture material and end with hands-on work. Most of our time together will be focussed on making progress on course assignments & skill acquisition. Much of your course work will be done in class, in facilitated environments and hands-on workshops. Given the fast pace and praxis-oriented environment, you must come to class on time, all the time: it is all too easy, otherwise, to get lost. If this poses a problem, please let me know as soon as possible.
 
-Because lectures will be delivered asynchronously, synchronous class time will generally be somewhat shorter than 3 hours. If you have experience with a "[[https://en.wikipedia.org/wiki/Flipped_classroom][flipped classroom]]", this summer's course format may feel familiar.
+Because lectures will be delivered asynchronously, synchronous class time will generally be somewhat shorter than 3 hours; *I aim to keep us in the confined space of the classroom for no longer than 90 minutes a week.* If you have experience with a "[[https://en.wikipedia.org/wiki/Flipped_classroom][flipped classroom]]", this semester's course format may feel familiar.
 
-* Accessibility 
-   :PROPERTIES:
-   :CUSTOM_ID: accessibility-www.studentlife.utoronto.caas
-   :END:
-
-Students with diverse learning styles and needs are more than welcome in this course. Please feel free to approach me or Accessibility Services so we can assist you in achieving academic success in this course. 
-
-See [[http://www.studentlife.utoronto.ca/as][A&S Accessibility Website]] for more details on the Accessibility policy.
-
-* Grading Scheme
+* Course Requirements and Assignments
    :PROPERTIES:
    :CUSTOM_ID: grading-scheme
+   :CANVAS_HTML_TOGGLE: t
+   :CANVAS_HTML_FAT: t
    :END:
 
-| *Assignment*                                    | *%* | *Due Date*                  |
-|-------------------------------------------------+-----+-----------------------------|
-| Short Assignments (3)                           |  45 | <2020-07-16 Thu>, <2020-07-21 Tue>, <2020-08-04 Tue>   |
-| Participation                                   |  10 | All semester; alternatives. |
-| Book Project: Consultation                      |   1 | July 20-30, by appointment  |
-| Book Project: Proposal & Annotated Bibliography |   9 | <2020-08-04 Tue>                     |
-| Book Project: Digital Exhibit                   |  35 | <2020-08-14 Fri>                     |
-| Total                                           | 100 |                             |
+| *Assignment*                                    | *%* | *Due Date*                   |
+|-------------------------------------------------+-----+------------------------------|
+| Short Assignments (3)                           |  45 | <2020-09-25 Fri>, <2020-10-24 Sat>, <2020-12-01 Tue>    |
+| Participation                                   |  10 | All semester                 |
+| Project: Consultation                       |   1 | Oct. 27-Nov 4 by appointment |
+| Project: Proposal & Annotated Bibliography  |   9 | <2020-11-06 Fri>                      |
+| Project: Digital Exhibit                    |  35 | <2020-12-11 Fri>                      |
+| Total                                           | 100 |                              |
 #+TBLFM: @>$2=vsum(@2..@-1)
-
-- Reflections include in-class digital artifacts as well as discussion of course readings.
-- You will work on reflections in class as well as outside class, and you will hand them in via Quercus. 
-
-* Graded Work
-   :PROPERTIES:
-   :CUSTOM_ID: assignments
-   :END:
 ** Participation
 Every week, you are also responsible for coming to the synchronous class meetings and undertaking the facilitated classwork in a structured environment.  This is where you can explore, experiment, fail creatively:  all I require is *engaged participation—that is, you come to class, do the hands-on computer work, ask questions, and engage in class discussion*. If you miss class or are more than ten minutes late for class, you will miss the grades, unless your absence is excused. 
 ** Short Assignments
-You are responsible for writing three short assignments in this course. These include discussions of in-class digital artifacts as well as course readings. You will work on these assignments in class as well as outside class, and you will hand them in via Quercus. They need not be perfect, just done. 800 words approximately.
-** DH Project Proposal
-
-Your first assignment is to profile a Digital Humanities project, analyzing its research aims, its form and content, its interface, technologies, and intended audience. 500-700 words. You will select the project from a sign-up list available via our course site.
-
+You are responsible for writing three short assignments in this course. These include discussions of in-class digital artifacts as well as course readings. You will work on these assignments in class as well as outside class, and you will hand them in via Quercus. They need not be perfect, just done. 900 words approximately.
 ** Book Project
+Your major assignment in this course is to tell the story of a work of plague literature through a digital exhibit. This is a scaffolded assignment with several parts. 
 
-Your major assignment in this course is to tell the story of a work of plague literature through a digital exhibit.
+* Policies
+:PROPERTIES:
+:CANVAS_HTML_FAT: t
+:CANVAS_HTML_TOGGLE: t
+:END:
+** Accessibility 
+:PROPERTIES:
+:CUSTOM_ID: accessibility
+:END:
 
-* Contact
+Students with diverse learning styles and needs are more than welcome in this course. Please feel free to approach me or Accessibility Services so we can assist you in achieving academic success in this course. 
+
+See the [[https://studentlife.utoronto.ca/department/accessibility-services/][A&S Accessibility Website]] for more details on the Accessibility policy.
+
+** Contact
    :PROPERTIES:
    :CUSTOM_ID: contact
    :END:
 
-I love hearing from you! *The best way to contact me is to talk to me in person in office hours.* I also answer emails at [[mailto:matt.price@utoronto.ca][matt.price@utoronto.ca]] within 48 hours or fewer on business days. However, I do not answer email after 5:00 p.m. or on weekends, and I do not expect you to do so, either. Please email me as soon as possible to make sure you receive your answers in good time.
+I love hearing from you! *The best way to contact me is to talk to me in person in office hours.* I also answer emails at [[mailto:matt.price@utoronto.ca][matt.price@utoronto.ca]] within 48 hours or fewer on business days, and I monitor Slack as often as I can. However, I do not answer email after 5:00 p.m. or on weekends, and I do not expect you to do so, either. Please email me as soon as possible to make sure you receive your answers in good time.
 
-* Due Dates & Late Penalties
+** Due Dates & Late Penalties
    :PROPERTIES:
    :CUSTOM_ID: due-dates-late-penalties
    :END:
 
-- Assignments :: Assignments are due at the beginning of each class. Late assignments will be penalized three percentage points per day unless you have prior permission from the instructor in writing (email). (Of course, late penalties do not apply when the lateness was caused by illness, bereavement, or other serious circumstances outside students' control. For religious observances, please notify instructor before the due date.)
+- Assignments :: Assignments are generally due at midnight. Late assignments will be penalized two percentage points per day unless you have prior permission from the instructor in writing (email). (Of course, late penalties do not apply when the lateness was caused by illness, bereavement, or other serious circumstances outside students' control. For religious observances, please notify instructor before the due date.)
 
 - Lab Work :: If you miss a class, you are responsible for catching up with the work and will not receive credit for that class. (Of course, I will not penalize you if your absence is caused by illness, bereavement, religious observances, or other serious circumstances outside students' control.)
 
@@ -125,71 +145,93 @@ I love hearing from you! *The best way to contact me is to talk to me in person 
 
 - Re-marking :: The deadline for requesting a re-marking is one week from the date the term work was made available for pickup. Unfortunately, I am unable to accept late re-marking requests.
 
-* Academic Integrity
+** Academic Integrity
    :PROPERTIES:
    :CUSTOM_ID: academic-integrity
    :END:
 
-In this course, you will work with texts, objects, and digital artifacts. As you navigate the world of digital cultural heritage and write for a wider public, you are allowed (indeed, encouraged!) to use the work of others -- but you must carefully and conscientiously acknowledge your sources, give credit where credit is due, and respect [[http://www.artsci.utoronto.ca/osai/The-rules/what-is-academic-misconduc][the University of Toronto's expectations of academic integrity]].
-
-* Acknowledgments
-   :PROPERTIES:
-   :CUSTOM_ID: acknowledgements
-   :END:
-
-An earlier version of this syllabus was originally written by [[https://alexandrabolintineanu.wordpress.com/][Alexandra Bolintineanu]], and draws on both Kristen Mapes' /[[http://dx.doi.org/10.17613/M6H34B][Introduction to Digital Humanities, AL285]]/ and on Miriam Posner's /[[http://dh101.humanities.ucla.edu/][DH101: Introduction to Digital Humanities]]/ Fall 2014, UCLA.
+In this course, you will work with texts, objects, and digital artifacts. As you navigate the world of digital cultural heritage and write for a wider public, you are allowed (indeed, encouraged!) to use the work of others -- but you must carefully and conscientiously acknowledge your sources, give credit where credit is due, and respect [[https://www.academicintegrity.utoronto.ca/][the University of Toronto's expectations of academic integrity]].
 
 * Course Overview (Subject to Change)
    :PROPERTIES:
-   :CUSTOM_ID: course-overview
+   :CUSTOM_ID: course-schedule
+   :CANVAS_HTML_TOGGLE: t
+   :CANVAS_HTML_FAT: t
    :END:
 ** {{{n}}} ({{{ts}}}) Introduction to Digital Humanities
+:PROPERTIES:
+:CANVAS_HTML_TOGGLE: t
+:END:
 What is “Digital Humanities”? We discuss the range of projects, activities, and concerns of this growing field, and collaboratively survey representative projects from around the world. We discuss DH in relation to the theme of the course, banned books. 
 
 *** Tool Workshop: [[https://twinery.org/][Twine]]
 - How do digital media change possibilities for humanists to express themselves and craft persuasive arguments? We experiment via a popular game-design tool.
-** {{{n}}} ({{{ts}}}) The Anatomy of DH Projects
-We discuss the components of digital humanities projects—data, code, tools, platforms, standards and communities of practice—as they manifest across a gallery of projects, living or dead. We investigate success, failure, and sustainability in DH projects. We collaboratively analyze two DH projects, peering “under the hood” of their technical framework and examining their research questions, digital artifacts, user experiences and intended audiences, and disciplinary implications.
+** {{{n}}} ({{{ts}}}) Thinking the Humanities; and: the Anatomy of DH Projects
+:PROPERTIES:
+:CANVAS_HTML_TOGGLE: t
+:END:
+We'll talk about *what the humanities are*, and *what they mean to you*. 
 
-*** Readings and Discussion: 
+Then we'll discuss the components of digital humanities projects—data, code, tools, platforms, standards and communities of practice—as they manifest across a gallery of projects, living or dead. We investigate success, failure, and sustainability in DH projects. We collaboratively analyze two DH projects, peering “under the hood” of their technical framework and examining their research questions, digital artifacts, user experiences and intended audiences, and disciplinary implications.
+
+*** Readings and Discussion:
+- Rens Bod, "Introduction", in /[[https://librarysearch.library.utoronto.ca/discovery/fulldisplay?docid=alma991106146656606196&context=L&vid=01UTORONTO_INST:UTORONTO&lang=en&search_scope=UTL_AND_CI&adaptor=Local%20Search%20Engine&tab=Everything&query=any,contains,A%20New%20History%20of%20the%20Humanities:%20The%20Search%20for%20Principles%20and%20Patterns%20from%20Antiquity%20to%20the%20Present&offset=0][A New History of the Humanities]]/ (2013)
 - Miriam Posner, “[[http://miriamposner.com/blog/how-did-they-make-that/][How Did They Make That?]]” (2013) 
 - Alan Galey & Stan Ruecker, “[[https://doi.org/10.1093/llc/fqq021][How a Prototype Argues]]” (2010) (in-class discussion)
 *** Reflection Handed Out: DH Project Profile
-*Due <2020-07-16 Thu>*
 ** {{{n}}} ({{{ts}}}) Digital Texts: Reading and Writing
-
+:PROPERTIES:
+:CANVAS_HTML_TOGGLE: t
+:END:
 - Kinds of danger, types of responses
 - Using digital methods to discover and highlight new understanding of literary texts
 *** Readings & Discussion: 	 
 :PROPERTIES:
 :ID:       9e3b927f-9757-4dc2-83bd-3d312f10cd10
 :END:
-- Lisa Samuels and Jerome J. McGann, “[[http://bf4dv7zn3u.search.serialssolutions.com.myaccess.library.utoronto.ca/?ctx_ver=Z39.88-2004&ctx_enc=info%253Aofi%252Fenc%253AUTF-8&rfr_id=info%253Asid%252Fsummon.serialssolutions.com&rft_val_fmt=info%253Aofi%252Ffmt%253Akev%253Amtx%253Ajournal&rft.genre=article&rft.atitle=Deformance+and+Interpretation&rft.jtitle=New+Literary+History%253A+a+journal+of+theory+and+interpretation&rft.au=Samuels%252C+Lisa&rft.au=McGann%252C+Jerome&rft.date=1999&rft.issn=0028-6087&rft.eissn=1080-661X&rft.volume=30&rft.issue=1&rft.spage=25&rft.externalDocID=R03182533][Deformance and Interpretation]],” /New Literary History/ 30, No. 1 (Winter, 1999): 25-56. (in-class discussion) 	 
--  Alan Liu, “[[http://www.digitalhumanities.org/companion/view?docId=blackwell/9781405148641/9781405148641.xml&chunk.id=ss1-3-1&toc.depth=1&toc.id=ss1-3-1&brand=9781405148641_brand][Imagining the New Media Encounter]].” A Companion to Digital Literary Studies. Ed. Ray Siemens and Susan Schreibman. Malden, MA: Blackwell, 2007. 3-25
+
+-  [cite:@SamuelsDeformanceInterpretation1999a]  (in-class discussion) 	
+-  [cite:@LiuImaginingNewMedia2013]  
 *** Tool Workshop/Reflection Assignment: JSON and A Litany
 - How do digital humanities text analysis tools open new ways of reading literature? We discuss  [[https://tei-c.org/][TEI]], then experiment with text encoding using JSON data structures, and the text of an early-modern poem. 
 ** {{{n}}} ({{{ts}}}) Digital Texts: oral poetry, cultural memory
-Continuation of the discussion from last time, with more about JSON, TEI, and Twine. 
-** {{{n}}} ({{{ts}}}) Plague Literature: The Past
-
+:PROPERTIES:
+:CANVAS_HTML_TOGGLE: t
+:END:
+Continuation of the discussion from last time, with more about JSON, HTML, CSS, and Elizabethan Drama 
+** {{{n}}} ({{{ts}}}) Plague Literature: The Past 
+:PROPERTIES:
+:CANVAS_HTML_TOGGLE: t
+:END:
 The first part of class is devoted to understanding the main course assignment, with some lecture material about *understanding illness as a humanist*
 *** Readings and Discussion
 On Resurrections, Risks, Losses
-- Bethany Nowviskie, “[[http://nowviskie.org/2014/anthropocene/][Digital Humanities in the Anthropocene]]”
-
+- [cite:@Nowviskiedigitalhumanitiesanthropocene2014]
+- [cite:@PellingmeanngcontagionReproduction2001]
+- Poe, "[[https://www.gutenberg.org/files/1064/1064-h/1064-h.htm][The Masque of the Red Death]]"
 *** Tools Workshop: Omeka
 A *very* brief intro to Omeka, the framework we'll use to build your class projects.
 
-** {{{n}}} ({{{ts}}}) Plague Literature: The Present
-*** Class Project: Thinking the Present
-Interlude: we discuss our experience of the current lockdown, and how to approach it as a scholar in the humanities
+**  {{{n}}} ({{{ts}}}) Plague Literature: 
+:PROPERTIES:
+:CANVAS_HTML_TOGGLE: t
+:END:
 
-** {{{n}}} ({{{ts}}}) Literature and History: Theory and Practice
+*** Class Project: Thinking the Present
+Interlude: we discuss our experience of the last year, and how to approach it as a scholar in the humanities
+
+**  {{{n}}} ({{{ts}}}) Literature and History: Theory and Practice 
+:PROPERTIES:
+:CANVAS_HTML_TOGGLE: t
+:END:
 We examine digital archives, discussing creation, preservation, ethical concerns, relationships with communities, and security and environmental issues raised by cloud computing and machine learning.  We examine UofT’s guidelines around the ethical and technical management of human research data.
 ***  Readings & Discussion
-- Coming soon!
+ 
 *** Tools Workshop: More Omeka 
 ** {{{n}}} ({{{ts}}}) Data 1: Data Models for the Humanities
+:PROPERTIES:
+:CANVAS_HTML_TOGGLE: t
+:END:
 We back up and ask: what are data models and algorithms? We discuss how data models, algorithms, and digital platforms inform ways of knowing, learning, and reading. Data as endangered/endangering knowledge. 
 *** Readings & Discussion:
 - Johanna Drucker, “[[http://www.digitalhumanities.org/dhq/vol/5/1/000091/000091.html][Humanities Approaches to Graphical Display]]” (2011).
@@ -201,23 +243,52 @@ We back up and ask: what are data models and algorithms? We discuss how data mod
 - Safiya Umoja Noble. /[[https://ebookcentral-proquest-com.myaccess.library.utoronto.ca/lib/utoronto/detail.action?docID=4834260][Algorithms Of Oppression: How Search Engines Reinforce Racism]]/. (2018)
 *** Reflection Assignment: Data Viz Reflection
 
+** COMMENT READING WEEK -- NO CLASS
+:PROPERTIES:
+:CANVAS_HTML_TOGGLE: t
+:END:
 ** {{{n}}} ({{{ts}}}) Data 2: OpenRefine
+:PROPERTIES:
+:CANVAS_HTML_TOGGLE: t
+:END:
 - An introduction to data, and to data cleaning with OpenRefine
 *** Data & Map Workshop
-Introduction to data cleaning with [[http://openrefine.org/][OpenRefine]], a powerful data cleaning and transformation tool. 
-** {{{n}}} ({{{ts}}}) Data Visualization Workshop
-*** Data & Map Workshop
-In a facilitated workshop, we turn to data visualization, using the  [[https://www.tableau.com/][Tableau]] software and the publicly-available [[https://covidtracking.com/data/api][COVID-19 Dataset from /The Atlantic/]]
+Introduction to data cleaning with [[http://openrefine.org/][OpenRefine]], a powerful data cleaning and transformation tool.
+*** Our process this year
+This year, well be using the excellent [[http://q.utoronto.ca/enroll/E4JKAW][new OpenRefine Online Course]] from the Map and Data Library. I'll post a brief online lecture before class introducing the tool and giving suggestions for 
 
+
+** {{{n}}} ({{{ts}}}) Data Visualization Workshop
+:PROPERTIES:
+:CANVAS_HTML_TOGGLE: t
+:END:
+# shit -- there is stilll a tableau issue for me, can't use on my computer.  dammit.  
+*** Data & Map Workshop
+In another workshop, we turn to data visualization, using the  [[https://www.tableau.com/][Tableau]] software and the publicly-available [[https://covidtracking.com/data/api][COVID-19 Dataset from /The Atlantic/]]
 *** Readings & Discussion
 - Workshop Materials Link to be distributed
-** {{{n}}} ({{{ts}}}) Plague Lit: Final Discussion
+**  {{{n}}} ({{{ts}}}) Plague Lit: Final Discussion
+:PROPERTIES:
+:CANVAS_HTML_TOGGLE: t
+:END:
 *** Readings & Discussion
 - Coming Soon!
 ** {{{n}}} ({{{ts}}}) Retrospective
+:PROPERTIES:
+:CANVAS_HTML_TOGGLE: t
+:END:
 The last class is a retrospective look at the course. We'll discuss how to use DH approaches and tools in your home disciplines. We also discuss how we might apply the course learning outcomes to jobs in the corporate sector: we dissect a job ad from Monster.ca to align students' newly acquired skills with every requirement of that position.
 
+* Acknowledgments
+ :PROPERTIES:
+ :CUSTOM_ID: acknowledgements
+ :CANVAS_HTML_TOGGLE: t
+ :END:
+
+An earlier version of this syllabus was originally written by [[https://alexandrabolintineanu.wordpress.com/][Alexandra Bolintineanu]], and draws on both Kristen Mapes' /[[http://dx.doi.org/10.17613/M6H34B][Introduction to Digital Humanities, AL285]]/ and on Miriam Posner's /[[http://dh101.humanities.ucla.edu/][DH101: Introduction to Digital Humanities]]/ Fall 2014, UCLA.
+
 * COMMENT Variables
+
 #+begin_src emacs-lisp
 (make-local-variable 'org-use-property-inheritance)
 (setq org-use-property-inheritance nil)
@@ -230,6 +301,8 @@ The last class is a retrospective look at the course. We'll discuss how to use D
 #+end_src
 local variables need to be set at the end of the file.  
 # Local Variables:
-# org-time-stamp-custom-formats: ("<%b. %d>" . "<%Y-%m-%d %H:%M>")
-# org-mwp-classtimes-calibrate: ( "<2020-07-02 Thu>" "<2020-06-30 Tue>" )
+# org-time-stamp-custom-formats: ("<%B  %d>" . "<%Y-%m-%d %H:%M>")
+# org-mwp-classtimes-calibrate: ("<2022-05-05 Thu 12:00>" "<2022-05-03 Tue 12:00>"  )
+# org-ref-default-bibliography: ( "~/.emacs.d/zotero-refs.bib" )
+# org-export-ensure-biblio: nil
 # End:  

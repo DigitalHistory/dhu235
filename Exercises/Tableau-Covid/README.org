@@ -1,14 +1,45 @@
 * Intro
-OK folks, building on our experience last time, let's do some COVID dataviz. We'll talk along the way about some of the challenges involved!
+This is an attempt to build a repo for COVID data in Tableau. Trying to make it easier to update etc.
+
 
 * Data Sources
-** Toronto Data
 
+** Toronto Data Description
+While the Candian COVID API's gneerlaly report the Public Health Unit in their summaries, for more fine-grained data you mostly need to go to more detailed sources. I don't have access to [[https://www.ices.on.ca/DAS/AHRQ/COVID-19-Dashboard][ICES Data]], which powers that dahsboard and also [[https://public.tableau.com/app/profile/bill.comeau/viz/FSATestPositivity/FSApositivitymap][This excellent map of postal codes]]. THisi s unfortunate as the ICES dataset uses a number of geographical locators which could build better maps. 
+- To get Toronto individual case data, use the [[https://open.toronto.ca/dataset/covid-19-cases-in-toronto/][TO Open Data portal COVID data]]. Download as CSV for this exercise, because Tableau doesn't permit some joins on JSON data.  THe JSON would be better if you're using e.g. JavaScrit chart frameworks.
+- [[https://open.toronto.ca/dataset/neighbourhoods/][TO Open Data portal Neighbourhood data]] -- this is the source for our shapefiles. I have cleaned it up to provide a "Neighbourhood name" field that doens't include the neighbourhood id number; this is required for some of our joins.
+- *some* data can be downloaded from [[https://public.tableau.com/app/profile/tphseu/viz/COVID-19VaccinationsinToronto/COVID-19VaccinationsinToronto-Public][this Toronto PH Vacicnation dashboard]] but the original files are not easily accessible, and a s a result the download process is somewhat time-consuming.  Automating this is difficult. 
+*** Code to download this data
+  To download these TO  again:
+  #+begin_src sh
+  wget -nd https://ckan0.cf.opendata.inter.prod-toronto.ca/download_resource/e5bf35bc-e681-43da-b2ce-0242d00922ad?format=csv -O COVID-cases-toronto.csv
+  
+  wget -nd https://ckan0.cf.opendata.inter.prod-toronto.ca/download_resource/a083c865-6d60-4d1d-b6c6-b0c8a85f9c15?format=geojson&projection=4326 -O neighbourhood-data.geojson
+  #+end_src
+  #+RESULTS:
+
+*** Data from 
+
+** Toronto Data
 - [[https://open.toronto.ca/dataset/covid-19-cases-in-toronto/][TO Open Data portal COVID data -- download as CSV for this exercise]]
   JSON is in some ways nicer but Tableau has strange limitations on joining JDON Data
 - [[https://open.toronto.ca/dataset/neighbourhoods/][TO Open Data portal Neighbourhood data]] -- thisi s the source for our shapefiles, but use the cleaned verison I provide here instead, as otherwise the fields do not match
+-
+  
+** Ontario Data
+- [[https://data.ontario.ca/dataset?q=covid-19][Ontario Open Data Portal]] with a covid-19 keyword search. Includes cases & vaccinations, but no fine-grained details.
+- [[https://public.tableau.com/app/profile/bill.comeau/viz/FSATestPositivity/FSApositivitymap][Cool tableau workbook for geographical data]]
+- [[https://www.publichealthontario.ca/en/data-and-analysis/infectious-disease/covid-19-data-surveillance][Ontario Public Health]] -- publicaitons and data tools, *not* their tableau stuff mainly.
+- [[https://data.ontario.ca/dataset/effective-reproduction-number-re-for-covid-19-in-ontario][Ontario estimates of Re over time]]
+- [[https://data.ontario.ca/dataset/covid-19-vaccine-data-in-ontario][Ontario Vaccine Doses]] 
+To retreive these, try this:
+
+  #+begin_src sh
+  wget -nd https://data.ontario.ca/dataset/8da73272-8078-4cbd-ae35-1b5c60c57796/resource/1ffdf824-2712-4f64-b7fc-f8b2509f9204/download/re_estimates_on.csv -O on_re.csv
+  wget -nd https://data.ontario.ca/dataset/752ce2b7-c15a-4965-a3dc-397bf405e7cc/resource/8a89caa9-511c-4568-af89-7f2174b4378c/download/vaccine_doses.csv -O on_vaccine_doses.csv
+  #+end_src
+  
 ** Canada Data
-For Canada-wide data, the [[git@github.com:ishaberry/Covid19Canada.git][dataset maintained by Berry /et al/]] is the easiest to use; there's a copy in [[./Covid19Canada]].
+For Canada-wide data, the [[https://github.com/ishaberry/Covid19Canada][dataset maintained by Berry /et al/]] is the easiest to use; there's a copy in [[./Covid19Canada]].
 ** World Data
 There are several sources for international data. Probably the most complete public source is [[https://covidtracking.com/data/api][Covid Tracking]] and we will be using some of their data in our projects. The most-used data source is maintained by Johns Hopkins and ocllects data from numerous sources.  [[https://github.com/CSSEGISandData/COVID-19][The data is here]] and there are various API projects that serve the data live in JSON format, [[https://blogs.mulesoft.com/dev/api-dev/track-covid-19/][a few of which are described here]].
-

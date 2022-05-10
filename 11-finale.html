@@ -2,18 +2,18 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-<title>13: Finale (<span class="timestamp-wrapper"><span class="timestamp">Nov. 28</span></span>)</title>
+<title>12: Finale</title>
 <meta name="author" content="Matt Price"/>
 <style type="text/css">
 .underline { text-decoration: underline; }
 </style>
-<link rel="stylesheet" href="file:///home/matt/src/reveal.js/css/reveal.css"/>
+<link rel="stylesheet" href="file:///home/matt/src/reveal.js/dist/reveal.css"/>
 
-<link rel="stylesheet" href="file:///home/matt/src/reveal.js/css/theme/matt.css" id="theme"/>
+<link rel="stylesheet" href="file:///home/matt/src/reveal.js/dist/theme/matt.css" id="theme"/>
 
-<link rel="stylesheet" href="file:///home/matt/src/org-reveal/local.css"/>
-<link rel="stylesheet" href="file:///home/matt/src/reveal.js/lib/css/zenburn.css"/>
-<link rel="stylesheet" href="https://sandbox.hackinghistory.ca/vendor/klipse/codemirror.css"/>
+<link rel="stylesheet" href="https://unpkg.com/tippy.js@6/tippy.js/themes/light.css'"/>
+<link rel="stylesheet" href="file:///home/matt/src/reveal.js/plugin/highlight/zenburn.css"/>
+<link rel="stylesheet" href="https://storage.googleapis.com/app.klipse.tech/css/codemirror.css"/>
 <style>
 /* Position computations of klipse get confused by reveal.js's scaling.
    Hence, scaling should be disabled with this code.  Fix height of code area
@@ -21,7 +21,7 @@
    setting afterwards): */
 .reveal section pre { max-height: 70vh; height: auto; overflow: auto; }
 /* Reset some reveal.js and oer-reveal settings: */
-.reveal section pre .CodeMirror pre { font-size: 2em; box-shadow: none; width: auto; padding: 0.4em; display: block; overflow: visible; }
+.reveal section pre .CodeMirror pre { font-size: 2.0em; box-shadow: none; width: auto; padding: 0.4em; display: block; overflow: visible; }
 /* Enlarge cursor: */
 .CodeMirror-cursor { border-left: 3px solid black; }
 </style>
@@ -38,37 +38,13 @@
         selector_sql: '.language-klipse-sql'
     };
 </script>
-
-<!-- If the query includes 'print-pdf', include the PDF print sheet -->
-<script>
-    if( window.location.search.match( /print-pdf/gi ) ) {
-        var link = document.createElement( 'link' );
-        link.rel = 'stylesheet';
-        link.type = 'text/css';
-        link.href = 'file:///home/matt/src/reveal.js/css/print/pdf.css';
-        document.getElementsByTagName( 'head' )[0].appendChild( link );
-    }
-</script>
 </head>
 <body>
 <div class="reveal">
 <div class="slides">
 <section id="sec-title-slide">
-<h1>13: Finale (<span class="timestamp-wrapper"><span class="timestamp">Nov. 28</span></span>)</h1>
+<h1>12: Finale</h1>
 <h3>Matt Price  </h3>
-<!-- <p class="title-theme-choice">(view this presentation in another theme: 
-<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/black.css')); return false;">Black (default)</a> -
-<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/white.css')); return false;">White</a> -
-<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/league.css')); return false;">League</a> -
-<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/sky.css')); return false;">Sky</a> -
-<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/beige.css')); return false;">Beige</a> -
-<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/simple.css')); return false;">Simple</a> 
-<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/serif.css')); return false;">Serif</a> -
-<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/blood.css')); return false;">Blood</a> -
-<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/night.css')); return false;">Night</a> -
-<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/moon.css')); return false;">Moon</a> -
-<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/solarized.css')); return false;">Solarized</a> 
-				)	</p> -->
 
 </section>
 <section>
@@ -78,27 +54,12 @@
 </section>
 </section>
 <section>
-<section id="slide-course-topics">
-<h2 id="course-topics">Course Topics</h2>
-<form><ul>
-<li>Digital Humanities: A History</li>
-<li>Anatomy of DH Projects</li>
-<li>Archives: Endangered, Lost, Banned, Censored Books (visit to Thomas Fischer Rare Book Library)</li>
-<li>How to Read with DH Data: Zoom In, Zoom Out, Tell Stories, Play Games</li>
-<li>Interfaces, Users, and Usability</li>
-<li>Communities, Libraries, and Possible Futures</li>
-
-</ul></form>
-
-</section>
-</section>
-<section>
 <section id="slide-learning-goals">
 <h2 id="learning-goals">Learning Goals</h2>
 <form><ul>
 <li>Digital Humanities (DH) is a discipline at the intersections of the humanities with computing.</li>
 <li>Digital humanists analyze languages through digital text collections; build digital archives of forbidden books; resurrect historical cities through digital maps; or construct video games to study literature.</li>
-<li>This year the course focuses on endangered books: fragile, hidden, censored, forbidden. We speak to scholars who build archives of forbidden literature. We visit the Thomas Fisher Rare Book Library. We study rare books&rsquo; histories through digital exhibits.</li>
+<li>This year the course focuses on plague literature: the .</li>
 <li>By the end of the course, you will have mastered concepts and technologies you can use in future courses and workplaces: data visualization, data analysis, and digital exhibit platforms. And you will learn how our stories and cultural conversations work and shapeshift through digital environments.</li>
 
 </ul></form>
@@ -109,11 +70,9 @@
 <section id="slide-by-the-end-of-the-course">
 <h2 id="by-the-end-of-the-course">By the end of the course:</h2>
 <form><ul>
-<li>You will be able to describe the history and intellectual landscape of the digital humanities, including central concepts, debates, digital tools and platforms current in the discipline.</li>
-<li>You will be able to analyze digital humanities research projects across a variety of humanities disciplines</li>
-<li>You will have developed critical thinking and a set of best practices around data modeling, datasets, project design and management, and research data management</li>
-<li>You will have analyzed and built visualizations and digital maps</li>
-<li>You will have researched and authored your own digital exhibit</li>
+<li>You will be able to describe the history and intellectual landscape of the digital humanities, including the central concepts, debates, projects, and digital tools current in the discipline.</li>
+<li>You will have developed a set of best practices around datasets, project design and management, and data curation.</li>
+<li>You will have analyzed data and digital artifacts as complex cultural objects, shaped by, and shaping, how we live, think, and know.</li>
 
 </ul></form>
 
@@ -123,7 +82,7 @@
 <section id="slide-section">
 <h2 id="section">Job Listing</h2>
 
-<figure>
+<figure id="orgc306dfa">
 <img src="./images/deloite-job.png" alt="deloite-job.png">
 
 </figure>
@@ -132,7 +91,7 @@
 <section>
 <section id="slide-job-requirements" class="twoc">
 <h2 id="job-requirements">Requirements vs. Achievements</h2>
-<div class="slideblock">
+<div class="slideblock" id="org687160f">
 <p>
 <b>Job Requirements</b>
 </p>
@@ -149,14 +108,14 @@
 
 </div>
 
-<div class="slideblock">
+<div class="slideblock" id="org34950b0">
 <p>
 <b>WDW235 Achievements</b>
 </p>
 
 <form><ul>
-<li>Completed a major digital exhibit project, from research with banned books from rare book collection, to public-facing digital exhibit about censorship and knowledge transmission</li>
-<li>Developed static infographics and an interactive digital exhibit using open-source, high-uptake technologies, adhering to data management best practices, and effectively communicating original artifact analyses to public audiences</li>
+<li>Completed a major digital exhibit project, from research on plague literature, to analysis of a signficant work, to a public-facing digital exhibit about censorship and knowledge transmission</li>
+<li>Developed static infographics and an interactive digital exhibit using high-uptake technologies, adhering to data management best practices, and effectively communicating original artifact analyses to public audiences</li>
 <li>Worked through iterative cycles, from proposal pitch to mock-up development, incorporating feedback at each stage</li>
 <li>Managed project timelines and multiple deliverables</li>
 
@@ -166,8 +125,8 @@
 </section>
 </section>
 <section>
-<section id="slide-orgc156995">
-<h2 id="orgc156995">Continuing in DH</h2>
+<section id="slide-orgeaf0fd1">
+<h2 id="orgeaf0fd1">Continuing in DH</h2>
 <form><ul class="fragment appear">
 <li>Statistical reasoning</li>
 
@@ -188,8 +147,57 @@
 </section>
 </div>
 </div>
-<script src="file:///home/matt/src/reveal.js/lib/js/head.min.js"></script>
-<script src="file:///home/matt/src/reveal.js/js/reveal.js"></script>
+<script src="file:///home/matt/src/reveal.js/dist/reveal.js"></script>
+<script src="file:///home/matt/src/reveal.js/plugin/markdown/markdown.js"></script>
+<script src="file:///home/matt/src/reveal.js/plugin/highlight/highlight.js"></script>
+<script src="file:///home/matt/src/reveal.js/plugin/zoom/zoom.js"></script>
+<script src="file:///home/matt/src/reveal.js/plugin/notes/notes.js"></script>
+<script src="https://s.electerious.com/basicLightbox/dist/basicLightbox.min.js"></script>
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
+<script>
+async function revealLightbox ()  {
+while(!window.hasOwnProperty('Reveal') || !window.Reveal.hasOwnProperty('addKeyBinding'))
+  await new Promise(resolve => setTimeout(resolve, 100));
+Reveal.addKeyBinding({keyCode: 27,
+                      key: 'ESC',
+                      description: 'Close lightbox or toggle overlay'},
+                     ()=> {
+                       if (this.Reveal.isLightboxed) {
+                         Reveal.currentLightbox.close()
+                       } else if( this.Reveal.closeOverlay() === false ) {
+                         this.Reveal.overview.toggle();
+                       }
+                       event.preventDefault && event.preventDefault();
+                     })
+
+
+document.querySelectorAll('figure>img').forEach(
+  (fig)=> {
+    fig.onclick=() => {
+      Reveal.isLightboxed = true
+      Reveal.currentLightbox = basicLightbox
+        .create(fig.parentElement.outerHTML,
+                {onClose: (instance) => Reveal.isLightboxed = null});
+      Reveal.currentLightbox.show()
+      }
+   })
+}
+revealLightbox()
+
+tippy('[data-template]', {
+  content(reference) {
+    const id = reference.getAttribute('data-template');
+    console.log(id)
+    const template = document.getElementById(id).parentElement;
+    console.log(template);
+    return template.innerHTML;
+  },
+  allowHTML: true,
+  interactive: true,
+  theme: 'light'
+})
+  </script>
 <script>
 // Full list of configuration options available here:
 // https://github.com/hakimel/reveal.js#configuration
@@ -203,10 +211,9 @@ slideNumber: 'c',
 rollingLinks: false,
 keyboard: true,
 mouseWheel: false,
-fragmentInURL: false,
+fragmentInURL: true,
 hashOneBasedIndex: false,
 pdfSeparateFragments: true,
-
 overview: true,
 width: "100%",
 height: "100%",
@@ -214,23 +221,19 @@ margin: 0.10,
 minScale: 1.00,
 maxScale: 1.00,
 
-theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-transition: Reveal.getQueryHash().transition || 'convex', // see README of reveal.js for options
+transition: 'convex',
 transitionSpeed: 'default',
+
+// Plugins with reveal.js 4.x
+plugins: [ RevealMarkdown, RevealHighlight, RevealZoom, RevealNotes ],
 
 // Optional libraries used to extend reveal.js
 dependencies: [
-{src: 'file:///home/matt/src/reveal.js/plugin/klipse_reveal.js'},
- { src: 'file:///home/matt/src/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
- { src: 'file:///home/matt/src/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
- { src: 'file:///home/matt/src/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
- { src: 'file:///home/matt/src/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
- { src: 'file:///home/matt/src/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
- { src: 'file:///home/matt/src/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+{src: 'file:///home/matt/src/reveal.js/plugin/klipse_reveal.js'}]
 
 });
 </script>
-<script src="https://sandbox.hackinghistory.ca/vendor/klipse/klipse_plugin.min.js"></script>
+<script src="https://storage.googleapis.com/app.klipse.tech/plugin_prod/js/klipse_plugin.min.js"></script>
 <script>
 /* Recompute layout upon changes by klipse.  Code fragment from
    asciidoctor-revealjs-klipse by Timothy Pratley under GPLv3:

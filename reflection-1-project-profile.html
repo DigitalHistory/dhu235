@@ -1,76 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
+<!-- 2021-05-06 Thu 13:51 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Reflection 01: DH Project Profile</title>
-<meta name="author" content="Matt Price"/>
+<meta name="author" content="Matt Price" />
+<meta name="generator" content="Org Mode" />
 <style type="text/css">
-.underline { text-decoration: underline; }
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
 </style>
-<link rel="stylesheet" href="http://sandbox.hackinghistory.ca/Tools/reveal.js/css/reveal.css"/>
-
-<link rel="stylesheet" href="http://sandbox.hackinghistory.ca/Tools/reveal.js/css/theme/matt.css" id="theme"/>
-
-<link rel="stylesheet" href="file:///home/matt/src/org-reveal/local.css"/>
-<link rel="stylesheet" href="http://sandbox.hackinghistory.ca/Tools/reveal.js/lib/css/zenburn.css"/>
-
-<!-- If the query includes 'print-pdf', include the PDF print sheet -->
-<script>
-    if( window.location.search.match( /print-pdf/gi ) ) {
-        var link = document.createElement( 'link' );
-        link.rel = 'stylesheet';
-        link.type = 'text/css';
-        link.href = 'http://sandbox.hackinghistory.ca/Tools/reveal.js/css/print/pdf.css';
-        document.getElementsByTagName( 'head' )[0].appendChild( link );
-    }
+<script type="text/javascript">
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
+<!--/*--><![CDATA[/*><!--*/
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
 </script>
 </head>
 <body>
-<div class="reveal">
-<div class="slides">
-<section id="sec-title-slide">
-<h1>Reflection 01: DH Project Profile</h1>
-<h3>Matt Price  </h3>
-<!-- <p class="title-theme-choice">(view this presentation in another theme: 
-<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/black.css')); return false;">Black (default)</a> -
-<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/white.css')); return false;">White</a> -
-<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/league.css')); return false;">League</a> -
-<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/sky.css')); return false;">Sky</a> -
-<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/beige.css')); return false;">Beige</a> -
-<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/simple.css')); return false;">Simple</a> 
-<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/serif.css')); return false;">Serif</a> -
-<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/blood.css')); return false;">Blood</a> -
-<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/night.css')); return false;">Night</a> -
-<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/moon.css')); return false;">Moon</a> -
-<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/solarized.css')); return false;">Solarized</a> 
-				)	</p> -->
-
-</section>
-<p>
-Your first assignment is to profile a Digital Humanities project, analyzing its research aims, its form and content, its interface, technologies, and intended audience. You will learn how to navigate Digital Humanities projects, how to identify and evaluate different aspects of such projects, and how to analyze the kinds of knowledge and digital artifacts    generated by DH projects. <b>Write-up: 700 words plus screenshots</b>.
+<article id="content">
+<header>
+<h1 class="title">Reflection 01: DH Project Profile</h1>
+</header><p>
+Your first assignment is to profile a Digital Humanities project, analyzing its research aims, its form and content, its interface, technologies, and intended audience. You will learn how to navigate Digital Humanities projects, how to identify and evaluate different aspects of such projects, and how to analyze the kinds of knowledge and digital artifacts    generated by DH projects. <b>Write-up: 800 words plus screenshots</b>.
 </p>
 
 <p>
-You may select any project you like from the syllabus or from one of the pages below:
+You may select any project you like from the syllabus or from one of the pages below, with the caveat that <b>the project should be identifiably humanistic</b> in orientation. You should be able to articulate the aims of the project in ways that reflect <b>your existing understanding of what the humanities are</b>. 
 </p>
 
-<form><ul>
-<li><a href="https://digitalhumanities.duke.edu/all-projects">https://digitalhumanities.duke.edu/all-projects</a> (please start here)</li>
-<li><a href="https://eadh.org/projects">https://eadh.org/projects</a></li>
-<li><a href="https://cdh.unc.edu/prsp-template/proj_init/">https://cdh.unc.edu/prsp-template/proj_init/</a></li>
-<li><a href="https://digitalhumanities.berkeley.edu/projects">https://digitalhumanities.berkeley.edu/projects</a></li>
-
-</ul></form>
+<ul class="org-ul">
+<li><a href="https://eadh.org/projects">European Association for Digital Humanities</a> (please start here)</li>
+<li><a href="https://digitalhumanities.duke.edu/all-projects">Duke University DH Index</a></li>
+<li><a href="https://www.ryerson.ca/cdh/projects/">Ryerson University DH Projects</a></li>
+<li><a href="https://dhn.utoronto.ca/projects/">U of T DH Network</a></li>
+<li><a href="https://cdh.unc.edu/prsp-template/proj_init/">UNC DH Lab</a></li>
+<li><a href="https://docs.google.com/document/d/1kp9VURhHnxVvaG2D2l7sBS_mQcSOZZ03s2Lr7Intpr0/edit#heading=h.dj72fsf219b9">Queer DH Index</a></li>
+<li><a href="https://libguides.sdsu.edu/digitalhumanities/projects">SDSU Listings</a> (some are indices, but some interesting projects here also)</li>
+<li><a href="https://docs.google.com/document/d/1rZwucjyAAR7QiEZl238_hhRPXo5-UKXt2_KCrwPZkiQ/edit#">Black DH</a></li>
+</ul>
 
 <p>
 This project profile is not an essay; it is a short, 2-3 page report. You do not need to write a formal introduction, thesis, argument, or conclusion. You should only report on your observations, using the questions below as categories of analysis, each with its own heading. Not all categories and questions apply to all projects, so <b>do not feel obligated to respond to all of them</b>. Your project profile will be evaluated for <a href="http://www.artsci.utoronto.ca/newstudents/transition/academic/grading">accuracy, clarity, detail, quality of analysis, and insight</a>.
 </p>
 
 
-<form><ol>
-<li><b>Project:</b> What is the name of the project? Who are its primary authors?</li>
+<ol class="org-ol">
+<li><b>Project:</b> What is the name of the project? Who are its primary authors? Be sure to include one or more links in the first paragraph of your assignment, so we can navigate quickly to the project itself.</li>
 
-<li><b>Topic:</b> What is the project about? (Examples: What topic and historical period does it focus on? What texts or art works or other material does it collect, explain, map, or analyze? What questions is the project seeking to answer?)</li>
+<li><b>Topic and Significance for the Humanities:</b> What is the project about? (Examples: What topic and historical period does it focus on? What texts or art works or other material does it collect, explain, map, or analyze? What questions is the project seeking to answer?)</li>
 
 <li><b>People &amp; Institutions</b>: Who is the project leader? Who are their collaborators? What is the institution involved in the project&rsquo;s development? What are the granting bodies funding the projects? Is credit given to individual contributors? To what extent?</li>
 
@@ -93,20 +268,19 @@ Does this project provide access to users with e.g. limited bandwidth, minimal c
 <li><b>Audience:</b> Who is the intended audience for this project? That is, does this project primarily speak to laypeople? Scholars? Specialists? How can you tell?</li>
 
 <li><b>Limitations:</b> Does the project make note of any limitations in its work, any gaps or uncertainties in its data? Can you find limitations in its work&#x2014;that is, gaps between its stated goals and its results?</li>
-
-</ol></form>
+</ol>
 
 <p>
 This assignment is based on the <a href="https://dmptool.org/">DMP Tool</a>, the U of T DH Census Profile tool, and <a href="https://docs.google.com/document/d/1jp0bQ18hXKxekgACfBCw_6P6lO_xg4uzUXXMvT2jaPo/edit">Kristen Mapes</a>&rsquo; DH Project Critique assignment.
 </p>
 
-<section>
-<section id="slide-org06809a7">
-<h2 id="org06809a7">Rubric&#xa0;&#xa0;&#xa0;<span class="tag"><span class="rubric">rubric</span></span></h2>
+<nil id="outline-container-org9d7f696" class="outline-2">
+<h2 id="org9d7f696">Rubric&#xa0;&#xa0;&#xa0;<span class="tag"><span class="rubric">rubric</span></span></h2>
+<div class="outline-text-2" id="text-org9d7f696">
 <p>
 Components (check/no-check)
 </p>
-<form><ul>
+<ul class="org-ul">
 <li class="off"><input type='checkbox' /> topic</li>
 <li class="off"><input type='checkbox' /> people + institutions</li>
 <li class="off"><input type='checkbox' /> presentation + UX</li>
@@ -114,61 +288,26 @@ Components (check/no-check)
 <li class="off"><input type='checkbox' /> technologies</li>
 <li class="off"><input type='checkbox' /> audience</li>
 <li class="off"><input type='checkbox' /> limitations</li>
+</ul>
 
-</ul></form>
 
-
-<form><dl>
+<dl class="org-dl">
 <dt><b>Grade</b></dt><dd></dd>
 
 <dt><b>Comments</b></dt><dd></dd>
-
-</dl></form>
-</section>
-</section>
+</dl>
 </div>
-</div>
-<script src="http://sandbox.hackinghistory.ca/Tools/reveal.js/lib/js/head.min.js"></script>
-<script src="http://sandbox.hackinghistory.ca/Tools/reveal.js/js/reveal.js"></script>
-<script>
-// Full list of configuration options available here:
-// https://github.com/hakimel/reveal.js#configuration
-Reveal.initialize({
-
-controls: true,
-progress: true,
-history: true,
-center: false,
-slideNumber: 'c',
-rollingLinks: false,
-keyboard: true,
-mouseWheel: false,
-fragmentInURL: false,
-hashOneBasedIndex: false,
-pdfSeparateFragments: true,
-
-overview: true,
-width: "100%",
-height: "100%",
-margin: 0.10,
-minScale: 1.00,
-maxScale: 1.00,
-
-theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-transition: Reveal.getQueryHash().transition || 'convex', // see README of reveal.js for options
-transitionSpeed: 'default',
-
-// Optional libraries used to extend reveal.js
-dependencies: [
-{src: 'http://sandbox.hackinghistory.ca/Tools/reveal.js/plugin/klipse_reveal.js'},
- { src: 'http://sandbox.hackinghistory.ca/Tools/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
- { src: 'http://sandbox.hackinghistory.ca/Tools/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
- { src: 'http://sandbox.hackinghistory.ca/Tools/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
- { src: 'http://sandbox.hackinghistory.ca/Tools/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
- { src: 'http://sandbox.hackinghistory.ca/Tools/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
- { src: 'http://sandbox.hackinghistory.ca/Tools/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
-
-});
-</script>
-</body>
+</nil>
+</article>
+<section id="postamble" class="status">
+<p class="author">Author: Matt Price</p>
+<p class="date">Created: 2021-05-06 Thu 13:51</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</section>
+<script>window.klipse_settings = {selector_eval_html: '.src-html',
+                             selector_eval_js: '.src-js',
+                             selector_eval_python_client: '.src-python',
+                             selector_eval_scheme: '.src-scheme',
+                             selector: '.src-clojure',
+                             selector_eval_ruby: '.src-ruby'};</script><script src="https://storage.googleapis.com/app.klipse.tech/plugin_prod/js/klipse_plugin.min.js"></script><link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/app.klipse.tech/css/codemirror.css"/></body>
 </html>

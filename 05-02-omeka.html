@@ -7,13 +7,13 @@
 <style type="text/css">
 .underline { text-decoration: underline; }
 </style>
-<link rel="stylesheet" href="file:///home/matt/src/reveal.js/css/reveal.css"/>
+<link rel="stylesheet" href="file:///home/matt/src/reveal.js/dist/reveal.css"/>
 
-<link rel="stylesheet" href="file:///home/matt/src/reveal.js/css/theme/matt.css" id="theme"/>
+<link rel="stylesheet" href="file:///home/matt/src/reveal.js/dist/theme/matt.css" id="theme"/>
 
-<link rel="stylesheet" href="file:///home/matt/src/org-reveal/local.css"/>
-<link rel="stylesheet" href="file:///home/matt/src/reveal.js/lib/css/zenburn.css"/>
-<link rel="stylesheet" href="https://sandbox.hackinghistory.ca/vendor/klipse/codemirror.css"/>
+<link rel="stylesheet" href="https://unpkg.com/tippy.js@6/tippy.js/themes/light.css'"/>
+<link rel="stylesheet" href="file:///home/matt/src/reveal.js/plugin/highlight/zenburn.css"/>
+<link rel="stylesheet" href="https://storage.googleapis.com/app.klipse.tech/css/codemirror.css"/>
 <style>
 /* Position computations of klipse get confused by reveal.js's scaling.
    Hence, scaling should be disabled with this code.  Fix height of code area
@@ -38,17 +38,6 @@
         selector_sql: '.language-klipse-sql'
     };
 </script>
-
-<!-- If the query includes 'print-pdf', include the PDF print sheet -->
-<script>
-    if( window.location.search.match( /print-pdf/gi ) ) {
-        var link = document.createElement( 'link' );
-        link.rel = 'stylesheet';
-        link.type = 'text/css';
-        link.href = 'file:///home/matt/src/reveal.js/css/print/pdf.css';
-        document.getElementsByTagName( 'head' )[0].appendChild( link );
-    }
-</script>
 </head>
 <body>
 <div class="reveal">
@@ -56,47 +45,27 @@
 <section id="sec-title-slide">
 <h1>5.2 Omeka</h1>
 <h3>Matt Price  </h3>
-<!-- <p class="title-theme-choice">(view this presentation in another theme: 
-<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/black.css')); return false;">Black (default)</a> -
-<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/white.css')); return false;">White</a> -
-<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/league.css')); return false;">League</a> -
-<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/sky.css')); return false;">Sky</a> -
-<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/beige.css')); return false;">Beige</a> -
-<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/simple.css')); return false;">Simple</a> 
-<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/serif.css')); return false;">Serif</a> -
-<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/blood.css')); return false;">Blood</a> -
-<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/night.css')); return false;">Night</a> -
-<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/moon.css')); return false;">Moon</a> -
-<a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/solarized.css')); return false;">Solarized</a> 
-				)	</p> -->
 
 </section>
 <section>
-<section id="slide-org75fffe9">
-<h2 id="org75fffe9">Getting Started with U of T&rsquo;s Omeka installation</h2>
+<section id="slide-org744886d">
+<h2 id="org744886d">Getting Started with the DH Omeka installation</h2>
 <form><ul>
-<li>Go to <a href="https://spatial-humanities.library.utoronto.ca/admin">the U of T Spatial Humanities site admin page</a>, and</li>
-<li>sign in with <a href="https://q.utoronto.ca/courses/127426/discussion_topics/400788">the authorization info that was sent out in a recent announcement</a></li>
+<li>Go to <a href="https://spatial-humanities.library.utoronto.ca/admin/users/login">the login page for the DH Omeka site</a>, and</li>
+<li>sign in with this auth:
+<form><ul>
+<li>user: WDW235-daytime</li>
+<li>pass: PlagueLitProject</li>
+
+</ul></form></li>
 
 </ul></form>
-</section>
-<section id="slide-org5b93299">
-<h3 id="org5b93299">Addendum: possible shift for assignment</h3>
-<form><ul>
-<li>I managed to install omeka on my server</li>
-<li>trying to figure out accounts</li>
-<li>hold off on starting your <b>real</b> assignment till next week (you can still do your thinking work)</li>
-
-</ul></form>
-
 </section>
 </section>
 <section>
-<section id="slide-orgb81d113">
-<h2 id="orgb81d113">Omeka!</h2>
-<p>
-<div class="paired">
-</p>
+<section id="slide-orgf8af028" class="twoc">
+<h2 id="orgf8af028">Omeka!</h2>
+<div class="slideblock" id="org609fcc1">
 <form><ul>
 <li>&ldquo;Wordpress for Museums&rdquo;</li>
 <li>Designed <b>especially</b> for projects with strict metadata requirements, e.g.: archives of books, images, etc</li>
@@ -105,56 +74,71 @@
 <li>Widely used in libraries &amp; classrooms</li>
 
 </ul></form>
-<p>
-</div><div class="paired">
-<img src="https://omeka.org/images/omeka-logo.png" alt="omeka-logo.png">
+
 </div>
-</p>
+
+<div class="slideblock" id="org01a16eb">
+
+<figure id="orgd7ec37b">
+<img src="https://omeka.org/images/omeka-logo.png" alt="omeka-logo.png">
+
+</figure>
+
+</div>
+
+
+
 
 </section>
-<section id="slide-org4dbd2a7">
-<h3 id="org4dbd2a7">Items and Collections</h3>
-<p>
-<div class="paired">
-</p>
+<section id="slide-orgfb7de80" class="twoc">
+<h3 id="orgfb7de80">Items and Collections</h3>
+<div class="slideblock" id="orgd7b4dc7">
 <form><ul>
 <li>Users can curate <a href="https://omeka.org/classic/docs/Content/Collections/">collections</a> of digital <a href="https://omeka.org/classic/docs/Content/Items/">items</a></li>
 <li>Each Item has rich <a href="https://omeka.org/classic/docs/Content/Working_with_Dublin_Core/">metadata</a></li>
 
 </ul></form>
-<p>
-</div><div class="paired">
-<img src="./images/omeka-md.png" alt="omeka-md.png">
+
 </div>
-</p>
+
+<div class="slideblock" id="org3ebb26b">
+
+<figure id="org60d24f8">
+<img src="./images/omeka-md.png" alt="omeka-md.png">
+
+</figure>
+
+</div>
+
+
 
 </section>
-<section id="slide-org5c7e62a">
-<h3 id="org5c7e62a">Exhibits</h3>
-<p>
-<div class="paired">
-</p>
+<section id="slide-orgbd99df3" class="twoc">
+<h3 id="orgbd99df3">Exhibits</h3>
+<div class="slideblock" id="org2226360">
 <form><ul>
 <li>Through its <a href="https://omeka.org/classic/docs/Plugins/ExhibitBuilder/">Exhibit</a> plugin, Omeka lets users tell stories with their collections.</li>
-<li>Users can arrange items from their collections into multimedia essays, using the “Lego bricks&ldquo; of the archive to tell stories and make arguments.
-</div><div class="paired"></li>
+<li>Users can arrange items from their collections into multimedia essays, using the “Lego bricks&ldquo; of the archive to tell stories and make arguments.</li>
 
 </ul></form>
 
-<figure>
+</div>
+
+<div class="slideblock" id="orga45b63f">
+
+<figure id="org26aa43e">
 <img src="./images/martha.png" alt="martha.png">
 
 </figure>
 
-<p>
 </div>
-</p>
+
 
 </section>
 </section>
 <section>
-<section id="slide-org13938bc">
-<h2 id="org13938bc">Omeka Building Blocks</h2>
+<section id="slide-org11a04d6">
+<h2 id="org11a04d6">Omeka Building Blocks</h2>
 <form><dl>
 <dt>Items</dt><dd>individual pieces of content</dd>
 <dt>Metadata</dt><dd>information about an item &#x2013; &ldquo;<a href="http://www.dublincore.org/resources/metadata-basics/">Dublin Core</a>&rdquo; Standard</dd>
@@ -171,81 +155,97 @@
 
 </ul></form>
 
-<figure>
+<figure id="org72ed3cb">
 <img src="./images/silver.png" alt="silver.png">
 
 </figure>
 </section>
-<section id="slide-orgb146b0c">
-<h3 id="orgb146b0c">Items</h3>
-<p>
-<div class="paired">
-</p>
+<section id="slide-orga6b12b4" class="twoc">
+<h3 id="orga6b12b4">Items</h3>
+<div class="slideblock" id="org16e42e4">
 <form><ul>
 <li>Items are the building blocks of Omeka sites. They always have metadata (Title, Description, Sourc,e Date, etc.) and often have digital files attached (images, documents, etc.)</li>
 
 </ul></form>
-<p>
-</div><div class="paired">
-<img src="./images/hulk-item.png" alt="hulk-item.png">
+
 </div>
-</p>
+
+<div class="slideblock" id="orgdc68698">
+
+<figure id="org3787ad0">
+<img src="./images/hulk-item.png" alt="hulk-item.png">
+
+</figure>
+
+</div>
 
 </section>
-<section id="slide-org0865a7d">
-<h3 id="org0865a7d">Metadata</h3>
-<p>
-<div class="paired">
-</p>
+<section id="slide-org267cff2" class="twoc">
+<h3 id="org267cff2">Metadata</h3>
+<div class="slideblock" id="orgf059003">
 <form><ul>
 <li>Structured data about data</li>
 <li>Omeka uses Dublin Core, which is a widely-used international standard</li>
 
 </ul></form>
-<p>
-</div><div class="paired">
-<img src="./images/hulk-md.png" alt="hulk-md.png">
+
 </div>
-</p>
+
+<div class="slideblock" id="org40df09f">
+
+<figure id="org1fdb043">
+<img src="./images/hulk-md.png" alt="hulk-md.png">
+
+</figure>
+
+</div>
 
 </section>
-<section id="slide-org28ab8a9">
-<h3 id="org28ab8a9">Collections</h3>
-<p>
-<div class="paired">
-</p>
+<section id="slide-orgd540090" class="twoc">
+<h3 id="orgd540090">Collections</h3>
+<div class="slideblock" id="org5b43168">
 <form><ul>
 <li>logical/hierarchical groupings of items (like &ldquo;folders&rdquo; in your computer desktop)</li>
 <li>Each item can be in only one collection</li>
 
 </ul></form>
-<p>
-</div><div class="paired">
-<img src="./images/omeka-coll.png" alt="omeka-coll.png">
+
 </div>
-</p>
+
+<div class="slideblock" id="org6fa8a2e">
+
+<figure id="orge19aa45">
+<img src="./images/omeka-coll.png" alt="omeka-coll.png">
+
+</figure>
+
+</div>
 
 </section>
-<section id="slide-org8fe35de">
-<h3 id="org8fe35de">Exhibits</h3>
-<p>
-<div class="paired">
-</p>
+<section id="slide-orgbce5db3" class="twoc">
+<h3 id="orgbce5db3">Exhibits</h3>
+<div class="slideblock" id="orgc3d4d2b">
 <form><ul>
 <li>narratives that tell the story of some items &amp; explain their significance. It&rsquo;s important to highlight exhibits in an omeka site, since Omeka can be hard to navigate without them.</li>
 
 </ul></form>
-<p>
-</div><div class="paired">
-<img src="./images/omeka-exhibit.png" alt="omeka-exhibit.png">
+
 </div>
-</p>
+
+<div class="slideblock" id="org709a990">
+
+<figure id="org7ec09ea">
+<img src="./images/omeka-exhibit.png" alt="omeka-exhibit.png">
+
+</figure>
+
+</div>
 
 </section>
-<section id="slide-orgf563f97">
-<h3 id="orgf563f97">Exhibits</h3>
+<section id="slide-org88fa3a5">
+<h3 id="org88fa3a5">Exhibits</h3>
 
-<figure>
+<figure id="orgf6509b0">
 <img src="./images/silver-age.png" alt="silver-age.png">
 
 </figure>
@@ -253,25 +253,29 @@
 </section>
 </section>
 <section>
-<section id="slide-org65d8257">
-<h2 id="org65d8257">Add an Item</h2>
-<p>
-<div class="paired">
-</p>
+<section id="slide-org682f8b8" class="twoc">
+<h2 id="org682f8b8">Add an Item</h2>
+<div class="slideblock" id="org50e528b">
 <form><ul>
 <li>got to &ldquo;dashboard&rdquo; and select &ldquo;Items&rdquo;</li>
 <li>select &ldquo;Add an Item&rdquo;</li>
 
 </ul></form>
-<p>
-</div><div class="paired">
-<img src="./images/omeka-add-item.png" alt="omeka-add-item.png">
+
 </div>
-</p>
+
+<div class="slideblock" id="org618720a">
+
+<figure id="org4dd97ac">
+<img src="./images/omeka-add-item.png" alt="omeka-add-item.png">
+
+</figure>
+
+</div>
 
 </section>
-<section id="slide-org68c8e26">
-<h3 id="org68c8e26">Add an Item: Dublin Core Metadata</h3>
+<section id="slide-orgfbafaca">
+<h3 id="orgfbafaca">Add an Item: Dublin Core Metadata</h3>
 <form><ul>
 <li>In the Item&rsquo;s fields, enter the metadata: Title, Subject, Description, etc. Before you add items to your collection, you will have figured out how the Dublin Core metadata schema applies to your particular data: consistency across your collection is key.</li>
 <li>For example, for medieval manuscripts, you can list authors of the texts under Author: but what of known scribes, who may have also intervened in the text? Are they Authors or Publishers or Contributors? Pick what makes sense and apply it consistently.</li>
@@ -301,44 +305,49 @@
 </ul></form>
 
 </section>
-<section id="slide-add-an-item-success">
+<section id="slide-add-an-item-success" class="twoc">
 <h3 id="add-an-item-success">Add an Item: Success</h3>
-<p>
-<div class="paired">
-</p>
+<div class="slideblock" id="org52dc1df">
 <form><ul>
 <li>Success: our trial item (“New Item&ldquo;) was created and added to the digital collection!</li>
 
 </ul></form>
-<p>
-</div><div class="paired">
-<img src="./images/omeka-success.png" alt="omeka-success.png">
+
 </div>
-</p>
+
+<div class="slideblock" id="orge44cd7b">
+
+<figure id="orge054a2e">
+<img src="./images/omeka-success.png" alt="omeka-success.png">
+
+</figure>
+
+</div>
 
 </section>
-<section id="slide-add-an-image-to-the-item">
+<section id="slide-add-an-image-to-the-item" class="twoc">
 <h3 id="add-an-image-to-the-item">Add an Image to the Item</h3>
-<p>
-<div class="paired">
-</p>
+<div class="slideblock" id="orgdfb916b">
 <form><ul>
 <li>Go to the Items and select the “Edit&ldquo; option under your Item</li>
 
 </ul></form>
 
-<p>
-</div><div class="paired">
-<img src="./images/omeka-add-image.png" alt="omeka-add-image.png">
 </div>
-</p>
+
+<div class="slideblock" id="org78220ac">
+
+<figure id="org1132c72">
+<img src="./images/omeka-add-image.png" alt="omeka-add-image.png">
+
+</figure>
+
+</div>
 
 </section>
-<section id="slide-org0165c24">
-<h3 id="org0165c24">Add an Image to the Item</h3>
-<p>
-<div class="paired">
-</p>
+<section id="slide-orgdec9952" class="twoc">
+<h3 id="orgdec9952">Add an Image to the Item</h3>
+<div class="slideblock" id="org90917e4">
 <form><ul>
 <li>From the top horizontal row of options of the Item: select Files Choose File</li>
 <li>Upload your image</li>
@@ -346,20 +355,23 @@
 
 </ul></form>
 
-<p>
-</div><div class="paired">
-<img src="./images/omeka-add-file.png" alt="omeka-add-file.png">
 </div>
-</p>
+
+<div class="slideblock" id="orgc26d2f8">
+
+<figure id="org983ec00">
+<img src="./images/omeka-add-file.png" alt="omeka-add-file.png">
+
+</figure>
+
+</div>
 
 </section>
 </section>
 <section>
-<section id="slide-org88d6f94">
-<h2 id="org88d6f94">Collections</h2>
-<p>
-<div class="paired">
-</p>
+<section id="slide-orgbf35f1f" class="twoc">
+<h2 id="orgbf35f1f">Collections</h2>
+<div class="slideblock" id="org28a86e4">
 <form><ul>
 <li>Collections are logical groupings or “folders&ldquo; of Items. An item can be in only one Collection at a time.</li>
 <li>Go to Dashboard and select “Collections&ldquo;</li>
@@ -368,18 +380,21 @@
 
 </ul></form>
 
-<p>
-</div><div class="paired">
-<img src="./images/omeka-new-coll.png" alt="omeka-new-coll.png">
 </div>
-</p>
+
+<div class="slideblock" id="orgbdddc45">
+
+<figure id="orga8d324a">
+<img src="./images/omeka-new-coll.png" alt="omeka-new-coll.png">
+
+</figure>
+
+</div>
 
 </section>
-<section id="slide-orgb0f6f4b">
-<h3 id="orgb0f6f4b">Collections</h3>
-<p>
-<div class="paired">
-</p>
+<section id="slide-orgac36cad" class="twoc">
+<h3 id="orgac36cad">Collections</h3>
+<div class="slideblock" id="orga151682">
 <form><ul>
 <li>Collections are logical groupings or “folders&ldquo; of Items. An item can be in only one Collection at a time.</li>
 <li>Go to Dashboard and select “Collections&ldquo;</li>
@@ -387,11 +402,17 @@
 <li>Please use <b>WDW235 &#x2013; Your Last Name</b> as your Collection title.</li>
 
 </ul></form>
-<p>
-</div><div class="paired">
-<img src="./images/omeka-new-coll.png" alt="omeka-new-coll.png">
+
 </div>
-</p>
+
+<div class="slideblock" id="org91d4be2">
+
+<figure id="org4f0550c">
+<img src="./images/omeka-new-coll.png" alt="omeka-new-coll.png">
+
+</figure>
+
+</div>
 
 </section>
 </section>
@@ -408,10 +429,10 @@
 </ul></form>
 
 </section>
-<section id="slide-add-an-exhibit-structure">
+<section id="slide-add-an-exhibit-structure" class="twoc">
 <h3 id="add-an-exhibit-structure">Add an Exhibit: Structure</h3>
+<div class="slideblock" id="org6c16240">
 <p>
-<div class="paired">
 An Omeka Exhibit has:
 </p>
 
@@ -427,16 +448,22 @@ An Omeka Exhibit has:
 You get to decide the content and layout of your pages.
 </p>
 
-<p>
-</div><div class="paired">
-<img src="./images/omeka-ww.png" alt="omeka-ww.png">
 </div>
-</p>
+
+<div class="slideblock" id="org7390ff0">
+
+<figure id="org8b13ff2">
+<img src="./images/omeka-ww.png" alt="omeka-ww.png">
+
+</figure>
+
+</div>
 </section>
-<section id="slide-add-an-exhibit-creation">
+<section id="slide-add-an-exhibit-creation" class="twoc">
 <h3 id="add-an-exhibit-creation">Add an Exhibit: Creation</h3>
+<div class="slideblock" id="orgefad808">
 <p>
-<div class="paired">
+
 </p>
 
 <form><ul>
@@ -445,16 +472,22 @@ You get to decide the content and layout of your pages.
 
 </ul></form>
 
-<p>
-</div><div class="paired">
-<img src="./images/omeka-ex-create.png" alt="omeka-ex-create.png">
 </div>
-</p>
+
+<div class="slideblock" id="orgb5dbee1">
+
+<figure id="org3814c69">
+<img src="./images/omeka-ex-create.png" alt="omeka-ex-create.png">
+
+</figure>
+
+</div>
 </section>
-<section id="slide-add-an-exhibit-metadata">
+<section id="slide-add-an-exhibit-metadata" class="twoc">
 <h3 id="add-an-exhibit-metadata">Add an Exhibit: Metadata</h3>
+<div class="slideblock" id="orga3b08f5">
 <p>
-<div class="paired">
+
 </p>
 
 <form><ul>
@@ -465,11 +498,16 @@ You get to decide the content and layout of your pages.
 
 </ul></form>
 
-<p>
-</div><div class="paired">
-<img src="./images/omeka-ex-det.png" alt="omeka-ex-det.png">
 </div>
-</p>
+
+<div class="slideblock" id="org5c1f8b7">
+
+<figure id="org6d19630">
+<img src="./images/omeka-ex-det.png" alt="omeka-ex-det.png">
+
+</figure>
+
+</div>
 </section>
 <section id="slide-add-an-exhibit-structure-1">
 <h3 id="add-an-exhibit-structure-1">Add an Exhibit: Structure</h3>
@@ -481,10 +519,10 @@ You get to decide the content and layout of your pages.
 </ul></form>
 
 </section>
-<section id="slide-add-an-exhibit-pages">
+<section id="slide-add-an-exhibit-pages" class="twoc">
 <h3 id="add-an-exhibit-pages">Add an Exhibit: Pages</h3>
+<div class="slideblock" id="org748868a">
 <p>
-<div class="paired">
 Each Page may consist of multiple blocks:
 </p>
 
@@ -499,29 +537,37 @@ Each Page may consist of multiple blocks:
 To create a new Block, click on the desired layout. This block will be added as a section of this page. Your page can contain as many blocks as you like; you can drag them around to rearrange them.
 </p>
 
-<p>
-</div><div class="paired">
-<img src="./images/omeka-add-block.png" alt="omeka-add-block.png">
 </div>
-</p>
+
+<div class="slideblock" id="org85c2e74">
+
+<figure id="orgbd2c0e5">
+<img src="./images/omeka-add-block.png" alt="omeka-add-block.png">
+
+</figure>
+
+</div>
 
 </section>
-<section id="slide-add-an-exhibit-blocks-1">
+<section id="slide-add-an-exhibit-blocks-1" class="twoc">
 <h3 id="add-an-exhibit-blocks-1">Add an Exhibit: Blocks</h3>
-<p>
-<div class="paired">
-</p>
+<div class="slideblock" id="orge8f693c">
 <form><ul>
 <li>Once you have added your narrative and selected your Items, your block will look like this:</li>
 <li>To see what the Page actually looks like, select the View Public Page button (right side of browser, in line with Content).</li>
 
 </ul></form>
 
-<p>
-</div><div class="paired">
-<img src="./images/omeka-block-content.png" alt="omeka-block-content.png">
 </div>
-</p>
+
+<div class="slideblock" id="orgca144c8">
+
+<figure id="org40d756c">
+<img src="./images/omeka-block-content.png" alt="omeka-block-content.png">
+
+</figure>
+
+</div>
 </section>
 <section id="slide-add-an-exhibit-overall-design">
 <h3 id="add-an-exhibit-overall-design">Add an Exhibit: Overall Design</h3>
@@ -534,8 +580,8 @@ To create a new Block, click on the desired layout. This block will be added as 
 </section>
 </section>
 <section>
-<section id="slide-orgf50d734">
-<h2 id="orgf50d734">Building an Omeka Site: Conclusions</h2>
+<section id="slide-org2435e82">
+<h2 id="org2435e82">Building an Omeka Site: Conclusions</h2>
 <form><ul>
 <li>Make a project plan with deadlines. But allow for disasters.</li>
 <li>Plan your exhibits (possibly on paper) well ahead of time</li>
@@ -547,8 +593,8 @@ To create a new Block, click on the desired layout. This block will be added as 
 </section>
 </section>
 <section>
-<section id="slide-orgb840121">
-<h2 id="orgb840121">Class Exercise: Life In Quarntine &#x2013; an Omeka project?</h2>
+<section id="slide-orga46c524">
+<h2 id="orga46c524">Class Exercise: Life In Quarntine &#x2013; an Omeka project?</h2>
 <form><ul>
 <li>imagine an open-ended assignment/project:  build an omeka site about your life under quarantine</li>
 <li>what does your <b>ideal site</b> look like?</li>
@@ -561,8 +607,57 @@ To create a new Block, click on the desired layout. This block will be added as 
 </section>
 </div>
 </div>
-<script src="file:///home/matt/src/reveal.js/lib/js/head.min.js"></script>
-<script src="file:///home/matt/src/reveal.js/js/reveal.js"></script>
+<script src="file:///home/matt/src/reveal.js/dist/reveal.js"></script>
+<script src="file:///home/matt/src/reveal.js/plugin/markdown/markdown.js"></script>
+<script src="file:///home/matt/src/reveal.js/plugin/highlight/highlight.js"></script>
+<script src="file:///home/matt/src/reveal.js/plugin/zoom/zoom.js"></script>
+<script src="file:///home/matt/src/reveal.js/plugin/notes/notes.js"></script>
+<script src="https://s.electerious.com/basicLightbox/dist/basicLightbox.min.js"></script>
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
+<script>
+async function revealLightbox ()  {
+while(!window.hasOwnProperty('Reveal') || !window.Reveal.hasOwnProperty('addKeyBinding'))
+  await new Promise(resolve => setTimeout(resolve, 100));
+Reveal.addKeyBinding({keyCode: 27,
+                      key: 'ESC',
+                      description: 'Close lightbox or toggle overlay'},
+                     ()=> {
+                       if (this.Reveal.isLightboxed) {
+                         Reveal.currentLightbox.close()
+                       } else if( this.Reveal.closeOverlay() === false ) {
+                         this.Reveal.overview.toggle();
+                       }
+                       event.preventDefault && event.preventDefault();
+                     })
+
+
+document.querySelectorAll('figure>img').forEach(
+  (fig)=> {
+    fig.onclick=() => {
+      Reveal.isLightboxed = true
+      Reveal.currentLightbox = basicLightbox
+        .create(fig.parentElement.outerHTML,
+                {onClose: (instance) => Reveal.isLightboxed = null});
+      Reveal.currentLightbox.show()
+      }
+   })
+}
+revealLightbox()
+
+tippy('[data-template]', {
+  content(reference) {
+    const id = reference.getAttribute('data-template');
+    console.log(id)
+    const template = document.getElementById(id).parentElement;
+    console.log(template);
+    return template.innerHTML;
+  },
+  allowHTML: true,
+  interactive: true,
+  theme: 'light'
+})
+  </script>
 <script>
 // Full list of configuration options available here:
 // https://github.com/hakimel/reveal.js#configuration
@@ -576,10 +671,9 @@ slideNumber: 'c',
 rollingLinks: false,
 keyboard: true,
 mouseWheel: false,
-fragmentInURL: false,
+fragmentInURL: true,
 hashOneBasedIndex: false,
 pdfSeparateFragments: true,
-
 overview: true,
 width: "100%",
 height: "100%",
@@ -587,23 +681,19 @@ margin: 0.10,
 minScale: 1.00,
 maxScale: 1.00,
 
-theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-transition: Reveal.getQueryHash().transition || 'convex', // see README of reveal.js for options
+transition: 'convex',
 transitionSpeed: 'default',
+
+// Plugins with reveal.js 4.x
+plugins: [ RevealMarkdown, RevealHighlight, RevealZoom, RevealNotes ],
 
 // Optional libraries used to extend reveal.js
 dependencies: [
-{src: 'file:///home/matt/src/reveal.js/plugin/klipse_reveal.js'},
- { src: 'file:///home/matt/src/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
- { src: 'file:///home/matt/src/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
- { src: 'file:///home/matt/src/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
- { src: 'file:///home/matt/src/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
- { src: 'file:///home/matt/src/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
- { src: 'file:///home/matt/src/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+{src: 'file:///home/matt/src/reveal.js/plugin/klipse_reveal.js'}]
 
 });
 </script>
-<script src="https://sandbox.hackinghistory.ca/vendor/klipse/klipse_plugin.min.js"></script>
+<script src="https://storage.googleapis.com/app.klipse.tech/plugin_prod/js/klipse_plugin.min.js"></script>
 <script>
 /* Recompute layout upon changes by klipse.  Code fragment from
    asciidoctor-revealjs-klipse by Timothy Pratley under GPLv3:

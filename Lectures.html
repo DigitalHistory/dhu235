@@ -2,18 +2,18 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-<title>5.2 Omeka</title>
+<title>All of everything</title>
 <meta name="author" content="Matt Price"/>
 <style type="text/css">
 .underline { text-decoration: underline; }
 </style>
-<link rel="stylesheet" href="file:///home/matt/src/reveal.js/css/reveal.css"/>
+<link rel="stylesheet" href="file:///home/matt/src/reveal.js/dist/reveal.css"/>
 
-<link rel="stylesheet" href="file:///home/matt/src/reveal.js/css/theme/matt.css" id="theme"/>
+<link rel="stylesheet" href="file:///home/matt/src/reveal.js/dist/theme/matt.css" id="theme"/>
 
-<link rel="stylesheet" href="file:///home/matt/src/org-reveal/local.css"/>
-<link rel="stylesheet" href="file:///home/matt/src/reveal.js/lib/css/zenburn.css"/>
-<link rel="stylesheet" href="https://sandbox.hackinghistory.ca/vendor/klipse/codemirror.css"/>
+<link rel="stylesheet" href="https://unpkg.com/tippy.js@6/tippy.js/themes/light.css'"/>
+<link rel="stylesheet" href="file:///home/matt/src/reveal.js/plugin/highlight/zenburn.css"/>
+<link rel="stylesheet" href="https://storage.googleapis.com/app.klipse.tech/css/codemirror.css"/>
 <style>
 /* Position computations of klipse get confused by reveal.js's scaling.
    Hence, scaling should be disabled with this code.  Fix height of code area
@@ -38,23 +38,12 @@
         selector_sql: '.language-klipse-sql'
     };
 </script>
-
-<!-- If the query includes 'print-pdf', include the PDF print sheet -->
-<script>
-    if( window.location.search.match( /print-pdf/gi ) ) {
-        var link = document.createElement( 'link' );
-        link.rel = 'stylesheet';
-        link.type = 'text/css';
-        link.href = 'file:///home/matt/src/reveal.js/css/print/pdf.css';
-        document.getElementsByTagName( 'head' )[0].appendChild( link );
-    }
-</script>
 </head>
 <body>
 <div class="reveal">
 <div class="slides">
 <section id="sec-title-slide">
-<h1>5.2 Omeka</h1>
+<h1>All of everything</h1>
 <h3>Matt Price  </h3>
 <!-- <p class="title-theme-choice">(view this presentation in another theme: 
 <a href="#" onclick="document.getElementById('theme').setAttribute('href',document.getElementById('theme').getAttribute('href').replace(/\/[a-zA-Z]+\.css/g,'/black.css')); return false;">Black (default)</a> -
@@ -71,475 +60,254 @@
 				)	</p> -->
 
 </section>
-<section>
-<section id="slide-orgc728fdd">
-<h2 id="orgc728fdd">Getting Started with U of T&rsquo;s Omeka installation</h2>
+</section>
+<section id="slide-metadata">
+<h3 id="metadata">Metadata</h3>
+<div class="slideblock" id="orgdcf20e7">
 <form><ul>
-<li>Go to <a href="https://spatial-humanities.library.utoronto.ca/admin">the U of T Spatial Humanities site admin page</a>, and</li>
-<li>sign in with <a href="https://q.utoronto.ca/courses/127426/discussion_topics/400788">the authorization info that was sent out in a recent announcement</a></li>
+<li>Metadata is structured data describing data. Think Author, Title, Date, Subject in your online library catalogue</li>
+<li>Standard metadata schemas include Dublin Core, MARC, and MODS (each of these schemas has a different set of information it collects).</li>
 
 </ul></form>
 
-</section>
-</section>
-<section>
-<section id="slide-org0739111">
-<h2 id="org0739111">Omeka!</h2>
-<p>
-<div class="paired">
-</p>
-<form><ul>
-<li>&ldquo;Wordpress for Museums&rdquo;</li>
-<li>Designed <b>especially</b> for projects with strict metadata requirements, e.g.: archives of books, images, etc</li>
-<li>Free to Use</li>
-<li>Open Source (<a href="https://github.com/omeka/Omeka/blob/master/license.txt">GPL 3</a>)</li>
-<li>Widely used in libraries &amp; classrooms</li>
-
-</ul></form>
-<p>
-</div><div class="paired">
-<img src="https://omeka.org/images/omeka-logo.png" alt="omeka-logo.png">
 </div>
-</p>
+<div class="slideblock" id="orgad3f31a">
 
-</section>
-<section id="slide-org10b8b0f">
-<h3 id="org10b8b0f">Items and Collections</h3>
-<p>
-<div class="paired">
-</p>
-<form><ul>
-<li>Users can curate <a href="https://omeka.org/classic/docs/Content/Collections/">collections</a> of digital <a href="https://omeka.org/classic/docs/Content/Items/">items</a></li>
-<li>Each Item has rich <a href="https://omeka.org/classic/docs/Content/Working_with_Dublin_Core/">metadata</a></li>
+<figure id="org44fedd2">
+<img src="./images/hokusai-peonies-dc.png" alt="hokusai-peonies-dc.png">
 
-</ul></form>
-<p>
-</div><div class="paired">
-<img src="./images/omeka-md.png" alt="omeka-md.png">
-</div>
-</p>
-
-</section>
-<section id="slide-org3babdc1">
-<h3 id="org3babdc1">Exhibits</h3>
-<p>
-<div class="paired">
-</p>
-<form><ul>
-<li>Through its <a href="https://omeka.org/classic/docs/Plugins/ExhibitBuilder/">Exhibit</a> plugin, Omeka lets users tell stories with their collections.</li>
-<li>Users can arrange items from their collections into multimedia essays, using the “Lego bricks&ldquo; of the archive to tell stories and make arguments.
-</div><div class="paired"></li>
-
-</ul></form>
-
-<figure>
-<img src="./images/martha.png" alt="martha.png">
-
+<figcaption><span class="figure-number">Figure 1: </span>Rich Metadata on (<a href="#slide-bibliography">Hokusai</a>)</figcaption>
 </figure>
 
+
 <p>
-</div>
+Individual item metadata includes title, creator, description, source, rights, etc: the elements of the Dublin Core metadata schema.
 </p>
 
-</section>
-</section>
-<section>
-<section id="slide-orgb21d51f">
-<h2 id="orgb21d51f">Omeka Building Blocks</h2>
-<form><dl>
-<dt>Items</dt><dd>individual pieces of content</dd>
-<dt>Metadata</dt><dd>information about an item &#x2013; &ldquo;<a href="http://www.dublincore.org/resources/metadata-basics/">Dublin Core</a>&rdquo; Standard</dd>
-<dt>Collections</dt><dd>groups of items; each item is in exactly one collection</dd>
-<dt>Exhibits</dt><dd>narratives woven around items.</dd>
+</div>
 
-</dl></form>
 
+<aside class="notes">
+<p>
+Each record of an archive is described by metadata: structured data about data. For example, think about your library&rsquo;s online catalogue: it contains the records of books, with fields like Author, Title, Publisher, Editor, Date. If you use standard metadata schemas, like Dublin Core, MARC, or MODS, your data will be discoverable and interoperable with aggregators and library catalogues.
+</p>
+
+</aside>
 </section>
-<section id="slide-heroes-and-villains-silver-age-comics">
-<h3 id="heroes-and-villains-silver-age-comics">Heroes and Villains:  <a href="https://silveragecomics.uncc.edu/">SilverAge Comics</a></h3>
+<section id="slide-metadata-standards">
+<h4 id="metadata-standards">Metadata Standards</h4>
+<p>
+<img src="https://imgs.xkcd.com/comics/standards.png" alt="standards.png"> (<a href="#slide-bibliography">Munroe</a>)
+</p>
+</section>
+<section id="slide-org3d20fcd">
+<h4 id="org3d20fcd">Vocabulary and Ontology</h4>
 <form><ul>
-<li><b>Heroes and Villains</b> is a digital archive of Silver Age superhero comic books from J. Murrey Atkins Library Special Collections. Credits: Marc Bess, J. Murrey Atkins Library Digital Scholarship Lab, UNC Charlotte.</li>
+<li><b>Controlled vocabulary</b>: set of permitted literal values to describea given entity (e.g. chairs: desk chairs, rolling chairs, step stools, kitchen table chairs); may include categorization</li>
+<li><b>Ontology</b>: making explicit the relationships between values in controlled vocabularies</li>
 
 </ul></form>
 
-<figure>
-<img src="./images/silver.png" alt="silver.png">
-
-</figure>
 </section>
-<section id="slide-org97a4cf4">
-<h3 id="org97a4cf4">Items</h3>
-<p>
-<div class="paired">
-</p>
-<form><ul>
-<li>Items are the building blocks of Omeka sites. They always have metadata (Title, Description, Sourc,e Date, etc.) and often have digital files attached (images, documents, etc.)</li>
+<section id="slide-section-5">
+<h4 id="section-5">Vocabulary and Ontology</h4>
 
-</ul></form>
-<p>
-</div><div class="paired">
-<img src="./images/hulk-item.png" alt="hulk-item.png">
-</div>
-</p>
-
-</section>
-<section id="slide-orga07136c">
-<h3 id="orga07136c">Metadata</h3>
-<p>
-<div class="paired">
-</p>
-<form><ul>
-<li>Structured data about data</li>
-<li>Omeka uses Dublin Core, which is a widely-used international standard</li>
-
-</ul></form>
-<p>
-</div><div class="paired">
-<img src="./images/hulk-md.png" alt="hulk-md.png">
-</div>
-</p>
-
-</section>
-<section id="slide-org9c5cafb">
-<h3 id="org9c5cafb">Collections</h3>
-<p>
-<div class="paired">
-</p>
-<form><ul>
-<li>logical/hierarchical groupings of items (like &ldquo;folders&rdquo; in your computer desktop)</li>
-<li>Each item can be in only one collection</li>
-
-</ul></form>
-<p>
-</div><div class="paired">
-<img src="./images/omeka-coll.png" alt="omeka-coll.png">
-</div>
-</p>
-
-</section>
-<section id="slide-orgdf7b09e">
-<h3 id="orgdf7b09e">Exhibits</h3>
-<p>
-<div class="paired">
-</p>
-<form><ul>
-<li>narratives that tell the story of some items &amp; explain their significance. It&rsquo;s important to highlight exhibits in an omeka site, since Omeka can be hard to navigate without them.</li>
-
-</ul></form>
-<p>
-</div><div class="paired">
-<img src="./images/omeka-exhibit.png" alt="omeka-exhibit.png">
-</div>
-</p>
-
-</section>
-<section id="slide-org9737afe">
-<h3 id="org9737afe">Exhibits</h3>
-
-<figure>
-<img src="./images/silver-age.png" alt="silver-age.png">
+<figure id="org714e9fd">
+<img src="./images/chairs.svg" alt="chairs.svg">
 
 </figure>
 
 </section>
-</section>
-<section>
-<section id="slide-org5f2cc8b">
-<h2 id="org5f2cc8b">Add an Item</h2>
+<section id="slide-controlled-vocabulary">
+<h4 id="controlled-vocabulary">Controlled Vocabulary</h4>
+<blockquote>
 <p>
-<div class="paired">
+“A controlled vocabulary is an organized arrangement of words and phrases used to catalog content and/or to retrieve content through browsing or searching. It typically includes preferred and variant terms and has a defined scope or describes a specific domain. [&#x2026;] While capturing the richness of variant terms, controlled vocabularies also promote consistency in preferred terms and the assignment of the same terms to similar content.&ldquo;
 </p>
+
+<p>
+<a class="org-ref-reference" href="#/slide-bibliography">[HarpringIntroductionControlledVocabularies2010]</a> 
+</p>
+</blockquote>
+
+<figure id="org4d565d1">
+<img src="./images/black-death.png" alt="black-death.png">
+
+</figure>
+</section>
+<section id="slide-authority-control">
+<h4 id="authority-control">Authority Control</h4>
 <form><ul>
-<li>got to &ldquo;dashboard&rdquo; and select &ldquo;Items&rdquo;</li>
-<li>select &ldquo;Add an Item&rdquo;</li>
+<li>The practice of systematizing controlled vocabularies so descriptors of entities are unique, non-overlapping, and consistently used&#x2013;e.g. having an accepted set of “correct&ldquo; subject headings</li>
 
 </ul></form>
+
+</section>
+<section id="slide-james-joyce">
+<h4 id="james-joyce">James Joyce</h4>
+
+<figure id="orga9fdaed">
+<img src="./images/joyce-vocab.png" alt="joyce-vocab.png">
+
+</figure>
+</section>
+<section id="slide-gazetteers-place-name-dictionaries-maps-atlases-uris">
+<h4 id="gazetteers-place-name-dictionaries-maps-atlases-uris">Gazetteers:</h4>
+<form><ul>
+<li>place name dictionaries + maps + atlases + URIs (<a href="https://pleiades.stoa.org/places/570491">https://pleiades.stoa.org/places/570491</a>)</li>
+<li>for time: (<a href="https://perio.do/en/">https://perio.do/en/</a>)</li>
+
+</ul></form>
+
+</section>
+<section id="slide-org00ec86a" class="splitc">
+<h3 id="org00ec86a">Users and Intended Audiences</h3>
+<div class="slideblock" id="org1e08681">
+<blockquote>
 <p>
-</div><div class="paired">
-<img src="./images/omeka-add-item.png" alt="omeka-add-item.png">
+[E]ven doorknobs have politics in that they may be round, requiring a human hand to turn them, or shaped as levers, such that a person with a prosthetic limb or an armload of groceries with one free elbow can still successfully use them. This is more than simply a matter of utility. Both designs are political in that they presume and construct different kinds of worlds, with the round doorknob presuming a world in which everyone’s bodies are the same, and in which hands with opposable thumbs and sufficient grip strength are always available. (<a href="#slide-bibliography">Galey &#38; Ruecker, 2010</a>)
+</p>
+</blockquote>
+
 </div>
-</p>
 
-</section>
-<section id="slide-org327d107">
-<h3 id="org327d107">Add an Item: Dublin Core Metadata</h3>
+<div class="slideblock" id="orgda9a082">
 <form><ul>
-<li>In the Item&rsquo;s fields, enter the metadata: Title, Subject, Description, etc. Before you add items to your collection, you will have figured out how the Dublin Core metadata schema applies to your particular data: consistency across your collection is key.</li>
-<li>For example, for medieval manuscripts, you can list authors of the texts under Author: but what of known scribes, who may have also intervened in the text? Are they Authors or Publishers or Contributors? Pick what makes sense and apply it consistently.</li>
-<li>For details on Dublin Core :</li>
-<li><a href="http://dublincore.org/documents/dces/">http://dublincore.org/documents/dces/</a></li>
-<li>If you wish the Item to be visible on the public view of the site, check “Public&ldquo; (under “Add Item&rdquo;).</li>
-<li>Click “Add Item&ldquo; (green, right).</li>
+<li>What groups of users/readers are invited in?  What groups of users/readers are shut out?  Consider:  
+<form><ul>
+<li class="off"><input type='checkbox' /> expertise &amp; interest; scholars &amp; laypersons</li>
+<li class="off"><input type='checkbox' /> use of e.g. assistive technologies like screen readers, speech recognition, close captioning, etc.</li>
+<li class="off"><input type='checkbox' /> level of technical training (or lack of it)</li>
+<li class="off"><input type='checkbox' /> limited access to (powerful) computers</li>
+<li class="off"><input type='checkbox' /> limited internet bandwidth</li>
+<li class="off"><input type='checkbox' /> Tradeoffs &amp; compromises</li>
+
+</ul></form></li>
 
 </ul></form>
 
-</section>
-<section id="slide-add-an-item-dublin-core-metadata-1">
-<h3 id="add-an-item-dublin-core-metadata-1">Add an item: Dublin Core Metadata</h3>
-<form><ul>
-<li>In this assignment, you are responsible for the following fields (and some may have to stay blank):</li>
-<li>Title;</li>
-<li>Description (a paragraph recording your description of the object, in your own words: 100-200 words)</li>
-<li>Creator;</li>
-<li>Source (can be e.g. manuscript or book or collection);</li>
-<li>Publisher;</li>
-<li>Date;</li>
-<li>Rights (i.e. who owns copyright &#x2013; language here will vary strongly depending on institution the items come from, and that is not an error on the students&rsquo; part);</li>
-<li>Format material, e.g. bronze, parchment, etc.);</li>
-<li>Language;</li>
-<li>Coverage (place where the object is from/was made).</li>
-
-</ul></form>
-
-</section>
-<section id="slide-add-an-item-success">
-<h3 id="add-an-item-success">Add an Item: Success</h3>
-<p>
-<div class="paired">
-</p>
-<form><ul>
-<li>Success: our trial item (“New Item&ldquo;) was created and added to the digital collection!</li>
-
-</ul></form>
-<p>
-</div><div class="paired">
-<img src="./images/omeka-success.png" alt="omeka-success.png">
 </div>
-</p>
 
-</section>
-<section id="slide-add-an-image-to-the-item">
-<h3 id="add-an-image-to-the-item">Add an Image to the Item</h3>
-<p>
-<div class="paired">
-</p>
+<div class="slideblock" id="org1ced7c7">
 <form><ul>
-<li>Go to the Items and select the “Edit&ldquo; option under your Item</li>
+<li>User Experience, Interfaces, &amp; Display
+<form><ul>
+<li>UX (user experience) &amp; usability testing</li>
+<li>User stories: descriptions, from a user&rsquo;s perspective, of a tool: who they are, what they want the tool to do, in what order&#x2026;</li>
+
+</ul></form></li>
 
 </ul></form>
 
-<p>
-</div><div class="paired">
-<img src="./images/omeka-add-image.png" alt="omeka-add-image.png">
 </div>
-</p>
-
 </section>
-<section id="slide-org841f146">
-<h3 id="org841f146">Add an Image to the Item</h3>
-<p>
-<div class="paired">
-</p>
+<section id="slide-research-data-life-cycle" class="twoc">
+<h3 id="research-data-life-cycle">Research Data: Life Cycle</h3>
+<div class="slideblock" id="orga0f0f35">
+
+<figure id="org5700fe7">
+<img src="./images/dh-lc2.png" alt="dh-lc2.png">
+
+</figure>
 <form><ul>
-<li>From the top horizontal row of options of the Item: select Files Choose File</li>
-<li>Upload your image</li>
-<li>Save changes</li>
+<li>Go back and pick up what you missed</li>
+<li>Revise data model</li>
 
 </ul></form>
 
-<p>
-</div><div class="paired">
-<img src="./images/omeka-add-file.png" alt="omeka-add-file.png">
 </div>
-</p>
-
-</section>
-</section>
-<section>
-<section id="slide-orgcf9ff82">
-<h2 id="orgcf9ff82">Collections</h2>
-<p>
-<div class="paired">
-</p>
+<div class="slideblock" id="org78c574b">
 <form><ul>
-<li>Collections are logical groupings or “folders&ldquo; of Items. An item can be in only one Collection at a time.</li>
-<li>Go to Dashboard and select “Collections&ldquo;</li>
-<li>Select “Add a Collection&ldquo;</li>
-<li>Fill in the metadata elements as desired, as for Item. (Everything in Omeka has metadata: it is turtles all the way down.)</li>
+<li>“Data is always a partial representation of the object of study&ldquo; (<a href="#slide-bibliography">Schöch, 2013</a>)</li>
+<li>Failure-, incompleteness-, and pessimism-based approaches to data collection, modelling, analysis, and preservation</li>
 
 </ul></form>
 
-<p>
-</div><div class="paired">
-<img src="./images/omeka-new-coll.png" alt="omeka-new-coll.png">
 </div>
-</p>
 
 </section>
-<section id="slide-orgfa514a6">
-<h3 id="orgfa514a6">Collections</h3>
+<section id="slide-preservation-ready-data">
+<h4 id="preservation-ready-data">Preservation-Ready Data</h4>
 <p>
-<div class="paired">
+Data: accessible, usable, readable, preservable
 </p>
 <form><ul>
-<li>Collections are logical groupings or “folders&ldquo; of Items. An item can be in only one Collection at a time.</li>
-<li>Go to Dashboard and select “Collections&ldquo;</li>
-<li>Select “Add a Collection&ldquo;</li>
-<li>Please use <b>WDW235 &#x2013; Your Last Name</b> as your Collection title.</li>
-
-</ul></form>
-<p>
-</div><div class="paired">
-<img src="./images/omeka-new-coll.png" alt="omeka-new-coll.png">
-</div>
-</p>
-
-</section>
-</section>
-<section>
-<section id="slide-add-an-exhibit-plan">
-<h2 id="add-an-exhibit-plan">Add an Exhibit: Plan</h2>
-<form><ul>
-<li>The Exhibit is a narrative pathway through the collection; or, if you will, a digital essay based on the items in your collection.</li>
-<li>First write the prose for your exhibit and decide what items need to appear in it.</li>
-<li>To look pretty in the Exhibit, the items need to have picture or video files attached.</li>
-<li>Save your prose in a separate file.</li>
-<li>Put your immortal prose somewhere safe. <b>Omeka Exhibits cannot be exported automatically: and if you ever delete yours in error, there is no getting it back.</b></li>
-
-</ul></form>
-
-</section>
-<section id="slide-add-an-exhibit-structure">
-<h3 id="add-an-exhibit-structure">Add an Exhibit: Structure</h3>
-<p>
-<div class="paired">
-An Omeka Exhibit has:
-</p>
-
-<form><ul>
-<li>An overview page: displays an abstract (summary) of your exhibit</li>
-<li>Pages: sections of your exhibit; these display text as well as items (remember, to look pretty, the items need to have files attached)</li>
-<li>In each Page: blocks</li>
-<li>Pages are about content; Blocks are about layout/format</li>
-
-</ul></form>
-
-<p>
-You get to decide the content and layout of your pages.
-</p>
-
-<p>
-</div><div class="paired">
-<img src="./images/omeka-ww.png" alt="omeka-ww.png">
-</div>
-</p>
-</section>
-<section id="slide-add-an-exhibit-creation">
-<h3 id="add-an-exhibit-creation">Add an Exhibit: Creation</h3>
-<p>
-<div class="paired">
-</p>
-
-<form><ul>
-<li>Go to the Dashboard and click on Exhibits.</li>
-<li>Click Add an Exhibit.</li>
-
-</ul></form>
-
-<p>
-</div><div class="paired">
-<img src="./images/omeka-ex-create.png" alt="omeka-ex-create.png">
-</div>
-</p>
-</section>
-<section id="slide-add-an-exhibit-metadata">
-<h3 id="add-an-exhibit-metadata">Add an Exhibit: Metadata</h3>
-<p>
-<div class="paired">
-</p>
-
-<form><ul>
-<li>Every Exhibit has metadata.</li>
-<li>Title displays as the Exhibits title.</li>
-<li>Slug forms the URL.</li>
-<li>Description is an abstract of the Exhibit that appears on its first page.</li>
-
-</ul></form>
-
-<p>
-</div><div class="paired">
-<img src="./images/omeka-ex-det.png" alt="omeka-ex-det.png">
-</div>
-</p>
-</section>
-<section id="slide-add-an-exhibit-structure-1">
-<h3 id="add-an-exhibit-structure-1">Add an Exhibit: Structure</h3>
-<form><ul>
-<li>The Exhibit consists of Pages.</li>
-<li>Each Page is a section of your Exhibit.</li>
-<li>To build your Exhibit, start adding Pages by clicking the Add Page green button.</li>
-
-</ul></form>
-
-</section>
-<section id="slide-add-an-exhibit-pages">
-<h3 id="add-an-exhibit-pages">Add an Exhibit: Pages</h3>
-<p>
-<div class="paired">
-Each Page may consist of multiple blocks:
-</p>
-
-<form><ul>
-<li>Text and an item block</li>
-<li>A gallery of items block</li>
-<li>Text block</li>
-
-</ul></form>
-
-<p>
-To create a new Block, click on the desired layout. This block will be added as a section of this page. Your page can contain as many blocks as you like; you can drag them around to rearrange them.
-</p>
-
-<p>
-</div><div class="paired">
-<img src="./images/omeka-add-block.png" alt="omeka-add-block.png">
-</div>
-</p>
-
-</section>
-<section id="slide-add-an-exhibit-blocks-1">
-<h3 id="add-an-exhibit-blocks-1">Add an Exhibit: Blocks</h3>
-<p>
-<div class="paired">
-</p>
-<form><ul>
-<li>Once you have added your narrative and selected your Items, your block will look like this:</li>
-<li>To see what the Page actually looks like, select the View Public Page button (right side of browser, in line with Content).</li>
-
-</ul></form>
-
-<p>
-</div><div class="paired">
-<img src="./images/omeka-block-content.png" alt="omeka-block-content.png">
-</div>
-</p>
-</section>
-<section id="slide-add-an-exhibit-overall-design">
-<h3 id="add-an-exhibit-overall-design">Add an Exhibit: Overall Design</h3>
-<form><ul>
-<li>In your finished Exhibit, each Page will be a Section of the Narrative, illustrated with Items from your digital collection.</li>
-<li>You can use and reuse items from your collection in as many Exhibits as you wish.</li>
+<li>Human-readable and human-editable</li>
+<li>Separable from technical platforms</li>
+<li>Described via metadata standards used in your discipline</li>
+<li>Contextualized in clear documentation</li>
+<li>Housed in non-proprietary, open source standards and technologies</li>
+<li>Saved in, or reducible to, simple formats: .txt, TEI P5, .csv, JSON, .pdf, .jpg, tiff</li>
+<li>Embedded in your disciplinary community</li>
 
 </ul></form>
 
 </section>
 </section>
 <section>
-<section id="slide-orgd0d119c">
-<h2 id="orgd0d119c">Building an Omeka Site: Conclusions</h2>
-<form><ul>
-<li>Make a project plan with deadlines. But allow for disasters.</li>
-<li>Plan your exhibits (possibly on paper) well ahead of time</li>
-<li>Draft and save your Item descriptions and your Exhibit content in word processing software; save this draft;</li>
-<li>Paste your content from Word into Omeka.</li>
+<section id="slide-bibliography">
+<h2 id="bibliography">Sources</h2>
+<style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Galey, A., &#38; Ruecker, S. (2010). How a prototype argues. <i>Literary and Linguistic Computing</i>, <i>25</i>(4), 405–424. <a href="https://doi.org/10.1093/llc/fqq021">https://doi.org/10.1093/llc/fqq021</a></div>
+  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Hokusai, K. Peonies and Butterfly. In <i>Europeana Collections</i>. <a href="https://www.europeana.eu/portal/record/08533/artifact_aspx_id_1059.html">https://www.europeana.eu/portal/record/08533/artifact_aspx_id_1059.html</a></div>
+  <div class="csl-entry"><a id="citeproc_bib_item_3"></a>Munroe, R. Standards. In <i>xkcd</i>. <a href="https://xkcd.com/927/">https://xkcd.com/927/</a></div>
+  <div class="csl-entry"><a id="citeproc_bib_item_4"></a>Schöch, C. (2013). Big? Smart? Clean? Messy? Data in the Humanities. In <i>Journal of Digital Humanities</i>. <a href="http://journalofdigitalhumanities.org/2-3/big-smart-clean-messy-data-in-the-humanities/">http://journalofdigitalhumanities.org/2-3/big-smart-clean-messy-data-in-the-humanities/</a></div>
+</div>
+</section>
+</section>
+</div>
+</div>
+<script src="file:///home/matt/src/reveal.js/dist/reveal.js"></script>
+<script src="file:///home/matt/src/reveal.js/plugin/markdown/markdown.js"></script>
+<script src="file:///home/matt/src/reveal.js/plugin/highlight/highlight.js"></script>
+<script src="file:///home/matt/src/reveal.js/plugin/zoom/zoom.js"></script>
+<script src="file:///home/matt/src/reveal.js/plugin/notes/notes.js"></script>
+<script src="https://s.electerious.com/basicLightbox/dist/basicLightbox.min.js"></script>
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
+<script>
+async function revealLightbox ()  {
+while(!window.hasOwnProperty('Reveal') || !window.Reveal.hasOwnProperty('addKeyBinding'))
+  await new Promise(resolve => setTimeout(resolve, 100));
+Reveal.addKeyBinding({keyCode: 27,
+                      key: 'ESC',
+                      description: 'Close lightbox or toggle overlay'},
+                     ()=> {
+                       if (this.Reveal.isLightboxed) {
+                         Reveal.currentLightbox.close()
+                       } else if( this.Reveal.closeOverlay() === false ) {
+                         this.Reveal.overview.toggle();
+                       }
+                       event.preventDefault && event.preventDefault();
+                     })
 
-</ul></form>
-</section>
-</section>
-</div>
-</div>
-<script src="file:///home/matt/src/reveal.js/lib/js/head.min.js"></script>
-<script src="file:///home/matt/src/reveal.js/js/reveal.js"></script>
+
+document.querySelectorAll('figure>img').forEach(
+  (fig)=> {
+    fig.onclick=() => {
+      Reveal.isLightboxed = true
+      Reveal.currentLightbox = basicLightbox
+        .create(fig.parentElement.outerHTML,
+                {onClose: (instance) => Reveal.isLightboxed = null});
+      Reveal.currentLightbox.show()
+      }
+   })
+}
+revealLightbox()
+
+tippy('[data-template]', {
+  content(reference) {
+    const id = reference.getAttribute('data-template');
+    console.log(id)
+    const template = document.getElementById(id).parentElement;
+    console.log(template);
+    return template.innerHTML;
+  },
+  allowHTML: true,
+  interactive: true,
+  theme: 'light'
+})
+  </script>
 <script>
 // Full list of configuration options available here:
 // https://github.com/hakimel/reveal.js#configuration
@@ -553,10 +321,9 @@ slideNumber: 'c',
 rollingLinks: false,
 keyboard: true,
 mouseWheel: false,
-fragmentInURL: false,
+fragmentInURL: true,
 hashOneBasedIndex: false,
 pdfSeparateFragments: true,
-
 overview: true,
 width: "100%",
 height: "100%",
@@ -564,23 +331,19 @@ margin: 0.10,
 minScale: 1.00,
 maxScale: 1.00,
 
-theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-transition: Reveal.getQueryHash().transition || 'convex', // see README of reveal.js for options
+transition: 'convex',
 transitionSpeed: 'default',
+
+// Plugins with reveal.js 4.x
+plugins: [ RevealMarkdown, RevealHighlight, RevealZoom, RevealNotes ],
 
 // Optional libraries used to extend reveal.js
 dependencies: [
-{src: 'file:///home/matt/src/reveal.js/plugin/klipse_reveal.js'},
- { src: 'file:///home/matt/src/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
- { src: 'file:///home/matt/src/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
- { src: 'file:///home/matt/src/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
- { src: 'file:///home/matt/src/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
- { src: 'file:///home/matt/src/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
- { src: 'file:///home/matt/src/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+{src: 'file:///home/matt/src/reveal.js/plugin/klipse_reveal.js'}]
 
 });
 </script>
-<script src="https://sandbox.hackinghistory.ca/vendor/klipse/klipse_plugin.min.js"></script>
+<script src="https://storage.googleapis.com/app.klipse.tech/plugin_prod/js/klipse_plugin.min.js"></script>
 <script>
 /* Recompute layout upon changes by klipse.  Code fragment from
    asciidoctor-revealjs-klipse by Timothy Pratley under GPLv3:
